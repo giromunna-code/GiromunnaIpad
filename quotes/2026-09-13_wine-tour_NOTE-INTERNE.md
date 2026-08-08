@@ -1,18 +1,20 @@
 # Note interne — Wine tour Toscana 13-18.09.2026, 21 pax
 
-**Rif. preventivo:** GM-2026-0913-BI · **Preparato:** 8 agosto 2026 · **Validità:** 22 agosto 2026
+**Cliente:** Alvora · **Rif. preventivo:** GM-2026-0913-BI · **Preparato:** 8 agosto 2026 · **Validità:** 22 agosto 2026
 
 File generati:
 - `GiroMunna_Preventivo_Tuscany_Wine_Tour_13-18_settembre_2026_IT.pdf`
 - `GiroMunna_Preventivo_Tuscany_Wine_Tour_13-18_settembre_2026_EN.pdf`
 - `genera_preventivo_tuscany_wine_tour.py` — rigenera entrambi i PDF
 
-Per inserire il nome del cliente:
+Il cliente (Alvora) è già il valore predefinito dello script. Per rigenerare i due PDF:
 
 ```bash
-python3 genera_preventivo_tuscany_wine_tour.py --lingua it --cliente "Nome Cliente"
-python3 genera_preventivo_tuscany_wine_tour.py --lingua en --cliente "Client Name"
+python3 genera_preventivo_tuscany_wine_tour.py --lingua it
+python3 genera_preventivo_tuscany_wine_tour.py --lingua en
 ```
+
+Con `--cliente "Altro Nome"` si cambia l'intestatario.
 
 ---
 
@@ -71,8 +73,7 @@ di circa il 20-25% prima di inviare.
 
 ## Da chiarire prima di inviare
 
-1. **Nome e indirizzo del cliente** — la richiesta è arrivata senza mail di accompagnamento.
-   Va inserito con `--cliente` e il PDF va rigenerato.
+1. **Indirizzo mail del cliente** — la richiesta è arrivata senza mail di accompagnamento.
 2. **Bagagli del 16 settembre** — check-out da Iesolana con tutti i bagagli, due cantine e
    arrivo in hotel solo la sera. È il punto più delicato del programma.
 3. **Quale tenuta Ruffino** — quotata Poggio Casciano (Bagno a Ripoli).

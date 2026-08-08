@@ -480,7 +480,7 @@ def build(lang, cliente, out):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--lingua", "--lang", dest="lang", default="it", choices=["it", "en"])
-    ap.add_argument("--cliente", "--client", dest="cliente", default="[NOME CLIENTE]")
+    ap.add_argument("--cliente", "--client", dest="cliente", default="Alvora")
     ap.add_argument("--out", default=None)
     a = ap.parse_args()
     name = a.out or os.path.join(
