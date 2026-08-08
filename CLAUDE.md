@@ -31,10 +31,18 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
 - **Mercedes-Benz Tourengo** — 28 posti passeggeri più l'autista, 7,86 m. Aria condizionata,
   sedili reclinabili, vano bagagli.
 
-**Prevale sempre il Beluga.** È il mezzo da assegnare come prima scelta in ogni preventivo,
-e quello da citare quando si descrive il servizio. Il Tourengo entra solo quando il Beluga
-non basta o non è disponibile: gruppi oltre i 26 passeggeri, servizi che richiedono un
-secondo mezzo, date già impegnate.
+**Prevale sempre il Beluga.** È il mezzo di riferimento in ogni preventivo: si quota e si
+descrive sempre quello, senza eccezioni decise a tavolino.
+
+Il **Tourengo** serve solo come secondo minibus, e **la decisione è di Girolamo**: va usato
+soltanto quando lo dice lui. Non va aggiunto di iniziativa, nemmeno quando il gruppo supera
+i 26 passeggeri e sembra ovvio che serva un altro mezzo.
+
+Quando il gruppo non sta sul Beluga, si quota comunque il Beluga per un mezzo e si segnala
+la cosa: al cliente nel preventivo, come punto da chiarire, e a Girolamo, perché decida se
+mettere il secondo minibus. È quello che fa il preventivo Le Filigare, dove a fronte di 30
+posti richiesti si spiega la capienza reale, si chiede il numero esatto di passeggeri e si
+precisa che il prezzo è riferito a un mezzo.
 
 Entrambi stanno sotto gli 8 metri e raggiungono strade e piazzali dove un autobus gran
 turismo non arriva. È un argomento di vendita, non un dettaglio tecnico.
