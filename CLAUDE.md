@@ -89,8 +89,9 @@ voli troppo stretti — e propongono la soluzione. Vanno scritte, non riempite.
 
 ## Struttura del repository
 
-- `quotes/` — preventivi, uno script di generazione per ciascuno, note interne.
-- `quotes/assets/giromunna_logo.png` — logo per i PDF.
+- `Preventivi/` — **tutti i preventivi vanno qui**, PDF, pagine web, script di generazione
+  e note interne. Non se ne creano altre cartelle: ogni nuovo lavoro finisce in questa.
+- `Preventivi/assets/giromunna_logo.png` — logo per i PDF.
 
 Lo script di un preventivo accetta `--lingua it|en` e `--cliente "Nome"` e produce il PDF
 corrispondente. Va eseguito per entrambe le lingue.
