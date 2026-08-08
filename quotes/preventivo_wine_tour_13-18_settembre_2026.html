@@ -1,0 +1,962 @@
+<title>Preventivo — Wine tour in Toscana, 13-18 settembre 2026</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+  .day.released { background: transparent; border-style: dashed; border-color: var(--line-strong); }
+  .day.released .day-date { color: var(--ink-soft); }
+  .day.released .badge { color: var(--ink-soft); background: transparent; border-color: var(--line-strong); }
+  .day.released p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<div class="wrap lang" data-lang="it">
+<header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Wine tour in Toscana
+      <span class="sub">Valdarno · Chianti · Colline Pisane · Versilia</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">13-18 set 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passeggeri</span><span class="v">21</span></div>
+      <div class="fact"><span class="eyebrow">Servizi</span><span class="v">5 su 4 giornate</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2026-0913-BI</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">22 agosto 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Il mezzo</h2>
+    <p class="lede">Un minibus per il gruppo di 21 persone, con lo stesso conducente per tutta la durata del programma.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista, 7,64 m</span>
+      <p>Aria condizionata, sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.</p>
+      <p>Con 21 ospiti a bordo restano cinque posti liberi. I 7,64 metri raggiungono i piazzali di tutte le cantine in programma, comprese le strade strette del Chianti dove un autobus gran turismo non arriva.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Distanze e tempi di percorrenza sono stime stradali, traffico escluso.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">13 settembre <span class="wd">· domenica</span></span>
+          <span class="badge">Giornata a disposizione</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">10:15</span>
+            <span class="r">Aeroporto di Firenze (FLR) <span class="to">→ Ruffino, Tenuta Poggio Casciano, Bagno a Ripoli</span></span>
+            <span class="d">28 km · 40 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">16:30</span>
+            <span class="r">Ruffino <span class="to">→ Borgo Iesolana, Bucine</span></span>
+            <span class="d">55 km · 55 min</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 10:00 – 17:30, a disposizione per tutta la visita.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">14 settembre <span class="wd">· lunedì</span></span>
+          <span class="badge">Giornata a disposizione</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">10:00</span>
+            <span class="r">Borgo Iesolana <span class="to">→ Baldetti, Loc. Pietraia, Cortona</span></span>
+            <span class="d">60 km · 1 h 00</span>
+          </div>
+          <div class="leg">
+            <span class="t">14:00</span>
+            <span class="r">Baldetti <span class="to">→ Il Borro, San Giustino Valdarno</span></span>
+            <span class="d">55 km · 1 h 00</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:30</span>
+            <span class="r">Il Borro <span class="to">→ Borgo Iesolana</span></span>
+            <span class="d">25 km · 30 min</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 10:00 – 18:00.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">15 settembre <span class="wd">· martedì</span></span>
+          <span class="badge">Serata a disposizione</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">16:00</span>
+            <span class="r">Borgo Iesolana <span class="to">→ Badia a Coltibuono, Gaiole in Chianti</span></span>
+            <span class="d">40 km · 55 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">21:00</span>
+            <span class="r">Badia a Coltibuono <span class="to">→ Borgo Iesolana</span></span>
+            <span class="d">40 km · 55 min</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 16:00 – 22:00.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">16 settembre <span class="wd">· mercoledì</span></span>
+          <span class="badge">Giornata lunga · 250 km</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">10:15</span>
+            <span class="r">Borgo Iesolana <span class="to">→ Tenuta di Montefoscoli, Palaia</span></span>
+            <span class="d">135 km · 1 h 50</span>
+          </div>
+          <div class="leg">
+            <span class="t">15:00</span>
+            <span class="r">Tenuta di Montefoscoli <span class="to">→ Badia di Morrona, Terricciola</span></span>
+            <span class="d">12 km · 20 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:00</span>
+            <span class="r">Badia di Morrona <span class="to">→ hotel a Forte dei Marmi</span></span>
+            <span class="d">90 km · 1 h 20</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 10:00 – 18:30.</div>
+      </article>
+
+      <article class="day released">
+        <div class="day-head">
+          <span class="day-date">17 settembre <span class="wd">· giovedì</span></span>
+          <span class="badge">Nessun servizio · nessun addebito</span>
+        </div>
+        <p>Il mezzo rientra alla base e non viene tenuto in stand-by. Su richiesta può restare a disposizione in Versilia: mezza giornata € 450,00 + IVA, giornata intera € 700,00 + IVA.</p>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">18 settembre <span class="wd">· venerdì</span></span>
+          <span class="badge">Trasferimento</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">12:30</span>
+            <span class="r">Hotel a Forte dei Marmi <span class="to">→ Aeroporto di Firenze (FLR)</span></span>
+            <span class="d">110 km · 1 h 20</span>
+          </div>
+        </div>
+        <div class="engaged">Arrivo alle partenze verso le 13:50.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Servizio</th>
+            <th scope="col" class="num">Importo</th>
+            <th scope="col" class="num">IVA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Dom 13 set</span>Aeroporto di Firenze → Ruffino → Borgo Iesolana</td>
+            <td class="num">€ 750,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Lun 14 set</span>Giornata a disposizione: Baldetti, Il Borro, rientro</td>
+            <td class="num">€ 780,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Mar 15 set</span>Serata a disposizione: Badia a Coltibuono, rientro</td>
+            <td class="num">€ 520,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Mer 16 set</span>Borgo Iesolana → Montefoscoli → Badia di Morrona → Forte dei Marmi</td>
+            <td class="num">€ 950,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Ven 18 set</span>Forte dei Marmi → aeroporto di Firenze</td>
+            <td class="num">€ 650,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Vitto e alloggio del conducente, 3 notti, organizzato da noi</td>
+            <td class="num">€ 420,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr class="tot">
+            <td>Totale, al netto di IVA</td>
+            <td class="num">€ 4.070,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Totale da corrispondere, IVA 10% inclusa
+        <small>circa € 213,00 a persona per l'intero programma</small>
+      </span>
+      <span class="fig">€ 4.477,00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Acconto 30% alla conferma</td>
+            <td class="num"><strong>€ 1.350,00</strong></td>
+            <td class="num vat">IVA inclusa</td>
+          </tr>
+          <tr>
+            <td>Saldo, entro 5 giorni dal servizio</td>
+            <td class="num"><strong>€ 3.127,00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Mezzo e conducente, carburante, pedaggi autostradali, parcheggi, assicurazione completa, movimentazione bagagli, monitoraggio del volo del 13 settembre e vitto e alloggio del conducente per l'intero periodo, che organizziamo noi.</li>
+      <li><strong>Nessun altro onere di accesso.</strong> L'aeroporto di Firenze non comporta alcun onere e nessuna delle cantine in programma si trova in zona a traffico limitato.</li>
+      <li><strong>Ritardi del volo.</strong> Il 13 settembre l'autista attende senza costi aggiuntivi fino a 90 minuti dall'orario di atterraggio effettivo.</li>
+      <li><strong>Non incluso.</strong> Ingressi, degustazioni, pasti, guide e mance in cantina. Attesa oltre gli orari indicati, € 50,00 all'ora. Soste aggiuntive o modifiche all'itinerario, quotate su richiesta. Rientro alla struttura dopo le 02:00, € 250,00. L'eventuale ingresso di un bus turistico nel centro di Firenze, che comporterebbe un permesso a parte.</li>
+      <li><strong>Disponibilità e cancellazione.</strong> Cancellazione gratuita oltre 60 giorni prima del servizio; da 60 a 30 giorni viene trattenuto l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%. Mancando oggi 36 giorni al primo servizio, la prenotazione ricade nella fascia da 60 a 30 giorni, e dal 14 agosto passerà in quella da 30 a 10.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Interno — non fa parte del preventivo inviato</div>
+    <h2>Come sono stati costruiti i prezzi</h2>
+
+    <p>Base di riferimento: i preventivi Le Filigare (GM-2026-0821-LF) e Corte Francigena (GM-2026-0819-CF), riportati a un solo mezzo.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — trasferimento FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500,00</td></tr>
+          <tr><td>Le Filigare — giornata a disposizione Siena, ~80 km, 5 h</td><td class="num">€ 809,00</td></tr>
+          <tr><td>Corte Francigena — FCO → Montalcino, 208 km</td><td class="num">€ 1.300,00</td></tr>
+          <tr><td>Corte Francigena — Montalcino → Roma → FCO, 211 km + 2 h in città</td><td class="num">€ 1.650,00</td></tr>
+          <tr><td>Corte Francigena — giornata a disposizione, corto raggio</td><td class="num">€ 550,00</td></tr>
+          <tr><td>Corte Francigena — serata a disposizione, 3 km</td><td class="num">€ 400,00</td></tr>
+          <tr><td>Corte Francigena — vitto e alloggio conducenti, a notte</td><td class="num">€ 137,50</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Le tre notti del conducente</h3>
+    <p>Servono davvero. Bucine dista circa 120 km dalla base e il rientro giornaliero porterebbe la giornata del conducente oltre le 12 ore. Il 16 il servizio finisce a Forte dei Marmi, a ~55 km dalla base: il conducente rientra e il 17 non si addebita nulla.</p>
+
+    <h3>Margine</h3>
+    <p>Il preventivo è costruito sul <strong>mezzo di proprietà</strong>. Costo diretto stimato € 250-350 a giornata di servizio più € 140 a notte: il margine sui cinque servizi è buono. <strong>Se si subappalta a Francesco</strong>, il costo sale a € 600-700 al giorno e il margine si assottiglia: in quel caso vanno rivisti i prezzi al rialzo del 20-25% prima di inviare.</p>
+
+    <h3>Da chiarire prima di inviare</h3>
+    <ol>
+      <li><strong>Nome e indirizzo del cliente.</strong> La richiesta è arrivata senza mail di accompagnamento: il PDF va rigenerato con il nome giusto.</li>
+      <li><strong>Bagagli del 16 settembre.</strong> Check-out da Iesolana con tutti i bagagli, due cantine e arrivo in hotel solo la sera. È il punto più delicato del programma.</li>
+      <li><strong>Quale tenuta Ruffino.</strong> Quotata Poggio Casciano, a Bagno a Ripoli.</li>
+      <li><strong>Indirizzo dell'hotel a Forte dei Marmi</strong>, per il 16 e il 18.</li>
+      <li><strong>Orari dei due voli.</strong> Il 18 si arriva a Firenze verso le 13:50: va bene per un volo dalle 16:00 in poi. Il 13, chiarire se le 10:15 sono il ritrovo o l'atterraggio.</li>
+      <li><strong>Bloccare la disponibilità del mezzo</strong> per il 13-18 settembre.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2026-0913-BI · 8 agosto 2026</span>
+  </footer>
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Tuscany Wine Tour
+      <span class="sub">Valdarno · Chianti · Pisan Hills · Versilia</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Dates</span><span class="v">13-18 Sept 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passengers</span><span class="v">21</span></div>
+      <div class="fact"><span class="eyebrow">Services</span><span class="v">5 over 4 days</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2026-0913-BI</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">22 August 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicle</h2>
+    <p class="lede">One minibus for the group of 21, with the same driver throughout the programme.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus driver, 7.64 m</span>
+      <p>Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.</p>
+      <p>With 21 guests on board five seats stay free. At 7.64 m the minibus reaches the courtyard of every winery on the programme, including the narrow Chianti lanes a full-size coach cannot manage.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">Distances and driving times are approximate road estimates, excluding traffic.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">13 September <span class="wd">· Sunday</span></span>
+          <span class="badge">Full day at disposal</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">10:15</span>
+            <span class="r">Florence Airport (FLR) <span class="to">→ Ruffino, Tenuta Poggio Casciano, Bagno a Ripoli</span></span>
+            <span class="d">28 km · 40 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">16:30</span>
+            <span class="r">Ruffino <span class="to">→ Borgo Iesolana, Bucine</span></span>
+            <span class="d">55 km · 55 min</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 10:00 – 17:30, at your disposal throughout the visit.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">14 September <span class="wd">· Monday</span></span>
+          <span class="badge">Full day at disposal</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">10:00</span>
+            <span class="r">Borgo Iesolana <span class="to">→ Baldetti, Loc. Pietraia, Cortona</span></span>
+            <span class="d">60 km · 1 h 00</span>
+          </div>
+          <div class="leg">
+            <span class="t">14:00</span>
+            <span class="r">Baldetti <span class="to">→ Il Borro, San Giustino Valdarno</span></span>
+            <span class="d">55 km · 1 h 00</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:30</span>
+            <span class="r">Il Borro <span class="to">→ Borgo Iesolana</span></span>
+            <span class="d">25 km · 30 min</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 10:00 – 18:00.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">15 September <span class="wd">· Tuesday</span></span>
+          <span class="badge">Evening at disposal</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">16:00</span>
+            <span class="r">Borgo Iesolana <span class="to">→ Badia a Coltibuono, Gaiole in Chianti</span></span>
+            <span class="d">40 km · 55 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">21:00</span>
+            <span class="r">Badia a Coltibuono <span class="to">→ Borgo Iesolana</span></span>
+            <span class="d">40 km · 55 min</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 16:00 – 22:00.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">16 September <span class="wd">· Wednesday</span></span>
+          <span class="badge">Long day · 250 km</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">10:15</span>
+            <span class="r">Borgo Iesolana <span class="to">→ Tenuta di Montefoscoli, Palaia</span></span>
+            <span class="d">135 km · 1 h 50</span>
+          </div>
+          <div class="leg">
+            <span class="t">15:00</span>
+            <span class="r">Tenuta di Montefoscoli <span class="to">→ Badia di Morrona, Terricciola</span></span>
+            <span class="d">12 km · 20 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:00</span>
+            <span class="r">Badia di Morrona <span class="to">→ hotel in Forte dei Marmi</span></span>
+            <span class="d">90 km · 1 h 20</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 10:00 – 18:30.</div>
+      </article>
+
+      <article class="day released">
+        <div class="day-head">
+          <span class="day-date">17 September <span class="wd">· Thursday</span></span>
+          <span class="badge">No service · no charge</span>
+        </div>
+        <p>The vehicle returns to base and is not held on stand-by. On request it can stay at your disposal in Versilia: half day € 450.00 + VAT, full day € 700.00 + VAT.</p>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">18 September <span class="wd">· Friday</span></span>
+          <span class="badge">Transfer</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">12:30</span>
+            <span class="r">Hotel in Forte dei Marmi <span class="to">→ Florence Airport (FLR)</span></span>
+            <span class="d">110 km · 1 h 20</span>
+          </div>
+        </div>
+        <div class="engaged">Reaching departures around 13:50.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col" class="num">Amount</th>
+            <th scope="col" class="num">VAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Sun 13 Sep</span>Florence airport → Ruffino → Borgo Iesolana</td>
+            <td class="num">€ 750.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Mon 14 Sep</span>Full day at disposal: Baldetti, Il Borro, return</td>
+            <td class="num">€ 780.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Tue 15 Sep</span>Evening at disposal: Badia a Coltibuono, return</td>
+            <td class="num">€ 520.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Wed 16 Sep</span>Borgo Iesolana → Montefoscoli → Badia di Morrona → Forte dei Marmi</td>
+            <td class="num">€ 950.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Fri 18 Sep</span>Forte dei Marmi → Florence airport</td>
+            <td class="num">€ 650.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Driver's board and lodging, 3 nights, arranged by us</td>
+            <td class="num">€ 420.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr class="tot">
+            <td>Total, excluding VAT</td>
+            <td class="num">€ 4,070.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Total payable, VAT 10% included
+        <small>about € 213.00 per person for the complete programme</small>
+      </span>
+      <span class="fig">€ 4,477.00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Deposit 30% on confirmation</td>
+            <td class="num"><strong>€ 1,350.00</strong></td>
+            <td class="num vat">VAT included</td>
+          </tr>
+          <tr>
+            <td>Balance, within 5 days of the service</td>
+            <td class="num"><strong>€ 3,127.00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Vehicle and driver, fuel, motorway tolls, parking, full insurance, luggage handling, flight monitoring on 13 September, and the driver's board and lodging for the whole period, which we arrange ourselves.</li>
+      <li><strong>No other access charges.</strong> Florence Airport carries no fee and none of the wineries on the programme sits inside a restricted traffic zone.</li>
+      <li><strong>Flight delays.</strong> On 13 September the driver waits at no extra cost for up to 90 minutes from the actual landing time.</li>
+      <li><strong>Not included.</strong> Winery entrance fees, tastings, meals, guides and gratuities. Waiting beyond the times set out here, € 50.00 per hour. Additional stops or changes to the itinerary, quoted on request. Return to the property after 02:00, € 250.00. Any entry of a tourist coach into the centre of Florence, which would require a separate permit.</li>
+      <li><strong>Availability and cancellation.</strong> Cancellation is free of charge more than 60 days before the service; from 60 to 30 days the deposit is retained; from 30 to 10 days 50%; in the last 10 days 100%. With 36 days to the first service today, the booking falls in the 60-to-30-day band, and from 14 August it moves into the 30-to-10 band.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal — not part of the quotation sent to the client</div>
+    <h2>How the prices were built</h2>
+
+    <p>Benchmarked against the Le Filigare (GM-2026-0821-LF) and Corte Francigena (GM-2026-0819-CF) quotations, reduced to a single vehicle.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — transfer FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500.00</td></tr>
+          <tr><td>Le Filigare — day at disposal in Siena, ~80 km, 5 h</td><td class="num">€ 809.00</td></tr>
+          <tr><td>Corte Francigena — FCO → Montalcino, 208 km</td><td class="num">€ 1,300.00</td></tr>
+          <tr><td>Corte Francigena — Montalcino → Rome → FCO, 211 km + 2 h in the city</td><td class="num">€ 1,650.00</td></tr>
+          <tr><td>Corte Francigena — day at disposal, short range</td><td class="num">€ 550.00</td></tr>
+          <tr><td>Corte Francigena — evening at disposal, 3 km</td><td class="num">€ 400.00</td></tr>
+          <tr><td>Corte Francigena — drivers' board and lodging, per night</td><td class="num">€ 137.50</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>The driver's three nights</h3>
+    <p>They are genuinely needed. Bucine is about 120 km from base, and a daily return would push the driver's day past 12 hours. On the 16th the service ends in Forte dei Marmi, ~55 km from base, so the driver goes home and the 17th costs nothing.</p>
+
+    <h3>Margin</h3>
+    <p>The quotation is built on the <strong>owned vehicle</strong>. Estimated direct cost € 250-350 per service day plus € 140 per night: the margin across the five services is healthy. <strong>If the tour is subcontracted to Francesco</strong>, cost rises to € 600-700 per day and the margin thins out — in that case raise the prices by 20-25% before sending.</p>
+
+    <h3>To settle before sending</h3>
+    <ol>
+      <li><strong>Client name and address.</strong> The request arrived without a covering email, so the PDF has to be regenerated with the right name.</li>
+      <li><strong>Luggage on 16 September.</strong> Check-out from Iesolana with all the luggage, two wineries, and the hotel only in the evening. The most delicate point of the programme.</li>
+      <li><strong>Which Ruffino estate.</strong> Quoted as Poggio Casciano, at Bagno a Ripoli.</li>
+      <li><strong>Hotel address in Forte dei Marmi</strong>, for the 16th and the 18th.</li>
+      <li><strong>Both flight times.</strong> On the 18th you reach Florence around 13:50: fine for a flight from 16:00 onwards. On the 13th, clarify whether 10:15 is the meeting or the landing time.</li>
+      <li><strong>Block the vehicle</strong> for 13-18 September.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2026-0913-BI · 8 August 2026</span>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>

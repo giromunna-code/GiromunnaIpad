@@ -414,9 +414,6 @@ def build(lang, cliente, out):
     F.append(t)
 
     # --- prezzo (intestazione e tabella non si spezzano fra due pagine)
-    price_block = []
-    F.append(KeepTogether(price_block))
-    price_block.append(Paragraph(L["h_prezzo"], S["h2"]))
     pcols = [usable - 30 * mm - 20 * mm, 30 * mm, 20 * mm]
     pdata = []
     for label, amount in L["price_rows"]:
@@ -438,9 +435,14 @@ def build(lang, cliente, out):
         ("TOPPADDING", (0, 0), (-1, -1), 6),
         ("BOTTOMPADDING", (0, 0), (-1, -1), 6),
     ]))
-    price_block.append(pt)
-    price_block.append(Paragraph(L["grand"], S["grand"]))
-    price_block.append(Paragraph(L["perhead"], S["small"]))
+    # la lista va costruita prima: KeepTogether non tiene il riferimento
+    # a una lista vuota passata alla costruzione.
+    F.append(KeepTogether([
+        Paragraph(L["h_prezzo"], S["h2"]),
+        pt,
+        Paragraph(L["grand"], S["grand"]),
+        Paragraph(L["perhead"], S["small"]),
+    ]))
     F.append(Spacer(1, 4))
     F.append(Paragraph("<b>%s</b> %s" % (L["h_incluso"], L["incluso"]), S["small"]))
     F.append(Paragraph("<b>%s</b> %s" % (L["h_nonincluso"], L["nonincluso"]), S["small"]))
