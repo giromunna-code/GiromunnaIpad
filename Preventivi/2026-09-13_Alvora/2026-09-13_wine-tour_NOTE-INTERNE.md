@@ -6,6 +6,9 @@ File generati:
 - `GiroMunna_Preventivo_Tuscany_Wine_Tour_13-18_settembre_2026_IT.pdf`
 - `GiroMunna_Preventivo_Tuscany_Wine_Tour_13-18_settembre_2026_EN.pdf`
 - `genera_preventivo_tuscany_wine_tour.py` — rigenera entrambi i PDF
+- `preventivo_wine_tour_13-18_settembre_2026.html` — la pagina web bilingue
+
+Tutto dentro `Preventivi/2026-09-13_Alvora/`.
 
 Il cliente (Alvora) è già il valore predefinito dello script. Per rigenerare i due PDF:
 

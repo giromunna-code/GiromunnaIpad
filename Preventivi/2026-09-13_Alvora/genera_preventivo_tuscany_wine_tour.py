@@ -30,7 +30,18 @@ RULE = colors.HexColor("#E4E1D8")
 CREAM = colors.HexColor("#F5F3EE")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-LOGO = os.path.join(HERE, "assets", "giromunna_logo.png")
+
+
+def _trova_logo():
+    """Il logo sta in Preventivi/assets/, condiviso da tutti i preventivi."""
+    for base in (HERE, os.path.dirname(HERE)):
+        p = os.path.join(base, "assets", "giromunna_logo.png")
+        if os.path.exists(p):
+            return p
+    return os.path.join(HERE, "assets", "giromunna_logo.png")
+
+
+LOGO = _trova_logo()
 
 MARGIN = 20 * mm
 TOP = 30 * mm

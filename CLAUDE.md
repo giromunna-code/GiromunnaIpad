@@ -89,9 +89,18 @@ voli troppo stretti — e propongono la soluzione. Vanno scritte, non riempite.
 
 ## Struttura del repository
 
-- `Preventivi/` — **tutti i preventivi vanno qui**, PDF, pagine web, script di generazione
-  e note interne. Non se ne creano altre cartelle: ogni nuovo lavoro finisce in questa.
-- `Preventivi/assets/giromunna_logo.png` — logo per i PDF.
+- `Preventivi/` — **tutti i preventivi vanno qui**. Non si creano altre cartelle allo stesso
+  livello: ogni nuovo lavoro finisce in questa.
+- `Preventivi/AAAA-MM-GG_Cliente/` — **una cartella per ogni preventivo**, intestata alla
+  data del primo servizio e al nome del cliente (per esempio `2026-09-13_Alvora`). Dentro ci
+  va tutto il materiale di quel lavoro: i due PDF, la pagina web, lo script di generazione
+  e le note interne. Niente file sparsi fuori dalle cartelle.
+- `Preventivi/assets/giromunna_logo.png` — logo per i PDF, condiviso da tutti i preventivi.
+  Lo script lo cerca prima nella propria cartella e poi in quella superiore, quindi il logo
+  non va duplicato.
+
+I file si consegnano sempre dentro la cartella del preventivo. Gli allegati in chat sono
+una comodità in più, non il posto dove il lavoro va a finire.
 
 Lo script di un preventivo accetta `--lingua it|en` e `--cliente "Nome"` e produce il PDF
 corrispondente. Va eseguito per entrambe le lingue.
