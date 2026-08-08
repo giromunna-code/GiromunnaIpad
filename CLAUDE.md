@@ -74,6 +74,19 @@ Le *Note* sono la parte che distingue questi preventivi: non ripetono le condizi
 segnalano al cliente i problemi veri del programma — bagagli, strade strette, orari dei
 voli troppo stretti — e propongono la soluzione. Vanno scritte, non riempite.
 
+### Come si costruisce il prezzo
+
+Il riferimento per un lavoro con **un mezzo solo** è il preventivo **Le Filigare**
+(GM-2026-0821-LF): trasferimento di ~50 km € 500 netti, giornata a disposizione di ~80 km e
+5 ore € 809 netti. Da lì si sale in proporzione alle ore e ai chilometri.
+
+**Non usare mai come base i prezzi del Corte Francigena divisi per due.** Quel preventivo ha
+due mezzi e i suoi importi per mezzo sono già scontati per volume: applicarli a un lavoro
+singolo porta il prezzo sotto mercato. Servono solo come riferimento per lavori a due mezzi.
+
+Nel dubbio il prezzo va tenuto **alto**: Girolamo lo abbassa se serve, ma un preventivo
+sotto mercato svaluta il servizio e non si recupera.
+
 ### Condizioni ricorrenti
 
 - IVA sui servizi di trasporto passeggeri: **10%**.
