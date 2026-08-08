@@ -31,6 +31,11 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
 - **Mercedes-Benz Tourengo** — 28 posti passeggeri più l'autista, 7,86 m. Aria condizionata,
   sedili reclinabili, vano bagagli.
 
+**Prevale sempre il Beluga.** È il mezzo da assegnare come prima scelta in ogni preventivo,
+e quello da citare quando si descrive il servizio. Il Tourengo entra solo quando il Beluga
+non basta o non è disponibile: gruppi oltre i 26 passeggeri, servizi che richiedono un
+secondo mezzo, date già impegnate.
+
 Entrambi stanno sotto gli 8 metri e raggiungono strade e piazzali dove un autobus gran
 turismo non arriva. È un argomento di vendita, non un dettaglio tecnico.
 
