@@ -26,17 +26,21 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
 
 ## Mezzi
 
+GiroMunna ha **un solo mezzo di proprietà**:
+
 - **Mercedes-Benz Beluga** — 26 posti passeggeri più l'autista, 7,64 m. Aria condizionata,
   sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.
-- **Mercedes-Benz Tourengo** — 28 posti passeggeri più l'autista, 7,86 m. Aria condizionata,
-  sedili reclinabili, vano bagagli.
 
-**Prevale sempre il Beluga.** È il mezzo di riferimento in ogni preventivo: si quota e si
-descrive sempre quello, senza eccezioni decise a tavolino.
+**Il riferimento è sempre il Beluga.** Si quota e si descrive sempre quello, in ogni
+preventivo, senza eccezioni decise a tavolino.
 
-Il **Tourengo** serve solo come secondo minibus, e **la decisione è di Girolamo**: va usato
-soltanto quando lo dice lui. Non va aggiunto di iniziativa, nemmeno quando il gruppo supera
-i 26 passeggeri e sembra ovvio che serva un altro mezzo.
+Il **Mercedes-Benz Tourengo** (28 posti più l'autista, 7,86 m) **non è di GiroMunna: è del
+fratello di Girolamo**, Francesco Munna. Entra in gioco solo come secondo minibus, e
+**la decisione è di Girolamo**: va inserito soltanto quando lo dice lui. Non va aggiunto di
+iniziativa, nemmeno quando il gruppo supera i 26 passeggeri e sembra ovvio che serva un
+altro mezzo. Al cliente i due minibus si presentano insieme, come nel preventivo Corte
+Francigena, ma il secondo ha un costo: va concordato con Francesco prima di metterlo a
+preventivo.
 
 Quando il gruppo non sta sul Beluga, si quota comunque il Beluga per un mezzo e si segnala
 la cosa: al cliente nel preventivo, come punto da chiarire, e a Girolamo, perché decida se
@@ -44,12 +48,12 @@ mettere il secondo minibus. È quello che fa il preventivo Le Filigare, dove a f
 posti richiesti si spiega la capienza reale, si chiede il numero esatto di passeggeri e si
 precisa che il prezzo è riferito a un mezzo.
 
-Entrambi stanno sotto gli 8 metri e raggiungono strade e piazzali dove un autobus gran
-turismo non arriva. È un argomento di vendita, non un dettaglio tecnico.
+Il Beluga sta sotto gli 8 metri e raggiunge strade e piazzali dove un autobus gran turismo
+non arriva. È un argomento di vendita, non un dettaglio tecnico.
 
-Per i gruppi che non stanno sui mezzi di proprietà si lavora con **Tuscany T.O. & Munna Bus
-Operator** (Francesco Munna, Montecatini Terme, `infomunnabus@gmail.com`), che fornisce
-tariffe all'ingrosso. Le sue tariffe **non** sono i prezzi di vendita: vanno ricaricate.
+Per i gruppi che non stanno sul Beluga si lavora con **Tuscany T.O. & Munna Bus Operator**
+(Francesco Munna, Montecatini Terme, `infomunnabus@gmail.com`), che fornisce mezzi e tariffe
+all'ingrosso. Le sue tariffe **non** sono i prezzi di vendita: vanno ricaricate.
 
 ## Preventivi
 
