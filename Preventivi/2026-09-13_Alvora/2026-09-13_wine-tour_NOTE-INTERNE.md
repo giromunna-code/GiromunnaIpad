@@ -30,11 +30,14 @@ Con `--cliente "Altro Nome"` si cambia l'intestatario.
 | Mar 15 set | Serata a disposizione: Badia a Coltibuono, rientro | € 520,00 |
 | Mer 16 set | Borgo Iesolana → Montefoscoli → Badia di Morrona → Forte dei Marmi | € 950,00 |
 | Ven 18 set | Forte dei Marmi → aeroporto di Firenze | € 650,00 |
-| — | Vitto e alloggio conducente, 3 notti | € 420,00 |
+| — | Vitto e alloggio conducente, 3 notti | a carico del cliente |
 
-**Totale netto € 4.070,00 · IVA 10% € 407,00 · Totale € 4.477,00** (≈ € 213,00 a persona)
+**Totale netto € 3.650,00 · IVA 10% € 365,00 · Totale € 4.015,00** (≈ € 191,00 a persona)
 
-Acconto 30% € 1.350,00 — saldo € 3.127,00.
+Acconto 30% € 1.200,00 — saldo € 2.815,00.
+
+Il vitto e alloggio del conducente per le notti del 13, 14 e 15 settembre resta a carico di
+Alvora, che prenota e paga direttamente. A preventivo è indicato ma non conteggiato.
 
 ## Come sono stati costruiti i prezzi
 
@@ -51,16 +54,17 @@ Base di riferimento: i preventivi Le Filigare (GM-2026-0821-LF) e Corte Francige
 | Corte Francigena — serata a disposizione, 3 km | € 400,00 netti/mezzo |
 | Corte Francigena — vitto e alloggio conducenti | € 137,50 a notte |
 
-Il vitto e alloggio è stato arrotondato a € 140,00 × 3 notti. Le notti del 13, 14 e 15
-servono davvero: Bucine dista circa 120 km dalla base e il rientro giornaliero porterebbe
-la giornata del conducente oltre le 12 ore. Il 16 il servizio finisce a Forte dei Marmi,
-a ~55 km dalla base, quindi il conducente rientra e il 17 non si addebita nulla.
+Le notti del 13, 14 e 15 servono davvero: Bucine dista circa 120 km dalla base e il rientro
+giornaliero porterebbe la giornata del conducente oltre le 12 ore. Il 16 il servizio finisce
+a Forte dei Marmi, a ~55 km dalla base, quindi il conducente rientra e il 17 non si addebita
+nulla. Il riferimento di € 137,50 a notte del Corte Francigena non entra più nel prezzo:
+serve solo a capire quanto vale la voce che il cliente si accolla.
 
 ## Margine
 
 Il preventivo è costruito sul **mezzo di proprietà** (Beluga). Costo diretto stimato
-€ 250-350 a giornata di servizio più € 140 a notte di alloggio: il margine sui cinque
-servizi è buono.
+€ 250-350 a giornata di servizio, senza l'alloggio del conducente che paga il cliente:
+il margine sui cinque servizi è buono.
 
 **Se invece si subappalta a Francesco**, il costo si colloca sui € 600-700 al giorno e il
 margine si assottiglia parecchio. In quel caso conviene rivedere i prezzi al rialzo

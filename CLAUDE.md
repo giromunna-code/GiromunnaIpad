@@ -80,7 +80,12 @@ voli troppo stretti — e propongono la soluzione. Vanno scritte, non riempite.
 - Attesa oltre gli orari concordati: **€ 50,00 all'ora per mezzo**.
 - Rientro dopo le 02:00: **€ 250,00 per mezzo**.
 - Attesa gratuita fino a **90 minuti** dall'atterraggio effettivo, per quanto il volo ritardi.
-- Vitto e alloggio del conducente, quando serve: circa **€ 140,00 a notte**.
+- **Vitto e alloggio del conducente: sempre a carico del cliente.** Non si mettono mai a
+  preventivo come importo e non li organizza GiroMunna. Vanno però **sempre indicati**: una
+  riga nella tabella del prezzo con la dicitura *a carico vostro* al posto della cifra, la
+  voce fra il *non incluso*, e una nota che spiega quante notti servono, perché servono e
+  che prenotazione e pagamento li cura il cliente. Il suggerimento utile da dare è di
+  sistemare il conducente nella stessa struttura del gruppo.
 - Cancellazione: gratuita oltre 60 giorni; da 60 a 30 giorni si trattiene l'acconto;
   da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%.
 - L'aeroporto di Firenze non comporta oneri di accesso; quello di Pisa ha il parcheggio bus

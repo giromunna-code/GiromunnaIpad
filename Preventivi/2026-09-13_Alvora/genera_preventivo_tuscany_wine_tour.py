@@ -105,43 +105,50 @@ IT = dict(
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Dom 13 set — aeroporto di Firenze → Ruffino → Borgo Iesolana", "€ 750,00"),
-        ("Lun 14 set — giornata a disposizione: Baldetti, Il Borro, rientro", "€ 780,00"),
-        ("Mar 15 set — serata a disposizione: Badia a Coltibuono, rientro", "€ 520,00"),
-        ("Mer 16 set — Borgo Iesolana → Montefoscoli → Badia di Morrona → Forte dei Marmi", "€ 950,00"),
-        ("Ven 18 set — Forte dei Marmi → aeroporto di Firenze", "€ 650,00"),
-        ("Vitto e alloggio del conducente, 3 notti, organizzato da noi", "€ 420,00"),
+        ("Dom 13 set — aeroporto di Firenze → Ruffino → Borgo Iesolana", "€ 750,00", "+ IVA 10%"),
+        ("Lun 14 set — giornata a disposizione: Baldetti, Il Borro, rientro", "€ 780,00", "+ IVA 10%"),
+        ("Mar 15 set — serata a disposizione: Badia a Coltibuono, rientro", "€ 520,00", "+ IVA 10%"),
+        ("Mer 16 set — Borgo Iesolana → Montefoscoli → Badia di Morrona → Forte dei Marmi", "€ 950,00", "+ IVA 10%"),
+        ("Ven 18 set — Forte dei Marmi → aeroporto di Firenze", "€ 650,00", "+ IVA 10%"),
+        ("Vitto e alloggio del conducente, 3 notti (13, 14 e 15 settembre)",
+         "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 4.070,00",
+    price_total="€ 3.650,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 4.477,00.",
-    perhead="Sono circa € 213,00 a persona per l'intero programma.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 4.015,00.",
+    perhead="Sono circa € 191,00 a persona per l'intero programma.",
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente, carburante, pedaggi autostradali, parcheggi, assicurazione completa, movimentazione "
-        "bagagli, monitoraggio del volo del 13 settembre e vitto e alloggio del conducente per l'intero periodo, "
-        "che organizziamo noi. Non sono dovuti altri oneri di accesso: l'aeroporto di Firenze non comporta alcun "
-        "onere e nessuna delle cantine in programma si trova in zona a traffico limitato. Il 13 settembre l'autista "
-        "attende senza costi aggiuntivi fino a 90 minuti dall'orario di atterraggio effettivo, per quanto il volo "
-        "arrivi in ritardo."
+        "bagagli e monitoraggio del volo del 13 settembre. Non sono dovuti altri oneri di accesso: l'aeroporto di "
+        "Firenze non comporta alcun onere e nessuna delle cantine in programma si trova in zona a traffico "
+        "limitato. Il 13 settembre l'autista attende senza costi aggiuntivi fino a 90 minuti dall'orario di "
+        "atterraggio effettivo, per quanto il volo arrivi in ritardo."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
-        "Ingressi, degustazioni, pasti, guide e mance in cantina. Attesa oltre gli orari qui indicati, € 50,00 "
-        "all'ora per mezzo. Soste aggiuntive o modifiche all'itinerario, quotate su richiesta. Rientro alla struttura "
-        "dopo le 02:00, € 250,00. L'eventuale ingresso di un bus turistico nel centro di Firenze, che comporterebbe "
-        "un permesso a parte."
+        "Vitto e alloggio del conducente per le notti del 13, 14 e 15 settembre, che restano a vostro carico: la "
+        "prenotazione e il pagamento li curate voi direttamente. Ingressi, degustazioni, pasti, guide e mance in "
+        "cantina. Attesa oltre gli orari qui indicati, € 50,00 all'ora per mezzo. Soste aggiuntive o modifiche "
+        "all'itinerario, quotate su richiesta. Rientro alla struttura dopo le 02:00, € 250,00. L'eventuale ingresso "
+        "di un bus turistico nel centro di Firenze, che comporterebbe un permesso a parte."
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 1.350,00", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 3.127,00", ""),
+        ("Acconto 30% alla conferma", "€ 1.200,00", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 2.815,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
+        ("<b>Vitto e alloggio del conducente.</b> Il programma richiede che il conducente pernotti in zona nelle "
+         "notti del 13, 14 e 15 settembre: Borgo Iesolana dista circa 120 km dalla nostra base e il rientro "
+         "giornaliero porterebbe la giornata di guida oltre i limiti consentiti. Le tre notti sono a vostro carico "
+         "e le prenotate e pagate voi direttamente: basta una camera singola vicino alla struttura, con la cena. "
+         "Molti dei nostri clienti sistemano il conducente nella stessa struttura del gruppo, che è la soluzione "
+         "più comoda per tutti. Fateci sapere dove alloggerà prima della partenza."),
         ("<b>Bagagli del 16 settembre.</b> È il punto da guardare con più attenzione: si lascia Borgo Iesolana "
          "con tutti i bagagli a bordo, si visitano due cantine e si arriva in hotel a Forte dei Marmi solo la sera. "
          "Il vano del Beluga porta senza problemi una ventina di valigie normali per 21 ospiti, ma segnalateci in "
@@ -234,42 +241,49 @@ EN = dict(
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Sun 13 Sep — Florence airport → Ruffino → Borgo Iesolana", "€ 750.00"),
-        ("Mon 14 Sep — full day at disposal: Baldetti, Il Borro, return", "€ 780.00"),
-        ("Tue 15 Sep — evening at disposal: Badia a Coltibuono, return", "€ 520.00"),
-        ("Wed 16 Sep — Borgo Iesolana → Montefoscoli → Badia di Morrona → Forte dei Marmi", "€ 950.00"),
-        ("Fri 18 Sep — Forte dei Marmi → Florence airport", "€ 650.00"),
-        ("Driver's board and lodging, 3 nights, arranged by us", "€ 420.00"),
+        ("Sun 13 Sep — Florence airport → Ruffino → Borgo Iesolana", "€ 750.00", "+ VAT 10%"),
+        ("Mon 14 Sep — full day at disposal: Baldetti, Il Borro, return", "€ 780.00", "+ VAT 10%"),
+        ("Tue 15 Sep — evening at disposal: Badia a Coltibuono, return", "€ 520.00", "+ VAT 10%"),
+        ("Wed 16 Sep — Borgo Iesolana → Montefoscoli → Badia di Morrona → Forte dei Marmi", "€ 950.00", "+ VAT 10%"),
+        ("Fri 18 Sep — Forte dei Marmi → Florence airport", "€ 650.00", "+ VAT 10%"),
+        ("Driver's board and lodging, 3 nights (13, 14 and 15 September)",
+         "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 4,070.00",
+    price_total="€ 3,650.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 4,477.00.",
-    perhead="That is about € 213.00 per person for the complete programme.",
+    grand="Total payable, VAT 10% included: € 4,015.00.",
+    perhead="That is about € 191.00 per person for the complete programme.",
     h_incluso="Included.",
     incluso=(
-        "Vehicle and driver, fuel, motorway tolls, parking, full insurance, luggage handling, flight monitoring on "
-        "13 September, and the driver's board and lodging for the whole period, which we arrange ourselves. "
-        "No other access charges apply: Florence Airport carries no fee and none of the wineries on the programme "
-        "sits inside a restricted traffic zone. On 13 September the driver waits at no extra cost for up to 90 minutes "
-        "from the actual landing time, however late the flight arrives."
+        "Vehicle and driver, fuel, motorway tolls, parking, full insurance, luggage handling and flight monitoring "
+        "on 13 September. No other access charges apply: Florence Airport carries no fee and none of the wineries "
+        "on the programme sits inside a restricted traffic zone. On 13 September the driver waits at no extra cost "
+        "for up to 90 minutes from the actual landing time, however late the flight arrives."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
-        "Winery entrance fees, tastings, meals, guides and gratuities. Waiting beyond the times set out here, "
-        "€ 50.00 per hour per vehicle. Additional stops or changes to the itinerary, quoted on request. "
-        "Return to the property after 02:00, € 250.00. Any entry of a tourist coach into the centre of Florence, "
-        "which would require a separate permit."
+        "The driver's board and lodging for the nights of 13, 14 and 15 September, which remain at your charge: "
+        "you book and pay for them directly. Winery entrance fees, tastings, meals, guides and gratuities. "
+        "Waiting beyond the times set out here, € 50.00 per hour per vehicle. Additional stops or changes to the "
+        "itinerary, quoted on request. Return to the property after 02:00, € 250.00. Any entry of a tourist coach "
+        "into the centre of Florence, which would require a separate permit."
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 1,350.00", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 3,127.00", ""),
+        ("Deposit 30% on confirmation", "€ 1,200.00", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 2,815.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
+        ("<b>The driver's board and lodging.</b> The programme requires the driver to stay in the area on the nights "
+         "of 13, 14 and 15 September: Borgo Iesolana is about 120 km from our base, and a daily return would push "
+         "the driving day beyond the permitted limits. The three nights are at your charge and you book and pay for "
+         "them directly: a single room near the property, with dinner, is all that is needed. Many of our clients "
+         "put the driver up at the same property as the group, which is the easiest arrangement for everyone. "
+         "Please let us know where he will be staying before departure."),
         ("<b>Luggage on 16 September.</b> This is the point worth the closest look: you leave Borgo Iesolana with all "
          "the luggage on board, visit two wineries, and only reach the hotel in Forte dei Marmi in the evening. "
          "The Beluga's hold takes around twenty normal suitcases for 21 guests without difficulty, but do tell us in "
@@ -427,10 +441,10 @@ def build(lang, cliente, out):
     # --- prezzo (intestazione e tabella non si spezzano fra due pagine)
     pcols = [usable - 30 * mm - 20 * mm, 30 * mm, 20 * mm]
     pdata = []
-    for label, amount in L["price_rows"]:
+    for label, amount, vat in L["price_rows"]:
         pdata.append([Paragraph(label, S["cellsm"]),
                       Paragraph(amount, S["cellsm"]),
-                      Paragraph(L["vat_note"], S["cellmut"])])
+                      Paragraph(vat, S["cellmut"])])
     pdata.append([Paragraph("<b>%s</b>" % L["price_total_label"], S["cellsm"]),
                   Paragraph("<b>%s</b>" % L["price_total"], S["cellsm"]),
                   Paragraph(L["vat_note"], S["cellmut"])])
