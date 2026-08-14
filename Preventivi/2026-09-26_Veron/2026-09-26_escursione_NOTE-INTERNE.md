@@ -65,7 +65,7 @@ fuori sede.
 ## Punti da chiarire prima di confermare
 
 1. **Indirizzo esatto di ritrovo/rientro a Firenze** — se dentro la ZTL del centro storico
-   serve il permesso bus separato (~€ 423,50, aumentato del 21% dai servizi di settembre
+   serve il permesso bus separato (~€ 421,00, aumentato del 21% dai servizi di settembre
    2026 in poi — era ~€ 350), non compreso nel prezzo. È il punto più importante da
    chiudere prima di dare conferma definitiva del prezzo.
 2. **Numero definitivo dei passeggeri** — "hasta 26" è un tetto, non un numero confermato;
