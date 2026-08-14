@@ -83,14 +83,14 @@ IT = dict(
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Ven 4 set — Aeroporto di Pisa (PSA) → Castello di San Ruffino, Lari", "€ 419,00", "+ IVA 10%"),
+        ("Ven 4 set — Aeroporto di Pisa (PSA) → Castello di San Ruffino, Lari", "€ 480,00", "+ IVA 10%"),
         ("Parcheggio bus aeroporto di Pisa", "€ 61,00", "+ IVA 10%"),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 480,00",
+    price_total="€ 541,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 528,00.",
-    perhead="Sono circa € 26,40 a persona.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 595,10.",
+    perhead="Sono circa € 29,76 a persona.",
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente, carburante, pedaggi autostradali, assicurazione completa e movimentazione "
@@ -106,8 +106,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 158,40", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 369,60", ""),
+        ("Acconto 30% alla conferma", "€ 178,53", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 416,57", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -179,14 +179,14 @@ EN = dict(
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Fri 4 Sep — Pisa Airport (PSA) → Castello di San Ruffino, Lari", "€ 419.00", "+ VAT 10%"),
+        ("Fri 4 Sep — Pisa Airport (PSA) → Castello di San Ruffino, Lari", "€ 480.00", "+ VAT 10%"),
         ("Pisa Airport bus parking", "€ 61.00", "+ VAT 10%"),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 480.00",
+    price_total="€ 541.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 528.00.",
-    perhead="That is about € 26.40 per person.",
+    grand="Total payable, VAT 10% included: € 595.10.",
+    perhead="That is about € 29.76 per person.",
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver, fuel, motorway tolls, full insurance and luggage handling. Pisa Airport "
@@ -202,8 +202,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 158.40", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 369.60", ""),
+        ("Deposit 30% on confirmation", "€ 178.53", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 416.57", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),

@@ -48,14 +48,9 @@ decisione di aggiungere un secondo mezzo (che spetta comunque a Girolamo) qui no
 Riferimento: **il preventivo Le Filigare (GM-2026-0821-LF)**, a mezzo singolo come questo:
 trasferimento di ~50 km per **€ 500,00 netti**.
 
-| Riferimento | Netto |
-|---|---|
-| Le Filigare — trasferimento FLR → San Donato in Poggio, ~50 km | € 500,00 |
-| Distanza Pisa (aeroporto) → Lari, stimata via ricerca web | ~30 km |
-| **Prezzo quotato — Pisa (PSA) → Castello di San Ruffino** | **€ 480,00** |
-
 **Non è una proporzione diretta sui km.** 500 € / 50 km = 10 €/km, che sui 30 km del percorso
-cliente darebbe circa € 300 — troppo basso. Il prezzo è stato tenuto più alto per due motivi:
+cliente darebbe circa € 300 — troppo basso. Il prezzo del trasferimento è stato tenuto più alto
+per due motivi:
 
 1. **Il chilometraggio reale del mezzo è maggiore dei 30 km fatturati.** Il Beluga parte dalla base
    di Ponte Buggianese (PT), raggiunge l'aeroporto di Pisa, fa la corsa con i passeggeri fino a
@@ -65,34 +60,31 @@ cliente darebbe circa € 300 — troppo basso. Il prezzo è stato tenuto più a
 2. **Stagione alta.** Venerdì 4 settembre, location che sembra una struttura per matrimoni: giorno
    e periodo di alta domanda.
 
-Per queste ragioni si è tenuto il prezzo vicino alla fascia alta, coerente con l'istruzione di non
-scendere sotto mercato nel dubbio.
+## Struttura finale del prezzo
 
-## Parcheggio bus aeroporto di Pisa, riga separata in tabella
-
-Su richiesta di Girolamo, il parcheggio non è più solo citato a parole nella riga "Incluso":
-ora ha una **riga propria nella tabella "Il prezzo"**, così il cliente vede esattamente cosa
-paga. Il totale netto resta € 480,00, diviso in:
+Il parcheggio bus dell'aeroporto di Pisa **si aggiunge per intero** al prezzo del trasferimento,
+non è scorporato da esso. Passaggi fatti su questa voce: prima solo nelle note interne → poi
+citata a parole nella riga "Incluso" → poi scorporata dagli stessi € 480 (419 + 61) → **ora
+aggiunta ai € 480 del trasferimento**, per un netto totale più alto:
 
 | Voce | Netto |
 |---|---|
-| Trasferimento Aeroporto di Pisa (PSA) → Castello di San Ruffino, Lari | € 419,00 |
+| Trasferimento Aeroporto di Pisa (PSA) → Castello di San Ruffino, Lari | € 480,00 |
 | Parcheggio bus aeroporto di Pisa | € 61,00 |
-| **Totale, al netto di IVA** | **€ 480,00** |
+| **Totale, al netto di IVA** | **€ 541,00** |
 
-Passaggi fatti finora su questa cifra: prima solo nelle note interne → poi citata a parole nella
-riga "Incluso" del preventivo → ora riga propria in tabella. Acconto, saldo e totale IVA inclusa
-non cambiano (il totale netto resta lo stesso, solo scomposto).
+IVA 10% su tutto il totale: **€ 54,10**. Totale IVA inclusa: **€ 595,10** (circa € 29,76 a
+persona). Acconto 30% € 178,53, saldo € 416,57.
 
 ## Margine
 
 Costruito sul mezzo di proprietà, senza pernottamento del conducente da coprire (trasferimento in
-giornata, sola andata). Tra i costi diretti da coprire c'è il **parcheggio bus dell'aeroporto di
-Pisa, circa € 61,00** — a differenza di Firenze, che non ha oneri di accesso, Pisa sì. Aggiungendo
-questo ai 70-90 km a vuoto da e per la base (carburante, usura), il costo diretto stimato per il
-servizio si aggira sui € 150-200; sui € 480,00 netti il margine resta comunque buono. **Se si
-subappalta a Francesco**, va rivalutato: il costo di un mezzo esterno per una corsa così breve
-rischia di assottigliare parecchio il margine.
+giornata, sola andata). Con il parcheggio aggiunto a parte, il margine è più pulito che nella
+versione precedente: i € 480,00 del trasferimento restano interamente a coprire il chilometraggio
+a vuoto da e per la base (stimato 70-90 km) e il resto dei costi diretti, mentre i € 61,00
+dell'aeroporto coprono esattamente quel costo, senza doverlo assorbire nel prezzo del servizio.
+**Se si subappalta a Francesco**, va rivalutato: il costo di un mezzo esterno per una corsa così
+breve rischia di assottigliare parecchio il margine sulla parte di trasferimento.
 
 ## Da chiarire prima di inviare
 
