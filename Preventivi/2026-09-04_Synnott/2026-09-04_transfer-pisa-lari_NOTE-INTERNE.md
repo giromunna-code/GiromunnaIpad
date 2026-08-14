@@ -68,12 +68,21 @@ cliente darebbe circa € 300 — troppo basso. Il prezzo è stato tenuto più a
 Per queste ragioni si è tenuto il prezzo vicino alla fascia alta, coerente con l'istruzione di non
 scendere sotto mercato nel dubbio.
 
-## Parcheggio bus aeroporto di Pisa, esplicitato nel preventivo
+## Parcheggio bus aeroporto di Pisa, riga separata in tabella
 
-Su richiesta di Girolamo, la cifra (circa € 61,00) è stata resa esplicita anche nella riga
-"Incluso" del preventivo inviato al cliente, non solo nelle note interne: risponde in modo
-concreto alla domanda del cliente su cosa sia compreso nel prezzo. Prima era scritto solo
-genericamente "parcheggio bus dell'aeroporto di Pisa" senza cifra.
+Su richiesta di Girolamo, il parcheggio non è più solo citato a parole nella riga "Incluso":
+ora ha una **riga propria nella tabella "Il prezzo"**, così il cliente vede esattamente cosa
+paga. Il totale netto resta € 480,00, diviso in:
+
+| Voce | Netto |
+|---|---|
+| Trasferimento Aeroporto di Pisa (PSA) → Castello di San Ruffino, Lari | € 419,00 |
+| Parcheggio bus aeroporto di Pisa | € 61,00 |
+| **Totale, al netto di IVA** | **€ 480,00** |
+
+Passaggi fatti finora su questa cifra: prima solo nelle note interne → poi citata a parole nella
+riga "Incluso" del preventivo → ora riga propria in tabella. Acconto, saldo e totale IVA inclusa
+non cambiano (il totale netto resta lo stesso, solo scomposto).
 
 ## Margine
 

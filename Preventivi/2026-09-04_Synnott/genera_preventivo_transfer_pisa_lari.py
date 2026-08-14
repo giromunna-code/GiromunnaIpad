@@ -83,7 +83,8 @@ IT = dict(
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Ven 4 set — Aeroporto di Pisa (PSA) → Castello di San Ruffino, Lari", "€ 480,00", "+ IVA 10%"),
+        ("Ven 4 set — Aeroporto di Pisa (PSA) → Castello di San Ruffino, Lari", "€ 419,00", "+ IVA 10%"),
+        ("Parcheggio bus aeroporto di Pisa", "€ 61,00", "+ IVA 10%"),
     ],
     price_total_label="Totale, al netto di IVA",
     price_total="€ 480,00",
@@ -93,9 +94,9 @@ IT = dict(
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente, carburante, pedaggi autostradali, assicurazione completa e movimentazione "
-        "dei bagagli. Il parcheggio bus dell'aeroporto di Pisa, circa € 61,00, è già compreso nel "
-        "prezzo. Monitoriamo il volo e l'autista attende senza costi aggiuntivi fino a 90 minuti "
-        "dall'orario di atterraggio effettivo, per quanto il volo ritardi."
+        "dei bagagli. Il parcheggio bus dell'aeroporto di Pisa è indicato in tabella qui sopra ed è "
+        "compreso nel totale. Monitoriamo il volo e l'autista attende senza costi aggiuntivi fino a 90 "
+        "minuti dall'orario di atterraggio effettivo, per quanto il volo ritardi."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
@@ -178,7 +179,8 @@ EN = dict(
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Fri 4 Sep — Pisa Airport (PSA) → Castello di San Ruffino, Lari", "€ 480.00", "+ VAT 10%"),
+        ("Fri 4 Sep — Pisa Airport (PSA) → Castello di San Ruffino, Lari", "€ 419.00", "+ VAT 10%"),
+        ("Pisa Airport bus parking", "€ 61.00", "+ VAT 10%"),
     ],
     price_total_label="Total, excluding VAT",
     price_total="€ 480.00",
@@ -188,9 +190,9 @@ EN = dict(
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver, fuel, motorway tolls, full insurance and luggage handling. Pisa Airport "
-        "bus parking, about € 61.00, is already included in the price. We monitor the flight and the "
-        "driver waits at no extra cost for up to 90 minutes from the actual landing time, however late "
-        "the flight arrives."
+        "bus parking is listed in the table above and is included in the total. We monitor the flight "
+        "and the driver waits at no extra cost for up to 90 minutes from the actual landing time, "
+        "however late the flight arrives."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
