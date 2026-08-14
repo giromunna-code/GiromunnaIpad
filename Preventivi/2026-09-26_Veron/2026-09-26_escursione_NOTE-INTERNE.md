@@ -65,8 +65,9 @@ fuori sede.
 ## Punti da chiarire prima di confermare
 
 1. **Indirizzo esatto di ritrovo/rientro a Firenze** — se dentro la ZTL del centro storico
-   serve il permesso bus separato (~€ 350), non compreso nel prezzo. È il punto più
-   importante da chiudere prima di dare conferma definitiva del prezzo.
+   serve il permesso bus separato (~€ 423,50, aumentato del 21% dai servizi di settembre
+   2026 in poi — era ~€ 350), non compreso nel prezzo. È il punto più importante da
+   chiudere prima di dare conferma definitiva del prezzo.
 2. **Numero definitivo dei passeggeri** — "hasta 26" è un tetto, non un numero confermato;
    il Beluga è già alla capienza massima con 26, quindi utile saperlo presto.
 3. Nessuna mail di richiesta di preventivo da inviare: il documento si consegna così com'è,

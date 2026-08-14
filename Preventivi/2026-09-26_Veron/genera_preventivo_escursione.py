@@ -105,7 +105,7 @@ IT = dict(
     nonincluso=(
         "Pranzo e ingressi ai monumenti (Duomo di Siena, Torri di San Gimignano, Torre di Pisa), guide "
         "turistiche e mance. L'eventuale permesso per l'accesso di un bus turistico nel centro storico di "
-        "Firenze (circa € 350), dovuto solo se il ritrovo o il rientro cadono dentro la ZTL: lo confermiamo "
+        "Firenze (circa € 423,50), dovuto solo se il ritrovo o il rientro cadono dentro la ZTL: lo confermiamo "
         "appena sappiamo l'indirizzo esatto. Attesa oltre gli orari qui indicati, € 50,00 all'ora per mezzo. "
         "Soste aggiuntive o modifiche all'itinerario, quotate su richiesta. Rientro dopo le 02:00, € 250,00."
     ),
@@ -120,8 +120,8 @@ IT = dict(
     note=[
         ("<b>Punto di ritiro a Firenze.</b> Ci serve l'indirizzo esatto di partenza, hotel o punto di incontro: "
          "se si trova all'interno della ZTL del centro storico, l'ingresso di un bus turistico richiede un "
-         "permesso a parte, circa € 350, non compreso nel prezzo. Fuori dalla ZTL non ci sono oneri aggiuntivi. "
-         "Confermateci l'indirizzo e vi diciamo subito se il permesso serve."),
+         "permesso a parte, circa € 423,50, non compreso nel prezzo. Fuori dalla ZTL non ci sono oneri "
+         "aggiuntivi. Confermateci l'indirizzo e vi diciamo subito se il permesso serve."),
         ("<b>Numero di passeggeri.</b> Il preventivo è calcolato sul gruppo al completo, 26 persone: è la "
          "capienza massima del Beluga, senza posti liberi di margine. Se il numero definitivo fosse inferiore, "
          "il prezzo del mezzo resta invariato — è un costo a giornata, non a persona — ma vi chiediamo comunque "
@@ -206,7 +206,7 @@ EN = dict(
     nonincluso=(
         "Lunch and entrance fees (Siena Cathedral, the Towers of San Gimignano, the Leaning Tower of Pisa), "
         "guides and gratuities. Any permit required for a tourist coach to enter the historic centre of "
-        "Florence (about € 350), due only if the meeting or drop-off point falls inside the restricted traffic "
+        "Florence (about € 423.50), due only if the meeting or drop-off point falls inside the restricted traffic "
         "zone: we confirm this as soon as we know the exact address. Waiting beyond the times set out here, "
         "€ 50.00 per hour per vehicle. Additional stops or changes to the itinerary, quoted on request. Return "
         "after 02:00, € 250.00."
@@ -222,7 +222,7 @@ EN = dict(
     note=[
         ("<b>Pick-up point in Florence.</b> We need the exact departure address, hotel or meeting point: if it "
          "sits inside the historic centre's restricted traffic zone, a tourist coach entering it needs a "
-         "separate permit, about € 350, not included in the price. Outside that zone there are no extra "
+         "separate permit, about € 423.50, not included in the price. Outside that zone there are no extra "
          "charges. Confirm the address and we will tell you right away whether the permit is needed."),
         ("<b>Passenger count.</b> This quotation is calculated on the full group, 26 people: that is the "
          "Beluga's maximum capacity, with no spare seats. If the final number were lower, the vehicle price "

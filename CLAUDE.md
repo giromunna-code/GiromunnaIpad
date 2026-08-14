@@ -103,7 +103,8 @@ sotto mercato svaluta il servizio e non si recupera.
   da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%.
 - L'aeroporto di Firenze non comporta oneri di accesso; quello di Pisa ha il parcheggio bus
   (circa € 61). L'ingresso di un bus turistico nel centro di Firenze richiede un permesso a
-  parte (circa € 350). Siena ha il permesso comunale per i bus turistici (circa € 160).
+  parte: circa € 423,50 (era circa € 350, aumentato del 21% dai servizi di settembre 2026 in
+  poi). Siena ha il permesso comunale per i bus turistici (circa € 160).
 
 ## Struttura del repository
 
