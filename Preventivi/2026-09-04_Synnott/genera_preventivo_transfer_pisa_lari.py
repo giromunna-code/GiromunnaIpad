@@ -92,10 +92,10 @@ IT = dict(
     perhead="Sono circa € 26,40 a persona.",
     h_incluso="Incluso.",
     incluso=(
-        "Mezzo e conducente, carburante, pedaggi autostradali, parcheggio bus dell'aeroporto di Pisa, "
-        "assicurazione completa e movimentazione dei bagagli. Monitoriamo il volo e l'autista attende "
-        "senza costi aggiuntivi fino a 90 minuti dall'orario di atterraggio effettivo, per quanto il "
-        "volo ritardi."
+        "Mezzo e conducente, carburante, pedaggi autostradali, assicurazione completa e movimentazione "
+        "dei bagagli. Il parcheggio bus dell'aeroporto di Pisa, circa € 61,00, è già compreso nel "
+        "prezzo. Monitoriamo il volo e l'autista attende senza costi aggiuntivi fino a 90 minuti "
+        "dall'orario di atterraggio effettivo, per quanto il volo ritardi."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
@@ -187,9 +187,10 @@ EN = dict(
     perhead="That is about € 26.40 per person.",
     h_incluso="Included.",
     incluso=(
-        "Vehicle and driver, fuel, motorway tolls, Pisa Airport bus parking, full insurance and "
-        "luggage handling. We monitor the flight and the driver waits at no extra cost for up to 90 "
-        "minutes from the actual landing time, however late the flight arrives."
+        "Vehicle and driver, fuel, motorway tolls, full insurance and luggage handling. Pisa Airport "
+        "bus parking, about € 61.00, is already included in the price. We monitor the flight and the "
+        "driver waits at no extra cost for up to 90 minutes from the actual landing time, however late "
+        "the flight arrives."
     ),
     h_nonincluso="Not included.",
     nonincluso=(

@@ -68,6 +68,13 @@ cliente darebbe circa € 300 — troppo basso. Il prezzo è stato tenuto più a
 Per queste ragioni si è tenuto il prezzo vicino alla fascia alta, coerente con l'istruzione di non
 scendere sotto mercato nel dubbio.
 
+## Parcheggio bus aeroporto di Pisa, esplicitato nel preventivo
+
+Su richiesta di Girolamo, la cifra (circa € 61,00) è stata resa esplicita anche nella riga
+"Incluso" del preventivo inviato al cliente, non solo nelle note interne: risponde in modo
+concreto alla domanda del cliente su cosa sia compreso nel prezzo. Prima era scritto solo
+genericamente "parcheggio bus dell'aeroporto di Pisa" senza cifra.
+
 ## Margine
 
 Costruito sul mezzo di proprietà, senza pernottamento del conducente da coprire (trasferimento in
