@@ -71,9 +71,12 @@ scendere sotto mercato nel dubbio.
 ## Margine
 
 Costruito sul mezzo di proprietà, senza pernottamento del conducente da coprire (trasferimento in
-giornata, sola andata). Il margine sui € 480,00 netti resta buono anche considerando il
-chilometraggio a vuoto da e per la base. **Se si subappalta a Francesco**, va rivalutato: il costo
-di un mezzo esterno per una corsa così breve rischia di assottigliare parecchio il margine.
+giornata, sola andata). Tra i costi diretti da coprire c'è il **parcheggio bus dell'aeroporto di
+Pisa, circa € 61,00** — a differenza di Firenze, che non ha oneri di accesso, Pisa sì. Aggiungendo
+questo ai 70-90 km a vuoto da e per la base (carburante, usura), il costo diretto stimato per il
+servizio si aggira sui € 150-200; sui € 480,00 netti il margine resta comunque buono. **Se si
+subappalta a Francesco**, va rivalutato: il costo di un mezzo esterno per una corsa così breve
+rischia di assottigliare parecchio il margine.
 
 ## Da chiarire prima di inviare
 
