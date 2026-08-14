@@ -84,19 +84,21 @@ IT = dict(
     h_prezzo="Il prezzo",
     price_rows=[
         ("Ven 4 set — Aeroporto di Pisa (PSA) → Castello di San Ruffino, Lari", "€ 480,00", "+ IVA 10%"),
-        ("Parcheggio bus aeroporto di Pisa", "€ 61,00", "+ IVA 10%"),
+        ("IVA 10% sul trasferimento", "€ 48,00", ""),
+        ("Parcheggio bus aeroporto di Pisa — tassa aeroportuale, esente IVA", "€ 61,00", "esente"),
     ],
-    price_total_label="Totale, al netto di IVA",
-    price_total="€ 541,00",
-    vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 595,10.",
-    perhead="Sono circa € 29,76 a persona.",
+    price_total_label="Totale da corrispondere",
+    price_total="€ 589,00",
+    vat_note="",
+    grand="Totale da corrispondere: € 589,00, di cui € 61,00 di tassa aeroportuale esente IVA.",
+    perhead="Sono circa € 29,45 a persona.",
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente, carburante, pedaggi autostradali, assicurazione completa e movimentazione "
-        "dei bagagli. Il parcheggio bus dell'aeroporto di Pisa è indicato in tabella qui sopra ed è "
-        "compreso nel totale. Monitoriamo il volo e l'autista attende senza costi aggiuntivi fino a 90 "
-        "minuti dall'orario di atterraggio effettivo, per quanto il volo ritardi."
+        "dei bagagli. Il parcheggio bus dell'aeroporto di Pisa (tassa aeroportuale, esente IVA) è "
+        "indicato in tabella qui sopra ed è compreso nel totale. Monitoriamo il volo e l'autista "
+        "attende senza costi aggiuntivi fino a 90 minuti dall'orario di atterraggio effettivo, per "
+        "quanto il volo ritardi."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
@@ -106,8 +108,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 178,53", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 416,57", ""),
+        ("Acconto 30% alla conferma", "€ 176,70", ""),
+        ("Saldo, entro 5 giorni dal servizio", "€ 412,30", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -180,19 +182,20 @@ EN = dict(
     h_prezzo="The price",
     price_rows=[
         ("Fri 4 Sep — Pisa Airport (PSA) → Castello di San Ruffino, Lari", "€ 480.00", "+ VAT 10%"),
-        ("Pisa Airport bus parking", "€ 61.00", "+ VAT 10%"),
+        ("VAT 10% on the transfer", "€ 48.00", ""),
+        ("Pisa Airport bus parking — airport tax, VAT exempt", "€ 61.00", "exempt"),
     ],
-    price_total_label="Total, excluding VAT",
-    price_total="€ 541.00",
-    vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 595.10.",
-    perhead="That is about € 29.76 per person.",
+    price_total_label="Total payable",
+    price_total="€ 589.00",
+    vat_note="",
+    grand="Total payable: € 589.00, of which € 61.00 is airport tax, VAT exempt.",
+    perhead="That is about € 29.45 per person.",
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver, fuel, motorway tolls, full insurance and luggage handling. Pisa Airport "
-        "bus parking is listed in the table above and is included in the total. We monitor the flight "
-        "and the driver waits at no extra cost for up to 90 minutes from the actual landing time, "
-        "however late the flight arrives."
+        "bus parking (airport tax, VAT exempt) is listed in the table above and is included in the "
+        "total. We monitor the flight and the driver waits at no extra cost for up to 90 minutes from "
+        "the actual landing time, however late the flight arrives."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
@@ -202,8 +205,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 178.53", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 416.57", ""),
+        ("Deposit 30% on confirmation", "€ 176.70", ""),
+        ("Balance, within 5 days of the service", "€ 412.30", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),

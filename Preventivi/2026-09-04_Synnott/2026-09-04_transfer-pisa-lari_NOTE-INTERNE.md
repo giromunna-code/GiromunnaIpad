@@ -62,29 +62,31 @@ per due motivi:
 
 ## Struttura finale del prezzo
 
-Il parcheggio bus dell'aeroporto di Pisa **si aggiunge per intero** al prezzo del trasferimento,
-non è scorporato da esso. Passaggi fatti su questa voce: prima solo nelle note interne → poi
-citata a parole nella riga "Incluso" → poi scorporata dagli stessi € 480 (419 + 61) → **ora
-aggiunta ai € 480 del trasferimento**, per un netto totale più alto:
+Il parcheggio bus dell'aeroporto di Pisa è una **tassa, esente IVA**: si somma per intero al
+netto+IVA del trasferimento, senza applicarci sopra un'altra IVA. Passaggi fatti su questa voce:
+prima solo nelle note interne → poi citata a parole nella riga "Incluso" → poi scorporata dagli
+stessi € 480 (419 + 61, con IVA 10% su tutto per errore) → **ora riga a sé, esente IVA, aggiunta
+al trasferimento con IVA già calcolata**:
 
-| Voce | Netto |
+| Voce | Importo |
 |---|---|
-| Trasferimento Aeroporto di Pisa (PSA) → Castello di San Ruffino, Lari | € 480,00 |
-| Parcheggio bus aeroporto di Pisa | € 61,00 |
-| **Totale, al netto di IVA** | **€ 541,00** |
+| Trasferimento Aeroporto di Pisa (PSA) → Castello di San Ruffino, Lari, netto | € 480,00 |
+| IVA 10% sul trasferimento | € 48,00 |
+| Parcheggio bus aeroporto di Pisa — tassa aeroportuale, esente IVA | € 61,00 |
+| **Totale da corrispondere** | **€ 589,00** |
 
-IVA 10% su tutto il totale: **€ 54,10**. Totale IVA inclusa: **€ 595,10** (circa € 29,76 a
-persona). Acconto 30% € 178,53, saldo € 416,57.
+Circa € 29,45 a persona. Acconto 30% € 176,70, saldo € 412,30 (30% e saldo calcolati sul totale
+di € 589,00, non solo sulla parte soggetta a IVA).
 
 ## Margine
 
 Costruito sul mezzo di proprietà, senza pernottamento del conducente da coprire (trasferimento in
-giornata, sola andata). Con il parcheggio aggiunto a parte, il margine è più pulito che nella
-versione precedente: i € 480,00 del trasferimento restano interamente a coprire il chilometraggio
-a vuoto da e per la base (stimato 70-90 km) e il resto dei costi diretti, mentre i € 61,00
-dell'aeroporto coprono esattamente quel costo, senza doverlo assorbire nel prezzo del servizio.
-**Se si subappalta a Francesco**, va rivalutato: il costo di un mezzo esterno per una corsa così
-breve rischia di assottigliare parecchio il margine sulla parte di trasferimento.
+giornata, sola andata). I € 480,00 netti del trasferimento restano interamente a coprire il
+chilometraggio a vuoto da e per la base (stimato 70-90 km) e il resto dei costi diretti; i € 61,00
+della tassa aeroportuale coprono esattamente quel costo, passati al cliente senza ricarico né IVA
+da versare su questa voce. **Se si subappalta a Francesco**, va rivalutato: il costo di un mezzo
+esterno per una corsa così breve rischia di assottigliare parecchio il margine sulla parte di
+trasferimento.
 
 ## Da chiarire prima di inviare
 
