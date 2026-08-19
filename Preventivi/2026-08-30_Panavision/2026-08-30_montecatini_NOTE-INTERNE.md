@@ -47,17 +47,21 @@ secondo mezzo da valutare.
 | Mar 1 set | Siena e San Gimignano, giornata a disposizione | 250 | 11,5 | € 950,00 |
 | Mer 2 set | Lucca e Pisa, giornata a disposizione | 105 | 11,5 | € 780,00 |
 | Gio 3 set | Firenze a disposizione + transfer FLR (volo IB690 delle 20:20) | 110 | 9 | € 780,00 |
-| — | Check point e sosta bus, riaddebito al costo | | | € 1.371,00 |
+| — | Check point e sosta bus, riaddebito al costo, **fuori campo IVA** | | | € 1.371,00 |
 | — | Pernottamento del conducente | | | non necessario |
 | — | Vitto del conducente, 4 giornate | | | a carico del cliente |
 
-**Totale netto € 5.331,00 · IVA 10% € 533,10 · Totale € 5.864,10** (circa € 345,00 a persona)
+**Servizi € 3.960,00 + IVA 10% € 396,00 = € 4.356,00 · Check point € 1.371,00 senza IVA ·
+Totale € 5.727,00** (circa € 337,00 a persona)
+
+L'IVA si applica **solo ai servizi**: i check point sono tassa comunale e restano fuori
+dall'imponibile, quindi entrano nel totale tali e quali.
 
 I chilometri qui sopra servono solo a ricostruire il prezzo: **nel preventivo consegnato al
 cliente non compaiono**, né nella tabella del servizio né nelle note. Lì ci sono soltanto gli
 orari e i tempi di percorrenza.
 
-Acconto 30% arrotondato a € 1.750,00 — saldo € 4.114,10 entro il 27 agosto, **prima** del
+Acconto 30% arrotondato a € 1.710,00 — saldo € 4.017,00 entro il 27 agosto, **prima** del
 servizio: con un operatore estero nuovo e undici giorni di preavviso è la scelta giusta.
 
 ## Come sono stati costruiti i prezzi
@@ -110,11 +114,14 @@ servizio e **nessun pernottamento**, perché Montecatini Terme dista dodici chil
 base: il conducente rientra a casa ogni sera. Sono circa **€ 1.600 di costo vivo su cinque
 giornate**, contro € 3.960 di servizi: il margine resta buono anche dopo il taglio.
 
-I € 1.371 di check point sono **partita di giro** e non producono margine: nel preventivo è
-scritto che si riaddebita il costo effettivo con le ricevute e si conguaglia in fattura.
-**Quelli non si toccano** se serve scendere ancora: è cassa che esce davvero. Valgono più di
-un quarto del totale, quindi conviene spiegarli bene al cliente invece di nasconderli dentro
-il prezzo — è il motivo per cui la tabella dedicata resta la scelta giusta.
+I € 1.371 di check point sono **partita di giro** e non producono margine: si riaddebita il
+costo effettivo con le ricevute e si conguaglia in fattura. **Quelli non si toccano** se
+serve scendere ancora: è cassa che esce davvero. Valgono quasi un quarto del totale, quindi
+conviene spiegarli bene invece di nasconderli dentro il prezzo — è il motivo per cui la
+tabella dedicata resta la scelta giusta.
+
+Il margine vero sta tutto sui **€ 3.960 di servizi**, contro circa € 1.600 di costo vivo su
+cinque giornate.
 
 **Se si subappalta a Francesco**, il costo si colloca sui € 600-700 al giorno e a questi
 prezzi il margine si assottiglia parecchio: in quel caso il lavoro va rifatto sui numeri,
@@ -153,7 +160,7 @@ con il dettaglio giornata per giornata.
 | 2 set | Lucca, check point bus turistici | € 180,00 |
 | 2 set | Pisa, check point di via Pietrasantina | € 270,00 |
 | 3 set | Firenze, check point + sosta giornaliera, tariffa da settembre | € 421,00 |
-| | **Totale** | **€ 1.371,00** |
+| | **Totale, fuori campo IVA** | **€ 1.371,00** |
 
 **Sono tutti dati di Girolamo: nessuna stima.** Le mie stime iniziali erano lontanissime —
 avevo messo San Gimignano a € 40 contro € 240 reali, Pisa a € 80 contro € 270, Lucca a € 50
@@ -163,6 +170,12 @@ contro € 180, La Spezia a € 40 contro € 100. In totale avevo stimato € 7
 **Firenze: € 421 è la tariffa in vigore da settembre**, e il terzo giorno del gruppo ci
 ricade dentro per tre giorni. Se il programma slittasse ad agosto varrebbe l'importo più
 basso.
+
+**Sono tassa comunale, quindi senza IVA.** Non vanno mai messi nell'imponibile insieme ai
+servizi: si anticipano, si riaddebitano al costo e restano fuori campo. Nel preventivo la
+tabella del prezzo lo mostra a parte — totale servizi, IVA sui servizi, poi i check point —
+così il cliente vede subito su cosa può recuperare l'IVA e su cosa no. A un tour operator
+questa distinzione interessa parecchio.
 
 Nota per i prossimi lavori: in Toscana **ogni città d'arte ha il suo check point per i bus
 turistici e costano parecchio.** Non vanno mai stimati a occhio come parcheggi: sono la voce
@@ -176,10 +189,10 @@ l'alternativa: **scarico a Villa Costanza (Scandicci) e tramvia T1 fino in centr
 minuti, poco più di un euro e mezzo a persona, sosta gratuita del mezzo con i bagagli a
 bordo, nessun permesso.
 
-Se il cliente sceglie la tramvia il totale scende a **€ 4.910,00 netti, € 5.401,00 IVA
-inclusa**. È la carta da giocare se tirano ancora sul prezzo, e adesso vale molto di più di
-prima: sono **€ 463,10 in meno** per loro **senza toccare il nostro margine**, perché è un
-costo che semplicemente non si sostiene.
+Se il cliente sceglie la tramvia il totale scende a **€ 5.306,00**. È la carta da giocare se
+tirano ancora sul prezzo: sono **€ 421,00 esatti in meno** per loro — esatti perché il check
+point non sconta IVA — **senza toccare il nostro margine**, perché è un costo che
+semplicemente non si sostiene.
 
 C'è anche un secondo margine: le tariffe di Firenze sono graduate per lunghezza del veicolo
 e il Beluga sta sotto gli otto metri, quindi potrebbe rientrare in una fascia più bassa dei

@@ -121,7 +121,8 @@ esempio proponendo al cliente il parcheggio scambiatore invece del permesso per 
 
 ### Condizioni ricorrenti
 
-- IVA sui servizi di trasporto passeggeri: **10%**.
+- IVA sui servizi di trasporto passeggeri: **10%**. Si applica ai servizi, non ai check
+  point comunali, che sono tassa e restano fuori campo.
 - Attesa oltre gli orari concordati: **€ 50,00 all'ora per mezzo**.
 - Rientro dopo le 02:00: **€ 250,00 per mezzo**.
 - Attesa gratuita fino a **90 minuti** dall'atterraggio effettivo, per quanto il volo ritardi.
@@ -149,6 +150,12 @@ esempio proponendo al cliente il parcheggio scambiatore invece del permesso per 
   Vanno **riverificate prima di ogni preventivo**: i Comuni le ritoccano, come ha fatto
   Firenze da settembre. A preventivo si elencano una per una in una tabella dedicata, si
   anticipano e si riaddebitano al costo effettivo con le ricevute, conguagliando in fattura.
+
+  **Sono una tassa comunale e quindi non scontano IVA.** Non vanno mai sommate ai servizi
+  dentro l'imponibile: la tabella del prezzo chiude con *totale servizi al netto*, *IVA 10%
+  sui servizi* e poi i *check point fuori campo IVA*, che entrano nel totale tali e quali.
+  È una distinzione che ai tour operator interessa, perché dice su cosa possono recuperare
+  l'IVA e su cosa no.
 
 - L'aeroporto di Firenze non comporta oneri di accesso. L'aeroporto di Pisa ha il parcheggio
   bus (circa € 61), che è cosa diversa dal check point della città.

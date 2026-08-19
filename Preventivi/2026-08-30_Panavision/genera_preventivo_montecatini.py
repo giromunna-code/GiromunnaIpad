@@ -112,10 +112,10 @@ IT = dict(
          "circa 08:45 – 18:15"),
     ],
     h_ztl="Permessi ZTL e accessi",
-    ztl_intro=("Li avete chiesti espressamente: eccoli tutti. Su questo itinerario pesano più del solito, "
-               "perché in cinque giorni si toccano cinque città che applicano tutte il check point per i bus "
-               "turistici, a tariffe fissate dai Comuni. Li anticipiamo noi e non ci guadagniamo nulla: "
-               "vi riaddebitiamo il costo effettivo con le ricevute e conguagliamo in fattura."),
+    ztl_intro=("Li avete chiesti espressamente: eccoli tutti. Pesano più del solito perché in cinque giorni "
+               "si toccano cinque città che applicano tutte il check point per i bus turistici. Sono una "
+               "<b>tassa comunale</b>: li anticipiamo noi e ve li riaddebitiamo al costo effettivo con le "
+               "ricevute, <b>senza IVA</b> e senza guadagnarci nulla."),
     ztl_head=["Giornata e località", "Cosa serve", "Importo"],
     ztl=[
         ("30 ago e 3 set — Aeroporto di Firenze",
@@ -125,11 +125,11 @@ IT = dict(
          "—"),
         ("31 ago — La Spezia",
          "Check point bus turistici e sosta per l'intera giornata. Manarola e Vernazza non hanno accesso ai "
-         "pullman e non esiste permesso che lo apra: vedi Note.", "€ 100,00"),
+         "pullman: vedi Note.", "€ 100,00"),
         ("1 set — Siena",
          "Check point bus turistici e terminal di via Tozzi.", "€ 160,00"),
         ("1 set — San Gimignano",
-         "Check point bus turistici, con sosta fuori le mura presso Porta San Giovanni.", "€ 240,00"),
+         "Check point bus turistici, sosta fuori le mura a Porta San Giovanni.", "€ 240,00"),
         ("2 set — Lucca",
          "Check point bus turistici e sosta fuori le mura, a pochi passi dalle porte.", "€ 180,00"),
         ("2 set — Pisa",
@@ -139,7 +139,7 @@ IT = dict(
          "Check point per l'ingresso in città e sosta giornaliera, alla tariffa in vigore da settembre. "
          "La voce più pesante: nelle Note trovate come evitarla.", "€ 421,00"),
     ],
-    ztl_total_label="Totale permessi e accessi, al netto di IVA",
+    ztl_total_label="Totale check point — tassa comunale, non soggetta a IVA",
     ztl_total="€ 1.371,00",
     h_prezzo="Il prezzo",
     price_rows=[
@@ -148,21 +148,23 @@ IT = dict(
         ("Mar 1 set — giornata intera a Siena e San Gimignano", "€ 950,00", "+ IVA 10%"),
         ("Mer 2 set — giornata intera a Lucca e Pisa", "€ 780,00", "+ IVA 10%"),
         ("Gio 3 set — giornata a Firenze e trasferimento all'aeroporto", "€ 780,00", "+ IVA 10%"),
-        ("Check point e sosta bus nelle città d'arte — dettaglio nella tabella sopra", "€ 1.371,00", "+ IVA 10%"),
         ("Pernottamento del conducente — non necessario, la base è a un quarto d'ora",
          "<i>nessun costo</i>", ""),
         ("Vitto del conducente, 4 giornate", "<i>a carico vostro</i>", ""),
     ],
-    price_total_label="Totale, al netto di IVA",
-    price_total="€ 5.331,00",
-    vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 5.864,10.",
-    perhead="Sono circa € 345,00 a persona su 17 partecipanti, per l'intero programma di cinque giorni.",
+    price_summary=[
+        ("Totale servizi, al netto di IVA", "€ 3.960,00", ""),
+        ("IVA 10% sui servizi", "€ 396,00", ""),
+        ("Check point e sosta bus — tassa comunale, fuori campo IVA", "€ 1.371,00", "senza IVA"),
+    ],
+    grand="Totale da corrispondere: € 5.727,00.",
+    perhead="Sono circa € 337,00 a persona su 17 partecipanti, per l'intero programma di cinque giorni.",
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente per cinque giornate, carburante, pedaggi autostradali, assicurazione completa, "
-        "movimentazione bagagli e monitoraggio del volo IB689 del 30 agosto. Sono compresi tutti i permessi ZTL, "
-        "i terminal e i parcheggi bus elencati nella tabella qui sopra, Firenze inclusa. Il 30 agosto l'autista "
+        "movimentazione bagagli e monitoraggio del volo IB689 del 30 agosto. Sono compresi tutti i check point "
+        "elencati nella tabella qui sopra, Firenze inclusa: essendo tassa comunale non scontano IVA e ve li "
+        "riaddebitiamo al costo. Il 30 agosto l'autista "
         "attende senza costi aggiuntivi fino a 90 minuti dall'orario di atterraggio effettivo, per quanto il volo "
         "arrivi in ritardo. Il 3 settembre i bagagli restano a bordo e sorvegliati per tutta la giornata."
     ),
@@ -176,8 +178,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 1.750,00", "IVA inclusa"),
-        ("Saldo, entro il 27 agosto 2026", "€ 4.114,10", ""),
+        ("Acconto 30% alla conferma", "€ 1.710,00", ""),
+        ("Saldo, entro il 27 agosto 2026", "€ 4.017,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -321,10 +323,10 @@ EN = dict(
          "approx. 08:45 – 18:15"),
     ],
     h_ztl="ZTL permits and access",
-    ztl_intro=("You asked specifically: here they all are. They weigh more than usual on this itinerary, "
-               "because in five days you touch five towns that all operate a tourist coach check point, at "
-               "tariffs set by each municipality. We advance them and make nothing on them: we recharge you "
-               "the actual cost with the receipts and settle the difference on the invoice."),
+    ztl_intro=("You asked specifically: here they all are. They weigh more than usual because in five days "
+               "you touch five towns that all operate a tourist coach check point. They are a <b>municipal "
+               "charge</b>: we advance them and recharge you the actual cost with the receipts, <b>with no "
+               "VAT</b> and making nothing on them."),
     ztl_head=["Day and place", "What is required", "Amount"],
     ztl=[
         ("30 Aug and 3 Sep — Florence Airport",
@@ -333,12 +335,12 @@ EN = dict(
          "No charge: loading and unloading in front of the hotel is allowed and the vehicle is not parked "
          "in the centre.", "—"),
         ("31 Aug — La Spezia",
-         "Tourist coach check point and parking for the full day. Manarola and Vernazza have no coach access "
-         "and no permit opens them: see the Notes.", "€ 100.00"),
+         "Tourist coach check point and parking for the full day. Manarola and Vernazza have no coach access: "
+         "see the Notes.", "€ 100.00"),
         ("1 Sep — Siena",
          "Tourist coach check point and the via Tozzi terminal.", "€ 160.00"),
         ("1 Sep — San Gimignano",
-         "Tourist coach check point, parking outside the walls by Porta San Giovanni.", "€ 240.00"),
+         "Tourist coach check point, parking outside the walls at Porta San Giovanni.", "€ 240.00"),
         ("2 Sep — Lucca",
          "Tourist coach check point and parking outside the walls, a few steps from the gates.", "€ 180.00"),
         ("2 Sep — Pisa",
@@ -348,7 +350,7 @@ EN = dict(
          "Check point for entry into the city and full-day parking, at the tariff in force from September. "
          "The heaviest item: the Notes explain how to avoid it.", "€ 421.00"),
     ],
-    ztl_total_label="Total permits and access, excluding VAT",
+    ztl_total_label="Total check points — municipal charge, not subject to VAT",
     ztl_total="€ 1,371.00",
     h_prezzo="The price",
     price_rows=[
@@ -357,21 +359,24 @@ EN = dict(
         ("Tue 1 Sep — full day to Siena and San Gimignano", "€ 950.00", "+ VAT 10%"),
         ("Wed 2 Sep — full day to Lucca and Pisa", "€ 780.00", "+ VAT 10%"),
         ("Thu 3 Sep — day in Florence and transfer to the airport", "€ 780.00", "+ VAT 10%"),
-        ("Coach check points and parking in the art cities — itemised in the table above", "€ 1,371.00", "+ VAT 10%"),
         ("Driver's accommodation — not required, our base is a quarter of an hour away",
          "<i>no charge</i>", ""),
         ("Driver's meals, 4 days", "<i>at your charge</i>", ""),
     ],
-    price_total_label="Total, excluding VAT",
-    price_total="€ 5,331.00",
-    vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 5,864.10.",
-    perhead="That is about € 345.00 per person across 17 travellers, for the complete five-day programme.",
+    price_summary=[
+        ("Total services, excluding VAT", "€ 3,960.00", ""),
+        ("VAT 10% on the services", "€ 396.00", ""),
+        ("Coach check points and parking — municipal charge, outside the scope of VAT",
+         "€ 1,371.00", "no VAT"),
+    ],
+    grand="Total payable: € 5,727.00.",
+    perhead="That is about € 337.00 per person across 17 travellers, for the complete five-day programme.",
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver for five days, fuel, motorway tolls, full insurance, luggage handling and monitoring "
-        "of flight IB689 on 30 August. All the ZTL permits, terminals and coach parking listed in the table "
-        "above are included, Florence among them. On 30 August the driver waits at no extra cost for up to 90 "
+        "of flight IB689 on 30 August. All the check points listed in the table above are included, Florence "
+        "among them: being a municipal charge they carry no VAT and are recharged at cost. On 30 August the "
+        "driver waits at no extra cost for up to 90 "
         "minutes from the actual landing time, however late the flight arrives. On 3 September the luggage stays "
         "on board and watched all day."
     ),
@@ -385,8 +390,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 1,750.00", "VAT included"),
-        ("Balance, by 27 August 2026", "€ 4,114.10", ""),
+        ("Deposit 30% on confirmation", "€ 1,710.00", ""),
+        ("Balance, by 27 August 2026", "€ 4,017.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -629,14 +634,16 @@ def build(lang, cliente, out):
         pdata.append([Paragraph(label, S["cellsm"]),
                       Paragraph(amount, S["cellsm"]),
                       Paragraph(vat, S["cellmut"])])
-    pdata.append([Paragraph("<b>%s</b>" % L["price_total_label"], S["cellsm"]),
-                  Paragraph("<b>%s</b>" % L["price_total"], S["cellsm"]),
-                  Paragraph(L["vat_note"], S["cellmut"])])
+    for label, amount, nota in L["price_summary"]:
+        pdata.append([Paragraph("<b>%s</b>" % label, S["cellsm"]),
+                      Paragraph("<b>%s</b>" % amount, S["cellsm"]),
+                      Paragraph(nota, S["cellmut"])])
+    ns = len(L["price_summary"])
     pt = Table(pdata, colWidths=pcols)
     pt.setStyle(TableStyle([
-        ("LINEBELOW", (0, 0), (-1, -2), 0.5, RULE),
-        ("LINEABOVE", (0, -1), (-1, -1), 0.9, GREEN),
-        ("BACKGROUND", (0, -1), (-1, -1), CREAM),
+        ("LINEBELOW", (0, 0), (-1, -ns - 1), 0.5, RULE),
+        ("LINEABOVE", (0, -ns), (-1, -ns), 0.9, GREEN),
+        ("BACKGROUND", (0, -ns), (-1, -1), CREAM),
         ("ALIGN", (1, 0), (1, -1), "RIGHT"),
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LEFTPADDING", (0, 0), (-1, -1), 6),
