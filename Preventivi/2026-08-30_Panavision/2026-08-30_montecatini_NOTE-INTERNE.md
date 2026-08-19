@@ -9,6 +9,13 @@ File generati:
 - `GiroMunna_Preventivo_Montecatini_30_agosto-3_settembre_2026_EN.pdf`
 - `genera_preventivo_montecatini.py` — rigenera entrambi i PDF
 - `preventivo_montecatini_30_agosto-3_settembre_2026.html` — la pagina web bilingue
+- `2026-08-30_montecatini_TESTO-MAIL_IT.txt` — testo della mail, da copiare
+- `2026-08-30_montecatini_TESTO-MAIL_EN.txt` — lo stesso in inglese
+
+I due testi mail sono in testo semplice, senza formattazione, così si incollano in Gmail
+puliti. **Non è stata creata nessuna bozza e non è stato inviato nulla:** la mail la scrive
+e la manda Girolamo. Prima di mandarla vanno ricontrollati la disponibilità del mezzo e il
+fatto che il testo dice «il mezzo oggi è libero».
 
 Tutto dentro `Preventivi/2026-08-30_Panavision/`.
 
