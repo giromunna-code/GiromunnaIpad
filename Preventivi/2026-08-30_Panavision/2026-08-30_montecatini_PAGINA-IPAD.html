@@ -1,0 +1,554 @@
+<title>Panavision Montecatini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Archivo:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --surface-2: #FAF8F3;
+    --ink: #2A2A28;
+    --ink-soft: #6B6A64;
+    --ink-faint: #96948C;
+    --green: #1F4636;
+    --green-ink: #1F4636;
+    --green-soft: #E7EDE8;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E2DFD6;
+    --line-strong: #CFCBBE;
+    --warn-ground: #FBF6E9;
+    --warn-line: #E0CE96;
+    --warn-ink: #7A6524;
+    --total-bg: #1F4636;
+    --total-ink: #FFFFFF;
+    --total-fig: #C9A24B;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #11150F;
+      --surface: #191E18;
+      --surface-2: #1F251E;
+      --ink: #E9EBE3;
+      --ink-soft: #A3A99B;
+      --ink-faint: #7A806F;
+      --green: #86B99C;
+      --green-ink: #A8CDB6;
+      --green-soft: #1D2A22;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #2A3126;
+      --line-strong: #3C4436;
+      --warn-ground: #221E11;
+      --warn-line: #4B4126;
+      --warn-ink: #D6C289;
+      --total-bg: #1B3A2D;
+      --total-ink: #E9EBE3;
+      --total-fig: #D9B25E;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #11150F;
+    --surface: #191E18;
+    --surface-2: #1F251E;
+    --ink: #E9EBE3;
+    --ink-soft: #A3A99B;
+    --ink-faint: #7A806F;
+    --green: #86B99C;
+    --green-ink: #A8CDB6;
+    --green-soft: #1D2A22;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #2A3126;
+    --line-strong: #3C4436;
+    --warn-ground: #221E11;
+    --warn-line: #4B4126;
+    --warn-ink: #D6C289;
+    --total-bg: #1B3A2D;
+    --total-ink: #E9EBE3;
+    --total-fig: #D9B25E;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: Archivo, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 18px 80px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 44px 0 26px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .brand b {
+    font-family: Newsreader, Georgia, serif;
+    font-size: 1.22rem;
+    font-weight: 600;
+    color: var(--green-ink);
+  }
+  .brand span { font-size: 0.78rem; color: var(--ink-soft); }
+  h1 {
+    font-family: Newsreader, Georgia, serif;
+    font-size: clamp(1.85rem, 5.5vw, 2.5rem);
+    font-weight: 600;
+    line-height: 1.14;
+    margin: 0;
+    color: var(--green-ink);
+    text-wrap: balance;
+  }
+  h1 small {
+    display: block;
+    font-family: Archivo, sans-serif;
+    font-size: clamp(0.9rem, 2.4vw, 1rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 9px;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+    gap: 16px 22px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 2px; }
+  .fact b { font-size: 0.95rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  section { padding-top: 42px; }
+  h2 {
+    font-family: Newsreader, Georgia, serif;
+    font-size: 1.42rem;
+    font-weight: 600;
+    color: var(--green-ink);
+    margin: 0 0 5px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 20px; max-width: 62ch; font-size: 0.95rem; }
+  p { max-width: 66ch; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 20px 22px;
+  }
+
+  .steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0; }
+  .steps li {
+    display: grid;
+    grid-template-columns: 1.65rem 1fr;
+    gap: 4px 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.95rem;
+  }
+  .steps li:last-child { border-bottom: none; padding-bottom: 0; }
+  .steps li:first-child { padding-top: 0; }
+  .steps .n {
+    font-family: Newsreader, Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.5;
+  }
+  .steps b { font-weight: 600; }
+  .steps p { margin: 3px 0 0; color: var(--ink-soft); font-size: 0.9rem; max-width: none; }
+
+  .warn {
+    background: var(--warn-ground);
+    border: 1px solid var(--warn-line);
+    border-left: 3px solid var(--gold);
+    border-radius: 3px;
+    padding: 16px 18px;
+    color: var(--warn-ink);
+    font-size: 0.92rem;
+  }
+  .warn b { color: var(--warn-ink); }
+  .warn p { margin: 0; max-width: none; }
+  .warn p + p { margin-top: 8px; }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
+  .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .group button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  .group button + button { border-left: 1px solid var(--line-strong); }
+  .group button[aria-pressed="true"] { background: var(--green); color: var(--ground); }
+
+  .copy {
+    font: inherit;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--ground);
+    background: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 3px;
+    padding: 9px 16px;
+    cursor: pointer;
+  }
+  .copy[data-done="1"] { background: var(--gold); border-color: var(--gold); color: #2A2A28; }
+  button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  .subject {
+    background: var(--green-soft);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 13px 16px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .subject .t { font-size: 0.93rem; font-weight: 600; }
+
+  pre.mail {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 20px 20px;
+    margin: 0;
+    font-family: Archivo, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.62;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: var(--ink);
+  }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 380px; }
+  th {
+    text-align: left;
+    font-size: 0.67rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--green-ink);
+    font-weight: 700;
+    padding: 0 12px 8px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 11px 12px 11px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr.tot td { border-top: 1.5px solid var(--green); border-bottom: none; padding-top: 13px; font-weight: 700; }
+  tr.sum td { border-bottom: none; font-weight: 700; }
+  td.soft { color: var(--ink-soft); }
+
+  .total {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    background: var(--total-bg);
+    border-radius: 3px;
+    padding: 18px 22px;
+    margin-top: 18px;
+  }
+  .total .l { font-weight: 700; color: var(--total-ink); font-size: 0.98rem; }
+  .total .l small { display: block; font-weight: 400; font-size: 0.82rem; opacity: 0.82; margin-top: 3px; }
+  .total .f {
+    font-family: Newsreader, Georgia, serif;
+    font-size: 1.85rem;
+    font-weight: 600;
+    color: var(--total-fig);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .files { display: flex; flex-direction: column; gap: 0; }
+  .files div {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.9rem;
+  }
+  .files div:last-child { border-bottom: none; }
+  .files code {
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    word-break: break-all;
+  }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand"><b>GiroMunna</b><span>Noleggio Autobus con Conducente &middot; Toscana</span></div>
+    <h1>Panavision Tours, gruppo a Montecatini
+      <small>Da mandare a Fernando Ib&aacute;&ntilde;ez &middot; il testo della mail, i numeri e cosa controllare prima</small>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Date</span><b>30 ago &ndash; 3 set 2026</b></div>
+      <div class="fact"><span class="eyebrow">Passeggeri</span><b>17</b></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><b>GM-2026-0830-PT</b></div>
+      <div class="fact"><span class="eyebrow">Totale</span><b>&euro; 5.727,00</b></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Prima di mandare</h2>
+    <p class="lede">Due controlli e una scelta gi&agrave; fatta. Il resto &egrave; pronto.</p>
+    <div class="warn">
+      <p><b>Controlla che il Beluga sia libero</b> dal 30 agosto al 3 settembre, tutti e cinque i giorni. La mail scrive che il mezzo oggi &egrave; libero e lo teniamo: &egrave; un impegno, e mancano undici giorni in alta stagione.</p>
+      <p><b>Ricontrolla le tariffe dei check point.</b> Firenze l&rsquo;ha ritoccata da settembre e le altre possono cambiare. Nel preventivo &egrave; scritto che si riaddebita il costo effettivo con le ricevute, quindi non siamo esposti, ma meglio saperlo prima.</p>
+    </div>
+    <ol class="steps" style="margin-top:20px;">
+      <li><span class="n">1</span><div><b>Allega i due PDF</b><p>Quello italiano e quello inglese. Sono nella chat, come schede file: si aprono con un tocco e si salvano in File con il tasto Condividi.</p></div></li>
+      <li><span class="n">2</span><div><b>Copia oggetto e testo</b><p>Qui sotto, con i due tasti Copia. &Egrave; testo semplice, si incolla pulito.</p></div></li>
+      <li><span class="n">3</span><div><b>Manda a fernando@panavision-tours.es</b><p>Scrive in italiano, quindi la versione italiana &egrave; quella giusta. L&rsquo;inglese c&rsquo;&egrave; se serve a qualcun altro in agenzia.</p></div></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Il testo della mail</h2>
+    <div class="bar">
+      <div class="group" role="group" aria-label="Lingua della mail">
+        <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+        <button type="button" data-set="en" aria-pressed="false">English</button>
+      </div>
+      <button type="button" class="copy" data-copy="corpo">Copia il testo</button>
+    </div>
+
+    <div class="subject">
+      <div class="bar" style="margin:0;">
+        <span class="eyebrow">Oggetto</span>
+        <button type="button" class="copy" data-copy="oggetto" style="padding:6px 12px;font-size:0.72rem;">Copia oggetto</button>
+      </div>
+      <span class="t" data-lang="it" id="ogg-it">Preventivo GiroMunna - gruppo Montecatini Terme, 30 agosto / 3 settembre 2026 (rif. GM-2026-0830-PT)</span>
+      <span class="t" data-lang="en" id="ogg-en" hidden>GiroMunna quotation - Montecatini Terme group, 30 August / 3 September 2026 (ref. GM-2026-0830-PT)</span>
+    </div>
+
+    <pre class="mail" data-lang="it" id="corpo-it">Gentile Fernando Ibáñez,
+
+grazie della richiesta e della telefonata. In allegato trova il preventivo per il gruppo di 16 partecipanti più il capo gruppo, dal 30 agosto al 3 settembre, nelle due versioni italiana e inglese.
+
+Il totale è di € 5.727,00, circa € 337,00 a persona per l&#x27;intero programma di cinque giorni: € 3.960,00 di servizi più IVA 10%, e € 1.371,00 di check point comunali che, essendo una tassa, non scontano IVA. Il mezzo è il nostro Mercedes-Benz Beluga, 26 posti passeggeri più l&#x27;autista: con diciassette persone a bordo restano nove posti liberi.
+
+Ci sono tre punti che le chiedo di guardare prima di tutto il resto.
+
+I permessi ZTL che ci chiedeva li trova nel preventivo, elencati uno per uno con l&#x27;importo: La Spezia, Siena, San Gimignano, Lucca, Pisa e Firenze. Su questo itinerario pesano più del solito, perché in cinque giorni si toccano cinque città che applicano tutte il check point per i bus turistici. Li anticipiamo noi e glieli riaddebitiamo al costo effettivo con le ricevute, senza IVA e senza guadagnarci nulla.
+
+Le Cinque Terre non si raggiungono in pullman, e non è una questione di permessi. Manarola e Vernazza sono borghi pedonali: le strade che scendono al mare sono strette, a tornanti e chiuse ai bus, e non esiste alcun permesso acquistabile che le apra. La soluzione che funziona è il treno: minibus fino a La Spezia Centrale, poi il Cinque Terre Express, che collega i borghi ogni quindici o venti minuti. Vi lasciamo a La Spezia alle 09:30 e vi riprendiamo lì alle 17:30. I biglietti si acquistano in stazione e restano a vostro carico. In alternativa, con mare calmo, il battello da La Spezia tocca Monterosso e Vernazza ed è il modo più bello di vederle: ce lo dica e organizziamo la giornata su quello.
+
+Firenze del 3 settembre. Il check point per far entrare il mezzo in città costa € 421,00 con la tariffa in vigore da settembre, ed è la voce più cara di tutto il preventivo. L&#x27;abbiamo inserita perché con i bagagli a bordo e otto ore e mezza di tempo libero è la soluzione più comoda, ma esiste un&#x27;alternativa: il minibus vi lascia al parcheggio scambiatore di Villa Costanza e la tramvia vi porta in pieno centro in venti minuti, con il mezzo che sosta gratuitamente e i vostri bagagli a bordo. In quel caso il totale scende a € 5.306,00. Ci faccia sapere quale delle due preferisce.
+
+Nel preventivo troverà anche due proposte che non cambiano il prezzo: invertire l&#x27;ordine di Siena e San Gimignano, che fa guadagnare circa 45 minuti da spendere a Siena nel pomeriggio, e una sosta in più il 2 settembre, che è la giornata più leggera del programma.
+
+Un&#x27;ultima cosa, ed è la più urgente: mancano undici giorni al primo servizio e siamo nel periodo più pieno dell&#x27;anno. Il mezzo oggi è libero e glielo teniamo per tutta la validità del preventivo, ma non possiamo garantirlo oltre. Se il gruppo è confermato, anche solo un cenno da parte vostra ci permette di bloccare subito il calendario.
+
+Per confermare ci servono l&#x27;indirizzo esatto dell&#x27;Hotel Minerva a Montecatini Terme, il numero definitivo dei passeggeri, un recapito telefonico o WhatsApp del capo gruppo, la vostra scelta fra check point di Firenze e tramvia da Villa Costanza, e i vostri dati di fatturazione.
+
+Resto a disposizione per qualsiasi chiarimento.
+
+Cordiali saluti,
+
+Girolamo Munna
+GiroMunna - Noleggio Autobus con Conducente
+Ponte Buggianese (PT), Toscana, Italia
++39 335 587 4744
+info@giromunna.com
+giromunna.com</pre>
+    <pre class="mail" data-lang="en" id="corpo-en" hidden>Dear Fernando Ibáñez,
+
+thank you for your enquiry and for the phone call. Attached you will find the quotation for the group of 16 participants plus the tour leader, from 30 August to 3 September, in both an English and an Italian version.
+
+The total is € 5,727.00, about € 337.00 per person for the complete five-day programme: € 3,960.00 of services plus 10% VAT, and € 1,371.00 of municipal coach check points which, being a tax, carry no VAT. The vehicle is our Mercedes-Benz Beluga, 26 passenger seats plus driver: with seventeen people on board, nine seats stay free.
+
+There are three points I would ask you to look at before anything else.
+
+The ZTL permits you asked about are set out in the quotation, listed one by one with the amount: La Spezia, Siena, San Gimignano, Lucca, Pisa and Florence. They weigh more than usual on this itinerary, because in five days you touch five towns that all operate a tourist coach check point. We advance them and recharge you the actual cost with the receipts, with no VAT and making nothing on them.
+
+The Cinque Terre cannot be reached by coach, and it is not a matter of permits. Manarola and Vernazza are pedestrian villages: the roads down to the sea are narrow, full of hairpins and closed to coaches, and there is no permit on sale that opens them. The solution that works is the train: minibus to La Spezia Centrale, then the Cinque Terre Express, which links the villages every fifteen to twenty minutes. We drop you at La Spezia at 09:30 and collect you there at 17:30. Tickets are bought at the station and remain at your charge. Alternatively, in calm weather, the ferry from La Spezia calls at Monterosso and Vernazza and is the finest way to see them: tell us and we will build the day around it.
+
+Florence on 3 September. The check point that lets the vehicle into the city costs € 421.00 at the tariff in force from September, and it is the most expensive single item in the quotation. We have included it because with the luggage on board and eight and a half hours of free time it is the most comfortable arrangement, but there is an alternative: the minibus drops you at the Villa Costanza park-and-ride and the tramway takes you into the centre in twenty minutes, with the vehicle parked free of charge and your luggage on board. In that case the total comes down to € 5,306.00. Please let us know which of the two you prefer.
+
+The quotation also contains two suggestions that do not change the price: reversing the order of Siena and San Gimignano, which gains about 45 minutes to spend in Siena in the afternoon, and an extra stop on 2 September, which is the lightest day of the programme.
+
+One last point, and it is the most urgent: there are eleven days to the first service and this is the busiest stretch of the year. The vehicle is free today and we hold it for you for the whole validity of this quotation, but we cannot guarantee it beyond that. If the group is confirmed, even an indicative go-ahead from you lets us block the calendar straight away.
+
+To confirm we need the exact address of the Hotel Minerva in Montecatini Terme, the final passenger count, a mobile or WhatsApp contact for the tour leader, your choice between the Florence check point and the tramway from Villa Costanza, and your invoicing details.
+
+I remain at your disposal for any clarification.
+
+Kind regards,
+
+Girolamo Munna
+GiroMunna - Coach Hire with Driver
+Ponte Buggianese (PT), Tuscany, Italy
++39 335 587 4744
+info@giromunna.com
+giromunna.com</pre>
+  </section>
+
+  <section>
+    <h2>I numeri, se ti chiama</h2>
+    <p class="lede">Quello che serve avere sottomano al telefono, senza aprire il PDF.</p>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr><th scope="col">Giornata</th><th scope="col" class="num">Netto</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Dom 30 ago &mdash; aeroporto di Firenze &rarr; Montecatini</td><td class="num">&euro; 400,00</td></tr>
+          <tr><td>Lun 31 ago &mdash; Cinque Terre, via La Spezia</td><td class="num">&euro; 1.050,00</td></tr>
+          <tr><td>Mar 1 set &mdash; Siena e San Gimignano</td><td class="num">&euro; 950,00</td></tr>
+          <tr><td>Mer 2 set &mdash; Lucca e Pisa</td><td class="num">&euro; 780,00</td></tr>
+          <tr><td>Gio 3 set &mdash; Firenze e aeroporto</td><td class="num">&euro; 780,00</td></tr>
+          <tr class="tot"><td>Totale servizi, al netto di IVA</td><td class="num">&euro; 3.960,00</td></tr>
+          <tr class="sum"><td>IVA 10% sui servizi</td><td class="num">&euro; 396,00</td></tr>
+          <tr class="sum"><td>Check point &mdash; tassa comunale, senza IVA</td><td class="num">&euro; 1.371,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="total">
+      <span class="l">Totale da corrispondere<small>circa &euro; 337,00 a persona &middot; acconto &euro; 1.710,00, saldo &euro; 4.017,00</small></span>
+      <span class="f">&euro; 5.727,00</span>
+    </div>
+
+    <div class="scroll" style="margin-top:26px;">
+      <table>
+        <thead>
+          <tr><th scope="col">Check point</th><th scope="col" class="num">Importo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Firenze <span class="eyebrow">3 set</span></td><td class="num">&euro; 421,00</td></tr>
+          <tr><td>Pisa <span class="eyebrow">2 set</span></td><td class="num">&euro; 270,00</td></tr>
+          <tr><td>San Gimignano <span class="eyebrow">1 set</span></td><td class="num">&euro; 240,00</td></tr>
+          <tr><td>Lucca <span class="eyebrow">2 set</span></td><td class="num">&euro; 180,00</td></tr>
+          <tr><td>Siena <span class="eyebrow">1 set</span></td><td class="num">&euro; 160,00</td></tr>
+          <tr><td>La Spezia <span class="eyebrow">31 ago</span></td><td class="num">&euro; 100,00</td></tr>
+          <tr class="tot"><td>Totale, fuori campo IVA</td><td class="num">&euro; 1.371,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Le tre cose che deve decidere</h2>
+    <div class="card">
+      <ol class="steps">
+        <li><span class="n">&mdash;</span><div><b>Le Cinque Terre non si fanno in pullman</b><p>Manarola e Vernazza sono pedonali e nessun permesso apre quelle strade. Minibus fino a La Spezia, poi il Cinque Terre Express fra i borghi: scarico alle 09:30, ripresa alle 17:30. I biglietti li comprano loro. Con mare calmo, in alternativa, il battello.</p></div></li>
+        <li><span class="n">&mdash;</span><div><b>Firenze: check point o tramvia</b><p>Il check point costa &euro; 421,00. Scaricando a Villa Costanza e prendendo la tramvia il totale scende a <b>&euro; 5.306,00</b>. &Egrave; la carta da giocare se tirano sul prezzo: non tocca le nostre tariffe.</p></div></li>
+        <li><span class="n">&mdash;</span><div><b>Cosa serve per confermare</b><p>Indirizzo esatto dell&rsquo;Hotel Minerva, numero definitivo dei passeggeri, un recapito del capo gruppo, la scelta su Firenze e i dati di fatturazione.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <h2>Dove sono i file</h2>
+    <p class="lede">Nel repository, cartella <code>Preventivi/2026-08-30_Panavision/</code>, ramo <code>claude/montecatini-group-tour-5sq4ty</code>. In chat li trovi come schede da toccare.</p>
+    <div class="card files">
+      <div><span>Preventivo da allegare, italiano</span><code>&hellip;_2026_IT.pdf</code></div>
+      <div><span>Preventivo da allegare, inglese</span><code>&hellip;_2026_EN.pdf</code></div>
+      <div><span>Testo della mail, italiano</span><code>&hellip;_TESTO-MAIL_IT.txt</code></div>
+      <div><span>Testo della mail, inglese</span><code>&hellip;_TESTO-MAIL_EN.txt</code></div>
+      <div><span>Note interne, come &egrave; fatto il prezzo</span><code>&hellip;_NOTE-INTERNE.md</code></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>GiroMunna &middot; Munna Girolamo Giuseppe &middot; Ponte Buggianese (PT)</span>
+    <span>Rif. GM-2026-0830-PT</span>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var lingua = 'it';
+    var bottoni = document.querySelectorAll('.group button');
+    var pannelli = document.querySelectorAll('[data-lang]');
+
+    function mostra(l) {
+      lingua = l;
+      pannelli.forEach(function (p) { p.hidden = (p.dataset.lang !== l); });
+      bottoni.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === l)); });
+    }
+    bottoni.forEach(function (b) {
+      b.addEventListener('click', function () { mostra(b.dataset.set); });
+    });
+
+    document.querySelectorAll('.copy').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var testo = document.getElementById(b.dataset.copy + '-' + lingua).textContent;
+        var etichetta = b.textContent;
+        function fatto() {
+          b.textContent = 'Copiato';
+          b.dataset.done = '1';
+          setTimeout(function () { b.textContent = etichetta; b.dataset.done = ''; }, 1800);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(testo).then(fatto, ripiego);
+        } else { ripiego(); }
+        function ripiego() {
+          var a = document.createElement('textarea');
+          a.value = testo;
+          a.style.position = 'fixed';
+          a.style.opacity = '0';
+          document.body.appendChild(a);
+          a.select();
+          try { document.execCommand('copy'); fatto(); } catch (err) { b.textContent = 'Copia a mano'; }
+          document.body.removeChild(a);
+        }
+      });
+    });
+
+    mostra('it');
+  })();
+</script>

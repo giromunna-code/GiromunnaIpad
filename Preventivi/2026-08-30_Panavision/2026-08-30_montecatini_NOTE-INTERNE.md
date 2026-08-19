@@ -11,6 +11,9 @@ File generati:
 - `preventivo_montecatini_30_agosto-3_settembre_2026.html` — la pagina web bilingue
 - `2026-08-30_montecatini_TESTO-MAIL_IT.txt` — testo della mail, da copiare
 - `2026-08-30_montecatini_TESTO-MAIL_EN.txt` — lo stesso in inglese
+- `2026-08-30_montecatini_PAGINA-IPAD.html` — pagina di lavoro per l'iPad, pubblicata come
+  Artifact: testo mail con i tasti Copia, numeri e controlli. **Non va condivisa col cliente**,
+  perché contiene i promemoria interni.
 
 I due testi mail sono in testo semplice, senza formattazione, così si incollano in Gmail
 puliti. **Non è stata creata nessuna bozza e non è stato inviato nulla:** la mail la scrive
