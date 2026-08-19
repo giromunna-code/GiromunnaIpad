@@ -1,0 +1,1110 @@
+<title>Preventivo — Montecatini Terme, 30 agosto - 3 settembre 2026</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+  .day.released { background: transparent; border-style: dashed; border-color: var(--line-strong); }
+  .day.released .day-date { color: var(--ink-soft); }
+  .day.released .badge { color: var(--ink-soft); background: transparent; border-color: var(--line-strong); }
+  .day.released p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<div class="wrap lang" data-lang="it">
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Soggiorno a Montecatini Terme
+      <span class="sub">Cinque Terre · Siena e San Gimignano · Lucca e Pisa · Firenze</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Cliente</span><span class="v">Panavision Tours</span></div>
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">30 ago - 3 set 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passeggeri</span><span class="v">17</span></div>
+      <div class="fact"><span class="eyebrow">Servizi</span><span class="v">5 su 5 giornate</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2026-0830-PT</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">22 agosto 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Il mezzo</h2>
+    <p class="lede">Un minibus per il gruppo di 17 persone — 16 partecipanti e il capo gruppo — con lo stesso conducente per tutti e cinque i giorni.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista, 7,64 m</span>
+      <p>Aria condizionata, sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.</p>
+      <p>Con 17 ospiti a bordo restano nove posti liberi: su tre giornate da undici ore e mezza è un margine di comodità che si sente. I 7,64 metri contano anche in manovra: il mezzo entra nei terminal bus di Siena, Lucca e Pisa e trova sosta a Firenze dove un autobus gran turismo da dodici metri fatica.</p>
+      <p>La nostra base è a Ponte Buggianese, dodici chilometri da Montecatini Terme: il conducente rientra a casa ogni sera e non vi costa alcun pernottamento.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Distanze e tempi di percorrenza sono stime stradali, traffico escluso.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">30 agosto <span class="wd">· domenica</span></span>
+          <span class="badge">Trasferimento in arrivo</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">19:30</span>
+            <span class="r">Aeroporto di Firenze (FLR), volo IB689 da Madrid <span class="to">→ Montecatini Terme, Hotel Minerva</span></span>
+            <span class="d">50 km · 50 min</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 19:15 – 21:15. L'autista vi accoglie in sala arrivi con il cartello GiroMunna e attende senza costi fino a 90 minuti dall'atterraggio effettivo. Arrivo in hotel intorno alle 21:00.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">31 agosto <span class="wd">· lunedì</span></span>
+          <span class="badge">Giornata a disposizione</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">08:00</span>
+            <span class="r">Montecatini Terme <span class="to">→ La Spezia Centrale</span></span>
+            <span class="d">110 km · 1 h 30</span>
+          </div>
+          <div class="leg">
+            <span class="t">09:30</span>
+            <span class="r">Cinque Terre in treno <span class="to">· Manarola, Vernazza, Monterosso</span></span>
+            <span class="d">Cinque Terre Express</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:30</span>
+            <span class="r">La Spezia Centrale <span class="to">→ Montecatini Terme</span></span>
+            <span class="d">110 km · 1 h 30</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 07:45 – 19:45, a disposizione per l'intera giornata, circa 220 km. I borghi non sono raggiungibili in pullman: la soluzione è spiegata nelle Note.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">1 settembre <span class="wd">· martedì</span></span>
+          <span class="badge">Giornata a disposizione</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">08:00</span>
+            <span class="r">Montecatini Terme <span class="to">→ Siena, terminal bus di via Tozzi</span></span>
+            <span class="d">120 km · 1 h 40</span>
+          </div>
+          <div class="leg">
+            <span class="t">14:00</span>
+            <span class="r">Siena <span class="to">→ San Gimignano, parcheggio bus di Porta San Giovanni</span></span>
+            <span class="d">45 km · 1 h 00</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:15</span>
+            <span class="r">San Gimignano <span class="to">→ Montecatini Terme</span></span>
+            <span class="d">85 km · 1 h 15</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 07:45 – 19:45. La giornata più lunga su strada, circa 250 km. Nelle Note trovate perché conviene invertire l'ordine delle due tappe.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">2 settembre <span class="wd">· mercoledì</span></span>
+          <span class="badge">Giornata a disposizione</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">08:00</span>
+            <span class="r">Montecatini Terme <span class="to">→ Lucca, terminal bus fuori le mura</span></span>
+            <span class="d">30 km · 30 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">13:00</span>
+            <span class="r">Lucca <span class="to">→ Pisa, terminal di via Pietrasantina</span></span>
+            <span class="d">25 km · 30 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:45</span>
+            <span class="r">Pisa <span class="to">→ Montecatini Terme</span></span>
+            <span class="d">50 km · 45 min</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 07:45 – 19:45. La giornata più leggera del programma, circa 105 km: c'è tempo in abbondanza e nelle Note vi proponiamo come usarlo.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">3 settembre <span class="wd">· giovedì</span></span>
+          <span class="badge">Giornata e trasferimento in partenza</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">09:00</span>
+            <span class="r">Montecatini Terme, check-out con i bagagli <span class="to">→ Firenze</span></span>
+            <span class="d">50 km · 50 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:30</span>
+            <span class="r">Firenze <span class="to">→ Aeroporto di Firenze (FLR), volo IB690 delle 20:20</span></span>
+            <span class="d">10 km · 20 min</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 08:45 – 18:15. Tempo libero a Firenze dalle 10:00 alle 17:30: il mezzo resta in città in area di sosta autorizzata, con i vostri bagagli sorvegliati a bordo. Arrivo alle partenze verso le 18:00.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Permessi ZTL e accessi</h2>
+    <p class="lede">Li avete chiesti espressamente: eccoli tutti, giornata per giornata. Li anticipiamo noi e sono già compresi nel prezzo. Vi riaddebitiamo il costo effettivo con le ricevute e conguagliamo in fattura, in più o in meno.</p>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Giornata e località</th>
+            <th scope="col">Cosa serve</th>
+            <th scope="col" class="num">Importo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>30 ago e 3 set — Aeroporto di Firenze</strong></td>
+            <td>Nessun onere di accesso: l'aeroporto di Firenze non applica tariffe ai bus.</td>
+            <td class="num vat">—</td>
+          </tr>
+          <tr>
+            <td><strong>30 ago – 3 set — Montecatini Terme</strong></td>
+            <td>Nessun permesso. La sosta davanti all'hotel per carico e scarico è consentita e il mezzo non resta parcheggiato in centro.</td>
+            <td class="num vat">—</td>
+          </tr>
+          <tr>
+            <td><strong>31 ago — La Spezia</strong></td>
+            <td>Sosta del minibus all'area bus per l'intera giornata. Nelle Cinque Terre non esistono permessi acquistabili per Manarola e Vernazza: sono borghi pedonali senza accesso ai pullman.</td>
+            <td class="num">€ 40,00</td>
+          </tr>
+          <tr>
+            <td><strong>1 set — Siena</strong></td>
+            <td>Permesso comunale bus turistici e terminal di via Tozzi.</td>
+            <td class="num">€ 160,00</td>
+          </tr>
+          <tr>
+            <td><strong>1 set — San Gimignano</strong></td>
+            <td>Parcheggio bus fuori le mura, presso Porta San Giovanni.</td>
+            <td class="num">€ 40,00</td>
+          </tr>
+          <tr>
+            <td><strong>2 set — Lucca</strong></td>
+            <td>Terminal bus fuori le mura. Dentro le mura i pullman non entrano, ma le porte sono a pochi passi.</td>
+            <td class="num">€ 50,00</td>
+          </tr>
+          <tr>
+            <td><strong>2 set — Pisa</strong></td>
+            <td>Terminal bus di via Pietrasantina, con navetta per Piazza dei Miracoli. In Piazza dei Miracoli i bus non accedono.</td>
+            <td class="num">€ 80,00</td>
+          </tr>
+          <tr>
+            <td><strong>3 set — Firenze</strong></td>
+            <td>Permesso comunale bus turistici per l'ingresso in città e sosta giornaliera in area autorizzata. È la voce più pesante e nelle Note trovate come evitarla.</td>
+            <td class="num">€ 350,00</td>
+          </tr>
+          <tr class="tot">
+            <td colspan="2">Totale permessi e accessi, al netto di IVA</td>
+            <td class="num">€ 720,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Servizio</th>
+            <th scope="col" class="num">Importo</th>
+            <th scope="col" class="num">IVA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Dom 30 ago</span>Aeroporto di Firenze → Montecatini Terme</td>
+            <td class="num">€ 550,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Lun 31 ago</span>Giornata intera alle Cinque Terre, via La Spezia</td>
+            <td class="num">€ 1.500,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Mar 1 set</span>Giornata intera a Siena e San Gimignano</td>
+            <td class="num">€ 1.400,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Mer 2 set</span>Giornata intera a Lucca e Pisa</td>
+            <td class="num">€ 1.100,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Gio 3 set</span>Giornata a Firenze e trasferimento all'aeroporto</td>
+            <td class="num">€ 1.050,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Permessi ZTL, terminal e parcheggi bus — dettaglio nella tabella sopra</td>
+            <td class="num">€ 720,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Pernottamento del conducente — non necessario, la base dista 12 km</td>
+            <td class="num vat"><em>nessun costo</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr>
+            <td>Vitto del conducente, 4 giornate</td>
+            <td class="num vat"><em>a carico vostro</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Totale, al netto di IVA</td>
+            <td class="num">€ 6.320,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Totale da corrispondere, IVA 10% inclusa
+        <small>circa € 409,00 a persona su 17 partecipanti, per l'intero programma</small>
+      </span>
+      <span class="fig">€ 6.952,00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Acconto 30% alla conferma</td>
+            <td class="num"><strong>€ 2.085,60</strong></td>
+            <td class="num vat">IVA inclusa</td>
+          </tr>
+          <tr>
+            <td>Saldo, entro il 27 agosto 2026</td>
+            <td class="num"><strong>€ 4.866,40</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Mezzo e conducente per cinque giornate, carburante, pedaggi autostradali, assicurazione completa, movimentazione bagagli e monitoraggio del volo IB689 del 30 agosto.</li>
+      <li><strong>Permessi compresi.</strong> Tutti i permessi ZTL, i terminal e i parcheggi bus elencati sopra, Firenze inclusa. Non ci sono altri oneri di accesso su questo programma.</li>
+      <li><strong>Ritardi del volo.</strong> Il 30 agosto l'autista attende senza costi aggiuntivi fino a 90 minuti dall'orario di atterraggio effettivo, per quanto il volo arrivi in ritardo.</li>
+      <li><strong>Bagagli del 3 settembre.</strong> Restano a bordo e sorvegliati per tutta la giornata di tempo libero a Firenze.</li>
+      <li><strong>A vostro carico.</strong> Il vitto del conducente nelle quattro giornate di escursione. Nessun pernottamento: la nostra base dista dodici chilometri dal vostro hotel e il conducente rientra a casa ogni sera.</li>
+      <li><strong>Non incluso.</strong> Biglietti del Cinque Terre Express e Cinque Terre Card del 31 agosto, che si acquistano in stazione. Ingressi, musei, pasti, guide e mance. Attesa oltre gli orari indicati, € 50,00 all'ora per mezzo. Soste aggiuntive o modifiche all'itinerario, quotate su richiesta. Rientro in hotel dopo le 02:00, € 250,00.</li>
+      <li><strong>Disponibilità e cancellazione.</strong> Cancellazione gratuita oltre 60 giorni prima del servizio; da 60 a 30 giorni viene trattenuto l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%. Mancando oggi undici giorni al primo servizio, la prenotazione ricade nella fascia da 30 a 10 giorni, e dal 20 agosto passa in quella degli ultimi 10 giorni.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Note</h2>
+    <ul class="conds">
+      <li><strong>Le Cinque Terre non si raggiungono in pullman, e non è una questione di permessi.</strong> Manarola e Vernazza sono borghi pedonali: le strade che scendono al mare sono strette, a tornanti e chiuse ai bus, e non esiste alcun permesso acquistabile che le apra. Monterosso ha una strada di accesso, ma la sosta è contingentata e comunque non risolve le altre due. La soluzione che funziona è il treno: minibus fino a La Spezia Centrale, poi il Cinque Terre Express, che collega i borghi ogni quindici o venti minuti in pochi minuti di viaggio. Vi lasciamo a La Spezia alle 09:30 e vi riprendiamo lì alle 17:30. I biglietti o la Cinque Terre Card si comprano in stazione o meglio online in anticipo, sono a vostro carico e in alta stagione costano indicativamente € 20-30 a persona per la giornata. In alternativa, con mare calmo, il battello da La Spezia tocca Monterosso e Vernazza ed è il modo più bello di vederle: a Manarola l'attracco dipende dalle condizioni del mare. Ditecelo e organizziamo la giornata sul battello all'andata e sul treno al ritorno.</li>
+      <li><strong>Firenze del 3 settembre: come risparmiare i 350 euro del permesso.</strong> Il permesso comunale per far entrare un bus turistico in città è la voce più cara di tutto il preventivo, e l'abbiamo messa perché con i bagagli a bordo e otto ore e mezza di tempo libero è la soluzione più comoda. Esiste però un'alternativa che usiamo spesso: il minibus vi lascia al parcheggio scambiatore di Villa Costanza, a Scandicci, dove la tramvia T1 parte ogni pochi minuti e in venti minuti è in Piazza della Stazione, in pieno centro. Il biglietto costa poco più di un euro e mezzo a persona, il mezzo sosta gratuitamente con i vostri bagagli e il permesso non serve. Sono circa € 350,00 in meno sul totale. Fateci sapere quale delle due preferite: il prezzo si adegua di conseguenza.</li>
+      <li><strong>Il permesso di Firenze e la lunghezza del mezzo.</strong> Le tariffe del Comune di Firenze sono graduate per lunghezza del veicolo e il Beluga sta sotto gli otto metri, quindi potrebbe rientrare in una fascia più bassa dei € 350,00 che abbiamo prudenzialmente indicato. Verifichiamo al momento del rilascio e quello che risparmiamo ve lo scaliamo in fattura.</li>
+      <li><strong>Siena e San Gimignano: conviene invertire l'ordine.</strong> Così come lo avete scritto il programma funziona, ma partendo da San Gimignano, che dista 85 km contro i 120 di Siena, si arriva in piazza verso le 09:15 e si guadagnano circa 45 minuti buoni da spendere a Siena nel pomeriggio, quando il Campo è al suo meglio. Il prezzo non cambia. Se preferite l'ordine originale va benissimo lo stesso: ci regoliamo su quello che decidete.</li>
+      <li><strong>La giornata del 2 settembre è mezza vuota.</strong> Lucca e Pisa distano fra loro 25 minuti e l'intera giornata è di soli 105 km, contro i 250 del giorno prima: dalle 08:00 alle 19:30 vi avanza parecchio tempo. Senza alcun costo aggiuntivo possiamo aggiungere una sosta sulla via del rientro — Pietrasanta e il suo centro di marmi e gallerie, oppure Forte dei Marmi e il mare, che d'estate un gruppo spagnolo apprezza — oppure semplicemente farvi partire più tardi al mattino. Ditecelo in fase di conferma.</li>
+      <li><strong>Tre giornate da undici ore e mezza di fila.</strong> Dal 31 agosto al 2 settembre il programma prevede 08:00 – 19:30 per tre giorni consecutivi. È fattibile e lo facciamo regolarmente, ma sta al limite dei tempi di guida e riposo previsti dal regolamento europeo: vi chiediamo di rispettare gli orari di rientro concordati, perché un ritardo importante di sera si trascina sulla partenza del mattino dopo. Se un giorno servisse più tempo, avvisateci il giorno prima e riorganizziamo, non all'ultimo momento.</li>
+      <li><strong>Il conducente non pernotta e questo vi fa risparmiare.</strong> La nostra base è a Ponte Buggianese, dodici chilometri dal vostro hotel: il conducente rientra a casa ogni sera e non c'è alcun pernottamento da prenotare né da pagare, a differenza di quanto succede quando il gruppo alloggia lontano. Resta a vostro carico soltanto il vitto nelle quattro giornate di escursione: la cosa più semplice è aggiungerlo dove pranza il gruppo, altrimenti si arrangia lui e ce lo dite subito.</li>
+      <li><strong>Il volo IB689 del 30 agosto.</strong> Con atterraggio alle 19:30 e cinquanta chilometri di autostrada arrivate all'Hotel Minerva intorno alle 21:00. Verificate con l'hotel il check-in a quell'ora e soprattutto la cena: molte strutture di Montecatini chiudono la sala alle 21:00 e con diciassette persone conviene averlo concordato prima, non scoprirlo all'arrivo.</li>
+      <li><strong>Il volo IB690 del 3 settembre.</strong> Ripartendo da Firenze alle 17:30 siete alle partenze verso le 18:00, due ore e venti prima del decollo delle 20:20: per un volo Schengen è giusto. Se preferite più margine anticipiamo il ritrovo alle 17:00 senza costi aggiuntivi. Confermateci voi quale orario tenere.</li>
+      <li><strong>Disponibilità: qui il tempo stringe davvero.</strong> Mancano undici giorni al primo servizio e siamo nel periodo più pieno dell'anno. Il mezzo oggi è libero e ve lo teniamo per tutta la validità di questo preventivo, ma non possiamo garantirlo oltre: se il gruppo è confermato, una vostra conferma anche solo di massima ci permette di bloccare subito il calendario. Preventivo valido fino al 22 agosto 2026.</li>
+      <li><strong>Per confermare ci servono</strong> l'indirizzo esatto dell'Hotel Minerva a Montecatini Terme, il numero definitivo dei passeggeri, un recapito telefonico o WhatsApp del capo gruppo, la vostra scelta fra permesso di Firenze e tramvia da Villa Costanza, e i vostri dati di fatturazione.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Interno — non fa parte del preventivo inviato</div>
+    <h2>Come sono stati costruiti i prezzi</h2>
+
+    <p>Base di riferimento: il preventivo <strong>Le Filigare (GM-2026-0821-LF)</strong>, che è a mezzo singolo come questo. <strong>Non è stato usato il Corte Francigena</strong>, che ha due mezzi e importi già scontati per volume.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — trasferimento FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500,00</td></tr>
+          <tr><td>Le Filigare — giornata a disposizione Siena, ~80 km, 5 h</td><td class="num">€ 809,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Le Filigare implica circa € 162 all'ora. Su questo programma tutte le giornate sono state quotate <strong>sotto</strong> la pura proporzione oraria, perché cinque servizi consecutivi giustificano un minimo di scala: 11,5 h × 162 farebbe € 1.863 contro i € 1.500 del 31 agosto. C'è quindi margine di trattativa verso il basso, ma il preventivo non nasce basso.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>30 ago — transfer FLR → Montecatini, 50 km, sera</td><td class="num">€ 550,00</td></tr>
+          <tr><td>31 ago — Cinque Terre, 220 km, 11,5 h</td><td class="num">€ 1.500,00</td></tr>
+          <tr><td>1 set — Siena e San Gimignano, 250 km, 11,5 h</td><td class="num">€ 1.400,00</td></tr>
+          <tr><td>2 set — Lucca e Pisa, 105 km, 11,5 h</td><td class="num">€ 1.100,00</td></tr>
+          <tr><td>3 set — Firenze a disposizione e transfer FLR, 110 km, 9 h</td><td class="num">€ 1.050,00</td></tr>
+          <tr><td>Permessi ZTL e parcheggi bus, riaddebito al costo</td><td class="num">€ 720,00</td></tr>
+          <tr class="tot"><td>Totale netto — IVA 10% € 632,00 — totale € 6.952,00</td><td class="num">€ 6.320,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Margine</h3>
+    <p>Preventivo costruito sul <strong>mezzo di proprietà</strong> (Beluga), 17 passeggeri su 26 posti. Costo diretto stimato € 250-350 a giornata, <strong>senza alcun pernottamento</strong> perché la base è a 12 km da Montecatini: il margine su cinque servizi è buono. I € 720 di permessi sono partita di giro e non producono margine. <strong>Se si subappalta a Francesco</strong> il costo sale a € 600-700 al giorno: in quel caso i prezzi vanno rivisti al rialzo del 20-25% prima di inviare.</p>
+
+    <h3>Da controllare subito</h3>
+    <ol>
+      <li><strong>Disponibilità del Beluga dal 30 agosto al 3 settembre.</strong> Mancano undici giorni ed è alta stagione: questa è la prima cosa da verificare, prima ancora di rispondere sul prezzo.</li>
+      <li><strong>Cinque Terre.</strong> Il cliente ha chiesto Manarola, Vernazza e Monterosso in pullman: non è possibile. Quotato minibus fino a La Spezia più treno. Se insiste per Monterosso in bus va verificata la sosta.</li>
+      <li><strong>Firenze del 3 settembre.</strong> Quotato il permesso da € 350. L'alternativa Villa Costanza più tramvia lo azzera ed è offerta nelle Note: se il cliente la sceglie, il totale scende a € 5.970,00 netti, € 6.567,00 IVA inclusa.</li>
+      <li><strong>Importi dei permessi.</strong> Certi solo Siena (€ 160) e Firenze (€ 350), dai dati di casa. La Spezia, San Gimignano, Lucca e Pisa sono stime: nel preventivo è scritto che si riaddebita il costo effettivo con le ricevute, quindi non c'è esposizione.</li>
+      <li><strong>Indirizzo dell'Hotel Minerva</strong> a Montecatini Terme, per il transfer del 30.</li>
+      <li><strong>Pagamento.</strong> Con undici giorni di preavviso il saldo è stato messo al 27 agosto, prima del servizio: con un operatore estero nuovo è la cosa giusta.</li>
+    </ol>
+  </div>
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2026-0830-PT · 19 agosto 2026</span>
+  </footer>
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Stay in Montecatini Terme
+      <span class="sub">Cinque Terre · Siena and San Gimignano · Lucca and Pisa · Florence</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Client</span><span class="v">Panavision Tours</span></div>
+      <div class="fact"><span class="eyebrow">Dates</span><span class="v">30 Aug - 3 Sep 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passengers</span><span class="v">17</span></div>
+      <div class="fact"><span class="eyebrow">Services</span><span class="v">5 over 5 days</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2026-0830-PT</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">22 August 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicle</h2>
+    <p class="lede">One minibus for the group of 17 — 16 participants and the tour leader — with the same driver for all five days.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus driver, 7.64 m</span>
+      <p>Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.</p>
+      <p>With 17 guests on board nine seats stay free — breathing room you notice across three eleven-and-a-half-hour days. The 7.64 m matter for manoeuvring too: the vehicle fits the coach terminals of Siena, Lucca and Pisa and finds parking in Florence where a twelve-metre coach struggles.</p>
+      <p>Our base is at Ponte Buggianese, twelve kilometres from Montecatini Terme: the driver goes home every night and costs you nothing in accommodation.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">Distances and journey times are road estimates, traffic excluded.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">30 August <span class="wd">· Sunday</span></span>
+          <span class="badge">Arrival transfer</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">19:30</span>
+            <span class="r">Florence Airport (FLR), flight IB689 from Madrid <span class="to">→ Montecatini Terme, Hotel Minerva</span></span>
+            <span class="d">50 km · 50 min</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 19:15 – 21:15. The driver welcomes you in the arrivals hall with the GiroMunna sign and waits at no extra cost for up to 90 minutes from the actual landing time. Hotel around 21:00.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">31 August <span class="wd">· Monday</span></span>
+          <span class="badge">Full day at disposal</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">08:00</span>
+            <span class="r">Montecatini Terme <span class="to">→ La Spezia Centrale</span></span>
+            <span class="d">110 km · 1 h 30</span>
+          </div>
+          <div class="leg">
+            <span class="t">09:30</span>
+            <span class="r">Cinque Terre by train <span class="to">· Manarola, Vernazza, Monterosso</span></span>
+            <span class="d">Cinque Terre Express</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:30</span>
+            <span class="r">La Spezia Centrale <span class="to">→ Montecatini Terme</span></span>
+            <span class="d">110 km · 1 h 30</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 07:45 – 19:45, at your disposal for the whole day, about 220 km. The villages cannot be reached by coach: the solution is set out in the Notes.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">1 September <span class="wd">· Tuesday</span></span>
+          <span class="badge">Full day at disposal</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">08:00</span>
+            <span class="r">Montecatini Terme <span class="to">→ Siena, via Tozzi coach terminal</span></span>
+            <span class="d">120 km · 1 h 40</span>
+          </div>
+          <div class="leg">
+            <span class="t">14:00</span>
+            <span class="r">Siena <span class="to">→ San Gimignano, Porta San Giovanni coach park</span></span>
+            <span class="d">45 km · 1 h 00</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:15</span>
+            <span class="r">San Gimignano <span class="to">→ Montecatini Terme</span></span>
+            <span class="d">85 km · 1 h 15</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 07:45 – 19:45. The longest day on the road, about 250 km. The Notes explain why reversing the two stops is worth it.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">2 September <span class="wd">· Wednesday</span></span>
+          <span class="badge">Full day at disposal</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">08:00</span>
+            <span class="r">Montecatini Terme <span class="to">→ Lucca, coach terminal outside the walls</span></span>
+            <span class="d">30 km · 30 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">13:00</span>
+            <span class="r">Lucca <span class="to">→ Pisa, via Pietrasantina terminal</span></span>
+            <span class="d">25 km · 30 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:45</span>
+            <span class="r">Pisa <span class="to">→ Montecatini Terme</span></span>
+            <span class="d">50 km · 45 min</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 07:45 – 19:45. The lightest day of the programme, about 105 km: there is time to spare, and the Notes suggest how to use it.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">3 September <span class="wd">· Thursday</span></span>
+          <span class="badge">Day and departure transfer</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">09:00</span>
+            <span class="r">Montecatini Terme, check-out with the luggage <span class="to">→ Florence</span></span>
+            <span class="d">50 km · 50 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:30</span>
+            <span class="r">Florence <span class="to">→ Florence Airport (FLR), flight IB690 at 20:20</span></span>
+            <span class="d">10 km · 20 min</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 08:45 – 18:15. Free time in Florence from 10:00 to 17:30: the vehicle stays in the city in an authorised parking area, with your luggage watched on board. Departures around 18:00.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>ZTL permits and access</h2>
+    <p class="lede">You asked specifically: here they all are, day by day. We advance them and they are already included in the price. We recharge you the actual cost with the receipts and settle the difference on the invoice, up or down.</p>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Day and place</th>
+            <th scope="col">What is required</th>
+            <th scope="col" class="num">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>30 Aug and 3 Sep — Florence Airport</strong></td>
+            <td>No access charge: Florence Airport applies no coach fee.</td>
+            <td class="num vat">—</td>
+          </tr>
+          <tr>
+            <td><strong>30 Aug – 3 Sep — Montecatini Terme</strong></td>
+            <td>No permit. Stopping in front of the hotel to load and unload is allowed and the vehicle is not parked in the centre.</td>
+            <td class="num vat">—</td>
+          </tr>
+          <tr>
+            <td><strong>31 Aug — La Spezia</strong></td>
+            <td>Minibus parking at the coach area for the full day. In the Cinque Terre there is no permit that can be bought for Manarola and Vernazza: they are pedestrian villages with no coach access.</td>
+            <td class="num">€ 40.00</td>
+          </tr>
+          <tr>
+            <td><strong>1 Sep — Siena</strong></td>
+            <td>Municipal tourist coach permit and the via Tozzi terminal.</td>
+            <td class="num">€ 160.00</td>
+          </tr>
+          <tr>
+            <td><strong>1 Sep — San Gimignano</strong></td>
+            <td>Coach park outside the walls, by Porta San Giovanni.</td>
+            <td class="num">€ 40.00</td>
+          </tr>
+          <tr>
+            <td><strong>2 Sep — Lucca</strong></td>
+            <td>Coach terminal outside the walls. Coaches do not enter the walled town, but the gates are a few steps away.</td>
+            <td class="num">€ 50.00</td>
+          </tr>
+          <tr>
+            <td><strong>2 Sep — Pisa</strong></td>
+            <td>Via Pietrasantina coach terminal, with the shuttle to Piazza dei Miracoli. Coaches have no access to Piazza dei Miracoli itself.</td>
+            <td class="num">€ 80.00</td>
+          </tr>
+          <tr>
+            <td><strong>3 Sep — Florence</strong></td>
+            <td>Municipal tourist coach permit for entry into the city and full-day parking in an authorised area. It is the heaviest item and the Notes explain how to avoid it.</td>
+            <td class="num">€ 350.00</td>
+          </tr>
+          <tr class="tot">
+            <td colspan="2">Total permits and access, excluding VAT</td>
+            <td class="num">€ 720.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col" class="num">Amount</th>
+            <th scope="col" class="num">VAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Sun 30 Aug</span>Florence airport → Montecatini Terme</td>
+            <td class="num">€ 550.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Mon 31 Aug</span>Full day to the Cinque Terre, via La Spezia</td>
+            <td class="num">€ 1,500.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Tue 1 Sep</span>Full day to Siena and San Gimignano</td>
+            <td class="num">€ 1,400.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Wed 2 Sep</span>Full day to Lucca and Pisa</td>
+            <td class="num">€ 1,100.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Thu 3 Sep</span>Day in Florence and transfer to the airport</td>
+            <td class="num">€ 1,050.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>ZTL permits, terminals and coach parking — itemised in the table above</td>
+            <td class="num">€ 720.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Driver's accommodation — not required, our base is 12 km away</td>
+            <td class="num vat"><em>no charge</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr>
+            <td>Driver's meals, 4 days</td>
+            <td class="num vat"><em>at your charge</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Total, excluding VAT</td>
+            <td class="num">€ 6,320.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Total payable, VAT 10% included
+        <small>about € 409.00 per person across 17 travellers, for the complete programme</small>
+      </span>
+      <span class="fig">€ 6,952.00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Deposit 30% on confirmation</td>
+            <td class="num"><strong>€ 2,085.60</strong></td>
+            <td class="num vat">VAT included</td>
+          </tr>
+          <tr>
+            <td>Balance, by 27 August 2026</td>
+            <td class="num"><strong>€ 4,866.40</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Vehicle and driver for five days, fuel, motorway tolls, full insurance, luggage handling and monitoring of flight IB689 on 30 August.</li>
+      <li><strong>Permits included.</strong> All the ZTL permits, terminals and coach parking listed above, Florence among them. No other access charges apply to this programme.</li>
+      <li><strong>Flight delays.</strong> On 30 August the driver waits at no extra cost for up to 90 minutes from the actual landing time, however late the flight arrives.</li>
+      <li><strong>Luggage on 3 September.</strong> It stays on board and watched throughout the free day in Florence.</li>
+      <li><strong>At your charge.</strong> The driver's meals on the four excursion days. No accommodation: our base is twelve kilometres from your hotel and the driver goes home every night.</li>
+      <li><strong>Not included.</strong> Cinque Terre Express tickets and the Cinque Terre Card on 31 August, bought at the station. Entrance fees, museums, meals, guides and gratuities. Waiting beyond the times indicated, € 50.00 per hour per vehicle. Additional stops or changes to the itinerary, quoted on request. Return to the hotel after 02:00, € 250.00.</li>
+      <li><strong>Availability and cancellation.</strong> Cancellation is free of charge more than 60 days before the service; from 60 to 30 days the deposit is retained; from 30 to 10 days 50%; in the last 10 days 100%. With eleven days to the first service today, the booking falls in the 30-to-10-day band, and from 20 August it moves into the last-10-days band.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <ul class="conds">
+      <li><strong>The Cinque Terre cannot be reached by coach, and it is not a matter of permits.</strong> Manarola and Vernazza are pedestrian villages: the roads down to the sea are narrow, full of hairpins and closed to coaches, and there is no permit on sale that opens them. Monterosso does have an access road, but stopping is rationed and it does not solve the other two anyway. The solution that works is the train: minibus to La Spezia Centrale, then the Cinque Terre Express, which links the villages every fifteen to twenty minutes in a few minutes' ride. We drop you at La Spezia at 09:30 and collect you there at 17:30. Tickets or the Cinque Terre Card are bought at the station, or better online in advance; they are at your charge and in high season cost roughly € 20-30 per person for the day. Alternatively, in calm weather, the ferry from La Spezia calls at Monterosso and Vernazza and is the finest way to see them: at Manarola landing depends on the sea. Tell us and we will build the day around the boat outbound and the train back.</li>
+      <li><strong>Florence on 3 September: how to save the € 350 permit.</strong> The municipal permit that lets a tourist coach into the city is the most expensive single item in this quotation, and we have included it because with the luggage on board and eight and a half hours of free time it is the most comfortable arrangement. There is an alternative we use often, though: the minibus drops you at the Villa Costanza park-and-ride in Scandicci, where the T1 tramway leaves every few minutes and reaches Piazza della Stazione, right in the centre, in twenty minutes. The ticket costs little more than one and a half euro per person, the vehicle parks free of charge with your luggage, and no permit is needed. That is about € 350.00 off the total. Let us know which of the two you prefer and the price follows.</li>
+      <li><strong>The Florence permit and the length of the vehicle.</strong> The City of Florence tariffs are graduated by vehicle length and the Beluga is under eight metres, so it may fall into a band below the € 350.00 we have prudently quoted. We will check when the permit is issued and credit you whatever we save.</li>
+      <li><strong>Siena and San Gimignano: worth reversing the order.</strong> The programme works as you wrote it, but starting from San Gimignano, 85 km away against Siena's 120, puts you in the square around 09:15 and gains a good 45 minutes to spend in Siena in the afternoon, when the Campo is at its best. The price is unchanged. If you prefer the original order that is perfectly fine too: we follow whatever you decide.</li>
+      <li><strong>2 September is a half-empty day.</strong> Lucca and Pisa are 25 minutes apart and the whole day comes to just 105 km, against 250 the day before: from 08:00 to 19:30 you have time left over. At no extra cost we can add a stop on the way back — Pietrasanta, with its marble workshops and galleries, or Forte dei Marmi and the sea, which a Spanish group tends to enjoy in summer — or simply have you start later in the morning. Tell us when you confirm.</li>
+      <li><strong>Three consecutive eleven-and-a-half-hour days.</strong> From 31 August to 2 September the programme runs 08:00 – 19:30 for three days in a row. It is workable and we do it regularly, but it sits at the limit of the driving and rest times set by the European regulation: we ask you to keep to the agreed return times, because a serious delay in the evening carries over into the next morning's departure. If one day needs more time, tell us the day before and we will reorganise — not at the last minute.</li>
+      <li><strong>The driver does not stay overnight, and that saves you money.</strong> Our base is at Ponte Buggianese, twelve kilometres from your hotel: the driver goes home every night and there is no accommodation to book or pay for, unlike the usual case where the group stays further away. Only the meals on the four excursion days remain at your charge: the simplest arrangement is to add him wherever the group has lunch, otherwise he sorts himself out — just tell us straight away.</li>
+      <li><strong>Flight IB689 on 30 August.</strong> Landing at 19:30, with fifty kilometres of motorway, brings you to the Hotel Minerva around 21:00. Do check with the hotel that check-in at that hour is fine and, above all, dinner: many Montecatini properties close the dining room at 21:00, and with seventeen people it is far better agreed in advance than discovered on arrival.</li>
+      <li><strong>Flight IB690 on 3 September.</strong> Leaving Florence at 17:30 puts you at departures around 18:00, two hours and twenty before the 20:20 take-off: right for a Schengen flight. If you would rather have more margin we can bring the pick-up forward to 17:00 at no extra cost. Confirm which time you want us to hold.</li>
+      <li><strong>Availability: time really is short here.</strong> There are eleven days to the first service and this is the busiest stretch of the year. The vehicle is free today and we hold it for you for the whole validity of this quotation, but we cannot guarantee it beyond that: if the group is confirmed, even an indicative go-ahead from you lets us block the calendar straight away. Quotation valid until 22 August 2026.</li>
+      <li><strong>To confirm we need</strong> the exact address of the Hotel Minerva in Montecatini Terme, the final passenger count, a mobile or WhatsApp contact for the tour leader, your choice between the Florence permit and the tramway from Villa Costanza, and your invoicing details.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2026-0830-PT · 19 August 2026</span>
+  </footer>
+</div>
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
