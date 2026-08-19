@@ -47,18 +47,18 @@ secondo mezzo da valutare.
 | Mar 1 set | Siena e San Gimignano, giornata a disposizione | 250 | 11,5 | € 950,00 |
 | Mer 2 set | Lucca e Pisa, giornata a disposizione | 105 | 11,5 | € 780,00 |
 | Gio 3 set | Firenze a disposizione + transfer FLR (volo IB690 delle 20:20) | 110 | 9 | € 780,00 |
-| — | Permessi ZTL e parcheggi bus, riaddebito al costo | | | € 780,00 |
+| — | Check point e sosta bus, riaddebito al costo | | | € 1.371,00 |
 | — | Pernottamento del conducente | | | non necessario |
 | — | Vitto del conducente, 4 giornate | | | a carico del cliente |
 
-**Totale netto € 4.740,00 · IVA 10% € 474,00 · Totale € 5.214,00** (circa € 307,00 a persona)
+**Totale netto € 5.331,00 · IVA 10% € 533,10 · Totale € 5.864,10** (circa € 345,00 a persona)
 
 I chilometri qui sopra servono solo a ricostruire il prezzo: **nel preventivo consegnato al
 cliente non compaiono**, né nella tabella del servizio né nelle note. Lì ci sono soltanto gli
 orari e i tempi di percorrenza.
 
-Acconto 30% € 1.564,20 — saldo € 3.649,80 entro il 27 agosto, **prima** del servizio: con un
-operatore estero nuovo e undici giorni di preavviso è la scelta giusta.
+Acconto 30% arrotondato a € 1.750,00 — saldo € 4.114,10 entro il 27 agosto, **prima** del
+servizio: con un operatore estero nuovo e undici giorni di preavviso è la scelta giusta.
 
 ## Come sono stati costruiti i prezzi
 
@@ -110,9 +110,11 @@ servizio e **nessun pernottamento**, perché Montecatini Terme dista dodici chil
 base: il conducente rientra a casa ogni sera. Sono circa **€ 1.600 di costo vivo su cinque
 giornate**, contro € 3.960 di servizi: il margine resta buono anche dopo il taglio.
 
-I € 780 di permessi sono **partita di giro** e non producono margine: nel preventivo è
+I € 1.371 di check point sono **partita di giro** e non producono margine: nel preventivo è
 scritto che si riaddebita il costo effettivo con le ricevute e si conguaglia in fattura.
-**Quelli non si toccano** se serve scendere ancora: è cassa che esce davvero.
+**Quelli non si toccano** se serve scendere ancora: è cassa che esce davvero. Valgono più di
+un quarto del totale, quindi conviene spiegarli bene al cliente invece di nasconderli dentro
+il prezzo — è il motivo per cui la tabella dedicata resta la scelta giusta.
 
 **Se si subappalta a Francesco**, il costo si colloca sui € 600-700 al giorno e a questi
 prezzi il margine si assottiglia parecchio: in quel caso il lavoro va rifatto sui numeri,
@@ -141,27 +143,31 @@ promettere qualsiasi cosa.
 Il cliente li ha chiesti espressamente, quindi nel preventivo c'è una **sezione dedicata**
 con il dettaglio giornata per giornata.
 
-| Giornata | Voce | Importo | Fonte |
-|---|---|---|---|
-| 30 ago e 3 set | Aeroporto di Firenze | nessun onere | dato di casa |
-| 30 ago – 3 set | Montecatini Terme, carico/scarico in hotel | nessun onere | — |
-| 31 ago | La Spezia, check point bus turistici e sosta | € 100,00 | dato di Girolamo |
-| 1 set | Siena, permesso comunale bus turistici | € 160,00 | dato di casa |
-| 1 set | San Gimignano, parcheggio bus | € 40,00 | **stima** |
-| 2 set | Lucca, terminal bus fuori le mura | € 50,00 | **stima** |
-| 2 set | Pisa, terminal di via Pietrasantina | € 80,00 | **stima** |
-| 3 set | Firenze, permesso bus turistici + sosta giornaliera | € 350,00 | dato di casa |
-| | **Totale** | **€ 780,00** | |
+| Giornata | Voce | Importo |
+|---|---|---|
+| 30 ago e 3 set | Aeroporto di Firenze | nessun onere |
+| 30 ago – 3 set | Montecatini Terme, carico/scarico in hotel | nessun onere |
+| 31 ago | La Spezia, check point bus turistici e sosta | € 100,00 |
+| 1 set | Siena, check point bus turistici | € 160,00 |
+| 1 set | San Gimignano, check point bus turistici | € 240,00 |
+| 2 set | Lucca, check point bus turistici | € 180,00 |
+| 2 set | Pisa, check point di via Pietrasantina | € 270,00 |
+| 3 set | Firenze, check point + sosta giornaliera, tariffa da settembre | € 421,00 |
+| | **Totale** | **€ 1.371,00** |
 
-Certi Siena e Firenze, che vengono dai dati di casa, e **La Spezia: il check point costa
-€ 100, non € 40 come avevo stimato all'inizio — corretto da Girolamo.** San Gimignano, Lucca
-e Pisa restano stime, ma **non c'è esposizione**: nel preventivo è scritto che si riaddebita
-il costo effettivo con le ricevute e si conguaglia in fattura, in più o in meno. Le tariffe
-vanno comunque verificate prima della partenza.
+**Sono tutti dati di Girolamo: nessuna stima.** Le mie stime iniziali erano lontanissime —
+avevo messo San Gimignano a € 40 contro € 240 reali, Pisa a € 80 contro € 270, Lucca a € 50
+contro € 180, La Spezia a € 40 contro € 100. In totale avevo stimato € 720 dove ne servono
+€ 1.371: quasi il doppio.
 
-Nota per i prossimi lavori: alle Cinque Terre il costo d'accesso non è un parcheggio da
-quattro soldi, è il **check point bus turistici di La Spezia da € 100**. Va messo a
-preventivo per quello che è.
+**Firenze: € 421 è la tariffa in vigore da settembre**, e il terzo giorno del gruppo ci
+ricade dentro per tre giorni. Se il programma slittasse ad agosto varrebbe l'importo più
+basso.
+
+Nota per i prossimi lavori: in Toscana **ogni città d'arte ha il suo check point per i bus
+turistici e costano parecchio.** Non vanno mai stimati a occhio come parcheggi: sono la voce
+che può sballare un preventivo. Le tariffe sono ora in `CLAUDE.md`, e vanno comunque
+riverificate perché i Comuni le ritoccano.
 
 ## La leva sul prezzo: Firenze del 3 settembre
 
@@ -170,9 +176,10 @@ l'alternativa: **scarico a Villa Costanza (Scandicci) e tramvia T1 fino in centr
 minuti, poco più di un euro e mezzo a persona, sosta gratuita del mezzo con i bagagli a
 bordo, nessun permesso.
 
-Se il cliente sceglie la tramvia il totale scende a **€ 4.390,00 netti, € 4.829,00 IVA
-inclusa**. È la carta da giocare se tirano ancora sul prezzo: sono € 385 in meno per loro
-**senza toccare il nostro margine**, perché è un costo che semplicemente non si sostiene.
+Se il cliente sceglie la tramvia il totale scende a **€ 4.910,00 netti, € 5.401,00 IVA
+inclusa**. È la carta da giocare se tirano ancora sul prezzo, e adesso vale molto di più di
+prima: sono **€ 463,10 in meno** per loro **senza toccare il nostro margine**, perché è un
+costo che semplicemente non si sostiene.
 
 C'è anche un secondo margine: le tariffe di Firenze sono graduate per lunghezza del veicolo
 e il Beluga sta sotto gli otto metri, quindi potrebbe rientrare in una fascia più bassa dei

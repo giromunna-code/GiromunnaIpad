@@ -133,11 +133,25 @@ esempio proponendo al cliente il parcheggio scambiatore invece del permesso per 
   sistemare il conducente nella stessa struttura del gruppo.
 - Cancellazione: gratuita oltre 60 giorni; da 60 a 30 giorni si trattiene l'acconto;
   da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%.
-- L'aeroporto di Firenze non comporta oneri di accesso; quello di Pisa ha il parcheggio bus
-  (circa € 61). L'ingresso di un bus turistico nel centro di Firenze richiede un permesso a
-  parte (circa € 350). Siena ha il permesso comunale per i bus turistici (circa € 160).
-  **La Spezia ha il check point per i bus turistici: € 100**, ed è la voce d'accesso da
-  mettere a preventivo per le gite alle Cinque Terre, dove i borghi si raggiungono in treno.
+- **I check point per i bus turistici.** Ogni città d'arte toscana ne ha uno e costano
+  parecchio: non vanno mai stimati a occhio come se fossero parcheggi, perché sono la voce
+  che sballa un preventivo. Le tariffe note:
+
+  | Città | Check point |
+  |---|---|
+  | Firenze | **€ 421** (tariffa in vigore da settembre) |
+  | Pisa | € 270 |
+  | San Gimignano | € 240 |
+  | Lucca | € 180 |
+  | Siena | € 160 |
+  | La Spezia | € 100 — è la voce d'accesso delle gite alle Cinque Terre |
+
+  Vanno **riverificate prima di ogni preventivo**: i Comuni le ritoccano, come ha fatto
+  Firenze da settembre. A preventivo si elencano una per una in una tabella dedicata, si
+  anticipano e si riaddebitano al costo effettivo con le ricevute, conguagliando in fattura.
+
+- L'aeroporto di Firenze non comporta oneri di accesso. L'aeroporto di Pisa ha il parcheggio
+  bus (circa € 61), che è cosa diversa dal check point della città.
 
 ## Struttura del repository
 

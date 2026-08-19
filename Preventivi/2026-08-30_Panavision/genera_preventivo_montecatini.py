@@ -112,37 +112,35 @@ IT = dict(
          "circa 08:45 – 18:15"),
     ],
     h_ztl="Permessi ZTL e accessi",
-    ztl_intro=("Avete chiesto espressamente i permessi ZTL: eccoli tutti, giornata per giornata. "
-               "Li anticipiamo noi e sono già compresi nel prezzo alla riga <i>Permessi ZTL, terminal e "
-               "parcheggi bus</i>. Gli importi sono quelli delle tariffe in vigore: vi riaddebitiamo il costo "
-               "effettivo con le ricevute e conguagliamo in fattura, in più o in meno."),
+    ztl_intro=("Li avete chiesti espressamente: eccoli tutti. Su questo itinerario pesano più del solito, "
+               "perché in cinque giorni si toccano cinque città che applicano tutte il check point per i bus "
+               "turistici, a tariffe fissate dai Comuni. Li anticipiamo noi e non ci guadagniamo nulla: "
+               "vi riaddebitiamo il costo effettivo con le ricevute e conguagliamo in fattura."),
     ztl_head=["Giornata e località", "Cosa serve", "Importo"],
     ztl=[
         ("30 ago e 3 set — Aeroporto di Firenze",
          "Nessun onere di accesso: l'aeroporto di Firenze non applica tariffe ai bus.", "—"),
         ("30 ago – 3 set — Montecatini Terme",
-         "Nessun permesso. La sosta davanti all'hotel per carico e scarico è consentita e il mezzo non "
-         "resta parcheggiato in centro.", "—"),
+         "Nessun onere: carico e scarico davanti all'hotel sono consentiti e il mezzo non sosta in centro.",
+         "—"),
         ("31 ago — La Spezia",
-         "Check point bus turistici e sosta del minibus per l'intera giornata. Nelle Cinque Terre non esistono "
-         "permessi acquistabili per Manarola e Vernazza: sono borghi pedonali senza accesso ai pullman.",
-         "€ 100,00"),
+         "Check point bus turistici e sosta per l'intera giornata. Manarola e Vernazza non hanno accesso ai "
+         "pullman e non esiste permesso che lo apra: vedi Note.", "€ 100,00"),
         ("1 set — Siena",
-         "Permesso comunale bus turistici e terminal di via Tozzi.", "€ 160,00"),
+         "Check point bus turistici e terminal di via Tozzi.", "€ 160,00"),
         ("1 set — San Gimignano",
-         "Parcheggio bus fuori le mura, presso Porta San Giovanni.", "€ 40,00"),
+         "Check point bus turistici, con sosta fuori le mura presso Porta San Giovanni.", "€ 240,00"),
         ("2 set — Lucca",
-         "Terminal bus fuori le mura. Dentro le mura i pullman non entrano, ma le porte sono a pochi passi.",
-         "€ 50,00"),
+         "Check point bus turistici e sosta fuori le mura, a pochi passi dalle porte.", "€ 180,00"),
         ("2 set — Pisa",
-         "Terminal bus di via Pietrasantina, con navetta per Piazza dei Miracoli. In Piazza dei Miracoli i bus "
-         "non accedono.", "€ 80,00"),
+         "Check point di via Pietrasantina, con navetta per Piazza dei Miracoli, dove i bus non accedono.",
+         "€ 270,00"),
         ("3 set — Firenze",
-         "Permesso comunale bus turistici per l'ingresso in città e sosta giornaliera in area autorizzata. "
-         "È la voce più pesante e nelle Note trovate come evitarla.", "€ 350,00"),
+         "Check point per l'ingresso in città e sosta giornaliera, alla tariffa in vigore da settembre. "
+         "La voce più pesante: nelle Note trovate come evitarla.", "€ 421,00"),
     ],
     ztl_total_label="Totale permessi e accessi, al netto di IVA",
-    ztl_total="€ 780,00",
+    ztl_total="€ 1.371,00",
     h_prezzo="Il prezzo",
     price_rows=[
         ("Dom 30 ago — aeroporto di Firenze → Montecatini Terme", "€ 400,00", "+ IVA 10%"),
@@ -150,16 +148,16 @@ IT = dict(
         ("Mar 1 set — giornata intera a Siena e San Gimignano", "€ 950,00", "+ IVA 10%"),
         ("Mer 2 set — giornata intera a Lucca e Pisa", "€ 780,00", "+ IVA 10%"),
         ("Gio 3 set — giornata a Firenze e trasferimento all'aeroporto", "€ 780,00", "+ IVA 10%"),
-        ("Permessi ZTL, terminal e parcheggi bus — dettaglio nella tabella sopra", "€ 780,00", "+ IVA 10%"),
+        ("Check point e sosta bus nelle città d'arte — dettaglio nella tabella sopra", "€ 1.371,00", "+ IVA 10%"),
         ("Pernottamento del conducente — non necessario, la base è a un quarto d'ora",
          "<i>nessun costo</i>", ""),
         ("Vitto del conducente, 4 giornate", "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 4.740,00",
+    price_total="€ 5.331,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 5.214,00.",
-    perhead="Sono circa € 307,00 a persona su 17 partecipanti, per l'intero programma di cinque giorni.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 5.864,10.",
+    perhead="Sono circa € 345,00 a persona su 17 partecipanti, per l'intero programma di cinque giorni.",
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente per cinque giornate, carburante, pedaggi autostradali, assicurazione completa, "
@@ -178,8 +176,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 1.564,20", "IVA inclusa"),
-        ("Saldo, entro il 27 agosto 2026", "€ 3.649,80", ""),
+        ("Acconto 30% alla conferma", "€ 1.750,00", "IVA inclusa"),
+        ("Saldo, entro il 27 agosto 2026", "€ 4.114,10", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -197,19 +195,20 @@ IT = dict(
          "In alternativa, con mare calmo, il battello da La Spezia tocca Monterosso e Vernazza ed è il modo "
          "più bello di vederle: a Manarola l'attracco dipende dalle condizioni del mare. Ditecelo e "
          "organizziamo la giornata sul battello all'andata e sul treno al ritorno."),
-        ("<b>Firenze del 3 settembre: come risparmiare i 350 euro del permesso.</b> "
-         "Il permesso comunale per far entrare un bus turistico in città è la voce più cara di "
+        ("<b>Firenze del 3 settembre: come risparmiare i 421 euro del check point.</b> "
+         "Il check point comunale per far entrare un bus turistico in città è la voce più cara di "
          "tutto il preventivo, e l'abbiamo messa perché con i bagagli a bordo e otto ore e mezza di tempo "
          "libero è la soluzione più comoda. Esiste però un'alternativa che usiamo spesso: "
          "il minibus vi lascia al parcheggio scambiatore di Villa Costanza, a Scandicci, dove la tramvia T1 "
          "parte ogni pochi minuti e in venti minuti è in Piazza della Stazione, in pieno centro. "
          "Il biglietto costa poco più di un euro e mezzo a persona, il mezzo sosta gratuitamente con i "
-         "vostri bagagli e il permesso non serve. Sono circa € 350,00 in meno sul totale. "
+         "vostri bagagli e il check point non serve. Sono € 421,00 in meno sul totale. "
          "Fateci sapere quale delle due preferite: il prezzo si adegua di conseguenza."),
-        ("<b>Il permesso di Firenze e la lunghezza del mezzo.</b> Le tariffe del Comune di Firenze sono "
-         "graduate per lunghezza del veicolo e il Beluga sta sotto gli otto metri, quindi potrebbe rientrare in "
-         "una fascia più bassa dei € 350,00 che abbiamo prudenzialmente indicato. Verifichiamo al "
-         "momento del rilascio e quello che risparmiamo ve lo scaliamo in fattura."),
+        ("<b>Perché il check point di Firenze costa così.</b> Il Comune di Firenze ha ritoccato la tariffa "
+         "dei bus turistici a partire da settembre e il vostro terzo giorno ci ricade dentro per tre giorni: "
+         "sono € 421,00 invece dell'importo più basso in vigore ad agosto. Non è una nostra voce e non ci "
+         "guadagniamo nulla — se al momento del rilascio l'importo risultasse diverso, ve lo conguagliamo in "
+         "fattura. È anche il motivo per cui vale la pena guardare l'alternativa della tramvia qui sopra."),
         ("<b>Siena e San Gimignano: conviene invertire l'ordine.</b> Così come lo avete scritto il "
          "programma funziona, ma partendo da San Gimignano, che è parecchio più vicino di Siena, si arriva "
          "in piazza verso le 09:15 e si guadagnano circa 45 minuti buoni da spendere a Siena nel pomeriggio, "
@@ -322,37 +321,35 @@ EN = dict(
          "approx. 08:45 – 18:15"),
     ],
     h_ztl="ZTL permits and access",
-    ztl_intro=("You asked specifically about ZTL permits: here they all are, day by day. We advance them and "
-               "they are already included in the price under the line <i>ZTL permits, terminals and coach "
-               "parking</i>. The amounts are at the tariffs currently in force: we recharge you the actual cost "
-               "with the receipts and settle the difference on the invoice, up or down."),
+    ztl_intro=("You asked specifically: here they all are. They weigh more than usual on this itinerary, "
+               "because in five days you touch five towns that all operate a tourist coach check point, at "
+               "tariffs set by each municipality. We advance them and make nothing on them: we recharge you "
+               "the actual cost with the receipts and settle the difference on the invoice."),
     ztl_head=["Day and place", "What is required", "Amount"],
     ztl=[
         ("30 Aug and 3 Sep — Florence Airport",
          "No access charge: Florence Airport applies no coach fee.", "—"),
         ("30 Aug – 3 Sep — Montecatini Terme",
-         "No permit. Stopping in front of the hotel to load and unload is allowed and the vehicle is not "
-         "parked in the centre.", "—"),
+         "No charge: loading and unloading in front of the hotel is allowed and the vehicle is not parked "
+         "in the centre.", "—"),
         ("31 Aug — La Spezia",
-         "Tourist coach check point and minibus parking for the full day. In the Cinque Terre there is no permit "
-         "that can be bought for Manarola and Vernazza: they are pedestrian villages with no coach access.",
-         "€ 100.00"),
+         "Tourist coach check point and parking for the full day. Manarola and Vernazza have no coach access "
+         "and no permit opens them: see the Notes.", "€ 100.00"),
         ("1 Sep — Siena",
-         "Municipal tourist coach permit and the via Tozzi terminal.", "€ 160.00"),
+         "Tourist coach check point and the via Tozzi terminal.", "€ 160.00"),
         ("1 Sep — San Gimignano",
-         "Coach park outside the walls, by Porta San Giovanni.", "€ 40.00"),
+         "Tourist coach check point, parking outside the walls by Porta San Giovanni.", "€ 240.00"),
         ("2 Sep — Lucca",
-         "Coach terminal outside the walls. Coaches do not enter the walled town, but the gates are a few "
-         "steps away.", "€ 50.00"),
+         "Tourist coach check point and parking outside the walls, a few steps from the gates.", "€ 180.00"),
         ("2 Sep — Pisa",
-         "Via Pietrasantina coach terminal, with the shuttle to Piazza dei Miracoli. Coaches have no access to "
-         "Piazza dei Miracoli itself.", "€ 80.00"),
+         "Via Pietrasantina check point, with the shuttle to Piazza dei Miracoli, where coaches have no access.",
+         "€ 270.00"),
         ("3 Sep — Florence",
-         "Municipal tourist coach permit for entry into the city and full-day parking in an authorised area. "
-         "It is the heaviest item and the Notes explain how to avoid it.", "€ 350.00"),
+         "Check point for entry into the city and full-day parking, at the tariff in force from September. "
+         "The heaviest item: the Notes explain how to avoid it.", "€ 421.00"),
     ],
     ztl_total_label="Total permits and access, excluding VAT",
-    ztl_total="€ 780.00",
+    ztl_total="€ 1,371.00",
     h_prezzo="The price",
     price_rows=[
         ("Sun 30 Aug — Florence airport → Montecatini Terme", "€ 400.00", "+ VAT 10%"),
@@ -360,16 +357,16 @@ EN = dict(
         ("Tue 1 Sep — full day to Siena and San Gimignano", "€ 950.00", "+ VAT 10%"),
         ("Wed 2 Sep — full day to Lucca and Pisa", "€ 780.00", "+ VAT 10%"),
         ("Thu 3 Sep — day in Florence and transfer to the airport", "€ 780.00", "+ VAT 10%"),
-        ("ZTL permits, terminals and coach parking — itemised in the table above", "€ 780.00", "+ VAT 10%"),
+        ("Coach check points and parking in the art cities — itemised in the table above", "€ 1,371.00", "+ VAT 10%"),
         ("Driver's accommodation — not required, our base is a quarter of an hour away",
          "<i>no charge</i>", ""),
         ("Driver's meals, 4 days", "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 4,740.00",
+    price_total="€ 5,331.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 5,214.00.",
-    perhead="That is about € 307.00 per person across 17 travellers, for the complete five-day programme.",
+    grand="Total payable, VAT 10% included: € 5,864.10.",
+    perhead="That is about € 345.00 per person across 17 travellers, for the complete five-day programme.",
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver for five days, fuel, motorway tolls, full insurance, luggage handling and monitoring "
@@ -388,8 +385,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 1,564.20", "VAT included"),
-        ("Balance, by 27 August 2026", "€ 3,649.80", ""),
+        ("Deposit 30% on confirmation", "€ 1,750.00", "VAT included"),
+        ("Balance, by 27 August 2026", "€ 4,114.10", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -407,19 +404,20 @@ EN = dict(
          "ferry from La Spezia calls at Monterosso and Vernazza and is the finest way to see them: at Manarola "
          "landing depends on the sea. Tell us and we will build the day around the boat outbound and the train "
          "back."),
-        ("<b>Florence on 3 September: how to save the € 350 permit.</b> "
-         "The municipal permit that lets a tourist coach into the city is the most expensive single item in "
+        ("<b>Florence on 3 September: how to save the € 421 check point.</b> "
+         "The municipal check point that lets a tourist coach into the city is the most expensive single item in "
          "this quotation, and we have included it because with the luggage on board and eight and a half hours "
          "of free time it is the most comfortable arrangement. There is an alternative we use often, though: "
          "the minibus drops you at the Villa Costanza park-and-ride in Scandicci, where the T1 tramway leaves "
          "every few minutes and reaches Piazza della Stazione, right in the centre, in twenty minutes. The "
          "ticket costs little more than one and a half euro per person, the vehicle parks free of charge with "
-         "your luggage, and no permit is needed. That is about € 350.00 off the total. Let us know which "
+         "your luggage, and no check point is needed. That is € 421.00 off the total. Let us know which "
          "of the two you prefer and the price follows."),
-        ("<b>The Florence permit and the length of the vehicle.</b> The City of Florence tariffs are graduated "
-         "by vehicle length and the Beluga is under eight metres, so it may fall into a band below the "
-         "€ 350.00 we have prudently quoted. We will check when the permit is issued and credit you "
-         "whatever we save."),
+        ("<b>Why the Florence check point costs what it does.</b> The City of Florence raised its tourist "
+         "coach tariff from September, and your third day falls inside the new one by three days: € 421.00 "
+         "instead of the lower August figure. It is not our charge and we make nothing on it — if the amount "
+         "turns out different when the permit is issued, we settle it on the invoice. It is also why the "
+         "tramway alternative above is worth a look."),
         ("<b>Siena and San Gimignano: worth reversing the order.</b> The programme works as you wrote it, but "
          "starting from San Gimignano, a good deal closer than Siena, puts you in the square around 09:15 and "
          "gains a good 45 minutes to spend in Siena in the afternoon, when the Campo is at its best. The price "
