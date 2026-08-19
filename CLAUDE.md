@@ -88,15 +88,36 @@ perché lì servono a ricostruire come è stato fatto il prezzo.
 
 Il riferimento per un lavoro con **un mezzo solo** è il preventivo **Le Filigare**
 (GM-2026-0821-LF): trasferimento di ~50 km € 500 netti, giornata a disposizione di ~80 km e
-5 ore € 809 netti. Da lì si sale in proporzione alle ore e ai chilometri. Ore e chilometri
-servono a fare il conto: nel preventivo consegnato al cliente compaiono solo gli orari.
+5 ore € 809 netti. Ore e chilometri servono a fare il conto: nel preventivo consegnato al
+cliente compaiono solo gli orari.
+
+**Le ore non si moltiplicano.** Gli € 809 di Le Filigare per 5 ore *non* implicano una tariffa
+oraria da riportare su una giornata più lunga: quel prezzo paga soprattutto un minimo di
+giornata — far uscire il mezzo, impegnare il conducente per la giornata, coprire il fisso. Le
+ore in più di una giornata lunga sono quasi tutte **ore di attesa**, con il mezzo fermo in
+parcheggio mentre il gruppo visita, e costano poco. Una giornata da 11-12 ore vale più di una
+da 5, ma non il doppio: si parte da una **tariffa di giornata piena** e si aggiunge poco per
+le ore e la strada in più. Le Filigare resta il riferimento buono per il **trasferimento
+singolo**, che è il pezzo riutilizzabile tale e quale.
+
+**Più giornate consecutive costano meno di altrettanti lavori singoli.** Stesso mezzo, stesso
+conducente, nessun riposizionamento, spesso nessun pernottamento, un unico contratto: è il
+lavoro più economico da erogare, e il prezzo lo deve riflettere. Vale soprattutto con i tour
+operator, che comprano pacchetti di giornate e confrontano il totale, non la singola voce.
 
 **Non usare mai come base i prezzi del Corte Francigena divisi per due.** Quel preventivo ha
 due mezzi e i suoi importi per mezzo sono già scontati per volume: applicarli a un lavoro
 singolo porta il prezzo sotto mercato. Servono solo come riferimento per lavori a due mezzi.
 
 Nel dubbio il prezzo va tenuto **alto**: Girolamo lo abbassa se serve, ma un preventivo
-sotto mercato svaluta il servizio e non si recupera.
+sotto mercato svaluta il servizio e non si recupera. Tenerlo alto vuol dire stare nella parte
+alta del mercato, non gonfiarlo moltiplicando le ore: è una scelta commerciale, non un modo
+di fare i conti.
+
+**I permessi ZTL, i parcheggi e i pedaggi non si toccano quando si abbassa un preventivo.**
+Sono partita di giro, cassa che esce davvero, e tagliarli significa rimetterci. Se serve
+scendere si lavora sulle tariffe di giornata, oppure si toglie il costo alla radice — per
+esempio proponendo al cliente il parcheggio scambiatore invece del permesso per il centro.
 
 ### Condizioni ricorrenti
 

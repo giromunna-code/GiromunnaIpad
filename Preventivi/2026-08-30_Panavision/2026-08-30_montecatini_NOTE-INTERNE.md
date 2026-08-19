@@ -42,22 +42,22 @@ secondo mezzo da valutare.
 
 | Data | Servizio | Km | Ore | Netto |
 |---|---|---|---|---|
-| Dom 30 ago | FLR (volo IB689, atterraggio 19:30) → Montecatini, Hotel Minerva | 50 | 2 | € 550,00 |
-| Lun 31 ago | Cinque Terre via La Spezia, giornata a disposizione | 220 | 11,5 | € 1.500,00 |
-| Mar 1 set | Siena e San Gimignano, giornata a disposizione | 250 | 11,5 | € 1.400,00 |
-| Mer 2 set | Lucca e Pisa, giornata a disposizione | 105 | 11,5 | € 1.100,00 |
-| Gio 3 set | Firenze a disposizione + transfer FLR (volo IB690 delle 20:20) | 110 | 9 | € 1.050,00 |
+| Dom 30 ago | FLR (volo IB689, atterraggio 19:30) → Montecatini, Hotel Minerva | 50 | 2 | € 400,00 |
+| Lun 31 ago | Cinque Terre via La Spezia, giornata a disposizione | 220 | 11,5 | € 1.050,00 |
+| Mar 1 set | Siena e San Gimignano, giornata a disposizione | 250 | 11,5 | € 950,00 |
+| Mer 2 set | Lucca e Pisa, giornata a disposizione | 105 | 11,5 | € 780,00 |
+| Gio 3 set | Firenze a disposizione + transfer FLR (volo IB690 delle 20:20) | 110 | 9 | € 780,00 |
 | — | Permessi ZTL e parcheggi bus, riaddebito al costo | | | € 720,00 |
 | — | Pernottamento del conducente | | | non necessario |
 | — | Vitto del conducente, 4 giornate | | | a carico del cliente |
 
-**Totale netto € 6.320,00 · IVA 10% € 632,00 · Totale € 6.952,00** (circa € 409,00 a persona)
+**Totale netto € 4.680,00 · IVA 10% € 468,00 · Totale € 5.148,00** (circa € 303,00 a persona)
 
 I chilometri qui sopra servono solo a ricostruire il prezzo: **nel preventivo consegnato al
 cliente non compaiono**, né nella tabella del servizio né nelle note. Lì ci sono soltanto gli
 orari e i tempi di percorrenza.
 
-Acconto 30% € 2.085,60 — saldo € 4.866,40 entro il 27 agosto, **prima** del servizio: con un
+Acconto 30% € 1.544,40 — saldo € 3.603,60 entro il 27 agosto, **prima** del servizio: con un
 operatore estero nuovo e undici giorni di preavviso è la scelta giusta.
 
 ## Come sono stati costruiti i prezzi
@@ -70,30 +70,53 @@ questo. Riportato al netto:
 | Trasferimento FLR → San Donato in Poggio, ~50 km | € 500,00 |
 | Giornata a disposizione Siena, ~80 km, 5 ore | € 809,00 |
 
-Gli € 809 per 5 ore implicano circa **€ 162 all'ora**. Su questo lavoro tutte le giornate
-sono state quotate **sotto** la pura proporzione oraria, perché cinque servizi consecutivi
-giustificano un minimo di scala: 11,5 ore × 162 farebbero € 1.863, e il 31 agosto è quotato
-€ 1.500. Il transfer del 30 agosto segue direttamente i € 500 di Le Filigare, con € 50 in
-più per l'arrivo serale e il monitoraggio del volo.
+### La prima stesura era troppo alta: perché
 
-**Non è stato usato il Corte Francigena** (GM-2026-0819-CF): quel preventivo ha due mezzi e
-importi già scontati per volume, e usarli qui schiaccerebbe il prezzo sotto mercato.
+La prima versione partiva dai **€ 162 all'ora** impliciti in Le Filigare (€ 809 per 5 ore) e
+li scalava sulle giornate da 11,5 ore. Totale: € 6.952,00. Sbagliato, e l'errore è nel metodo.
 
-C'è quindi **margine di trattativa verso il basso** se Panavision tira sul prezzo — sono
-operatori spagnoli che rivendono — ma il preventivo non nasce basso ed è giusto così.
+**Una giornata da 11,5 ore non vale il doppio di una da 5.** Le cinque ore di Le Filigare
+pagano soprattutto un minimo di giornata: uscire il mezzo, impegnare il conducente, coprire
+il fisso. Le ore in più di questo programma sono ore in cui il gruppo è a Siena o alle Cinque
+Terre e il mezzo è fermo in parcheggio: sono ore di attesa, e costano poco. Scalare
+linearmente le trattava come se fossero tutte ore di guida.
+
+**E sono cinque giornate consecutive per un tour operator.** Stesso mezzo, stesso conducente,
+nessun riposizionamento, nessun pernottamento, un unico contratto: è il lavoro più economico
+che ci sia da erogare. Non si prezza come cinque lavori singoli messi in fila. Vale la stessa
+logica per cui il Corte Francigena, a due mezzi, ha importi per mezzo più bassi — con la
+differenza che lì lo sconto è per volume di mezzi, qui per continuità di giornate.
+
+### Come sono costruiti i prezzi adesso
+
+Base: una **tariffa di giornata piena**, con un aumento contenuto per le giornate lunghe e
+per la strada, non una moltiplicazione delle ore.
+
+| Giornata | Netto | Perché |
+|---|---|---|
+| 31 ago — Cinque Terre | € 1.050,00 | la più cara: 220 km e la giornata più lunga |
+| 1 set — Siena e San Gimignano | € 950,00 | 250 km ma due tappe vicine fra loro |
+| 2 set — Lucca e Pisa | € 780,00 | 105 km, giornata corta di strada |
+| 3 set — Firenze e transfer | € 780,00 | 9 ore, mezzo fermo in città quasi tutto il giorno |
+| 30 ago — transfer serale FLR | € 400,00 | sotto i € 500 di Le Filigare perché è dentro un pacchetto |
+
+Le Filigare resta il riferimento buono per **il trasferimento singolo**, non per le giornate
+lunghe: quello è il pezzo di quel preventivo che si può ancora usare tale e quale.
 
 ## Margine
 
 Costruito sul **mezzo di proprietà** (Beluga). Costo diretto stimato € 250-350 a giornata di
 servizio e **nessun pernottamento**, perché Montecatini Terme dista dodici chilometri dalla
-base: il conducente rientra a casa ogni sera. Il margine sulle cinque giornate è buono.
+base: il conducente rientra a casa ogni sera. Sono circa **€ 1.600 di costo vivo su cinque
+giornate**, contro € 3.960 di servizi: il margine resta buono anche dopo il taglio.
 
 I € 720 di permessi sono **partita di giro** e non producono margine: nel preventivo è
 scritto che si riaddebita il costo effettivo con le ricevute e si conguaglia in fattura.
+**Quelli non si toccano** se serve scendere ancora: è cassa che esce davvero.
 
-**Se si subappalta a Francesco**, il costo si colloca sui € 600-700 al giorno e il margine
-si assottiglia parecchio: in quel caso i prezzi vanno rivisti al rialzo del 20-25% prima
-di inviare.
+**Se si subappalta a Francesco**, il costo si colloca sui € 600-700 al giorno e a questi
+prezzi il margine si assottiglia parecchio: in quel caso il lavoro va rifatto sui numeri,
+non inviato così com'è.
 
 ## Il punto vero: le Cinque Terre
 
@@ -142,9 +165,9 @@ l'alternativa: **scarico a Villa Costanza (Scandicci) e tramvia T1 fino in centr
 minuti, poco più di un euro e mezzo a persona, sosta gratuita del mezzo con i bagagli a
 bordo, nessun permesso.
 
-Se il cliente sceglie la tramvia il totale scende a **€ 5.970,00 netti, € 6.567,00 IVA
-inclusa**. È una carta buona da giocare se tirano sul prezzo: sono € 385 in meno per loro
-senza toccare il nostro margine.
+Se il cliente sceglie la tramvia il totale scende a **€ 4.330,00 netti, € 4.763,00 IVA
+inclusa**. È la carta da giocare se tirano ancora sul prezzo: sono € 385 in meno per loro
+**senza toccare il nostro margine**, perché è un costo che semplicemente non si sostiene.
 
 C'è anche un secondo margine: le tariffe di Firenze sono graduate per lunghezza del veicolo
 e il Beluga sta sotto gli otto metri, quindi potrebbe rientrare in una fascia più bassa dei
