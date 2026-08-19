@@ -74,11 +74,22 @@ Le *Note* sono la parte che distingue questi preventivi: non ripetono le condizi
 segnalano al cliente i problemi veri del programma — bagagli, strade strette, orari dei
 voli troppo stretti — e propongono la soluzione. Vanno scritte, non riempite.
 
+**I chilometri percorsi non si scrivono mai nel preventivo.** Né nella tabella del servizio,
+né nelle note, né come totale di giornata: il cliente non deve leggere quanti chilometri si
+fanno. Al loro posto vanno gli **orari e i tempi di percorrenza** — l'ora di partenza, l'ora
+di arrivo, quanto dura il trasferimento — che è quello che al cliente serve davvero per
+capire il programma. Vale anche per le distanze scritte in lettere («cinquanta chilometri di
+autostrada») e per quelle che sembrano innocue, come la distanza della base dall'hotel.
+
+I chilometri restano invece nelle **note interne** e nel blocco interno della pagina web,
+perché lì servono a ricostruire come è stato fatto il prezzo.
+
 ### Come si costruisce il prezzo
 
 Il riferimento per un lavoro con **un mezzo solo** è il preventivo **Le Filigare**
 (GM-2026-0821-LF): trasferimento di ~50 km € 500 netti, giornata a disposizione di ~80 km e
-5 ore € 809 netti. Da lì si sale in proporzione alle ore e ai chilometri.
+5 ore € 809 netti. Da lì si sale in proporzione alle ore e ai chilometri. Ore e chilometri
+servono a fare il conto: nel preventivo consegnato al cliente compaiono solo gli orari.
 
 **Non usare mai come base i prezzi del Corte Francigena divisi per due.** Quel preventivo ha
 due mezzi e i suoi importi per mezzo sono già scontati per volume: applicarli a un lavoro

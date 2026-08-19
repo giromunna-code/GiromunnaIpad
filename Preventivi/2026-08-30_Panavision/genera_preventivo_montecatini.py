@@ -70,7 +70,7 @@ IT = dict(
         "Con 17 ospiti a bordo restano nove posti liberi: su tre giornate da undici ore e mezza è un margine "
         "di comodità che si sente. I 7,64 metri contano anche in manovra: il mezzo entra nei terminal bus di "
         "Siena, Lucca e Pisa e trova sosta a Firenze dove un autobus gran turismo da dodici metri fatica. "
-        "La nostra base è a Ponte Buggianese, dodici chilometri da Montecatini Terme: il conducente rientra a "
+        "La nostra base è a un quarto d'ora da Montecatini Terme: il conducente rientra a "
         "casa ogni sera e non vi costa alcun pernottamento."
     ),
     h_servizio="Il servizio",
@@ -80,34 +80,34 @@ IT = dict(
          "<b>Aeroporto di Firenze (FLR) → Montecatini Terme, Hotel Minerva.</b> "
          "Volo IB689 da Madrid, atterraggio previsto alle 19:30. L'autista vi accoglie in sala arrivi con il "
          "cartello GiroMunna e attende senza costi aggiuntivi fino a 90 minuti dall'atterraggio effettivo, "
-         "per quanto il volo ritardi. Circa 50 km sulla A11, arrivo in hotel intorno alle 21:00.",
+         "per quanto il volo ritardi. Poco meno di un'ora sulla A11, arrivo in hotel intorno alle 21:00.",
          "circa 19:15 – 21:15"),
         ("Lun 31 ago",
          "<b>Montecatini Terme → La Spezia → Cinque Terre → Montecatini Terme.</b> "
-         "Partenza alle 08:00, 110 km fino a La Spezia con arrivo verso le 09:30. Da lì si prosegue in treno "
+         "Partenza alle 08:00 e arrivo a La Spezia verso le 09:30. Da lì si prosegue in treno "
          "con il Cinque Terre Express per Manarola, Vernazza e Monterosso: i borghi non sono raggiungibili in "
          "pullman e la soluzione è spiegata nelle Note. Ritrovo a La Spezia alle 17:30 e rientro in hotel "
-         "verso le 19:30. Mezzo e conducente a vostra disposizione per l'intera giornata, circa 220 km.",
+         "verso le 19:30. Mezzo e conducente a vostra disposizione per l'intera giornata.",
          "circa 07:45 – 19:45"),
         ("Mar 1 set",
          "<b>Montecatini Terme → Siena → San Gimignano → Montecatini Terme.</b> "
-         "Partenza alle 08:00, 120 km fino a Siena con arrivo verso le 09:45; discesa al terminal bus di via "
-         "Tozzi, sotto San Domenico, a pochi minuti a piedi dal Duomo. Nel primo pomeriggio 45 km fino a San "
-         "Gimignano, con sosta al parcheggio bus fuori Porta San Giovanni. Rientro in hotel verso le 19:30, "
-         "85 km. La giornata più lunga su strada, circa 250 km.",
+         "Partenza alle 08:00 e arrivo a Siena verso le 09:45; discesa al terminal bus di via "
+         "Tozzi, sotto San Domenico, a pochi minuti a piedi dal Duomo. Nel primo pomeriggio si prosegue per San "
+         "Gimignano, con sosta al parcheggio bus fuori Porta San Giovanni. Rientro in hotel verso le 19:30. "
+         "La giornata più lunga su strada del programma.",
          "circa 07:45 – 19:45"),
         ("Mer 2 set",
          "<b>Montecatini Terme → Lucca → Pisa → Montecatini Terme.</b> "
-         "Partenza alle 08:00, 30 km fino a Lucca con arrivo verso le 08:40, discesa al terminal bus fuori le "
-         "mura. Nel pomeriggio 25 km fino a Pisa, con discesa al terminal di via Pietrasantina e navetta fino a "
-         "Piazza dei Miracoli. Rientro in hotel verso le 19:30. La giornata più leggera del programma, "
-         "circa 105 km: c'è tempo in abbondanza.",
+         "Partenza alle 08:00 e arrivo a Lucca verso le 08:40, discesa al terminal bus fuori le "
+         "mura. Nel pomeriggio mezz'ora di strada fino a Pisa, con discesa al terminal di via Pietrasantina e "
+         "navetta fino a Piazza dei Miracoli. Rientro in hotel verso le 19:30. La giornata più leggera del "
+         "programma: c'è tempo in abbondanza.",
          "circa 07:45 – 19:45"),
         ("Gio 3 set",
          "<b>Montecatini Terme → Firenze → Aeroporto di Firenze (FLR).</b> "
-         "Check-out e partenza alle 09:00 con tutti i bagagli a bordo, 50 km, arrivo a Firenze verso le 10:00. "
+         "Check-out e partenza alle 09:00 con tutti i bagagli a bordo, arrivo a Firenze verso le 10:00. "
          "Tempo libero fino alle 17:30: il mezzo resta a Firenze in area di sosta autorizzata, con i vostri "
-         "bagagli sorvegliati a bordo, e vi riprende nel punto concordato. Trasferimento all'aeroporto, 10 km, "
+         "bagagli sorvegliati a bordo, e vi riprende nel punto concordato. Trasferimento all'aeroporto, con "
          "arrivo alle partenze verso le 18:00 per il volo IB690 delle 20:20.",
          "circa 08:45 – 18:15"),
     ],
@@ -150,7 +150,7 @@ IT = dict(
         ("Mer 2 set — giornata intera a Lucca e Pisa", "€ 1.100,00", "+ IVA 10%"),
         ("Gio 3 set — giornata a Firenze e trasferimento all'aeroporto", "€ 1.050,00", "+ IVA 10%"),
         ("Permessi ZTL, terminal e parcheggi bus — dettaglio nella tabella sopra", "€ 720,00", "+ IVA 10%"),
-        ("Pernottamento del conducente — non necessario, la base dista 12 km",
+        ("Pernottamento del conducente — non necessario, la base è a un quarto d'ora",
          "<i>nessun costo</i>", ""),
         ("Vitto del conducente, 4 giornate", "<i>a carico vostro</i>", ""),
     ],
@@ -210,12 +210,12 @@ IT = dict(
          "una fascia più bassa dei € 350,00 che abbiamo prudenzialmente indicato. Verifichiamo al "
          "momento del rilascio e quello che risparmiamo ve lo scaliamo in fattura."),
         ("<b>Siena e San Gimignano: conviene invertire l'ordine.</b> Così come lo avete scritto il "
-         "programma funziona, ma partendo da San Gimignano, che dista 85 km contro i 120 di Siena, si arriva "
+         "programma funziona, ma partendo da San Gimignano, che è parecchio più vicino di Siena, si arriva "
          "in piazza verso le 09:15 e si guadagnano circa 45 minuti buoni da spendere a Siena nel pomeriggio, "
          "quando il Campo è al suo meglio. Il prezzo non cambia. Se preferite l'ordine originale va "
          "benissimo lo stesso: ci regoliamo su quello che decidete."),
         ("<b>La giornata del 2 settembre è mezza vuota.</b> Lucca e Pisa distano fra loro 25 minuti e "
-         "l'intera giornata è di soli 105 km, contro i 250 del giorno prima: dalle 08:00 alle 19:30 vi "
+         "ed è di gran lunga la giornata più corta del programma: dalle 08:00 alle 19:30 vi "
          "avanza parecchio tempo. Senza alcun costo aggiuntivo possiamo aggiungere una sosta sulla via del "
          "rientro — Pietrasanta e il suo centro di marmi e gallerie, oppure Forte dei Marmi e il mare, "
          "che d'estate un gruppo spagnolo apprezza — oppure semplicemente farvi partire più tardi al "
@@ -227,12 +227,12 @@ IT = dict(
          "sulla partenza del mattino dopo. Se un giorno servisse più tempo, avvisateci il giorno prima e "
          "riorganizziamo, non all'ultimo momento."),
         ("<b>Il conducente non pernotta e questo vi fa risparmiare.</b> La nostra base è a Ponte "
-         "Buggianese, dodici chilometri dal vostro hotel: il conducente rientra a casa ogni sera e non c'è "
+         "Buggianese, un quarto d'ora dal vostro hotel: il conducente rientra a casa ogni sera e non c'è "
          "alcun pernottamento da prenotare né da pagare, a differenza di quanto succede quando il gruppo "
          "alloggia lontano. Resta a vostro carico soltanto il vitto nelle quattro giornate di escursione: la "
          "cosa più semplice è aggiungerlo dove pranza il gruppo, altrimenti si arrangia lui e ce lo "
          "dite subito."),
-        ("<b>Il volo IB689 del 30 agosto.</b> Con atterraggio alle 19:30 e cinquanta chilometri di autostrada "
+        ("<b>Il volo IB689 del 30 agosto.</b> Con atterraggio alle 19:30 e poco meno di un'ora di autostrada "
          "arrivate all'Hotel Minerva intorno alle 21:00. Verificate con l'hotel il check-in a quell'ora e "
          "soprattutto la cena: molte strutture di Montecatini chiudono la sala alle 21:00 e con diciassette "
          "persone conviene averlo concordato prima, non scoprirlo all'arrivo. Se il volo ritarda l'autista "
@@ -279,7 +279,7 @@ EN = dict(
         "With 17 guests on board nine seats stay free — breathing room you notice across three "
         "eleven-and-a-half-hour days. The 7.64 m matter for manoeuvring too: the vehicle fits the coach "
         "terminals of Siena, Lucca and Pisa and finds parking in Florence where a twelve-metre coach struggles. "
-        "Our base is at Ponte Buggianese, twelve kilometres from Montecatini Terme: the driver goes home every "
+        "Our base is a quarter of an hour from Montecatini Terme: the driver goes home every "
         "night and costs you nothing in accommodation."
     ),
     h_servizio="The service",
@@ -289,34 +289,34 @@ EN = dict(
          "<b>Florence Airport (FLR) → Montecatini Terme, Hotel Minerva.</b> "
          "Flight IB689 from Madrid, scheduled landing 19:30. The driver welcomes you in the arrivals hall with "
          "the GiroMunna sign and waits at no extra cost for up to 90 minutes from the actual landing time, "
-         "however late the flight arrives. About 50 km on the A11, reaching the hotel around 21:00.",
+         "however late the flight arrives. A little under an hour on the A11, reaching the hotel around 21:00.",
          "approx. 19:15 – 21:15"),
         ("Mon 31 Aug",
          "<b>Montecatini Terme → La Spezia → Cinque Terre → Montecatini Terme.</b> "
-         "Departure at 08:00, 110 km to La Spezia arriving around 09:30. From there onward by train on the "
+         "Departure at 08:00, reaching La Spezia around 09:30. From there onward by train on the "
          "Cinque Terre Express to Manarola, Vernazza and Monterosso: the villages cannot be reached by coach "
          "and the solution is set out in the Notes. Meeting point back at La Spezia at 17:30, hotel around "
-         "19:30. Vehicle and driver at your disposal for the whole day, about 220 km.",
+         "19:30. Vehicle and driver at your disposal for the whole day.",
          "approx. 07:45 – 19:45"),
         ("Tue 1 Sep",
          "<b>Montecatini Terme → Siena → San Gimignano → Montecatini Terme.</b> "
-         "Departure at 08:00, 120 km to Siena arriving around 09:45; drop-off at the via Tozzi coach terminal "
-         "below San Domenico, a few minutes on foot from the Duomo. Early afternoon, 45 km to San Gimignano, "
-         "with the coach park just outside Porta San Giovanni. Back at the hotel around 19:30, 85 km. "
-         "The longest day on the road, about 250 km.",
+         "Departure at 08:00, reaching Siena around 09:45; drop-off at the via Tozzi coach terminal "
+         "below San Domenico, a few minutes on foot from the Duomo. Early afternoon, on to San Gimignano, "
+         "with the coach park just outside Porta San Giovanni. Back at the hotel around 19:30. "
+         "The longest day on the road of the programme.",
          "approx. 07:45 – 19:45"),
         ("Wed 2 Sep",
          "<b>Montecatini Terme → Lucca → Pisa → Montecatini Terme.</b> "
-         "Departure at 08:00, 30 km to Lucca arriving around 08:40, drop-off at the coach terminal outside the "
-         "walls. In the afternoon 25 km to Pisa, drop-off at the via Pietrasantina terminal with the shuttle to "
-         "Piazza dei Miracoli. Back at the hotel around 19:30. The lightest day of the programme, about 105 km: "
+         "Departure at 08:00, reaching Lucca around 08:40, drop-off at the coach terminal outside the "
+         "walls. In the afternoon half an hour on to Pisa, drop-off at the via Pietrasantina terminal with the "
+         "shuttle to Piazza dei Miracoli. Back at the hotel around 19:30. The lightest day of the programme: "
          "there is time to spare.",
          "approx. 07:45 – 19:45"),
         ("Thu 3 Sep",
          "<b>Montecatini Terme → Florence → Florence Airport (FLR).</b> "
-         "Check-out and departure at 09:00 with all the luggage on board, 50 km, reaching Florence around 10:00. "
+         "Check-out and departure at 09:00 with all the luggage on board, reaching Florence around 10:00. "
          "Free time until 17:30: the vehicle stays in Florence in an authorised parking area, with your luggage "
-         "watched on board, and collects you at the agreed point. Transfer to the airport, 10 km, reaching "
+         "watched on board, and collects you at the agreed point. Transfer to the airport, reaching "
          "departures around 18:00 for flight IB690 at 20:20.",
          "approx. 08:45 – 18:15"),
     ],
@@ -360,7 +360,7 @@ EN = dict(
         ("Wed 2 Sep — full day to Lucca and Pisa", "€ 1,100.00", "+ VAT 10%"),
         ("Thu 3 Sep — day in Florence and transfer to the airport", "€ 1,050.00", "+ VAT 10%"),
         ("ZTL permits, terminals and coach parking — itemised in the table above", "€ 720.00", "+ VAT 10%"),
-        ("Driver's accommodation — not required, our base is 12 km away",
+        ("Driver's accommodation — not required, our base is a quarter of an hour away",
          "<i>no charge</i>", ""),
         ("Driver's meals, 4 days", "<i>at your charge</i>", ""),
     ],
@@ -420,12 +420,12 @@ EN = dict(
          "€ 350.00 we have prudently quoted. We will check when the permit is issued and credit you "
          "whatever we save."),
         ("<b>Siena and San Gimignano: worth reversing the order.</b> The programme works as you wrote it, but "
-         "starting from San Gimignano, 85 km away against Siena's 120, puts you in the square around 09:15 and "
+         "starting from San Gimignano, a good deal closer than Siena, puts you in the square around 09:15 and "
          "gains a good 45 minutes to spend in Siena in the afternoon, when the Campo is at its best. The price "
          "is unchanged. If you prefer the original order that is perfectly fine too: we follow whatever you "
          "decide."),
         ("<b>2 September is a half-empty day.</b> Lucca and Pisa are 25 minutes apart and the whole day comes "
-         "to just 105 km, against 250 the day before: from 08:00 to 19:30 you have time left over. At no extra "
+         "much the shortest of the programme: from 08:00 to 19:30 you have time left over. At no extra "
          "cost we can add a stop on the way back — Pietrasanta, with its marble workshops and galleries, "
          "or Forte dei Marmi and the sea, which a Spanish group tends to enjoy in summer — or simply have "
          "you start later in the morning. Tell us when you confirm."),
@@ -436,11 +436,11 @@ EN = dict(
          "departure. If one day needs more time, tell us the day before and we will reorganise — not at "
          "the last minute."),
         ("<b>The driver does not stay overnight, and that saves you money.</b> Our base is at Ponte "
-         "Buggianese, twelve kilometres from your hotel: the driver goes home every night and there is no "
+         "Buggianese, a quarter of an hour from your hotel: the driver goes home every night and there is no "
          "accommodation to book or pay for, unlike the usual case where the group stays further away. Only the "
          "meals on the four excursion days remain at your charge: the simplest arrangement is to add him "
          "wherever the group has lunch, otherwise he sorts himself out — just tell us straight away."),
-        ("<b>Flight IB689 on 30 August.</b> Landing at 19:30, with fifty kilometres of motorway, brings you to "
+        ("<b>Flight IB689 on 30 August.</b> Landing at 19:30, with a little under an hour of motorway, brings you to "
          "the Hotel Minerva around 21:00. Do check with the hotel that check-in at that hour is fine and, above "
          "all, dinner: many Montecatini properties close the dining room at 21:00, and with seventeen people it "
          "is far better agreed in advance than discovered on arrival. If the flight is late the driver waits "

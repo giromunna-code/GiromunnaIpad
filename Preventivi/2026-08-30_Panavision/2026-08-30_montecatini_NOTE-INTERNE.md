@@ -53,6 +53,10 @@ secondo mezzo da valutare.
 
 **Totale netto € 6.320,00 · IVA 10% € 632,00 · Totale € 6.952,00** (circa € 409,00 a persona)
 
+I chilometri qui sopra servono solo a ricostruire il prezzo: **nel preventivo consegnato al
+cliente non compaiono**, né nella tabella del servizio né nelle note. Lì ci sono soltanto gli
+orari e i tempi di percorrenza.
+
 Acconto 30% € 2.085,60 — saldo € 4.866,40 entro il 27 agosto, **prima** del servizio: con un
 operatore estero nuovo e undici giorni di preavviso è la scelta giusta.
 
