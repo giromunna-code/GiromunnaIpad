@@ -136,6 +136,8 @@ esempio proponendo al cliente il parcheggio scambiatore invece del permesso per 
 - L'aeroporto di Firenze non comporta oneri di accesso; quello di Pisa ha il parcheggio bus
   (circa € 61). L'ingresso di un bus turistico nel centro di Firenze richiede un permesso a
   parte (circa € 350). Siena ha il permesso comunale per i bus turistici (circa € 160).
+  **La Spezia ha il check point per i bus turistici: € 100**, ed è la voce d'accesso da
+  mettere a preventivo per le gite alle Cinque Terre, dove i borghi si raggiungono in treno.
 
 ## Struttura del repository
 

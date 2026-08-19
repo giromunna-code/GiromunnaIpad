@@ -47,17 +47,17 @@ secondo mezzo da valutare.
 | Mar 1 set | Siena e San Gimignano, giornata a disposizione | 250 | 11,5 | € 950,00 |
 | Mer 2 set | Lucca e Pisa, giornata a disposizione | 105 | 11,5 | € 780,00 |
 | Gio 3 set | Firenze a disposizione + transfer FLR (volo IB690 delle 20:20) | 110 | 9 | € 780,00 |
-| — | Permessi ZTL e parcheggi bus, riaddebito al costo | | | € 720,00 |
+| — | Permessi ZTL e parcheggi bus, riaddebito al costo | | | € 780,00 |
 | — | Pernottamento del conducente | | | non necessario |
 | — | Vitto del conducente, 4 giornate | | | a carico del cliente |
 
-**Totale netto € 4.680,00 · IVA 10% € 468,00 · Totale € 5.148,00** (circa € 303,00 a persona)
+**Totale netto € 4.740,00 · IVA 10% € 474,00 · Totale € 5.214,00** (circa € 307,00 a persona)
 
 I chilometri qui sopra servono solo a ricostruire il prezzo: **nel preventivo consegnato al
 cliente non compaiono**, né nella tabella del servizio né nelle note. Lì ci sono soltanto gli
 orari e i tempi di percorrenza.
 
-Acconto 30% € 1.544,40 — saldo € 3.603,60 entro il 27 agosto, **prima** del servizio: con un
+Acconto 30% € 1.564,20 — saldo € 3.649,80 entro il 27 agosto, **prima** del servizio: con un
 operatore estero nuovo e undici giorni di preavviso è la scelta giusta.
 
 ## Come sono stati costruiti i prezzi
@@ -110,7 +110,7 @@ servizio e **nessun pernottamento**, perché Montecatini Terme dista dodici chil
 base: il conducente rientra a casa ogni sera. Sono circa **€ 1.600 di costo vivo su cinque
 giornate**, contro € 3.960 di servizi: il margine resta buono anche dopo il taglio.
 
-I € 720 di permessi sono **partita di giro** e non producono margine: nel preventivo è
+I € 780 di permessi sono **partita di giro** e non producono margine: nel preventivo è
 scritto che si riaddebita il costo effettivo con le ricevute e si conguaglia in fattura.
 **Quelli non si toccano** se serve scendere ancora: è cassa che esce davvero.
 
@@ -145,18 +145,23 @@ con il dettaglio giornata per giornata.
 |---|---|---|---|
 | 30 ago e 3 set | Aeroporto di Firenze | nessun onere | dato di casa |
 | 30 ago – 3 set | Montecatini Terme, carico/scarico in hotel | nessun onere | — |
-| 31 ago | La Spezia, sosta area bus | € 40,00 | **stima** |
+| 31 ago | La Spezia, check point bus turistici e sosta | € 100,00 | dato di Girolamo |
 | 1 set | Siena, permesso comunale bus turistici | € 160,00 | dato di casa |
 | 1 set | San Gimignano, parcheggio bus | € 40,00 | **stima** |
 | 2 set | Lucca, terminal bus fuori le mura | € 50,00 | **stima** |
 | 2 set | Pisa, terminal di via Pietrasantina | € 80,00 | **stima** |
 | 3 set | Firenze, permesso bus turistici + sosta giornaliera | € 350,00 | dato di casa |
-| | **Totale** | **€ 720,00** | |
+| | **Totale** | **€ 780,00** | |
 
-Certi solo Siena e Firenze, che vengono dai dati di casa. Gli altri quattro sono stime, ma
-**non c'è esposizione**: nel preventivo è scritto che si riaddebita il costo effettivo con
-le ricevute e si conguaglia in fattura, in più o in meno. Le tariffe vanno comunque
-verificate prima della partenza.
+Certi Siena e Firenze, che vengono dai dati di casa, e **La Spezia: il check point costa
+€ 100, non € 40 come avevo stimato all'inizio — corretto da Girolamo.** San Gimignano, Lucca
+e Pisa restano stime, ma **non c'è esposizione**: nel preventivo è scritto che si riaddebita
+il costo effettivo con le ricevute e si conguaglia in fattura, in più o in meno. Le tariffe
+vanno comunque verificate prima della partenza.
+
+Nota per i prossimi lavori: alle Cinque Terre il costo d'accesso non è un parcheggio da
+quattro soldi, è il **check point bus turistici di La Spezia da € 100**. Va messo a
+preventivo per quello che è.
 
 ## La leva sul prezzo: Firenze del 3 settembre
 
@@ -165,7 +170,7 @@ l'alternativa: **scarico a Villa Costanza (Scandicci) e tramvia T1 fino in centr
 minuti, poco più di un euro e mezzo a persona, sosta gratuita del mezzo con i bagagli a
 bordo, nessun permesso.
 
-Se il cliente sceglie la tramvia il totale scende a **€ 4.330,00 netti, € 4.763,00 IVA
+Se il cliente sceglie la tramvia il totale scende a **€ 4.390,00 netti, € 4.829,00 IVA
 inclusa**. È la carta da giocare se tirano ancora sul prezzo: sono € 385 in meno per loro
 **senza toccare il nostro margine**, perché è un costo che semplicemente non si sostiene.
 

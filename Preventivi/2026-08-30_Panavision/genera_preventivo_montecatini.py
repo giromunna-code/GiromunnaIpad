@@ -124,8 +124,9 @@ IT = dict(
          "Nessun permesso. La sosta davanti all'hotel per carico e scarico è consentita e il mezzo non "
          "resta parcheggiato in centro.", "—"),
         ("31 ago — La Spezia",
-         "Sosta del minibus all'area bus per l'intera giornata. Nelle Cinque Terre non esistono permessi "
-         "acquistabili per Manarola e Vernazza: sono borghi pedonali senza accesso ai pullman.", "€ 40,00"),
+         "Check point bus turistici e sosta del minibus per l'intera giornata. Nelle Cinque Terre non esistono "
+         "permessi acquistabili per Manarola e Vernazza: sono borghi pedonali senza accesso ai pullman.",
+         "€ 100,00"),
         ("1 set — Siena",
          "Permesso comunale bus turistici e terminal di via Tozzi.", "€ 160,00"),
         ("1 set — San Gimignano",
@@ -141,7 +142,7 @@ IT = dict(
          "È la voce più pesante e nelle Note trovate come evitarla.", "€ 350,00"),
     ],
     ztl_total_label="Totale permessi e accessi, al netto di IVA",
-    ztl_total="€ 720,00",
+    ztl_total="€ 780,00",
     h_prezzo="Il prezzo",
     price_rows=[
         ("Dom 30 ago — aeroporto di Firenze → Montecatini Terme", "€ 400,00", "+ IVA 10%"),
@@ -149,16 +150,16 @@ IT = dict(
         ("Mar 1 set — giornata intera a Siena e San Gimignano", "€ 950,00", "+ IVA 10%"),
         ("Mer 2 set — giornata intera a Lucca e Pisa", "€ 780,00", "+ IVA 10%"),
         ("Gio 3 set — giornata a Firenze e trasferimento all'aeroporto", "€ 780,00", "+ IVA 10%"),
-        ("Permessi ZTL, terminal e parcheggi bus — dettaglio nella tabella sopra", "€ 720,00", "+ IVA 10%"),
+        ("Permessi ZTL, terminal e parcheggi bus — dettaglio nella tabella sopra", "€ 780,00", "+ IVA 10%"),
         ("Pernottamento del conducente — non necessario, la base è a un quarto d'ora",
          "<i>nessun costo</i>", ""),
         ("Vitto del conducente, 4 giornate", "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 4.680,00",
+    price_total="€ 4.740,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 5.148,00.",
-    perhead="Sono circa € 303,00 a persona su 17 partecipanti, per l'intero programma di cinque giorni.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 5.214,00.",
+    perhead="Sono circa € 307,00 a persona su 17 partecipanti, per l'intero programma di cinque giorni.",
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente per cinque giornate, carburante, pedaggi autostradali, assicurazione completa, "
@@ -177,8 +178,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 1.544,40", "IVA inclusa"),
-        ("Saldo, entro il 27 agosto 2026", "€ 3.603,60", ""),
+        ("Acconto 30% alla conferma", "€ 1.564,20", "IVA inclusa"),
+        ("Saldo, entro il 27 agosto 2026", "€ 3.649,80", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -333,9 +334,9 @@ EN = dict(
          "No permit. Stopping in front of the hotel to load and unload is allowed and the vehicle is not "
          "parked in the centre.", "—"),
         ("31 Aug — La Spezia",
-         "Minibus parking at the coach area for the full day. In the Cinque Terre there is no permit that can "
-         "be bought for Manarola and Vernazza: they are pedestrian villages with no coach access.",
-         "€ 40.00"),
+         "Tourist coach check point and minibus parking for the full day. In the Cinque Terre there is no permit "
+         "that can be bought for Manarola and Vernazza: they are pedestrian villages with no coach access.",
+         "€ 100.00"),
         ("1 Sep — Siena",
          "Municipal tourist coach permit and the via Tozzi terminal.", "€ 160.00"),
         ("1 Sep — San Gimignano",
@@ -351,7 +352,7 @@ EN = dict(
          "It is the heaviest item and the Notes explain how to avoid it.", "€ 350.00"),
     ],
     ztl_total_label="Total permits and access, excluding VAT",
-    ztl_total="€ 720.00",
+    ztl_total="€ 780.00",
     h_prezzo="The price",
     price_rows=[
         ("Sun 30 Aug — Florence airport → Montecatini Terme", "€ 400.00", "+ VAT 10%"),
@@ -359,16 +360,16 @@ EN = dict(
         ("Tue 1 Sep — full day to Siena and San Gimignano", "€ 950.00", "+ VAT 10%"),
         ("Wed 2 Sep — full day to Lucca and Pisa", "€ 780.00", "+ VAT 10%"),
         ("Thu 3 Sep — day in Florence and transfer to the airport", "€ 780.00", "+ VAT 10%"),
-        ("ZTL permits, terminals and coach parking — itemised in the table above", "€ 720.00", "+ VAT 10%"),
+        ("ZTL permits, terminals and coach parking — itemised in the table above", "€ 780.00", "+ VAT 10%"),
         ("Driver's accommodation — not required, our base is a quarter of an hour away",
          "<i>no charge</i>", ""),
         ("Driver's meals, 4 days", "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 4,680.00",
+    price_total="€ 4,740.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 5,148.00.",
-    perhead="That is about € 303.00 per person across 17 travellers, for the complete five-day programme.",
+    grand="Total payable, VAT 10% included: € 5,214.00.",
+    perhead="That is about € 307.00 per person across 17 travellers, for the complete five-day programme.",
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver for five days, fuel, motorway tolls, full insurance, luggage handling and monitoring "
@@ -387,8 +388,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 1,544.40", "VAT included"),
-        ("Balance, by 27 August 2026", "€ 3,603.60", ""),
+        ("Deposit 30% on confirmation", "€ 1,564.20", "VAT included"),
+        ("Balance, by 27 August 2026", "€ 3,649.80", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
