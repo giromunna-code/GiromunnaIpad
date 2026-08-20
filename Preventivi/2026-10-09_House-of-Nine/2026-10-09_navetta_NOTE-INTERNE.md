@@ -40,14 +40,15 @@ Venerdì 9 ottobre 2026, tre trasferimenti nella stessa giornata.
 
 | Voce | Netto |
 |---|---|
-| Servizio del 9 ottobre, i due minibus insieme (Beluga 25+1+1 e Tourengo 27+1+1) | € 900,00 |
-| Permesso di accesso al centro di Firenze, giornata del 9 ottobre, entrambi i mezzi | € 421,00 |
+| Minibus 1 — Beluga, 25+1+1, i tre trasferimenti, a disposizione 14:00-24:00 | € 900,00 |
+| Minibus 2 — Tourengo, 27+1+1, stesso servizio | € 900,00 |
+| Permesso di accesso al centro di Firenze, giornata del 9 ottobre, € 421,00 per mezzo | € 842,00 |
 | Vitto e alloggio conducenti | non necessario |
 
-**Totale netto € 1.321,00 · IVA 10% € 132,10 · Totale € 1.453,10**
-(a pieno carico sui 52 posti, ≈ € 28,00 a persona)
+**Totale netto € 2.642,00 · IVA 10% € 264,20 · Totale € 2.906,20**
+(a pieno carico sui 52 posti, ≈ € 56,00 a persona)
 
-Acconto 30% € 435,93 — saldo € 1.017,17.
+Acconto 30% € 871,86 — saldo € 2.034,34.
 
 ## Come è stato costruito il prezzo
 
@@ -60,8 +61,8 @@ Riferimento: **Le Filigare (GM-2026-0821-LF)**, che è a mezzo singolo, e la sca
 | Le Filigare — giornata a disposizione, ~80 km, 5 h | € 809,00 |
 | Alvora — giornata a disposizione, 140 km, 8 h | € 980,00 |
 | 9 ottobre — quanto varrebbe secondo la scala: ~190 km, 10 h, chiusura a mezzanotte | € 1.150,00 |
-| **Prezzo deciso da Girolamo per il servizio, i due mezzi insieme** | **€ 900,00** |
-| **Permesso di accesso a Firenze, ribaltato al cliente** | **€ 421,00** |
+| **Prezzo deciso da Girolamo, per mezzo** | **€ 900,00** |
+| **Permesso di accesso a Firenze, per mezzo, ribaltato al cliente** | **€ 421,00** |
 
 **Il punto chiave: non sono tre corse, è una giornata a disposizione.** Fra il primo e il
 secondo trasferimento passano quasi tre ore, fra il secondo e il terzo più di quattro, e la
@@ -73,37 +74,33 @@ base) all'01:00 circa: dodici ore, dentro i limiti ma senza margine.
 Quotare i tre trasferimenti come corse separate avrebbe portato il prezzo intorno ai € 550
 a mezzo, cioè sotto il costo reale della giornata. È l'errore da non fare.
 
-## Margine — il punto da guardare in faccia
+## Margine
 
-Il prezzo di **€ 900 per i due mezzi insieme è una decisione di Girolamo**. Sono € 450 a
-mezzo, molto sotto la scala di riferimento (Le Filigare: € 809 per 80 km e 5 ore, mentre qui
-la giornata è di dieci ore e ~190 km a mezzo). Registrato qui perché resti agli atti.
-
-Il conto della giornata:
+Il prezzo di **€ 900 a mezzo è una decisione di Girolamo**. Sta sotto la scala di riferimento
+(Le Filigare: € 809 per 80 km e 5 ore, mentre qui la giornata è di dieci ore e ~190 km), ma
+il margine regge.
 
 | | |
 |---|---|
-| Ricavo del servizio | € 900 |
+| Ricavo del servizio, due mezzi | € 1.800 |
 | Costo diretto del Beluga | € 250-350 |
 | Acquisto del Tourengo da Francesco | € 600-800 |
 | **Costo totale** | **€ 850-1.150** |
-| **Risultato** | **da −€ 250 a +€ 50** |
+| **Margine** | **€ 650-950** |
 
-**Al prezzo pieno di Francesco il lavoro chiude in perdita.** Perché stia in piedi il
-Tourengo deve costare al massimo **€ 400-500**, cioè un prezzo di famiglia e non di mercato.
-È la prima cosa da chiarire con Francesco, prima di inviare: se non scende, o si rivede il
-prezzo con Girolamo, o il secondo mezzo non si mette.
+**Il costo del Tourengo va comunque concordato con Francesco prima di inviare.** Anche a
+€ 800 il lavoro resta buono, ma il numero va saputo, non stimato.
 
-Il **permesso di € 421** è una partita di giro, ribaltata al cliente con IVA 10%. Se il
-Comune ne chiede di più, la differenza esce dalla nostra tasca: va verificato l'importo
-effettivo.
+Gli **€ 842 di permessi** (€ 421 a mezzo) sono una partita di giro, ribaltata al cliente con
+IVA 10% come il resto del servizio. Non sono margine: se il Comune chiede più di € 421 a
+mezzo, la differenza esce dalla nostra tasca, quindi l'importo effettivo va verificato.
 
 ## Il permesso di Firenze e le 23:00
 
 Il permesso di accesso al centro vale per **la giornata del 9 ottobre**. Partendo da Tenuta
 Bossi alle 23:00 si rientra a Firenze verso le 23:40, dentro la giornata: un solo permesso.
 Se la partenza slitta si entra in città dopo la mezzanotte, quindi il 10 ottobre, e **serve
-un secondo permesso da € 421**.
+un secondo permesso per ciascun mezzo, altri € 842**.
 
 Per questo nel preventivo **le 23:00 sono un orario tassativo** e non più spostabile: la
 versione precedente concedeva lo slittamento fino alle 00:30 senza sovrapprezzo, ed è stata
@@ -136,7 +133,8 @@ due minibus.
 ## Verifiche di accesso
 
 - **Firenze, Via dei Conti 9.** House of Nine sta a due passi dal Duomo, in piena ZTL. Il
-  permesso comunale di accesso è **compreso nel preventivo a € 421** e lo richiediamo noi.
+  permesso comunale di accesso è **compreso nel preventivo a € 421 a mezzo, € 842 in tutto**,
+  e lo richiediamo noi.
   Resta da concordare con il cliente il punto esatto della fermata, perché Via dei Conti è
   stretta e il carico di un gruppo numeroso vuole qualche minuto di sosta. Se non c'è modo di
   fermarsi davanti all'ingresso, l'alternativa indicata nel preventivo è **Via Valfonda o
@@ -154,17 +152,17 @@ due minibus.
 1. **La capienza.** 80-100 persone contro 52 posti. Il preventivo dice che mettiamo due mezzi
    e basta: gli altri se li organizza il cliente, oppure ce lo fa sapere e si vede. Se chiede
    a noi, il preventivo per i mezzi in più si fa a parte, dopo aver sentito Francesco.
-2. **Francesco, ed è la cosa più urgente.** Costo del Tourengo per il 9 ottobre, giornata
-   14:00-24:00 con chiusura a mezzanotte. A € 900 di ricavo il Tourengo deve stare entro i
-   € 400-500, altrimenti la giornata chiude in perdita (vedi il conto sopra). Il preventivo
-   dice inoltre al cliente che i due mezzi sono liberi: va confermato **prima** di inviare.
+2. **Francesco.** Costo del Tourengo per il 9 ottobre, giornata 14:00-24:00 con chiusura a
+   mezzanotte. A € 900 di ricavo per mezzo il margine regge anche a € 800 di acquisto, ma il
+   numero va saputo. Il preventivo dice inoltre al cliente che i due mezzi sono liberi: va
+   confermato **prima** di inviare, non dopo.
 3. **Dotazione del Tourengo.** Nel PDF è descritto con aria condizionata, sedili reclinabili,
    impianto audio e vano bagagli. Il frigo bar non è indicato perché non confermato: se c'è,
    si aggiunge e si rigenerano i PDF.
 4. **Punto di carico a Firenze.** Il permesso è già nel prezzo: resta da concordare con il
    cliente il punto esatto della fermata in Via dei Conti, o in alternativa Via Valfonda /
-   Piazza Adua. **Verificare l'importo effettivo del permesso**: a preventivo sono € 421 e
-   la differenza, se c'è, la paghiamo noi.
+   Piazza Adua. **Verificare l'importo effettivo del permesso**: a preventivo sono € 421 a
+   mezzo, € 842 in tutto, e la differenza, se c'è, la paghiamo noi.
 5. **Nome esatto dell'intestatario.** Quotato «House of Nine»: se la richiesta arriva da una
    wedding planner o da un'agenzia, rigenerare i PDF con `--cliente`.
 6. **Orario di partenza da Tenuta Bossi.** Le 23:00 sono tassative e nel preventivo è scritto

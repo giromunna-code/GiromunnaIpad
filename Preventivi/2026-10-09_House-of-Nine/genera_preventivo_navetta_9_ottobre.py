@@ -112,20 +112,20 @@ IT = dict(
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Servizio del 9 ottobre con i due minibus — Mercedes-Benz Beluga 25+1+1 e Mercedes-Benz "
-         "Tourengo 27+1+1 · i tre trasferimenti, mezzi e conducenti a vostra disposizione dalle 14:00 "
-         "alle 24:00", "€ 900,00", "+ IVA 10%"),
-        ("Permesso di accesso al centro di Firenze per la giornata del 9 ottobre, per entrambi i mezzi",
-         "€ 421,00", "+ IVA 10%"),
+        ("Minibus 1 — Mercedes-Benz Beluga, 25+1+1 · i tre trasferimenti, mezzo e conducente a "
+         "disposizione dalle 14:00 alle 24:00", "€ 900,00", "+ IVA 10%"),
+        ("Minibus 2 — Mercedes-Benz Tourengo, 27+1+1 · stesso servizio", "€ 900,00", "+ IVA 10%"),
+        ("Permesso di accesso al centro di Firenze per la giornata del 9 ottobre — € 421,00 per mezzo, "
+         "due mezzi", "€ 842,00", "+ IVA 10%"),
         ("Vitto e alloggio dei conducenti — non necessario con gli orari in programma, dovuto solo se il "
          "rientro slitta ben oltre le 02:00 (vedi note)", "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 1.321,00",
+    price_total="€ 2.642,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 1.453,10.",
-    perhead=("Il servizio è € 900,00 per i due minibus insieme, più € 421,00 per il permesso di accesso a "
-             "Firenze. Sui 52 posti passeggeri, a pieno carico, sono circa € 28,00 a persona."),
+    grand="Totale da corrispondere, IVA 10% inclusa: € 2.906,20.",
+    perhead=("Il servizio è € 900,00 a mezzo e il permesso di accesso a Firenze € 421,00 a mezzo. Sui 52 "
+             "posti passeggeri dei due minibus, a pieno carico, sono circa € 56,00 a persona."),
     h_incluso="Incluso.",
     incluso=(
         "Due mezzi e due conducenti, carburante, pedaggi, parcheggi, assicurazione completa, la "
@@ -138,7 +138,8 @@ IT = dict(
     nonincluso=(
         "Il trasporto dei passeggeri oltre i 52 posti dei due minibus: mezzi ulteriori non sono compresi "
         "in questo preventivo (vedi note). Il secondo permesso di accesso al centro di Firenze, dovuto se "
-        "la partenza da Tenuta Bossi slitta oltre le 23:00: € 421,00 (vedi note). Attesa oltre gli orari "
+        "la partenza da Tenuta Bossi slitta oltre le 23:00: € 421,00 per mezzo, quindi € 842,00 (vedi "
+        "note). Attesa oltre gli orari "
         "qui indicati, € 50,00 all'ora per mezzo. "
         "Trasferimenti aggiuntivi o modifiche al programma, quotati su richiesta. Rientro a Firenze dopo le "
         "02:00, € 250,00 per mezzo. Vitto e alloggio dei conducenti, se il programma dovesse allungarsi al "
@@ -146,8 +147,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 435,93", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 1.017,17", ""),
+        ("Acconto 30% alla conferma", "€ 871,86", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 2.034,34", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -174,7 +175,7 @@ IT = dict(
          "centro di Firenze compreso nel prezzo vale per la giornata del 9 ottobre. Partendo da Tenuta "
          "Bossi alle 23:00 si rientra in città verso le 23:40, dentro quella giornata. Se la partenza "
          "slitta, si entra a Firenze dopo la mezzanotte, quindi in un altro giorno, e <b>serve un secondo "
-         "permesso: altri € 421,00</b>, che vi verrebbero addebitati. A questo si aggiunge l'attesa oltre "
+         "permesso per ciascun mezzo: altri € 842,00</b>, che vi verrebbero addebitati. A questo si aggiunge l'attesa oltre "
          "l'orario concordato, € 50,00 all'ora per mezzo, cioè € 100,00 all'ora per i due. A una festa "
          "l'orario di partenza slitta quasi sempre: vi chiediamo quindi di costruire la serata su "
          "un'uscita alle 23:00 in punto e di avere gli ospiti pronti qualche minuto prima. Qui slittare "
@@ -275,20 +276,21 @@ EN = dict(
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Service on 9 October with the two minibuses — Mercedes-Benz Beluga 25+1+1 and Mercedes-Benz "
-         "Tourengo 27+1+1 · the three transfers, vehicles and drivers at your disposal from 14:00 to "
-         "24:00", "€ 900.00", "+ VAT 10%"),
-        ("Permit for access to the centre of Florence for the day of 9 October, both vehicles",
-         "€ 421.00", "+ VAT 10%"),
+        ("Minibus 1 — Mercedes-Benz Beluga, 25+1+1 · the three transfers, vehicle and driver at your "
+         "disposal from 14:00 to 24:00", "€ 900.00", "+ VAT 10%"),
+        ("Minibus 2 — Mercedes-Benz Tourengo, 27+1+1 · same service", "€ 900.00", "+ VAT 10%"),
+        ("Permit for access to the centre of Florence for the day of 9 October — € 421.00 per vehicle, "
+         "two vehicles", "€ 842.00", "+ VAT 10%"),
         ("Drivers' board and lodging — not required with the programme as scheduled, due only if the return "
          "slips well past 02:00 (see notes)", "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 1,321.00",
+    price_total="€ 2,642.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 1,453.10.",
-    perhead=("The service is € 900.00 for the two minibuses together, plus € 421.00 for the Florence access "
-             "permit. Across the 52 passenger seats, at full load, that is about € 28.00 per person."),
+    grand="Total payable, VAT 10% included: € 2,906.20.",
+    perhead=("The service is € 900.00 per vehicle and the Florence access permit € 421.00 per vehicle. "
+             "Across the 52 passenger seats on the two minibuses, at full load, that is about € 56.00 per "
+             "person."),
     h_incluso="Included.",
     incluso=(
         "Two vehicles and two drivers, fuel, tolls, parking, full insurance, the minibuses at your "
@@ -301,7 +303,8 @@ EN = dict(
     nonincluso=(
         "Transport for passengers beyond the 52 seats on the two minibuses: further vehicles are not part "
         "of this quotation (see notes). The second permit for access to the centre of Florence, due if the "
-        "departure from Tenuta Bossi slips beyond 23:00: € 421.00 (see notes). Waiting beyond the times "
+        "departure from Tenuta Bossi slips beyond 23:00: € 421.00 per vehicle, so € 842.00 (see notes). "
+        "Waiting beyond the times "
         "set out here, € 50.00 per hour per vehicle. Additional "
         "transfers or changes to the programme, quoted on request. Return to Florence after 02:00, "
         "€ 250.00 per vehicle. The drivers' board and lodging, should the programme stretch far enough to "
@@ -309,8 +312,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 435.93", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 1,017.17", ""),
+        ("Deposit 30% on confirmation", "€ 871.86", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 2,034.34", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -336,7 +339,8 @@ EN = dict(
         ("<b>The 23:00 departure is firm, and there is a precise reason.</b> The Florence access permit "
          "included in the price is valid for the day of 9 October. Leaving Tenuta Bossi at 23:00 brings you "
          "back into the city around 23:40, within that day. If the departure slips, you enter Florence "
-         "after midnight — a different day — and <b>a second permit is required: a further € 421.00</b>, "
+         "after midnight — a different day — and <b>a second permit is required for each vehicle: a "
+         "further € 842.00</b>, "
          "which would be charged to you. On top of that comes waiting beyond the agreed time, € 50.00 per "
          "hour per vehicle, which is € 100.00 an hour for the two. At a party the departure time almost "
          "always slips, so we ask you to build the evening around leaving at 23:00 sharp, with the guests "
