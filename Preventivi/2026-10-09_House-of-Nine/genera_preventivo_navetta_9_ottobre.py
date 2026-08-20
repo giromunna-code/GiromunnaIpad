@@ -73,10 +73,9 @@ IT = dict(
         "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli."
     ),
     mezzo_close=(
-        "Il Beluga è il nostro mezzo di proprietà ed è il primo dei quattro. Gli altri tre sono minibus "
-        "della stessa classe e dello stesso standard, 24-25 posti ciascuno, con i conducenti che lavorano "
-        "abitualmente con noi. In tutto sono circa cento posti a sedere. Ogni mezzo porta il suo numero "
-        "bene in vista, così i vostri ospiti ritrovano il proprio a ogni tappa."
+        "Il Beluga è il primo dei quattro. Gli altri tre sono minibus della stessa classe e dello "
+        "stesso standard, 24-25 posti ciascuno, per un totale di circa cento posti a sedere. Ogni mezzo "
+        "porta il suo numero bene in vista, così i vostri ospiti ritrovano il proprio a ogni tappa."
     ),
     h_servizio="Il servizio",
     svc_head=["Trasferimento", "Percorso", "Impegno dei mezzi"],
@@ -182,7 +181,7 @@ IT = dict(
          "che viaggia con il gruppo. Se il numero definitivo supera i 96 vi consigliamo il quinto minibus, "
          "€ 1.150,00 + IVA alle stesse condizioni. Ci serve il numero definitivo almeno quindici giorni "
          "prima, quindi entro il 24 settembre."),
-        ("<b>I 26 posti del Beluga.</b> Il nostro mezzo di proprietà ha 26 posti passeggeri, uno in più del "
+        ("<b>I 26 posti del Beluga.</b> Il Beluga ha 26 posti passeggeri, uno in più del "
          "limite che ci avete indicato, ma è lungo 7,64 m: l'ingombro su strada è quello di un 25 posti e "
          "nelle due salite si comporta allo stesso modo. Se il limite dei 25 ve lo ha posto una delle due "
          "strutture ed è un limite di persone e non di mezzo, ditecelo e sul Beluga carichiamo 25."),
@@ -227,10 +226,9 @@ EN = dict(
         "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold."
     ),
     mezzo_close=(
-        "The Beluga is our own vehicle and the first of the four. The other three are minibuses of the same "
-        "class and the same standard, 24-25 seats each, with drivers who work with us regularly. That is "
-        "about one hundred seats in total. Each vehicle carries its number clearly displayed, so your guests "
-        "find the same one at every stage."
+        "The Beluga is the first of the four. The other three are minibuses of the same class and the "
+        "same standard, 24-25 seats each, for about one hundred seats in total. Each vehicle carries its "
+        "number clearly displayed, so your guests find the same one at every stage."
     ),
     h_servizio="The service",
     svc_head=["Transfer", "Route", "Vehicles engaged"],
@@ -337,7 +335,7 @@ EN = dict(
          "for the photographer travelling with the group. If the final count goes above 96 we would "
          "recommend a fifth minibus at € 1,150.00 + VAT on the same terms. We need the definitive number at "
          "least fifteen days ahead, so by 24 September."),
-        ("<b>The Beluga's 26 seats.</b> Our own vehicle has 26 passenger seats, one more than the limit you "
+        ("<b>The Beluga's 26 seats.</b> The Beluga has 26 passenger seats, one more than the limit you "
          "gave us, but it is 7.64 m long: on the road it takes the same space as a 25-seater and it handles "
          "both climbs the same way. If the 25 limit was set by one of the two venues and is a limit on "
          "people rather than on the vehicle, tell us and we will load 25 on the Beluga."),

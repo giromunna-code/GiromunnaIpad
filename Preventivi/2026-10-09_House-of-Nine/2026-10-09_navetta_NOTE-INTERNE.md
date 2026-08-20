@@ -107,8 +107,11 @@ netto € 5.000, totale IVA inclusa € 5.500), rigenerando i PDF.
    all'ingrosso. Il preventivo dice al cliente che i mezzi sono liberi: va confermato
    **prima** di inviare, non dopo.
 2. **Il secondo minibus di famiglia.** Se il Tourengo entra come mezzo 2, il costo va
-   concordato con Francesco. La decisione è di Girolamo: nel PDF non è nominato, i tre mezzi
-   non di proprietà sono descritti solo come minibus della stessa classe, 24-25 posti.
+   concordato con Francesco. La decisione è di Girolamo: nel PDF non è nominato.
+
+   **Nel preventivo non si specifica di chi sono i mezzi.** Il cliente vede quattro minibus
+   GiroMunna, tutti della stessa classe: non c'è nessun accenno a quale sia di proprietà e
+   quali vengano da fuori. La provenienza e i costi di acquisto restano in queste note.
 3. **Punto di carico a Firenze.** Da far scegliere al cliente: Via Valfonda / Piazza Adua
    (nessun costo) oppure Via dei Conti con il permesso bus a ~€ 350 a mezzo.
 4. **Nome esatto dell'intestatario.** Quotato «House of Nine»: se la richiesta arriva da una

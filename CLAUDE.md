@@ -45,6 +45,10 @@ altro mezzo. Al cliente i due minibus si presentano insieme, come nel preventivo
 Francigena, ma il secondo ha un costo: va concordato con Francesco prima di metterlo a
 preventivo.
 
+**Nel preventivo non si scrive mai di chi sono i mezzi.** Il cliente vede minibus GiroMunna,
+non un mezzo di proprietà più altri presi da fuori. La provenienza dei mezzi è un fatto
+interno e resta nelle note interne, insieme ai costi di acquisto.
+
 Quando il gruppo non sta sul Beluga, si quota comunque il Beluga per un mezzo e si segnala
 la cosa: al cliente nel preventivo, come punto da chiarire, e a Girolamo, perché decida se
 mettere il secondo minibus. È quello che fa il preventivo Le Filigare, dove a fronte di 30
