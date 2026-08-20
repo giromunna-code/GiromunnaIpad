@@ -3,7 +3,8 @@
 Genera il preventivo GiroMunna per il servizio navetta del 9 ottobre 2026.
 
 House of Nine (Firenze) -> Villa Medicea di Lilliano (Grassina) -> Tenuta Bossi
-(Pontassieve) -> Firenze, gruppo di 80-100 persone su quattro minibus.
+(Pontassieve) -> Firenze. Il servizio e' quotato sui due minibus, Beluga e
+Tourengo, 54 posti in tutto.
 
 Riproduce l'impaginazione dei preventivi GiroMunna (logo, verde bottiglia e oro,
 intestazione e pie' di pagina su ogni pagina).
@@ -63,26 +64,28 @@ IT = dict(
     meta="Preparato per %s  ·  20 agosto 2026  ·  Rif. " + RIF,
     h_mezzo="I mezzi",
     mezzo_intro=(
-        "Quattro minibus con conducente per il vostro gruppo di 80-100 persone. Come ci avete chiesto, "
-        "sono tutti mezzi della classe 20-25 posti e restano tutti sotto gli otto metri: è la scelta giusta "
-        "per Via Lilliano e Meoli e per Via dello Stracchino, due strade di collina dove un autobus gran "
-        "turismo non arriva."
+        "Due minibus con conducente, entrambi sotto gli otto metri come ci avete chiesto: è la scelta "
+        "giusta per Via Lilliano e Meoli e per Via dello Stracchino, due strade di collina dove un autobus "
+        "gran turismo non arriva."
     ),
-    mezzo_bullet=(
+    mezzo_bullets=[
         "<b>Mercedes-Benz Beluga</b> — 26 posti passeggeri più l'autista, 7,64 m. Aria condizionata, "
-        "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli."
-    ),
+        "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.",
+        "<b>Mercedes-Benz Tourengo</b> — 28 posti passeggeri più l'autista, 7,86 m. Aria condizionata, "
+        "sedili reclinabili, impianto audio di bordo, ampio vano bagagli.",
+    ],
     mezzo_close=(
-        "Il Beluga è il primo dei quattro. Gli altri tre sono minibus della stessa classe e dello "
-        "stesso standard, 24-25 posti ciascuno, per un totale di circa cento posti a sedere. Ogni mezzo "
-        "porta il suo numero bene in vista, così i vostri ospiti ritrovano il proprio a ogni tappa."
+        "In tutto sono <b>54 posti a sedere</b>, e il prezzo di questo preventivo si riferisce a questi due "
+        "mezzi. Ci avete indicato un gruppo di 80-100 persone: è il primo punto da chiarire e ne parliamo "
+        "per esteso fra le note. I due minibus portano il numero 1 e il numero 2 bene in vista, così i "
+        "vostri ospiti ritrovano il proprio a ogni tappa."
     ),
     h_servizio="Il servizio",
     svc_head=["Trasferimento", "Percorso", "Impegno dei mezzi"],
     svc=[
         ("1 · 14:30",
          "<b>Firenze, House of Nine (Via dei Conti 9) → Villa Medicea di Lilliano, Via Lilliano e Meoli 82, "
-         "Grassina (FI).</b> I quattro minibus sono in posizione alle 14:00 al punto di carico concordato, "
+         "Grassina (FI).</b> I due minibus sono in posizione alle 14:00 al punto di carico concordato, "
          "imbarco dalle 14:15 e partenza alle 14:30. Circa 12 km e 35 minuti nel traffico del venerdì "
          "pomeriggio, con arrivo in villa verso le 15:05.",
          "14:00 – 15:15"),
@@ -104,29 +107,29 @@ IT = dict(
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Minibus 1 — Mercedes-Benz Beluga · i tre trasferimenti, mezzo e conducente a disposizione "
-         "dalle 14:00 alle 24:00", "€ 1.150,00", "+ IVA 10%"),
-        ("Minibus 2 — stesso servizio", "€ 1.150,00", "+ IVA 10%"),
-        ("Minibus 3 — stesso servizio", "€ 1.150,00", "+ IVA 10%"),
-        ("Minibus 4 — stesso servizio", "€ 1.150,00", "+ IVA 10%"),
+        ("Minibus 1 — Mercedes-Benz Beluga, 26 posti · i tre trasferimenti, mezzo e conducente a "
+         "disposizione dalle 14:00 alle 24:00", "€ 1.150,00", "+ IVA 10%"),
+        ("Minibus 2 — Mercedes-Benz Tourengo, 28 posti · stesso servizio", "€ 1.150,00", "+ IVA 10%"),
         ("Vitto e alloggio dei conducenti — non necessario con gli orari in programma, dovuto solo se il "
          "rientro slitta ben oltre le 02:00 (vedi note)", "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 4.600,00",
+    price_total="€ 2.300,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 5.060,00.",
-    perhead=("Il prezzo è per mezzo: su cento ospiti sono circa € 51,00 a persona, su ottanta circa € 63,00. "
-             "Un eventuale quinto minibus si aggiunge alle stesse condizioni, € 1.150,00 + IVA."),
+    grand="Totale da corrispondere, IVA 10% inclusa: € 2.530,00.",
+    perhead=("Il prezzo è per mezzo e vale per i due minibus qui descritti, 54 posti in tutto: a pieno "
+             "carico sono circa € 47,00 a persona. Ogni mezzo in più si aggiunge alle stesse condizioni, "
+             "€ 1.150,00 + IVA."),
     h_incluso="Incluso.",
     incluso=(
-        "Quattro mezzi e quattro conducenti, carburante, pedaggi, parcheggi, assicurazione completa e la "
-        "disponibilità della flotta dalle 14:00 alle 24:00, non solo per i tre trasferimenti in programma. "
+        "Due mezzi e due conducenti, carburante, pedaggi, parcheggi, assicurazione completa e la "
+        "disponibilità dei minibus dalle 14:00 alle 24:00, non solo per i tre trasferimenti in programma. "
         "A Grassina e a Pontassieve non sono dovuti oneri di accesso: né Villa Medicea di Lilliano né "
         "Tenuta Bossi si trovano in zona a traffico limitato."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
+        "Eventuali mezzi aggiuntivi oltre ai due qui quotati, che vi quotiamo a parte su richiesta. "
         "Il permesso comunale di accesso dei bus turistici al centro di Firenze, necessario soltanto se "
         "carico e scarico avvengono davanti all'albergo in Via dei Conti: circa € 350,00 per mezzo, che vi "
         "addebiteremmo al costo (vedi note). Attesa oltre gli orari qui indicati, € 50,00 all'ora per mezzo. "
@@ -136,65 +139,66 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 1.518,00", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 3.542,00", ""),
+        ("Acconto 30% alla conferma", "€ 759,00", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 1.771,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
+        ("<b>Ottanta o cento ospiti non stanno su due minibus.</b> È il punto da chiarire prima di ogni "
+         "altra cosa. Ci avete indicato un gruppo di 80-100 persone; i due mezzi di questo preventivo fanno "
+         "54 posti a sedere, e il prezzo è riferito a loro due. Le strade sono tre. La prima: se il numero "
+         "definitivo dei passeggeri sta entro i 54, questo preventivo va bene così com'è. La seconda: "
+         "portiamo tutti con questi stessi due mezzi facendo due turni, ma è giusto dirvi subito che cosa "
+         "comporta — il primo trasferimento si spalma su circa un'ora e mezza, il secondo turno arriva a "
+         "Tenuta Bossi verso le 20:15 e gli ultimi ospiti rientrano a Firenze verso l'01:00, con il "
+         "supplemento di rientro notturno. La terza, che per un gruppo di questa dimensione è quella che "
+         "consigliamo: si aggiungono altri due minibus della stessa classe e tutti viaggiano insieme, agli "
+         "orari che ci avete dato. Ve li quotiamo su richiesta, alle stesse condizioni. Diteci il numero "
+         "definitivo e vi mandiamo la versione giusta."),
         ("<b>Il punto di carico a Firenze.</b> House of Nine è in Via dei Conti 9, a due passi dal Duomo: "
-         "siamo nel cuore della ZTL, in una strada dove un minibus da otto metri non può fermarsi a caricare, "
-         "e qui di minibus ce ne sono quattro. La soluzione che usiamo sempre è caricare e scaricare in "
-         "<b>Via Valfonda o in Piazza Adua</b>, dietro la stazione di Santa Maria Novella, dove la sosta dei "
-         "bus è autorizzata: sono poco più di 400 metri dall'albergo, cinque minuti a piedi in piano, e non "
-         "comportano alcun onere. Se invece volete i mezzi davanti all'ingresso serve il permesso comunale "
-         "per i bus turistici, circa € 350,00 a mezzo, da richiedere con qualche giorno di anticipo: lo "
-         "gestiamo noi e ve lo addebitiamo al costo. Diteci quale delle due soluzioni preferite, perché "
-         "cambia il preventivo."),
+         "siamo nel cuore della ZTL, in una strada dove un minibus da otto metri non può fermarsi a "
+         "caricare. La soluzione che usiamo sempre è caricare e scaricare in <b>Via Valfonda o in Piazza "
+         "Adua</b>, dietro la stazione di Santa Maria Novella, dove la sosta dei bus è autorizzata: sono "
+         "poco più di 400 metri dall'albergo, cinque minuti a piedi in piano, e non comportano alcun onere. "
+         "Se invece volete i mezzi davanti all'ingresso serve il permesso comunale per i bus turistici, "
+         "circa € 350,00 a mezzo, da richiedere con qualche giorno di anticipo: lo gestiamo noi e ve lo "
+         "addebitiamo al costo. Diteci quale delle due soluzioni preferite, perché cambia il preventivo."),
         ("<b>Le 23:00 da Tenuta Bossi.</b> È il punto su cui vi chiediamo di essere realistici, perché a una "
-         "festa l'orario di partenza slitta quasi sempre e qui slitta per quattro mezzi insieme: l'attesa "
-         "oltre l'orario concordato costa € 50,00 all'ora per mezzo, cioè € 200,00 all'ora per la flotta, e "
-         "un rientro che si chiude dopo le 02:00 costa € 250,00 per mezzo. Molto meglio fissare adesso "
-         "l'orario vero: <b>possiamo spostare la partenza fino alle 00:30 senza differenza di prezzo</b>, "
-         "purché lo decidiate alla conferma e non la sera stessa. Oltre quell'ora la giornata dei conducenti "
-         "supera i limiti di guida e servirebbe un secondo turno."),
-        ("<b>Se il gruppo non rientra tutto insieme.</b> Capita spesso che una parte degli ospiti voglia "
-         "rientrare presto e una parte restare fino all'ultimo. Possiamo organizzare due turni: due minibus "
-         "partono alle 23:00, scaricano a Firenze, risalgono a Tenuta Bossi e alle 00:30 si riparte tutti "
-         "insieme. Il doppio viaggio costa € 350,00 + IVA per ciascuno dei due mezzi che lo fanno. "
-         "Anche questo va deciso alla conferma."),
+         "festa l'orario di partenza slitta quasi sempre: l'attesa oltre l'orario concordato costa € 50,00 "
+         "all'ora per mezzo, cioè € 100,00 all'ora per i due, e un rientro che si chiude dopo le 02:00 costa "
+         "€ 250,00 per mezzo. Molto meglio fissare adesso l'orario vero: <b>possiamo spostare la partenza "
+         "fino alle 00:30 senza differenza di prezzo</b>, purché lo decidiate alla conferma e non la sera "
+         "stessa. Oltre quell'ora la giornata dei conducenti supera i limiti di guida e servirebbe un "
+         "secondo turno."),
         ("<b>Accesso e sosta a Villa Medicea di Lilliano.</b> Via Lilliano e Meoli sale da Grassina per circa "
-         "un chilometro ed è stretta: è esattamente il motivo per cui ci avete chiesto mezzi da 20-25 posti. "
-         "Ci servono due conferme dalla villa, possibilmente per iscritto: dove scaricano i quattro mezzi e "
-         "se possono restare parcheggiati in tenuta dalle 15:00 alle 18:00. Se lo spazio per quattro non "
-         "c'è, i mezzi scendono a Grassina e risalgono alle 18:00 senza costi aggiuntivi — ma è una cosa da "
-         "sapere prima, non davanti al cancello."),
+         "un chilometro ed è stretta: è esattamente il motivo per cui ci avete chiesto mezzi di questa "
+         "classe. Ci servono due conferme dalla villa, possibilmente per iscritto: dove scaricano i mezzi e "
+         "se possono restare parcheggiati in tenuta dalle 15:00 alle 18:00. Se lo spazio non c'è, i minibus "
+         "scendono a Grassina e risalgono alle 18:00 senza costi aggiuntivi — ma è una cosa da sapere prima, "
+         "non davanti al cancello."),
         ("<b>Accesso e sosta a Tenuta Bossi.</b> Stesso discorso, e più delicato: qui l'attesa è di oltre "
          "quattro ore e la ripartenza è di notte, su una strada di collina stretta e senza illuminazione. "
-         "Chiedete alla tenuta il punto di discesa, lo spazio di manovra per quattro mezzi e, se possibile, "
-         "che i minibus restino dentro fino alla partenza: alle 23:00 e al buio, averli già in posizione fa "
-         "risparmiare venti minuti e parecchia confusione."),
-        ("<b>Ottanta o cento ospiti fanno una bella differenza.</b> Quattro minibus di questa classe fanno "
-         "circa cento posti a sedere. Con ottanta ospiti si viaggia comodi, con un posto libero ogni quattro; "
-         "con cento non resta un posto per l'ospite dell'ultimo minuto, per chi organizza o per il fotografo "
-         "che viaggia con il gruppo. Se il numero definitivo supera i 96 vi consigliamo il quinto minibus, "
-         "€ 1.150,00 + IVA alle stesse condizioni. Ci serve il numero definitivo almeno quindici giorni "
-         "prima, quindi entro il 24 settembre."),
-        ("<b>I 26 posti del Beluga.</b> Il Beluga ha 26 posti passeggeri, uno in più del "
-         "limite che ci avete indicato, ma è lungo 7,64 m: l'ingombro su strada è quello di un 25 posti e "
-         "nelle due salite si comporta allo stesso modo. Se il limite dei 25 ve lo ha posto una delle due "
-         "strutture ed è un limite di persone e non di mezzo, ditecelo e sul Beluga carichiamo 25."),
-        ("<b>Quattro mezzi si muovono insieme solo se qualcuno li coordina.</b> Con cento persone e tre "
-         "partenze il tempo si perde nell'imbarco, non in strada. Vi proponiamo di numerare i minibus da 1 a "
-         "4 e di assegnare gli ospiti fin dal primo trasferimento, così a ogni tappa ognuno risale sul suo. "
-         "Al vostro referente lasciamo i numeri di cellulare dei quattro conducenti e teniamo una sola "
-         "persona di riferimento da parte nostra per tutta la giornata."),
+         "Chiedete alla tenuta il punto di discesa, lo spazio di manovra e, se possibile, che i minibus "
+         "restino dentro fino alla partenza: alle 23:00 e al buio, averli già in posizione fa risparmiare "
+         "tempo e parecchia confusione."),
+        ("<b>I posti dei due minibus e il limite dei 25.</b> Il Beluga ha 26 posti passeggeri e il Tourengo "
+         "28, quindi qualcuno in più del limite che ci avete indicato, ma sono lunghi 7,64 e 7,86 metri: su "
+         "strada ingombrano quanto un 25 posti e nelle due salite si comportano allo stesso modo. Se il "
+         "limite dei 25 ve lo ha posto una delle due strutture ed è un limite di persone e non di mezzo, "
+         "ditecelo: carichiamo 25 per mezzo, cioè 50 in tutto, e il conto dei posti va rifatto su quel "
+         "numero."),
+        ("<b>Due mezzi si muovono insieme solo se qualcuno li coordina.</b> Il tempo si perde nell'imbarco, "
+         "non in strada. Vi proponiamo di assegnare gli ospiti al minibus 1 o al minibus 2 fin dal primo "
+         "trasferimento, così a ogni tappa ognuno risale sul suo. Al vostro referente lasciamo i numeri di "
+         "cellulare dei due conducenti e teniamo una sola persona di riferimento da parte nostra per tutta "
+         "la giornata."),
         ("<b>Per confermare ci servono</b> il numero definitivo dei passeggeri, la scelta del punto di carico "
          "a Firenze, le conferme di accesso e sosta dalle due strutture, l'orario di partenza definitivo da "
          "Tenuta Bossi, un recapito telefonico o WhatsApp della persona che segue il gruppo sul posto e i "
          "vostri dati di fatturazione."),
-        ("<b>Disponibilità e cancellazione.</b> I quattro minibus sono al momento liberi e li teniamo a "
+        ("<b>Disponibilità e cancellazione.</b> I due minibus sono al momento liberi e li teniamo a "
          "vostra disposizione per tutta la validità del preventivo; la prenotazione diventa definitiva alla "
          "ricezione dell'acconto. La cancellazione è gratuita oltre 60 giorni prima del servizio; da 60 a 30 "
          "giorni viene trattenuto l'acconto; da 30 a 10 giorni viene addebitato il 50% del prezzo; negli "
@@ -217,25 +221,27 @@ EN = dict(
     meta="Prepared for %s  ·  20 August 2026  ·  Ref. " + RIF,
     h_mezzo="The vehicles",
     mezzo_intro=(
-        "Four minibuses with drivers for your group of 80-100. As you asked, every vehicle is in the "
-        "20-25 seat class and every one of them stays under eight metres: the right choice for Via Lilliano "
+        "Two minibuses with drivers, both under eight metres as you asked: the right choice for Via Lilliano "
         "e Meoli and Via dello Stracchino, two hill roads a full-size coach cannot manage."
     ),
-    mezzo_bullet=(
+    mezzo_bullets=[
         "<b>Mercedes-Benz Beluga</b> — 26 passenger seats plus driver, 7.64 m. Air conditioning, "
-        "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold."
-    ),
+        "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.",
+        "<b>Mercedes-Benz Tourengo</b> — 28 passenger seats plus driver, 7.86 m. Air conditioning, "
+        "reclining seats, on-board audio system, large luggage hold.",
+    ],
     mezzo_close=(
-        "The Beluga is the first of the four. The other three are minibuses of the same class and the "
-        "same standard, 24-25 seats each, for about one hundred seats in total. Each vehicle carries its "
-        "number clearly displayed, so your guests find the same one at every stage."
+        "That is <b>54 seats</b> in total, and the price in this quotation is for these two vehicles. You "
+        "told us the group is 80-100 people: that is the first thing to settle, and we set it out in full "
+        "in the notes below. The two minibuses carry the numbers 1 and 2 clearly displayed, so your guests "
+        "find the same one at every stage."
     ),
     h_servizio="The service",
     svc_head=["Transfer", "Route", "Vehicles engaged"],
     svc=[
         ("1 · 14:30",
          "<b>Florence, House of Nine (Via dei Conti 9) → Villa Medicea di Lilliano, Via Lilliano e Meoli 82, "
-         "Grassina (FI).</b> The four minibuses are in position at 14:00 at the agreed boarding point, "
+         "Grassina (FI).</b> The two minibuses are in position at 14:00 at the agreed boarding point, "
          "boarding from 14:15 and departure at 14:30. About 12 km and 35 minutes in Friday afternoon "
          "traffic, reaching the villa around 15:05.",
          "14:00 – 15:15"),
@@ -257,98 +263,96 @@ EN = dict(
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Minibus 1 — Mercedes-Benz Beluga · the three transfers, vehicle and driver at your disposal "
-         "from 14:00 to 24:00", "€ 1,150.00", "+ VAT 10%"),
-        ("Minibus 2 — same service", "€ 1,150.00", "+ VAT 10%"),
-        ("Minibus 3 — same service", "€ 1,150.00", "+ VAT 10%"),
-        ("Minibus 4 — same service", "€ 1,150.00", "+ VAT 10%"),
+        ("Minibus 1 — Mercedes-Benz Beluga, 26 seats · the three transfers, vehicle and driver at your "
+         "disposal from 14:00 to 24:00", "€ 1,150.00", "+ VAT 10%"),
+        ("Minibus 2 — Mercedes-Benz Tourengo, 28 seats · same service", "€ 1,150.00", "+ VAT 10%"),
         ("Drivers' board and lodging — not required with the programme as scheduled, due only if the return "
          "slips well past 02:00 (see notes)", "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 4,600.00",
+    price_total="€ 2,300.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 5,060.00.",
-    perhead=("The price is per vehicle: on one hundred guests that is about € 51.00 per person, on eighty "
-             "about € 63.00. A fifth minibus, should you need one, is added on the same terms at "
+    grand="Total payable, VAT 10% included: € 2,530.00.",
+    perhead=("The price is per vehicle and covers the two minibuses described here, 54 seats in total: at "
+             "full load that is about € 47.00 per person. Any further vehicle is added on the same terms at "
              "€ 1,150.00 + VAT."),
     h_incluso="Included.",
     incluso=(
-        "Four vehicles and four drivers, fuel, tolls, parking, full insurance and the fleet at your disposal "
-        "from 14:00 to 24:00, not only for the three scheduled transfers. No access charges are due at "
-        "Grassina or Pontassieve: neither Villa Medicea di Lilliano nor Tenuta Bossi sits inside a "
+        "Two vehicles and two drivers, fuel, tolls, parking, full insurance and the minibuses at your "
+        "disposal from 14:00 to 24:00, not only for the three scheduled transfers. No access charges are "
+        "due at Grassina or Pontassieve: neither Villa Medicea di Lilliano nor Tenuta Bossi sits inside a "
         "restricted traffic zone."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
-        "The city permit for tourist coaches entering the centre of Florence, needed only if boarding and "
-        "drop-off happen outside the hotel in Via dei Conti: about € 350.00 per vehicle, which we would "
-        "charge you at cost (see notes). Waiting beyond the times set out here, € 50.00 per hour per "
-        "vehicle. Additional transfers or changes to the programme, quoted on request. Return to Florence "
-        "after 02:00, € 250.00 per vehicle. The drivers' board and lodging, should the programme stretch far "
-        "enough to make them necessary."
+        "Any vehicles beyond the two quoted here, which we quote separately on request. The city permit for "
+        "tourist coaches entering the centre of Florence, needed only if boarding and drop-off happen "
+        "outside the hotel in Via dei Conti: about € 350.00 per vehicle, which we would charge you at cost "
+        "(see notes). Waiting beyond the times set out here, € 50.00 per hour per vehicle. Additional "
+        "transfers or changes to the programme, quoted on request. Return to Florence after 02:00, "
+        "€ 250.00 per vehicle. The drivers' board and lodging, should the programme stretch far enough to "
+        "make them necessary."
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 1,518.00", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 3,542.00", ""),
+        ("Deposit 30% on confirmation", "€ 759.00", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 1,771.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
+        ("<b>Eighty or one hundred guests do not fit on two minibuses.</b> This is the point to settle "
+         "before anything else. You told us the group is 80-100 people; the two vehicles in this quotation "
+         "come to 54 seats, and the price is for those two. There are three ways forward. First: if the "
+         "final passenger count is within 54, this quotation stands as it is. Second: we carry everyone "
+         "with these same two vehicles in two waves — but it is only fair to tell you now what that means. "
+         "The first transfer spreads over about an hour and a half, the second wave reaches Tenuta Bossi "
+         "around 20:15, and the last guests are back in Florence around 01:00, with the night-return "
+         "supplement. Third, and for a group this size the one we recommend: two more minibuses of the same "
+         "class are added and everyone travels together, at the times you gave us. We quote them on request, "
+         "on the same terms. Tell us the final number and we will send you the right version."),
         ("<b>The boarding point in Florence.</b> House of Nine is at Via dei Conti 9, a few steps from the "
-         "Duomo: that is the heart of the restricted traffic zone, on a street where a single eight-metre "
-         "minibus cannot stop to board passengers — and here there are four of them. The arrangement we "
-         "always use is to board and drop off in <b>Via Valfonda or Piazza Adua</b>, behind Santa Maria "
-         "Novella station, where coach stops are authorised: just over 400 metres from the hotel, five "
-         "minutes on the flat, and no charge at all. If you would rather have the vehicles at the door, the "
-         "city permit for tourist coaches is required, about € 350.00 per vehicle, applied for some days in "
-         "advance: we handle it and pass it on at cost. Tell us which of the two you prefer, because it "
-         "changes the quotation."),
+         "Duomo: that is the heart of the restricted traffic zone, on a street where an eight-metre minibus "
+         "cannot stop to board passengers. The arrangement we always use is to board and drop off in "
+         "<b>Via Valfonda or Piazza Adua</b>, behind Santa Maria Novella station, where coach stops are "
+         "authorised: just over 400 metres from the hotel, five minutes on the flat, and no charge at all. "
+         "If you would rather have the vehicles at the door, the city permit for tourist coaches is "
+         "required, about € 350.00 per vehicle, applied for some days in advance: we handle it and pass it "
+         "on at cost. Tell us which of the two you prefer, because it changes the quotation."),
         ("<b>The 23:00 departure from Tenuta Bossi.</b> This is where we ask you to be realistic. At a party "
-         "the departure time almost always slips, and here it slips for four vehicles at once: waiting "
-         "beyond the agreed time costs € 50.00 per hour per vehicle, which is € 200.00 an hour for the "
-         "fleet, and a return that ends after 02:00 costs € 250.00 per vehicle. It is far better to fix the "
-         "real time now: <b>we can move the departure as late as 00:30 with no change in price</b>, as long "
-         "as you decide it at confirmation and not on the night. Beyond that hour the drivers' day exceeds "
-         "the permitted limits and a second shift would be needed."),
-        ("<b>If the group does not travel back together.</b> It often happens that some guests want to leave "
-         "early and others stay to the end. We can run two waves: two minibuses leave at 23:00, drop off in "
-         "Florence, drive back up to Tenuta Bossi, and at 00:30 everyone leaves together. The double run "
-         "costs € 350.00 + VAT for each of the two vehicles doing it. This too needs deciding at "
-         "confirmation."),
+         "the departure time almost always slips: waiting beyond the agreed time costs € 50.00 per hour per "
+         "vehicle, which is € 100.00 an hour for the two, and a return that ends after 02:00 costs € 250.00 "
+         "per vehicle. It is far better to fix the real time now: <b>we can move the departure as late as "
+         "00:30 with no change in price</b>, as long as you decide it at confirmation and not on the night. "
+         "Beyond that hour the drivers' day exceeds the permitted limits and a second shift would be "
+         "needed."),
         ("<b>Access and parking at Villa Medicea di Lilliano.</b> Via Lilliano e Meoli climbs from Grassina "
-         "for about a kilometre and it is narrow: precisely why you asked for 20-25 seat vehicles. We need "
-         "two confirmations from the villa, in writing if possible: where the four vehicles set down, and "
-         "whether they may stay parked on the estate from 15:00 to 18:00. If there is no room for four, the "
-         "vehicles go back down to Grassina and come up again at 18:00 at no extra cost — but it is "
+         "for about a kilometre and it is narrow: precisely why you asked for vehicles of this class. We "
+         "need two confirmations from the villa, in writing if possible: where the vehicles set down, and "
+         "whether they may stay parked on the estate from 15:00 to 18:00. If there is no room, the "
+         "minibuses go back down to Grassina and come up again at 18:00 at no extra cost — but it is "
          "something to know beforehand, not at the gate."),
         ("<b>Access and parking at Tenuta Bossi.</b> The same question, and a more delicate one: here the "
          "wait is over four hours and the departure is at night, on a narrow unlit hill road. Please ask the "
-         "estate for the set-down point, the manoeuvring space for four vehicles and, if possible, for the "
-         "minibuses to stay inside until departure: at 23:00 in the dark, having them already in position "
-         "saves twenty minutes and a good deal of confusion."),
-        ("<b>Eighty or one hundred guests makes a real difference.</b> Four minibuses of this class come to "
-         "about one hundred seats. At eighty guests you travel comfortably, with one free seat in four; at "
-         "one hundred there is not a seat left for a last-minute guest, for whoever is running the day, or "
-         "for the photographer travelling with the group. If the final count goes above 96 we would "
-         "recommend a fifth minibus at € 1,150.00 + VAT on the same terms. We need the definitive number at "
-         "least fifteen days ahead, so by 24 September."),
-        ("<b>The Beluga's 26 seats.</b> The Beluga has 26 passenger seats, one more than the limit you "
-         "gave us, but it is 7.64 m long: on the road it takes the same space as a 25-seater and it handles "
-         "both climbs the same way. If the 25 limit was set by one of the two venues and is a limit on "
-         "people rather than on the vehicle, tell us and we will load 25 on the Beluga."),
-        ("<b>Four vehicles move together only if someone coordinates them.</b> With one hundred people and "
-         "three departures, the time is lost in boarding, not on the road. We suggest numbering the "
-         "minibuses 1 to 4 and assigning guests from the first transfer onwards, so at every stage each "
-         "person gets back on the same one. We give your coordinator the mobile numbers of all four drivers "
-         "and keep a single point of contact on our side for the whole day."),
+         "estate for the set-down point, the manoeuvring space and, if possible, for the minibuses to stay "
+         "inside until departure: at 23:00 in the dark, having them already in position saves time and a "
+         "good deal of confusion."),
+        ("<b>The seats on the two minibuses and the 25 limit.</b> The Beluga has 26 passenger seats and the "
+         "Tourengo 28, so a few more than the limit you gave us, but they are 7.64 m and 7.86 m long: on the "
+         "road they take the same space as a 25-seater and they handle both climbs the same way. If the 25 "
+         "limit was set by one of the two venues and is a limit on people rather than on the vehicle, tell "
+         "us: we will load 25 per vehicle, 50 in total, and the seat count has to be redone on that "
+         "number."),
+        ("<b>Two vehicles move together only if someone coordinates them.</b> The time is lost in boarding, "
+         "not on the road. We suggest assigning guests to minibus 1 or minibus 2 from the first transfer "
+         "onwards, so at every stage each person gets back on the same one. We give your coordinator the "
+         "mobile numbers of both drivers and keep a single point of contact on our side for the whole day."),
         ("<b>To confirm we need</b> the final passenger count, your choice of boarding point in Florence, "
          "the access and parking confirmations from both venues, the definitive departure time from Tenuta "
          "Bossi, a mobile or WhatsApp contact for the person looking after the group on site, and your "
          "invoicing details."),
-        ("<b>Availability and cancellation.</b> The four minibuses are currently free and we hold them for "
+        ("<b>Availability and cancellation.</b> The two minibuses are currently free and we hold them for "
          "you for the whole validity of this quotation; the booking becomes firm on receipt of the deposit. "
          "Cancellation is free of charge more than 60 days before the service; from 60 to 30 days the "
          "deposit is retained; from 30 to 10 days 50% of the price is charged; in the last 10 days, 100%. "
@@ -443,17 +447,19 @@ def build(lang, cliente, out):
     # --- mezzi
     F.append(Paragraph(L["h_mezzo"], S["h2"]))
     F.append(Paragraph(L["mezzo_intro"], S["body"]))
-    bullet = Table([[Paragraph(L["mezzo_bullet"], S["cellsm"])]], colWidths=[usable])
-    bullet.setStyle(TableStyle([
-        ("BACKGROUND", (0, 0), (-1, -1), CREAM),
-        ("LINEBEFORE", (0, 0), (0, -1), 2, GOLD),
-        ("LEFTPADDING", (0, 0), (-1, -1), 9),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 9),
-        ("TOPPADDING", (0, 0), (-1, -1), 7),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
-    ]))
-    F.append(bullet)
-    F.append(Spacer(1, 7))
+    for testo in L["mezzo_bullets"]:
+        bullet = Table([[Paragraph(testo, S["cellsm"])]], colWidths=[usable])
+        bullet.setStyle(TableStyle([
+            ("BACKGROUND", (0, 0), (-1, -1), CREAM),
+            ("LINEBEFORE", (0, 0), (0, -1), 2, GOLD),
+            ("LEFTPADDING", (0, 0), (-1, -1), 9),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 9),
+            ("TOPPADDING", (0, 0), (-1, -1), 7),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
+        ]))
+        F.append(bullet)
+        F.append(Spacer(1, 5))
+    F.append(Spacer(1, 2))
     F.append(Paragraph(L["mezzo_close"], S["body"]))
 
     # --- servizio
