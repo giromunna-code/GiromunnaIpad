@@ -11,9 +11,12 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
   le mail ai clienti e qualsiasi altro materiale destinato all'esterno: i clienti scrivono
   spesso in inglese, ma la versione che Girolamo deve poter leggere è quella italiana.
   Nessuna delle due sostituisce l'altra.
-- **Mai preparare bozze di mail e mai inviare niente.** Alle mail ci pensa Girolamo: scrive
-  lui ai clienti, con i suoi tempi e le sue parole. Il lavoro si ferma al documento
-  consegnato — niente bozze in Gmail, niente invii, e non serve nemmeno proporlo.
+- **Il testo della mail si prepara sempre, ma non si invia mai.** Ogni preventivo si
+  accompagna a un file di testo con la mail di risposta già pronta, in italiano e in inglese,
+  dentro la cartella del preventivo: Girolamo la copia da lì e la manda lui, con i suoi tempi.
+  Il file va fatto senza che venga chiesto, insieme al resto del lavoro.
+- **L'invio resta sempre di Girolamo.** Niente bozze create in Gmail, nessun messaggio
+  spedito, per nessun motivo. Il lavoro si ferma al testo consegnato.
 
 ## Dati aziendali
 
@@ -111,8 +114,8 @@ sotto mercato svaluta il servizio e non si recupera.
   livello: ogni nuovo lavoro finisce in questa.
 - `Preventivi/AAAA-MM-GG_Cliente/` — **una cartella per ogni preventivo**, intestata alla
   data del primo servizio e al nome del cliente (per esempio `2026-09-13_Alvora`). Dentro ci
-  va tutto il materiale di quel lavoro: i due PDF, la pagina web, lo script di generazione
-  e le note interne. Niente file sparsi fuori dalle cartelle.
+  va tutto il materiale di quel lavoro: i due PDF, la pagina web, lo script di generazione,
+  il file con il testo della mail e le note interne. Niente file sparsi fuori dalle cartelle.
 - `Preventivi/assets/giromunna_logo.png` — logo per i PDF, condiviso da tutti i preventivi.
   Lo script lo cerca prima nella propria cartella e poi in quella superiore, quindi il logo
   non va duplicato.
