@@ -1,0 +1,858 @@
+<title>Preventivo — Servizio navetta, 9 ottobre 2026</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+  .day.released { background: transparent; border-style: dashed; border-color: var(--line-strong); }
+  .day.released .day-date { color: var(--ink-soft); }
+  .day.released .badge { color: var(--ink-soft); background: transparent; border-color: var(--line-strong); }
+  .day.released p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<div class="wrap lang" data-lang="it">
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Servizio navetta
+      <span class="sub">Firenze · Grassina · Pontassieve</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Cliente</span><span class="v">House of Nine</span></div>
+      <div class="fact"><span class="eyebrow">Data</span><span class="v">ven 9 ott 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passeggeri</span><span class="v">80-100</span></div>
+      <div class="fact"><span class="eyebrow">Mezzi</span><span class="v">4 minibus</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2026-1009-HN</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">3 settembre 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>I mezzi</h2>
+    <p class="lede">Quattro minibus con conducente per il gruppo di 80-100 persone. Come richiesto, sono tutti mezzi della classe 20-25 posti e restano tutti sotto gli otto metri.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista, 7,64 m</span>
+      <p>Aria condizionata, sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.</p>
+      <p>Il Beluga è il mezzo di proprietà ed è il primo dei quattro. Gli altri tre sono minibus della stessa classe e dello stesso standard, 24-25 posti ciascuno. In tutto sono circa cento posti a sedere. Ogni mezzo porta il suo numero bene in vista, così gli ospiti ritrovano il proprio a ogni tappa.</p>
+      <p>Sotto gli otto metri si arriva dove un autobus gran turismo non arriva: Via Lilliano e Meoli sale da Grassina per circa un chilometro ed è stretta, e Via dello Stracchino sale da Pontassieve. È esattamente il motivo del limite dei 20-25 posti.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Venerdì 9 ottobre 2026. Distanze e tempi di percorrenza sono stime stradali, traffico escluso.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">Trasferimento 1 <span class="wd">· pomeriggio</span></span>
+          <span class="badge">Firenze → Grassina</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">14:30</span>
+            <span class="r">Firenze, House of Nine, Via dei Conti 9 <span class="to">→ Villa Medicea di Lilliano, Via Lilliano e Meoli 82, Grassina (FI)</span></span>
+            <span class="d">12 km · 35 min</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzi in posizione alle 14:00 al punto di carico concordato, imbarco dalle 14:15, arrivo in villa verso le 15:05.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">Trasferimento 2 <span class="wd">· sera</span></span>
+          <span class="badge">Grassina → Pontassieve</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">18:00</span>
+            <span class="r">Villa Medicea di Lilliano <span class="to">→ Tenuta Bossi, Marchesi Gondi, Via dello Stracchino 32, Pontassieve (FI)</span></span>
+            <span class="d">25 km · 45 min</span>
+          </div>
+        </div>
+        <div class="engaged">Per Bagno a Ripoli e Rosano, arrivo alla tenuta verso le 18:45.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">Trasferimento 3 <span class="wd">· notte</span></span>
+          <span class="badge">Pontassieve → Firenze</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">23:00</span>
+            <span class="r">Tenuta Bossi <span class="to">→ Firenze, House of Nine</span></span>
+            <span class="d">22 km · 35 min</span>
+          </div>
+        </div>
+        <div class="engaged">Lungo l'Aretina, rientro a Firenze verso le 23:40 allo stesso punto del carico.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">Fra un trasferimento e l'altro</span>
+          <span class="badge">Mezzi a disposizione · 14:00 – 24:00</span>
+        </div>
+        <p>Fra il primo e il secondo trasferimento passano quasi tre ore, fra il secondo e il terzo più di quattro. La base GiroMunna è a 55 km da Firenze, quindi i mezzi non rientrano: restano sul posto con i conducenti, a disposizione per tutta la giornata. Se serve anticipare un orario o fare un giro in più, basta dirlo al conducente sul momento.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Servizio</th>
+            <th scope="col" class="num">Importo</th>
+            <th scope="col" class="num">IVA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Minibus 1</span>Mercedes-Benz Beluga · i tre trasferimenti, mezzo e conducente a disposizione dalle 14:00 alle 24:00</td>
+            <td class="num">€ 1.150,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Minibus 2</span>Stesso servizio</td>
+            <td class="num">€ 1.150,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Minibus 3</span>Stesso servizio</td>
+            <td class="num">€ 1.150,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Minibus 4</span>Stesso servizio</td>
+            <td class="num">€ 1.150,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Vitto e alloggio dei conducenti — non necessario con gli orari in programma, dovuto solo se il rientro slitta ben oltre le 02:00</td>
+            <td class="num vat"><em>a carico vostro</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Totale, al netto di IVA</td>
+            <td class="num">€ 4.600,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Totale da corrispondere, IVA 10% inclusa
+        <small>circa € 51,00 a persona su cento ospiti, € 63,00 su ottanta · un eventuale quinto minibus € 1.150,00 + IVA</small>
+      </span>
+      <span class="fig">€ 5.060,00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Acconto 30% alla conferma</td>
+            <td class="num"><strong>€ 1.518,00</strong></td>
+            <td class="num vat">IVA inclusa</td>
+          </tr>
+          <tr>
+            <td>Saldo, entro 5 giorni dal servizio</td>
+            <td class="num"><strong>€ 3.542,00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Quattro mezzi e quattro conducenti, carburante, pedaggi, parcheggi, assicurazione completa e la disponibilità della flotta dalle 14:00 alle 24:00, non solo per i tre trasferimenti in programma.</li>
+      <li><strong>Nessun onere di accesso a Grassina e a Pontassieve.</strong> Né Villa Medicea di Lilliano né Tenuta Bossi si trovano in zona a traffico limitato.</li>
+      <li><strong>Non incluso.</strong> Il permesso comunale di accesso dei bus turistici al centro di Firenze, necessario soltanto se carico e scarico avvengono davanti all'albergo in Via dei Conti: circa € 350,00 per mezzo, addebitato al costo. Attesa oltre gli orari indicati, € 50,00 all'ora per mezzo. Trasferimenti aggiuntivi o modifiche al programma, quotati su richiesta. Rientro a Firenze dopo le 02:00, € 250,00 per mezzo.</li>
+      <li><strong>A vostro carico.</strong> Vitto e alloggio dei conducenti, se il programma dovesse allungarsi al punto da renderli necessari. Con gli orari in programma non servono.</li>
+      <li><strong>Disponibilità e cancellazione.</strong> Cancellazione gratuita oltre 60 giorni prima del servizio; da 60 a 30 giorni viene trattenuto l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%. Mancando oggi 50 giorni al servizio, la prenotazione ricade nella fascia da 60 a 30 giorni, e dal 9 settembre passerà in quella da 30 a 10.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Note</h2>
+    <ul class="conds">
+      <li><strong>Il punto di carico a Firenze.</strong> House of Nine è in Via dei Conti 9, a due passi dal Duomo: siamo nel cuore della ZTL, in una strada dove un minibus da otto metri non può fermarsi a caricare, e qui di minibus ce ne sono quattro. La soluzione che usiamo sempre è caricare e scaricare in <strong>Via Valfonda o in Piazza Adua</strong>, dietro la stazione di Santa Maria Novella, dove la sosta dei bus è autorizzata: poco più di 400 metri dall'albergo, cinque minuti a piedi in piano, nessun onere. In alternativa serve il permesso comunale per i bus turistici, circa € 350,00 a mezzo, da richiedere con qualche giorno di anticipo.</li>
+      <li><strong>Le 23:00 da Tenuta Bossi.</strong> A una festa l'orario di partenza slitta quasi sempre, e qui slitta per quattro mezzi insieme: l'attesa oltre l'orario concordato costa € 50,00 all'ora per mezzo, cioè € 200,00 all'ora per la flotta, e un rientro che si chiude dopo le 02:00 costa € 250,00 per mezzo. <strong>La partenza si può spostare fino alle 00:30 senza differenza di prezzo</strong>, purché deciso alla conferma e non la sera stessa: oltre quell'ora la giornata dei conducenti supera i limiti di guida.</li>
+      <li><strong>Se il gruppo non rientra tutto insieme.</strong> Due turni: due minibus partono alle 23:00, scaricano a Firenze, risalgono a Tenuta Bossi e alle 00:30 si riparte tutti insieme. Il doppio viaggio costa € 350,00 + IVA per ciascuno dei due mezzi che lo fanno.</li>
+      <li><strong>Accesso e sosta alle due tenute.</strong> Servono le conferme delle strutture: dove scaricano i quattro mezzi e se possono restare parcheggiati in tenuta, dalle 15:00 alle 18:00 a Lilliano e dalle 18:45 alle 23:00 a Bossi. Se lo spazio per quattro non c'è, i mezzi scendono e risalgono all'orario di partenza senza costi aggiuntivi. A Tenuta Bossi la ripartenza è di notte, su una strada stretta e senza illuminazione: averli già in posizione fa risparmiare venti minuti.</li>
+      <li><strong>Ottanta o cento ospiti fanno una bella differenza.</strong> Quattro minibus di questa classe fanno circa cento posti. Con ottanta ospiti si viaggia comodi; con cento non resta un posto per l'ospite dell'ultimo minuto, per chi organizza o per il fotografo. Sopra i 96 conviene il quinto minibus. Numero definitivo entro il 24 settembre.</li>
+      <li><strong>I 26 posti del Beluga.</strong> Il mezzo di proprietà ha 26 posti passeggeri, uno in più del limite indicato, ma è lungo 7,64 m: l'ingombro è quello di un 25 posti. Se il limite dei 25 è di persone e non di mezzo, sul Beluga carichiamo 25.</li>
+      <li><strong>Coordinamento.</strong> Con cento persone e tre partenze il tempo si perde nell'imbarco, non in strada. Minibus numerati da 1 a 4 e ospiti assegnati fin dal primo trasferimento; al referente del gruppo i numeri di cellulare dei quattro conducenti e una sola persona di riferimento da parte nostra per tutta la giornata.</li>
+      <li><strong>Per confermare servono</strong> il numero definitivo dei passeggeri, la scelta del punto di carico a Firenze, le conferme di accesso e sosta dalle due strutture, l'orario di partenza definitivo da Tenuta Bossi, un recapito telefonico o WhatsApp della persona che segue il gruppo sul posto e i dati di fatturazione.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Interno — non fa parte del preventivo inviato</div>
+    <h2>Come è stato costruito il prezzo</h2>
+
+    <p>Base di riferimento: il preventivo <strong>Le Filigare (GM-2026-0821-LF)</strong>, che è a mezzo singolo. <strong>Non</strong> il Corte Francigena diviso per due: quegli importi sono già scontati per volume e qui i tre mezzi su quattro si comprano da Francesco.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — trasferimento ~50 km</td><td class="num">€ 500,00</td></tr>
+          <tr><td>Le Filigare — giornata a disposizione, ~80 km, 5 h</td><td class="num">€ 809,00</td></tr>
+          <tr><td>Alvora — giornata a disposizione, 140 km, 8 h</td><td class="num">€ 980,00</td></tr>
+          <tr><td><strong>9 ottobre — giornata a disposizione, ~190 km con i vuoti da/per la base, 10 h con chiusura a mezzanotte</strong></td><td class="num"><strong>€ 1.150,00</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Non sono tre trasferimenti: fra il primo e il secondo passano tre ore e fra il secondo e il terzo più di quattro, con la base a 55 km. I mezzi restano fermi tutto il pomeriggio e tutta la sera, quindi si quota una giornata a disposizione dalle 14:00 alle 24:00. Quotarla come tre corse la pagherebbe la metà del suo costo.</p>
+
+    <h3>Margine</h3>
+    <p>Il Beluga costa € 250-350 di costo diretto: su € 1.150 il margine è pieno. Gli altri tre si comprano da Francesco a € 600-800 per una giornata di questo profilo, con chiusura a mezzanotte: a € 1.150 di vendita restano € 350-550 a mezzo. <strong>Il prezzo di acquisto va confermato con Francesco prima di inviare</strong>: se sfora gli € 800 a mezzo, il prezzo di vendita sale a € 1.250.</p>
+
+    <h3>Da chiarire prima di inviare</h3>
+    <ol>
+      <li><strong>Francesco.</strong> Disponibilità di tre minibus 24-25 posti per il 9 ottobre e prezzo all'ingrosso. Il preventivo dice al cliente che i mezzi sono liberi: va confermato prima, non dopo.</li>
+      <li><strong>Il secondo minibus di famiglia.</strong> Se si usa il Tourengo come mezzo 2, il costo va concordato con Francesco. Decisione di Girolamo: nel PDF non è nominato, i tre mezzi non di proprietà sono descritti solo come minibus della stessa classe.</li>
+      <li><strong>Il punto di carico a Firenze.</strong> Via dei Conti 9 è in ZTL, a due passi dal Duomo, ed è impraticabile per quattro minibus. Nel preventivo è proposto Via Valfonda / Piazza Adua. Se il cliente insiste sull'ingresso in centro, il permesso bus (~€ 350 a mezzo, quindi ~€ 1.400) va richiesto e addebitato al costo: non è nel totale.</li>
+      <li><strong>Nome esatto dell'intestatario.</strong> Quotato «House of Nine»: se la richiesta arriva da una wedding planner o da un'agenzia, rigenerare i PDF con <code>--cliente</code>.</li>
+      <li><strong>Numero passeggeri.</strong> 80-100 è una forbice da 20 persone. Quattro mezzi fanno ~100 posti: a 100 ospiti sono pieni. Sopra i 96 serve il quinto.</li>
+      <li><strong>Orario di partenza da Tenuta Bossi.</strong> Le 23:00 di un evento slittano. Nel preventivo la partenza si può spostare fino alle 00:30 senza sovrapprezzo, ma solo se deciso alla conferma: oltre, la giornata dei conducenti (13:00 dalla base – 01:00 di rientro con le 23:00) sfora.</li>
+      <li><strong>Conferme di accesso e sosta</strong> da Villa Medicea di Lilliano e da Tenuta Bossi per quattro mezzi.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2026-1009-HN · 20 agosto 2026</span>
+  </footer>
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Shuttle service
+      <span class="sub">Florence · Grassina · Pontassieve</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Client</span><span class="v">House of Nine</span></div>
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">Fri 9 Oct 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passengers</span><span class="v">80-100</span></div>
+      <div class="fact"><span class="eyebrow">Vehicles</span><span class="v">4 minibuses</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2026-1009-HN</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">3 September 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicles</h2>
+    <p class="lede">Four minibuses with drivers for the group of 80-100. As requested, every vehicle is in the 20-25 seat class and every one of them stays under eight metres.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus driver, 7.64 m</span>
+      <p>Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.</p>
+      <p>The Beluga is our own vehicle and the first of the four. The other three are minibuses of the same class and the same standard, 24-25 seats each. That is about one hundred seats in total. Each vehicle carries its number clearly displayed, so guests find the same one at every stage.</p>
+      <p>Under eight metres a vehicle reaches places a full-size coach cannot: Via Lilliano e Meoli climbs from Grassina for about a kilometre and is narrow, and Via dello Stracchino climbs from Pontassieve. That is exactly the reason for the 20-25 seat limit.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">Friday 9 October 2026. Distances and driving times are approximate road estimates, excluding traffic.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">Transfer 1 <span class="wd">· afternoon</span></span>
+          <span class="badge">Florence → Grassina</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">14:30</span>
+            <span class="r">Florence, House of Nine, Via dei Conti 9 <span class="to">→ Villa Medicea di Lilliano, Via Lilliano e Meoli 82, Grassina (FI)</span></span>
+            <span class="d">12 km · 35 min</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicles in position at 14:00 at the agreed boarding point, boarding from 14:15, reaching the villa around 15:05.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">Transfer 2 <span class="wd">· evening</span></span>
+          <span class="badge">Grassina → Pontassieve</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">18:00</span>
+            <span class="r">Villa Medicea di Lilliano <span class="to">→ Tenuta Bossi, Marchesi Gondi, Via dello Stracchino 32, Pontassieve (FI)</span></span>
+            <span class="d">25 km · 45 min</span>
+          </div>
+        </div>
+        <div class="engaged">Via Bagno a Ripoli and Rosano, reaching the estate around 18:45.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">Transfer 3 <span class="wd">· night</span></span>
+          <span class="badge">Pontassieve → Florence</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">23:00</span>
+            <span class="r">Tenuta Bossi <span class="to">→ Florence, House of Nine</span></span>
+            <span class="d">22 km · 35 min</span>
+          </div>
+        </div>
+        <div class="engaged">Along the Aretina, back in Florence around 23:40 at the same point as the pick-up.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">Between transfers</span>
+          <span class="badge">Vehicles at disposal · 14:00 – 24:00</span>
+        </div>
+        <p>Almost three hours pass between the first and second transfer, more than four between the second and the third. The GiroMunna base is 55 km from Florence, so the vehicles do not go back: they stay on site with their drivers, at your disposal all day. If you need to bring a time forward or add a run, just tell the driver on the spot.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col" class="num">Amount</th>
+            <th scope="col" class="num">VAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Minibus 1</span>Mercedes-Benz Beluga · the three transfers, vehicle and driver at your disposal from 14:00 to 24:00</td>
+            <td class="num">€ 1,150.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Minibus 2</span>Same service</td>
+            <td class="num">€ 1,150.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Minibus 3</span>Same service</td>
+            <td class="num">€ 1,150.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Minibus 4</span>Same service</td>
+            <td class="num">€ 1,150.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Drivers' board and lodging — not required with the programme as scheduled, due only if the return slips well past 02:00</td>
+            <td class="num vat"><em>at your charge</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Total, excluding VAT</td>
+            <td class="num">€ 4,600.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Total payable, VAT 10% included
+        <small>about € 51.00 per person on one hundred guests, € 63.00 on eighty · a fifth minibus, if needed, € 1,150.00 + VAT</small>
+      </span>
+      <span class="fig">€ 5,060.00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Deposit 30% on confirmation</td>
+            <td class="num"><strong>€ 1,518.00</strong></td>
+            <td class="num vat">VAT included</td>
+          </tr>
+          <tr>
+            <td>Balance, within 5 days of the service</td>
+            <td class="num"><strong>€ 3,542.00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Four vehicles and four drivers, fuel, tolls, parking, full insurance and the fleet at your disposal from 14:00 to 24:00, not only for the three scheduled transfers.</li>
+      <li><strong>No access charges at Grassina or Pontassieve.</strong> Neither Villa Medicea di Lilliano nor Tenuta Bossi sits inside a restricted traffic zone.</li>
+      <li><strong>Not included.</strong> The city permit for tourist coaches entering the centre of Florence, needed only if boarding and drop-off happen outside the hotel in Via dei Conti: about € 350.00 per vehicle, charged at cost. Waiting beyond the times indicated, € 50.00 per hour per vehicle. Additional transfers or changes to the programme, quoted on request. Return to Florence after 02:00, € 250.00 per vehicle.</li>
+      <li><strong>At your charge.</strong> The drivers' board and lodging, should the programme stretch far enough to make them necessary. With the programme as scheduled they are not needed.</li>
+      <li><strong>Availability and cancellation.</strong> Cancellation free of charge more than 60 days before the service; from 60 to 30 days the deposit is retained; from 30 to 10 days 50%; in the last 10 days 100%. With 50 days to the service today, the booking falls in the 60-to-30-day band, and from 9 September it moves into the 30-to-10 band.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <ul class="conds">
+      <li><strong>The boarding point in Florence.</strong> House of Nine is at Via dei Conti 9, a few steps from the Duomo: the heart of the restricted traffic zone, on a street where a single eight-metre minibus cannot stop to board passengers — and here there are four. The arrangement we always use is to board and drop off in <strong>Via Valfonda or Piazza Adua</strong>, behind Santa Maria Novella station, where coach stops are authorised: just over 400 metres from the hotel, five minutes on the flat, no charge. The alternative is the city permit for tourist coaches, about € 350.00 per vehicle, applied for some days in advance.</li>
+      <li><strong>The 23:00 departure from Tenuta Bossi.</strong> At a party the departure time almost always slips, and here it slips for four vehicles at once: waiting beyond the agreed time costs € 50.00 per hour per vehicle, which is € 200.00 an hour for the fleet, and a return that ends after 02:00 costs € 250.00 per vehicle. <strong>The departure can be moved as late as 00:30 with no change in price</strong>, as long as it is decided at confirmation and not on the night: beyond that hour the drivers' day exceeds the permitted limits.</li>
+      <li><strong>If the group does not travel back together.</strong> Two waves: two minibuses leave at 23:00, drop off in Florence, drive back up to Tenuta Bossi, and at 00:30 everyone leaves together. The double run costs € 350.00 + VAT for each of the two vehicles doing it.</li>
+      <li><strong>Access and parking at both estates.</strong> We need confirmation from the venues: where the four vehicles set down, and whether they may stay parked on the estate, from 15:00 to 18:00 at Lilliano and from 18:45 to 23:00 at Bossi. If there is no room for four, the vehicles go back down and come up again at departure time at no extra cost. At Tenuta Bossi the departure is at night, on a narrow unlit road: having them already in position saves twenty minutes.</li>
+      <li><strong>Eighty or one hundred guests makes a real difference.</strong> Four minibuses of this class come to about one hundred seats. At eighty guests you travel comfortably; at one hundred there is not a seat left for a last-minute guest, for whoever is running the day, or for the photographer. Above 96 a fifth minibus is worth it. Definitive number by 24 September.</li>
+      <li><strong>The Beluga's 26 seats.</strong> Our own vehicle has 26 passenger seats, one more than the limit given, but it is 7.64 m long: on the road it takes the same space as a 25-seater. If the 25 limit is a limit on people rather than on the vehicle, we will load 25 on the Beluga.</li>
+      <li><strong>Coordination.</strong> With one hundred people and three departures, the time is lost in boarding, not on the road. Minibuses numbered 1 to 4 and guests assigned from the first transfer onwards; the group's coordinator gets the mobile numbers of all four drivers and a single point of contact on our side for the whole day.</li>
+      <li><strong>To confirm we need</strong> the final passenger count, the choice of boarding point in Florence, the access and parking confirmations from both venues, the definitive departure time from Tenuta Bossi, a mobile or WhatsApp contact for the person looking after the group on site, and your invoicing details.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal — not part of the quotation sent to the client</div>
+    <h2>How the price was built</h2>
+
+    <p>Reference: the <strong>Le Filigare quotation (GM-2026-0821-LF)</strong>, which is a single-vehicle job. <strong>Not</strong> Corte Francigena divided by two: those figures are already discounted for volume, and here three vehicles out of four are bought in from Francesco.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — transfer, ~50 km</td><td class="num">€ 500.00</td></tr>
+          <tr><td>Le Filigare — day at disposal, ~80 km, 5 h</td><td class="num">€ 809.00</td></tr>
+          <tr><td>Alvora — day at disposal, 140 km, 8 h</td><td class="num">€ 980.00</td></tr>
+          <tr><td><strong>9 October — day at disposal, ~190 km including the empty legs to and from base, 10 h ending at midnight</strong></td><td class="num"><strong>€ 1,150.00</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>These are not three transfers: three hours pass between the first and the second and more than four between the second and the third, with the base 55 km away. The vehicles stand still all afternoon and all evening, so the job is quoted as a day at disposal from 14:00 to 24:00. Quoting it as three runs would pay half of what it costs.</p>
+
+    <h3>Margin</h3>
+    <p>The Beluga has a direct cost of € 250-350: on € 1,150 the margin is full. The other three are bought from Francesco at € 600-800 for a day of this profile, ending at midnight: at € 1,150 that leaves € 350-550 per vehicle. <strong>The buying price must be confirmed with Francesco before sending</strong>: if it goes past € 800 per vehicle, the selling price rises to € 1,250.</p>
+
+    <h3>To settle before sending</h3>
+    <ol>
+      <li><strong>Francesco.</strong> Availability of three 24-25 seat minibuses for 9 October and the wholesale price. The quotation tells the client the vehicles are free: confirm that first, not after.</li>
+      <li><strong>The second family minibus.</strong> If the Tourengo is used as vehicle 2, the cost has to be agreed with Francesco. Girolamo's decision: it is not named in the PDF, where the three non-owned vehicles are described only as minibuses of the same class.</li>
+      <li><strong>The boarding point in Florence.</strong> Via dei Conti 9 is inside the ZTL, steps from the Duomo, and unworkable for four minibuses. The quotation proposes Via Valfonda / Piazza Adua. If the client insists on the city centre, the coach permit (~€ 350 per vehicle, so ~€ 1,400) has to be applied for and charged at cost: it is not in the total.</li>
+      <li><strong>Exact name of the addressee.</strong> Quoted to "House of Nine": if the request comes from a wedding planner or an agency, regenerate the PDFs with <code>--cliente</code>.</li>
+      <li><strong>Passenger count.</strong> 80-100 is a twenty-person spread. Four vehicles come to ~100 seats: at 100 guests they are full. Above 96 a fifth is needed.</li>
+      <li><strong>Departure time from Tenuta Bossi.</strong> The 23:00 of an event slips. The quotation allows moving the departure to 00:30 at no surcharge, but only if decided at confirmation: beyond that, the drivers' day (13:00 out of base, 01:00 back with a 23:00 departure) runs over.</li>
+      <li><strong>Access and parking confirmations</strong> from Villa Medicea di Lilliano and Tenuta Bossi for four vehicles.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2026-1009-HN · 20 August 2026</span>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
