@@ -112,20 +112,20 @@ IT = dict(
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Minibus 1 — Mercedes-Benz Beluga, 25+1+1 · i tre trasferimenti, mezzo e conducente a "
-         "disposizione dalle 14:00 alle 24:00", "€ 900,00", "+ IVA 10%"),
-        ("Minibus 2 — Mercedes-Benz Tourengo, 27+1+1 · stesso servizio", "€ 900,00", "+ IVA 10%"),
+        ("Servizio del 9 ottobre con i due minibus — Mercedes-Benz Beluga 25+1+1 e Mercedes-Benz "
+         "Tourengo 27+1+1 · i tre trasferimenti, mezzi e conducenti a vostra disposizione dalle 14:00 "
+         "alle 24:00", "€ 900,00", "+ IVA 10%"),
         ("Permesso di accesso al centro di Firenze per la giornata del 9 ottobre, per entrambi i mezzi",
          "€ 421,00", "+ IVA 10%"),
         ("Vitto e alloggio dei conducenti — non necessario con gli orari in programma, dovuto solo se il "
          "rientro slitta ben oltre le 02:00 (vedi note)", "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 2.221,00",
+    price_total="€ 1.321,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 2.443,10.",
-    perhead=("Il servizio è € 900,00 a mezzo, più € 421,00 per il permesso di accesso a Firenze. Sui 52 "
-             "posti passeggeri dei due minibus, a pieno carico, sono circa € 47,00 a persona."),
+    grand="Totale da corrispondere, IVA 10% inclusa: € 1.453,10.",
+    perhead=("Il servizio è € 900,00 per i due minibus insieme, più € 421,00 per il permesso di accesso a "
+             "Firenze. Sui 52 posti passeggeri, a pieno carico, sono circa € 28,00 a persona."),
     h_incluso="Incluso.",
     incluso=(
         "Due mezzi e due conducenti, carburante, pedaggi, parcheggi, assicurazione completa, la "
@@ -146,8 +146,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 732,93", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 1.710,17", ""),
+        ("Acconto 30% alla conferma", "€ 435,93", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 1.017,17", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -275,20 +275,20 @@ EN = dict(
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Minibus 1 — Mercedes-Benz Beluga, 25+1+1 · the three transfers, vehicle and driver at your "
-         "disposal from 14:00 to 24:00", "€ 900.00", "+ VAT 10%"),
-        ("Minibus 2 — Mercedes-Benz Tourengo, 27+1+1 · same service", "€ 900.00", "+ VAT 10%"),
+        ("Service on 9 October with the two minibuses — Mercedes-Benz Beluga 25+1+1 and Mercedes-Benz "
+         "Tourengo 27+1+1 · the three transfers, vehicles and drivers at your disposal from 14:00 to "
+         "24:00", "€ 900.00", "+ VAT 10%"),
         ("Permit for access to the centre of Florence for the day of 9 October, both vehicles",
          "€ 421.00", "+ VAT 10%"),
         ("Drivers' board and lodging — not required with the programme as scheduled, due only if the return "
          "slips well past 02:00 (see notes)", "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 2,221.00",
+    price_total="€ 1,321.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 2,443.10.",
-    perhead=("The service is € 900.00 per vehicle, plus € 421.00 for the Florence access permit. Across the "
-             "52 passenger seats on the two minibuses, at full load, that is about € 47.00 per person."),
+    grand="Total payable, VAT 10% included: € 1,453.10.",
+    perhead=("The service is € 900.00 for the two minibuses together, plus € 421.00 for the Florence access "
+             "permit. Across the 52 passenger seats, at full load, that is about € 28.00 per person."),
     h_incluso="Included.",
     incluso=(
         "Two vehicles and two drivers, fuel, tolls, parking, full insurance, the minibuses at your "
@@ -309,8 +309,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 732.93", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 1,710.17", ""),
+        ("Deposit 30% on confirmation", "€ 435.93", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 1,017.17", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),

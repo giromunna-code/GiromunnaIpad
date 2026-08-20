@@ -40,15 +40,14 @@ Venerdì 9 ottobre 2026, tre trasferimenti nella stessa giornata.
 
 | Voce | Netto |
 |---|---|
-| Minibus 1 — Beluga, 25+1+1, i tre trasferimenti, a disposizione 14:00-24:00 | € 900,00 |
-| Minibus 2 — Tourengo, 27+1+1, stesso servizio | € 900,00 |
+| Servizio del 9 ottobre, i due minibus insieme (Beluga 25+1+1 e Tourengo 27+1+1) | € 900,00 |
 | Permesso di accesso al centro di Firenze, giornata del 9 ottobre, entrambi i mezzi | € 421,00 |
 | Vitto e alloggio conducenti | non necessario |
 
-**Totale netto € 2.221,00 · IVA 10% € 222,10 · Totale € 2.443,10**
-(a pieno carico sui 52 posti, ≈ € 47,00 a persona)
+**Totale netto € 1.321,00 · IVA 10% € 132,10 · Totale € 1.453,10**
+(a pieno carico sui 52 posti, ≈ € 28,00 a persona)
 
-Acconto 30% € 732,93 — saldo € 1.710,17.
+Acconto 30% € 435,93 — saldo € 1.017,17.
 
 ## Come è stato costruito il prezzo
 
@@ -61,7 +60,7 @@ Riferimento: **Le Filigare (GM-2026-0821-LF)**, che è a mezzo singolo, e la sca
 | Le Filigare — giornata a disposizione, ~80 km, 5 h | € 809,00 |
 | Alvora — giornata a disposizione, 140 km, 8 h | € 980,00 |
 | 9 ottobre — quanto varrebbe secondo la scala: ~190 km, 10 h, chiusura a mezzanotte | € 1.150,00 |
-| **Prezzo deciso da Girolamo, per mezzo** | **€ 900,00** |
+| **Prezzo deciso da Girolamo per il servizio, i due mezzi insieme** | **€ 900,00** |
 | **Permesso di accesso a Firenze, ribaltato al cliente** | **€ 421,00** |
 
 **Il punto chiave: non sono tre corse, è una giornata a disposizione.** Fra il primo e il
@@ -74,20 +73,30 @@ base) all'01:00 circa: dodici ore, dentro i limiti ma senza margine.
 Quotare i tre trasferimenti come corse separate avrebbe portato il prezzo intorno ai € 550
 a mezzo, cioè sotto il costo reale della giornata. È l'errore da non fare.
 
-## Margine
+## Margine — il punto da guardare in faccia
 
-Il prezzo di **€ 900 a mezzo è una decisione di Girolamo**. Sta sotto la scala di riferimento
-(Le Filigare: € 809 per 80 km e 5 ore, mentre qui la giornata è di dieci ore e ~190 km).
-Registrato qui perché resti agli atti, non per rimetterlo in discussione.
+Il prezzo di **€ 900 per i due mezzi insieme è una decisione di Girolamo**. Sono € 450 a
+mezzo, molto sotto la scala di riferimento (Le Filigare: € 809 per 80 km e 5 ore, mentre qui
+la giornata è di dieci ore e ~190 km a mezzo). Registrato qui perché resti agli atti.
 
-- **Beluga:** costo diretto € 250-350. Su € 900 il margine resta buono, € 550-650.
-- **Tourengo:** non è di GiroMunna, il costo va concordato con Francesco. A € 600-800 di
-  acquisto il margine sul secondo mezzo scende a **€ 100-300**: sottile.
-  **Se Francesco chiede più di € 800, il secondo mezzo va in pari o sotto.** In quel caso o si
-  rinegozia con lui, o si rivede il prezzo con Girolamo.
-- **Permesso Firenze € 421:** ribaltato al cliente in fattura, con IVA 10% come il resto del
-  servizio. Non è un margine, è una partita di giro: va verificato che l'importo effettivo
-  del permesso sia davvero quello, altrimenti la differenza la paghiamo noi.
+Il conto della giornata:
+
+| | |
+|---|---|
+| Ricavo del servizio | € 900 |
+| Costo diretto del Beluga | € 250-350 |
+| Acquisto del Tourengo da Francesco | € 600-800 |
+| **Costo totale** | **€ 850-1.150** |
+| **Risultato** | **da −€ 250 a +€ 50** |
+
+**Al prezzo pieno di Francesco il lavoro chiude in perdita.** Perché stia in piedi il
+Tourengo deve costare al massimo **€ 400-500**, cioè un prezzo di famiglia e non di mercato.
+È la prima cosa da chiarire con Francesco, prima di inviare: se non scende, o si rivede il
+prezzo con Girolamo, o il secondo mezzo non si mette.
+
+Il **permesso di € 421** è una partita di giro, ribaltata al cliente con IVA 10%. Se il
+Comune ne chiede di più, la differenza esce dalla nostra tasca: va verificato l'importo
+effettivo.
 
 ## Il permesso di Firenze e le 23:00
 
@@ -145,9 +154,10 @@ due minibus.
 1. **La capienza.** 80-100 persone contro 52 posti. Il preventivo dice che mettiamo due mezzi
    e basta: gli altri se li organizza il cliente, oppure ce lo fa sapere e si vede. Se chiede
    a noi, il preventivo per i mezzi in più si fa a parte, dopo aver sentito Francesco.
-2. **Francesco.** Costo del Tourengo per il 9 ottobre, giornata 14:00-24:00 con chiusura a
-   mezzanotte. Il preventivo dice al cliente che i due mezzi sono liberi: va confermato
-   **prima** di inviare, non dopo.
+2. **Francesco, ed è la cosa più urgente.** Costo del Tourengo per il 9 ottobre, giornata
+   14:00-24:00 con chiusura a mezzanotte. A € 900 di ricavo il Tourengo deve stare entro i
+   € 400-500, altrimenti la giornata chiude in perdita (vedi il conto sopra). Il preventivo
+   dice inoltre al cliente che i due mezzi sono liberi: va confermato **prima** di inviare.
 3. **Dotazione del Tourengo.** Nel PDF è descritto con aria condizionata, sedili reclinabili,
    impianto audio e vano bagagli. Il frigo bar non è indicato perché non confermato: se c'è,
    si aggiunge e si rigenerano i PDF.
