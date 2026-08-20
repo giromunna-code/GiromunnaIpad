@@ -76,24 +76,16 @@ a mezzo, cioè sotto il costo reale della giornata. È l'errore da non fare.
 
 ## Margine
 
-Il prezzo di **€ 900 a mezzo è una decisione di Girolamo**. Sta sotto la scala di riferimento
-(Le Filigare: € 809 per 80 km e 5 ore, mentre qui la giornata è di dieci ore e ~190 km), ma
-il margine regge.
+Il prezzo di **€ 900 a mezzo, più € 421 a mezzo di permesso, è una decisione di Girolamo**,
+presa con il costo del Tourengo **già concordato con Francesco**. Il margine è quindi noto a
+lui e non va ricostruito a tavolino: qui non se ne fanno stime.
 
-| | |
-|---|---|
-| Ricavo del servizio, due mezzi | € 1.800 |
-| Costo diretto del Beluga | € 250-350 |
-| Acquisto del Tourengo da Francesco | € 600-800 |
-| **Costo totale** | **€ 850-1.150** |
-| **Margine** | **€ 650-950** |
-
-**Il costo del Tourengo va comunque concordato con Francesco prima di inviare.** Anche a
-€ 800 il lavoro resta buono, ma il numero va saputo, non stimato.
+Il numero sta sotto la scala di riferimento (Le Filigare: € 809 per 80 km e 5 ore, mentre qui
+la giornata è di dieci ore e ~190 km a mezzo). Registrato solo perché il prossimo preventivo
+parta dalla scala e non da questo.
 
 Gli **€ 842 di permessi** (€ 421 a mezzo) sono una partita di giro, ribaltata al cliente con
-IVA 10% come il resto del servizio. Non sono margine: se il Comune chiede più di € 421 a
-mezzo, la differenza esce dalla nostra tasca, quindi l'importo effettivo va verificato.
+IVA 10% come il resto del servizio: non sono margine.
 
 ## Il permesso di Firenze e le 23:00
 
@@ -152,23 +144,18 @@ due minibus.
 1. **La capienza.** 80-100 persone contro 52 posti. Il preventivo dice che mettiamo due mezzi
    e basta: gli altri se li organizza il cliente, oppure ce lo fa sapere e si vede. Se chiede
    a noi, il preventivo per i mezzi in più si fa a parte, dopo aver sentito Francesco.
-2. **Francesco.** Costo del Tourengo per il 9 ottobre, giornata 14:00-24:00 con chiusura a
-   mezzanotte. A € 900 di ricavo per mezzo il margine regge anche a € 800 di acquisto, ma il
-   numero va saputo. Il preventivo dice inoltre al cliente che i due mezzi sono liberi: va
-   confermato **prima** di inviare, non dopo.
-3. **Dotazione del Tourengo.** Nel PDF è descritto con aria condizionata, sedili reclinabili,
+2. **Dotazione del Tourengo.** Nel PDF è descritto con aria condizionata, sedili reclinabili,
    impianto audio e vano bagagli. Il frigo bar non è indicato perché non confermato: se c'è,
    si aggiunge e si rigenerano i PDF.
-4. **Punto di carico a Firenze.** Il permesso è già nel prezzo: resta da concordare con il
+3. **Punto di carico a Firenze.** Il permesso è già nel prezzo: resta da concordare con il
    cliente il punto esatto della fermata in Via dei Conti, o in alternativa Via Valfonda /
-   Piazza Adua. **Verificare l'importo effettivo del permesso**: a preventivo sono € 421 a
-   mezzo, € 842 in tutto, e la differenza, se c'è, la paghiamo noi.
-5. **Nome esatto dell'intestatario.** Quotato «House of Nine»: se la richiesta arriva da una
+   Piazza Adua.
+4. **Nome esatto dell'intestatario.** Quotato «House of Nine»: se la richiesta arriva da una
    wedding planner o da un'agenzia, rigenerare i PDF con `--cliente`.
-6. **Orario di partenza da Tenuta Bossi.** Le 23:00 sono tassative e nel preventivo è scritto
-   perché: oltre quell'ora serve il secondo permesso da € 421. Attesa oltre l'orario € 50/h a
+5. **Orario di partenza da Tenuta Bossi.** Le 23:00 sono tassative e nel preventivo è scritto
+   perché: oltre quell'ora servono due permessi nuovi, € 842. Attesa oltre l'orario € 50/h a
    mezzo (€ 100/h per i due), rientro dopo le 02:00 € 250 a mezzo (€ 500 per i due).
-7. **Bloccare la disponibilità** del Beluga per il 9 ottobre.
+6. **Bloccare la disponibilità** del Beluga per il 9 ottobre.
 
 ## Nel preventivo non si specifica di chi sono i mezzi
 
