@@ -75,8 +75,9 @@ IT = dict(
         "sedili reclinabili, impianto audio di bordo, ampio vano bagagli.",
     ],
     mezzo_close=(
-        "In tutto sono <b>54 posti a sedere</b>, e il prezzo di questo preventivo si riferisce a questi due "
-        "mezzi. Ci avete indicato un gruppo di 80-100 persone: è il primo punto da chiarire e ne parliamo "
+        "Mettiamo a disposizione <b>questi due mezzi e nessun altro</b>: in tutto <b>54 posti a sedere</b>, "
+        "ed è a loro che si riferisce il prezzo. Ci avete indicato un gruppo di 80-100 persone, quindi per i "
+        "passeggeri oltre i 54 servono altri mezzi, che non sono compresi in questo preventivo: ne parliamo "
         "per esteso fra le note. I due minibus portano il numero 1 e il numero 2 bene in vista, così i "
         "vostri ospiti ritrovano il proprio a ogni tappa."
     ),
@@ -118,8 +119,7 @@ IT = dict(
     vat_note="+ IVA 10%",
     grand="Totale da corrispondere, IVA 10% inclusa: € 2.530,00.",
     perhead=("Il prezzo è per mezzo e vale per i due minibus qui descritti, 54 posti in tutto: a pieno "
-             "carico sono circa € 47,00 a persona. Ogni mezzo in più si aggiunge alle stesse condizioni, "
-             "€ 1.150,00 + IVA."),
+             "carico sono circa € 47,00 a persona."),
     h_incluso="Incluso.",
     incluso=(
         "Due mezzi e due conducenti, carburante, pedaggi, parcheggi, assicurazione completa e la "
@@ -129,8 +129,8 @@ IT = dict(
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
-        "Eventuali mezzi aggiuntivi oltre ai due qui quotati, che vi quotiamo a parte su richiesta. "
-        "Il permesso comunale di accesso dei bus turistici al centro di Firenze, necessario soltanto se "
+        "Il trasporto dei passeggeri oltre i 54 posti dei due minibus: mezzi ulteriori non sono compresi "
+        "in questo preventivo (vedi note). Il permesso comunale di accesso dei bus turistici al centro di Firenze, necessario soltanto se "
         "carico e scarico avvengono davanti all'albergo in Via dei Conti: circa € 350,00 per mezzo, che vi "
         "addebiteremmo al costo (vedi note). Attesa oltre gli orari qui indicati, € 50,00 all'ora per mezzo. "
         "Trasferimenti aggiuntivi o modifiche al programma, quotati su richiesta. Rientro a Firenze dopo le "
@@ -146,17 +146,15 @@ IT = dict(
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
-        ("<b>Ottanta o cento ospiti non stanno su due minibus.</b> È il punto da chiarire prima di ogni "
-         "altra cosa. Ci avete indicato un gruppo di 80-100 persone; i due mezzi di questo preventivo fanno "
-         "54 posti a sedere, e il prezzo è riferito a loro due. Le strade sono tre. La prima: se il numero "
-         "definitivo dei passeggeri sta entro i 54, questo preventivo va bene così com'è. La seconda: "
-         "portiamo tutti con questi stessi due mezzi facendo due turni, ma è giusto dirvi subito che cosa "
-         "comporta — il primo trasferimento si spalma su circa un'ora e mezza, il secondo turno arriva a "
-         "Tenuta Bossi verso le 20:15 e gli ultimi ospiti rientrano a Firenze verso l'01:00, con il "
-         "supplemento di rientro notturno. La terza, che per un gruppo di questa dimensione è quella che "
-         "consigliamo: si aggiungono altri due minibus della stessa classe e tutti viaggiano insieme, agli "
-         "orari che ci avete dato. Ve li quotiamo su richiesta, alle stesse condizioni. Diteci il numero "
-         "definitivo e vi mandiamo la versione giusta."),
+        ("<b>Mettiamo a disposizione due minibus: il Beluga e il Tourengo.</b> Sono 54 posti a sedere in "
+         "tutto, e il prezzo di questo preventivo è riferito a loro due. Ci avete indicato un gruppo di "
+         "80-100 persone: i passeggeri oltre i 54 hanno bisogno di altri mezzi, che qui non sono compresi. "
+         "Potete organizzarli voi direttamente, oppure ditecelo e vediamo se riusciamo a trovarveli — in "
+         "quel caso ve li quoteremmo a parte. Quello che non possiamo fare è coprire il gruppo intero "
+         "facendo due viaggi con questi due mezzi: fra il primo e l'ultimo trasferimento la giornata dei "
+         "conducenti è già di dodici ore, e raddoppiare le corse la porterebbe oltre i limiti di guida "
+         "consentiti. Ci serve comunque il numero definitivo dei passeggeri, così vi confermiamo come si "
+         "ripartiscono sui due minibus."),
         ("<b>Il punto di carico a Firenze.</b> House of Nine è in Via dei Conti 9, a due passi dal Duomo: "
          "siamo nel cuore della ZTL, in una strada dove un minibus da otto metri non può fermarsi a "
          "caricare. La soluzione che usiamo sempre è caricare e scaricare in <b>Via Valfonda o in Piazza "
@@ -231,9 +229,10 @@ EN = dict(
         "reclining seats, on-board audio system, large luggage hold.",
     ],
     mezzo_close=(
-        "That is <b>54 seats</b> in total, and the price in this quotation is for these two vehicles. You "
-        "told us the group is 80-100 people: that is the first thing to settle, and we set it out in full "
-        "in the notes below. The two minibuses carry the numbers 1 and 2 clearly displayed, so your guests "
+        "We are putting <b>these two vehicles and no others</b> at your disposal: <b>54 seats</b> in total, "
+        "and that is what the price covers. You told us the group is 80-100 people, so the passengers "
+        "beyond 54 need further vehicles, which are not part of this quotation: we set this out in full in "
+        "the notes below. The two minibuses carry the numbers 1 and 2 clearly displayed, so your guests "
         "find the same one at every stage."
     ),
     h_servizio="The service",
@@ -274,8 +273,7 @@ EN = dict(
     vat_note="+ VAT 10%",
     grand="Total payable, VAT 10% included: € 2,530.00.",
     perhead=("The price is per vehicle and covers the two minibuses described here, 54 seats in total: at "
-             "full load that is about € 47.00 per person. Any further vehicle is added on the same terms at "
-             "€ 1,150.00 + VAT."),
+             "full load that is about € 47.00 per person."),
     h_incluso="Included.",
     incluso=(
         "Two vehicles and two drivers, fuel, tolls, parking, full insurance and the minibuses at your "
@@ -285,8 +283,8 @@ EN = dict(
     ),
     h_nonincluso="Not included.",
     nonincluso=(
-        "Any vehicles beyond the two quoted here, which we quote separately on request. The city permit for "
-        "tourist coaches entering the centre of Florence, needed only if boarding and drop-off happen "
+        "Transport for passengers beyond the 54 seats on the two minibuses: further vehicles are not part "
+        "of this quotation (see notes). The city permit for tourist coaches entering the centre of Florence, needed only if boarding and drop-off happen "
         "outside the hotel in Via dei Conti: about € 350.00 per vehicle, which we would charge you at cost "
         "(see notes). Waiting beyond the times set out here, € 50.00 per hour per vehicle. Additional "
         "transfers or changes to the programme, quoted on request. Return to Florence after 02:00, "
@@ -302,16 +300,14 @@ EN = dict(
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
-        ("<b>Eighty or one hundred guests do not fit on two minibuses.</b> This is the point to settle "
-         "before anything else. You told us the group is 80-100 people; the two vehicles in this quotation "
-         "come to 54 seats, and the price is for those two. There are three ways forward. First: if the "
-         "final passenger count is within 54, this quotation stands as it is. Second: we carry everyone "
-         "with these same two vehicles in two waves — but it is only fair to tell you now what that means. "
-         "The first transfer spreads over about an hour and a half, the second wave reaches Tenuta Bossi "
-         "around 20:15, and the last guests are back in Florence around 01:00, with the night-return "
-         "supplement. Third, and for a group this size the one we recommend: two more minibuses of the same "
-         "class are added and everyone travels together, at the times you gave us. We quote them on request, "
-         "on the same terms. Tell us the final number and we will send you the right version."),
+        ("<b>We are putting two minibuses at your disposal: the Beluga and the Tourengo.</b> That is 54 "
+         "seats in total, and the price in this quotation is for those two. You told us the group is 80-100 "
+         "people: the passengers beyond 54 need further vehicles, and those are not included here. You can "
+         "arrange them yourselves, or tell us and we will see whether we can find them for you — in that "
+         "case we would quote them separately. What we cannot do is cover the whole group by running these "
+         "two vehicles twice: between the first and the last transfer the drivers' day is already twelve "
+         "hours, and doubling the runs would take it beyond the permitted driving limits. We still need the "
+         "final passenger count, so we can confirm how it splits across the two minibuses."),
         ("<b>The boarding point in Florence.</b> House of Nine is at Via dei Conti 9, a few steps from the "
          "Duomo: that is the heart of the restricted traffic zone, on a street where an eight-metre minibus "
          "cannot stop to board passengers. The arrangement we always use is to board and drop off in "

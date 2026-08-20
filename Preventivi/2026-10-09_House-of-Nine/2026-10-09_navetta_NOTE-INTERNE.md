@@ -79,21 +79,27 @@ a mezzo, cioè sotto il costo reale della giornata. È l'errore da non fare.
   **Se sfora gli € 800, il prezzo di vendita del secondo mezzo va portato a € 1.250** e i PDF
   vanno rigenerati.
 
-## La capienza: il punto numero uno
+## La capienza: GiroMunna mette due mezzi e basta
 
 Il cliente ha indicato **80-100 persone**. I due mezzi fanno **54 posti** (26 + 28), e con un
-limite stretto di 25 a mezzo scendono a 50. Il preventivo non nasconde il problema: mette in
-fila le tre strade possibili e chiede il numero definitivo.
+limite stretto di 25 a mezzo scendono a 50.
 
-1. **Numero entro i 54** — il preventivo va bene così com'è.
-2. **Due turni con questi due mezzi** — nel preventivo sono descritte le conseguenze vere:
-   il primo trasferimento si spalma su circa un'ora e mezza, il secondo turno arriva a Tenuta
-   Bossi verso le 20:15, gli ultimi ospiti rientrano a Firenze verso l'01:00 e scatta il
-   supplemento di rientro notturno. Da valutare anche la giornata dei conducenti, che con il
-   doppio giro serale sfora i limiti: servirebbe un cambio.
-3. **Altri due minibus** — è la strada consigliata al cliente per un gruppo di questa
-   dimensione. Quotati su richiesta a € 1.150 + IVA ciascuno, alle stesse condizioni. Non
-   sono nel totale.
+Il preventivo lo dice in chiaro, senza giri di parole: **mettiamo a disposizione il Beluga e
+il Tourengo, e nient'altro.** Per i passeggeri oltre i 54 il cliente ha due strade, ed è lui
+a scegliere:
+
+1. **Se li organizza da solo.** È la strada che il preventivo mette per prima.
+2. **Ce lo fa sapere e vediamo se riusciamo a trovarli.** In quel caso è un preventivo a
+   parte, da costruire dopo aver sentito Francesco: qui non c'è nessun impegno e nessun
+   prezzo, giusto la disponibilità a guardarci.
+
+**L'ipotesi dei due turni con i soli Beluga e Tourengo è stata esclusa** e nel preventivo si
+spiega perché: fra il primo e l'ultimo trasferimento la giornata dei conducenti è già di
+dodici ore e raddoppiare le corse la porterebbe oltre i limiti di guida. Meglio dirlo subito
+che trovarselo addosso la sera del 9 ottobre.
+
+Il numero definitivo dei passeggeri serve comunque, per confermare come si ripartiscono sui
+due minibus.
 
 ## Verifiche di accesso
 
@@ -114,8 +120,9 @@ fila le tre strade possibili e chiede il numero definitivo.
 
 ## Da chiarire prima di inviare
 
-1. **La capienza.** 80-100 persone contro 54 posti. La decisione del cliente cambia prezzo,
-   orari e numero di mezzi: è la prima cosa da farsi dire.
+1. **La capienza.** 80-100 persone contro 54 posti. Il preventivo dice che mettiamo due mezzi
+   e basta: gli altri se li organizza il cliente, oppure ce lo fa sapere e si vede. Se chiede
+   a noi, il preventivo per i mezzi in più si fa a parte, dopo aver sentito Francesco.
 2. **Francesco.** Costo del Tourengo per il 9 ottobre, giornata 14:00-24:00 con chiusura a
    mezzanotte. Il preventivo dice al cliente che i due mezzi sono liberi: va confermato
    **prima** di inviare, non dopo.
@@ -143,5 +150,4 @@ di acquisto restano in queste note.
 Con gli orari in programma **non servono**: il servizio si chiude a Firenze verso le 23:40 e
 i conducenti rientrano alla base intorno all'01:00. Nel preventivo la voce è comunque
 indicata, sia nella tabella del prezzo sia fra il non incluso, perché diventa dovuta — e a
-carico del cliente — se il rientro slitta ben oltre le 02:00. Vale anche per lo scenario dei
-due turni, dove il rientro degli ultimi ospiti è previsto verso l'01:00.
+carico del cliente — se il rientro slitta ben oltre le 02:00.
