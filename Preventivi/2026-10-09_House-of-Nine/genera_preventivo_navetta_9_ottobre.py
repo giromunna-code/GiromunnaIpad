@@ -4,7 +4,7 @@ Genera il preventivo GiroMunna per il servizio navetta del 9 ottobre 2026.
 
 House of Nine (Firenze) -> Villa Medicea di Lilliano (Grassina) -> Tenuta Bossi
 (Pontassieve) -> Firenze. Il servizio e' quotato sui due minibus, Beluga e
-Tourengo, 54 posti in tutto.
+Tourengo (25+1+1 e 27+1+1), 52 posti passeggeri in tutto.
 
 Riproduce l'impaginazione dei preventivi GiroMunna (logo, verde bottiglia e oro,
 intestazione e pie' di pagina su ogni pagina).
@@ -69,15 +69,17 @@ IT = dict(
         "gran turismo non arriva."
     ),
     mezzo_bullets=[
-        "<b>Mercedes-Benz Beluga</b> — 26 posti passeggeri più l'autista, 7,64 m. Aria condizionata, "
-        "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.",
-        "<b>Mercedes-Benz Tourengo</b> — 28 posti passeggeri più l'autista, 7,86 m. Aria condizionata, "
-        "sedili reclinabili, impianto audio di bordo, ampio vano bagagli.",
+        "<b>Mercedes-Benz Beluga</b> — <b>25+1+1</b>, cioè 25 posti passeggeri più l'autista e "
+        "l'accompagnatore, 7,64 m. Aria condizionata, sedili ultra comfort reclinabili, frigo bar, "
+        "impianto audio di bordo, ampio vano bagagli.",
+        "<b>Mercedes-Benz Tourengo</b> — <b>27+1+1</b>, cioè 27 posti passeggeri più l'autista e "
+        "l'accompagnatore, 7,86 m. Aria condizionata, sedili reclinabili, impianto audio di bordo, "
+        "ampio vano bagagli.",
     ],
     mezzo_close=(
-        "Mettiamo a disposizione <b>questi due mezzi e nessun altro</b>: in tutto <b>54 posti a sedere</b>, "
+        "Mettiamo a disposizione <b>questi due mezzi e nessun altro</b>: in tutto <b>52 posti passeggeri</b>, "
         "ed è a loro che si riferisce il prezzo. Ci avete indicato un gruppo di 80-100 persone, quindi per i "
-        "passeggeri oltre i 54 servono altri mezzi, che non sono compresi in questo preventivo: ne parliamo "
+        "passeggeri oltre i 52 servono altri mezzi, che non sono compresi in questo preventivo: ne parliamo "
         "per esteso fra le note. I due minibus portano il numero 1 e il numero 2 bene in vista, così i "
         "vostri ospiti ritrovano il proprio a ogni tappa."
     ),
@@ -108,9 +110,9 @@ IT = dict(
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Minibus 1 — Mercedes-Benz Beluga, 26 posti · i tre trasferimenti, mezzo e conducente a "
+        ("Minibus 1 — Mercedes-Benz Beluga, 25+1+1 · i tre trasferimenti, mezzo e conducente a "
          "disposizione dalle 14:00 alle 24:00", "€ 1.150,00", "+ IVA 10%"),
-        ("Minibus 2 — Mercedes-Benz Tourengo, 28 posti · stesso servizio", "€ 1.150,00", "+ IVA 10%"),
+        ("Minibus 2 — Mercedes-Benz Tourengo, 27+1+1 · stesso servizio", "€ 1.150,00", "+ IVA 10%"),
         ("Vitto e alloggio dei conducenti — non necessario con gli orari in programma, dovuto solo se il "
          "rientro slitta ben oltre le 02:00 (vedi note)", "<i>a carico vostro</i>", ""),
     ],
@@ -118,8 +120,8 @@ IT = dict(
     price_total="€ 2.300,00",
     vat_note="+ IVA 10%",
     grand="Totale da corrispondere, IVA 10% inclusa: € 2.530,00.",
-    perhead=("Il prezzo è per mezzo e vale per i due minibus qui descritti, 54 posti in tutto: a pieno "
-             "carico sono circa € 47,00 a persona."),
+    perhead=("Il prezzo è per mezzo e vale per i due minibus qui descritti, 52 posti passeggeri in tutto: "
+             "a pieno carico sono circa € 49,00 a persona."),
     h_incluso="Incluso.",
     incluso=(
         "Due mezzi e due conducenti, carburante, pedaggi, parcheggi, assicurazione completa e la "
@@ -129,7 +131,7 @@ IT = dict(
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
-        "Il trasporto dei passeggeri oltre i 54 posti dei due minibus: mezzi ulteriori non sono compresi "
+        "Il trasporto dei passeggeri oltre i 52 posti dei due minibus: mezzi ulteriori non sono compresi "
         "in questo preventivo (vedi note). Il permesso comunale di accesso dei bus turistici al centro di Firenze, necessario soltanto se "
         "carico e scarico avvengono davanti all'albergo in Via dei Conti: circa € 350,00 per mezzo, che vi "
         "addebiteremmo al costo (vedi note). Attesa oltre gli orari qui indicati, € 50,00 all'ora per mezzo. "
@@ -146,9 +148,9 @@ IT = dict(
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
-        ("<b>Mettiamo a disposizione due minibus: il Beluga e il Tourengo.</b> Sono 54 posti a sedere in "
+        ("<b>Mettiamo a disposizione due minibus: il Beluga e il Tourengo.</b> Sono 52 posti passeggeri in "
          "tutto, e il prezzo di questo preventivo è riferito a loro due. Ci avete indicato un gruppo di "
-         "80-100 persone: i passeggeri oltre i 54 hanno bisogno di altri mezzi, che qui non sono compresi. "
+         "80-100 persone: i passeggeri oltre i 52 hanno bisogno di altri mezzi, che qui non sono compresi. "
          "Potete organizzarli voi direttamente, oppure ditecelo e vediamo se riusciamo a trovarveli — in "
          "quel caso ve li quoteremmo a parte. Quello che non possiamo fare è coprire il gruppo intero "
          "facendo due viaggi con questi due mezzi: fra il primo e l'ultimo trasferimento la giornata dei "
@@ -181,12 +183,13 @@ IT = dict(
          "Chiedete alla tenuta il punto di discesa, lo spazio di manovra e, se possibile, che i minibus "
          "restino dentro fino alla partenza: alle 23:00 e al buio, averli già in posizione fa risparmiare "
          "tempo e parecchia confusione."),
-        ("<b>I posti dei due minibus e il limite dei 25.</b> Il Beluga ha 26 posti passeggeri e il Tourengo "
-         "28, quindi qualcuno in più del limite che ci avete indicato, ma sono lunghi 7,64 e 7,86 metri: su "
-         "strada ingombrano quanto un 25 posti e nelle due salite si comportano allo stesso modo. Se il "
-         "limite dei 25 ve lo ha posto una delle due strutture ed è un limite di persone e non di mezzo, "
-         "ditecelo: carichiamo 25 per mezzo, cioè 50 in tutto, e il conto dei posti va rifatto su quel "
-         "numero."),
+        ("<b>I posti dei due minibus e il limite dei 25.</b> Il Beluga è omologato <b>25+1+1</b>: "
+         "venticinque posti passeggeri, più il posto dell'autista e quello dell'accompagnatore. Sta quindi "
+         "esattamente dentro il limite che ci avete indicato. Il Tourengo è <b>27+1+1</b>, quindi due "
+         "passeggeri in più, ma è lungo 7,86 m: su strada ingombra quanto il Beluga e nelle due salite si "
+         "comporta allo stesso modo. Se il limite dei 25 ve lo ha posto una delle due strutture ed è un "
+         "limite di persone e non di mezzo, ditecelo: sul Tourengo carichiamo 25 e i posti passeggeri "
+         "diventano 50 in tutto."),
         ("<b>Due mezzi si muovono insieme solo se qualcuno li coordina.</b> Il tempo si perde nell'imbarco, "
          "non in strada. Vi proponiamo di assegnare gli ospiti al minibus 1 o al minibus 2 fin dal primo "
          "trasferimento, così a ogni tappa ognuno risale sul suo. Al vostro referente lasciamo i numeri di "
@@ -223,15 +226,16 @@ EN = dict(
         "e Meoli and Via dello Stracchino, two hill roads a full-size coach cannot manage."
     ),
     mezzo_bullets=[
-        "<b>Mercedes-Benz Beluga</b> — 26 passenger seats plus driver, 7.64 m. Air conditioning, "
-        "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.",
-        "<b>Mercedes-Benz Tourengo</b> — 28 passenger seats plus driver, 7.86 m. Air conditioning, "
-        "reclining seats, on-board audio system, large luggage hold.",
+        "<b>Mercedes-Benz Beluga</b> — <b>25+1+1</b>: 25 passenger seats plus the driver and the courier, "
+        "7.64 m. Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, "
+        "large luggage hold.",
+        "<b>Mercedes-Benz Tourengo</b> — <b>27+1+1</b>: 27 passenger seats plus the driver and the "
+        "courier, 7.86 m. Air conditioning, reclining seats, on-board audio system, large luggage hold.",
     ],
     mezzo_close=(
-        "We are putting <b>these two vehicles and no others</b> at your disposal: <b>54 seats</b> in total, "
+        "We are putting <b>these two vehicles and no others</b> at your disposal: <b>52 passenger seats</b> in total, "
         "and that is what the price covers. You told us the group is 80-100 people, so the passengers "
-        "beyond 54 need further vehicles, which are not part of this quotation: we set this out in full in "
+        "beyond 52 need further vehicles, which are not part of this quotation: we set this out in full in "
         "the notes below. The two minibuses carry the numbers 1 and 2 clearly displayed, so your guests "
         "find the same one at every stage."
     ),
@@ -262,9 +266,9 @@ EN = dict(
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Minibus 1 — Mercedes-Benz Beluga, 26 seats · the three transfers, vehicle and driver at your "
+        ("Minibus 1 — Mercedes-Benz Beluga, 25+1+1 · the three transfers, vehicle and driver at your "
          "disposal from 14:00 to 24:00", "€ 1,150.00", "+ VAT 10%"),
-        ("Minibus 2 — Mercedes-Benz Tourengo, 28 seats · same service", "€ 1,150.00", "+ VAT 10%"),
+        ("Minibus 2 — Mercedes-Benz Tourengo, 27+1+1 · same service", "€ 1,150.00", "+ VAT 10%"),
         ("Drivers' board and lodging — not required with the programme as scheduled, due only if the return "
          "slips well past 02:00 (see notes)", "<i>at your charge</i>", ""),
     ],
@@ -272,8 +276,8 @@ EN = dict(
     price_total="€ 2,300.00",
     vat_note="+ VAT 10%",
     grand="Total payable, VAT 10% included: € 2,530.00.",
-    perhead=("The price is per vehicle and covers the two minibuses described here, 54 seats in total: at "
-             "full load that is about € 47.00 per person."),
+    perhead=("The price is per vehicle and covers the two minibuses described here, 52 passenger seats in total: "
+             "at full load that is about € 49.00 per person."),
     h_incluso="Included.",
     incluso=(
         "Two vehicles and two drivers, fuel, tolls, parking, full insurance and the minibuses at your "
@@ -283,7 +287,7 @@ EN = dict(
     ),
     h_nonincluso="Not included.",
     nonincluso=(
-        "Transport for passengers beyond the 54 seats on the two minibuses: further vehicles are not part "
+        "Transport for passengers beyond the 52 seats on the two minibuses: further vehicles are not part "
         "of this quotation (see notes). The city permit for tourist coaches entering the centre of Florence, needed only if boarding and drop-off happen "
         "outside the hotel in Via dei Conti: about € 350.00 per vehicle, which we would charge you at cost "
         "(see notes). Waiting beyond the times set out here, € 50.00 per hour per vehicle. Additional "
@@ -300,9 +304,9 @@ EN = dict(
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
-        ("<b>We are putting two minibuses at your disposal: the Beluga and the Tourengo.</b> That is 54 "
-         "seats in total, and the price in this quotation is for those two. You told us the group is 80-100 "
-         "people: the passengers beyond 54 need further vehicles, and those are not included here. You can "
+        ("<b>We are putting two minibuses at your disposal: the Beluga and the Tourengo.</b> That is 52 "
+         "passenger seats in total, and the price in this quotation is for those two. You told us the group is 80-100 "
+         "people: the passengers beyond 52 need further vehicles, and those are not included here. You can "
          "arrange them yourselves, or tell us and we will see whether we can find them for you — in that "
          "case we would quote them separately. What we cannot do is cover the whole group by running these "
          "two vehicles twice: between the first and the last transfer the drivers' day is already twelve "
@@ -334,12 +338,13 @@ EN = dict(
          "estate for the set-down point, the manoeuvring space and, if possible, for the minibuses to stay "
          "inside until departure: at 23:00 in the dark, having them already in position saves time and a "
          "good deal of confusion."),
-        ("<b>The seats on the two minibuses and the 25 limit.</b> The Beluga has 26 passenger seats and the "
-         "Tourengo 28, so a few more than the limit you gave us, but they are 7.64 m and 7.86 m long: on the "
-         "road they take the same space as a 25-seater and they handle both climbs the same way. If the 25 "
-         "limit was set by one of the two venues and is a limit on people rather than on the vehicle, tell "
-         "us: we will load 25 per vehicle, 50 in total, and the seat count has to be redone on that "
-         "number."),
+        ("<b>The seats on the two minibuses and the 25 limit.</b> The Beluga is homologated <b>25+1+1</b>: "
+         "twenty-five passenger seats, plus the driver's seat and the courier's. It therefore sits exactly "
+         "within the limit you gave us. The Tourengo is <b>27+1+1</b>, so two passengers more, but it is "
+         "7.86 m long: on the road it takes the same space as the Beluga and it handles both climbs the "
+         "same way. If the 25 limit was set by one of the two venues and is a limit on people rather than "
+         "on the vehicle, tell us: we will load 25 on the Tourengo and the passenger seats become 50 in "
+         "total."),
         ("<b>Two vehicles move together only if someone coordinates them.</b> The time is lost in boarding, "
          "not on the road. We suggest assigning guests to minibus 1 or minibus 2 from the first transfer "
          "onwards, so at every stage each person gets back on the same one. We give your coordinator the "

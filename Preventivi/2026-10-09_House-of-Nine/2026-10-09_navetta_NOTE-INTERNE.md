@@ -40,12 +40,12 @@ Venerdì 9 ottobre 2026, tre trasferimenti nella stessa giornata.
 
 | Voce | Netto |
 |---|---|
-| Minibus 1 — Beluga, 26 posti, i tre trasferimenti, a disposizione 14:00-24:00 | € 1.150,00 |
-| Minibus 2 — Tourengo, 28 posti, stesso servizio | € 1.150,00 |
+| Minibus 1 — Beluga, 25+1+1, i tre trasferimenti, a disposizione 14:00-24:00 | € 1.150,00 |
+| Minibus 2 — Tourengo, 27+1+1, stesso servizio | € 1.150,00 |
 | Vitto e alloggio conducenti | non necessario |
 
 **Totale netto € 2.300,00 · IVA 10% € 230,00 · Totale € 2.530,00**
-(a pieno carico sui 54 posti, ≈ € 47,00 a persona)
+(a pieno carico sui 52 posti, ≈ € 49,00 a persona)
 
 Acconto 30% € 759,00 — saldo € 1.771,00.
 
@@ -81,11 +81,12 @@ a mezzo, cioè sotto il costo reale della giornata. È l'errore da non fare.
 
 ## La capienza: GiroMunna mette due mezzi e basta
 
-Il cliente ha indicato **80-100 persone**. I due mezzi fanno **54 posti** (26 + 28), e con un
-limite stretto di 25 a mezzo scendono a 50.
+Il cliente ha indicato **80-100 persone**. I due mezzi fanno **52 posti passeggeri**: il Beluga è
+omologato **25+1+1** e il Tourengo **27+1+1**, quindi 25 + 27. Se una delle due strutture
+impone un limite di 25 persone a mezzo, si scende a 50.
 
 Il preventivo lo dice in chiaro, senza giri di parole: **mettiamo a disposizione il Beluga e
-il Tourengo, e nient'altro.** Per i passeggeri oltre i 54 il cliente ha due strade, ed è lui
+il Tourengo, e nient'altro.** Per i passeggeri oltre i 52 il cliente ha due strade, ed è lui
 a scegliere:
 
 1. **Se li organizza da solo.** È la strada che il preventivo mette per prima.
@@ -120,7 +121,7 @@ due minibus.
 
 ## Da chiarire prima di inviare
 
-1. **La capienza.** 80-100 persone contro 54 posti. Il preventivo dice che mettiamo due mezzi
+1. **La capienza.** 80-100 persone contro 52 posti. Il preventivo dice che mettiamo due mezzi
    e basta: gli altri se li organizza il cliente, oppure ce lo fa sapere e si vede. Se chiede
    a noi, il preventivo per i mezzi in più si fa a parte, dopo aver sentito Francesco.
 2. **Francesco.** Costo del Tourengo per il 9 ottobre, giornata 14:00-24:00 con chiusura a
