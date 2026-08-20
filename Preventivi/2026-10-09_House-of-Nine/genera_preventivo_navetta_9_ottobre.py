@@ -99,7 +99,9 @@ IT = dict(
          "18:00 – 19:00"),
         ("3 · 23:00",
          "<b>Tenuta Bossi → Firenze, House of Nine.</b> Partenza alle 23:00 e circa 22 km lungo l'Aretina, "
-         "35 minuti, con rientro a Firenze verso le 23:40 allo stesso punto del carico.",
+         "35 minuti, con rientro a Firenze verso le 23:40 allo stesso punto del carico. "
+         "<b>L'orario di partenza delle 23:00 è tassativo</b>: oltre quell'ora serve un secondo permesso "
+         "di accesso al centro di Firenze, vedi note.",
          "23:00 – 24:00"),
         ("Fra un trasferimento e l'altro",
          "<b>I mezzi e i conducenti restano con voi.</b> Fra il primo e il secondo trasferimento passano quasi "
@@ -111,38 +113,41 @@ IT = dict(
     h_prezzo="Il prezzo",
     price_rows=[
         ("Minibus 1 — Mercedes-Benz Beluga, 25+1+1 · i tre trasferimenti, mezzo e conducente a "
-         "disposizione dalle 14:00 alle 24:00", "€ 1.150,00", "+ IVA 10%"),
-        ("Minibus 2 — Mercedes-Benz Tourengo, 27+1+1 · stesso servizio", "€ 1.150,00", "+ IVA 10%"),
+         "disposizione dalle 14:00 alle 24:00", "€ 900,00", "+ IVA 10%"),
+        ("Minibus 2 — Mercedes-Benz Tourengo, 27+1+1 · stesso servizio", "€ 900,00", "+ IVA 10%"),
+        ("Permesso di accesso al centro di Firenze per la giornata del 9 ottobre, per entrambi i mezzi",
+         "€ 421,00", "+ IVA 10%"),
         ("Vitto e alloggio dei conducenti — non necessario con gli orari in programma, dovuto solo se il "
          "rientro slitta ben oltre le 02:00 (vedi note)", "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 2.300,00",
+    price_total="€ 2.221,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 2.530,00.",
-    perhead=("Il prezzo è per mezzo e vale per i due minibus qui descritti, 52 posti passeggeri in tutto: "
-             "a pieno carico sono circa € 49,00 a persona."),
+    grand="Totale da corrispondere, IVA 10% inclusa: € 2.443,10.",
+    perhead=("Il servizio è € 900,00 a mezzo, più € 421,00 per il permesso di accesso a Firenze. Sui 52 "
+             "posti passeggeri dei due minibus, a pieno carico, sono circa € 47,00 a persona."),
     h_incluso="Incluso.",
     incluso=(
-        "Due mezzi e due conducenti, carburante, pedaggi, parcheggi, assicurazione completa e la "
-        "disponibilità dei minibus dalle 14:00 alle 24:00, non solo per i tre trasferimenti in programma. "
-        "A Grassina e a Pontassieve non sono dovuti oneri di accesso: né Villa Medicea di Lilliano né "
+        "Due mezzi e due conducenti, carburante, pedaggi, parcheggi, assicurazione completa, la "
+        "disponibilità dei minibus dalle 14:00 alle 24:00 — non solo per i tre trasferimenti in programma — "
+        "e il permesso di accesso al centro di Firenze per la giornata del 9 ottobre, che trovate in "
+        "tabella. A Grassina e a Pontassieve non sono dovuti oneri di accesso: né Villa Medicea di Lilliano né "
         "Tenuta Bossi si trovano in zona a traffico limitato."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
         "Il trasporto dei passeggeri oltre i 52 posti dei due minibus: mezzi ulteriori non sono compresi "
-        "in questo preventivo (vedi note). Il permesso comunale di accesso dei bus turistici al centro di Firenze, necessario soltanto se "
-        "carico e scarico avvengono davanti all'albergo in Via dei Conti: circa € 350,00 per mezzo, che vi "
-        "addebiteremmo al costo (vedi note). Attesa oltre gli orari qui indicati, € 50,00 all'ora per mezzo. "
+        "in questo preventivo (vedi note). Il secondo permesso di accesso al centro di Firenze, dovuto se "
+        "la partenza da Tenuta Bossi slitta oltre le 23:00: € 421,00 (vedi note). Attesa oltre gli orari "
+        "qui indicati, € 50,00 all'ora per mezzo. "
         "Trasferimenti aggiuntivi o modifiche al programma, quotati su richiesta. Rientro a Firenze dopo le "
         "02:00, € 250,00 per mezzo. Vitto e alloggio dei conducenti, se il programma dovesse allungarsi al "
         "punto da renderli necessari."
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 759,00", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 1.771,00", ""),
+        ("Acconto 30% alla conferma", "€ 732,93", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 1.710,17", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -157,21 +162,23 @@ IT = dict(
          "conducenti è già di dodici ore, e raddoppiare le corse la porterebbe oltre i limiti di guida "
          "consentiti. Ci serve comunque il numero definitivo dei passeggeri, così vi confermiamo come si "
          "ripartiscono sui due minibus."),
-        ("<b>Il punto di carico a Firenze.</b> House of Nine è in Via dei Conti 9, a due passi dal Duomo: "
-         "siamo nel cuore della ZTL, in una strada dove un minibus da otto metri non può fermarsi a "
-         "caricare. La soluzione che usiamo sempre è caricare e scaricare in <b>Via Valfonda o in Piazza "
-         "Adua</b>, dietro la stazione di Santa Maria Novella, dove la sosta dei bus è autorizzata: sono "
-         "poco più di 400 metri dall'albergo, cinque minuti a piedi in piano, e non comportano alcun onere. "
-         "Se invece volete i mezzi davanti all'ingresso serve il permesso comunale per i bus turistici, "
-         "circa € 350,00 a mezzo, da richiedere con qualche giorno di anticipo: lo gestiamo noi e ve lo "
-         "addebitiamo al costo. Diteci quale delle due soluzioni preferite, perché cambia il preventivo."),
-        ("<b>Le 23:00 da Tenuta Bossi.</b> È il punto su cui vi chiediamo di essere realistici, perché a una "
-         "festa l'orario di partenza slitta quasi sempre: l'attesa oltre l'orario concordato costa € 50,00 "
-         "all'ora per mezzo, cioè € 100,00 all'ora per i due, e un rientro che si chiude dopo le 02:00 costa "
-         "€ 250,00 per mezzo. Molto meglio fissare adesso l'orario vero: <b>possiamo spostare la partenza "
-         "fino alle 00:30 senza differenza di prezzo</b>, purché lo decidiate alla conferma e non la sera "
-         "stessa. Oltre quell'ora la giornata dei conducenti supera i limiti di guida e servirebbe un "
-         "secondo turno."),
+        ("<b>Il punto di carico a Firenze.</b> House of Nine è in Via dei Conti 9, a due passi dal Duomo, "
+         "nel cuore della ZTL: il permesso comunale che serve ai nostri mezzi per entrare in centro è "
+         "compreso nel prezzo, lo richiediamo noi e lo trovate in tabella. Resta da concordare il punto "
+         "esatto della fermata, perché Via dei Conti è stretta e caricare un gruppo numeroso su due "
+         "minibus vuole qualche minuto di sosta: ditecelo e lo definiamo insieme, meglio ora che il giorno "
+         "stesso. Se davanti all'ingresso non ci fosse modo di fermarsi, il punto alternativo più comodo è "
+         "<b>Via Valfonda o Piazza Adua</b>, dietro la stazione di Santa Maria Novella, dove la sosta dei "
+         "bus è autorizzata: poco più di 400 metri dall'albergo, cinque minuti a piedi in piano."),
+        ("<b>La partenza alle 23:00 è tassativa, e c'è un motivo preciso.</b> Il permesso di accesso al "
+         "centro di Firenze compreso nel prezzo vale per la giornata del 9 ottobre. Partendo da Tenuta "
+         "Bossi alle 23:00 si rientra in città verso le 23:40, dentro quella giornata. Se la partenza "
+         "slitta, si entra a Firenze dopo la mezzanotte, quindi in un altro giorno, e <b>serve un secondo "
+         "permesso: altri € 421,00</b>, che vi verrebbero addebitati. A questo si aggiunge l'attesa oltre "
+         "l'orario concordato, € 50,00 all'ora per mezzo, cioè € 100,00 all'ora per i due. A una festa "
+         "l'orario di partenza slitta quasi sempre: vi chiediamo quindi di costruire la serata su "
+         "un'uscita alle 23:00 in punto e di avere gli ospiti pronti qualche minuto prima. Qui slittare "
+         "costa, e costa subito."),
         ("<b>Accesso e sosta a Villa Medicea di Lilliano.</b> Via Lilliano e Meoli sale da Grassina per circa "
          "un chilometro ed è stretta: è esattamente il motivo per cui ci avete chiesto mezzi di questa "
          "classe. Ci servono due conferme dalla villa, possibilmente per iscritto: dove scaricano i mezzi e "
@@ -255,7 +262,9 @@ EN = dict(
          "18:00 – 19:00"),
         ("3 · 23:00",
          "<b>Tenuta Bossi → Florence, House of Nine.</b> Departure at 23:00 and about 22 km along the "
-         "Aretina, 35 minutes, back in Florence around 23:40 at the same point as the pick-up.",
+         "Aretina, 35 minutes, back in Florence around 23:40 at the same point as the pick-up. "
+         "<b>The 23:00 departure time is firm</b>: beyond that hour a second permit for access to the "
+         "centre of Florence is required, see notes.",
          "23:00 – 24:00"),
         ("Between transfers",
          "<b>Vehicles and drivers stay with you.</b> Almost three hours pass between the first and second "
@@ -267,38 +276,41 @@ EN = dict(
     h_prezzo="The price",
     price_rows=[
         ("Minibus 1 — Mercedes-Benz Beluga, 25+1+1 · the three transfers, vehicle and driver at your "
-         "disposal from 14:00 to 24:00", "€ 1,150.00", "+ VAT 10%"),
-        ("Minibus 2 — Mercedes-Benz Tourengo, 27+1+1 · same service", "€ 1,150.00", "+ VAT 10%"),
+         "disposal from 14:00 to 24:00", "€ 900.00", "+ VAT 10%"),
+        ("Minibus 2 — Mercedes-Benz Tourengo, 27+1+1 · same service", "€ 900.00", "+ VAT 10%"),
+        ("Permit for access to the centre of Florence for the day of 9 October, both vehicles",
+         "€ 421.00", "+ VAT 10%"),
         ("Drivers' board and lodging — not required with the programme as scheduled, due only if the return "
          "slips well past 02:00 (see notes)", "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 2,300.00",
+    price_total="€ 2,221.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 2,530.00.",
-    perhead=("The price is per vehicle and covers the two minibuses described here, 52 passenger seats in total: "
-             "at full load that is about € 49.00 per person."),
+    grand="Total payable, VAT 10% included: € 2,443.10.",
+    perhead=("The service is € 900.00 per vehicle, plus € 421.00 for the Florence access permit. Across the "
+             "52 passenger seats on the two minibuses, at full load, that is about € 47.00 per person."),
     h_incluso="Included.",
     incluso=(
-        "Two vehicles and two drivers, fuel, tolls, parking, full insurance and the minibuses at your "
-        "disposal from 14:00 to 24:00, not only for the three scheduled transfers. No access charges are "
-        "due at Grassina or Pontassieve: neither Villa Medicea di Lilliano nor Tenuta Bossi sits inside a "
+        "Two vehicles and two drivers, fuel, tolls, parking, full insurance, the minibuses at your "
+        "disposal from 14:00 to 24:00 — not only for the three scheduled transfers — and the permit for "
+        "access to the centre of Florence for the day of 9 October, shown in the table above. No access "
+        "charges are due at Grassina or Pontassieve: neither Villa Medicea di Lilliano nor Tenuta Bossi sits inside a "
         "restricted traffic zone."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
         "Transport for passengers beyond the 52 seats on the two minibuses: further vehicles are not part "
-        "of this quotation (see notes). The city permit for tourist coaches entering the centre of Florence, needed only if boarding and drop-off happen "
-        "outside the hotel in Via dei Conti: about € 350.00 per vehicle, which we would charge you at cost "
-        "(see notes). Waiting beyond the times set out here, € 50.00 per hour per vehicle. Additional "
+        "of this quotation (see notes). The second permit for access to the centre of Florence, due if the "
+        "departure from Tenuta Bossi slips beyond 23:00: € 421.00 (see notes). Waiting beyond the times "
+        "set out here, € 50.00 per hour per vehicle. Additional "
         "transfers or changes to the programme, quoted on request. Return to Florence after 02:00, "
         "€ 250.00 per vehicle. The drivers' board and lodging, should the programme stretch far enough to "
         "make them necessary."
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 759.00", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 1,771.00", ""),
+        ("Deposit 30% on confirmation", "€ 732.93", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 1,710.17", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -313,20 +325,22 @@ EN = dict(
          "hours, and doubling the runs would take it beyond the permitted driving limits. We still need the "
          "final passenger count, so we can confirm how it splits across the two minibuses."),
         ("<b>The boarding point in Florence.</b> House of Nine is at Via dei Conti 9, a few steps from the "
-         "Duomo: that is the heart of the restricted traffic zone, on a street where an eight-metre minibus "
-         "cannot stop to board passengers. The arrangement we always use is to board and drop off in "
-         "<b>Via Valfonda or Piazza Adua</b>, behind Santa Maria Novella station, where coach stops are "
-         "authorised: just over 400 metres from the hotel, five minutes on the flat, and no charge at all. "
-         "If you would rather have the vehicles at the door, the city permit for tourist coaches is "
-         "required, about € 350.00 per vehicle, applied for some days in advance: we handle it and pass it "
-         "on at cost. Tell us which of the two you prefer, because it changes the quotation."),
-        ("<b>The 23:00 departure from Tenuta Bossi.</b> This is where we ask you to be realistic. At a party "
-         "the departure time almost always slips: waiting beyond the agreed time costs € 50.00 per hour per "
-         "vehicle, which is € 100.00 an hour for the two, and a return that ends after 02:00 costs € 250.00 "
-         "per vehicle. It is far better to fix the real time now: <b>we can move the departure as late as "
-         "00:30 with no change in price</b>, as long as you decide it at confirmation and not on the night. "
-         "Beyond that hour the drivers' day exceeds the permitted limits and a second shift would be "
-         "needed."),
+         "Duomo, in the heart of the restricted traffic zone: the city permit our vehicles need to enter "
+         "the centre is included in the price, we apply for it ourselves and you will find it in the table "
+         "above. What remains to be agreed is the exact stopping point, because Via dei Conti is narrow "
+         "and boarding a large group onto two minibuses takes a few minutes at the kerb: tell us and we "
+         "will settle it together, far better now than on the day. If there turns out to be no way of "
+         "stopping at the door, the most convenient alternative is <b>Via Valfonda or Piazza Adua</b>, "
+         "behind Santa Maria Novella station, where coach stops are authorised: just over 400 metres from "
+         "the hotel, five minutes on the flat."),
+        ("<b>The 23:00 departure is firm, and there is a precise reason.</b> The Florence access permit "
+         "included in the price is valid for the day of 9 October. Leaving Tenuta Bossi at 23:00 brings you "
+         "back into the city around 23:40, within that day. If the departure slips, you enter Florence "
+         "after midnight — a different day — and <b>a second permit is required: a further € 421.00</b>, "
+         "which would be charged to you. On top of that comes waiting beyond the agreed time, € 50.00 per "
+         "hour per vehicle, which is € 100.00 an hour for the two. At a party the departure time almost "
+         "always slips, so we ask you to build the evening around leaving at 23:00 sharp, with the guests "
+         "ready a few minutes before. Here, slipping costs, and it costs immediately."),
         ("<b>Access and parking at Villa Medicea di Lilliano.</b> Via Lilliano e Meoli climbs from Grassina "
          "for about a kilometre and it is narrow: precisely why you asked for vehicles of this class. We "
          "need two confirmations from the villa, in writing if possible: where the vehicles set down, and "
