@@ -154,16 +154,16 @@ IT = dict(
     h_prezzo="Il prezzo",
     price_head=["Itinerario — una giornata intera, tutto compreso", "Al netto", "IVA 10% inclusa"],
     price_rows=[
-        ("<b>A</b> · Firenze → Pisa → Lucca → Firenze — circa 320 km", "€ 1.750,00", "€ 1.925,00"),
-        ("<b>B</b> · Firenze → Pisa → Siena → San Gimignano → Firenze — circa 470 km", "€ 2.150,00", "€ 2.365,00"),
-        ("<b>C</b> · Firenze → Siena → San Gimignano → Monteriggioni → Firenze — circa 330 km", "€ 1.750,00", "€ 1.925,00"),
-        ("<b>D</b> · Firenze → Montalcino → Pienza → Montepulciano → Firenze — circa 400 km", "€ 1.400,00", "€ 1.540,00"),
+        ("<b>A</b> · Firenze → Pisa → Lucca → Firenze — circa 320 km", "€ 1.590,91", "€ 1.750,00"),
+        ("<b>B</b> · Firenze → Pisa → Siena → San Gimignano → Firenze — circa 470 km", "€ 1.954,55", "€ 2.150,00"),
+        ("<b>C</b> · Firenze → Siena → San Gimignano → Monteriggioni → Firenze — circa 330 km", "€ 1.590,91", "€ 1.750,00"),
+        ("<b>D</b> · Firenze → Montalcino → Pienza → Montepulciano → Firenze — circa 400 km", "€ 1.272,73", "€ 1.400,00"),
         ("Navetta van fra l'hotel e il punto di carico, andata e ritorno — <i>opzionale</i>",
          "<i>su richiesta</i>", "—"),
         ("Vitto del conducente", "<i>a carico vostro</i>", "—"),
     ],
     grand=("Gli importi sono per l'intera giornata e per tutto il gruppo, non a persona: in dodici, "
-           "da €&nbsp;128,33 a €&nbsp;197,08 a testa secondo l'itinerario."),
+           "da €&nbsp;116,67 a €&nbsp;179,17 a testa secondo l'itinerario."),
     perhead=("Si conferma un itinerario solo, quello che sceglierete. Il prezzo comprende tutti gli oneri di accesso, "
              "compreso il permesso ZTL bus di Firenze e, negli itinerari che toccano Siena, il permesso comunale per "
              "i bus turistici: il giorno del servizio non vi verrà chiesto nulla di aggiuntivo."),
@@ -186,7 +186,7 @@ IT = dict(
 
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 462,00 – € 709,50", "secondo l'itinerario scelto"),
+        ("Acconto 30% alla conferma", "€ 420,00 – € 645,00", "secondo l'itinerario scelto"),
         ("Saldo, entro 5 giorni dal servizio", "il restante 70%", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
@@ -224,7 +224,7 @@ IT = dict(
          "praticamente sulla strada dell'andata, mentre nell'ordine che ci avete indicato ci si arriva tornando "
          "indietro da San Gimignano. Facendo Firenze → Monteriggioni → Siena → San Gimignano → Firenze si scende a "
          "circa 295 km invece di 330 e si guadagna quasi un'ora, che sul posto vale molto più che in autostrada. "
-         "Il prezzo non cambia: € 1.750,00 in entrambi i casi."),
+         "Il prezzo non cambia: € 1.750,00 IVA inclusa in entrambi i casi."),
         ("<b>I borghi si guadagnano a piedi.</b> Siena, San Gimignano, Monteriggioni, Montalcino, Pienza e "
          "Montepulciano hanno tutti il centro storico chiuso ai bus: si scende ai parcheggi autorizzati appena fuori "
          "dalle mura e si sale a piedi. A Montepulciano la salita dal parcheggio a Piazza Grande è ripida e dura una "
