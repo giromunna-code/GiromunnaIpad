@@ -64,8 +64,8 @@ IT = dict(
     amount_label="IMPORTO DOVUTO",
     amount="€ 1.815,00",
     amount_desc=(
-        "Totale, IVA 10% inclusa — escursione sul Monte Amiata, due mezzi (Mercedes-Benz "
-        "Beluga e Mercedes-Benz Tourengo) e pernottamento conducenti, sabato 22 agosto 2026.<br/>"
+        "Escursione Monte Amiata (due mezzi) e hotel autisti, sabato 22 agosto 2026, "
+        "IVA 10% inclusa.<br/>"
         "Da corrispondere entro 5 giorni dal servizio.<br/>"
         "Aggiunta al preventivo Corte Francigena, Rif. GM-2026-0819-CF."
     ),
@@ -107,8 +107,8 @@ EN = dict(
     amount_label="AMOUNT DUE",
     amount="€ 1,815.00",
     amount_desc=(
-        "Total, VAT 10% included — Monte Amiata excursion, two vehicles (Mercedes-Benz "
-        "Beluga and Mercedes-Benz Tourengo) and drivers' overnight stay, Saturday 22 August 2026.<br/>"
+        "Monte Amiata excursion (two vehicles) and drivers' hotel, Saturday 22 August 2026, "
+        "VAT 10% included.<br/>"
         "Payable within 5 days of the service.<br/>"
         "An addition to the Corte Francigena quotation, Ref. GM-2026-0819-CF."
     ),

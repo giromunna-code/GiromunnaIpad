@@ -32,18 +32,18 @@ Il cliente (Anette Haavel) è già il valore predefinito dello script.
 |---|---|
 | Sab 22 ago — Mercedes-Benz Beluga, mezzo e conducente | € 750,00 + IVA 10% |
 | Sab 22 ago — Mercedes-Benz Tourengo, mezzo e conducente | € 750,00 + IVA 10% |
-| Pernottamento conducenti, una notte | € 150,00 + IVA 10% |
+| Hotel autisti | € 150,00 + IVA 10% |
 | **Totale IVA inclusa** | **€ 1.815,00** |
 
 Prezzo fissato da Girolamo in due passaggi il 21 agosto: prima il trasporto a
 € 1.500,00 netti (€ 750,00 per mezzo, con le due voci specificate
-separatamente invece di una riga unica "due mezzi"), poi aggiunti € 150,00 per
-il pernottamento dei conducenti di questa giornata — totale netto € 1.650,00,
-**€ 1.815,00 IVA inclusa**. Questo pernottamento è specifico di questa
-giornata: non contraddice il fatto che vitto e alloggio dei conducenti per il
-resto del periodo 19-23 agosto restino coperti dal preventivo Corte
-Francigena — è un costo aggiuntivo legato solo all'escursione di sabato, che
-Girolamo ha scelto di far pagare al cliente invece di assorbirlo. Punto di
+separatamente invece di una riga unica "due mezzi"), poi aggiunti € 150,00 di
+hotel autisti — totale netto € 1.650,00, **€ 1.815,00 IVA inclusa**. Questo
+hotel è specifico di questa giornata: non contraddice il fatto che vitto e
+alloggio dei conducenti per il resto del periodo 19-23 agosto restino coperti
+dal preventivo Corte Francigena — è un costo aggiuntivo legato solo
+all'escursione di sabato, che Girolamo ha scelto di far pagare al cliente
+invece di assorbirlo. Punto di
 partenza per il confronto: la giornata di **giovedì 20 agosto** dello stesso
 preventivo Corte Francigena, anch'essa a due mezzi e giornata intera (Pienza +
 cena) — € 1.100,00 netti; Girolamo ha deciso di andare sopra quella cifra. Le
@@ -62,11 +62,6 @@ evidenza, dati bancari, note. A differenza di quella — che era un acconto 30%
 unico entro 5 giorni dal servizio, come già indicato nel preventivo. Dati di
 fatturazione (ID Production OÜ) e dati bancari (Banco BPM, filiale di Lucca)
 ripresi identici dalla proforma dell'acconto.
-
-**Vitto e alloggio dei conducenti:** già organizzati e pagati da GiroMunna per
-l'intero periodo 19-23 agosto nel preventivo Corte Francigena. Sabato 22 rientra
-in quel periodo: niente da aggiungere, niente da segnalare come "a carico
-vostro" su questo documento.
 
 ## Regole ferme per ogni preventivo (valgono sempre, non solo qui)
 
