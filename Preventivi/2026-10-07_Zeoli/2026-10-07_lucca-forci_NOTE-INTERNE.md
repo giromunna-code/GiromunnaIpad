@@ -128,9 +128,26 @@ problema.
    promesso: via Piana e via delle Foreste da Mutigliano, con il mezzo o almeno in auto,
    guardando i punti stretti e i tornanti. E ricontrollare le ordinanze del Comune nei
    giorni prima del servizio, perché il cantiere è ancora aperto.
-3. **Chiamare Tenuta di Forci** (0583 349001 / 370 3709667) per il punto esatto di discesa
-   del gruppo, lo spazio di manovra per un mezzo da 7,64 m e dove il conducente lascia il
-   minibus durante il pranzo. Sono 360 ettari e gli ultimi 7 km sono in salita.
+3. **Contattare Tenuta di Forci** per il punto esatto di discesa del gruppo, lo spazio di
+   manovra per un mezzo da 7,64 m e dove il conducente lascia il minibus durante il pranzo.
+   Sono 360 ettari e gli ultimi 7 km sono in salita.
+
+   **Attenzione al numero: il fisso 0583 349001 risulta inesistente** (provato da Girolamo
+   il 21 agosto 2026). È il numero che tutti gli elenchi online continuano a riportare —
+   PagineGialle, PagineBianche, i portali di cantine — ma sono schede vecchie che si copiano
+   fra loro. Segnale che il recapito è cambiato: la tenuta è passata dal dominio
+   `tenutadiforci.it` a `tenutadiforci.com`.
+
+   In ordine, i canali da provare:
+   - **Mail `info@tenutadiforci.com`** — è il canale che la tenuta stessa indica per le
+     prenotazioni, con almeno 48 ore di preavviso. Il più affidabile.
+   - **Mobile 370 3709667**, indicato anche come numero WhatsApp.
+   - **Chiedere il recapito buono al cliente.** Ray Zeoli ha già prenotato il pranzo e ha un
+     suo riferimento alla tenuta: è la strada più corta e nel preventivo gli abbiamo già
+     chiesto quel nome.
+
+   Nota utile: la tenuta riceve i piccoli gruppi su prenotazione **il mercoledì**, e il
+   7 ottobre 2026 è un mercoledì. La data del cliente combacia con il giorno delle visite.
 4. **Confermare Piazzale Boccherini** come punto di ritrovo. È il punto di carico e scarico
    autorizzato per i bus più vicino al B&B La Bohème (via del Moro 2, accanto a piazza San
    Michele): circa 500 m, sei o sette minuti a piedi in piano lungo via San Paolino. Gli
