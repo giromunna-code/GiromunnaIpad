@@ -77,11 +77,11 @@ IT = dict(
     h_servizio="Il servizio",
     svc_head=["Orario", "Percorso", "Percorrenza"],
     svc=[
-        ("06:15 – 08:45",
-         "<b>Ponte Buggianese (PT) → Castel del Piano (GR).</b> "
-         "Il minibus parte dalla nostra base per raggiungere il vostro hotel. Nessun passeggero a bordo: "
-         "è il tempo che serve al mezzo per arrivare sull'Amiata in orario.",
-         "≈ 175 km · 2 h 30"),
+        ("08:00 – 08:25",
+         "<b>Corte Francigena, Castelnuovo dell'Abate (SI) → Castel del Piano (GR).</b> "
+         "Il minibus è già in zona: parte da un altro nostro servizio in corso vicino a Montalcino per "
+         "raggiungere il vostro hotel. Nessun passeggero a bordo, breve trasferimento.",
+         "≈ 17 km · 25 min"),
         ("09:00 – 10:15",
          "<b>Grand Hotel Impero → ospedale → Grand Hotel Impero.</b> "
          "Trasferimento riservato per riaccompagnare in hotel la vostra ospite dimessa, con l'autista che "
@@ -94,9 +94,10 @@ IT = dict(
          "a vostra disposizione per tutta la giornata. Il giro qui sopra è una <b>proposta</b>: lo adattiamo "
          "a quello che volete vedere e a quanto tempo volete fermarvi in ogni tappa.",
          "≈ 80 km · 6 h 45"),
-        ("17:30 – 20:00",
-         "<b>Castel del Piano → Ponte Buggianese.</b> Rientro del mezzo alla base a fine servizio.",
-         "≈ 175 km · 2 h 30"),
+        ("17:30 – 17:55",
+         "<b>Castel del Piano → Corte Francigena, Castelnuovo dell'Abate.</b> Il mezzo rientra a fine "
+         "servizio dove era già impegnato, non alla base di Ponte Buggianese.",
+         "≈ 17 km · 25 min"),
     ],
     svc_foot=(
         "Distanze e tempi sono stime stradali, traffico escluso. L'ordine delle tappe sul monte può cambiare: "
@@ -107,17 +108,18 @@ IT = dict(
         ("Sab 22 ago — mezzo e conducente a disposizione a Castel del Piano e sul Monte Amiata, "
          "circa 09:00 – 17:30, compreso il trasferimento del mattino da e per l'ospedale",
          "€ 1.050,00", "+ IVA 10%"),
-        ("Trasferimento del mezzo dalla base di Ponte Buggianese e ritorno, circa 350 km",
-         "€ 650,00", "+ IVA 10%"),
+        ("Trasferimento del mezzo da e per Corte Francigena, Castelnuovo dell'Abate (SI), circa 34 km",
+         "€ 150,00", "+ IVA 10%"),
         ("Vitto del conducente", "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 1.700,00",
+    price_total="€ 1.200,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 1.870,00.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 1.320,00.",
     perhead=(
         "Il prezzo è per il mezzo e non a persona: non cambia che a bordo siate in dieci o in venticinque. "
-        "La seconda riga è una voce che può sparire — leggete la nota <i>Il viaggio del mezzo dalla base</i>."
+        "Il mezzo è già in zona per un altro servizio, quindi il trasferimento è breve — "
+        "leggete la nota <i>Il viaggio del mezzo da Corte Francigena</i>."
     ),
     h_incluso="Incluso.",
     incluso=(
@@ -136,7 +138,7 @@ IT = dict(
     h_pagamento="Pagamento",
     pay_rows=[
         ("Alla conferma — nessun acconto, il servizio è a meno di 24 ore", "€ 0,00", ""),
-        ("Saldo unico, entro il 26 agosto 2026", "€ 1.870,00", "IVA inclusa"),
+        ("Saldo unico, entro il 26 agosto 2026", "€ 1.320,00", "IVA inclusa"),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -161,15 +163,12 @@ IT = dict(
          "trasferimento si fa presto e il gruppo parte alle 10:30. Se il gruppo vuole invece partire alle 09:00, "
          "con un mezzo solo non si fa: o si sposta il rientro dall'ospedale al pomeriggio, oppure serve un "
          "secondo minibus, che possiamo cercare ma va deciso oggi e ha un costo a parte."),
-        ("<b>Il viaggio del mezzo dalla base.</b> La seconda riga del prezzo copre i circa 350 km che il minibus "
-         "percorre a vuoto da Ponte Buggianese all'Amiata e ritorno. L'abbiamo tenuta separata perché è una voce "
-         "che può sparire: <b>se il minibus è già in zona con il vostro gruppo, quella riga non si applica e il "
-         "totale scende a € 1.155,00 IVA inclusa.</b> Confermateci come stanno le cose e vi mandiamo il "
-         "preventivo aggiornato. Vale anche il contrario, ed è giusto dirvelo: se sabato la gita sul monte non "
-         "si fa e resta solo il rientro dall'ospedale, far scendere e risalire il mezzo dalla nostra base costa "
-         "comunque intorno ai € 950,00 + IVA. Per accompagnare una persona sola è sproporzionato, e in quel caso "
-         "vi conviene un'auto NCC della zona di Grosseto. Ve lo diciamo perché è la verità, non per rinunciare "
-         "al lavoro."),
+        ("<b>Il viaggio del mezzo da Corte Francigena.</b> Il minibus è già impegnato vicino a Montalcino e "
+         "raggiunge Castel del Piano con un salto breve, circa 17 km, invece che dalla nostra base a oltre "
+         "170 km di distanza: è il motivo per cui il trasferimento in tabella pesa così poco sul totale. Se a "
+         "fine giornata il mezzo dovesse invece rientrare alla base di Ponte Buggianese anziché tornare a Corte "
+         "Francigena, il trasferimento si allunga e il prezzo va rivisto: ve lo confermiamo appena sappiamo "
+         "come si chiude la giornata."),
         ("<b>Quanti siete.</b> Il Beluga porta 26 passeggeri più l'autista, e il prezzo qui sopra è per un mezzo. "
          "Mandateci il numero esatto: se il gruppo supera i 26, serve un secondo minibus e il preventivo cambia."),
         ("<b>Le strade del monte.</b> La salita alla Vetta Amiata è tutta tornanti e i centri storici di Santa "
@@ -225,11 +224,11 @@ EN = dict(
     h_servizio="The service",
     svc_head=["Time", "Route", "Distance"],
     svc=[
-        ("06:15 – 08:45",
-         "<b>Ponte Buggianese (PT) → Castel del Piano (GR).</b> "
-         "The minibus leaves our base to reach your hotel. No passengers on board: this is simply the time the "
-         "vehicle needs to be on the Amiata on schedule.",
-         "≈ 175 km · 2 h 30"),
+        ("08:00 – 08:25",
+         "<b>Corte Francigena, Castelnuovo dell'Abate (SI) → Castel del Piano (GR).</b> "
+         "The minibus is already in the area on another of our services near Montalcino and comes across "
+         "to reach your hotel. No passengers on board, a short hop.",
+         "≈ 17 km · 25 min"),
         ("09:00 – 10:15",
          "<b>Grand Hotel Impero → hospital → Grand Hotel Impero.</b> "
          "Private transfer to bring your discharged guest back to the hotel, with the driver waiting on site "
@@ -242,9 +241,10 @@ EN = dict(
          "disposal for the whole day. The round above is a <b>proposal</b>: we adapt it to what you want to see "
          "and how long you want to stop at each place.",
          "≈ 80 km · 6 h 45"),
-        ("17:30 – 20:00",
-         "<b>Castel del Piano → Ponte Buggianese.</b> The vehicle returns to base at the end of the service.",
-         "≈ 175 km · 2 h 30"),
+        ("17:30 – 17:55",
+         "<b>Castel del Piano → Corte Francigena, Castelnuovo dell'Abate.</b> The vehicle returns at the end "
+         "of the service to where it was already engaged, not to the Ponte Buggianese base.",
+         "≈ 17 km · 25 min"),
     ],
     svc_foot=(
         "Distances and times are road estimates, traffic excluded. The order of the stops on the mountain can "
@@ -255,18 +255,18 @@ EN = dict(
         ("Sat 22 Aug — vehicle and driver at your disposal in Castel del Piano and on Monte Amiata, "
          "approx. 09:00 – 17:30, including the morning transfer to and from the hospital",
          "€ 1,050.00", "+ VAT 10%"),
-        ("Vehicle travel from our base at Ponte Buggianese and back, about 350 km",
-         "€ 650.00", "+ VAT 10%"),
+        ("Vehicle travel to and from Corte Francigena, Castelnuovo dell'Abate (SI), about 34 km",
+         "€ 150.00", "+ VAT 10%"),
         ("Driver's meals", "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 1,700.00",
+    price_total="€ 1,200.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 1,870.00.",
+    grand="Total payable, VAT 10% included: € 1,320.00.",
     perhead=(
         "The price is per vehicle, not per person: it does not change whether ten or twenty-five of you are on "
-        "board. The second line is an item that can disappear — please read the note "
-        "<i>The vehicle's journey from our base</i>."
+        "board. The vehicle is already in the area on another job, so the transfer is short — please read the "
+        "note <i>The vehicle's journey from Corte Francigena</i>."
     ),
     h_incluso="Included.",
     incluso=(
@@ -285,7 +285,7 @@ EN = dict(
     h_pagamento="Payment",
     pay_rows=[
         ("On confirmation — no deposit, the service is less than 24 hours away", "€ 0.00", ""),
-        ("Single payment, by 26 August 2026", "€ 1,870.00", "VAT included"),
+        ("Single payment, by 26 August 2026", "€ 1,320.00", "VAT included"),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -310,15 +310,11 @@ EN = dict(
          "because the transfer is done early and the group leaves at 10:30. If the group would rather leave at "
          "09:00, one vehicle cannot do both: either the hospital run moves to the afternoon, or a second minibus "
          "is needed — we can look for one, but it has to be decided today and carries a separate cost."),
-        ("<b>The vehicle's journey from our base.</b> The second line of the price covers the roughly 350 km the "
-         "minibus runs empty from Ponte Buggianese to the Amiata and back. We have kept it separate because it is "
-         "an item that can disappear: <b>if the minibus is already in the area with your group, that line does "
-         "not apply and the total drops to € 1,155.00 including VAT.</b> Confirm how things stand and we will "
-         "send you an updated quotation. The opposite is also true, and it is only fair to say so: if the "
-         "mountain day does not go ahead on Saturday and only the hospital run remains, bringing the vehicle down "
-         "from our base and back still costs around € 950.00 + VAT. For one passenger that is out of all "
-         "proportion, and you would be better served by a car with driver from the Grosseto area. We tell you "
-         "this because it is the truth, not because we are turning the work down."),
+        ("<b>The vehicle's journey from Corte Francigena.</b> The minibus is already engaged near Montalcino "
+         "and reaches Castel del Piano with a short hop, about 17 km, rather than from our base over 170 km "
+         "away: that is why the transfer line weighs so little on the total. Should the vehicle need to return "
+         "to the Ponte Buggianese base at the end of the day instead of going back to Corte Francigena, the "
+         "transfer grows and the price needs revising: we will confirm as soon as we know how the day closes."),
         ("<b>How many of you there are.</b> The Beluga carries 26 passengers plus the driver, and the price above "
          "is for one vehicle. Send us the exact number: if the group exceeds 26, a second minibus is needed and "
          "the quotation changes."),
