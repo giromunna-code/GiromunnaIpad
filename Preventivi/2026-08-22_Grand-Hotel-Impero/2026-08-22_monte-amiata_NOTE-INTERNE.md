@@ -25,28 +25,63 @@ chi è davvero, si rigenera con `--cliente "Nome vero"`.
 
 ## ATTENZIONE — riposo del conducente, da risolvere prima di confermare l'orario
 
-Il mezzo stasera (ven 21 ago) lavora a Corte Francigena dalle 17:00 fino all'01:30 di notte:
-8 ore e mezzo di servizio. Con partenza domani alle 08:00 per Castel del Piano, il riposo fra i
-due turni è di **sole 6 ore e mezza** (01:30-08:00).
+Orario reale di oggi (ven 21 ago), da Girolamo: partenza 09:00, sosta verso le 11:30, ripartenza
+alle 17:00, rientro stimato verso l'01:00. **La pausa di mezzogiorno (11:30-17:00, 5h30) non
+conta come riposo**: per essere un riposo giornaliero valido servono almeno 9 ore consecutive
+(ridotto) o 11 (pieno), quindi ai fini del calcolo il turno di oggi è uno solo, continuo dalle
+9:00 di stamattina fino a circa l'1:00 di stanotte — quasi 16 ore di giornata, con dentro
+2h30 + 8h di impegno effettivo.
 
-Il riposo giornaliero minimo per un conducente professionale è di **11 ore consecutive**, o
-**9 ore ridotte** (ammesse al massimo 3 volte a settimana). 6h30 sta sotto **anche** il minimo
-ridotto, di 2 ore e mezza. Non è un tecnicismo: è la sicurezza del conducente, oltre che la legge
-(Reg. CE 561/2006), e in caso di controllo è una sanzione pesante.
+Quello che conta per domani è il riposo da quando finisce il turno di stanotte (01:00) a quando
+riparte quello di domani:
+
+| Partenza domani | Riposo | In regola? |
+|---|---|---|
+| 08:00 | 7h00 | No — mancano 2h anche al minimo ridotto (9h) |
+| 09:00 | 8h00 | No — manca 1h anche al minimo ridotto |
+| 10:00 | 9h00 | Al limite esatto del ridotto — zero margine |
+| 11:00 | 10h00 | Sì, sopra il ridotto |
+| 12:00 | 11h00 | Sì, riposo pieno, comodo |
+
+Il riposo ridotto (9h) è concesso solo 3 volte a settimana: da verificare se è già stato usato
+in questi giorni. Anche nel caso migliore (partenza alle 10:00) il margine è zero: qualunque
+ritardo stasera (si chiude all'1:10 invece che all'1:00) fa scendere sotto il minimo.
 
 **Per essere in regola con lo stesso conducente**, una delle due:
-- il servizio di stasera finisce entro le 23:00 (riposo ridotto di 9h) o meglio entro le 21:00
-  (riposo pieno di 11h);
-- la partenza di domani slitta ad almeno le 10:30 (ridotto) o le 12:30 (pieno) — ma vuol dire
-  spostare anche il ritiro in ospedale, che il cliente ha chiesto per le 9 o le 10.
+- il servizio di stasera finisce prima (sposta indietro il rientro dell'1:00);
+- la partenza di domani slitta ad almeno le 10:00 (ridotto, senza margine) o meglio le 11:00-12:00
+  (con un margine vero) — ma vuol dire spostare anche il ritiro in ospedale, che il cliente ha
+  chiesto per le 9 o le 10.
 
 **L'alternativa più semplice, se stasera non si può accorciare**: un secondo conducente prende
 il mezzo domattina, mentre chi ha lavorato stasera riposa. Il limite è per persona, non per
 mezzo, quindi questo risolve tutto senza toccare gli orari già promessi al cliente
-dell'ospedale. Va deciso stasera stessa, prima di confermare qualunque orario.
+dell'ospedale. Va deciso prima di confermare qualunque orario.
 
-Il preventivo sotto è scritto con partenza alle 08:00 perché è quello che è stato chiesto, ma
-resta condizionato a questa decisione.
+**Ancora non deciso da Girolamo** (21 ago, sera): quale delle strade sopra si segue. Il
+preventivo qui sotto ha ancora l'arrivo del mezzo alle 08:00 e il ritiro in ospedale alle 09:00
+come punti fissi (chiesti dal cliente), ma la **ripartenza per il Monte Amiata è stata
+lasciata volutamente aperta** ("a seguire", non un orario fisso) — vedi sezione successiva.
+Se la questione del riposo sposta anche l'orario dell'ospedale, quella parte del documento va
+rifatta prima di mandarlo.
+
+## La ripartenza per il Monte Amiata è aperta, di proposito
+
+Girolamo ha chiesto di lasciare da decidere l'orario di ripartenza per la gita sul monte, dopo
+il rientro dall'ospedale. Il documento (PDF e pagina web) è stato aggiornato di conseguenza:
+
+- la tabella del servizio non ha più orari fissi per la giornata sull'Amiata (era "10:30 –
+  17:15"), ma "a seguire" con le tappe successive indicate come tempo trascorso dalla partenza
+  (+2h30, +4h30, +5h45), così restano valide qualunque sia l'ora reale di partenza;
+- il rientro del mezzo a Corte Francigena è diventato "a fine giornata" invece di un orario fisso
+  (era 17:30-17:55);
+- il prezzo **non cambia**: resta legato alla durata (circa 6h45 di giro sul monte, circa 8h30
+  di impegno totale dal ritiro in ospedale a sera), non a un orario di inizio preciso.
+
+Questo dà un margine reale per assorbire la questione del riposo qui sopra, ma **solo per la
+parte della gita**: il ritiro in ospedale resta l'unico punto dell'orario di domani già promesso
+al cliente ("9 or 10 o'clock"), quindi è quello che deve rispettare per forza il minimo di
+riposo — non la partenza per il monte, che segue comunque a ruota.
 
 ## Cosa cambia: il mezzo parte da Corte Francigena, non dalla base
 

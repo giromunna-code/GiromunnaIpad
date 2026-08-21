@@ -88,25 +88,28 @@ IT = dict(
          "attende sul posto per tutto il tempo delle formalità di dimissione. "
          "Orari e percorrenza si fissano quando ci direte di quale ospedale si tratta.",
          "da confermare"),
-        ("10:30 – 17:15",
+        ("a seguire",
          "<b>Giornata sul Monte Amiata.</b> Grand Hotel Impero → Vetta Amiata, Prato delle Macinaie → "
-         "Abbadia San Salvatore → Santa Fiora → Arcidosso → rientro in hotel. Mezzo e conducente restano "
-         "a vostra disposizione per tutta la giornata. Il giro qui sopra è una <b>proposta</b>: lo adattiamo "
-         "a quello che volete vedere e a quanto tempo volete fermarvi in ogni tappa.",
+         "Abbadia San Salvatore → Santa Fiora → Arcidosso → rientro in hotel. Partenza subito dopo il "
+         "rientro dall'ospedale, orario esatto da confermare insieme. Mezzo e conducente restano a vostra "
+         "disposizione per tutta la giornata. Il giro qui sopra è una <b>proposta</b>: lo adattiamo a "
+         "quello che volete vedere e a quanto tempo volete fermarvi in ogni tappa.",
          "≈ 80 km · 6 h 45"),
-        ("17:30 – 17:55",
+        ("a fine giornata",
          "<b>Castel del Piano → Corte Francigena, Castelnuovo dell'Abate.</b> Il mezzo rientra a fine "
          "servizio dove era già impegnato, non alla base di Ponte Buggianese.",
          "≈ 17 km · 25 min"),
     ],
     svc_foot=(
-        "Distanze e tempi sono stime stradali, traffico escluso. L'ordine delle tappe sul monte può cambiare: "
-        "quello che conta è che mezzo e conducente sono vostri dalle 09:00 alle 17:30."
+        "Distanze e tempi sono stime stradali, traffico escluso. L'orario di partenza per il monte si "
+        "conferma insieme a voi in base a come si chiude il servizio del mattino: quello che conta è che "
+        "mezzo e conducente restano vostri, con continuità, dal ritiro in ospedale fino a sera."
     ),
     h_prezzo="Il prezzo",
     price_rows=[
         ("Sab 22 ago — mezzo e conducente a disposizione a Castel del Piano e sul Monte Amiata, "
-         "circa 09:00 – 17:30, compreso il trasferimento del mattino da e per l'ospedale",
+         "circa 8 ore e mezza dal ritiro in ospedale a sera, compreso il trasferimento del mattino "
+         "da e per l'ospedale",
          "€ 1.050,00", "+ IVA 10%"),
         ("Trasferimento del mezzo da e per Corte Francigena, Castelnuovo dell'Abate (SI), circa 34 km",
          "€ 150,00", "+ IVA 10%"),
@@ -158,10 +161,11 @@ IT = dict(
          "aggiunge circa un'ora fra andata e ritorno. Se invece è l'ospedale di Grosseto siamo sui 55 km a "
          "tratta, il mattino si allunga di un paio d'ore e la partenza per il monte slitta verso mezzogiorno: "
          "in quel caso vi rifacciamo gli orari. Ci serve il nome dell'ospedale oggi."),
-        ("<b>Due servizi, un mezzo solo.</b> Il programma tiene insieme l'ospedale e la gita perché il "
-         "trasferimento si fa presto e il gruppo parte alle 10:30. Se il gruppo vuole invece partire alle 09:00, "
-         "con un mezzo solo non si fa: o si sposta il rientro dall'ospedale al pomeriggio, oppure serve un "
-         "secondo minibus, che possiamo cercare ma va deciso oggi e ha un costo a parte."),
+        ("<b>Due servizi, un mezzo solo.</b> Il programma tiene insieme l'ospedale e la gita, con la partenza "
+         "per il monte subito dopo il rientro in hotel. Se il gruppo preferisse fare le due cose in momenti "
+         "lontani della giornata, con un mezzo solo non si fa: o si sposta il rientro dall'ospedale al "
+         "pomeriggio, oppure serve un secondo minibus, che possiamo cercare ma va deciso oggi e ha un costo "
+         "a parte."),
         ("<b>Il viaggio del mezzo da Corte Francigena.</b> Il minibus è già impegnato vicino a Montalcino e "
          "raggiunge Castel del Piano con un salto breve, circa 17 km, invece che dalla nostra base a oltre "
          "170 km di distanza: è il motivo per cui il trasferimento in tabella pesa così poco sul totale. Se a "
@@ -234,25 +238,28 @@ EN = dict(
          "throughout the discharge formalities. "
          "Timings and distance will be fixed once you tell us which hospital it is.",
          "to be confirmed"),
-        ("10:30 – 17:15",
+        ("following on",
          "<b>A day on Monte Amiata.</b> Grand Hotel Impero → Vetta Amiata, Prato delle Macinaie → "
-         "Abbadia San Salvatore → Santa Fiora → Arcidosso → back to the hotel. Vehicle and driver stay at your "
-         "disposal for the whole day. The round above is a <b>proposal</b>: we adapt it to what you want to see "
-         "and how long you want to stop at each place.",
+         "Abbadia San Salvatore → Santa Fiora → Arcidosso → back to the hotel. Departure straight after "
+         "the hospital run, exact time to be confirmed together. Vehicle and driver stay at your disposal "
+         "for the whole day. The round above is a <b>proposal</b>: we adapt it to what you want to see and "
+         "how long you want to stop at each place.",
          "≈ 80 km · 6 h 45"),
-        ("17:30 – 17:55",
+        ("end of day",
          "<b>Castel del Piano → Corte Francigena, Castelnuovo dell'Abate.</b> The vehicle returns at the end "
          "of the service to where it was already engaged, not to the Ponte Buggianese base.",
          "≈ 17 km · 25 min"),
     ],
     svc_foot=(
-        "Distances and times are road estimates, traffic excluded. The order of the stops on the mountain can "
-        "change: what matters is that vehicle and driver are yours from 09:00 to 17:30."
+        "Distances and times are road estimates, traffic excluded. The departure time for the mountain will "
+        "be confirmed with you once we know how the morning service wraps up: what matters is that vehicle "
+        "and driver stay yours, without a break, from the hospital pickup through the evening."
     ),
     h_prezzo="The price",
     price_rows=[
         ("Sat 22 Aug — vehicle and driver at your disposal in Castel del Piano and on Monte Amiata, "
-         "approx. 09:00 – 17:30, including the morning transfer to and from the hospital",
+         "about eight and a half hours from the hospital pickup through the evening, including the "
+         "morning transfer to and from the hospital",
          "€ 1,050.00", "+ VAT 10%"),
         ("Vehicle travel to and from Corte Francigena, Castelnuovo dell'Abate (SI), about 34 km",
          "€ 150.00", "+ VAT 10%"),
@@ -304,10 +311,11 @@ EN = dict(
          "add roughly an hour there and back. If it is the hospital in Grosseto we are looking at some 55 km each "
          "way, the morning grows by a couple of hours and the departure for the mountain slips towards midday: in "
          "that case we will redo the timings for you. We need the name of the hospital today."),
-        ("<b>Two services, one vehicle.</b> The programme holds the hospital run and the excursion together "
-         "because the transfer is done early and the group leaves at 10:30. If the group would rather leave at "
-         "09:00, one vehicle cannot do both: either the hospital run moves to the afternoon, or a second minibus "
-         "is needed — we can look for one, but it has to be decided today and carries a separate cost."),
+        ("<b>Two services, one vehicle.</b> The programme holds the hospital run and the excursion together, "
+         "with departure for the mountain straight after the return to the hotel. Should the group prefer the "
+         "two set well apart in the day, one vehicle cannot do both: either the hospital run moves to the "
+         "afternoon, or a second minibus is needed — we can look for one, but it has to be decided today and "
+         "carries a separate cost."),
         ("<b>The vehicle's journey from Corte Francigena.</b> The minibus is already engaged near Montalcino "
          "and reaches Castel del Piano with a short hop, about 17 km, rather than from our base over 170 km "
          "away: that is why the transfer line weighs so little on the total. Should the vehicle need to return "
