@@ -98,15 +98,17 @@ IT = dict(
     price_rows=[
         ("Mer 7 ott — Lucca → Tenuta di Forci → Lucca, mezzo e conducente a vostra disposizione "
          "dalle 11:45 alle 17:00, attesa durante il pranzo compresa", "€ 500,00", "+ IVA 10%"),
-        ("Permesso checkpoint per i bus turistici del Comune di Lucca, che acquistiamo noi",
-         "€ 180,00", "+ IVA 10%"),
+        ("IVA 10% sul servizio", "€ 50,00", ""),
+        ("Permesso comunale di accesso a Lucca per i bus turistici, che anticipiamo noi per "
+         "vostro conto", "€ 180,00", "<i>fuori campo IVA</i>"),
         ("Vitto e alloggio del conducente", "<i>non necessario</i>", ""),
     ],
-    price_total_label="Totale, al netto di IVA",
-    price_total="€ 680,00",
-    vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 748,00.",
-    perhead="Sono circa € 31,20 a persona per l'andata, il ritorno e tutte le ore di attesa.",
+    price_total_label="Totale da corrispondere",
+    price_total="€ 730,00",
+    vat_note="",
+    grand="Totale da corrispondere: € 730,00.",
+    perhead=("€ 550,00 di servizio, IVA 10% inclusa, più € 180,00 di permesso comunale senza IVA. "
+             "Circa € 30,40 a persona."),
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente per l'intera fascia oraria indicata, con l'attesa a Forci durante il pranzo e "
@@ -121,8 +123,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 224,00", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 524,00", ""),
+        ("Acconto del 30% sul totale, alla conferma", "€ 219,00", ""),
+        ("Saldo, entro 5 giorni dal servizio", "€ 511,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -142,15 +144,16 @@ IT = dict(
          "Moro è a due passi da piazza San Michele, nel cuore della città murata, e un mezzo di questa "
          "taglia lì non entra. Il punto di carico e scarico autorizzato più vicino è <b>Piazzale "
          "Boccherini</b>, appena dentro Porta Sant'Anna: sono circa 500 metri dal B&amp;B, sei o sette "
-         "minuti a piedi in piano lungo via San Paolino, tutto dritto e senza scale. È lì che vi aspettiamo "
-         "e lì che vi riportiamo. Gli altri punti autorizzati per i bus — Porta San Pietro, Porta Santa "
-         "Maria, Porta Elisa — sono tutti più lontani da via del Moro. Se qualcuno dei vostri ospiti "
+         "minuti a piedi in piano lungo via San Paolino, tutto dritto e senza scale. Gli altri punti "
+         "autorizzati per i bus — Porta San Pietro, Porta Santa Maria, Porta Elisa — sono più lontani "
+         "da via del Moro. Se qualcuno dei vostri ospiti "
          "facesse fatica a camminare, possiamo organizzare una navetta in auto dalla porta del B&amp;B al "
          "piazzale: ditecelo e ve la quotiamo."),
         ("<b>Il permesso di accesso a Lucca.</b> Il Comune di Lucca subordina l'ingresso dei bus turistici "
          "nella zona verde a un permesso da acquistare prima dell'accesso, e Piazzale Boccherini è dentro "
-         "quell'area. Ce ne occupiamo noi, e in preventivo lo trovate come voce a parte, € 180,00 più IVA, "
-         "invece che nascosto nel prezzo del servizio. È l'unico onere di accesso del programma: "
+         "quell'area. Ce ne occupiamo noi e lo anticipiamo per vostro conto: lo trovate in preventivo "
+         "come voce a parte, € 180,00 senza IVA, perché è un onere del Comune e non un nostro servizio. "
+         "Meglio così che nasconderlo nel prezzo. È l'unico onere di accesso del programma: "
          "Tenuta di Forci non ne prevede."),
         ("<b>Un solo mezzo, come chiedevate.</b> Il Beluga ha 26 posti passeggeri: i vostri 24 ci stanno "
          "tutti, con due posti liberi, su un mezzo privato riservato al solo vostro gruppo. È anche la "
@@ -177,9 +180,9 @@ IT = dict(
          "i vostri dati di fatturazione."),
         ("<b>Disponibilità e cancellazione.</b> Il 7 ottobre il mezzo è libero e lo teniamo per voi "
          "per tutta la validità del preventivo; la prenotazione diventa definitiva alla "
-         "ricezione dell'acconto. La cancellazione è gratuita oltre 60 giorni prima del servizio; da 60 a "
-         "30 giorni viene trattenuto l'acconto; da 30 a 10 giorni viene addebitato il 50% del prezzo; negli "
-         "ultimi 10 giorni il 100%. Mancando oggi 47 giorni al servizio, questa prenotazione ricade nella "
+         "ricezione dell'acconto. Cancellazione gratuita oltre 60 giorni prima del servizio; da 60 a "
+         "30 giorni si trattiene l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%. "
+         "Mancando oggi 47 giorni al servizio, questa prenotazione ricade nella "
          "fascia da 60 a 30 giorni, e dal 7 settembre passerà in quella da 30 a 10. "
          "Preventivo valido fino al 4 settembre 2026."),
     ],
@@ -234,15 +237,17 @@ EN = dict(
     price_rows=[
         ("Wed 7 Oct — Lucca → Tenuta di Forci → Lucca, vehicle and driver at your disposal from 11:45 to "
          "17:00, waiting time during lunch included", "€ 500.00", "+ VAT 10%"),
-        ("City of Lucca tourist bus checkpoint permit, which we buy ourselves",
-         "€ 180.00", "+ VAT 10%"),
+        ("VAT 10% on the service", "€ 50.00", ""),
+        ("City of Lucca access permit for tourist coaches, which we advance on your behalf",
+         "€ 180.00", "<i>not subject to VAT</i>"),
         ("Driver's board and lodging", "<i>not required</i>", ""),
     ],
-    price_total_label="Total, excluding VAT",
-    price_total="€ 680.00",
-    vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 748.00.",
-    perhead="That is about € 31.20 per person for the outward trip, the return and all the waiting time.",
+    price_total_label="Total payable",
+    price_total="€ 730.00",
+    vat_note="",
+    grand="Total payable: € 730.00.",
+    perhead=("€ 550.00 for the service, VAT 10% included, plus the € 180.00 municipal permit, no VAT. "
+             "About € 30.40 per person."),
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver for the whole period set out above, with the wait at Forci during the lunch "
@@ -257,8 +262,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 224.00", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 524.00", ""),
+        ("Deposit of 30% of the total, on confirmation", "€ 219.00", ""),
+        ("Balance, within 5 days of the service", "€ 511.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -278,16 +283,17 @@ EN = dict(
          "Moro is a few steps from piazza San Michele, in the heart of the walled city, and a vehicle of "
          "this size does not go in there. The nearest authorised loading and unloading point is "
          "<b>Piazzale Boccherini</b>, just inside Porta Sant'Anna: about 500 metres from the B&amp;B, six "
-         "or seven minutes on the flat along via San Paolino, straight ahead and with no steps. That is "
-         "where we wait for you and where we bring you back. The other authorised coach points — Porta San "
-         "Pietro, Porta Santa Maria, Porta Elisa — are all further from via del Moro. If any of your party "
+         "or seven minutes on the flat along via San Paolino, straight ahead and with no steps. The other "
+         "authorised coach points — Porta San Pietro, Porta Santa Maria, Porta Elisa — are further from "
+         "via del Moro. If any of your party "
          "finds walking difficult, we can arrange a car shuttle from the door of the B&amp;B to the square: "
          "tell us and we will quote it."),
         ("<b>The access permit for Lucca.</b> The City of Lucca requires tourist coaches entering the green "
          "zone to hold a permit bought before access, and Piazzale Boccherini sits inside that area. We "
-         "take care of it, and you will find it in the quotation as a line of its own, € 180.00 plus VAT: "
-         "that way you can see exactly what it is, rather than have it buried in the price of the service. "
-         "It is the only access charge on this programme, as Tenuta di Forci has none."),
+         "take care of it and advance it on your behalf: you will find it in the quotation as a line of "
+         "its own, € 180.00 with no VAT, because it is a charge of the City's and not a service of ours. "
+         "Better that than buried in the price. It is the only access charge on this programme, as "
+         "Tenuta di Forci has none."),
         ("<b>One vehicle, as you asked.</b> The Beluga has 26 passenger seats: your 24 all fit, with two "
          "seats to spare, on a private vehicle reserved for your group alone. It is also the right answer "
          "for that road, because a single 7.64 m vehicle gets through where two larger ones would cause "
@@ -447,7 +453,8 @@ def build(lang, cliente, out):
     F.append(Paragraph(L["svc_foot"], S["foot"]))
 
     # --- prezzo (intestazione e tabella non si spezzano fra due pagine)
-    pcols = [usable - 30 * mm - 20 * mm, 30 * mm, 20 * mm]
+    # terza colonna larga: deve contenere "fuori campo IVA" su una riga sola
+    pcols = [usable - 30 * mm - 28 * mm, 30 * mm, 28 * mm]
     pdata = []
     for label, amount, vat in L["price_rows"]:
         pdata.append([Paragraph(label, S["cellsm"]),

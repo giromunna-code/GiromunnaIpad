@@ -38,19 +38,22 @@ del conducente è circa 11:00 – 17:30.
 
 ## Prezzo
 
-| Voce | Netto |
-|---|---|
-| Lucca → Tenuta di Forci → Lucca, mezzo a disposizione, attesa compresa | € 500,00 |
-| Permesso checkpoint bus del Comune di Lucca | € 180,00 |
-| Vitto e alloggio conducente | non necessario |
+| Voce | Importo | IVA |
+|---|---|---|
+| Lucca → Tenuta di Forci → Lucca, mezzo a disposizione, attesa compresa | € 500,00 | 10% |
+| IVA 10% sul servizio | € 50,00 | — |
+| Permesso comunale di accesso a Lucca | € 180,00 | fuori campo |
+| Vitto e alloggio conducente | non necessario | — |
 
-**Totale netto € 680,00 · IVA 10% € 68,00 · Totale € 748,00** (circa € 31,20 a persona)
+**Servizio € 550,00 IVA inclusa + permesso € 180,00 = totale € 730,00**
+(circa € 30,40 a persona)
 
-Acconto 30% € 224,00 — saldo € 524,00.
+Acconto 30% del totale € 219,00 — saldo € 511,00.
 
-Il permesso di Lucca è addebitato **a parte**, come si fa con il permesso comunale di Siena
-o con quello per il centro di Firenze negli altri preventivi, e sconta la stessa IVA al 10%
-del servizio.
+Il permesso di Lucca è addebitato **a parte** e **fuori campo IVA**: è un onere del Comune
+che GiroMunna anticipa per conto del cliente e riaddebita al costo, quindi non sconta il
+10%. L'IVA resta solo sui € 500,00 di servizio. **Stesso trattamento va applicato al
+permesso comunale di Siena e a quello per il centro di Firenze** negli altri preventivi.
 
 ## Come è stato costruito il prezzo
 
@@ -115,11 +118,12 @@ problema.
 ## Da fare prima di inviare
 
 1. **Verificare che i € 180 del permesso di Lucca coprano il costo vero.** L'importo è
-   quello indicato da Girolamo ed è addebitato a parte in preventivo, ma la tariffa 2026 non
-   è confermata: le tariffe sono cambiate dal 1° gennaio 2026 e il permesso si compra **solo
-   online**, sul portale LuccaPlus, sezione Bus Turistici, **prima** dell'ingresso nella zona
-   verde. Info: `checkpointbus@metrosrl.it`, ufficio al parcheggio Palatucci, viale Carlo del
-   Prete. Se il costo effettivo fosse più alto, va corretta la riga prima di inviare.
+   quello indicato da Girolamo ed è addebitato a parte, fuori campo IVA, ma la tariffa 2026
+   non è confermata: le tariffe sono cambiate dal 1° gennaio 2026 e il permesso si compra
+   **solo online**, sul portale LuccaPlus, sezione Bus Turistici, **prima** dell'ingresso
+   nella zona verde. Info: `checkpointbus@metrosrl.it`, ufficio al parcheggio Palatucci,
+   viale Carlo del Prete. Se il costo effettivo fosse più alto, va corretta la riga prima di
+   inviare. Conservare la ricevuta del permesso: è la giustificazione dell'anticipazione.
 2. **Fare davvero il sopralluogo sul percorso alternativo.** Nelle note al cliente è
    promesso: via Piana e via delle Foreste da Mutigliano, con il mezzo o almeno in auto,
    guardando i punti stretti e i tornanti. E ricontrollare le ordinanze del Comune nei
