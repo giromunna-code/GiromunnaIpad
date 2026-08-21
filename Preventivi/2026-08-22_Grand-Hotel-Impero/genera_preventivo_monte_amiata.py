@@ -59,20 +59,22 @@ IT = dict(
     title="Preventivo",
     subtitle="Giornata sul Monte Amiata  ·  Castel del Piano (GR)  ·  sabato 22 agosto 2026",
     meta="Preparato per %s  ·  21 agosto 2026  ·  Rif. " + RIF,
-    h_mezzo="Il mezzo",
+    h_mezzo="I mezzi",
     mezzo_intro=(
-        "Un minibus con conducente a vostra disposizione per l'intera giornata di sabato 22 agosto, "
+        "Due minibus con conducente a vostra disposizione per l'intera giornata di sabato 22 agosto, "
         "a Castel del Piano e sul Monte Amiata."
     ),
     mezzo_bullet=(
         "<b>Mercedes-Benz Beluga</b> — 26 posti passeggeri più l'autista, 7,64 m. Aria condizionata, "
-        "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli."
+        "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.<br/>"
+        "<b>Mercedes-Benz Tourengo</b> — 28 posti passeggeri più l'autista, 7,86 m. Secondo mezzo, di "
+        "Francesco Munna (Tuscany T.O. &amp; Munna Bus Operator)."
     ),
     mezzo_close=(
-        "Con i suoi 7,64 metri il Beluga sale alla Vetta Amiata e arriva ai piazzali dei borghi del monte, "
-        "dove un autobus gran turismo non passa: su queste strade è il mezzo giusto. "
-        "Il prezzo indicato più avanti è riferito a <b>un mezzo</b>: ci serve il numero esatto dei passeggeri "
-        "per confermare che il gruppo entri nei 26 posti."
+        "Insieme, i due mezzi portano fino a 54 passeggeri. Con i suoi 7,64 metri il Beluga sale alla Vetta "
+        "Amiata e arriva ai piazzali dei borghi del monte, dove un autobus gran turismo non passa: su queste "
+        "strade è il mezzo giusto, e farà da apripista anche al Tourengo. "
+        "Ci serve il numero esatto dei passeggeri per confermare la ripartizione fra i due mezzi."
     ),
     h_servizio="Il servizio",
     svc_head=["Orario", "Percorso", "Percorrenza"],
@@ -101,20 +103,23 @@ IT = dict(
     ),
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Sab 22 ago — mezzo e conducente a disposizione sul Monte Amiata, circa 6 ore e 45",
+        ("Sab 22 ago — Beluga: mezzo e conducente a disposizione sul Monte Amiata, circa 6 ore e 45",
          "€ 900,00", "+ IVA 10%"),
-        ("Trasferimento del mezzo da e per Corte Francigena, Castelnuovo dell'Abate (SI), circa 34 km",
+        ("Trasferimento del Beluga da e per Corte Francigena, Castelnuovo dell'Abate (SI), circa 34 km",
          "€ 150,00", "+ IVA 10%"),
-        ("Vitto del conducente", "<i>a carico vostro</i>", ""),
+        ("Sab 22 ago — Tourengo: mezzo e conducente a disposizione sul Monte Amiata",
+         "<i>a seguire</i>", ""),
+        ("Vitto dei due conducenti", "<i>a carico vostro</i>", ""),
     ],
-    price_total_label="Totale, al netto di IVA",
+    price_total_label="Totale Beluga, al netto di IVA",
     price_total="€ 1.050,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 1.155,00.",
+    grand="Totale Beluga da corrispondere, IVA 10% inclusa: € 1.155,00. Il prezzo del Tourengo ve lo "
+          "confermiamo a breve.",
     perhead=(
-        "Il prezzo è per il mezzo e non a persona: non cambia che a bordo siate in dieci o in venticinque. "
-        "Il mezzo è già in zona per un altro servizio, quindi il trasferimento è breve — "
-        "leggete la nota <i>Il viaggio del mezzo da Corte Francigena</i>."
+        "Il prezzo del Beluga è per il mezzo e non a persona. Il Beluga è già in zona per un altro "
+        "servizio, quindi il suo trasferimento è breve — leggete la nota <i>Il viaggio del Beluga da "
+        "Corte Francigena</i>. Il prezzo del Tourengo arriva appena definito con il suo operatore."
     ),
     h_incluso="Incluso.",
     incluso=(
@@ -133,43 +138,51 @@ IT = dict(
     h_pagamento="Pagamento",
     pay_rows=[
         ("Alla conferma — nessun acconto, il servizio è a meno di 24 ore", "€ 0,00", ""),
-        ("Saldo unico, entro il 26 agosto 2026", "€ 1.155,00", "IVA inclusa"),
+        ("Saldo Beluga, entro il 26 agosto 2026", "€ 1.155,00", "IVA inclusa"),
+        ("Saldo Tourengo, entro il 26 agosto 2026", "<i>a seguire</i>", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
-        ("<b>Prima di tutto: la conferma a voce.</b> GiroMunna ha un solo minibus. Girolamo vi richiama a "
-         "breve per confermarvi che mezzo e conducente sono liberi sabato: fino a quella telefonata questo "
-         "preventivo è un prezzo, non una prenotazione."),
-        ("<b>Il viaggio del mezzo da Corte Francigena.</b> Il minibus è già impegnato vicino a Montalcino e "
+        ("<b>Prima di tutto: la conferma a voce.</b> Il Beluga è il minibus di proprietà di GiroMunna; il "
+         "Tourengo è un secondo mezzo di Francesco Munna. Girolamo vi richiama a breve per confermarvi la "
+         "disponibilità di entrambi per sabato: fino a quella telefonata questo preventivo è un prezzo, non "
+         "una prenotazione."),
+        ("<b>Il secondo minibus.</b> Il Tourengo — 28 posti più l'autista, 7,86 m — viene da Francesco Munna, "
+         "che opera come Tuscany T.O. &amp; Munna Bus Operator. Il suo prezzo per la giornata è in corso di "
+         "definizione con lui e ve lo confermiamo a breve: nel frattempo la parte del Beluga in questo "
+         "preventivo è già ferma."),
+        ("<b>Il viaggio del Beluga da Corte Francigena.</b> Il minibus è già impegnato vicino a Montalcino e "
          "raggiunge Castel del Piano con un salto breve, circa 17 km, invece che dalla nostra base a oltre "
-         "170 km di distanza: è il motivo per cui il trasferimento in tabella pesa così poco sul totale. Se a "
-         "fine giornata il mezzo dovesse invece rientrare alla base di Ponte Buggianese anziché tornare a Corte "
+         "170 km di distanza: è il motivo per cui il suo trasferimento in tabella pesa così poco sul totale. Se "
+         "a fine giornata dovesse invece rientrare alla base di Ponte Buggianese anziché tornare a Corte "
          "Francigena, il trasferimento si allunga e il prezzo va rivisto: ve lo confermiamo appena sappiamo "
-         "come si chiude la giornata."),
-        ("<b>Quanti siete.</b> Il Beluga porta 26 passeggeri più l'autista, e il prezzo qui sopra è per un mezzo. "
-         "Mandateci il numero esatto: se il gruppo supera i 26, serve un secondo minibus e il preventivo cambia."),
+         "come si chiude la giornata. Il trasferimento del Tourengo si concorda con Francesco, dipende da "
+         "dove si trova sabato."),
+        ("<b>Quanti siete.</b> Il Beluga porta 26 passeggeri più l'autista, il Tourengo 28 più l'autista: "
+         "insieme, fino a 54. Mandateci il numero esatto per confermare la ripartizione fra i due mezzi."),
         ("<b>Le strade del monte.</b> La salita alla Vetta Amiata è tutta tornanti e i centri storici di Santa "
          "Fiora e Arcidosso sono stretti: si scende ai piazzali all'ingresso dei borghi e si prosegue a piedi per "
-         "pochi minuti. Il nostro minibus da 7,64 m ci arriva, un autobus gran turismo no — è esattamente il "
-         "motivo per cui su questo giro conviene il mezzo piccolo. Se avete in mente una tappa precisa, diteci "
-         "quale e verifichiamo il punto di discesa prima di partire."),
-        ("<b>Il vitto del conducente.</b> Il pranzo di sabato resta sempre a carico del cliente: non lo "
-         "mettiamo a preventivo e non lo organizziamo noi. Se voleste tenere il mezzo anche la sera — una cena "
-         "sul monte, un rientro dopo le 20:00 — il conducente dovrebbe pernottare a Castel del Piano, anche "
-         "quello a vostro carico: fatecelo sapere per tempo. La soluzione più comoda, e quella che scelgono "
-         "quasi tutti i nostri clienti, è farlo mangiare nella stessa struttura del gruppo."),
-        ("<b>Per confermare ci servono</b> il numero dei passeggeri, l'ora di partenza che preferite per il "
-         "monte, un recapito WhatsApp di chi viaggia con il gruppo e i vostri dati di fatturazione."),
+         "pochi minuti. Il Beluga, 7,64 m, ci arriva senza problemi; il Tourengo, 7,86 m, dovrebbe passare "
+         "comunque, ma sui tratti più stretti verifichiamo il punto di discesa prima di partire, con il Beluga "
+         "che apre la strada. Se avete in mente una tappa precisa, diteci quale."),
+        ("<b>Il vitto dei conducenti.</b> Il pranzo di sabato resta sempre a carico del cliente per entrambi "
+         "gli autisti: non lo mettiamo a preventivo e non lo organizziamo noi. Se voleste tenere i mezzi anche "
+         "la sera — una cena sul monte, un rientro dopo le 20:00 — i conducenti dovrebbero pernottare a Castel "
+         "del Piano, anche quello a vostro carico: fatecelo sapere per tempo. La soluzione più comoda, e quella "
+         "che scelgono quasi tutti i nostri clienti, è farli mangiare nella stessa struttura del gruppo."),
+        ("<b>Per confermare ci servono</b> il numero dei passeggeri e come sono ripartiti fra i due mezzi, "
+         "l'ora di partenza che preferite per il monte, un recapito WhatsApp di chi viaggia con il gruppo e i "
+         "vostri dati di fatturazione."),
         ("<b>Disponibilità e cancellazione.</b> La cancellazione è gratuita oltre 60 giorni prima del servizio; "
          "da 60 a 30 giorni viene trattenuto l'acconto; da 30 a 10 giorni viene addebitato il 50% del prezzo; "
          "negli ultimi 10 giorni il 100%. Mancando meno di ventiquattr'ore al servizio, questa prenotazione "
          "ricade per intero nell'ultima fascia. Preventivo valido fino alle 20:00 del 21 agosto 2026, "
-         "che è il momento oltre il quale il mezzo non fa più in tempo a organizzarsi per domani."),
+         "che è il momento oltre il quale i mezzi non fanno più in tempo a organizzarsi per domani."),
     ],
-    closing=("Restiamo a disposizione per qualsiasi chiarimento e vi confermiamo l'orario di partenza appena "
-             "possibile.<br/><br/>"
+    closing=("Restiamo a disposizione per qualsiasi chiarimento e vi confermiamo l'orario di partenza e il "
+             "prezzo del Tourengo appena possibile.<br/><br/>"
              "Cordiali saluti,<br/>"
              "Girolamo Munna — GiroMunna NCC, Toscana · +39 335 587 4744 · info@giromunna.com"),
 )
@@ -182,20 +195,22 @@ EN = dict(
     title="Quotation",
     subtitle="A day on Monte Amiata  ·  Castel del Piano (GR)  ·  Saturday 22 August 2026",
     meta="Prepared for %s  ·  21 August 2026  ·  Ref. " + RIF,
-    h_mezzo="The vehicle",
+    h_mezzo="The vehicles",
     mezzo_intro=(
-        "One minibus with driver at your disposal for the whole day of Saturday 22 August, "
+        "Two minibuses with driver at your disposal for the whole day of Saturday 22 August, "
         "in Castel del Piano and on Monte Amiata."
     ),
     mezzo_bullet=(
         "<b>Mercedes-Benz Beluga</b> — 26 passenger seats plus driver, 7.64 m. Air conditioning, "
-        "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold."
+        "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.<br/>"
+        "<b>Mercedes-Benz Tourengo</b> — 28 passenger seats plus driver, 7.86 m. Second vehicle, from "
+        "Francesco Munna (Tuscany T.O. &amp; Munna Bus Operator)."
     ),
     mezzo_close=(
-        "At 7.64 m the Beluga climbs to the summit of Monte Amiata and reaches the parking areas of the "
-        "mountain villages, where a full-size coach cannot go: on these roads it is the right vehicle. "
-        "The price set out below is for <b>one vehicle</b>: we need the exact number of passengers to confirm "
-        "the group fits within the 26 seats."
+        "Together, the two vehicles carry up to 54 passengers. At 7.64 m the Beluga climbs to the summit "
+        "of Monte Amiata and reaches the parking areas of the mountain villages, where a full-size coach "
+        "cannot go: on these roads it is the right vehicle, and will lead the way for the Tourengo too. "
+        "We need the exact number of passengers to confirm how the group splits between the two vehicles."
     ),
     h_servizio="The service",
     svc_head=["Time", "Route", "Distance"],
@@ -223,20 +238,22 @@ EN = dict(
     ),
     h_prezzo="The price",
     price_rows=[
-        ("Sat 22 Aug — vehicle and driver at your disposal on Monte Amiata, about six hours 45",
+        ("Sat 22 Aug — Beluga: vehicle and driver at your disposal on Monte Amiata, about six hours 45",
          "€ 900.00", "+ VAT 10%"),
-        ("Vehicle travel to and from Corte Francigena, Castelnuovo dell'Abate (SI), about 34 km",
+        ("Beluga travel to and from Corte Francigena, Castelnuovo dell'Abate (SI), about 34 km",
          "€ 150.00", "+ VAT 10%"),
-        ("Driver's meals", "<i>at your charge</i>", ""),
+        ("Sat 22 Aug — Tourengo: vehicle and driver at your disposal on Monte Amiata",
+         "<i>to follow</i>", ""),
+        ("Both drivers' meals", "<i>at your charge</i>", ""),
     ],
-    price_total_label="Total, excluding VAT",
+    price_total_label="Beluga total, excluding VAT",
     price_total="€ 1,050.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 1,155.00.",
+    grand="Beluga total payable, VAT 10% included: € 1,155.00. We will confirm the Tourengo price shortly.",
     perhead=(
-        "The price is per vehicle, not per person: it does not change whether ten or twenty-five of you are on "
-        "board. The vehicle is already in the area on another job, so the transfer is short — please read the "
-        "note <i>The vehicle's journey from Corte Francigena</i>."
+        "The Beluga's price is per vehicle, not per person. The Beluga is already in the area on another "
+        "job, so its transfer is short — please read the note <i>The Beluga's journey from Corte "
+        "Francigena</i>. The Tourengo's price follows as soon as it is settled with its operator."
     ),
     h_incluso="Included.",
     incluso=(
@@ -254,43 +271,52 @@ EN = dict(
     h_pagamento="Payment",
     pay_rows=[
         ("On confirmation — no deposit, the service is less than 24 hours away", "€ 0.00", ""),
-        ("Single payment, by 26 August 2026", "€ 1,155.00", "VAT included"),
+        ("Beluga balance, by 26 August 2026", "€ 1,155.00", "VAT included"),
+        ("Tourengo balance, by 26 August 2026", "<i>to follow</i>", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
-        ("<b>First of all: confirmation by phone.</b> GiroMunna has one minibus. Girolamo will call you "
-         "shortly to confirm that vehicle and driver are free on Saturday: until that call, this quotation "
-         "is a price, not a booking."),
-        ("<b>The vehicle's journey from Corte Francigena.</b> The minibus is already engaged near Montalcino "
+        ("<b>First of all: confirmation by phone.</b> The Beluga is GiroMunna's own minibus; the Tourengo is "
+         "a second vehicle from Francesco Munna. Girolamo will call you shortly to confirm both are available "
+         "on Saturday: until that call, this quotation is a price, not a booking."),
+        ("<b>The second minibus.</b> The Tourengo — 28 seats plus driver, 7.86 m — comes from Francesco "
+         "Munna, who operates as Tuscany T.O. &amp; Munna Bus Operator. Its price for the day is being settled "
+         "with him and we will confirm it shortly: in the meantime, the Beluga part of this quotation is "
+         "already firm."),
+        ("<b>The Beluga's journey from Corte Francigena.</b> The minibus is already engaged near Montalcino "
          "and reaches Castel del Piano with a short hop, about 17 km, rather than from our base over 170 km "
-         "away: that is why the transfer line weighs so little on the total. Should the vehicle need to return "
-         "to the Ponte Buggianese base at the end of the day instead of going back to Corte Francigena, the "
-         "transfer grows and the price needs revising: we will confirm as soon as we know how the day closes."),
-        ("<b>How many of you there are.</b> The Beluga carries 26 passengers plus the driver, and the price above "
-         "is for one vehicle. Send us the exact number: if the group exceeds 26, a second minibus is needed and "
-         "the quotation changes."),
+         "away: that is why its transfer line weighs so little on the total. Should it need to return to the "
+         "Ponte Buggianese base at the end of the day instead of going back to Corte Francigena, the transfer "
+         "grows and the price needs revising: we will confirm as soon as we know how the day closes. The "
+         "Tourengo's transfer is being settled with Francesco, depending on where it is on Saturday."),
+        ("<b>How many of you there are.</b> The Beluga carries 26 passengers plus the driver, the Tourengo 28 "
+         "plus the driver: together, up to 54. Send us the exact number to confirm how the group splits "
+         "between the two vehicles."),
         ("<b>The mountain roads.</b> The climb to the summit of the Amiata is one hairpin after another, and the "
          "old centres of Santa Fiora and Arcidosso are narrow: you get off at the car parks at the entrance to "
-         "the villages and walk the last few minutes. Our 7.64 m minibus gets there, a full-size coach does not — "
-         "which is exactly why the small vehicle is the one to have on this round. If you have a particular stop "
-         "in mind, tell us which and we will check the drop-off point before we set off."),
-        ("<b>The driver's meals.</b> Saturday lunch always stays at the client's charge: we do not put it in "
-         "the quotation and we do not arrange it. Should you want to keep the vehicle for the evening too — "
-         "dinner on the mountain, a return after 20:00 — the driver would need to stay overnight in Castel del "
-         "Piano, also at your charge: let us know in good time. The easiest arrangement, and the one almost "
-         "all our clients choose, is to have him eat at the same property as the group."),
-        ("<b>To confirm we need</b> the number of passengers, your preferred departure time for the mountain, "
-         "a WhatsApp contact for the person travelling with the group, and your invoicing details."),
+         "the villages and walk the last few minutes. The Beluga, at 7.64 m, gets there without trouble; the "
+         "Tourengo, at 7.86 m, should manage too, but on the tightest stretches we will check the drop-off "
+         "point before we set off, with the Beluga leading the way. If you have a particular stop in mind, "
+         "tell us which."),
+        ("<b>The drivers' meals.</b> Saturday lunch always stays at the client's charge for both drivers: we "
+         "do not put it in the quotation and we do not arrange it. Should you want to keep the vehicles for "
+         "the evening too — dinner on the mountain, a return after 20:00 — the drivers would need to stay "
+         "overnight in Castel del Piano, also at your charge: let us know in good time. The easiest "
+         "arrangement, and the one almost all our clients choose, is to have them eat at the same property as "
+         "the group."),
+        ("<b>To confirm we need</b> the number of passengers and how they split between the two vehicles, "
+         "your preferred departure time for the mountain, a WhatsApp contact for the person travelling with "
+         "the group, and your invoicing details."),
         ("<b>Availability and cancellation.</b> Cancellation is free of charge more than 60 days before the "
          "service; from 60 to 30 days the deposit is retained; from 30 to 10 days 50% of the price is charged; in "
          "the last 10 days, 100%. With less than twenty-four hours to the service, this booking falls entirely "
-         "within the last band. Quotation valid until 20:00 on 21 August 2026, the point beyond which the vehicle "
-         "can no longer be organised in time for tomorrow."),
+         "within the last band. Quotation valid until 20:00 on 21 August 2026, the point beyond which the "
+         "vehicles can no longer be organised in time for tomorrow."),
     ],
-    closing=("We remain at your disposal for any clarification and will confirm the departure time as soon "
-             "as possible.<br/><br/>"
+    closing=("We remain at your disposal for any clarification and will confirm the departure time and the "
+             "Tourengo's price as soon as possible.<br/><br/>"
              "Kind regards,<br/>"
              "Girolamo Munna — GiroMunna NCC, Tuscany · +39 335 587 4744 · info@giromunna.com"),
 )
