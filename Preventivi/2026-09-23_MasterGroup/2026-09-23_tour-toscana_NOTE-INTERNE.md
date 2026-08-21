@@ -50,16 +50,20 @@ collina chiudono prima che d'estate.
 
 | Itinerario | Km mezzo | Netto | IVA inclusa | A persona |
 |---|---|---|---|---|
-| A · Firenze → Pisa → Lucca → Firenze | 320 | € 1.380,00 | € 1.518,00 | € 126,50 |
-| B · Firenze → Pisa → Siena → San Gimignano → Firenze | 470 | € 1.950,00 | € 2.145,00 | € 178,75 |
-| C · Firenze → Siena → San Gimignano → Monteriggioni → Firenze | 330 | € 1.550,00 | € 1.705,00 | € 142,08 |
-| D · Firenze → Montalcino → Pienza → Montepulciano → Firenze | 400 | € 1.620,00 | € 1.782,00 | € 148,50 |
+| A · Firenze → Pisa → Lucca → Firenze | 320 | € 1.750,00 | € 1.925,00 | € 160,42 |
+| B · Firenze → Pisa → Siena → San Gimignano → Firenze | 470 | € 2.150,00 | € 2.365,00 | € 197,08 |
+| C · Firenze → Siena → San Gimignano → Monteriggioni → Firenze | 330 | € 1.750,00 | € 1.925,00 | € 160,42 |
+| D · Firenze → Montalcino → Pienza → Montepulciano → Firenze | 400 | € 1.400,00 | € 1.540,00 | € 128,33 |
 | Navetta van A/R (opzionale) | — | *su richiesta* | — | — |
 | Vitto del conducente | — | a carico del cliente | — | — |
 
-Acconto 30%: da € 455,40 (itinerario A) a € 643,50 (itinerario B).
+Acconto 30%: da € 462,00 (itinerario D) a € 709,50 (itinerario B).
 
-## Come sono stati costruiti i prezzi
+**I prezzi li ha fissati Girolamo**, non il modello qui sotto. Il modello resta utile come
+riferimento per i preventivi futuri, ma per questo lavoro il listino è quello deciso da lui
+e il conto sotto serve solo a documentare da dove si era partiti.
+
+## Come erano stati costruiti i prezzi, e dove sono finiti
 
 Riferimento: **il preventivo Le Filigare (GM-2026-0821-LF)**, che è a mezzo singolo come
 questo. Riportato al netto: trasferimento di ~50 km € 500,00; giornata a disposizione di
@@ -96,12 +100,28 @@ Applicare € 2,60 ai chilometri da rimessa significherebbe **contare due volte*
 che sta già dentro i € 600 di base e dentro i prezzi di riferimento. Il conto qui sotto è
 quindi rimasto sui chilometri di percorso e **i prezzi non cambiano**.
 
-| | Base + km percorso | Accessi | Totale grezzo | Quotato |
-|---|---|---|---|---|
-| A · 195 km percorso, 320 da rimessa | € 1.107 | Pisa € 60 + Firenze € 235 | € 1.402 | € 1.380 |
-| B · 315 km percorso, 470 da rimessa | € 1.419 | Pisa € 60 + Siena € 160 + Firenze € 235 | € 1.874 | € 1.950 |
-| C · 205 km percorso, 330 da rimessa | € 1.133 | Siena € 160 + Firenze € 235 | € 1.528 | € 1.550 |
-| D · 270 km percorso, 400 da rimessa | € 1.302 | parcheggi Val d'Orcia ~€ 40 + Firenze € 235 | € 1.577 | € 1.620 |
+| | Base + km percorso | Accessi | Modello | **Deciso da Girolamo** | Delta |
+|---|---|---|---|---|---|
+| A · 195 km percorso, 320 da rimessa | € 1.107 | Pisa € 60 + Firenze € 235 | € 1.402 | **€ 1.750** | +€ 348 |
+| B · 315 km percorso, 470 da rimessa | € 1.419 | Pisa € 60 + Siena € 160 + Firenze € 235 | € 1.874 | **€ 2.150** | +€ 276 |
+| C · 205 km percorso, 330 da rimessa | € 1.133 | Siena € 160 + Firenze € 235 | € 1.528 | **€ 1.750** | +€ 222 |
+| D · 270 km percorso, 400 da rimessa | € 1.302 | parcheggi Val d'Orcia ~€ 40 + Firenze € 235 | € 1.577 | **€ 1.400** | −€ 177 |
+
+Girolamo ha alzato tre itinerari su quattro e abbassato il quarto. Visto per chilometro di
+mezzo il listino finale è questo:
+
+| | Netto | Km mezzo | € al km |
+|---|---|---|---|
+| A · Pisa e Lucca | € 1.750 | 320 | **€ 5,47** |
+| C · Siena, San Gimignano, Monteriggioni | € 1.750 | 330 | **€ 5,30** |
+| B · Pisa, Siena, San Gimignano | € 2.150 | 470 | **€ 4,57** |
+| D · Montalcino, Pienza, Montepulciano | € 1.400 | 400 | **€ 3,50** |
+
+⚠️ **D è l'itinerario più economico dei quattro pur essendo il secondo più lungo**, e sta a
+€ 3,50 al chilometro contro i € 5,47 di A: una differenza di oltre il 50%. Se è voluto —
+perché la Val d'Orcia è quasi tutta autostrada e superstrada, senza il tormento dei
+parcheggi di Pisa e Lucca, o perché è la giornata che si vuole spingere — va benissimo.
+Se invece è una svista di battitura, questo è il punto da correggere prima di mandare.
 
 B è tirato un po' sopra il calcolo perché è una giornata di dodici ore e mezza: le ore
 extra vanno pagate. A è tenuto appena sotto perché è la giornata più corta ed è quella che
@@ -121,8 +141,18 @@ giornata dell'autista, che su B e D è di dodici-tredici ore. Realisticamente si
 **€ 400-500 a giornata**, più gli oneri di accesso che qui sono compresi nel prezzo
 (€ 235-455 secondo l'itinerario).
 
-Anche così il margine regge bene su tutti e quattro: a spanne € 700-1.000 netti a giornata.
-A resta il più leggero in valore assoluto ed è quello su cui c'è meno spazio per trattare.
+Con il listino deciso da Girolamo, tolti gli oneri di accesso che sono compresi nel prezzo,
+resta questo per coprire costi e margine:
+
+| | Netto | − accessi | Resta | Margine stimato |
+|---|---|---|---|---|
+| A · Pisa e Lucca | € 1.750 | € 295 | € 1.455 | ~€ 1.000 |
+| B · Pisa, Siena, San Gimignano | € 2.150 | € 455 | € 1.695 | ~€ 1.200 |
+| C · Siena, San Gimignano, Monteriggioni | € 1.750 | € 395 | € 1.355 | ~€ 900 |
+| D · Montalcino, Pienza, Montepulciano | € 1.400 | € 275 | € 1.125 | ~€ 650 |
+
+Il margine regge su tutti e quattro. **D è però il più sottile di parecchio**, ed è anche
+quello con meno spazio se Master Group prova a trattare: su quello conviene non scendere.
 
 Nessun pernottamento del conducente: si parte e si torna a Firenze in giornata e la base di
 Ponte Buggianese è a ~50 km dal punto di carico. Sull'itinerario D, però, la giornata del
