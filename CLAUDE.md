@@ -7,10 +7,12 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
 
 - **Parlare sempre in italiano.** Girolamo non parla inglese: ogni risposta, spiegazione o
   messaggio va scritto in italiano.
-- **Ogni documento va prodotto in due versioni, italiana e inglese.** Vale per i preventivi,
-  le mail ai clienti e qualsiasi altro materiale destinato all'esterno: i clienti scrivono
-  spesso in inglese, ma la versione che Girolamo deve poter leggere è quella italiana.
-  Nessuna delle due sostituisce l'altra.
+- **Il documento si fa nella lingua del cliente.** Se il cliente è italiano — un'agenzia
+  italiana, una struttura italiana, chi scrive in italiano — si fa **solo l'italiano**: la
+  versione inglese non serve, non va prodotta e non va nemmeno proposta. Se il cliente è
+  straniero o scrive in inglese, si fanno **tutte e due le versioni**: quella inglese è per
+  lui, quella italiana serve a Girolamo per poter leggere quello che manda, e nessuna delle
+  due sostituisce l'altra. Nel dubbio si guarda in che lingua ha scritto il cliente.
 - **Quando Girolamo dice «prepara la mail» o «scrivi una mail», si scrive il testo.** Punto:
   il testo pronto, in italiano e in inglese, che lui copia e invia. Non serve nessuna
   premessa, nessun «però la regola dice», nessuna richiesta di conferma: è una richiesta
@@ -133,4 +135,5 @@ I file si consegnano sempre dentro la cartella del preventivo. Gli allegati in c
 una comodità in più, non il posto dove il lavoro va a finire.
 
 Lo script di un preventivo accetta `--lingua it|en` e `--cliente "Nome"` e produce il PDF
-corrispondente. Va eseguito per entrambe le lingue.
+corrispondente. Va eseguito nelle lingue che servono a quel cliente: per un cliente italiano
+solo `it`, per un cliente straniero tutte e due.

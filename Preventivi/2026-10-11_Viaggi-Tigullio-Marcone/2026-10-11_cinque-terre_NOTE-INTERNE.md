@@ -5,9 +5,13 @@
 
 File generati:
 - `GiroMunna_Preventivo_Cinque_Terre_11_ottobre_2026_IT.pdf`
-- `GiroMunna_Preventivo_Cinque_Terre_11_ottobre_2026_EN.pdf`
-- `genera_preventivo_cinque_terre.py` — rigenera entrambi i PDF
-- `preventivo_cinque_terre_11_ottobre_2026.html` — la pagina web bilingue
+- `2026-10-11_mail-risposta-a-Marcone.md` — il testo della mail, da copiare e inviare
+- `genera_preventivo_cinque_terre.py` — rigenera il PDF
+- `preventivo_cinque_terre_11_ottobre_2026.html` — la pagina web di lavoro
+
+**Solo italiano: Viaggi Tigullio Marcone è un'agenzia italiana e scrive in italiano.** La
+versione inglese del PDF non serve ed è stata tolta; se un domani servisse, la rigenera lo
+script con `--lingua en`.
 
 Tutto dentro `Preventivi/2026-10-11_Viaggi-Tigullio-Marcone/`.
 
@@ -15,7 +19,6 @@ Il cliente è già il valore predefinito dello script. Per rigenerare i due PDF:
 
 ```bash
 python3 genera_preventivo_cinque_terre.py --lingua it
-python3 genera_preventivo_cinque_terre.py --lingua en
 ```
 
 Con `--cliente "Altro Nome"` si cambia l'intestatario.
@@ -114,7 +117,7 @@ Girolamo ha fissato il prezzo a **€ 800,00 + IVA** (€ 880,00 IVA inclusa) e 
 della mail che lo comunica al cliente: `2026-10-11_mail-risposta-a-Marcone_IT-EN.md`, italiano e
 inglese. Nessuna bozza creata in Gmail, niente inviato: la mail la manda lui.
 
-**I due PDF e la pagina web sono stati rigenerati a € 800**, quindi mail e preventivo ora dicono
+**Il PDF e la pagina web sono stati rigenerati a € 800**, quindi mail e preventivo ora dicono
 la stessa cifra e si possono mandare insieme. Nel preventivo la nota sul budget è stata riscritta:
 non parla più di metà giornata, dice che € 800 + IVA è il minimo al quale la giornata si può
 fare, non un prezzo di partenza.
