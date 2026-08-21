@@ -48,12 +48,12 @@ collina chiudono prima che d'estate.
 
 ## Prezzi
 
-| Itinerario | Km | Netto | IVA inclusa | A persona |
+| Itinerario | Km mezzo | Netto | IVA inclusa | A persona |
 |---|---|---|---|---|
-| A · Firenze → Pisa → Lucca → Firenze | ~195 | € 1.380,00 | € 1.518,00 | € 126,50 |
-| B · Firenze → Pisa → Siena → San Gimignano → Firenze | ~315 | € 1.950,00 | € 2.145,00 | € 178,75 |
-| C · Firenze → Siena → San Gimignano → Monteriggioni → Firenze | ~205 | € 1.550,00 | € 1.705,00 | € 142,08 |
-| D · Firenze → Montalcino → Pienza → Montepulciano → Firenze | ~270 | € 1.620,00 | € 1.782,00 | € 148,50 |
+| A · Firenze → Pisa → Lucca → Firenze | 320 | € 1.380,00 | € 1.518,00 | € 126,50 |
+| B · Firenze → Pisa → Siena → San Gimignano → Firenze | 470 | € 1.950,00 | € 2.145,00 | € 178,75 |
+| C · Firenze → Siena → San Gimignano → Monteriggioni → Firenze | 330 | € 1.550,00 | € 1.705,00 | € 142,08 |
+| D · Firenze → Montalcino → Pienza → Montepulciano → Firenze | 400 | € 1.620,00 | € 1.782,00 | € 148,50 |
 | Navetta van A/R (opzionale) | — | *su richiesta* | — | — |
 | Vitto del conducente | — | a carico del cliente | — | — |
 
@@ -74,14 +74,34 @@ Da lì, e dalla scala già usata per Alvora (140 km e 8 ore → € 980; 250 km 
 Verifica sui riferimenti esistenti: 80 km → € 808; 140 km → € 964; 250 km → € 1.250.
 Torna.
 
-Applicata qui, più i permessi:
+### Attenzione: due misure diverse di chilometri
 
-| | Base + km | Accessi | Totale grezzo | Quotato |
+Girolamo ha corretto i chilometri: **320, 470, 330 e 400**, che sono quelli veri del mezzo
+da rimessa a rimessa — il percorso del cliente più il vuoto Ponte Buggianese-Firenze e
+ritorno (un centinaio di km) più gli spostamenti ai parcheggi bus durante le soste. Le mie
+stime — 195, 315, 205, 270 — erano il solo percorso del cliente, e come tali reggono: da
+Firenze a Pisa sono novanta chilometri, non c'è discussione.
+
+Nel preventivo e nella pagina web compaiono adesso **le cifre di Girolamo, dichiarate per
+quello che sono** ("chilometri percorsi dal mezzo, dalla rimessa al rientro"). Serviva
+dirlo: Master Group è un tour operator e se cerca Firenze-Pisa-Lucca-Firenze su una mappa
+trova 195 km, non 320. Dichiarata così, la cifra non è contestabile e anzi giustifica meglio
+il prezzo.
+
+**Il modello dei prezzi resta però ancorato ai chilometri di percorso, non a quelli di
+rimessa, ed è corretto così.** Il motivo: i preventivi di riferimento sono costruiti allo
+stesso modo. Le Filigare quota € 809,00 per una "giornata da ~80 km", ma San Donato in
+Poggio dista ~75 km dalla base, quindi quel prezzo si porta già dentro ~150 km di vuoto.
+Applicare € 2,60 ai chilometri da rimessa significherebbe **contare due volte** il vuoto,
+che sta già dentro i € 600 di base e dentro i prezzi di riferimento. Il conto qui sotto è
+quindi rimasto sui chilometri di percorso e **i prezzi non cambiano**.
+
+| | Base + km percorso | Accessi | Totale grezzo | Quotato |
 |---|---|---|---|---|
-| A · 195 km | € 1.107 | Pisa € 60 + Firenze € 235 | € 1.402 | € 1.380 |
-| B · 315 km | € 1.419 | Pisa € 60 + Siena € 160 + Firenze € 235 | € 1.874 | € 1.950 |
-| C · 205 km | € 1.133 | Siena € 160 + Firenze € 235 | € 1.528 | € 1.550 |
-| D · 270 km | € 1.302 | parcheggi Val d'Orcia ~€ 40 + Firenze € 235 | € 1.577 | € 1.620 |
+| A · 195 km percorso, 320 da rimessa | € 1.107 | Pisa € 60 + Firenze € 235 | € 1.402 | € 1.380 |
+| B · 315 km percorso, 470 da rimessa | € 1.419 | Pisa € 60 + Siena € 160 + Firenze € 235 | € 1.874 | € 1.950 |
+| C · 205 km percorso, 330 da rimessa | € 1.133 | Siena € 160 + Firenze € 235 | € 1.528 | € 1.550 |
+| D · 270 km percorso, 400 da rimessa | € 1.302 | parcheggi Val d'Orcia ~€ 40 + Firenze € 235 | € 1.577 | € 1.620 |
 
 B è tirato un po' sopra il calcolo perché è una giornata di dodici ore e mezza: le ore
 extra vanno pagate. A è tenuto appena sotto perché è la giornata più corta ed è quella che
@@ -92,10 +112,17 @@ la regola: quello è un lavoro a due mezzi con importi già scontati per volume.
 
 ## Margine
 
-Preventivo costruito sul **mezzo di proprietà** (Beluga). Costo diretto stimato € 250-350
-per giornata di servizio, cui vanno aggiunti gli oneri di accesso che qui sono compresi nel
-prezzo (€ 235-455 secondo l'itinerario). Il margine resta buono su tutti e quattro, ottimo
-su A e C.
+Preventivo costruito sul **mezzo di proprietà** (Beluga).
+
+I chilometri corretti da Girolamo obbligano a rifare anche questo conto: **la stima di
+€ 250-350 di costo diretto a giornata era ottimistica.** Su 320-470 km reali il solo gasolio
+vale € 140-240, cui si aggiungono i pedaggi (la A11 su A, la A1 della Valdichiana su D) e la
+giornata dell'autista, che su B e D è di dodici-tredici ore. Realisticamente si sta sui
+**€ 400-500 a giornata**, più gli oneri di accesso che qui sono compresi nel prezzo
+(€ 235-455 secondo l'itinerario).
+
+Anche così il margine regge bene su tutti e quattro: a spanne € 700-1.000 netti a giornata.
+A resta il più leggero in valore assoluto ed è quello su cui c'è meno spazio per trattare.
 
 Nessun pernottamento del conducente: si parte e si torna a Firenze in giornata e la base di
 Ponte Buggianese è a ~50 km dal punto di carico. Sull'itinerario D, però, la giornata del

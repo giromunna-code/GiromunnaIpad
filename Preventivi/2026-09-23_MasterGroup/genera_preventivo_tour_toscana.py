@@ -124,37 +124,40 @@ IT = dict(
          "fino a Pisa con arrivo verso le 09:45; il mezzo sosta al terminal bus di Via Pietrasantina, dieci minuti a "
          "piedi da Piazza dei Miracoli. Ripartenza alle 12:30 e 25 km fino a Lucca, dove si sosta fuori dalle mura e "
          "si entra in centro a piedi. Rientro alle 17:30, 80 km di autostrada, a Firenze verso le 18:45. "
-         "<b>Circa 195 km.</b>",
+         "<b>In tutto circa 320 km per il mezzo.</b>",
          "circa<br/>08:30 – 19:00"),
         ("B<br/>Pisa, Siena e<br/>San Gimignano",
          "<b>Firenze → Pisa → Siena → San Gimignano → Firenze.</b> Partenza alle 07:30: novanta chilometri fino a "
          "Pisa, poi 125 km attraversando la Toscana fino a Siena, 45 km a San Gimignano e 55 km di rientro. Quattro "
          "tappe e oltre cinque ore di sola guida, cui vanno aggiunte le soste. È di gran lunga la giornata più lunga "
-         "delle quattro: nelle note vi spieghiamo perché vi conviene alleggerirla. <b>Circa 315 km.</b>",
+         "delle quattro: nelle note vi spieghiamo perché vi conviene alleggerirla. <b>In tutto circa 470 km per il mezzo.</b>",
          "circa<br/>07:30 – 20:00"),
         ("C<br/>Siena, San Gimignano<br/>e Monteriggioni",
          "<b>Firenze → Siena → San Gimignano → Monteriggioni → Firenze.</b> Partenza alle 08:30 e 75 km fino a Siena; "
          "poi 45 km a San Gimignano, 30 km a Monteriggioni e 55 km di rientro, in città verso le 19:00. Vi proponiamo "
          "di girare l'ordine delle tappe, mettendo Monteriggioni per primo: nelle note trovate il perché. "
-         "<b>Circa 205 km, che diventano 170 nell'ordine che consigliamo.</b>",
+         "<b>In tutto circa 330 km per il mezzo, che scendono a 295 nell'ordine che consigliamo.</b>",
          "circa<br/>08:30 – 19:00"),
         ("D<br/>Montalcino, Pienza<br/>e Montepulciano",
          "<b>Firenze → Montalcino → Pienza → Montepulciano → Firenze.</b> Partenza alle 08:00 e 110 km fino a "
          "Montalcino, arrivo verso le 09:45. Venticinque chilometri a Pienza e altri 15 a Montepulciano, nel cuore "
          "della Val d'Orcia; rientro dall'autostrada della Valdichiana, 120 km, a Firenze verso le 19:45. La giornata "
-         "più bella delle quattro e la più impegnativa a piedi: tre borghi in collina. <b>Circa 270 km.</b>",
+         "più bella delle quattro e la più impegnativa a piedi: tre borghi in collina. <b>In tutto circa 400 km per il mezzo.</b>",
          "circa<br/>08:00 – 20:00"),
     ],
-    svc_note=("Distanze e tempi di percorrenza sono stime stradali, traffico escluso. Gli orari sono la nostra "
+    svc_note=("I chilometri di ogni giornata sono quelli percorsi dal mezzo per intero, dalla nostra rimessa di "
+              "Ponte Buggianese al rientro, e comprendono anche gli spostamenti ai parcheggi bus autorizzati durante "
+              "le soste: il percorso che farete voi è naturalmente più corto, ed è quello indicato tappa per tappa "
+              "qui sopra. I tempi di percorrenza sono stime stradali, traffico escluso, e gli orari sono la nostra "
               "proposta: li ricalcoliamo volentieri sull'ora di partenza che preferite."),
 
     h_prezzo="Il prezzo",
     price_head=["Itinerario — una giornata intera, tutto compreso", "Al netto", "IVA 10% inclusa"],
     price_rows=[
-        ("<b>A</b> · Firenze → Pisa → Lucca → Firenze — circa 195 km", "€ 1.380,00", "€ 1.518,00"),
-        ("<b>B</b> · Firenze → Pisa → Siena → San Gimignano → Firenze — circa 315 km", "€ 1.950,00", "€ 2.145,00"),
-        ("<b>C</b> · Firenze → Siena → San Gimignano → Monteriggioni → Firenze — circa 205 km", "€ 1.550,00", "€ 1.705,00"),
-        ("<b>D</b> · Firenze → Montalcino → Pienza → Montepulciano → Firenze — circa 270 km", "€ 1.620,00", "€ 1.782,00"),
+        ("<b>A</b> · Firenze → Pisa → Lucca → Firenze — circa 320 km", "€ 1.380,00", "€ 1.518,00"),
+        ("<b>B</b> · Firenze → Pisa → Siena → San Gimignano → Firenze — circa 470 km", "€ 1.950,00", "€ 2.145,00"),
+        ("<b>C</b> · Firenze → Siena → San Gimignano → Monteriggioni → Firenze — circa 330 km", "€ 1.550,00", "€ 1.705,00"),
+        ("<b>D</b> · Firenze → Montalcino → Pienza → Montepulciano → Firenze — circa 400 km", "€ 1.620,00", "€ 1.782,00"),
         ("Navetta van fra l'hotel e il punto di carico, andata e ritorno — <i>opzionale</i>",
          "<i>su richiesta</i>", "—"),
         ("Vitto del conducente", "<i>a carico vostro</i>", "—"),
@@ -210,7 +213,8 @@ IT = dict(
          "i giorni, per noi va benissimo lo stesso. L'importante è che qualcuno la prenoti: da Via Ricasoli a Piazza "
          "Vittorio Veneto a piedi sono 2,5 km, e la mattina presto con la famiglia non è la partenza che vi augurate."),
         ("<b>L'itinerario B chiede troppo a una giornata sola.</b> Pisa sta a ovest, Siena e San Gimignano a sud: "
-         "metterli insieme significa 315 chilometri e oltre cinque ore di sola guida, cui vanno aggiunte le soste. "
+         "metterli insieme significa 470 chilometri per il mezzo e oltre cinque ore di sola guida, cui vanno "
+         "aggiunte le soste. "
          "Partendo alle 07:30 si rientra verso le 20:00, e in mezzo restano due ore a Pisa, tre a Siena — pranzo "
          "compreso — e due a San Gimignano: il minimo per tre luoghi di quel calibro. Dodici ore e mezza fuori, per "
          "una famiglia, sono tante. Ve lo quotiamo lo stesso perché ce lo avete "
@@ -219,7 +223,7 @@ IT = dict(
         ("<b>L'itinerario C conviene girarlo.</b> Monteriggioni si trova sulla superstrada Firenze-Siena, "
          "praticamente sulla strada dell'andata, mentre nell'ordine che ci avete indicato ci si arriva tornando "
          "indietro da San Gimignano. Facendo Firenze → Monteriggioni → Siena → San Gimignano → Firenze si scende a "
-         "170 km invece di 205 e si guadagna quasi un'ora, che sul posto vale molto più che in autostrada. "
+         "circa 295 km invece di 330 e si guadagna quasi un'ora, che sul posto vale molto più che in autostrada. "
          "Il prezzo non cambia: € 1.550,00 in entrambi i casi."),
         ("<b>I borghi si guadagnano a piedi.</b> Siena, San Gimignano, Monteriggioni, Montalcino, Pienza e "
          "Montepulciano hanno tutti il centro storico chiuso ai bus: si scende ai parcheggi autorizzati appena fuori "
