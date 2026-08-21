@@ -1,0 +1,999 @@
+<title>Preventivo — Tour della Toscana in giornata, 12 pax</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+  .day.released { background: transparent; border-style: dashed; border-color: var(--line-strong); }
+  .day.released .day-date { color: var(--ink-soft); }
+  .day.released .badge { color: var(--ink-soft); background: transparent; border-color: var(--line-strong); }
+  .day.released p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<div class="wrap lang" data-lang="it">
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Tour della Toscana in giornata
+      <span class="sub">Quattro itinerari a scelta · carico e scarico all'Hotel Adamas, Firenze</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Cliente</span><span class="v">Master Group T.O.</span></div>
+      <div class="fact"><span class="eyebrow">Data</span><span class="v">da confermare</span></div>
+      <div class="fact"><span class="eyebrow">Passeggeri</span><span class="v">12</span></div>
+      <div class="fact"><span class="eyebrow">Itinerari</span><span class="v">4, se ne sceglie uno</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2026-0821-MG</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">20 settembre 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Il mezzo</h2>
+    <p class="lede">Un minibus con conducente per il gruppo di 12 persone, a disposizione per l'intera giornata, con lo stesso autista dalla partenza al rientro.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista, 7,64 m</span>
+      <p>Aria condizionata, sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.</p>
+      <p>Con 12 ospiti a bordo ognuno viaggia con il sedile accanto libero e le borse restano nel vano bagagli invece che fra i piedi. I 7,64 metri entrano nei piazzali di San Gimignano, Monteriggioni e Montepulciano dove un gran turismo da 13 metri non passa, e a Firenze rientrano nella fascia di permesso sotto gli 8 metri, che costa meno.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il punto di carico</h2>
+    <p class="lede">È il punto vero della richiesta. La ZTL bus di Firenze copre tutto il centro abitato, ventiquattro ore su ventiquattro, tutti i giorni dell'anno, e riguarda ogni veicolo per trasporto passeggeri con più di nove posti: il nostro minibus da 26 come uno sprinter da 12 o da 16. Sotto l'hotel non si carica. Ecco come si risolve.</p>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Soluzione</th>
+            <th scope="col">Come funziona</th>
+            <th scope="col" class="num">Costo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Navetta van</strong><br><span class="svc-date">la consigliamo</span></td>
+            <td>Due van fino a nove posti — che nella ZTL entrano regolarmente — prendono il gruppo davanti all'hotel e lo portano al minibus in Piazza Vittorio Veneto: dieci minuti. Lo stesso servizio a fine giornata.</td>
+            <td class="num">€ 320,00<br><span class="vat">+ IVA · andata e ritorno</span></td>
+          </tr>
+          <tr>
+            <td><strong>Taxi dal ricevimento</strong></td>
+            <td>Tre taxi per dodici persone, stesso percorso: anche i taxi in ZTL entrano. Li prenota il ricevimento dell'Adamas la sera prima, si pagano direttamente sul posto.</td>
+            <td class="num">circa € 20,00<br><span class="vat">a taxi, a tratta</span></td>
+          </tr>
+          <tr>
+            <td><strong>A piedi, solo la sera</strong></td>
+            <td>Al rientro il minibus lascia il gruppo in Piazza Savonarola, il punto autorizzato più vicino all'hotel: 1,4 km, una ventina di minuti a piedi. Solo discesa e solo fra le 08:00 e le 20:00.</td>
+            <td class="num">senza costi</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Il ritrovo del mattino è in <strong>Piazza Vittorio Veneto</strong>, all'altezza del Ponte della Vittoria: è autorizzato al carico e allo scarico ventiquattro ore su ventiquattro, senza le limitazioni di orario o di tipo di servizio che gravano sugli altri punti vicini al centro.</p>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Distanze e tempi di percorrenza sono stime stradali, traffico escluso. Gli orari sono una proposta e si ricalcolano sull'ora di partenza preferita.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">A <span class="wd">· Pisa e Lucca</span></span>
+          <span class="badge">circa 195 km</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">08:30</span>
+            <span class="r">Piazza Vittorio Veneto, Firenze <span class="to">→ Pisa</span></span>
+            <span class="d">90 km · 1 h 15</span>
+          </div>
+          <div class="leg">
+            <span class="t">12:30</span>
+            <span class="r">Pisa <span class="to">→ Lucca</span></span>
+            <span class="d">25 km · 35 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:30</span>
+            <span class="r">Lucca <span class="to">→ Firenze</span></span>
+            <span class="d">80 km · 1 h 15</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 08:30 – 19:00. A Pisa si sosta al terminal bus di Via Pietrasantina, dieci minuti a piedi da Piazza dei Miracoli; a Lucca fuori dalle mura. La più leggera delle quattro giornate.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">B <span class="wd">· Pisa, Siena e San Gimignano</span></span>
+          <span class="badge">circa 315 km</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">07:30</span>
+            <span class="r">Piazza Vittorio Veneto, Firenze <span class="to">→ Pisa</span></span>
+            <span class="d">90 km · 1 h 15</span>
+          </div>
+          <div class="leg">
+            <span class="t">10:45</span>
+            <span class="r">Pisa <span class="to">→ Siena</span></span>
+            <span class="d">125 km · 1 h 50</span>
+          </div>
+          <div class="leg">
+            <span class="t">15:35</span>
+            <span class="r">Siena <span class="to">→ San Gimignano</span></span>
+            <span class="d">45 km · 1 h</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:35</span>
+            <span class="r">San Gimignano <span class="to">→ Firenze</span></span>
+            <span class="d">55 km · 1 h 05</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 07:30 – 20:00, oltre cinque ore di sola guida. Restano due ore a Pisa, tre a Siena e due a San Gimignano: nelle note spieghiamo perché conviene alleggerire questa giornata.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">C <span class="wd">· Siena, San Gimignano e Monteriggioni</span></span>
+          <span class="badge">circa 205 km</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">08:30</span>
+            <span class="r">Piazza Vittorio Veneto, Firenze <span class="to">→ Siena</span></span>
+            <span class="d">75 km · 1 h 15</span>
+          </div>
+          <div class="leg">
+            <span class="t">12:45</span>
+            <span class="r">Siena <span class="to">→ San Gimignano</span></span>
+            <span class="d">45 km · 1 h</span>
+          </div>
+          <div class="leg">
+            <span class="t">16:30</span>
+            <span class="r">San Gimignano <span class="to">→ Monteriggioni</span></span>
+            <span class="d">30 km · 45 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:05</span>
+            <span class="r">Monteriggioni <span class="to">→ Firenze</span></span>
+            <span class="d">55 km · 55 min</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 08:30 – 19:00. <strong>Nell'ordine che consigliamo</strong> — Firenze → Monteriggioni → Siena → San Gimignano → Firenze — la giornata scende a 170 km e restituisce quasi un'ora sul posto, allo stesso prezzo.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">D <span class="wd">· Montalcino, Pienza e Montepulciano</span></span>
+          <span class="badge">circa 270 km</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">08:00</span>
+            <span class="r">Piazza Vittorio Veneto, Firenze <span class="to">→ Montalcino</span></span>
+            <span class="d">110 km · 1 h 45</span>
+          </div>
+          <div class="leg">
+            <span class="t">12:30</span>
+            <span class="r">Montalcino <span class="to">→ Pienza</span></span>
+            <span class="d">25 km · 35 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">15:45</span>
+            <span class="r">Pienza <span class="to">→ Montepulciano</span></span>
+            <span class="d">15 km · 25 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:00</span>
+            <span class="r">Montepulciano <span class="to">→ Firenze</span></span>
+            <span class="d">120 km · 1 h 45</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 08:00 – 20:00. Tre borghi della Val d'Orcia, tutti in collina: la giornata più bella e la più impegnativa a piedi.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Itinerario — una giornata intera, tutto compreso</th>
+            <th scope="col" class="num">Al netto</th>
+            <th scope="col" class="num">IVA 10% inclusa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">A · circa 195 km</span>Firenze → Pisa → Lucca → Firenze</td>
+            <td class="num">€ 1.380,00</td>
+            <td class="num"><strong>€ 1.518,00</strong></td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">B · circa 315 km</span>Firenze → Pisa → Siena → San Gimignano → Firenze</td>
+            <td class="num">€ 1.950,00</td>
+            <td class="num"><strong>€ 2.145,00</strong></td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">C · circa 205 km</span>Firenze → Siena → San Gimignano → Monteriggioni → Firenze</td>
+            <td class="num">€ 1.550,00</td>
+            <td class="num"><strong>€ 1.705,00</strong></td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">D · circa 270 km</span>Firenze → Montalcino → Pienza → Montepulciano → Firenze</td>
+            <td class="num">€ 1.620,00</td>
+            <td class="num"><strong>€ 1.782,00</strong></td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">opzionale</span>Navetta van fra l'hotel e il punto di carico, andata e ritorno</td>
+            <td class="num">€ 320,00</td>
+            <td class="num"><strong>€ 352,00</strong></td>
+          </tr>
+          <tr>
+            <td>Vitto del conducente</td>
+            <td class="num vat"><em>a carico del cliente</em></td>
+            <td class="num vat">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Si conferma un itinerario solo, IVA 10% inclusa
+        <small>da € 126,50 a € 178,75 a persona, in dodici</small>
+      </span>
+      <span class="fig">€ 1.518 – 2.145</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Acconto 30% alla conferma</td>
+            <td class="num"><strong>€ 455,40 – € 643,50</strong></td>
+            <td class="num vat">secondo l'itinerario scelto</td>
+          </tr>
+          <tr>
+            <td>Saldo, entro 5 giorni dal servizio</td>
+            <td class="num"><strong>il restante 70%</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Mezzo e conducente per l'intera giornata, carburante, pedaggi autostradali, assicurazione completa e movimentazione bagagli. Sono compresi anche tutti gli oneri di accesso: il permesso ZTL bus di Firenze, che il mezzo paga nella fascia sotto gli 8 metri; il parcheggio bus di Pisa negli itinerari A e B; il permesso comunale per i bus turistici di Siena negli itinerari B e C; i parcheggi autorizzati dei borghi della Val d'Orcia nell'itinerario D.</li>
+      <li><strong>Non incluso.</strong> Il vitto del conducente, che resta a carico del cliente. Ingressi ai monumenti, guide, degustazioni, pasti e mance. La navetta van da e per l'hotel, che è voce opzionale del listino. Attesa oltre gli orari concordati, € 50,00 all'ora. Soste aggiuntive o modifiche all'itinerario decise in corso di giornata, quotate a parte. Rientro dopo le 02:00, € 250,00.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Note</h2>
+    <ul class="conds">
+      <li><strong>Sotto l'hotel non si carica, e non è una questione del mezzo.</strong> La ZTL bus di Firenze vale su tutto il centro abitato, ventiquattro ore su ventiquattro, e comprende qualsiasi veicolo per trasporto passeggeri oltre i nove posti. Via Ricasoli, poi, è stretta e a due passi dal Duomo. Il punto autorizzato più vicino all'Adamas fra quelli che consentono anche la salita è Piazza Vittorio Veneto, verso le Cascine, a circa 2,5 km. Piazza Savonarola è più vicina — 1,4 km — ma è autorizzata alla sola discesa e solo dalle 08:00 alle 20:00.</li>
+      <li><strong>La navetta van: sì, la organizziamo.</strong> I veicoli fino a nove posti non ricadono nella ZTL bus e arrivano davanti all'hotel: per dodici persone servono due van, dieci minuti fino al minibus. Quotata € 320,00 + IVA andata e ritorno. I van non sono mezzi GiroMunna: si mettono a disposizione tramite un collega di Firenze e si confermano insieme alla prenotazione.</li>
+      <li><strong>L'itinerario B chiede troppo a una giornata sola.</strong> Pisa sta a ovest, Siena e San Gimignano a sud: 315 chilometri e oltre cinque ore di sola guida. Partendo alle 07:30 si rientra verso le 20:00 con due ore a Pisa, tre a Siena e due a San Gimignano. Il consiglio è togliere Pisa — e si ha l'itinerario C — oppure abbinare Pisa a Lucca, che è l'itinerario A.</li>
+      <li><strong>L'itinerario C conviene girarlo.</strong> Monteriggioni si trova sulla superstrada Firenze-Siena, praticamente sulla strada dell'andata. Firenze → Monteriggioni → Siena → San Gimignano → Firenze fa 170 km invece di 205 e guadagna quasi un'ora. Il prezzo non cambia.</li>
+      <li><strong>I borghi si guadagnano a piedi.</strong> Siena, San Gimignano, Monteriggioni, Montalcino, Pienza e Montepulciano hanno tutti il centro storico chiuso ai bus. A Montepulciano la salita dal parcheggio a Piazza Grande è ripida e dura una ventina di minuti. Se nella famiglia ci sono persone anziane o bambini piccoli, va detto prima di confermare.</li>
+      <li><strong>Vitto del conducente, e nessun pernottamento.</strong> Si parte e si torna a Firenze in giornata, quindi non c'è nessuna notte da prenotare. Resta il pranzo, a carico del cliente come da condizioni: non si mette a preventivo perché non lo organizza GiroMunna.</li>
+      <li><strong>Per confermare serve prima di tutto la data.</strong> Il minibus è uno solo e in alta stagione le giornate si esauriscono con settimane di anticipo. I prezzi sono riferiti a una giornata di media stagione. Servono poi l'itinerario scelto, l'ora di partenza, il numero definitivo di passeggeri, se si vuole la navetta van, un recapito WhatsApp di chi viaggia con la famiglia e i dati di fatturazione.</li>
+      <li><strong>Disponibilità e cancellazione.</strong> La prenotazione diventa definitiva alla ricezione dell'acconto. Cancellazione gratuita oltre 60 giorni; da 60 a 30 giorni viene trattenuto l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%. Preventivo valido fino al 20 settembre 2026.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Uso interno — non fa parte del preventivo</div>
+    <h2>Da chiarire prima di rispondere</h2>
+    <p>Il preventivo è già completo e si può mandare così. Questi sono i punti da tenere d'occhio.</p>
+    <ol>
+      <li><strong>La data manca del tutto.</strong> È il buco più grosso: senza giorno non si blocca il mezzo e non si sa nemmeno se cade in alta stagione. Il riferimento <code>GM-2026-0821-MG</code> porta la data del preventivo, non del servizio: quando arriva il giorno va rifatto e va rinominata la cartella.</li>
+      <li><strong>I van non sono nostri.</strong> Vanno concordati con un collega di Firenze prima di impegnarsi sui € 320,00. Se si preferisce non impegnarsi, si tolgono dal listino la riga della navetta e la seconda nota, e resta la soluzione taxi.</li>
+      <li><strong>Master Group è un tour operator</strong>, quindi rivende con il suo ricarico e proverà a trattare. I prezzi sono tenuti alti apposta.</li>
+      <li><strong>Il permesso ZTL bus di Firenze</strong> va verificato a ridosso della data: la tariffa dipende dalla classe ambientale e cambia nel tempo.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2026-0821-MG · 21 agosto 2026</span>
+  </footer>
+
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Full-day tour of Tuscany
+      <span class="sub">Four itineraries to choose from · pick-up and drop-off for Hotel Adamas, Florence</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Client</span><span class="v">Master Group T.O.</span></div>
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">to be confirmed</span></div>
+      <div class="fact"><span class="eyebrow">Passengers</span><span class="v">12</span></div>
+      <div class="fact"><span class="eyebrow">Itineraries</span><span class="v">4, one is chosen</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2026-0821-MG</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">20 September 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicle</h2>
+    <p class="lede">One minibus with driver for the group of 12, at their disposal for the whole day, with the same driver from departure to return.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus driver, 7.64 m</span>
+      <p>Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.</p>
+      <p>With 12 guests on board everyone travels with the seat beside them free and bags stay in the hold rather than around people's feet. At 7.64 m it reaches the coach bays at San Gimignano, Monteriggioni and Montepulciano where a 13-metre coach cannot go, and in Florence it falls into the under-8-metre permit band, which costs less.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The pick-up point</h2>
+    <p class="lede">This is the real substance of the enquiry. Florence's coach ZTL covers the entire built-up area, twenty-four hours a day, every day of the year, and applies to any passenger vehicle with more than nine seats: our 26-seat minibus just as much as a 12- or 16-seat Sprinter. There is no picking up at the hotel door. Here is how it is solved.</p>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Option</th>
+            <th scope="col">How it works</th>
+            <th scope="col" class="num">Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Van shuttle</strong><br><span class="svc-date">our recommendation</span></td>
+            <td>Two vans of up to nine seats — which are allowed into the ZTL — collect the group outside the hotel and take them to the minibus at Piazza Vittorio Veneto: ten minutes. The same service at the end of the day.</td>
+            <td class="num">€ 320.00<br><span class="vat">+ VAT · return</span></td>
+          </tr>
+          <tr>
+            <td><strong>Taxis, booked by reception</strong></td>
+            <td>Three taxis for twelve people, same route: taxis are also allowed into the ZTL. Reception at the Adamas books them the evening before and they are paid directly on the spot.</td>
+            <td class="num">about € 20.00<br><span class="vat">per taxi, each way</span></td>
+          </tr>
+          <tr>
+            <td><strong>On foot, evening only</strong></td>
+            <td>On the way back the minibus sets the group down at Piazza Savonarola, the authorised point nearest the hotel: 1.4 km, about twenty minutes on foot. Setting down only, and only between 08:00 and 20:00.</td>
+            <td class="num">no charge</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The morning meeting point is <strong>Piazza Vittorio Veneto</strong>, by Ponte della Vittoria: it is authorised for both picking up and setting down twenty-four hours a day, without the restrictions on hours or type of service that apply to the other points near the centre.</p>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">Distances and journey times are road estimates, traffic excluded. The times shown are a proposal and can be recalculated around any preferred departure time.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">A <span class="wd">· Pisa and Lucca</span></span>
+          <span class="badge">about 195 km</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">08:30</span>
+            <span class="r">Piazza Vittorio Veneto, Florence <span class="to">→ Pisa</span></span>
+            <span class="d">90 km · 1 h 15</span>
+          </div>
+          <div class="leg">
+            <span class="t">12:30</span>
+            <span class="r">Pisa <span class="to">→ Lucca</span></span>
+            <span class="d">25 km · 35 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:30</span>
+            <span class="r">Lucca <span class="to">→ Florence</span></span>
+            <span class="d">80 km · 1 h 15</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 08:30 – 19:00. In Pisa the vehicle waits at the Via Pietrasantina coach terminal, ten minutes on foot from Piazza dei Miracoli; in Lucca outside the walls. The lightest of the four days.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">B <span class="wd">· Pisa, Siena and San Gimignano</span></span>
+          <span class="badge">about 315 km</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">07:30</span>
+            <span class="r">Piazza Vittorio Veneto, Florence <span class="to">→ Pisa</span></span>
+            <span class="d">90 km · 1 h 15</span>
+          </div>
+          <div class="leg">
+            <span class="t">10:45</span>
+            <span class="r">Pisa <span class="to">→ Siena</span></span>
+            <span class="d">125 km · 1 h 50</span>
+          </div>
+          <div class="leg">
+            <span class="t">15:35</span>
+            <span class="r">Siena <span class="to">→ San Gimignano</span></span>
+            <span class="d">45 km · 1 h</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:35</span>
+            <span class="r">San Gimignano <span class="to">→ Florence</span></span>
+            <span class="d">55 km · 1 h 05</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 07:30 – 20:00, over five hours of driving alone. That leaves two hours in Pisa, three in Siena and two in San Gimignano: the notes explain why this day is worth lightening.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">C <span class="wd">· Siena, San Gimignano and Monteriggioni</span></span>
+          <span class="badge">about 205 km</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">08:30</span>
+            <span class="r">Piazza Vittorio Veneto, Florence <span class="to">→ Siena</span></span>
+            <span class="d">75 km · 1 h 15</span>
+          </div>
+          <div class="leg">
+            <span class="t">12:45</span>
+            <span class="r">Siena <span class="to">→ San Gimignano</span></span>
+            <span class="d">45 km · 1 h</span>
+          </div>
+          <div class="leg">
+            <span class="t">16:30</span>
+            <span class="r">San Gimignano <span class="to">→ Monteriggioni</span></span>
+            <span class="d">30 km · 45 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:05</span>
+            <span class="r">Monteriggioni <span class="to">→ Florence</span></span>
+            <span class="d">55 km · 55 min</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 08:30 – 19:00. <strong>In the order we recommend</strong> — Florence → Monteriggioni → Siena → San Gimignano → Florence — the day comes down to 170 km and gives back almost an hour on the ground, at the same price.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">D <span class="wd">· Montalcino, Pienza and Montepulciano</span></span>
+          <span class="badge">about 270 km</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">08:00</span>
+            <span class="r">Piazza Vittorio Veneto, Florence <span class="to">→ Montalcino</span></span>
+            <span class="d">110 km · 1 h 45</span>
+          </div>
+          <div class="leg">
+            <span class="t">12:30</span>
+            <span class="r">Montalcino <span class="to">→ Pienza</span></span>
+            <span class="d">25 km · 35 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">15:45</span>
+            <span class="r">Pienza <span class="to">→ Montepulciano</span></span>
+            <span class="d">15 km · 25 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:00</span>
+            <span class="r">Montepulciano <span class="to">→ Florence</span></span>
+            <span class="d">120 km · 1 h 45</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 08:00 – 20:00. Three Val d'Orcia towns, all on hilltops: the finest of the four days and the most demanding on foot.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Itinerary — one full day, everything included</th>
+            <th scope="col" class="num">Excl. VAT</th>
+            <th scope="col" class="num">VAT 10% included</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">A · about 195 km</span>Florence → Pisa → Lucca → Florence</td>
+            <td class="num">€ 1,380.00</td>
+            <td class="num"><strong>€ 1,518.00</strong></td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">B · about 315 km</span>Florence → Pisa → Siena → San Gimignano → Florence</td>
+            <td class="num">€ 1,950.00</td>
+            <td class="num"><strong>€ 2,145.00</strong></td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">C · about 205 km</span>Florence → Siena → San Gimignano → Monteriggioni → Florence</td>
+            <td class="num">€ 1,550.00</td>
+            <td class="num"><strong>€ 1,705.00</strong></td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">D · about 270 km</span>Florence → Montalcino → Pienza → Montepulciano → Florence</td>
+            <td class="num">€ 1,620.00</td>
+            <td class="num"><strong>€ 1,782.00</strong></td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">optional</span>Van shuttle between the hotel and the pick-up point, return</td>
+            <td class="num">€ 320.00</td>
+            <td class="num"><strong>€ 352.00</strong></td>
+          </tr>
+          <tr>
+            <td>Driver's meals</td>
+            <td class="num vat"><em>at the client's charge</em></td>
+            <td class="num vat">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Only one itinerary is confirmed, VAT 10% included
+        <small>from € 126.50 to € 178.75 per person, split twelve ways</small>
+      </span>
+      <span class="fig">€ 1,518 – 2,145</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Deposit 30% on confirmation</td>
+            <td class="num"><strong>€ 455.40 – € 643.50</strong></td>
+            <td class="num vat">depending on the itinerary</td>
+          </tr>
+          <tr>
+            <td>Balance, within 5 days of the service</td>
+            <td class="num"><strong>the remaining 70%</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Vehicle and driver for the whole day, fuel, motorway tolls, full insurance and luggage handling. All access charges are included too: the Florence coach ZTL permit, which the vehicle pays in the under-8-metre band; the Pisa coach park on itineraries A and B; the municipal tourist coach permit for Siena on itineraries B and C; the authorised coach parks of the Val d'Orcia towns on itinerary D.</li>
+      <li><strong>Not included.</strong> The driver's meals, which remain at the client's charge. Entrance fees, guides, tastings, meals and gratuities. The van shuttle to and from the hotel, which is an optional line in the price list. Waiting beyond the agreed times, € 50.00 per hour. Additional stops or changes to the itinerary decided during the day, quoted separately. Return after 02:00, € 250.00.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <ul class="conds">
+      <li><strong>There is no picking up at the hotel door, and it is not a question of the vehicle.</strong> Florence's coach ZTL applies across the whole built-up area, twenty-four hours a day, and covers any passenger vehicle over nine seats. Via Ricasoli, moreover, is narrow and two steps from the Duomo. The nearest authorised point to the Adamas that also allows picking up is Piazza Vittorio Veneto, towards the Cascine, about 2.5 km away. Piazza Savonarola is closer — 1.4 km — but it is authorised for setting down only, and only from 08:00 to 20:00.</li>
+      <li><strong>The van shuttle: yes, it can be arranged.</strong> Vehicles of up to nine seats fall outside the coach ZTL and reach the hotel door: for twelve people that means two vans, ten minutes to the minibus. Quoted at € 320.00 + VAT for the return trip. The vans are not GiroMunna vehicles: they are provided through a colleague in Florence and confirmed together with the booking.</li>
+      <li><strong>Itinerary B asks too much of a single day.</strong> Pisa lies west, Siena and San Gimignano south: 315 kilometres and over five hours of driving alone. Leaving at 07:30 means being back around 20:00 with two hours in Pisa, three in Siena and two in San Gimignano. The advice is to drop Pisa — which gives itinerary C — or to pair Pisa with Lucca, which is itinerary A.</li>
+      <li><strong>Itinerary C is worth reversing.</strong> Monteriggioni sits on the Florence-Siena expressway, essentially on the outward road. Florence → Monteriggioni → Siena → San Gimignano → Florence covers 170 km instead of 205 and saves almost an hour. The price is unchanged.</li>
+      <li><strong>The hill towns are earned on foot.</strong> Siena, San Gimignano, Monteriggioni, Montalcino, Pienza and Montepulciano all close their historic centres to coaches. At Montepulciano the climb from the coach park to Piazza Grande is steep and takes about twenty minutes. If the family includes elderly travellers or small children, it should be mentioned before confirming.</li>
+      <li><strong>Driver's meals, and no overnight stay.</strong> The day starts and ends in Florence, so there is no night to book. Lunch remains, at the client's charge under our terms: it is not quoted because GiroMunna does not arrange it.</li>
+      <li><strong>To confirm, what is needed first of all is the date.</strong> There is one minibus and in high season the days go weeks in advance. The prices are for a mid-season day. Also needed: the chosen itinerary, the departure time, the final passenger count, whether the van shuttle is wanted, a WhatsApp contact for whoever travels with the family, and the invoicing details.</li>
+      <li><strong>Availability and cancellation.</strong> The booking becomes firm on receipt of the deposit. Free cancellation more than 60 days ahead; from 60 to 30 days the deposit is retained; from 30 to 10 days 50%; in the last 10 days 100%. Quotation valid until 20 September 2026.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal use — not part of the quotation</div>
+    <h2>To settle before replying</h2>
+    <p>The quotation is complete and can go out as it stands. These are the points to keep an eye on.</p>
+    <ol>
+      <li><strong>The date is missing entirely.</strong> Without a day the vehicle cannot be held and there is no telling whether it falls in high season. The reference <code>GM-2026-0821-MG</code> carries the quotation date, not the service date: once the day is known it must be reissued and the folder renamed.</li>
+      <li><strong>The vans are not ours.</strong> They must be agreed with a colleague in Florence before committing to the € 320.00. To avoid committing, remove the shuttle line from the price list and the second note, leaving the taxi option.</li>
+      <li><strong>Master Group is a tour operator</strong>, so they resell with their own margin and will try to negotiate. The prices are deliberately kept high.</li>
+      <li><strong>The Florence coach ZTL permit</strong> must be checked close to the date: the tariff depends on the emission class and changes over time.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2026-0821-MG · 21 August 2026</span>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
