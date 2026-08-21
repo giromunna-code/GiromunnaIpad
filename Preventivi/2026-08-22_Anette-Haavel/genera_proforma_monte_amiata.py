@@ -62,10 +62,10 @@ IT = dict(
         ("Referente", "Anette Haavel  ·  anette@idp.ee  ·  +372 5664 1112"),
     ],
     amount_label="IMPORTO DOVUTO",
-    amount="€ 1.650,00",
+    amount="€ 1.815,00",
     amount_desc=(
         "Totale, IVA 10% inclusa — escursione sul Monte Amiata, due mezzi (Mercedes-Benz "
-        "Beluga e Mercedes-Benz Tourengo), sabato 22 agosto 2026.<br/>"
+        "Beluga e Mercedes-Benz Tourengo) e pernottamento conducenti, sabato 22 agosto 2026.<br/>"
         "Da corrispondere entro 5 giorni dal servizio.<br/>"
         "Aggiunta al preventivo Corte Francigena, Rif. GM-2026-0819-CF."
     ),
@@ -105,10 +105,10 @@ EN = dict(
         ("Contact", "Anette Haavel  ·  anette@idp.ee  ·  +372 5664 1112"),
     ],
     amount_label="AMOUNT DUE",
-    amount="€ 1,650.00",
+    amount="€ 1,815.00",
     amount_desc=(
         "Total, VAT 10% included — Monte Amiata excursion, two vehicles (Mercedes-Benz "
-        "Beluga and Mercedes-Benz Tourengo), Saturday 22 August 2026.<br/>"
+        "Beluga and Mercedes-Benz Tourengo) and drivers' overnight stay, Saturday 22 August 2026.<br/>"
         "Payable within 5 days of the service.<br/>"
         "An addition to the Corte Francigena quotation, Ref. GM-2026-0819-CF."
     ),
