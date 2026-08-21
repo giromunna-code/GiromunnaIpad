@@ -77,32 +77,30 @@ inizio o a un itinerario specifico.
 |---|---|
 | Sab 22 ago — Beluga: mezzo e conducente a disposizione sul Monte Amiata, circa 6h45 | € 900,00 |
 | Trasferimento del Beluga da e per Corte Francigena, Castelnuovo dell'Abate, ~34 km a vuoto | € 150,00 |
-| Sab 22 ago — Tourengo: mezzo e conducente a disposizione sul Monte Amiata | a seguire |
+| Sab 22 ago — Tourengo: mezzo e conducente a disposizione sul Monte Amiata, circa 6h45 | € 900,00 |
+| Trasferimento del Tourengo da e per Corte Francigena, Castelnuovo dell'Abate, ~34 km a vuoto | € 150,00 |
 | Vitto dei due conducenti | a carico del cliente |
 
-**Totale Beluga netto € 1.050,00 · IVA 10% € 105,00 · Totale € 1.155,00 — più il Tourengo, da
-definire**
+**Totale netto € 2.100,00 · IVA 10% € 210,00 · Totale € 2.310,00**
 
-Nessun acconto: il servizio è a meno di 24 ore, si è messo saldo unico entro il 26 agosto (per
-ora solo per il Beluga).
+Nessun acconto: il servizio è a meno di 24 ore, si è messo saldo unico entro il 26 agosto.
 
-## Il secondo minibus: il Tourengo di Francesco
+## Il secondo minibus: il Tourengo di Francesco — prezzo allineato al Beluga
 
-Girolamo ha chiesto esplicitamente di aggiungere il Tourengo anche per questo giro. Come da
-regola (vedi CLAUDE.md): il Tourengo non è di GiroMunna, è di Francesco Munna, e il suo prezzo
-**non si inventa** — Francesco fornisce mezzo e tariffa all'ingrosso, che va ricaricata prima di
-metterla a preventivo. Non avendo quella tariffa, il documento mostra il Tourengo come "a
-seguire" e il totale ufficiale resta quello del solo Beluga.
+Girolamo ha confermato che **entrambi i mezzi sono già a Corte Francigena** — non solo il
+Beluga — e ha chiesto di completare il preventivo per due minibus senza aspettare oltre la
+tariffa di Francesco. Il Tourengo è stato quindi quotato al cliente **allo stesso prezzo del
+Beluga** (€ 900 giornata + € 150 trasferimento): è una scelta di Girolamo, non un numero
+calcolato sulla tariffa reale di Francesco.
 
-Mancano due cose per chiudere questa parte:
-1. **La tariffa di Francesco** per una giornata a disposizione sull'Amiata (6h45, montagna).
-2. **Dove si trova il Tourengo sabato** — determina il costo del suo trasferimento fino a
-   Castel del Piano: se è già in zona come il Beluga, o deve muoversi da Montecatini Terme o da
-   un altro lavoro.
+**Resta comunque da regolare con Francesco**, separatamente e senza impatto sul cliente:
+1. **La tariffa reale** che Francesco chiede a GiroMunna per il Tourengo — da cui dipende il
+   margine sulla parte Tourengo di questo lavoro.
+2. **La disponibilità sua e del conducente** per sabato.
 
-Una volta nota la tariffa di Francesco, il preventivo Corte Francigena (a due mezzi) diventa
-utile come controllo che il ricarico sia in linea con gli altri lavori a due mezzi — non prima,
-e non come base per inventare un numero adesso.
+Il preventivo Corte Francigena (a due mezzi) resta utile come controllo, una volta nota la
+tariffa vera di Francesco, per verificare che il margine complessivo sia in linea con gli altri
+lavori a due mezzi.
 
 ## Come è stato costruito il prezzo
 
@@ -130,22 +128,25 @@ da cui parte il Beluga per questo servizio.
 ## Margine
 
 Preventivo costruito sul **mezzo di proprietà**, già mobilitato per un altro lavoro: il costo
-aggiuntivo per questo servizio è quasi solo il trasferimento breve più la giornata sull'Amiata.
-Costo diretto stimato **€ 300-370** su € 1.050 netti: margine ottimo, proprio perché il mezzo è
-già sul posto.
+aggiuntivo per il Beluga è quasi solo il trasferimento breve più la giornata sull'Amiata. Costo
+diretto stimato **€ 300-370** su € 1.050 netti, per il solo Beluga: margine ottimo, proprio
+perché il mezzo è già sul posto.
 
 **Se il Beluga non fosse in zona** e dovesse riposizionarsi dalla base, il costo diretto
-salirebbe (vedi variante 2 sotto) e il margine si assottiglierebbe in proporzione. **Se invece si
-passasse a Francesco**, i prezzi andrebbero rivisti al rialzo del 20-25%.
+salirebbe (vedi variante 2 sotto) e il margine si assottiglierebbe in proporzione.
+
+Sul **Tourengo** il margine dipende dalla tariffa reale di Francesco, non ancora nota: quotato
+al cliente allo stesso prezzo del Beluga (decisione di Girolamo), il margine di GiroMunna su
+questa parte è la differenza fra quei € 1.050 e quanto chiede Francesco.
 
 ## Varianti di prezzo già calcolate
 
-1. **Base, come nel preventivo inviato** — mezzo da/per Corte Francigena, ~34 km:
-   € 1.050,00 netti, **€ 1.155,00** IVA inclusa.
-2. **Se a fine giornata il mezzo deve rientrare alla base di Ponte Buggianese** anziché tornare
-   a Corte Francigena — il rientro serale non è più 17 km ma un centinaio in più: il
-   trasferimento sale da € 150 a circa € 350-400, portando il totale sui **€ 1.400-1.450** IVA
-   inclusa. Cifra da verificare con la percorrenza esatta prima di quotarla al cliente.
+1. **Base, come nel preventivo inviato** — due mezzi da/per Corte Francigena:
+   € 2.100,00 netti, **€ 2.310,00** IVA inclusa.
+2. **Se a fine giornata i mezzi devono rientrare alla base di Ponte Buggianese** anziché tornare
+   a Corte Francigena — il rientro serale non è più breve ma un centinaio di km in più a testa:
+   ogni trasferimento sale da € 150 a circa € 350-400, portando il totale sui **€ 2.750-2.850**
+   IVA inclusa. Cifra da verificare con la percorrenza esatta prima di quotarla al cliente.
 
 ## Ore di guida e di riposo — risolto con l'orario vero
 
@@ -170,23 +171,22 @@ prolungare oltre mezzanotte.
 
 ## Da chiarire prima di mandare
 
-1. **Tariffa del Tourengo da Francesco** e **disponibilità sua e del conducente per sabato.**
-   Senza questa non si può completare né ricaricare la parte del preventivo relativa al secondo
-   mezzo — è il punto più urgente adesso, prima ancora di richiamare il cliente.
-2. **Dove si trova il Tourengo sabato**, per il costo del suo trasferimento verso Castel del
-   Piano.
+1. **Tariffa reale del Tourengo da Francesco.** Il cliente è già stato quotato allo stesso
+   prezzo del Beluga (decisione di Girolamo); resta da regolare con Francesco il costo vero,
+   separatamente e senza impatto sul cliente — condiziona solo il margine di GiroMunna.
+2. **Disponibilità del Tourengo e del suo conducente per sabato**, da confermare con Francesco.
 3. **Orario di partenza per il monte.** Lasciato apposta senza orario fisso nel documento; va
-   comunicato al cliente appena deciso.
-4. **Il Beluga a fine giornata torna a Corte Francigena o alla base?** Cambia il prezzo di alcune
-   centinaia di euro (variante 2 sopra) e va confermato appena chiaro come prosegue il lavoro
-   dell'altro cliente.
+   comunicato al cliente appena deciso, non prima delle 9:30-10:00 per il riposo del conducente.
+4. **I due mezzi a fine giornata tornano a Corte Francigena o alla base?** Cambia il prezzo di
+   alcune centinaia di euro (variante 2 sopra) e va confermato appena chiaro come prosegue il
+   lavoro dell'altro cliente.
 5. **Nome e dati del cliente.** La richiesta è arrivata senza intestazione: il PDF va rigenerato
    con `--cliente` quando si sa chi è.
 6. **Numero di telefono del cliente: +372 5664 1112.** Recuperato — prefisso estone, probabile
    cellulare/WhatsApp. Da usare solo per la telefonata di conferma di Girolamo.
 7. **Distanza Corte Francigena → Castel del Piano.** Stimata in 17 km/25 min da fonti stradali
-   generiche su Castelnuovo dell'Abate; da confermare con la percorrenza reale, visto che il
-   mezzo è già lì.
+   generiche su Castelnuovo dell'Abate; da confermare con la percorrenza reale, visto che i
+   mezzi sono già lì.
 8. **Acconto.** Qui è stato azzerato perché il servizio è a meno di 24 ore. Se si preferisce
    incassare prima, si cambia la tabella del pagamento.
 
@@ -219,3 +219,8 @@ Per tenere traccia di come è cambiato, dato quante volte è stato rifatto in po
    serata a Podere Le Ripi e Serendipity 17:00-23:00/23:30), da cui il calcolo del riposo del
    conducente per domani è stato rifatto con un margine di sicurezza (partenza consigliata non
    prima delle 9:30-10:00).
+8. **Ottava correzione:** confermato che anche il Tourengo è già a Corte Francigena come il
+   Beluga. Girolamo ha chiesto di completare subito il preventivo per due mezzi: il Tourengo è
+   stato quotato al cliente allo stesso prezzo del Beluga (€ 900 + € 150 trasferimento), per
+   decisione di Girolamo, non calcolato sulla tariffa reale di Francesco — quella resta da
+   regolare fra loro due separatamente. Totale finale: **€ 2.310,00 IVA inclusa** per due mezzi.
