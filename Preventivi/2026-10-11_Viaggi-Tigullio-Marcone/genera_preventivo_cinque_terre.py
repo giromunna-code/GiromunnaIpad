@@ -76,7 +76,7 @@ IT = dict(
         ("Dom 11 ott<br/>andata",
          "<b>Nievole, Villa Ginevra (Monsummano Terme, PT) → La Spezia, stazione di Migliarina.</b> "
          "Il mezzo è sul posto qualche minuto prima delle 8:00, partenza alle 8:00 in punto. "
-         "Circa 110 km per l'A11 e l'A12, con arrivo a Migliarina intorno alle 9:40, dove la vostra guida "
+         "Si viaggia per l'A11 e l'A12, con arrivo a Migliarina intorno alle 9:40, dove la vostra guida "
          "attende il gruppo.",
          "08:00 – 09:40 circa"),
         ("Dom 11 ott<br/>in giornata",
@@ -87,13 +87,13 @@ IT = dict(
          "a vostra disposizione"),
         ("Dom 11 ott<br/>ritorno",
          "<b>La Spezia, stazione di Migliarina → Nievole, Villa Ginevra.</b> "
-         "Ripartenza alle 18:00, gli stessi 110 km a ritroso, arrivo a Villa Ginevra verso le 19:45.",
+         "Ripartenza alle 18:00, stesso percorso a ritroso, arrivo a Villa Ginevra verso le 19:45.",
          "18:00 – 19:45 circa"),
     ],
     h_prezzo="Il prezzo",
     price_rows=[
         ("Dom 11 ott — Nievole → La Spezia Migliarina, mezzo a disposizione per la giornata e rientro "
-         "(circa 220 km, dalle 8:00 alle 19:45)", "€ 1.250,00", "+ IVA 10%"),
+         "(dalle 8:00 alle 19:45)", "€ 1.250,00", "+ IVA 10%"),
         ("Vitto del conducente durante la sosta alla Spezia — nessun pernottamento",
          "<i>a carico vostro</i>", ""),
     ],
@@ -126,8 +126,8 @@ IT = dict(
     h_note="Note",
     note=[
         ("<b>Il budget di € 700 + IVA.</b> Ve lo diciamo con franchezza: copre poco più della metà "
-         "della giornata. Il servizio è di circa 220 km e tiene mezzo e "
-         "conducente impegnati dalle 8:00 alle 19:45 di una domenica, il che significa che in quella giornata il "
+         "della giornata. Il servizio tiene mezzo e conducente "
+         "impegnati dalle 8:00 alle 19:45 di una domenica, il che significa che in quella giornata il "
          "mezzo non può fare altro. Il prezzo qui indicato è il nostro migliore per questo servizio. Se però avete "
          "altri movimenti nello stesso periodo — trasferimenti da o per gli aeroporti, altre escursioni — "
          "mandateceli e guardiamo l'insieme: su più servizi il discorso cambia."),
@@ -197,7 +197,7 @@ EN = dict(
         ("Sun 11 Oct<br/>outward",
          "<b>Nievole, Villa Ginevra (Monsummano Terme, PT) → La Spezia, Migliarina station.</b> "
          "The vehicle is on site a few minutes before 8:00 and leaves at 8:00 sharp. "
-         "About 110 km along the A11 and A12 motorways, reaching Migliarina around 9:40, where your guide "
+         "The run is along the A11 and A12 motorways, reaching Migliarina around 9:40, where your guide "
          "meets the group.",
          "approx. 08:00 – 09:40"),
         ("Sun 11 Oct<br/>during the day",
@@ -208,13 +208,13 @@ EN = dict(
          "at your disposal"),
         ("Sun 11 Oct<br/>return",
          "<b>La Spezia, Migliarina station → Nievole, Villa Ginevra.</b> "
-         "Departure at 18:00, the same 110 km back, reaching Villa Ginevra around 19:45.",
+         "Departure at 18:00, the same route back, reaching Villa Ginevra around 19:45.",
          "approx. 18:00 – 19:45"),
     ],
     h_prezzo="The price",
     price_rows=[
         ("Sun 11 Oct — Nievole → La Spezia Migliarina, vehicle at disposal for the day and return "
-         "(about 220 km, from 8:00 to 19:45)", "€ 1,250.00", "+ VAT 10%"),
+         "(from 8:00 to 19:45)", "€ 1,250.00", "+ VAT 10%"),
         ("Driver's meal during the wait in La Spezia — no overnight stay required",
          "<i>at your charge</i>", ""),
     ],
@@ -246,7 +246,7 @@ EN = dict(
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
-        ("<b>The € 700 + VAT budget.</b> We will be straightforward about it: it covers a little over half the day. The service runs about 220 km and keeps "
+        ("<b>The € 700 + VAT budget.</b> We will be straightforward about it: it covers a little over half the day. The service keeps "
          "vehicle and driver engaged from 8:00 to 19:45 on a Sunday, which means the vehicle can do nothing else "
          "that day. The price quoted here is our best for this service. If you have other movements in the same "
          "period, though — airport transfers, other excursions — send them over and we will look at the whole "

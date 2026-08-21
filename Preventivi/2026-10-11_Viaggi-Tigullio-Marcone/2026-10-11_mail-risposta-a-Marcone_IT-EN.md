@@ -24,8 +24,8 @@ dieci passeggeri è più che sufficiente e, restando sotto gli otto metri, arriv
 autobus gran turismo non passa.
 
 Sul prezzo devo però essere chiaro: **a meno di € 800,00 + IVA 10% il servizio non lo possiamo
-fare**. La giornata è di circa 220 km e tiene mezzo e conducente impegnati dalle 8:00 alle
-19:45 di una domenica — con la sosta alla Spezia per tutta la durata dell'escursione — quindi
+fare**. La giornata tiene mezzo e conducente impegnati dalle 8:00 alle 19:45 di una
+domenica — con la sosta alla Spezia per tutta la durata dell'escursione — quindi
 in quel giorno il mezzo non può fare altro. I € 700,00 del vostro budget restano sotto il costo
 del servizio.
 
@@ -67,8 +67,7 @@ For ten passengers it is more than enough and, staying under eight metres, it re
 full-size coach cannot.
 
 On the price, though, I have to be clear: **below € 800.00 + VAT 10% we cannot run this
-service**. The day covers about 220 km and keeps vehicle and driver engaged from 8:00 to 19:45
-on a Sunday — waiting in La Spezia for the whole excursion — so the vehicle can do nothing else
+service**. The day keeps vehicle and driver engaged from 8:00 to 19:45 on a Sunday — waiting in La Spezia for the whole excursion — so the vehicle can do nothing else
 that day. Your € 700.00 budget sits below the cost of the service.
 
 At **€ 800.00 + VAT 10%, that is € 880.00**, the price covers vehicle and driver for the whole

@@ -18,6 +18,14 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
 - **Le mail non si mandano e non si mettono in Gmail.** Il lavoro finisce con il testo
   consegnato: niente bozze create in Gmail, niente invii, mai. A mandare le mail ci pensa
   Girolamo, con i suoi tempi e le sue parole. Questa è l'unica parte che non cambia.
+- **Al cliente non si danno mai i chilometri.** Mai, in nessun documento che esce: né nei
+  preventivi, né nelle mail, né nella pagina web, né nelle tabelle del servizio o nelle
+  righe del prezzo. Non si scrive «circa 220 km», non si scrive «110 km · 1 h 40», non si
+  scrive «la giornata è di 220 km». Il percorso si descrive con i luoghi e con gli orari —
+  partenza, arrivo, ore di impegno del mezzo — e il prezzo si giustifica con il tempo e con
+  la giornata occupata, mai con la distanza: dare i chilometri invita il cliente a farsi il
+  conto a tanto al chilometro, che è il modo peggiore di far valutare il servizio.
+  I chilometri restano solo nelle **note interne**, dove servono per costruire il prezzo.
 
 ## Dati aziendali
 
