@@ -67,51 +67,37 @@ IT = dict(
     mezzo_bullet=(
         "<b>Mercedes-Benz Beluga</b> — 26 posti passeggeri più l'autista, 7,64 m. Aria condizionata, "
         "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.<br/>"
-        "<b>Mercedes-Benz Tourengo</b> — 28 posti passeggeri più l'autista, 7,86 m. Secondo mezzo, di "
-        "Francesco Munna (Tuscany T.O. &amp; Munna Bus Operator)."
+        "<b>Mercedes-Benz Tourengo</b> — 28 posti passeggeri più l'autista, 7,86 m."
     ),
     mezzo_close=(
-        "Insieme, i due mezzi portano fino a 54 passeggeri. Con i suoi 7,64 metri il Beluga sale alla Vetta "
-        "Amiata e arriva ai piazzali dei borghi del monte, dove un autobus gran turismo non passa: su queste "
-        "strade è il mezzo giusto, e farà da apripista anche al Tourengo. "
+        "Insieme, i due mezzi portano fino a 54 passeggeri. Con i suoi 7,64 metri il Beluga arriva ai "
+        "piazzali dei borghi del monte, dove un autobus gran turismo non passa. "
         "Ci serve il numero esatto dei passeggeri per confermare la ripartizione fra i due mezzi."
     ),
     h_servizio="Il servizio",
     svc_head=["Quando", "Programma"],
     svc=[
         ("Sabato 22 agosto",
-         "<b>Due mezzi, Beluga e Tourengo, con partenza da Corte Francigena in direzione Monte Amiata.</b> "
-         "Mezzi e conducenti restano a vostra disposizione per l'intera giornata di escursione, fra i "
-         "borghi e i punti panoramici del monte. Orario di partenza e tappe si concordano insieme a voi "
-         "più vicino alla data."),
-        ("Fine giornata",
-         "<b>Rientro dei due mezzi a Corte Francigena</b>, dove restano impegnati per un altro nostro "
-         "servizio — non alla base di Ponte Buggianese."),
+         "<b>Due minibus a vostra disposizione per l'intera giornata</b>, per l'escursione sul Monte "
+         "Amiata. Orario di partenza e tappe si concordano insieme a voi più vicino alla data."),
     ],
     svc_foot=(
-        "L'orario di partenza e le tappe sul monte si confermano insieme a voi: quello che conta è che i "
-        "due mezzi restano vostri con continuità per l'intera giornata."
+        "L'orario di partenza e le tappe sul monte si confermano insieme a voi."
     ),
     h_prezzo="Il prezzo",
     price_rows=[
         ("Sab 22 ago — Beluga: mezzo e conducente a disposizione per la giornata sul Monte Amiata",
          "€ 900,00", "+ IVA 10%"),
-        ("Trasferimento del Beluga da e per Corte Francigena, Castelnuovo dell'Abate (SI)",
-         "€ 150,00", "+ IVA 10%"),
         ("Sab 22 ago — Tourengo: mezzo e conducente a disposizione per la giornata sul Monte Amiata",
          "€ 900,00", "+ IVA 10%"),
-        ("Trasferimento del Tourengo da e per Corte Francigena, Castelnuovo dell'Abate (SI)",
-         "€ 150,00", "+ IVA 10%"),
         ("Vitto dei due conducenti", "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 2.100,00",
+    price_total="€ 1.800,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 2.310,00.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 1.980,00.",
     perhead=(
-        "Il prezzo è per mezzo e non a persona. Entrambi i mezzi sono già a Corte Francigena, quindi "
-        "il trasferimento di ciascuno fino a Castel del Piano è breve — leggete la nota <i>Il viaggio "
-        "dei mezzi da Corte Francigena</i>."
+        "Il prezzo è per mezzo e non a persona."
     ),
     h_incluso="Incluso.",
     incluso=(
@@ -130,24 +116,15 @@ IT = dict(
     h_pagamento="Pagamento",
     pay_rows=[
         ("Alla conferma — nessun acconto, il servizio è a meno di 24 ore", "€ 0,00", ""),
-        ("Saldo unico, entro il 26 agosto 2026", "€ 2.310,00", "IVA inclusa"),
+        ("Saldo unico, entro il 26 agosto 2026", "€ 1.980,00", "IVA inclusa"),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
-        ("<b>Prima di tutto: la conferma a voce.</b> Il Beluga è il minibus di proprietà di GiroMunna; il "
-         "Tourengo è un secondo mezzo di Francesco Munna. Girolamo vi richiama a breve per confermarvi la "
-         "disponibilità di entrambi per sabato: fino a quella telefonata questo preventivo è un prezzo, non "
-         "una prenotazione."),
-        ("<b>Il secondo minibus.</b> Il Tourengo — 28 posti più l'autista, 7,86 m — viene da Francesco Munna, "
-         "che opera come Tuscany T.O. &amp; Munna Bus Operator."),
-        ("<b>Il viaggio dei mezzi da Corte Francigena.</b> Entrambi i minibus sono già impegnati vicino a "
-         "Montalcino: è un salto breve fino a Castel del Piano per ciascuno, non un viaggio dalla nostra "
-         "base, ed è il motivo per cui i loro trasferimenti in tabella pesano così poco sul totale. Se a "
-         "fine giornata dovessero invece rientrare alla base di Ponte Buggianese anziché tornare a Corte "
-         "Francigena, i trasferimenti si allungano e il prezzo va rivisto: ve lo confermiamo appena sappiamo "
-         "come si chiude la giornata."),
+        ("<b>Prima di tutto: la conferma a voce.</b> Girolamo vi richiama a breve per confermarvi la "
+         "disponibilità dei due mezzi per sabato: fino a quella telefonata questo preventivo è un prezzo, "
+         "non una prenotazione."),
         ("<b>Quanti siete.</b> Il Beluga porta 26 passeggeri più l'autista, il Tourengo 28 più l'autista: "
          "insieme, fino a 54. Mandateci il numero esatto per confermare la ripartizione fra i due mezzi."),
         ("<b>Le strade del monte.</b> Le strade dell'Amiata sono spesso tornanti, e i centri storici dei borghi "
@@ -191,51 +168,37 @@ EN = dict(
     mezzo_bullet=(
         "<b>Mercedes-Benz Beluga</b> — 26 passenger seats plus driver, 7.64 m. Air conditioning, "
         "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.<br/>"
-        "<b>Mercedes-Benz Tourengo</b> — 28 passenger seats plus driver, 7.86 m. Second vehicle, from "
-        "Francesco Munna (Tuscany T.O. &amp; Munna Bus Operator)."
+        "<b>Mercedes-Benz Tourengo</b> — 28 passenger seats plus driver, 7.86 m."
     ),
     mezzo_close=(
-        "Together, the two vehicles carry up to 54 passengers. At 7.64 m the Beluga climbs to the summit "
-        "of Monte Amiata and reaches the parking areas of the mountain villages, where a full-size coach "
-        "cannot go: on these roads it is the right vehicle, and will lead the way for the Tourengo too. "
+        "Together, the two vehicles carry up to 54 passengers. At 7.64 m the Beluga reaches the parking "
+        "areas of the mountain villages, where a full-size coach cannot go. "
         "We need the exact number of passengers to confirm how the group splits between the two vehicles."
     ),
     h_servizio="The service",
     svc_head=["When", "Programme"],
     svc=[
         ("Saturday 22 August",
-         "<b>Two vehicles, Beluga and Tourengo, departing from Corte Francigena towards Monte Amiata.</b> "
-         "Vehicles and drivers stay at your disposal for the whole day of the excursion, among the "
-         "mountain's villages and viewpoints. Departure time and stops will be agreed with you closer to "
-         "the date."),
-        ("End of day",
-         "<b>The two vehicles return to Corte Francigena</b>, where they stay engaged on another of our "
-         "services — not to the Ponte Buggianese base."),
+         "<b>Two minibuses at your disposal for the whole day</b>, for the excursion on Monte Amiata. "
+         "Departure time and stops will be agreed with you closer to the date."),
     ],
     svc_foot=(
-        "The departure time and the stops on the mountain will be confirmed with you: what matters is that "
-        "the two vehicles stay yours without a break for the whole day."
+        "The departure time and the stops on the mountain will be confirmed with you."
     ),
     h_prezzo="The price",
     price_rows=[
         ("Sat 22 Aug — Beluga: vehicle and driver at your disposal for the day on Monte Amiata",
          "€ 900.00", "+ VAT 10%"),
-        ("Beluga travel to and from Corte Francigena, Castelnuovo dell'Abate (SI)",
-         "€ 150.00", "+ VAT 10%"),
         ("Sat 22 Aug — Tourengo: vehicle and driver at your disposal for the day on Monte Amiata",
          "€ 900.00", "+ VAT 10%"),
-        ("Tourengo travel to and from Corte Francigena, Castelnuovo dell'Abate (SI)",
-         "€ 150.00", "+ VAT 10%"),
         ("Both drivers' meals", "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 2,100.00",
+    price_total="€ 1,800.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 2,310.00.",
+    grand="Total payable, VAT 10% included: € 1,980.00.",
     perhead=(
-        "The price is per vehicle, not per person. Both vehicles are already at Corte Francigena, so each "
-        "one's transfer to Castel del Piano is short — please read the note <i>The vehicles' journey from "
-        "Corte Francigena</i>."
+        "The price is per vehicle, not per person."
     ),
     h_incluso="Included.",
     incluso=(
@@ -253,22 +216,14 @@ EN = dict(
     h_pagamento="Payment",
     pay_rows=[
         ("On confirmation — no deposit, the service is less than 24 hours away", "€ 0.00", ""),
-        ("Single payment, by 26 August 2026", "€ 2,310.00", "VAT included"),
+        ("Single payment, by 26 August 2026", "€ 1,980.00", "VAT included"),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
-        ("<b>First of all: confirmation by phone.</b> The Beluga is GiroMunna's own minibus; the Tourengo is "
-         "a second vehicle from Francesco Munna. Girolamo will call you shortly to confirm both are available "
-         "on Saturday: until that call, this quotation is a price, not a booking."),
-        ("<b>The second minibus.</b> The Tourengo — 28 seats plus driver, 7.86 m — comes from Francesco "
-         "Munna, who operates as Tuscany T.O. &amp; Munna Bus Operator."),
-        ("<b>The vehicles' journey from Corte Francigena.</b> Both minibuses are already engaged near "
-         "Montalcino: it is a short hop to Castel del Piano for each, not a trip from our base, which is why "
-         "their transfer lines weigh so little on the total. Should they need to return to the Ponte "
-         "Buggianese base at the end of the day instead of going back to Corte Francigena, the transfers "
-         "grow and the price needs revising: we will confirm as soon as we know how the day closes."),
+        ("<b>First of all: confirmation by phone.</b> Girolamo will call you shortly to confirm both "
+         "vehicles are available on Saturday: until that call, this quotation is a price, not a booking."),
         ("<b>How many of you there are.</b> The Beluga carries 26 passengers plus the driver, the Tourengo 28 "
          "plus the driver: together, up to 54. Send us the exact number to confirm how the group splits "
          "between the two vehicles."),
