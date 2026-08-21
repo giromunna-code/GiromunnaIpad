@@ -51,7 +51,7 @@ MARGIN = 20 * mm
 TOP = 30 * mm
 BOTTOM = 24 * mm
 
-RIF = "GM-2026-0821-MG"
+RIF = "GM-2026-0923-MG"
 
 # --- contenuto ------------------------------------------------------------------
 IT = dict(
@@ -60,12 +60,12 @@ IT = dict(
     footer2="+39 335 587 4744  ·  info@giromunna.com  ·  giromunna.com",
     page="pag. %d",
     title="Preventivo",
-    subtitle="Tour della Toscana in giornata, quattro itinerari a scelta  ·  12 passeggeri  ·  partenza e rientro a Firenze",
+    subtitle="Tour della Toscana in giornata, quattro itinerari a scelta  ·  mercoledì 23 settembre 2026  ·  12 passeggeri  ·  partenza e rientro a Firenze",
     meta="Preparato per %s  ·  21 agosto 2026  ·  Rif. " + RIF,
 
     h_mezzo="Il mezzo",
-    mezzo_intro=("Un minibus con conducente per il vostro gruppo di 12 persone, a vostra disposizione "
-                 "per l'intera giornata, con lo stesso autista dalla partenza al rientro."),
+    mezzo_intro=("Un minibus con conducente per il vostro gruppo di 12 persone, a vostra disposizione per "
+                 "l'intera giornata di mercoledì 23 settembre, con lo stesso autista dalla partenza al rientro."),
     mezzo_bullet=(
         "<b>Mercedes-Benz Beluga</b> — 26 posti passeggeri più l'autista, 7,64 m. Aria condizionata, "
         "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli."
@@ -224,16 +224,24 @@ IT = dict(
          "piena e sul traffico normale della stagione: confermateci l'ora di partenza che preferite e ricalcoliamo "
          "il resto. L'attesa oltre gli orari concordati si conteggia a € 50,00 all'ora. Per gli itinerari B e D la "
          "partenza di buon'ora non è un dettaglio, è la condizione perché la giornata funzioni."),
-        ("<b>Per confermare ci serve prima di tutto la data.</b> Abbiamo un solo minibus e in alta stagione le "
-         "giornate si esauriscono con settimane di anticipo: finché non abbiamo il giorno non possiamo bloccare "
-         "nulla. I prezzi qui sopra sono riferiti a una giornata di media stagione; per i fine settimana di alta "
-         "stagione e i periodi di ponte possono muoversi, e ve lo diremmo subito. Con la data ci servono anche "
-         "l'itinerario scelto, l'ora di partenza, il numero definitivo di passeggeri, se volete la navetta van, un "
-         "recapito telefonico o WhatsApp di chi viaggia con la famiglia e i vostri dati di fatturazione."),
-        ("<b>Disponibilità e cancellazione.</b> La prenotazione diventa definitiva alla ricezione dell'acconto. "
+        ("<b>Il 23 settembre è una buona data.</b> È un mercoledì di fine stagione: i prezzi qui sopra sono "
+         "quelli di media stagione e restano fermi, senza maggiorazioni da fine settimana o da alta stagione. "
+         "Siena e San Gimignano di mercoledì sono molto più vivibili che nel fine settimana, e in Val d'Orcia si "
+         "è in piena vendemmia, il che rende l'itinerario D particolarmente bello — con qualche trattore in più "
+         "sulle strade e i piazzali delle cantine più affollati. Due cose da tenere presenti: a fine settembre la "
+         "luce va via verso le 19:20, quindi negli itinerari B e D l'ultimo tratto di rientro si fa al buio, e i "
+         "borghi in collina chiudono musei e botteghe prima che d'estate. Se contate di vedere qualcosa di "
+         "preciso, ditecelo e costruiamo gli orari su quello."),
+        ("<b>Per confermare ci servono</b> l'itinerario scelto, l'ora di partenza, il numero definitivo di "
+         "passeggeri, se volete la navetta van dall'hotel, un recapito telefonico o WhatsApp di chi viaggia con la "
+         "famiglia e i vostri dati di fatturazione."),
+        ("<b>Disponibilità e cancellazione.</b> Il mezzo per il 23 settembre è a vostra disposizione per tutta "
+         "la validità di questo preventivo; la prenotazione diventa definitiva alla ricezione dell'acconto. "
          "La cancellazione è gratuita oltre 60 giorni prima del servizio; da 60 a 30 giorni viene trattenuto "
          "l'acconto; da 30 a 10 giorni viene addebitato il 50% del prezzo; negli ultimi 10 giorni il 100%. "
-         "Preventivo valido fino al 20 settembre 2026."),
+         "Mancando oggi 33 giorni al servizio, questa prenotazione ricade nella fascia da 60 a 30 giorni, e dal "
+         "24 agosto passerà in quella da 30 a 10: se contate di confermare, farlo entro quella data vi lascia "
+         "condizioni migliori. Preventivo valido fino al 4 settembre 2026."),
     ],
     closing=("Restiamo a disposizione per qualsiasi chiarimento e in attesa di un vostro riscontro.<br/><br/>"
              "Cordiali saluti,<br/>"
@@ -445,5 +453,5 @@ if __name__ == "__main__":
     ap.add_argument("--out", default=None)
     a = ap.parse_args()
     name = a.out or os.path.join(
-        HERE, "GiroMunna_Preventivo_Tour_Toscana_Giornaliero_12pax_IT.pdf")
+        HERE, "GiroMunna_Preventivo_Tour_Toscana_23_settembre_2026_IT.pdf")
     print(build(a.cliente, name))

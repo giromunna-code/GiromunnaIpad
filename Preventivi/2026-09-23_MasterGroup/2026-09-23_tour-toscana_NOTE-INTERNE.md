@@ -1,7 +1,7 @@
-# Note interne — Tour della Toscana in giornata, 12 pax, quattro itinerari
+# Note interne — Tour della Toscana, mercoledì 23 settembre 2026, 12 pax
 
-**Cliente:** Master Group Tour Operator · **Rif. preventivo:** GM-2026-0821-MG ·
-**Preparato:** 21 agosto 2026 · **Validità:** 20 settembre 2026
+**Cliente:** Master Group Tour Operator · **Rif. preventivo:** GM-2026-0923-MG ·
+**Servizio:** mercoledì 23 settembre 2026 · **Preparato:** 21 agosto 2026 · **Validità:** 4 settembre 2026
 
 **Questo preventivo è solo in italiano, per decisione di Girolamo.** Master Group è un tour
 operator italiano e ha scritto in italiano, quindi la versione inglese non serve. È l'unico
@@ -10,11 +10,11 @@ dizionario `EN` sta nella storia del repository, nel commit che ha aggiunto ques
 
 File generati:
 
-- `GiroMunna_Preventivo_Tour_Toscana_Giornaliero_12pax_IT.pdf`
+- `GiroMunna_Preventivo_Tour_Toscana_23_settembre_2026_IT.pdf`
 - `genera_preventivo_tour_toscana.py` — rigenera il PDF
-- `preventivo_tour_toscana_giornaliero.html` — la pagina web
+- `preventivo_tour_toscana_23_settembre_2026.html` — la pagina web
 
-Tutto dentro `Preventivi/2026-08-21_MasterGroup/`.
+Tutto dentro `Preventivi/2026-09-23_MasterGroup/`.
 
 Il cliente è già il valore predefinito dello script. Per rigenerare il PDF:
 
@@ -34,8 +34,16 @@ Carico e scarico all'**Hotel Adamas, Via Ricasoli 9, Firenze** — verificato, �
 di 23 camere a due passi dal Duomo — e domandano espressamente quale sia il punto di carico
 più vicino e se si possa organizzare una navetta in van dall'hotel.
 
-**La data del servizio non c'è.** È il buco più grosso della richiesta ed è il primo punto
-da chiedere: senza giorno non si blocca il mezzo. Vedi più sotto.
+La richiesta era arrivata **senza data**. Girolamo l'ha poi avuta: **mercoledì 23 settembre
+2026**. Il preventivo, il riferimento, i nomi dei file e la cartella sono stati rifatti su
+quel giorno; la prima stesura, intestata `GM-2026-0821-MG`, sta nella storia del repository.
+
+**Il 23 settembre gioca a favore.** È infrasettimanale e di fine stagione, quindi i prezzi di
+media stagione reggono senza maggiorazioni e non c'è da rivederli. Siena e San Gimignano di
+mercoledì sono molto più vivibili, e in Val d'Orcia si è in piena vendemmia: l'itinerario D
+ne guadagna parecchio come giornata da vendere. Due cose dette al cliente: a fine settembre
+la luce va via verso le 19:20, quindi su B e D l'ultimo tratto si fa al buio, e i borghi in
+collina chiudono prima che d'estate.
 
 ## Prezzi
 
@@ -141,11 +149,10 @@ operator è più pulito e toglie argomenti di discussione il giorno del servizio
 
 ## Da chiarire prima di rispondere
 
-1. **La data.** Manca del tutto ed è il primo punto. Il riferimento `GM-2026-0821-MG` porta
-   la data del preventivo, non del primo servizio come vuole lo schema: quando arriva il
-   giorno, il riferimento va rifatto in `GM-AAAA-MMGG-MG` e la cartella rinominata.
-   I prezzi sono dichiarati validi per una **giornata di media stagione** — se cade in un
-   fine settimana di agosto o in un ponte, vanno rivisti.
+1. ⚠️ **Verifica il calendario del 23 settembre prima di mandare.** Il preventivo dice al
+   cliente che il mezzo per quel giorno è a sua disposizione. Il lavoro Alvora del 13-18
+   settembre non confligge, ma il Beluga è uno solo: se quel mercoledì fosse già impegnato,
+   quella riga va cambiata prima che il preventivo esca.
 2. **I van non sono nostri.** I € 320,00 andata e ritorno coprono due van fino a nove posti
    con un collega di Firenze, e vanno concordati **prima** di impegnarsi. Nel preventivo la
    cosa è dichiarata al cliente ("si confermano insieme alla prenotazione"). Se preferisci
@@ -161,11 +168,15 @@ operator è più pulito e toglie argomenti di discussione il giorno del servizio
 6. **L'itinerario B.** Nel preventivo è quotato ma sconsigliato apertamente, con due
    alternative concrete. Se lo confermano, l'autista fa una giornata di dodici ore e mezza:
    va scelto chi la regge.
-7. **Bloccare la disponibilità del mezzo** appena arriva la data.
+7. **Le scadenze della cancellazione.** Oggi mancano 33 giorni al servizio, quindi si è
+   nella fascia da 60 a 30 giorni (si trattiene l'acconto). **Dal 24 agosto** si passa alla
+   fascia da 30 a 10, dove si addebita il 50%: nel preventivo il cliente è avvisato, e per
+   noi è la leva per farlo decidere in fretta. La validità è fissata al 4 settembre.
+8. **Bloccare il mezzo sul 23 settembre** appena arriva la conferma.
 
 ## Cosa è già stato detto al cliente e cosa no
 
 Nel preventivo c'è tutto: la faccenda della ZTL spiegata per esteso, le tre soluzioni per il
-carico, il consiglio di girare l'itinerario C, il parere contrario su B e la richiesta della
-data. Non c'è nessun riferimento a Francesco né ai costi all'ingrosso, e i van sono
+carico, il consiglio di girare l'itinerario C, il parere contrario su B e le scadenze della
+cancellazione. Non c'è nessun riferimento a Francesco né ai costi all'ingrosso, e i van sono
 presentati come "tramite un collega di Firenze".
