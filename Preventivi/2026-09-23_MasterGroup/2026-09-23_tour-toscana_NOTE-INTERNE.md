@@ -126,6 +126,21 @@ di Servizi alla Strada:
 - Distanze a piedi dall'Adamas: Savonarola ~1,4 km, Largo Giudice ~1,1 km, Piazza Vittorio
   Veneto ~2,5 km, Piazzale Michelangelo ~2,5 km più la salita.
 
+Su richiesta di Girolamo il preventivo dice **esplicitamente e in grassetto, in prima pagina,
+che in Via Ricasoli il minibus non entra e che non esiste permesso che lo consenta**. Serviva:
+scritto come prima, un tour operator poteva pensare che bastasse pagare il contrassegno per
+avere il mezzo davanti alla porta. Le tre ragioni, tutte verificate, sono cumulative:
+
+1. **L'area del Duomo è area pedonale**, non semplicemente ZTL: lì l'accesso dei veicoli è
+   vietato sempre, non solo negli orari della ZTL, e i varchi sono protetti da **pilomat**
+   che con i permessi ordinari, compresi quelli alberghieri, non si aprono. Il civico 9 si
+   affaccia praticamente sulla piazza.
+2. **La ZTL bus** vale per ogni veicolo oltre i nove posti, quindi anche per lo sprinter che
+   il cliente proponeva in alternativa.
+3. **Il contrassegno bus non è un lasciapassare**: autorizza a circolare solo sui percorsi
+   prestabiliti e a fermarsi solo nei punti autorizzati. Anche pagandolo, in Via Ricasoli
+   non ci si arriva.
+
 Quindi: **nessun punto che consenta la salita è a distanza pedonale ragionevole**. Da lì la
 proposta della navetta van, che è esattamente quello che il cliente aveva intuito
 chiedendola. Nel preventivo è indicato Piazza Vittorio Veneto come ritrovo del mattino
@@ -143,6 +158,12 @@ va aggiornata, decidi tu.
 - **Val d'Orcia:** Montalcino, Pienza e Montepulciano hanno parcheggi bus a pagamento sotto
   le mura, stimati ~€ 40 in tutto, compresi in D.
 - **Lucca e San Gimignano:** sosta fuori dalle mura, nessun onere significativo.
+- **Regolamento UNESCO di Firenze:** ne esiste uno nuovo sul trasporto turistico dentro
+  l'area del centro storico, che vieta caddy e risciò e ammette solo navette elettriche
+  contingentate su due itinerari. **Non ci riguarda**, in nessuna delle due direzioni: il
+  Beluga non fa trasporto turistico dentro l'area UNESCO, e il TAR ha confermato la
+  distinzione fra quel servizio e il trasporto pubblico non di linea. Quindi **i van NCC
+  della navetta restano fuori dal regolamento** e la soluzione che abbiamo quotato regge.
 
 Tutti gli oneri sono **compresi nel prezzo** invece di essere ribaltati a parte: per un tour
 operator è più pulito e toglie argomenti di discussione il giorno del servizio.

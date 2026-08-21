@@ -81,12 +81,16 @@ IT = dict(
 
     h_carico="Il punto di carico",
     carico_intro=(
-        "L'Hotel Adamas è in Via Ricasoli 9, a pochi passi dal Duomo, nel cuore della zona a traffico limitato. "
-        "Conviene chiarirlo subito, perché è il punto vero della vostra richiesta: <b>la ZTL bus di Firenze copre "
-        "tutto il centro abitato, ventiquattro ore su ventiquattro, tutti i giorni dell'anno</b>, e riguarda ogni "
-        "veicolo per trasporto passeggeri con più di nove posti. Vale per il nostro minibus da 26 esattamente come "
-        "varrebbe per uno sprinter da 12 o da 16: non è un limite del mezzo che vi proponiamo, è il regime della "
-        "città. Sotto l'hotel non si carica, e nessun operatore serio vi dirà il contrario. Ecco come si risolve."
+        "L'Hotel Adamas è in Via Ricasoli 9, a un passo da Piazza del Duomo. Vi rispondiamo subito e senza giri di "
+        "parole: <b>in Via Ricasoli il minibus non ci può entrare, e non esiste permesso che lo consenta.</b> "
+        "Il civico 9 si affaccia praticamente sulla piazza del Duomo, che è <b>area pedonale</b>: lì l'accesso dei "
+        "veicoli è vietato sempre, non soltanto negli orari della ZTL, e i varchi sono protetti da pilomat che con i "
+        "permessi ordinari non si aprono. A monte c'è poi la ZTL bus, che copre tutto il centro abitato ventiquattro "
+        "ore su ventiquattro, tutti i giorni dell'anno, e riguarda ogni veicolo per trasporto passeggeri con più di "
+        "nove posti: il nostro minibus da 26 esattamente come uno sprinter da 12 o da 16. E il contrassegno che si "
+        "paga per portare un bus in città <b>non autorizza a circolare ovunque</b>: i mezzi devono attenersi a "
+        "percorsi prestabiliti e possono fermarsi soltanto nei punti autorizzati. Non è un limite del mezzo che vi "
+        "proponiamo, è il regime di Firenze. Ecco come si risolve."
     ),
     carico_head=["Soluzione", "Come funziona", "Costo"],
     carico=[
@@ -185,13 +189,15 @@ IT = dict(
 
     h_note="Note",
     note=[
-        ("<b>Sotto l'hotel non si carica, e non è una questione del nostro mezzo.</b> La ZTL bus di Firenze vale su "
-         "tutto il centro abitato, ventiquattro ore su ventiquattro, e comprende qualsiasi veicolo per trasporto "
-         "passeggeri oltre i nove posti: il nostro minibus da 26 come uno sprinter da 12 o da 16. Via Ricasoli, poi, "
-         "è stretta e a due passi dal Duomo. Il carico e lo scarico si fanno nei punti autorizzati dal Comune, e il "
-         "più vicino all'Adamas fra quelli che consentono anche la salita è Piazza Vittorio Veneto, verso le Cascine, "
-         "a circa 2,5 km. Piazza Savonarola è più vicina — 1,4 km, una ventina di minuti a piedi — ma è autorizzata "
-         "alla sola discesa e solo dalle 08:00 alle 20:00: va bene per il rientro serale, non per la partenza."),
+        ("<b>In Via Ricasoli non entra nessun autobus, e non è una questione del nostro mezzo.</b> Lo mettiamo per "
+         "iscritto perché è esattamente quello che ci avete chiesto: il divieto non dipende dalla misura del minibus "
+         "e non si compra con un permesso. Si sommano tre cose. L'area del Duomo è pedonale e sbarrata da pilomat. "
+         "La ZTL bus copre tutto il centro abitato e vale per qualsiasi veicolo oltre i nove posti, sprinter "
+         "compresi. Il contrassegno bus, infine, consente di circolare solo sui percorsi prestabiliti e di fermarsi "
+         "solo nei punti autorizzati dal Comune. Fra questi, il più vicino all'Adamas che consenta anche la salita è "
+         "Piazza Vittorio Veneto, verso le Cascine, a circa 2,5 km. Piazza Savonarola è più vicina — 1,4 km, una "
+         "ventina di minuti a piedi — ma è autorizzata alla sola discesa e solo dalle 08:00 alle 20:00: va bene per "
+         "il rientro serale, non per la partenza."),
         ("<b>La navetta van: sì, la organizziamo.</b> È la risposta alla vostra domanda ed è la soluzione che vi "
          "consigliamo, soprattutto la mattina presto e alla fine di una giornata lunga. I veicoli fino a nove posti "
          "non ricadono nella ZTL bus e arrivano davanti all'hotel: per dodici persone servono due van, che vi portano "
