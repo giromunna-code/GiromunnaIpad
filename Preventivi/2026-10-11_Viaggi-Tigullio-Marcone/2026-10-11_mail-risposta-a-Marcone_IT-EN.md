@@ -3,10 +3,8 @@
 **Da copiare e inviare da parte di Girolamo.** Non è stata creata nessuna bozza in Gmail e non
 è stato inviato niente. Destinatario: Fabio Marcone, Viaggi Tigullio Marcone.
 
-> **Attenzione.** Questo testo dice € 800,00 + IVA, i due PDF del preventivo GM-2026-1011-VT
-> dicono € 1.250,00 + IVA. **O l'una o l'altro, non tutti e due insieme.** Se si manda questa
-> mail, i PDF non vanno allegati; se si vogliono allegare, prima vanno rigenerati al nuovo
-> prezzo.
+> I due PDF del preventivo GM-2026-1011-VT sono stati rigenerati a € 800,00 + IVA, quindi
+> dicono la stessa cifra di questa mail e si possono allegare senza contraddizioni.
 
 ---
 

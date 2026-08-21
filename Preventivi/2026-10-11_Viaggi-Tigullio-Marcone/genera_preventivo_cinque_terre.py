@@ -93,15 +93,15 @@ IT = dict(
     h_prezzo="Il prezzo",
     price_rows=[
         ("Dom 11 ott — Nievole → La Spezia Migliarina, mezzo a disposizione per la giornata e rientro "
-         "(dalle 8:00 alle 19:45)", "€ 1.250,00", "+ IVA 10%"),
+         "(dalle 8:00 alle 19:45)", "€ 800,00", "+ IVA 10%"),
         ("Vitto del conducente durante la sosta alla Spezia — nessun pernottamento",
          "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 1.250,00",
+    price_total="€ 800,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 1.375,00.",
-    perhead="Sono € 137,50 a persona per i dieci partecipanti, andata e ritorno compresi.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 880,00.",
+    perhead="Sono € 88,00 a persona per i dieci partecipanti, andata e ritorno compresi.",
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente per l'intera giornata, carburante, pedaggi autostradali, ticket di accesso e sosta del "
@@ -118,19 +118,19 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 412,50", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 962,50", ""),
+        ("Acconto 30% alla conferma", "€ 264,00", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 616,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
-        ("<b>Il budget di € 700 + IVA.</b> Ve lo diciamo con franchezza: copre poco più della metà "
-         "della giornata. Il servizio tiene mezzo e conducente "
-         "impegnati dalle 8:00 alle 19:45 di una domenica, il che significa che in quella giornata il "
-         "mezzo non può fare altro. Il prezzo qui indicato è il nostro migliore per questo servizio. Se però avete "
-         "altri movimenti nello stesso periodo — trasferimenti da o per gli aeroporti, altre escursioni — "
-         "mandateceli e guardiamo l'insieme: su più servizi il discorso cambia."),
+        ("<b>Il budget di € 700 + IVA.</b> Ci siamo avvicinati il più possibile: <b>€ 800,00 + IVA è il minimo "
+         "al quale possiamo fare questa giornata</b>, non un prezzo di partenza. Mezzo e conducente restano "
+         "impegnati dalle 8:00 alle 19:45 di una domenica, con la sosta alla Spezia per tutta la durata "
+         "dell'escursione, quindi in quella giornata il mezzo non può fare altro. Se avete altri movimenti nello "
+         "stesso periodo — trasferimenti da o per gli aeroporti, altre escursioni — mandateceli e guardiamo "
+         "l'insieme: su più servizi il discorso cambia."),
         ("<b>L'orario del rientro.</b> Abbiamo letto le «ore 18 circa» come l'ora di ripartenza da Migliarina: "
          "con quell'orario il gruppo è a Villa Ginevra verso le 19:45. Se invece le 18:00 sono l'ora in cui volete "
          "essere già rientrati a Nievole, il ritrovo in stazione si sposta alle 16:15 e il prezzo non cambia. "
@@ -214,15 +214,15 @@ EN = dict(
     h_prezzo="The price",
     price_rows=[
         ("Sun 11 Oct — Nievole → La Spezia Migliarina, vehicle at disposal for the day and return "
-         "(from 8:00 to 19:45)", "€ 1,250.00", "+ VAT 10%"),
+         "(from 8:00 to 19:45)", "€ 800.00", "+ VAT 10%"),
         ("Driver's meal during the wait in La Spezia — no overnight stay required",
          "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 1,250.00",
+    price_total="€ 800.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 1,375.00.",
-    perhead="That is € 137.50 per person for the ten participants, both legs included.",
+    grand="Total payable, VAT 10% included: € 880.00.",
+    perhead="That is € 88.00 per person for the ten participants, both legs included.",
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver for the whole day, fuel, motorway tolls, the tourist-coach access ticket and parking "
@@ -239,18 +239,19 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 412.50", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 962.50", ""),
+        ("Deposit 30% on confirmation", "€ 264.00", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 616.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
-        ("<b>The € 700 + VAT budget.</b> We will be straightforward about it: it covers a little over half the day. The service keeps "
-         "vehicle and driver engaged from 8:00 to 19:45 on a Sunday, which means the vehicle can do nothing else "
-         "that day. The price quoted here is our best for this service. If you have other movements in the same "
-         "period, though — airport transfers, other excursions — send them over and we will look at the whole "
-         "picture: across several services the conversation changes."),
+        ("<b>The € 700 + VAT budget.</b> We have come as close to it as we can: <b>€ 800.00 + VAT is the "
+         "minimum at which we can run this day</b>, not an opening price. Vehicle and driver stay engaged from "
+         "8:00 to 19:45 on a Sunday, waiting in La Spezia for the whole excursion, so the vehicle can do nothing "
+         "else that day. If you have other movements in the same period — airport transfers, other excursions — "
+         "send them over and we will look at the whole picture: across several services the conversation "
+         "changes."),
         ("<b>The return time.</b> We have read the \"around 18:00\" as the departure time from Migliarina: on that "
          "basis the group is back at Villa Ginevra around 19:45. If instead 18:00 is the time you want to be back "
          "in Nievole, the pick-up at the station moves to 16:15 and the price does not change. Let us know which "

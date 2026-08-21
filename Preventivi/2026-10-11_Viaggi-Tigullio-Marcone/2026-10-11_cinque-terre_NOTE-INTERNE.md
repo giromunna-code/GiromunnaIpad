@@ -33,12 +33,16 @@ Chiesto un 20-22 posti gran turismo. **Budget indicato dal cliente: € 700 + IV
 
 | Data | Servizio | Netto |
 |---|---|---|
-| Dom 11 ott | Nievole → La Spezia Migliarina, giornata a disposizione e rientro (~220 km, 8:00-19:45) | € 1.250,00 |
+| Dom 11 ott | Nievole → La Spezia Migliarina, giornata a disposizione e rientro (~220 km, 8:00-19:45) | € 800,00 |
 | — | Vitto del conducente durante la sosta | a carico del cliente |
 
-**Totale netto € 1.250,00 · IVA 10% € 125,00 · Totale € 1.375,00** (€ 137,50 a persona)
+**Totale netto € 800,00 · IVA 10% € 80,00 · Totale € 880,00** (€ 88,00 a persona)
 
-Acconto 30% € 412,50 — saldo € 962,50.
+Acconto 30% € 264,00 — saldo € 616,00.
+
+Prezzo **deciso da Girolamo il 21 agosto**. La prima stesura era a € 1.250,00 netti, cioè quanto
+la giornata vale sulla scala della casa: il confronto è più sotto e va tenuto, perché serve la
+prossima volta. I chilometri di questa scheda restano qui e non escono: al cliente non si danno.
 
 Nessun pernottamento: il servizio si apre e si chiude in giornata. Resta a carico del cliente
 il solo pasto del conducente durante le ore di sosta alla Spezia, indicato a preventivo ma non
@@ -63,22 +67,19 @@ dodici ore, dalle 8:00 alle 19:45 — e la seconda per chilometri. Però è una 
 semplice con una lunga sosta in mezzo, senza tappe da girare: per questo si allinea alla
 giornata lunga di Alvora invece di stare sopra.
 
-## Margine e pavimento
+## Margine
 
 Costo diretto stimato **€ 450-500**: gasolio e pedaggi per 220 km, ticket di accesso e sosta bus
-alla Spezia, giornata del conducente. Con il mezzo di proprietà, a € 1.250 il margine è buono.
+alla Spezia, giornata del conducente. A **€ 800 netti restano € 300-350** per una domenica intera
+con il mezzo bloccato, che non può fare altro.
 
-**Il pavimento è € 900 netti.** Sotto quella cifra una domenica intera bloccata — con il mezzo
-che non può fare altro — non vale la pena. Il budget del cliente, € 700, è sotto il pavimento:
-coprirebbe poco più della metà della giornata.
+Il pavimento calcolato sulla scala della casa era € 900 netti e la giornata ne varrebbe € 1.250:
+Girolamo è sceso a € 800 per restare vicino al budget dell'agenzia. **Questo prezzo non è un
+riferimento da ripetere**: se Viaggi Tigullio Marcone torna con richieste simili, si riparte
+dalla scala, non da € 800.
 
-**Se il cliente insiste sul budget**, meglio non fare lo sconto secco: Viaggi Tigullio Marcone è
-un'agenzia che lavora in continuità, quindi conviene rispondere con il pacchetto — altri
-trasferimenti o escursioni nello stesso periodo — e tenere il prezzo di questa giornata.
-Se proprio si deve scendere, non oltre € 900 netti.
-
-Se invece la giornata si subappalta a Francesco, il costo si colloca sui € 600-700 e a € 1.250
-il margine resta accettabile ma non brillante: in quel caso il pavimento sale a € 1.000.
+**La giornata va fatta con il mezzo di proprietà.** Subappaltandola a Francesco il costo si
+colloca sui € 600-700 e a € 800 non resta praticamente niente.
 
 ## Verifiche fatte
 
@@ -107,17 +108,17 @@ il margine resta accettabile ma non brillante: in quel caso il pavimento sale a 
    il conducente sia all'arrivo sia al ritorno.
 4. **Bloccare la disponibilità del mezzo** per domenica 11 ottobre.
 
-## Aggiornamento 21 agosto — decisione di Girolamo sul prezzo
+## Aggiornamento 21 agosto — decisione sul prezzo e mail al cliente
 
-Girolamo ha fissato il suo pavimento a **€ 800,00 + IVA** (€ 880,00 IVA inclusa) e ha chiesto il
-testo di una mail che lo dica al cliente: `2026-10-11_mail-risposta-a-Marcone_IT-EN.md`,
-italiano e inglese. Nessuna bozza creata in Gmail, niente inviato.
+Girolamo ha fissato il prezzo a **€ 800,00 + IVA** (€ 880,00 IVA inclusa) e ha chiesto il testo
+della mail che lo comunica al cliente: `2026-10-11_mail-risposta-a-Marcone_IT-EN.md`, italiano e
+inglese. Nessuna bozza creata in Gmail, niente inviato: la mail la manda lui.
 
-È **€ 100 sotto il pavimento di € 900** indicato qui sopra e € 450 sotto il preventivo. A € 800
-netti, con un costo diretto stimato di € 450-500, restano € 300-350 per una domenica intera con
-il mezzo bloccato. La scelta è sua, ma il numero è quello.
+**I due PDF e la pagina web sono stati rigenerati a € 800**, quindi mail e preventivo ora dicono
+la stessa cifra e si possono mandare insieme. Nel preventivo la nota sul budget è stata riscritta:
+non parla più di metà giornata, dice che € 800 + IVA è il minimo al quale la giornata si può
+fare, non un prezzo di partenza.
 
-**I due PDF dicono ancora € 1.250,00 + IVA.** O si manda la mail da sola, oppure si rigenerano i
-PDF a € 800 prima di allegarli — le due cose insieme si contraddicono. Per rigenerarli bastano
-il campo `price_rows`, `price_total`, `grand`, `perhead` e `pay_rows` dello script (a € 800
-netti: totale € 880,00, € 88,00 a persona, acconto 30% € 264,00, saldo € 616,00).
+**Tolti i chilometri da tutto il materiale che va al cliente** — PDF, pagina web e testo della
+mail. Restano solo in questa scheda e nei blocchi interni della pagina web. La regola è ora
+scritta nel CLAUDE.md.
