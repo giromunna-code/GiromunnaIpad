@@ -13,6 +13,7 @@ File generati:
 - `GiroMunna_Preventivo_Tour_Toscana_23_settembre_2026_IT.pdf`
 - `genera_preventivo_tour_toscana.py` — rigenera il PDF
 - `preventivo_tour_toscana_23_settembre_2026.html` — la pagina web
+- `mail_per_master_group.txt` — il testo della mail, da copiare e inviare a mano
 
 Tutto dentro `Preventivi/2026-09-23_MasterGroup/`.
 
