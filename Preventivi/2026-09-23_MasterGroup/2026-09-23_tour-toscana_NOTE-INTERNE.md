@@ -107,45 +107,52 @@ Applicare € 2,60 ai chilometri da rimessa significherebbe **contare due volte*
 che sta già dentro i € 600 di base e dentro i prezzi di riferimento. Il conto qui sotto è
 quindi rimasto sui chilometri di percorso e **i prezzi non cambiano**.
 
-| | Base + km percorso | Accessi | Modello | **Deciso da Girolamo** | Delta |
+### Gli oneri di accesso, cifre vere di Girolamo
+
+Queste sono le tariffe reali, non più le mie stime:
+
+| Voce | Costo |
+|---|---|
+| Checkpoint di Firenze | **€ 421,00** |
+| Sosta bus Pisa | **€ 270,00** |
+| Sosta bus Lucca | **€ 180,00** |
+| Permesso comunale Siena | **€ 160,00** |
+| Sosta bus San Gimignano | **€ 240,00** |
+| Parcheggio Pienza | **€ 22,00** |
+
+Mancano ancora **Monteriggioni** (itinerario C) e **Montalcino e Montepulciano** (itinerario
+D): nei conti qui sotto sono lasciati fuori, quindi i residui di C e D sono un filo
+ottimistici.
+
+Sommati per itinerario, sul netto:
+
+| | Netto | Oneri dentro | % del netto | Resta | Resta al km |
 |---|---|---|---|---|---|
-| A · 195 km percorso, 320 da rimessa | € 1.107 | Pisa € 60 + Firenze € 235 | € 1.402 | **€ 1.590,91** | +€ 189 |
-| B · 315 km percorso, 470 da rimessa | € 1.419 | Pisa € 60 + Siena € 160 + Firenze € 235 | € 1.874 | **€ 1.954,55** | +€ 81 |
-| C · 205 km percorso, 330 da rimessa | € 1.133 | Siena € 160 + Firenze € 235 | € 1.528 | **€ 1.590,91** | +€ 63 |
-| D · 270 km percorso, 400 da rimessa | € 1.302 | parcheggi Val d'Orcia ~€ 40 + Firenze € 235 | € 1.577 | **€ 1.272,73** | −€ 304 |
+| A · Pisa e Lucca | € 1.590,91 | € 871,00 | **55%** | € 719,91 | € 2,25 |
+| B · Pisa, Siena, San Gimignano | € 1.954,55 | € 1.091,00 | **56%** | € 863,55 | € 1,84 |
+| C · Siena, San Gim., Monteriggioni | € 1.590,91 | € 821,00 + Monteriggioni | 52% | € 769,91 | € 2,33 |
+| D · Montalcino, Pienza, Montepulciano | € 1.272,73 | € 443,00 + due parcheggi | 35% | € 829,73 | € 2,07 |
 
-Confrontati al netto — che è l'unico confronto sensato — i prezzi di Girolamo sono in linea
-col modello su B e C, sopra su A, e sotto su D. Visti crudamente per chilometro di mezzo,
-sempre al netto, danno questo quadro — che però, come spiegato subito sotto, è fuorviante:
+### Il listino di Girolamo è coerente, il rilievo su D era sbagliato
 
-| | Netto | Km mezzo | € al km |
-|---|---|---|---|
-| A · Pisa e Lucca | € 1.590,91 | 320 | **€ 4,97** |
-| C · Siena, San Gimignano, Monteriggioni | € 1.590,91 | 330 | **€ 4,82** |
-| B · Pisa, Siena, San Gimignano | € 1.954,55 | 470 | **€ 4,16** |
-| D · Montalcino, Pienza, Montepulciano | € 1.272,73 | 400 | **€ 3,18** |
+Tolti gli oneri, quello che resta per il trasporto sta fra **€ 1,84 e € 2,33 al chilometro**
+su tutti e quattro gli itinerari: una banda stretta, con i valori che calano man mano che la
+giornata si allunga. È esattamente come si prezza il trasporto.
 
-### Perché il confronto al chilometro non significa niente
+E l'ordine si ribalta: **D non è il più povero dei quattro, è quello che lascia di più in
+assoluto** (€ 829,73), perché porta dentro € 443 di oneri contro gli € 871 di A. Il rilievo
+scritto in precedenza — «D è fuori scala, va alzato» — **era sbagliato e va considerato
+chiuso.** Nasceva dal confrontare quattro prezzi lordi di oneri come se fossero omogenei,
+quando A ne contiene il doppio di D.
 
-Girolamo ha chiarito il punto: **nei suoi prezzi ha già dentro i checkpoint e i parcheggi**,
-e non nella stessa misura da un itinerario all'altro. Confrontare i quattro importi al
-chilometro, come era stato fatto qui sopra, mette a paragone cifre che contengono quote di
-oneri molto diverse: il permesso di Siena da solo pesa più di tutti i parcheggi della Val
-d'Orcia messi insieme.
+⚠️ **Il dato che conta davvero, però, è un altro: gli oneri di accesso valgono dal 35% al
+56% del prezzo netto.** Su B sono € 1.091 su € 1.954,55. Più della metà di quello che il
+cliente paga, su tre itinerari su quattro, non è ricavo: è denaro che esce comunque. Ha due
+conseguenze pratiche, ed è la cosa più importante di tutte queste note:
 
-Riordinati per oneri incorporati, i quattro itinerari stanno così:
-
-| | Oneri dentro il prezzo | Perché |
-|---|---|---|
-| B · Pisa, Siena, San Gimignano | i più alti | checkpoint Firenze + sosta bus Pisa + permesso Siena + San Gimignano |
-| C · Siena, San Gimignano, Monteriggioni | alti | checkpoint Firenze + permesso Siena + due parcheggi |
-| A · Pisa e Lucca | medi | checkpoint Firenze + sosta bus Pisa + Lucca |
-| D · Montalcino, Pienza, Montepulciano | i più bassi | checkpoint Firenze + tre parcheggi di paese, nessun permesso comunale |
-
-**D è il più basso dei quattro perché è quello che porta dentro meno oneri**, non perché
-sia sottopagato il trasporto. La Val d'Orcia non ha né permesso comunale né sosta bus a
-tariffa da città d'arte: si paga il parcheggio sotto le mura e basta. Il rilievo che era
-stato scritto qui — «D è fuori scala» — **era sbagliato e va considerato chiuso.**
+1. **Lo spazio di trattativa è molto più stretto di quanto sembri.** Se Master Group chiede
+   il 10% su A, sono € 175 su € 719,91 di residuo: un quarto di quello che resta.
+2. **Vale la pena dire al cliente quanto pesano.** Vedi il punto in fondo, "Da valutare".
 
 **Non sono stati usati come base i prezzi del Corte Francigena divisi per due**, come vuole
 la regola: quello è un lavoro a due mezzi con importi già scontati per volume.
@@ -158,8 +165,8 @@ I chilometri corretti da Girolamo obbligano a rifare anche questo conto: **la st
 € 250-350 di costo diretto a giornata era ottimistica.** Su 320-470 km reali il solo gasolio
 vale € 140-240, cui si aggiungono i pedaggi (la A11 su A, la A1 della Valdichiana su D) e la
 giornata dell'autista, che su B e D è di dodici-tredici ore. Realisticamente si sta sui
-**€ 400-500 a giornata**, più gli oneri di accesso che qui sono compresi nel prezzo
-(€ 235-455 secondo l'itinerario).
+**€ 400-500 a giornata**, più gli oneri di accesso che qui sono compresi nel prezzo e che,
+con le tariffe vere, valgono € 443-1.091 secondo l'itinerario.
 
 Con il listino deciso da Girolamo, tolti gli oneri di accesso che sono compresi nel prezzo,
 resta questo per coprire costi e margine:
@@ -171,16 +178,22 @@ resta questo per coprire costi e margine:
 | C · Siena, San Gimignano, Monteriggioni | € 1.590,91 | € 395 | € 1.196 | ~€ 750 |
 | D · Montalcino, Pienza, Montepulciano | € 1.272,73 | € 275 | € 998 | ~€ 530 |
 
-⚠️ **Gli importi degli oneri in questa tabella sono stime mie, non cifre di Girolamo**, e
-sono il punto debole del conto: € 235 di checkpoint Firenze vengono da una verifica sulle
-tariffe pubblicate, gli altri sono ordini di grandezza. Girolamo le cifre vere le ha, perché
-le ha già messe dentro i prezzi. Quando le passa, questa tabella va rifatta: è l'unico punto
-delle note interne che al momento non è verificato.
+Con le tariffe vere degli oneri il conto è questo:
 
-Con le stime attuali il margine regge su tutti e quattro, e l'IVA dentro lo ha assottigliato
-di circa il 9% rispetto al conto precedente. In trattativa lo spazio per scendere c'è su
-tutti, ma è più stretto dove gli oneri incorporati sono più alti — B e C — perché lì una
-parte del prezzo non è margine, è denaro che esce comunque.
+| | Netto | − oneri | Resta | − gasolio e pedaggi | Per la giornata e il margine |
+|---|---|---|---|---|---|
+| A · Pisa e Lucca | € 1.590,91 | € 871 | € 720 | ~€ 180 | **~€ 540** |
+| B · Pisa, Siena, San Gimignano | € 1.954,55 | € 1.091 | € 864 | ~€ 260 | **~€ 605** |
+| C · Siena, San Gim., Monteriggioni | € 1.590,91 | € 821+ | € 770 | ~€ 185 | **~€ 585** |
+| D · Montalcino, Pienza, Montepulciano | € 1.272,73 | € 443+ | € 830 | ~€ 225 | **~€ 605** |
+
+Quei € 540-605 sono la giornata dell'autista più il margine. Se guida Girolamo è la sua
+giornata più quello che avanza; se guida un dipendente, di margine vero ne resta poco.
+
+**Rispetto al conto precedente il quadro si è stretto di parecchio**, perché le mie stime
+degli oneri erano basse di circa € 500 a itinerario. Nessuno dei quattro è in perdita e la
+banda è omogenea, ma non c'è il cuscinetto che sembrava esserci: **in trattativa non si
+scende, e se proprio si deve, si scende su D, che è quello che lascia di più.**
 
 Nessun pernottamento del conducente: si parte e si torna a Firenze in giornata e la base di
 Ponte Buggianese è a ~50 km dal punto di carico. Sull'itinerario D, però, la giornata del
@@ -200,10 +213,12 @@ di Servizi alla Strada:
   Beluga *e* varrebbe per uno sprinter da 12 o 16 posti: cambiare mezzo non risolve niente,
   ed è l'argomento da usare se insistono sullo sprinter.
 - Serve il **contrassegno**, che si compra solo online e previa registrazione del veicolo
-  sul portale di Servizi alla Strada. Tariffa a seconda di lunghezza e classe ambientale:
-  per un diesel Euro VI il permesso giornaliero ordinario è **€ 235 fino a 8 metri** e
-  **€ 315 oltre**. Il Beluga sta a 7,64 m, quindi paga la fascia bassa: **sono € 80 al
-  giorno di vantaggio** rispetto a un gran turismo, ed è un argomento di vendita.
+  sul portale di Servizi alla Strada, con tariffa a seconda di lunghezza e classe
+  ambientale. **Il costo vero per noi, dato da Girolamo, è € 421,00.** Le tariffe pubblicate
+  che avevo trovato — € 235 fino a 8 metri, € 315 oltre, per un diesel Euro VI con permesso
+  giornaliero ordinario — non corrispondono: fa fede la cifra di Girolamo, che è quella che
+  paga davvero. Resta vero che sotto gli 8 metri si sta nella fascia più bassa, e questo il
+  preventivo lo dice al cliente senza citare importi.
 - I punti di salita/discesa attivi sono: **Piazza Vittorio Veneto** (2 stalli, 24 h, salita
   e discesa, max 10 min), **Piazzale Michelangelo** (8 stalli, 24 h, max 20 min),
   **Viale Ariosto** (1 stallo, 24 h, max 10 min), **Piazza Savonarola** (2 stalli, solo
@@ -232,9 +247,13 @@ proposta della navetta van, che è esattamente quello che il cliente aveva intui
 chiedendola. Nel preventivo è indicato Piazza Vittorio Veneto come ritrovo del mattino
 perché è l'unico vicino al centro senza limiti di orario né di tipo di servizio.
 
-⚠️ **Nel CLAUDE.md il permesso di Firenze è indicato in ~€ 350.** La cifra verificata oggi è
-€ 235 per la fascia sotto gli 8 metri. Il preventivo usa € 235. Se la regola in CLAUDE.md
-va aggiornata, decidi tu.
+⚠️ **Nel CLAUDE.md il permesso di Firenze è indicato in ~€ 350: la cifra vera è € 421,00.**
+Vale la pena aggiornare la regola, perché è un numero che tornerà su ogni preventivo che
+tocca Firenze. Stessa cosa per Pisa: nel CLAUDE.md il parcheggio bus dell'aeroporto è dato a
+~€ 61, mentre la sosta bus in città costa € 270. Sono due voci diverse, ma conviene
+scriverle entrambe. Se vuoi che aggiorni il CLAUDE.md con tutto il listino degli oneri —
+Firenze € 421, Pisa € 270, Lucca € 180, Siena € 160, San Gimignano € 240, Pienza € 22 —
+dimmelo e lo faccio.
 
 ## Altre verifiche di accesso
 
@@ -281,6 +300,27 @@ operator è più pulito e toglie argomenti di discussione il giorno del servizio
    fascia da 30 a 10, dove si addebita il 50%: nel preventivo il cliente è avvisato, e per
    noi è la leva per farlo decidere in fretta. La validità è fissata al 4 settembre.
 8. **Bloccare il mezzo sul 23 settembre** appena arriva la conferma.
+9. **Mancano tre tariffe:** Monteriggioni per l'itinerario C, Montalcino e Montepulciano
+   per il D. Non cambiano il quadro, ma i residui di C e D sono un filo ottimistici finché
+   non si hanno.
+
+## Da valutare: dire al cliente quanto pesano gli oneri
+
+Oggi il preventivo dice che gli oneri di accesso sono compresi, ma non quanto valgono. Con
+le cifre vere in mano la scelta merita un ripensamento: su A sono € 871 su € 1.590,91 di
+netto, il 55%. Scrivere nel preventivo *"il prezzo comprende € 871,00 di oneri di accesso —
+checkpoint di Firenze, sosta bus di Pisa e di Lucca — che versiamo per vostro conto"*
+avrebbe due effetti:
+
+- **Toglie il terreno sotto la trattativa.** Un tour operator che vede che più della metà
+  del prezzo non è nostro ricavo non chiede lo sconto sull'intero importo.
+- **Fa capire il valore del tutto compreso**, che oggi passa come una formula e diventerebbe
+  una cifra.
+
+Il contro: si mostra la propria struttura di costo, e se un concorrente quota "trasporto
+€ 800 + oneri a parte" il confronto diventa possibile. Personalmente lo farei — con questi
+numeri il rischio di sembrare cari senza motivo è più grande. **Decidi tu: se dici di sì,
+lo aggiungo al preventivo in due minuti.**
 
 **Il preventivo è chiuso e si può mandare così com'è.** Non resta niente da verificare
 prima dell'invio: la data c'è, il mezzo è libero, il punto di carico è documentato e i van

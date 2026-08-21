@@ -171,10 +171,11 @@ IT = dict(
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente per l'intera giornata, carburante, pedaggi autostradali, assicurazione completa e "
-        "movimentazione bagagli. Sono compresi anche tutti gli oneri di accesso: il permesso ZTL bus di Firenze, che "
-        "il nostro mezzo paga nella fascia sotto gli 8 metri; il parcheggio bus di Pisa negli itinerari A e B; il "
-        "permesso comunale per i bus turistici di Siena negli itinerari B e C; i parcheggi autorizzati dei borghi "
-        "della Val d'Orcia nell'itinerario D."
+        "movimentazione bagagli. Sono compresi anche tutti gli oneri di accesso, che su questi itinerari non sono una "
+        "voce secondaria: il checkpoint di Firenze, che il nostro mezzo paga nella fascia sotto gli 8 metri, e poi, "
+        "secondo l'itinerario che sceglierete, la sosta bus di Pisa e quella di Lucca, il permesso comunale per i bus "
+        "turistici di Siena, le soste autorizzate di San Gimignano e Monteriggioni e i parcheggi di Montalcino, Pienza e "
+        "Montepulciano."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
