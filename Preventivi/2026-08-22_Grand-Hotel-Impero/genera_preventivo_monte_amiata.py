@@ -77,35 +77,26 @@ IT = dict(
         "Ci serve il numero esatto dei passeggeri per confermare la ripartizione fra i due mezzi."
     ),
     h_servizio="Il servizio",
-    svc_head=["Orario", "Percorso", "Percorrenza"],
+    svc_head=["Quando", "Programma"],
     svc=[
-        ("da definire",
-         "<b>Corte Francigena, Castelnuovo dell'Abate (SI) → Castel del Piano (GR).</b> "
-         "Il minibus è già in zona: parte da un altro nostro servizio in corso vicino a Montalcino per "
-         "raggiungere il Grand Hotel Impero e dare il via alla giornata. Nessun passeggero a bordo, "
-         "breve trasferimento.",
-         "≈ 17 km · 25 min"),
-        ("a seguire",
-         "<b>Giornata sul Monte Amiata.</b> Grand Hotel Impero → Vetta Amiata, Prato delle Macinaie → "
-         "Abbadia San Salvatore → Santa Fiora → Arcidosso → rientro in hotel. Mezzo e conducente restano "
-         "a vostra disposizione per tutta la giornata. Il giro qui sopra è una <b>proposta</b>: lo "
-         "adattiamo a quello che volete vedere e a quanto tempo volete fermarvi in ogni tappa.",
-         "≈ 80 km · 6 h 45"),
-        ("a fine giornata",
-         "<b>Castel del Piano → Corte Francigena, Castelnuovo dell'Abate.</b> Il mezzo rientra a fine "
-         "servizio dove era già impegnato, non alla base di Ponte Buggianese.",
-         "≈ 17 km · 25 min"),
+        ("Sabato 22 agosto",
+         "<b>Due mezzi, Beluga e Tourengo, con partenza da Corte Francigena in direzione Monte Amiata.</b> "
+         "Mezzi e conducenti restano a vostra disposizione per l'intera giornata di escursione, fra i "
+         "borghi e i punti panoramici del monte. Orario di partenza e tappe si concordano insieme a voi "
+         "più vicino alla data."),
+        ("Fine giornata",
+         "<b>Rientro dei due mezzi a Corte Francigena</b>, dove restano impegnati per un altro nostro "
+         "servizio — non alla base di Ponte Buggianese."),
     ],
     svc_foot=(
-        "Distanze e tempi sono stime stradali, traffico escluso. L'orario di partenza si conferma insieme "
-        "a voi: quello che conta è che mezzo e conducente restano vostri con continuità per tutta la "
-        "giornata, andata e ritorno da Corte Francigena comprese."
+        "L'orario di partenza e le tappe sul monte si confermano insieme a voi: quello che conta è che i "
+        "due mezzi restano vostri con continuità per l'intera giornata."
     ),
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Sab 22 ago — Beluga: mezzo e conducente a disposizione sul Monte Amiata, circa 6 ore e 45",
+        ("Sab 22 ago — Beluga: mezzo e conducente a disposizione per la giornata sul Monte Amiata",
          "€ 900,00", "+ IVA 10%"),
-        ("Trasferimento del Beluga da e per Corte Francigena, Castelnuovo dell'Abate (SI), circa 34 km",
+        ("Trasferimento del Beluga da e per Corte Francigena, Castelnuovo dell'Abate (SI)",
          "€ 150,00", "+ IVA 10%"),
         ("Sab 22 ago — Tourengo: mezzo e conducente a disposizione sul Monte Amiata",
          "<i>a seguire</i>", ""),
@@ -153,20 +144,20 @@ IT = dict(
          "che opera come Tuscany T.O. &amp; Munna Bus Operator. Il suo prezzo per la giornata è in corso di "
          "definizione con lui e ve lo confermiamo a breve: nel frattempo la parte del Beluga in questo "
          "preventivo è già ferma."),
-        ("<b>Il viaggio del Beluga da Corte Francigena.</b> Il minibus è già impegnato vicino a Montalcino e "
-         "raggiunge Castel del Piano con un salto breve, circa 17 km, invece che dalla nostra base a oltre "
-         "170 km di distanza: è il motivo per cui il suo trasferimento in tabella pesa così poco sul totale. Se "
-         "a fine giornata dovesse invece rientrare alla base di Ponte Buggianese anziché tornare a Corte "
-         "Francigena, il trasferimento si allunga e il prezzo va rivisto: ve lo confermiamo appena sappiamo "
-         "come si chiude la giornata. Il trasferimento del Tourengo si concorda con Francesco, dipende da "
+        ("<b>Il viaggio del Beluga da Corte Francigena.</b> Il minibus è già impegnato vicino a Montalcino: "
+         "è un salto breve fino a Castel del Piano, non un viaggio dalla nostra base, ed è il motivo per cui "
+         "il suo trasferimento in tabella pesa così poco sul totale. Se a fine giornata dovesse invece "
+         "rientrare alla base di Ponte Buggianese anziché tornare a Corte Francigena, il trasferimento si "
+         "allunga e il prezzo va rivisto: ve lo confermiamo appena sappiamo come si chiude la giornata. Il "
+         "trasferimento del Tourengo si concorda con Francesco, dipende da "
          "dove si trova sabato."),
         ("<b>Quanti siete.</b> Il Beluga porta 26 passeggeri più l'autista, il Tourengo 28 più l'autista: "
          "insieme, fino a 54. Mandateci il numero esatto per confermare la ripartizione fra i due mezzi."),
-        ("<b>Le strade del monte.</b> La salita alla Vetta Amiata è tutta tornanti e i centri storici di Santa "
-         "Fiora e Arcidosso sono stretti: si scende ai piazzali all'ingresso dei borghi e si prosegue a piedi per "
-         "pochi minuti. Il Beluga, 7,64 m, ci arriva senza problemi; il Tourengo, 7,86 m, dovrebbe passare "
-         "comunque, ma sui tratti più stretti verifichiamo il punto di discesa prima di partire, con il Beluga "
-         "che apre la strada. Se avete in mente una tappa precisa, diteci quale."),
+        ("<b>Le strade del monte.</b> Le strade dell'Amiata sono spesso tornanti, e i centri storici dei borghi "
+         "sono in diversi punti stretti: normalmente si scende ai piazzali all'ingresso e si prosegue a piedi. "
+         "Il Beluga, 7,64 m, ci arriva senza problemi; il Tourengo, 7,86 m, dovrebbe passare comunque, ma sui "
+         "tratti più stretti verifichiamo il punto di discesa prima di partire, con il Beluga che apre la "
+         "strada. Se avete in mente una tappa precisa, diteci quale."),
         ("<b>Il vitto dei conducenti.</b> Il pranzo di sabato resta sempre a carico del cliente per entrambi "
          "gli autisti: non lo mettiamo a preventivo e non lo organizziamo noi. Se voleste tenere i mezzi anche "
          "la sera — una cena sul monte, un rientro dopo le 20:00 — i conducenti dovrebbero pernottare a Castel "
@@ -213,34 +204,26 @@ EN = dict(
         "We need the exact number of passengers to confirm how the group splits between the two vehicles."
     ),
     h_servizio="The service",
-    svc_head=["Time", "Route", "Distance"],
+    svc_head=["When", "Programme"],
     svc=[
-        ("to be confirmed",
-         "<b>Corte Francigena, Castelnuovo dell'Abate (SI) → Castel del Piano (GR).</b> "
-         "The minibus is already in the area on another of our services near Montalcino and comes across "
-         "to reach the Grand Hotel Impero and start the day. No passengers on board, a short hop.",
-         "≈ 17 km · 25 min"),
-        ("following on",
-         "<b>A day on Monte Amiata.</b> Grand Hotel Impero → Vetta Amiata, Prato delle Macinaie → "
-         "Abbadia San Salvatore → Santa Fiora → Arcidosso → back to the hotel. Vehicle and driver stay at "
-         "your disposal for the whole day. The round above is a <b>proposal</b>: we adapt it to what you "
-         "want to see and how long you want to stop at each place.",
-         "≈ 80 km · 6 h 45"),
-        ("end of day",
-         "<b>Castel del Piano → Corte Francigena, Castelnuovo dell'Abate.</b> The vehicle returns at the end "
-         "of the service to where it was already engaged, not to the Ponte Buggianese base.",
-         "≈ 17 km · 25 min"),
+        ("Saturday 22 August",
+         "<b>Two vehicles, Beluga and Tourengo, departing from Corte Francigena towards Monte Amiata.</b> "
+         "Vehicles and drivers stay at your disposal for the whole day of the excursion, among the "
+         "mountain's villages and viewpoints. Departure time and stops will be agreed with you closer to "
+         "the date."),
+        ("End of day",
+         "<b>The two vehicles return to Corte Francigena</b>, where they stay engaged on another of our "
+         "services — not to the Ponte Buggianese base."),
     ],
     svc_foot=(
-        "Distances and times are road estimates, traffic excluded. The departure time will be confirmed with "
-        "you: what matters is that vehicle and driver stay yours, without a break, for the whole day, "
-        "including the trip to and from Corte Francigena."
+        "The departure time and the stops on the mountain will be confirmed with you: what matters is that "
+        "the two vehicles stay yours without a break for the whole day."
     ),
     h_prezzo="The price",
     price_rows=[
-        ("Sat 22 Aug — Beluga: vehicle and driver at your disposal on Monte Amiata, about six hours 45",
+        ("Sat 22 Aug — Beluga: vehicle and driver at your disposal for the day on Monte Amiata",
          "€ 900.00", "+ VAT 10%"),
-        ("Beluga travel to and from Corte Francigena, Castelnuovo dell'Abate (SI), about 34 km",
+        ("Beluga travel to and from Corte Francigena, Castelnuovo dell'Abate (SI)",
          "€ 150.00", "+ VAT 10%"),
         ("Sat 22 Aug — Tourengo: vehicle and driver at your disposal on Monte Amiata",
          "<i>to follow</i>", ""),
@@ -285,21 +268,20 @@ EN = dict(
          "Munna, who operates as Tuscany T.O. &amp; Munna Bus Operator. Its price for the day is being settled "
          "with him and we will confirm it shortly: in the meantime, the Beluga part of this quotation is "
          "already firm."),
-        ("<b>The Beluga's journey from Corte Francigena.</b> The minibus is already engaged near Montalcino "
-         "and reaches Castel del Piano with a short hop, about 17 km, rather than from our base over 170 km "
-         "away: that is why its transfer line weighs so little on the total. Should it need to return to the "
+        ("<b>The Beluga's journey from Corte Francigena.</b> The minibus is already engaged near Montalcino: "
+         "it is a short hop to Castel del Piano, not a trip from our base, which is why its transfer line "
+         "weighs so little on the total. Should it need to return to the "
          "Ponte Buggianese base at the end of the day instead of going back to Corte Francigena, the transfer "
          "grows and the price needs revising: we will confirm as soon as we know how the day closes. The "
          "Tourengo's transfer is being settled with Francesco, depending on where it is on Saturday."),
         ("<b>How many of you there are.</b> The Beluga carries 26 passengers plus the driver, the Tourengo 28 "
          "plus the driver: together, up to 54. Send us the exact number to confirm how the group splits "
          "between the two vehicles."),
-        ("<b>The mountain roads.</b> The climb to the summit of the Amiata is one hairpin after another, and the "
-         "old centres of Santa Fiora and Arcidosso are narrow: you get off at the car parks at the entrance to "
-         "the villages and walk the last few minutes. The Beluga, at 7.64 m, gets there without trouble; the "
-         "Tourengo, at 7.86 m, should manage too, but on the tightest stretches we will check the drop-off "
-         "point before we set off, with the Beluga leading the way. If you have a particular stop in mind, "
-         "tell us which."),
+        ("<b>The mountain roads.</b> The Amiata's roads are often one hairpin after another, and several of "
+         "the old village centres are narrow: usually you get off at the car park by the entrance and walk in. "
+         "The Beluga, at 7.64 m, gets there without trouble; the Tourengo, at 7.86 m, should manage too, but "
+         "on the tightest stretches we will check the drop-off point before we set off, with the Beluga "
+         "leading the way. If you have a particular stop in mind, tell us which."),
         ("<b>The drivers' meals.</b> Saturday lunch always stays at the client's charge for both drivers: we "
          "do not put it in the quotation and we do not arrange it. Should you want to keep the vehicles for "
          "the evening too — dinner on the mountain, a return after 20:00 — the drivers would need to stay "
@@ -422,13 +404,12 @@ def build(lang, cliente, out):
 
     # --- servizio
     F.append(Paragraph(L["h_servizio"], S["h2"]))
-    cols = [26 * mm, usable - 26 * mm - 27 * mm, 27 * mm]
+    cols = [26 * mm, usable - 26 * mm]
     data = [[Paragraph(h, S["th"]) for h in L["svc_head"]]]
-    for orario, desc, km in L["svc"]:
+    for orario, desc in L["svc"]:
         data.append([
             Paragraph("<b>%s</b>" % orario, S["cellsm"]),
             Paragraph(desc, S["cellsm"]),
-            Paragraph(km, S["cellmut"]),
         ])
     t = Table(data, colWidths=cols, repeatRows=1)
     t.setStyle(TableStyle([

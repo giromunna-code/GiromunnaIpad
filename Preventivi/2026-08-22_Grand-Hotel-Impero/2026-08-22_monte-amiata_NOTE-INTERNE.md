@@ -23,34 +23,53 @@ chi è davvero, si rigenera con `--cliente "Nome vero"`.
 
 ---
 
-## Il programma corretto (Girolamo, 21 agosto sera)
+## Regola: km e orari di dettaglio solo nei programmi interni
 
-Le prime due stesure di questo preventivo avevano il programma sbagliato: pensavano che il
-ritiro dall'ospedale fosse per **sabato mattina**, insieme alla gita. Non è così. Il programma
-vero, spiegato da Girolamo, è:
+Girolamo l'ha ripetuto più volte: **le voci di km e tempi non vanno mai nel documento per il
+cliente.** Vanno solo qui, nei programmi interni (questo file e la sezione "Interno" della
+pagina web), che sono gli strumenti di lavoro di Girolamo — non nel preventivo che legge il
+cliente. Il preventivo cliente descrive il servizio (mezzi, giornata, prezzo); il programma
+interno descrive il lavoro vero, con orari, tappe e chilometri. Da questa versione in poi vale
+sempre così, anche per i prossimi preventivi.
 
-- **Oggi, venerdì 21 agosto** — partenza alle 09:00 per andare a riprendere la cliente dimessa
-  dall'ospedale, che si trova al Grand Hotel Impero di Castel del Piano: il ritiro è **già
-  avvenuto stamattina**, non è più un servizio da fare domani. Il mezzo poi torna a Corte
-  Francigena. Alle 17:00 riparte per il servizio serale dell'altro cliente (quello a cui il
-  Beluga è destinato in questi giorni vicino a Montalcino), con fine prevista verso le **23:00**
-  — non l'01:00-01:30 come si era capito nelle versioni precedenti.
-- **Domani, sabato 22 agosto** — resta solo, eventualmente, la **gita sul Monte Amiata**.
-  L'orario di partenza per il monte è ancora da decidere, ed è stato lasciato apposta aperto nel
-  preventivo (vedi sotto).
+## Il programma vero (Girolamo, 21 agosto sera)
 
-**Conseguenza pratica:** questo preventivo ora riguarda **solo la gita sull'Amiata di domani**.
-Il servizio dell'ospedale di oggi non ci è più dentro — è già stato fatto, il cliente non lo
-aveva chiesto a preventivo (solo di essere richiamato con urgenza), e non risulta bisogno di un
-documento separato per quello, a meno che Girolamo non lo richieda.
+Le stesure precedenti di questo preventivo avevano il programma sbagliato più di una volta:
+prima si pensava che il ritiro dall'ospedale fosse per sabato mattina insieme alla gita; poi,
+corretto quel punto, mancavano ancora i dettagli veri di oggi. Il programma completo, spiegato
+da Girolamo:
 
-## Perché l'orario di partenza per il monte è lasciato aperto
+- **Oggi, venerdì 21 agosto**
+  - **09:00 – 11:00 circa** — ritiro della signora dimessa dall'ospedale, che si trova al Grand
+    Hotel Impero di Castel del Piano: andata e ritorno da Corte Francigena. **Già fatto
+    stamattina**, non è più un servizio da fare domani.
+  - **17:00 – 23:00/23:30 circa** — partenza per **Podere Le Ripi e Serendipity** (serata),
+    per il cliente di Corte Francigena. Rientro previsto fra le 23:00 e le 23:30.
+- **Domani, sabato 22 agosto** — **due minibus**, Beluga e Tourengo, con partenza da Corte
+  Francigena in direzione Monte Amiata e rientro a Corte Francigena. Orario di partenza ancora
+  da decidere, lasciato apposta aperto nel preventivo (vedi sotto).
 
-Girolamo ha detto esplicitamente di lasciare da decidere l'orario di ripartenza per l'Amiata. Il
-documento è coerente con questo: niente orario fisso ("10:30" era nella prima stesura), ma "a
-seguire", con le tappe indicate come tempo trascorso dalla partenza (+2h30, +4h30, +5h45) così
-restano valide qualunque sia l'ora reale. Il prezzo non cambia, è legato alla durata (6h45), non
-all'orario di inizio.
+**Conseguenza pratica:** questo preventivo riguarda **solo la gita di domani sull'Amiata**, con
+i due mezzi. Il servizio dell'ospedale e la serata di stasera sono lavoro di oggi, per lo più già
+fatto o in corso: non c'entrano con questo documento, restano solo qui come programma interno
+per calcolare correttamente il riposo del conducente prima di domani.
+
+## Come si presenta la giornata di sabato al cliente
+
+Girolamo ha detto esplicitamente di lasciare da decidere l'orario di partenza per l'Amiata, e di
+non mettere km/tempi nel documento cliente. Il preventivo ora è molto più semplice: una sola voce
+di servizio ("due mezzi da Corte Francigena verso il Monte Amiata, giornata a disposizione,
+orario e tappe da concordare") e una di rientro. Niente tabella con tappe, orari intermedi o
+chilometri — quelli restano solo qui.
+
+Anche l'itinerario col dettaglio dei borghi (Vetta Amiata, Abbadia San Salvatore, Santa Fiora,
+Arcidosso) è stato tolto dal documento cliente: era una proposta inventata da Claude come esempio
+di possibile giro, ma non è mai stata confermata né da Girolamo né dal cliente. Meglio non
+scriverla come se fosse già decisa. Se Girolamo ha in mente un giro preciso, va aggiunto lui
+stesso o va detto esplicitamente a voce, non lasciato scritto a preventivo come fosse già deciso.
+
+Il prezzo non cambia: resta legato alla giornata intera a disposizione, non a un orario di
+inizio o a un itinerario specifico.
 
 ## Prezzi
 
@@ -128,24 +147,26 @@ passasse a Francesco**, i prezzi andrebbero rivisti al rialzo del 20-25%.
    trasferimento sale da € 150 a circa € 350-400, portando il totale sui **€ 1.400-1.450** IVA
    inclusa. Cifra da verificare con la percorrenza esatta prima di quotarla al cliente.
 
-## Ore di guida e di riposo — risolto con l'orario corretto
+## Ore di guida e di riposo — risolto con l'orario vero
 
 Con la prima versione del programma (fine servizio stasera all'01:00-01:30) il riposo prima di
 domani era sotto il minimo di legge, anche nell'ipotesi migliore. **Con l'orario vero le cose
-cambiano parecchio.** Fine servizio di stasera prevista verso le **23:00**:
+cambiano parecchio.** Fine servizio di stasera (Podere Le Ripi e Serendipity) prevista fra le
+**23:00 e le 23:30**:
 
-| Partenza domani | Riposo | In regola? |
-|---|---|---|
-| 08:00 | 9h00 | Tocca il minimo ridotto — ancora risicato |
-| 09:00 | 10h00 | Sì, comodo |
-| 10:00 | 11h00 | Sì, riposo pieno |
+| Partenza domani | Riposo (fine stasera 23:00) | Riposo (fine stasera 23:30) | In regola? |
+|---|---|---|---|
+| 08:00 | 9h00 | 8h30 | Al limite o sotto il minimo ridotto (9h) — troppo risicato |
+| 09:00 | 10h00 | 9h30 | Sì, con margine |
+| 10:00 | 11h00 | 10h30 | Sì, comodo |
+| 11:00 e oltre | 12h00+ | 11h30+ | Sì, riposo pieno |
 
-Con qualunque orario ragionevole per la partenza di domani il riposo torna in regola. È proprio
-per questo che ha senso lasciare la partenza aperta come chiesto da Girolamo, invece di fissarla
-subito: dà il margine per rispettare il minimo comodamente, cosa che con l'ipotesi precedente
-(fine all'1:30) non sarebbe stata possibile senza un secondo conducente. **Non serve più, con
-questo orario, ricorrere al secondo conducente** — resta un'opzione se per qualche motivo il
-servizio di stasera dovesse prolungarsi oltre le 23:00.
+Per stare tranquilli anche se stasera si va per le lunghe, **conviene non far partire il mezzo
+domani prima delle 9:30-10:00**: così il riposo è in regola in entrambi gli scenari, senza
+bisogno di sapere in anticipo l'ora esatta di rientro di stasera. È anche per questo che ha senso
+lasciare la partenza aperta come chiesto da Girolamo, invece di fissarla subito. **Non serve più
+il secondo conducente** con questi orari — resta un'opzione solo se stasera si dovesse
+prolungare oltre mezzanotte.
 
 ## Da chiarire prima di mandare
 
@@ -191,3 +212,10 @@ Per tenere traccia di come è cambiato, dato quante volte è stato rifatto in po
    esplicita di Girolamo. Il suo prezzo non è stato inventato: manca la tariffa all'ingrosso di
    Francesco, quindi in preventivo compare come "a seguire" e il totale ufficiale resta quello
    del solo Beluga (€ 1.155,00 IVA inclusa), in attesa di quel numero.
+7. **Settima correzione:** tolti dal documento cliente tutti i km e tempi di dettaglio (tabella
+   delle tappe con minuti e chilometri), che non ci dovevano mai essere — vanno solo nei
+   programmi interni. Tolto anche l'itinerario inventato con i borghi specifici, mai confermato.
+   Corretto anche il programma di oggi con gli orari e i nomi veri (ritiro ospedale 9:00-11:00,
+   serata a Podere Le Ripi e Serendipity 17:00-23:00/23:30), da cui il calcolo del riposo del
+   conducente per domani è stato rifatto con un margine di sicurezza (partenza consigliata non
+   prima delle 9:30-10:00).
