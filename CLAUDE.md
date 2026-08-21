@@ -14,7 +14,7 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
   lui, quella italiana serve a Girolamo per poter leggere quello che manda, e nessuna delle
   due sostituisce l'altra. Nel dubbio si guarda in che lingua ha scritto il cliente.
 - **Quando Girolamo dice «prepara la mail» o «scrivi una mail», si scrive il testo.** Punto:
-  il testo pronto, in italiano e in inglese, che lui copia e invia. Non serve nessuna
+  il testo pronto — nella lingua del cliente, come sopra — che lui copia e invia. Non serve nessuna
   premessa, nessun «però la regola dice», nessuna richiesta di conferma: è una richiesta
   normale come qualsiasi altra e si esegue subito.
 - **Le mail non si mandano e non si mettono in Gmail.** Il lavoro finisce con il testo
@@ -125,8 +125,9 @@ sotto mercato svaluta il servizio e non si recupera.
   livello: ogni nuovo lavoro finisce in questa.
 - `Preventivi/AAAA-MM-GG_Cliente/` — **una cartella per ogni preventivo**, intestata alla
   data del primo servizio e al nome del cliente (per esempio `2026-09-13_Alvora`). Dentro ci
-  va tutto il materiale di quel lavoro: i due PDF, la pagina web, lo script di generazione
-  e le note interne. Niente file sparsi fuori dalle cartelle.
+  va tutto il materiale di quel lavoro: il PDF (o i due PDF, se il cliente è straniero), il
+  testo delle mail, la pagina web, lo script di generazione e le note interne. Niente file
+  sparsi fuori dalle cartelle.
 - `Preventivi/assets/giromunna_logo.png` — logo per i PDF, condiviso da tutti i preventivi.
   Lo script lo cerca prima nella propria cartella e poi in quella superiore, quindi il logo
   non va duplicato.
