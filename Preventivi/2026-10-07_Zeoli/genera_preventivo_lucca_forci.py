@@ -97,21 +97,20 @@ IT = dict(
     h_prezzo="Il prezzo",
     price_rows=[
         ("Mer 7 ott — Lucca → Tenuta di Forci → Lucca, mezzo e conducente a vostra disposizione "
-         "dalle 11:45 alle 17:00, attesa durante il pranzo compresa", "€ 820,00", "+ IVA 10%"),
-        ("Ticket checkpoint per i bus turistici del Comune di Lucca, che acquistiamo noi",
-         "<i>incluso</i>", ""),
+         "dalle 11:45 alle 17:00, attesa durante il pranzo compresa", "€ 500,00", "+ IVA 10%"),
+        ("Permesso checkpoint per i bus turistici del Comune di Lucca, che acquistiamo noi",
+         "€ 180,00", "+ IVA 10%"),
         ("Vitto e alloggio del conducente", "<i>non necessario</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 820,00",
+    price_total="€ 680,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 902,00.",
-    perhead="Sono circa € 37,60 a persona per l'andata, il ritorno e tutte le ore di attesa.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 748,00.",
+    perhead="Sono circa € 31,20 a persona per l'andata, il ritorno e tutte le ore di attesa.",
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente per l'intera fascia oraria indicata, con l'attesa a Forci durante il pranzo e "
-        "la degustazione. Carburante, pedaggi, parcheggi, assicurazione completa e il ticket checkpoint "
-        "per i bus turistici del Comune di Lucca, che compriamo noi in anticipo. Il percorso alternativo "
+        "la degustazione. Carburante, pedaggi, parcheggi e assicurazione completa. Il percorso alternativo "
         "alla frana non comporta alcun sovrapprezzo, e l'accesso a Tenuta di Forci non prevede oneri."
     ),
     h_nonincluso="Non incluso.",
@@ -122,8 +121,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 270,00", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 632,00", ""),
+        ("Acconto 30% alla conferma", "€ 224,00", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 524,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -148,6 +147,11 @@ IT = dict(
          "Maria, Porta Elisa — sono tutti più lontani da via del Moro. Se qualcuno dei vostri ospiti "
          "facesse fatica a camminare, possiamo organizzare una navetta in auto dalla porta del B&amp;B al "
          "piazzale: ditecelo e ve la quotiamo."),
+        ("<b>Il permesso di accesso a Lucca.</b> Il Comune di Lucca subordina l'ingresso dei bus turistici "
+         "nella zona verde a un permesso da acquistare prima dell'accesso, e Piazzale Boccherini è dentro "
+         "quell'area. Ce ne occupiamo noi, e in preventivo lo trovate come voce a parte, € 180,00 più IVA, "
+         "invece che nascosto nel prezzo del servizio. È l'unico onere di accesso del programma: "
+         "Tenuta di Forci non ne prevede."),
         ("<b>Un solo mezzo, come chiedevate.</b> Il Beluga ha 26 posti passeggeri: i vostri 24 ci stanno "
          "tutti, con due posti liberi, su un mezzo privato riservato al solo vostro gruppo. È anche la "
          "risposta giusta per quella strada, perché un unico mezzo da 7,64 metri passa dove due mezzi più "
@@ -161,18 +165,18 @@ IT = dict(
         ("<b>Lo spazio di manovra alla tenuta.</b> Gli ultimi sette chilometri fino a Forci sono in salita "
          "e la tenuta è grande, 360 ettari fra bosco, vigne e oliveti. Fatevi confermare dalla tenuta il "
          "punto esatto dove far scendere il gruppo, lo spazio per far girare un mezzo da 7,64 metri e dove "
-         "il conducente può lasciare il minibus durante il pranzo. Se preferite li chiamiamo noi: basta che "
-         "ci diate il nome del vostro riferimento a Forci. Molto meglio chiarirlo ora che il giorno stesso."),
+         "il conducente può lasciare il minibus durante il pranzo. Se preferite li chiamiamo noi, basta il "
+         "nome del vostro riferimento a Forci: molto meglio chiarirlo ora che il giorno stesso."),
         ("<b>Nessun pernottamento del conducente.</b> Il servizio si esaurisce in mezza giornata e il "
          "conducente rientra alla base la sera stessa: non c'è vitto né alloggio a vostro carico e su "
          "questa voce non arriverà alcun addebito. Lo scriviamo perché sui programmi di più giorni è una "
-         "spesa che resta al cliente, e qui vogliamo che sia chiaro che non si pone."),
+         "spesa che resta al cliente: qui non si pone."),
         ("<b>Per confermare ci servono</b> il numero definitivo dei passeggeri, un recapito telefonico o "
          "WhatsApp della persona che viaggia con il gruppo, l'orario di ripartenza da Forci che preferite "
          "fra le 15:30 e le 16:00, la conferma che Piazzale Boccherini vi va bene come punto di ritrovo e "
          "i vostri dati di fatturazione."),
-        ("<b>Disponibilità e cancellazione.</b> Il 7 ottobre il mezzo è libero e lo teniamo a vostra "
-         "disposizione per tutta la validità del preventivo; la prenotazione diventa definitiva alla "
+        ("<b>Disponibilità e cancellazione.</b> Il 7 ottobre il mezzo è libero e lo teniamo per voi "
+         "per tutta la validità del preventivo; la prenotazione diventa definitiva alla "
          "ricezione dell'acconto. La cancellazione è gratuita oltre 60 giorni prima del servizio; da 60 a "
          "30 giorni viene trattenuto l'acconto; da 30 a 10 giorni viene addebitato il 50% del prezzo; negli "
          "ultimi 10 giorni il 100%. Mancando oggi 47 giorni al servizio, questa prenotazione ricade nella "
@@ -229,22 +233,21 @@ EN = dict(
     h_prezzo="The price",
     price_rows=[
         ("Wed 7 Oct — Lucca → Tenuta di Forci → Lucca, vehicle and driver at your disposal from 11:45 to "
-         "17:00, waiting time during lunch included", "€ 820.00", "+ VAT 10%"),
-        ("Tourist bus checkpoint ticket for the City of Lucca, which we buy ourselves",
-         "<i>included</i>", ""),
+         "17:00, waiting time during lunch included", "€ 500.00", "+ VAT 10%"),
+        ("City of Lucca tourist bus checkpoint permit, which we buy ourselves",
+         "€ 180.00", "+ VAT 10%"),
         ("Driver's board and lodging", "<i>not required</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 820.00",
+    price_total="€ 680.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 902.00.",
-    perhead="That is about € 37.60 per person for the outward trip, the return and all the waiting time.",
+    grand="Total payable, VAT 10% included: € 748.00.",
+    perhead="That is about € 31.20 per person for the outward trip, the return and all the waiting time.",
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver for the whole period set out above, with the wait at Forci during the lunch "
-        "and the tasting. Fuel, tolls, parking, full insurance, and the City of Lucca tourist bus "
-        "checkpoint ticket, which we buy in advance. The diversion around the landslide carries no "
-        "surcharge, and there is no access fee at Tenuta di Forci."
+        "and the tasting. Fuel, tolls, parking and full insurance. The diversion around the landslide "
+        "carries no surcharge, and there is no access fee at Tenuta di Forci."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
@@ -254,8 +257,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 270.00", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 632.00", ""),
+        ("Deposit 30% on confirmation", "€ 224.00", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 524.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -280,6 +283,11 @@ EN = dict(
          "Pietro, Porta Santa Maria, Porta Elisa — are all further from via del Moro. If any of your party "
          "finds walking difficult, we can arrange a car shuttle from the door of the B&amp;B to the square: "
          "tell us and we will quote it."),
+        ("<b>The access permit for Lucca.</b> The City of Lucca requires tourist coaches entering the green "
+         "zone to hold a permit bought before access, and Piazzale Boccherini sits inside that area. We "
+         "take care of it, and you will find it in the quotation as a line of its own, € 180.00 plus VAT: "
+         "that way you can see exactly what it is, rather than have it buried in the price of the service. "
+         "It is the only access charge on this programme, as Tenuta di Forci has none."),
         ("<b>One vehicle, as you asked.</b> The Beluga has 26 passenger seats: your 24 all fit, with two "
          "seats to spare, on a private vehicle reserved for your group alone. It is also the right answer "
          "for that road, because a single 7.64 m vehicle gets through where two larger ones would cause "
@@ -338,12 +346,12 @@ def styles():
                              textColor=GREEN, leading=10),
         "grand": ParagraphStyle("grand", fontName="Helvetica-Bold", fontSize=11.5,
                                 textColor=GREEN, leading=15, spaceBefore=8),
-        "note": ParagraphStyle("note", alignment=TA_JUSTIFY, spaceAfter=5,
+        "note": ParagraphStyle("note", alignment=TA_JUSTIFY, spaceAfter=3,
                                leftIndent=9, fontName="Helvetica", fontSize=8.8,
-                               textColor=INK, leading=11.8),
-        "small": ParagraphStyle("small", alignment=TA_JUSTIFY, spaceAfter=4,
+                               textColor=INK, leading=11.4),
+        "small": ParagraphStyle("small", alignment=TA_JUSTIFY, spaceAfter=3,
                                 fontName="Helvetica", fontSize=8.8,
-                                textColor=INK, leading=12.0),
+                                textColor=INK, leading=11.8),
         "foot": ParagraphStyle("foot", fontName="Helvetica", fontSize=8.2,
                                textColor=MUTED, leading=11.6, spaceBefore=6),
     }
@@ -499,7 +507,7 @@ def build(lang, cliente, out):
     for n in L["note"]:
         F.append(Paragraph("·  " + n, S["note"]))
 
-    F.append(Spacer(1, 5))
+    F.append(Spacer(1, 3))
     F.append(Paragraph(L["closing"], S["small"]))
 
     doc.build(F)

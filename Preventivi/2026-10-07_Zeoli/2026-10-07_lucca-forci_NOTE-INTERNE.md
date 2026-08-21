@@ -40,13 +40,17 @@ del conducente è circa 11:00 – 17:30.
 
 | Voce | Netto |
 |---|---|
-| Lucca → Tenuta di Forci → Lucca, mezzo a disposizione, attesa compresa | € 820,00 |
-| Ticket checkpoint bus del Comune di Lucca | incluso |
+| Lucca → Tenuta di Forci → Lucca, mezzo a disposizione, attesa compresa | € 500,00 |
+| Permesso checkpoint bus del Comune di Lucca | € 180,00 |
 | Vitto e alloggio conducente | non necessario |
 
-**Totale netto € 820,00 · IVA 10% € 82,00 · Totale € 902,00** (circa € 37,60 a persona)
+**Totale netto € 680,00 · IVA 10% € 68,00 · Totale € 748,00** (circa € 31,20 a persona)
 
-Acconto 30% € 270,00 — saldo € 632,00.
+Acconto 30% € 224,00 — saldo € 524,00.
+
+Il permesso di Lucca è addebitato **a parte**, come si fa con il permesso comunale di Siena
+o con quello per il centro di Firenze negli altri preventivi, e sconta la stessa IVA al 10%
+del servizio.
 
 ## Come è stato costruito il prezzo
 
@@ -60,16 +64,18 @@ Riferimento: **Le Filigare (GM-2026-0821-LF)**, che è a mezzo singolo come ques
 Qui le ore sono le stesse della giornata a disposizione di Le Filigare (5 h 15 di mezzo
 impegnato), i chilometri di servizio molti meno (~30 km contro ~80).
 
-Il prezzo resta comunque **sopra** gli € 809 per tre motivi, e questo è il punto da non
-perdere se il preventivo va rifatto:
+**Gli € 500 sono una decisione di Girolamo su questo lavoro, non un nuovo riferimento.**
+La prima stesura era a € 820, sopra gli € 809 di Le Filigare, per tre motivi che restano
+veri: la strada è di collina e passa dalla deviazione della frana; ai ~30 km di servizio si
+sommano ~60 km di posizionamento da Ponte Buggianese; il mezzo e il conducente sono fuori
+dalle 11:00 alle 17:30 circa, quindi il 7 ottobre non si vende due volte e non è una mezza
+giornata da prezzare come marginale. Girolamo ha abbassato a € 500, che è il livello del
+**trasferimento** da ~50 km di Le Filigare, non quello di una giornata a disposizione.
 
-1. La strada è di collina e passa dalla deviazione della frana: non è un lavoro di pianura.
-2. Il ticket checkpoint bus di Lucca è dentro il prezzo, non addebitato a parte.
-3. Ai ~30 km di servizio si sommano ~60 km di posizionamento da Ponte Buggianese. Il mezzo
-   e il conducente sono fuori dalle 11:00 alle 17:30 circa: il 7 ottobre non si vende due
-   volte, quindi non è una mezza giornata da prezzare come marginale.
+Chi rifà un preventivo a mezzo singolo deve ripartire da **Le Filigare**, non da questo:
+gli € 500 su cinque ore a disposizione non sono la tariffa di casa.
 
-**Non usare come base i € 450 di mezza giornata offerti nel preventivo Alvora per il
+**Non usare come base neanche i € 450 di mezza giornata offerti nel preventivo Alvora per il
 17 settembre.** Quelli erano per un mezzo già posizionato in Versilia dentro un tour di più
 giorni, cioè un prezzo marginale su un mezzo già pagato dal resto del programma. Qui il
 lavoro è isolato e si porta dietro tutto il posizionamento.
@@ -77,8 +83,10 @@ lavoro è isolato e si porta dietro tutto il posizionamento.
 ## Margine
 
 Preventivo costruito sul **mezzo di proprietà** (Beluga). Costo diretto stimato € 250-300
-sulla giornata, ticket checkpoint compreso: il margine è buono. Nessuna notte del conducente
-da coprire, quindi niente vitto e alloggio in gioco.
+sulla giornata, senza il permesso che ora è ribaltato al cliente. Con € 500 di servizio il
+margine sulla giornata è **sottile**, contando i ~60 km di posizionamento e le sei ore e
+mezza di impegno del conducente. Nessuna notte da coprire, quindi niente vitto e alloggio
+in gioco.
 
 ## Nessun secondo mezzo
 
@@ -106,12 +114,12 @@ problema.
 
 ## Da fare prima di inviare
 
-1. **Verificare il ticket checkpoint bus di Lucca.** È dentro gli € 820 ma l'importo 2026
-   non è confermato: le tariffe sono cambiate dal 1° gennaio 2026 e il ticket si compra
-   **solo online**, sul portale LuccaPlus, sezione Bus Turistici, **prima** dell'ingresso
-   nella zona verde. Info: `checkpointbus@metrosrl.it`, ufficio al parcheggio Palatucci,
-   viale Carlo del Prete. Se l'importo fosse molto più alto del previsto, ritoccare il
-   prezzo.
+1. **Verificare che i € 180 del permesso di Lucca coprano il costo vero.** L'importo è
+   quello indicato da Girolamo ed è addebitato a parte in preventivo, ma la tariffa 2026 non
+   è confermata: le tariffe sono cambiate dal 1° gennaio 2026 e il permesso si compra **solo
+   online**, sul portale LuccaPlus, sezione Bus Turistici, **prima** dell'ingresso nella zona
+   verde. Info: `checkpointbus@metrosrl.it`, ufficio al parcheggio Palatucci, viale Carlo del
+   Prete. Se il costo effettivo fosse più alto, va corretta la riga prima di inviare.
 2. **Fare davvero il sopralluogo sul percorso alternativo.** Nelle note al cliente è
    promesso: via Piana e via delle Foreste da Mutigliano, con il mezzo o almeno in auto,
    guardando i punti stretti e i tornanti. E ricontrollare le ordinanze del Comune nei
