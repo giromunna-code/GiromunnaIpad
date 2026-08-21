@@ -111,7 +111,7 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Saldo, entro 5 giorni dal servizio", "€ 1.815,00", "IVA inclusa"),
+        ("Saldo, entro oggi, 21 agosto 2026", "€ 1.815,00", "IVA inclusa"),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -190,7 +190,7 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Balance, within 5 days of service", "€ 1,815.00", "VAT included"),
+        ("Balance, due today, 21 August 2026", "€ 1,815.00", "VAT included"),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),

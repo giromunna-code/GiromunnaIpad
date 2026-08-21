@@ -59,7 +59,8 @@ dell'acconto Corte Francigena (`RIFERIMENTO_GiroMunna_Proforma_Invoice_Corte_
 Francigena_Deposit.pdf`, salvata qui accanto): intestatario, importo dovuto in
 evidenza, dati bancari, note. A differenza di quella — che era un acconto 30%
 — questa è per l'**intero importo** di questa giornata (€ 1.815,00), pagamento
-unico entro 5 giorni dal servizio, come già indicato nel preventivo. Dati di
+unico entro oggi, 21 agosto (Girolamo vuole il saldo in giornata, non ai
+consueti 5 giorni dal servizio), come già indicato nel preventivo. Dati di
 fatturazione (ID Production OÜ) e dati bancari (Banco BPM, filiale di Lucca)
 ripresi identici dalla proforma dell'acconto.
 

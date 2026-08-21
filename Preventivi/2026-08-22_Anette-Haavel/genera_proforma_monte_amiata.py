@@ -66,7 +66,7 @@ IT = dict(
     amount_desc=(
         "Escursione Monte Amiata (due mezzi) e hotel autisti, sabato 22 agosto 2026, "
         "IVA 10% inclusa.<br/>"
-        "Da corrispondere entro 5 giorni dal servizio.<br/>"
+        "Da corrispondere entro oggi, 21 agosto 2026.<br/>"
         "Aggiunta al preventivo Corte Francigena, Rif. GM-2026-0819-CF."
     ),
     h_transfer="Bonifico a",
@@ -109,7 +109,7 @@ EN = dict(
     amount_desc=(
         "Monte Amiata excursion (two vehicles) and drivers' hotel, Saturday 22 August 2026, "
         "VAT 10% included.<br/>"
-        "Payable within 5 days of the service.<br/>"
+        "Payable today, 21 August 2026.<br/>"
         "An addition to the Corte Francigena quotation, Ref. GM-2026-0819-CF."
     ),
     h_transfer="Transfer to",
