@@ -66,7 +66,8 @@ Una mail sola, in inglese, con dentro tre cose diverse:
 1. **Una richiesta urgente.** Una loro ospite è finita in ospedale il 20 agosto e vogliono un
    conducente che la riaccompagni domani mattina, sabato 22, alle 9 o alle 10, al Grand Hotel
    Impero di Castel del Piano.
-2. **Una richiesta di essere richiamati subito.** Senza però lasciare il numero di telefono.
+2. **Una richiesta di essere richiamati subito.** Il numero non era nella mail, ma Girolamo lo ha
+   recuperato: **+372 5664 1112**.
 3. **Un preventivo.** Il gruppo vuole andare sul Monte Amiata il 22, e chiede se è possibile e
    quanto costa.
 
@@ -164,8 +165,8 @@ scritto, insieme al suggerimento di sistemare il conducente nella stessa struttu
 5. **Quanti passeggeri.** Il Beluga porta 26 più l'autista. Sopra i 26 serve un secondo minibus, e
    quello lo decide Girolamo con Francesco: non è stato messo a preventivo di iniziativa.
 6. **Nome e dati del cliente**, per rigenerare i PDF con `--cliente`.
-7. **Il numero di telefono del cliente non c'è nella richiesta**, anche se chiede di essere
-   richiamato subito. Va cercato nella corrispondenza precedente.
+7. ~~Il numero di telefono del cliente~~ — **recuperato: +372 5664 1112.** Girolamo chiama da lì
+   per la conferma a voce.
 8. **Distanza Corte Francigena → Castel del Piano.** Stimata in 17 km/25 min da fonti generiche;
    da confermare con la percorrenza reale.
 

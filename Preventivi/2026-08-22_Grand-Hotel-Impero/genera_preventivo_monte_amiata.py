@@ -145,9 +145,8 @@ IT = dict(
     h_note="Note",
     note=[
         ("<b>Prima di tutto: la conferma a voce.</b> Il servizio è per domani mattina e GiroMunna ha un solo "
-         "minibus. Girolamo vi richiama al numero che ci darete per confermarvi che mezzo e conducente sono "
-         "liberi sabato: fino a quella telefonata questo preventivo è un prezzo, non una prenotazione. "
-         "Nella vostra richiesta il numero di telefono non c'era — mandatecelo, è la cosa più urgente."),
+         "minibus. Girolamo vi richiama a breve per confermarvi che mezzo e conducente sono liberi sabato: "
+         "fino a quella telefonata questo preventivo è un prezzo, non una prenotazione."),
         ("<b>Come sta la vostra ospite.</b> È il punto che ci preme di più e vi chiediamo di rispondere con "
          "franchezza. Il Beluga è un minibus turistico: ha i gradini all'ingresso, sedili normali e nessuna "
          "attrezzatura sanitaria a bordo. Va benissimo se la signora cammina da sola o appoggiandosi a un "
@@ -183,7 +182,7 @@ IT = dict(
          "vitto del conducente è sempre a carico del cliente, non lo mettiamo a preventivo e non lo organizziamo "
          "noi. La soluzione più comoda, e quella che scelgono quasi tutti i nostri clienti, è farlo mangiare "
          "e dormire nella stessa struttura del gruppo."),
-        ("<b>Per confermare ci servono</b> il vostro numero di telefono, il nome dell'ospedale, due righe sulle "
+        ("<b>Per confermare ci servono</b> il nome dell'ospedale, due righe sulle "
          "condizioni della vostra ospite, il numero dei passeggeri, l'ora di partenza che preferite per il monte, "
          "un recapito WhatsApp di chi viaggia con il gruppo e i vostri dati di fatturazione."),
         ("<b>Disponibilità e cancellazione.</b> La cancellazione è gratuita oltre 60 giorni prima del servizio; "
@@ -292,9 +291,8 @@ EN = dict(
     h_note="Notes",
     note=[
         ("<b>First of all: confirmation by phone.</b> The service is for tomorrow morning and GiroMunna has one "
-         "minibus. Girolamo will call you back on the number you give us to confirm that vehicle and driver are "
-         "free on Saturday: until that call, this quotation is a price, not a booking. Your request did not "
-         "include a telephone number — please send it, it is the most urgent thing."),
+         "minibus. Girolamo will call you shortly to confirm that vehicle and driver are free on Saturday: "
+         "until that call, this quotation is a price, not a booking."),
         ("<b>How your guest is.</b> This is the point that concerns us most and we ask you to answer frankly. "
          "The Beluga is a touring minibus: it has steps at the door, ordinary seats and no medical equipment on "
          "board. It is perfectly fine if the lady walks unaided or leaning on a companion. If instead she leaves "
@@ -330,7 +328,7 @@ EN = dict(
          "lunch: the driver's board is always at the client's charge, we do not put it in the quotation and we do "
          "not arrange it. The easiest arrangement, and the one almost all our clients choose, is to have him eat "
          "and sleep at the same property as the group."),
-        ("<b>To confirm we need</b> your telephone number, the name of the hospital, a couple of lines on your "
+        ("<b>To confirm we need</b> the name of the hospital, a couple of lines on your "
          "guest's condition, the number of passengers, your preferred departure time for the mountain, a WhatsApp "
          "contact for the person travelling with the group, and your invoicing details."),
         ("<b>Availability and cancellation.</b> Cancellation is free of charge more than 60 days before the "
