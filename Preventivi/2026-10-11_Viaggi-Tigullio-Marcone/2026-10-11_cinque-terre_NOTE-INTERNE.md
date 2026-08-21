@@ -106,3 +106,18 @@ il margine resta accettabile ma non brillante: in quel caso il pavimento sale a 
 3. **Recapito telefonico della guida** che attende a Migliarina, per il coordinamento diretto con
    il conducente sia all'arrivo sia al ritorno.
 4. **Bloccare la disponibilità del mezzo** per domenica 11 ottobre.
+
+## Aggiornamento 21 agosto — decisione di Girolamo sul prezzo
+
+Girolamo ha fissato il suo pavimento a **€ 800,00 + IVA** (€ 880,00 IVA inclusa) e ha chiesto il
+testo di una mail che lo dica al cliente: `2026-10-11_mail-risposta-a-Marcone_IT-EN.md`,
+italiano e inglese. Nessuna bozza creata in Gmail, niente inviato.
+
+È **€ 100 sotto il pavimento di € 900** indicato qui sopra e € 450 sotto il preventivo. A € 800
+netti, con un costo diretto stimato di € 450-500, restano € 300-350 per una domenica intera con
+il mezzo bloccato. La scelta è sua, ma il numero è quello.
+
+**I due PDF dicono ancora € 1.250,00 + IVA.** O si manda la mail da sola, oppure si rigenerano i
+PDF a € 800 prima di allegarli — le due cose insieme si contraddicono. Per rigenerarli bastano
+il campo `price_rows`, `price_total`, `grand`, `perhead` e `pay_rows` dello script (a € 800
+netti: totale € 880,00, € 88,00 a persona, acconto 30% € 264,00, saldo € 616,00).
