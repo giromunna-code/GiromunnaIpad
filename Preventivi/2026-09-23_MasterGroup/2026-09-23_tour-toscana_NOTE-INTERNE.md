@@ -115,8 +115,8 @@ quindi rimasto sui chilometri di percorso e **i prezzi non cambiano**.
 | D · 270 km percorso, 400 da rimessa | € 1.302 | parcheggi Val d'Orcia ~€ 40 + Firenze € 235 | € 1.577 | **€ 1.272,73** | −€ 304 |
 
 Confrontati al netto — che è l'unico confronto sensato — i prezzi di Girolamo sono in linea
-col modello su B e C, sopra su A, e **sensibilmente sotto su D**. Per chilometro di mezzo,
-sempre al netto:
+col modello su B e C, sopra su A, e sotto su D. Visti crudamente per chilometro di mezzo,
+sempre al netto, danno questo quadro — che però, come spiegato subito sotto, è fuorviante:
 
 | | Netto | Km mezzo | € al km |
 |---|---|---|---|
@@ -125,16 +125,27 @@ sempre al netto:
 | B · Pisa, Siena, San Gimignano | € 1.954,55 | 470 | **€ 4,16** |
 | D · Montalcino, Pienza, Montepulciano | € 1.272,73 | 400 | **€ 3,18** |
 
-⚠️ **D resta l'itinerario più economico dei quattro pur essendo il secondo più lungo**, e la
-precisazione sull'IVA ha peggiorato le cose: sono 400 km e dodici ore di impegno per
-€ 1.272,73 imponibili. Il confronto che conta è con A, che chiede 80 km e un'ora e mezza in
-meno e incassa € 318 in più. Se è voluto — Val d'Orcia quasi tutta autostrada, nessun
-permesso di Siena, ed è la giornata che si vuole spingere — regge. Se è una svista, questo
-resta il punto da correggere prima di mandare.
+### Perché il confronto al chilometro non significa niente
 
-B è tirato un po' sopra il calcolo perché è una giornata di dodici ore e mezza: le ore
-extra vanno pagate. A è tenuto appena sotto perché è la giornata più corta ed è quella che
-fa da prezzo civetta fra le quattro.
+Girolamo ha chiarito il punto: **nei suoi prezzi ha già dentro i checkpoint e i parcheggi**,
+e non nella stessa misura da un itinerario all'altro. Confrontare i quattro importi al
+chilometro, come era stato fatto qui sopra, mette a paragone cifre che contengono quote di
+oneri molto diverse: il permesso di Siena da solo pesa più di tutti i parcheggi della Val
+d'Orcia messi insieme.
+
+Riordinati per oneri incorporati, i quattro itinerari stanno così:
+
+| | Oneri dentro il prezzo | Perché |
+|---|---|---|
+| B · Pisa, Siena, San Gimignano | i più alti | checkpoint Firenze + sosta bus Pisa + permesso Siena + San Gimignano |
+| C · Siena, San Gimignano, Monteriggioni | alti | checkpoint Firenze + permesso Siena + due parcheggi |
+| A · Pisa e Lucca | medi | checkpoint Firenze + sosta bus Pisa + Lucca |
+| D · Montalcino, Pienza, Montepulciano | i più bassi | checkpoint Firenze + tre parcheggi di paese, nessun permesso comunale |
+
+**D è il più basso dei quattro perché è quello che porta dentro meno oneri**, non perché
+sia sottopagato il trasporto. La Val d'Orcia non ha né permesso comunale né sosta bus a
+tariffa da città d'arte: si paga il parcheggio sotto le mura e basta. Il rilievo che era
+stato scritto qui — «D è fuori scala» — **era sbagliato e va considerato chiuso.**
 
 **Non sono stati usati come base i prezzi del Corte Francigena divisi per due**, come vuole
 la regola: quello è un lavoro a due mezzi con importi già scontati per volume.
@@ -160,10 +171,16 @@ resta questo per coprire costi e margine:
 | C · Siena, San Gimignano, Monteriggioni | € 1.590,91 | € 395 | € 1.196 | ~€ 750 |
 | D · Montalcino, Pienza, Montepulciano | € 1.272,73 | € 275 | € 998 | ~€ 530 |
 
-Il margine regge su tutti e quattro, ma con l'IVA dentro si è assottigliato di circa il 9%
-rispetto al conto precedente. **D è il più sottile di parecchio**, ~€ 530 per la giornata
-più impegnativa dopo B: è l'itinerario su cui non conviene scendere di un euro in
-trattativa, e quello su cui vale la pena rifare due conti prima di mandare.
+⚠️ **Gli importi degli oneri in questa tabella sono stime mie, non cifre di Girolamo**, e
+sono il punto debole del conto: € 235 di checkpoint Firenze vengono da una verifica sulle
+tariffe pubblicate, gli altri sono ordini di grandezza. Girolamo le cifre vere le ha, perché
+le ha già messe dentro i prezzi. Quando le passa, questa tabella va rifatta: è l'unico punto
+delle note interne che al momento non è verificato.
+
+Con le stime attuali il margine regge su tutti e quattro, e l'IVA dentro lo ha assottigliato
+di circa il 9% rispetto al conto precedente. In trattativa lo spazio per scendere c'è su
+tutti, ma è più stretto dove gli oneri incorporati sono più alti — B e C — perché lì una
+parte del prezzo non è margine, è denaro che esce comunque.
 
 Nessun pernottamento del conducente: si parte e si torna a Firenze in giornata e la base di
 Ponte Buggianese è a ~50 km dal punto di carico. Sull'itinerario D, però, la giornata del
