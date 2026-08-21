@@ -170,10 +170,9 @@ operator è più pulito e toglie argomenti di discussione il giorno del servizio
 
 ## Da chiarire prima di rispondere
 
-1. ⚠️ **Verifica il calendario del 23 settembre prima di mandare.** Il preventivo dice al
-   cliente che il mezzo per quel giorno è a sua disposizione. Il lavoro Alvora del 13-18
-   settembre non confligge, ma il Beluga è uno solo: se quel mercoledì fosse già impegnato,
-   quella riga va cambiata prima che il preventivo esca.
+1. ✅ **Disponibilità del mezzo: confermata da Girolamo, il Beluga del 23 settembre è
+   libero.** Il preventivo lo dice al cliente a chiare lettere. Resta solo da bloccarlo
+   appena arriva la conferma — il mezzo è uno solo e non ci sono alternative.
 2. **I van non sono nostri.** I € 320,00 andata e ritorno coprono due van fino a nove posti
    con un collega di Firenze, e vanno concordati **prima** di impegnarsi. Nel preventivo la
    cosa è dichiarata al cliente ("si confermano insieme alla prenotazione"). Se preferisci
@@ -194,6 +193,9 @@ operator è più pulito e toglie argomenti di discussione il giorno del servizio
    fascia da 30 a 10, dove si addebita il 50%: nel preventivo il cliente è avvisato, e per
    noi è la leva per farlo decidere in fretta. La validità è fissata al 4 settembre.
 8. **Bloccare il mezzo sul 23 settembre** appena arriva la conferma.
+
+**A questo punto l'unica cosa aperta prima di mandare sono i van** del punto 2. Tutto il
+resto è verificato e chiuso.
 
 ## Cosa è già stato detto al cliente e cosa no
 

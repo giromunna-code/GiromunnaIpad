@@ -241,8 +241,9 @@ IT = dict(
         ("<b>Per confermare ci servono</b> l'itinerario scelto, l'ora di partenza, il numero definitivo di "
          "passeggeri, se volete la navetta van dall'hotel, un recapito telefonico o WhatsApp di chi viaggia con la "
          "famiglia e i vostri dati di fatturazione."),
-        ("<b>Disponibilità e cancellazione.</b> Il mezzo per il 23 settembre è a vostra disposizione per tutta "
-         "la validità di questo preventivo; la prenotazione diventa definitiva alla ricezione dell'acconto. "
+        ("<b>Disponibilità e cancellazione.</b> Il mezzo per il 23 settembre è libero e ve lo teniamo a "
+         "disposizione per tutta la validità di questo preventivo; la prenotazione diventa definitiva alla "
+         "ricezione dell'acconto. "
          "La cancellazione è gratuita oltre 60 giorni prima del servizio; da 60 a 30 giorni viene trattenuto "
          "l'acconto; da 30 a 10 giorni viene addebitato il 50% del prezzo; negli ultimi 10 giorni il 100%. "
          "Mancando oggi 33 giorni al servizio, questa prenotazione ricade nella fascia da 60 a 30 giorni, e dal "
