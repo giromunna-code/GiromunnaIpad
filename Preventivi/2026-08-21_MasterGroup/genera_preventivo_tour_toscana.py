@@ -6,8 +6,11 @@ quattro itinerari a scelta, carico e scarico all'Hotel Adamas di Firenze.
 Riproduce l'impaginazione dei preventivi GiroMunna (logo, verde bottiglia e oro,
 intestazione e piè di pagina su ogni pagina).
 
-    python3 genera_preventivo_tour_toscana.py --lingua it --cliente "Nome Cliente"
-    python3 genera_preventivo_tour_toscana.py --lingua en --cliente "Client Name"
+    python3 genera_preventivo_tour_toscana.py --cliente "Nome Cliente"
+
+Solo in italiano, per decisione di Girolamo: Master Group e' un tour operator italiano
+e ha scritto in italiano. Se dovesse servire anche la versione inglese, il dizionario EN
+sta nella storia del repository, nel commit che ha aggiunto questa cartella.
 """
 
 import argparse
@@ -237,193 +240,6 @@ IT = dict(
              "Girolamo Munna — GiroMunna NCC, Toscana · +39 335 587 4744 · info@giromunna.com"),
 )
 
-EN = dict(
-    tagline="Coach Hire with Driver  ·  Tuscany, Italy",
-    footer1="GiroMunna — Munna Girolamo Giuseppe  ·  Ponte Buggianese (PT), Tuscany, Italy  ·  VAT IT 02124530474",
-    footer2="+39 335 587 4744  ·  info@giromunna.com  ·  giromunna.com",
-    page="page %d",
-    title="Quotation",
-    subtitle="Full-day tour of Tuscany, four itineraries to choose from  ·  12 passengers  ·  departing and returning in Florence",
-    meta="Prepared for %s  ·  21 August 2026  ·  Ref. " + RIF,
-
-    h_mezzo="The vehicle",
-    mezzo_intro=("One minibus with driver for your group of 12, at your disposal for the whole day, "
-                 "with the same driver from departure to return."),
-    mezzo_bullet=(
-        "<b>Mercedes-Benz Beluga</b> — 26 passenger seats plus driver, 7.64 m. Air conditioning, "
-        "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold."
-    ),
-    mezzo_close=(
-        "You asked for a Sprinter of sufficient capacity or a minibus: ours is a 26-seat minibus, so with 12 guests "
-        "on board everyone travels with the seat beside them free and bags stay in the hold rather than around "
-        "people's feet. On a ten-hour day, with three or four stops and the Tuscan summer heat, that difference "
-        "tells. And 7.64 m is the right size for this region: it reaches the coach bays at San Gimignano, "
-        "Monteriggioni and Montepulciano where a 13-metre coach cannot go, and in Florence it falls into the "
-        "under-8-metre permit band, which costs less."
-    ),
-
-    h_carico="The pick-up point",
-    carico_intro=(
-        "Hotel Adamas is at Via Ricasoli 9, a few steps from the Duomo, in the heart of the limited traffic zone. "
-        "This is worth settling straight away, because it is the real substance of your enquiry: <b>Florence's coach "
-        "ZTL covers the entire built-up area, twenty-four hours a day, every day of the year</b>, and it applies to "
-        "any passenger vehicle with more than nine seats. It applies to our 26-seat minibus exactly as it would to a "
-        "12- or 16-seat Sprinter: this is not a limitation of the vehicle we are offering, it is the city's regime. "
-        "There is no picking up at the hotel door, and no serious operator will tell you otherwise. Here is how it "
-        "is solved."
-    ),
-    carico_head=["Option", "How it works", "Cost"],
-    carico=[
-        ("Van shuttle<br/><b>our recommendation</b>",
-         "Two vans of up to nine seats — which are allowed into the ZTL — collect you outside the hotel and take you "
-         "to the minibus at Piazza Vittorio Veneto: a ten-minute run. The same service at the end of the day, to "
-         "bring you back to the hotel door.",
-         "€ 320.00 + VAT<br/>return"),
-        ("Taxis, booked by reception",
-         "Three taxis for twelve people, same route: taxis are also allowed into the ZTL. Reception at the Adamas "
-         "books them the evening before and you pay them directly on the spot.",
-         "about € 20.00<br/>per taxi, each way"),
-        ("On foot, evening only",
-         "On the way back the minibus sets you down at Piazza Savonarola, the authorised point nearest the hotel: "
-         "1.4 km, about twenty minutes on foot. It is authorised for setting down only and only between 08:00 and "
-         "20:00, so it serves the return, never the departure.",
-         "no charge"),
-    ],
-    carico_close=(
-        "The morning meeting point is <b>Piazza Vittorio Veneto</b>, by Ponte della Vittoria: it is authorised for "
-        "both picking up and setting down twenty-four hours a day, without the restrictions on hours or type of "
-        "service that apply to the other points near the centre. The driver waits for you there with the GiroMunna sign."
-    ),
-
-    h_servizio="The service",
-    svc_head=["Itinerary", "Route and programme", "Vehicle engaged"],
-    svc=[
-        ("A<br/>Pisa and Lucca",
-         "<b>Florence → Pisa → Lucca → Florence.</b> Meeting point 08:30 at Piazza Vittorio Veneto. Ninety kilometres "
-         "to Pisa, arriving around 09:45; the vehicle waits at the Via Pietrasantina coach terminal, ten minutes on "
-         "foot from Piazza dei Miracoli. Departure at 12:30 and 25 km to Lucca, where the vehicle stops outside the "
-         "walls and you walk into the centre. Return at 17:30, 80 km of motorway, back in Florence around 18:45. "
-         "<b>About 195 km.</b>",
-         "approx.<br/>08:30 – 19:00"),
-        ("B<br/>Pisa, Siena and<br/>San Gimignano",
-         "<b>Florence → Pisa → Siena → San Gimignano → Florence.</b> Departure at 07:30: ninety kilometres to Pisa, "
-         "then 125 km across Tuscany to Siena, 45 km to San Gimignano and 55 km back. Four stops and over five hours "
-         "of driving alone, before the visits themselves. By far the longest of the four days: the notes explain why "
-         "it is worth lightening. <b>About 315 km.</b>",
-         "approx.<br/>07:30 – 20:00"),
-        ("C<br/>Siena, San Gimignano<br/>and Monteriggioni",
-         "<b>Florence → Siena → San Gimignano → Monteriggioni → Florence.</b> Departure at 08:30 and 75 km to Siena; "
-         "then 45 km to San Gimignano, 30 km to Monteriggioni and 55 km back, into town around 19:00. We suggest "
-         "reversing the order of the stops, putting Monteriggioni first: the notes explain why. "
-         "<b>About 205 km, which becomes 170 in the order we recommend.</b>",
-         "approx.<br/>08:30 – 19:00"),
-        ("D<br/>Montalcino, Pienza<br/>and Montepulciano",
-         "<b>Florence → Montalcino → Pienza → Montepulciano → Florence.</b> Departure at 08:00 and 110 km to "
-         "Montalcino, arriving around 09:45. Twenty-five kilometres to Pienza and another 15 to Montepulciano, in "
-         "the heart of the Val d'Orcia; back on the Valdichiana motorway, 120 km, into Florence around 19:45. The "
-         "finest of the four days and the most demanding on foot: three hilltop towns. <b>About 270 km.</b>",
-         "approx.<br/>08:00 – 20:00"),
-    ],
-    svc_note=("Distances and journey times are road estimates, traffic excluded. The times shown are our proposal: "
-              "we will gladly recalculate around whatever departure time you prefer."),
-
-    h_prezzo="The price",
-    price_head=["Itinerary — one full day, everything included", "Excl. VAT", "VAT 10% included"],
-    price_rows=[
-        ("<b>A</b> · Florence → Pisa → Lucca → Florence — about 195 km", "€ 1,380.00", "€ 1,518.00"),
-        ("<b>B</b> · Florence → Pisa → Siena → San Gimignano → Florence — about 315 km", "€ 1,950.00", "€ 2,145.00"),
-        ("<b>C</b> · Florence → Siena → San Gimignano → Monteriggioni → Florence — about 205 km", "€ 1,550.00", "€ 1,705.00"),
-        ("<b>D</b> · Florence → Montalcino → Pienza → Montepulciano → Florence — about 270 km", "€ 1,620.00", "€ 1,782.00"),
-        ("Van shuttle between the hotel and the pick-up point, return — <i>optional</i>", "€ 320.00", "€ 352.00"),
-        ("Driver's meals", "<i>at your charge</i>", "—"),
-    ],
-    grand=("The amounts are for the whole day and the whole group, not per person: split twelve ways, "
-           "from €&nbsp;126.50 to €&nbsp;178.75 each depending on the itinerary."),
-    perhead=("Only one itinerary is confirmed — whichever you choose. The price covers every access charge, including "
-             "the Florence coach ZTL permit and, on the itineraries that take in Siena, the municipal tourist coach "
-             "permit: nothing further will be asked of you on the day of service."),
-
-    h_incluso="Included.",
-    incluso=(
-        "Vehicle and driver for the whole day, fuel, motorway tolls, full insurance and luggage handling. All access "
-        "charges are included too: the Florence coach ZTL permit, which our vehicle pays in the under-8-metre band; "
-        "the Pisa coach park on itineraries A and B; the municipal tourist coach permit for Siena on itineraries B "
-        "and C; the authorised coach parks of the Val d'Orcia towns on itinerary D."
-    ),
-    h_nonincluso="Not included.",
-    nonincluso=(
-        "The driver's meals, which remain at your charge. Entrance fees, guides, tastings, meals and gratuities. "
-        "The van shuttle to and from the hotel, which appears as an optional line in the price list. Waiting beyond "
-        "the agreed times, € 50.00 per hour. Additional stops or changes to the itinerary decided during the day, "
-        "quoted separately. Return after 02:00, € 250.00."
-    ),
-
-    h_pagamento="Payment",
-    pay_rows=[
-        ("Deposit 30% on confirmation", "€ 455.40 – € 643.50", "depending on the itinerary"),
-        ("Balance, within 5 days of the service", "the remaining 70%", ""),
-    ],
-    bank=("Bank transfer to Munna Girolamo Giuseppe — "
-          "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
-
-    h_note="Notes",
-    note=[
-        ("<b>There is no picking up at the hotel door, and it is not a question of our vehicle.</b> Florence's coach "
-         "ZTL applies across the whole built-up area, twenty-four hours a day, and covers any passenger vehicle over "
-         "nine seats: our 26-seat minibus just as much as a 12- or 16-seat Sprinter. Via Ricasoli, moreover, is "
-         "narrow and two steps from the Duomo. Picking up and setting down happen at the points authorised by the "
-         "city, and the nearest one to the Adamas that also allows picking up is Piazza Vittorio Veneto, towards the "
-         "Cascine, about 2.5 km away. Piazza Savonarola is closer — 1.4 km, about twenty minutes on foot — but it is "
-         "authorised for setting down only, and only from 08:00 to 20:00: fine for the evening return, not for the "
-         "morning departure."),
-        ("<b>The van shuttle: yes, we can arrange it.</b> This is the answer to your question and the solution we "
-         "recommend, particularly first thing in the morning and at the end of a long day. Vehicles of up to nine "
-         "seats fall outside the coach ZTL and reach the hotel door: for twelve people that means two vans, taking "
-         "you to the minibus in ten minutes. We have quoted it at € 320.00 + VAT for the return trip. One point we "
-         "would rather make now than later: the vans are not our own vehicles, we provide them through a colleague "
-         "in Florence, so we confirm them together with the booking and not before."),
-        ("<b>Itinerary B asks too much of a single day.</b> Pisa lies west, Siena and San Gimignano south: putting "
-         "them together means 315 kilometres and over five hours of driving alone, before the visits. Leaving at "
-         "07:30 you would be back around 20:00, and in between you are left with two hours in Pisa, three in Siena — "
-         "lunch included — and two in San Gimignano: the bare minimum for three places of that calibre. Twelve and a "
-         "half hours out, for a family, is a great deal. We have quoted it "
-         "all the same because you asked, but if you want our view: drop Pisa and you have itinerary C, or keep Pisa "
-         "and pair it with Lucca, which is itinerary A. That is two good days rather than one long dash."),
-        ("<b>Itinerary C is worth reversing.</b> Monteriggioni sits on the Florence-Siena expressway, essentially on "
-         "the outward road, whereas in the order you set out you reach it doubling back from San Gimignano. Running "
-         "Florence → Monteriggioni → Siena → San Gimignano → Florence brings the day down to 170 km instead of 205 "
-         "and saves almost an hour, which is worth far more on the ground than on the motorway. The price is "
-         "unchanged: € 1,550.00 either way."),
-        ("<b>The hill towns are earned on foot.</b> Siena, San Gimignano, Monteriggioni, Montalcino, Pienza and "
-         "Montepulciano all close their historic centres to coaches: you are set down at the authorised parks just "
-         "outside the walls and walk up. At Montepulciano the climb from the coach park to Piazza Grande is steep "
-         "and takes about twenty minutes. If the family includes elderly travellers, small children or anyone who "
-         "finds walking difficult, tell us before confirming: it changes the set-down points we request and, in some "
-         "cases, the order of the stops."),
-        ("<b>Driver's meals, and no overnight stay.</b> The day starts and ends in Florence, so the driver returns "
-         "to base and there is no night to book. Lunch remains, and under our terms it stays at your charge: the "
-         "simplest arrangement is that he eats wherever the group stops, otherwise we agree a fixed amount in "
-         "advance. We do not put it in the quotation because we do not arrange it."),
-        ("<b>We will set the times together.</b> Those shown are our proposal, built around a full day and normal "
-         "seasonal traffic: confirm the departure time you prefer and we will recalculate the rest. Waiting beyond "
-         "the agreed times is charged at € 50.00 per hour. On itineraries B and D an early start is not a detail, it "
-         "is the condition on which the day works."),
-        ("<b>To confirm, what we need first of all is the date.</b> We have one minibus, and in high season the days "
-         "go weeks in advance: until we have the date we cannot hold anything. The prices above are for a mid-season "
-         "day; for high-season weekends and public holiday periods they may move, and we would tell you at once. "
-         "Along with the date we also need the chosen itinerary, the departure time, the final passenger count, "
-         "whether you want the van shuttle, a phone or WhatsApp contact for whoever travels with the family, and "
-         "your invoicing details."),
-        ("<b>Availability and cancellation.</b> The booking becomes firm on receipt of the deposit. Cancellation is "
-         "free of charge more than 60 days before the service; from 60 to 30 days the deposit is retained; from 30 "
-         "to 10 days 50% of the price is charged; in the last 10 days, 100%. "
-         "This quotation is valid until 20 September 2026."),
-    ],
-    closing=("We remain at your disposal for any clarification and look forward to hearing from you.<br/><br/>"
-             "Kind regards,<br/>"
-             "Girolamo Munna — GiroMunna NCC, Tuscany · +39 335 587 4744 · info@giromunna.com"),
-)
-
 
 def styles():
     base = dict(fontName="Helvetica", textColor=INK, leading=13.2, fontSize=9.2)
@@ -497,8 +313,8 @@ def _grid(extra=()):
     ] + list(extra))
 
 
-def build(lang, cliente, out):
-    L = IT if lang == "it" else EN
+def build(cliente, out):
+    L = IT
     S = styles()
     w, _ = A4
     usable = w - 2 * MARGIN
@@ -625,10 +441,9 @@ def build(lang, cliente, out):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--lingua", "--lang", dest="lang", default="it", choices=["it", "en"])
     ap.add_argument("--cliente", "--client", dest="cliente", default="Master Group Tour Operator")
     ap.add_argument("--out", default=None)
     a = ap.parse_args()
     name = a.out or os.path.join(
-        HERE, "GiroMunna_Preventivo_Tour_Toscana_Giornaliero_12pax_%s.pdf" % a.lang.upper())
-    print(build(a.lang, a.cliente, name))
+        HERE, "GiroMunna_Preventivo_Tour_Toscana_Giornaliero_12pax_IT.pdf")
+    print(build(a.cliente, name))

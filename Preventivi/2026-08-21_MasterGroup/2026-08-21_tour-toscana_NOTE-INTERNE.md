@@ -3,20 +3,23 @@
 **Cliente:** Master Group Tour Operator · **Rif. preventivo:** GM-2026-0821-MG ·
 **Preparato:** 21 agosto 2026 · **Validità:** 20 settembre 2026
 
+**Questo preventivo è solo in italiano, per decisione di Girolamo.** Master Group è un tour
+operator italiano e ha scritto in italiano, quindi la versione inglese non serve. È l'unico
+preventivo che fa eccezione alla regola delle due lingue: se dovesse servire l'inglese, il
+dizionario `EN` sta nella storia del repository, nel commit che ha aggiunto questa cartella.
+
 File generati:
 
 - `GiroMunna_Preventivo_Tour_Toscana_Giornaliero_12pax_IT.pdf`
-- `GiroMunna_Preventivo_Tour_Toscana_Giornaliero_12pax_EN.pdf`
-- `genera_preventivo_tour_toscana.py` — rigenera entrambi i PDF
-- `preventivo_tour_toscana_giornaliero.html` — la pagina web bilingue
+- `genera_preventivo_tour_toscana.py` — rigenera il PDF
+- `preventivo_tour_toscana_giornaliero.html` — la pagina web
 
 Tutto dentro `Preventivi/2026-08-21_MasterGroup/`.
 
-Il cliente è già il valore predefinito dello script. Per rigenerare i due PDF:
+Il cliente è già il valore predefinito dello script. Per rigenerare il PDF:
 
 ```bash
-python3 genera_preventivo_tour_toscana.py --lingua it
-python3 genera_preventivo_tour_toscana.py --lingua en
+python3 genera_preventivo_tour_toscana.py
 ```
 
 Con `--cliente "Altro Nome"` si cambia l'intestatario.
