@@ -85,13 +85,15 @@ IT = dict(
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Sab 22 ago — escursione sul Monte Amiata, due mezzi",
-         "€ 1.100,00", "+ IVA 10%"),
+        ("Sab 22 ago — Mercedes-Benz Beluga, mezzo e conducente per l'intera giornata",
+         "€ 750,00", "+ IVA 10%"),
+        ("Sab 22 ago — Mercedes-Benz Tourengo, mezzo e conducente per l'intera giornata",
+         "€ 750,00", "+ IVA 10%"),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 1.100,00",
+    price_total="€ 1.500,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 1.210,00.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 1.650,00.",
     h_incluso="Incluso.",
     incluso=(
         "Entrambi i mezzi e i rispettivi conducenti, carburante, pedaggi autostradali, assicurazione completa "
@@ -107,7 +109,7 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Saldo, entro 5 giorni dal servizio", "€ 1.210,00", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 1.650,00", "IVA inclusa"),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -160,13 +162,15 @@ EN = dict(
     ],
     h_prezzo="Price",
     price_rows=[
-        ("Sat 22 Aug — Monte Amiata excursion, two vehicles",
-         "€ 1,100.00", "+ VAT 10%"),
+        ("Sat 22 Aug — Mercedes-Benz Beluga, vehicle and driver for the whole day",
+         "€ 750.00", "+ VAT 10%"),
+        ("Sat 22 Aug — Mercedes-Benz Tourengo, vehicle and driver for the whole day",
+         "€ 750.00", "+ VAT 10%"),
     ],
     price_total_label="Total, net of VAT",
-    price_total="€ 1,100.00",
+    price_total="€ 1,500.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 1,210.00.",
+    grand="Total payable, VAT 10% included: € 1,650.00.",
     h_incluso="Included.",
     incluso=(
         "Both vehicles and their drivers, fuel, motorway tolls, full insurance — as already covered by your "
@@ -182,7 +186,7 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Balance, within 5 days of service", "€ 1,210.00", "VAT included"),
+        ("Balance, within 5 days of service", "€ 1,650.00", "VAT included"),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),

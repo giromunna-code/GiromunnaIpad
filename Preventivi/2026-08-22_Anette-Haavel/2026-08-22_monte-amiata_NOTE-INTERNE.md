@@ -10,12 +10,16 @@ quel preventivo è salvato qui accanto:
 
 File in questa cartella:
 - `GiroMunna_Preventivo_Monte_Amiata_22_agosto_2026_IT.pdf` / `_EN.pdf`
-- `genera_preventivo_monte_amiata.py` — rigenera i due PDF
+- `GiroMunna_Proforma_Saldo_Monte_Amiata_22_agosto_2026_IT.pdf` / `_EN.pdf`
+- `genera_preventivo_monte_amiata.py` — rigenera i due PDF del preventivo
+- `genera_proforma_monte_amiata.py` — rigenera i due PDF della proforma
 - `preventivo_monte_amiata_22_agosto_2026.html` — pagina web bilingue, con sezione interna
 
 ```bash
 python3 genera_preventivo_monte_amiata.py --lingua it
 python3 genera_preventivo_monte_amiata.py --lingua en
+python3 genera_proforma_monte_amiata.py --lingua it
+python3 genera_proforma_monte_amiata.py --lingua en
 ```
 
 Il cliente (Anette Haavel) è già il valore predefinito dello script.
@@ -26,16 +30,31 @@ Il cliente (Anette Haavel) è già il valore predefinito dello script.
 
 | | |
 |---|---|
-| Sab 22 ago — escursione Monte Amiata, due mezzi | € 1.100,00 + IVA 10% |
-| **Totale IVA inclusa** | **€ 1.210,00** |
+| Sab 22 ago — Mercedes-Benz Beluga, mezzo e conducente | € 750,00 + IVA 10% |
+| Sab 22 ago — Mercedes-Benz Tourengo, mezzo e conducente | € 750,00 + IVA 10% |
+| **Totale IVA inclusa** | **€ 1.650,00** |
 
-Base: la giornata di **giovedì 20 agosto** dello stesso preventivo Corte
-Francigena, anch'essa a due mezzi e giornata intera (Pienza + cena) — € 1.100,00
-netti. Sabato 22 è un'altra giornata piena a due mezzi: stesso prezzo. Le
+Prezzo fissato da Girolamo (21 agosto, dopo aver visto la prima bozza a €
+1.100/1.210): totale € 1.500,00 netti, € 750,00 per mezzo, con le due voci
+specificate separatamente invece di una riga unica "due mezzi". Punto di
+partenza per il confronto: la giornata di **giovedì 20 agosto** dello stesso
+preventivo Corte Francigena, anch'essa a due mezzi e giornata intera (Pienza +
+cena) — € 1.100,00 netti; Girolamo ha deciso di andare sopra quella cifra. Le
 Filigare non è stato usato come riferimento perché è un lavoro a mezzo singolo;
 qui i mezzi sono due, e Corte Francigena è la base corretta per un lavoro a due
 mezzi (per un lavoro a **un solo mezzo**, il riferimento resta invece Le Filigare,
 GM-2026-0821-LF — vedi CLAUDE.md).
+
+## La proforma del saldo
+
+Generata su richiesta di Girolamo, nello stesso formato della proforma
+dell'acconto Corte Francigena (`RIFERIMENTO_GiroMunna_Proforma_Invoice_Corte_
+Francigena_Deposit.pdf`, salvata qui accanto): intestatario, importo dovuto in
+evidenza, dati bancari, note. A differenza di quella — che era un acconto 30%
+— questa è per l'**intero importo** di questa giornata (€ 1.650,00), pagamento
+unico entro 5 giorni dal servizio, come già indicato nel preventivo. Dati di
+fatturazione (ID Production OÜ) e dati bancari (Banco BPM, filiale di Lucca)
+ripresi identici dalla proforma dell'acconto.
 
 **Vitto e alloggio dei conducenti:** già organizzati e pagati da GiroMunna per
 l'intero periodo 19-23 agosto nel preventivo Corte Francigena. Sabato 22 rientra
