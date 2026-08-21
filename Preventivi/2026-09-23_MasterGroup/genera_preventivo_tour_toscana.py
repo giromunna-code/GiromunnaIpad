@@ -96,9 +96,10 @@ IT = dict(
     carico=[
         ("Navetta van<br/><b>la consigliamo</b>",
          "Due van fino a nove posti — che nella ZTL entrano regolarmente — vi prendono davanti all'hotel e vi portano "
-         "al minibus in Piazza Vittorio Veneto: dieci minuti di percorso. Lo stesso servizio a fine giornata, "
-         "per riportarvi all'ingresso dell'hotel.",
-         "€ 320,00 + IVA<br/>andata e ritorno"),
+         "al minibus in Piazza Vittorio Veneto: dieci minuti di percorso. Lo stesso a fine giornata, per riportarvi "
+         "all'ingresso dell'hotel. Non sono mezzi nostri: se volete ce ne occupiamo noi e vi giriamo la tariffa, "
+         "oppure la prenotate voi.",
+         "su richiesta"),
         ("Taxi dal ricevimento",
          "Tre taxi per dodici persone, stesso percorso: anche i taxi in ZTL entrano. Li prenota il ricevimento "
          "dell'Adamas la sera prima e li pagate voi direttamente sul posto.",
@@ -154,7 +155,8 @@ IT = dict(
         ("<b>B</b> · Firenze → Pisa → Siena → San Gimignano → Firenze — circa 315 km", "€ 1.950,00", "€ 2.145,00"),
         ("<b>C</b> · Firenze → Siena → San Gimignano → Monteriggioni → Firenze — circa 205 km", "€ 1.550,00", "€ 1.705,00"),
         ("<b>D</b> · Firenze → Montalcino → Pienza → Montepulciano → Firenze — circa 270 km", "€ 1.620,00", "€ 1.782,00"),
-        ("Navetta van fra l'hotel e il punto di carico, andata e ritorno — <i>opzionale</i>", "€ 320,00", "€ 352,00"),
+        ("Navetta van fra l'hotel e il punto di carico, andata e ritorno — <i>opzionale</i>",
+         "<i>su richiesta</i>", "—"),
         ("Vitto del conducente", "<i>a carico vostro</i>", "—"),
     ],
     grand=("Gli importi sono per l'intera giornata e per tutto il gruppo, non a persona: in dodici, "
@@ -174,7 +176,7 @@ IT = dict(
     h_nonincluso="Non incluso.",
     nonincluso=(
         "Il vitto del conducente, che resta a vostro carico. Ingressi ai monumenti, guide, degustazioni, pasti e "
-        "mance. La navetta van da e per l'hotel, che trovate come voce opzionale nel listino. Attesa oltre gli orari "
+        "mance. La navetta van da e per l'hotel, che vi quotiamo a parte se ci chiedete di occuparcene. Attesa oltre gli orari "
         "concordati, € 50,00 all'ora. Soste aggiuntive o modifiche all'itinerario decise in corso di giornata, "
         "quotate a parte. Rientro dopo le 02:00, € 250,00."
     ),
@@ -198,12 +200,15 @@ IT = dict(
          "Piazza Vittorio Veneto, verso le Cascine, a circa 2,5 km. Piazza Savonarola è più vicina — 1,4 km, una "
          "ventina di minuti a piedi — ma è autorizzata alla sola discesa e solo dalle 08:00 alle 20:00: va bene per "
          "il rientro serale, non per la partenza."),
-        ("<b>La navetta van: sì, la organizziamo.</b> È la risposta alla vostra domanda ed è la soluzione che vi "
-         "consigliamo, soprattutto la mattina presto e alla fine di una giornata lunga. I veicoli fino a nove posti "
-         "non ricadono nella ZTL bus e arrivano davanti all'hotel: per dodici persone servono due van, che vi portano "
-         "al minibus in dieci minuti. L'abbiamo quotata € 320,00 + IVA andata e ritorno. Una precisazione che "
-         "preferiamo farvi subito: i van non sono mezzi nostri, li mettiamo a disposizione tramite un collega di "
-         "Firenze, quindi li confermiamo insieme alla prenotazione e non prima."),
+        ("<b>La navetta van: ce ne occupiamo noi oppure ve la fate voi, come preferite.</b> È la risposta alla "
+         "vostra domanda ed è la soluzione che vi consigliamo, soprattutto la mattina presto e alla fine di una "
+         "giornata lunga. I veicoli fino a nove posti non ricadono nella ZTL bus e arrivano davanti all'hotel: per "
+         "dodici persone servono due van, che vi portano al minibus in dieci minuti. Non sono mezzi nostri, e "
+         "preferiamo non metterveli a preventivo con una cifra che poi dovremmo correggere: <b>se ci dite di "
+         "procedere sentiamo un collega di Firenze e vi giriamo la tariffa</b>, senza impegno da parte vostra. Se "
+         "invece preferite organizzarla voi, o farla prenotare direttamente dall'Adamas che quei van li chiama tutti "
+         "i giorni, per noi va benissimo lo stesso. L'importante è che qualcuno la prenoti: da Via Ricasoli a Piazza "
+         "Vittorio Veneto a piedi sono 2,5 km, e la mattina presto con la famiglia non è la partenza che vi augurate."),
         ("<b>L'itinerario B chiede troppo a una giornata sola.</b> Pisa sta a ovest, Siena e San Gimignano a sud: "
          "metterli insieme significa 315 chilometri e oltre cinque ore di sola guida, cui vanno aggiunte le soste. "
          "Partendo alle 07:30 si rientra verso le 20:00, e in mezzo restano due ore a Pisa, tre a Siena — pranzo "

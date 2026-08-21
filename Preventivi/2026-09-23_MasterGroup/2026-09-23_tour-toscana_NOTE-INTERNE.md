@@ -53,7 +53,7 @@ collina chiudono prima che d'estate.
 | B · Firenze → Pisa → Siena → San Gimignano → Firenze | ~315 | € 1.950,00 | € 2.145,00 | € 178,75 |
 | C · Firenze → Siena → San Gimignano → Monteriggioni → Firenze | ~205 | € 1.550,00 | € 1.705,00 | € 142,08 |
 | D · Firenze → Montalcino → Pienza → Montepulciano → Firenze | ~270 | € 1.620,00 | € 1.782,00 | € 148,50 |
-| Navetta van A/R (opzionale) | — | € 320,00 | € 352,00 | — |
+| Navetta van A/R (opzionale) | — | *su richiesta* | — | — |
 | Vitto del conducente | — | a carico del cliente | — | — |
 
 Acconto 30%: da € 455,40 (itinerario A) a € 643,50 (itinerario B).
@@ -173,11 +173,13 @@ operator è più pulito e toglie argomenti di discussione il giorno del servizio
 1. ✅ **Disponibilità del mezzo: confermata da Girolamo, il Beluga del 23 settembre è
    libero.** Il preventivo lo dice al cliente a chiare lettere. Resta solo da bloccarlo
    appena arriva la conferma — il mezzo è uno solo e non ci sono alternative.
-2. **I van non sono nostri.** I € 320,00 andata e ritorno coprono due van fino a nove posti
-   con un collega di Firenze, e vanno concordati **prima** di impegnarsi. Nel preventivo la
-   cosa è dichiarata al cliente ("si confermano insieme alla prenotazione"). Se preferisci
-   non impegnarti affatto, togli la riga della navetta dal listino e la seconda nota: resta
-   la soluzione taxi, che il cliente organizza da sé.
+2. ✅ **I van sono passati a "su richiesta", come hai deciso.** Nel preventivo non c'è più
+   nessuna cifra: si offre di sentire il collega di Firenze e girare la tariffa, oppure si
+   lascia che se ne occupi il cliente o l'Adamas. Così non ti impegni su un prezzo prima di
+   averlo verificato e la risposta alla loro domanda resta comunque un sì.
+   Per tua memoria, la stima di partenza era **€ 320,00 netti andata e ritorno** per due van
+   fino a nove posti: quattro corse in tutto, su un costo presunto di € 60-70 a corsa. Se il
+   collega ti dà una tariffa molto diversa, il margine sta lì.
 3. **Master Group è un tour operator**, non il cliente finale: rivende con il suo ricarico e
    quasi certamente tratterà. I prezzi sono tenuti alti apposta, c'è margine per scendere.
 4. **Il numero dei passeggeri.** Dodici è comodissimo sul Beluga. Se la famiglia cresce fino
@@ -194,8 +196,10 @@ operator è più pulito e toglie argomenti di discussione il giorno del servizio
    noi è la leva per farlo decidere in fretta. La validità è fissata al 4 settembre.
 8. **Bloccare il mezzo sul 23 settembre** appena arriva la conferma.
 
-**A questo punto l'unica cosa aperta prima di mandare sono i van** del punto 2. Tutto il
-resto è verificato e chiuso.
+**Il preventivo è chiuso e si può mandare così com'è.** Non resta niente da verificare
+prima dell'invio: la data c'è, il mezzo è libero, il punto di carico è documentato e i van
+non impegnano nessuno. L'unica cosa che potrebbe tornare indietro è la richiesta della
+tariffa dei van — e a quel punto basta una telefonata al collega di Firenze.
 
 ## Cosa è già stato detto al cliente e cosa no
 
