@@ -118,11 +118,11 @@ Queste sono le tariffe reali, non più le mie stime:
 | Sosta bus Lucca | **€ 180,00** |
 | Permesso comunale Siena | **€ 160,00** |
 | Sosta bus San Gimignano | **€ 240,00** |
+| Parcheggio Monteriggioni | **€ 40,00** |
 | Parcheggio Pienza | **€ 22,00** |
 
-Mancano ancora **Monteriggioni** (itinerario C) e **Montalcino e Montepulciano** (itinerario
-D): nei conti qui sotto sono lasciati fuori, quindi i residui di C e D sono un filo
-ottimistici.
+Mancano solo **Montalcino e Montepulciano** (itinerario D): nei conti qui sotto sono
+lasciati fuori, quindi il residuo di D è ancora un filo ottimistico. A, B e C sono completi.
 
 Sommati per itinerario, sul netto:
 
@@ -130,20 +130,24 @@ Sommati per itinerario, sul netto:
 |---|---|---|---|---|---|
 | A · Pisa e Lucca | € 1.590,91 | € 871,00 | **55%** | € 719,91 | € 2,25 |
 | B · Pisa, Siena, San Gimignano | € 1.954,55 | € 1.091,00 | **56%** | € 863,55 | € 1,84 |
-| C · Siena, San Gim., Monteriggioni | € 1.590,91 | € 821,00 + Monteriggioni | 52% | € 769,91 | € 2,33 |
-| D · Montalcino, Pienza, Montepulciano | € 1.272,73 | € 443,00 + due parcheggi | 35% | € 829,73 | € 2,07 |
+| C · Siena, San Gim., Monteriggioni | € 1.590,91 | € 861,00 | **54%** | € 729,91 | € 2,21 |
+| D · Montalcino, Pienza, Montepulciano | € 1.272,73 | € 443,00 + due parcheggi | 35%+ | € 829,73− | € 2,07− |
 
 ### Il listino di Girolamo è coerente, il rilievo su D era sbagliato
 
-Tolti gli oneri, quello che resta per il trasporto sta fra **€ 1,84 e € 2,33 al chilometro**
-su tutti e quattro gli itinerari: una banda stretta, con i valori che calano man mano che la
-giornata si allunga. È esattamente come si prezza il trasporto.
+Tolti gli oneri, quello che resta per il trasporto sta fra **€ 1,84 e € 2,25 al chilometro**
+sui tre itinerari completi, e cala man mano che la giornata si allunga. È esattamente come
+si prezza il trasporto: A € 2,25, C € 2,21, B € 1,84. Una banda stretta e ordinata.
 
-E l'ordine si ribalta: **D non è il più povero dei quattro, è quello che lascia di più in
-assoluto** (€ 829,73), perché porta dentro € 443 di oneri contro gli € 871 di A. Il rilievo
-scritto in precedenza — «D è fuori scala, va alzato» — **era sbagliato e va considerato
-chiuso.** Nasceva dal confrontare quattro prezzi lordi di oneri come se fossero omogenei,
-quando A ne contiene il doppio di D.
+E l'ordine si ribalta: **D non è il più povero dei quattro.** Porta dentro € 443 di oneri
+contro gli € 871 di A e gli € 861 di C, quindi il suo residuo è almeno in linea con gli
+altri e con ogni probabilità sopra. Aggiungendo Montalcino e Montepulciano a € 30-50 di
+parcheggio l'uno — plausibile, visto che Monteriggioni sta a € 40 e Pienza a € 22 — D
+atterra fra € 730 e € 770 di residuo, cioè esattamente dove stanno A e C.
+
+Il rilievo scritto in precedenza — «D è fuori scala, va alzato» — **era sbagliato e va
+considerato chiuso.** Nasceva dal confrontare quattro prezzi lordi di oneri come se fossero
+omogenei, quando A e C ne contengono il doppio di D.
 
 ⚠️ **Il dato che conta davvero, però, è un altro: gli oneri di accesso valgono dal 35% al
 56% del prezzo netto.** Su B sono € 1.091 su € 1.954,55. Più della metà di quello che il
@@ -184,10 +188,11 @@ Con le tariffe vere degli oneri il conto è questo:
 |---|---|---|---|---|---|
 | A · Pisa e Lucca | € 1.590,91 | € 871 | € 720 | ~€ 180 | **~€ 540** |
 | B · Pisa, Siena, San Gimignano | € 1.954,55 | € 1.091 | € 864 | ~€ 260 | **~€ 605** |
-| C · Siena, San Gim., Monteriggioni | € 1.590,91 | € 821+ | € 770 | ~€ 185 | **~€ 585** |
+| C · Siena, San Gim., Monteriggioni | € 1.590,91 | € 861 | € 730 | ~€ 185 | **~€ 545** |
 | D · Montalcino, Pienza, Montepulciano | € 1.272,73 | € 443+ | € 830 | ~€ 225 | **~€ 605** |
 
-Quei € 540-605 sono la giornata dell'autista più il margine. Se guida Girolamo è la sua
+Quei € 540-605 sono la giornata dell'autista più il margine, e sono notevolmente allineati
+fra i quattro itinerari: un'altra conferma che il listino è costruito bene. Se guida Girolamo è la sua
 giornata più quello che avanza; se guida un dipendente, di margine vero ne resta poco.
 
 **Rispetto al conto precedente il quadro si è stretto di parecchio**, perché le mie stime
@@ -252,8 +257,8 @@ Vale la pena aggiornare la regola, perché è un numero che tornerà su ogni pre
 tocca Firenze. Stessa cosa per Pisa: nel CLAUDE.md il parcheggio bus dell'aeroporto è dato a
 ~€ 61, mentre la sosta bus in città costa € 270. Sono due voci diverse, ma conviene
 scriverle entrambe. Se vuoi che aggiorni il CLAUDE.md con tutto il listino degli oneri —
-Firenze € 421, Pisa € 270, Lucca € 180, Siena € 160, San Gimignano € 240, Pienza € 22 —
-dimmelo e lo faccio.
+Firenze € 421, Pisa € 270, San Gimignano € 240, Lucca € 180, Siena € 160,
+Monteriggioni € 40, Pienza € 22 — dimmelo e lo faccio.
 
 ## Altre verifiche di accesso
 
@@ -300,9 +305,9 @@ operator è più pulito e toglie argomenti di discussione il giorno del servizio
    fascia da 30 a 10, dove si addebita il 50%: nel preventivo il cliente è avvisato, e per
    noi è la leva per farlo decidere in fretta. La validità è fissata al 4 settembre.
 8. **Bloccare il mezzo sul 23 settembre** appena arriva la conferma.
-9. **Mancano tre tariffe:** Monteriggioni per l'itinerario C, Montalcino e Montepulciano
-   per il D. Non cambiano il quadro, ma i residui di C e D sono un filo ottimistici finché
-   non si hanno.
+9. **Mancano due tariffe:** Montalcino e Montepulciano, per l'itinerario D. Non cambiano il
+   quadro — a € 30-50 l'una D resta in linea con gli altri — ma finché non si hanno, il
+   residuo di D sulla carta è un filo ottimistico.
 
 ## Da valutare: dire al cliente quanto pesano gli oneri
 
