@@ -1,0 +1,887 @@
+<title>Preventivo — Firenze e trasferimenti aeroporto, 29 maggio 2028</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+  .day.released { background: transparent; border-style: dashed; border-color: var(--line-strong); }
+  .day.released .day-date { color: var(--ink-soft); }
+  .day.released .badge { color: var(--ink-soft); background: transparent; border-color: var(--line-strong); }
+  .day.released p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<style>
+  section h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 34px 0 8px;
+  }
+  .hint { color: var(--ink-soft); font-size: 0.9rem; margin: 12px 0 0; max-width: 66ch; }
+</style>
+
+<div class="wrap lang" data-lang="it">
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Firenze e trasferimenti da e per l'aeroporto
+      <span class="sub">Un'ipotesi di programma su cui ragionare, in attesa del vostro</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Cliente</span><span class="v">Tracey Williams</span></div>
+      <div class="fact"><span class="eyebrow">Data</span><span class="v">lun 29 mag 2028</span></div>
+      <div class="fact"><span class="eyebrow">Passeggeri</span><span class="v">fino a 26</span></div>
+      <div class="fact"><span class="eyebrow">Mezzo</span><span class="v">1 minibus</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2028-0529-TW</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">22 settembre 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Il mezzo</h2>
+    <p class="lede">Un minibus per il gruppo, fino a 26 persone, con lo stesso conducente per tutti i servizi.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista, 7,64 m</span>
+      <p>Aria condizionata, sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.</p>
+      <p>Il gruppo ci sta: 26 posti passeggeri sono esattamente le vostre 26 persone. Proprio perché il conto torna al posto esatto, il numero definitivo dei passeggeri e la quantità di bagagli vanno guardati insieme prima di confermare — è la prima delle note.</p>
+      <p>I 7,64 metri sono invece un vantaggio da sfruttare: entrano dove un autobus gran turismo non arriva, dai piazzali delle ville fuori Firenze alle strade strette delle colline.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">La richiesta è arrivata senza il dettaglio del programma: Firenze, fino a 26 persone, prelievi in aeroporto. Qui sotto l'ipotesi più probabile, con ogni voce quotata per conto suo. Distanze e tempi sono stime stradali, traffico escluso.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">29 maggio 2028 <span class="wd">· lunedì</span></span>
+          <span class="badge">Arrivo del gruppo</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">volo</span>
+            <span class="r">Aeroporto di Pisa (PSA) <span class="to">→ il vostro indirizzo a Firenze</span></span>
+            <span class="d">85 km · 1 h 15</span>
+          </div>
+        </div>
+        <div class="engaged">Accoglienza in sala arrivi con il cartello GiroMunna, carico dei bagagli, trasferimento. Il volo lo monitoriamo noi: attesa gratuita fino a 90 minuti dall'atterraggio effettivo. Mezzo impegnato circa 3 ore.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">Data da definire</span>
+          <span class="badge">Giornata a disposizione</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">8 ore</span>
+            <span class="r">Firenze e dintorni <span class="to">→ itinerario da fissare insieme</span></span>
+            <span class="d">fino a 120 km</span>
+          </div>
+        </div>
+        <div class="engaged">Le ville e i borghi intorno a Firenze, una cantina del Chianti, il mare, oppure semplicemente gli spostamenti del gruppo in città e nell'immediata periferia.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">Data da definire</span>
+          <span class="badge">Ripartenza</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">volo</span>
+            <span class="r">Firenze <span class="to">→ Aeroporto di Pisa (PSA)</span></span>
+            <span class="d">85 km · 1 h 15</span>
+          </div>
+        </div>
+        <div class="engaged">Orario calcolato sul vostro volo: in alta stagione partiamo da Firenze tre ore e mezza prima del decollo. Mezzo impegnato circa 3 ore.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Servizio</th>
+            <th scope="col" class="num">Importo</th>
+            <th scope="col" class="num">IVA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Lun 29 mag 2028</span>Trasferimento aeroporto di Pisa → Firenze, all'arrivo</td>
+            <td class="num">€ 700,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Data da definire</span>Giornata a disposizione a Firenze e dintorni, 8 ore fino a 120 km</td>
+            <td class="num">€ 990,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Data da definire</span>Trasferimento Firenze → aeroporto di Pisa, alla ripartenza</td>
+            <td class="num">€ 700,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Vitto e alloggio del conducente, se il programma richiederà pernottamenti</td>
+            <td class="num vat"><em>a carico vostro</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Totale, al netto di IVA</td>
+            <td class="num">€ 2.390,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Totale da corrispondere, IVA 10% inclusa
+        <small>circa € 101,00 a persona con il mezzo pieno</small>
+      </span>
+      <span class="fig">€ 2.629,00</span>
+    </div>
+
+    <p class="hint">Le tre voci vivono ognuna per conto suo: se ne serve solo una parte, il totale scende di conseguenza.</p>
+
+    <h3>Altre voci, se servono</h3>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Mezza giornata a disposizione, 4 ore fino a 60 km</td><td class="num">€ 620,00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Trasferimento fra l'aeroporto di Firenze (FLR) e Firenze, per tratta</td><td class="num">€ 420,00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Giornata nel Chianti con partenza da Firenze, 10 ore fino a 200 km</td><td class="num">€ 1.250,00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Prelievo aggiuntivo a Pisa, per un secondo volo in arrivo</td><td class="num">€ 700,00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Attesa oltre gli orari concordati, all'ora e per mezzo</td><td class="num">€ 50,00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Rientro dopo le 02:00, per mezzo</td><td class="num">€ 250,00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Permesso di accesso di un bus turistico al centro di Firenze, se necessario</td><td class="num">circa € 350,00</td><td class="num vat">al costo</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Acconto 30% alla conferma</td>
+            <td class="num"><strong>€ 790,00</strong></td>
+            <td class="num vat">IVA inclusa</td>
+          </tr>
+          <tr>
+            <td>Saldo, entro 5 giorni dal servizio</td>
+            <td class="num"><strong>€ 1.839,00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Mezzo e conducente, carburante, pedaggi autostradali, parcheggi — compreso il parcheggio bus dell'aeroporto di Pisa —, assicurazione completa, movimentazione dei bagagli, monitoraggio del volo e accoglienza in sala arrivi con il cartello GiroMunna.</li>
+      <li><strong>Ritardi del volo.</strong> All'arrivo l'autista attende senza costi aggiuntivi fino a 90 minuti dall'orario di atterraggio effettivo, per quanto il volo arrivi in ritardo.</li>
+      <li><strong>A vostro carico.</strong> Vitto e alloggio del conducente, se il programma dovesse richiedere pernottamenti: la prenotazione e il pagamento li curate voi direttamente. Con il programma qui ipotizzato non serve alcun pernottamento.</li>
+      <li><strong>Non incluso.</strong> Ingressi, pasti, guide e mance. Attesa oltre gli orari concordati, € 50,00 all'ora per mezzo. Soste aggiuntive o modifiche all'itinerario, quotate su richiesta. Rientro dopo le 02:00, € 250,00. L'eventuale permesso di accesso al centro storico di Firenze, circa € 350,00, e il permesso comunale di Siena, circa € 160,00, se il programma dovesse toccare Siena.</li>
+      <li><strong>Disponibilità e cancellazione.</strong> Il mezzo è al momento libero per quelle date. Cancellazione gratuita oltre 60 giorni prima del servizio, quindi fino al 30 marzo 2028, con l'acconto restituito per intero; da 60 a 30 giorni viene trattenuto l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Note</h2>
+    <ul class="conds">
+      <li><strong>I bagagli sono il punto da guardare per primo.</strong> Il Beluga ha 26 posti passeggeri: il gruppo ci sta, ma esatto esatto, senza un posto libero. Se con voi viaggiano un accompagnatore, una guida o un ventisettesimo passeggero, il mezzo non basta più e serve un secondo minibus, da organizzare per tempo. E 26 persone in arrivo dal Regno Unito significano fino a 26 valigie da stiva più i bagagli a mano, mentre il vano di un mezzo da 7,64 m porta comodamente una ventina di valigie grandi, non trenta. Diteci quante valigie grandi ci sono davvero e se ci sono passeggini, sacche da golf o attrezzatura: se i numeri sono al limite mettiamo in conto un mezzo di appoggio per i soli bagagli.</li>
+      <li><strong>Firenze, la zona a traffico limitato e il punto di discesa.</strong> Il centro storico è a traffico limitato e l'ingresso di un bus turistico richiede un permesso a parte, circa € 350,00. Nella maggior parte dei casi non serve: si carica e si scarica nei punti autorizzati — Fortezza da Basso e Piazzale Montelungo per gli hotel della zona stazione, i lungarni, Piazza della Libertà — e da lì l'albergo è a pochi minuti a piedi. Con 26 valigie al seguito, però, quei pochi minuti pesano: mandateci l'indirizzo e vi diciamo dove si ferma il mezzo.</li>
+      <li><strong>Da quale aeroporto arrivate.</strong> Abbiamo quotato Pisa (PSA), lo scalo più usato dai voli dal Regno Unito. Se atterrate a Firenze (FLR) il trasferimento costa € 420,00 netti a tratta invece di € 700,00. Da Bologna o da Roma il prezzo sale.</li>
+      <li><strong>«Airport pickups too»: quanti prelievi servono.</strong> Un gruppo di 26 persone raramente arriva su un unico volo. Se arrivate spezzati su due o tre voli, ogni corsa è un servizio a sé: mandateci gli orari e vi diciamo se conviene tenere il mezzo in attesa in aeroporto (€ 50,00 all'ora) oppure fare due viaggi separati.</li>
+      <li><strong>La data.</strong> Abbiamo preso alla lettera lunedì 29 maggio 2028, il lunedì di festa di fine maggio nel Regno Unito, in piena alta stagione fiorentina. Se l'anno o il giorno fossero diversi, ditecelo e rifacciamo il preventivo in giornata.</li>
+      <li><strong>Il prezzo a due anni di distanza.</strong> Gli importi sono costruiti sulle tariffe di oggi. Alla conferma definitiva li riconfermiamo, con il solo adeguamento dei costi vivi — carburante, pedaggi, contratto degli autisti — comunicato con largo anticipo.</li>
+      <li><strong>Per farvi un preventivo su misura ci servono</strong> il numero definitivo di passeggeri e valigie, quanti giorni di servizio e in quali date, le tappe o l'idea di massima del programma, l'indirizzo di Firenze dove alloggiate, l'aeroporto con numero e orario dei voli, e un recapito WhatsApp della persona che viaggia con il gruppo.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Interno — non fa parte del preventivo inviato</div>
+    <h2>Come sono stati costruiti i prezzi</h2>
+
+    <p>Riferimento: il preventivo <strong>Le Filigare</strong> (GM-2026-0821-LF) e il preventivo <strong>Alvora</strong> (GM-2026-0913-BI), entrambi a mezzo singolo come questo. I numeri del Corte Francigena non vanno usati come base: quel lavoro ha due mezzi e i suoi importi per mezzo sono già scontati per volume.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — trasferimento FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500,00</td></tr>
+          <tr><td>Le Filigare — giornata a disposizione a Siena, ~80 km, 5 h</td><td class="num">€ 809,00</td></tr>
+          <tr><td>Alvora — giornata a disposizione, ~115 km, 8 h</td><td class="num">€ 980,00</td></tr>
+          <tr><td>Alvora — trasferimento da FLR con sosta in cantina, ~83 km</td><td class="num">€ 950,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Da lì a questi prezzi</h3>
+    <p><strong>Pisa → Firenze, € 700,00.</strong> 85 km contro i 50 km da € 500 delle Filigare, più il parcheggio bus di Pisa (~€ 61) che qui è incluso nel prezzo. Il mezzo parte e torna dalla base: sono circa 220 km di giornata.</p>
+    <p><strong>Firenze aeroporto (FLR) → Firenze, € 420,00.</strong> La corsa è di 12 km, ma dalla base all'aeroporto sono 50 km: il mezzo ne fa comunque 120. È il pavimento sotto cui non si scende, non una proporzione sui chilometri di corsa.</p>
+    <p><strong>Giornata a disposizione, € 990,00.</strong> Allineata alla giornata Alvora del 14 settembre (8 h, ~115 km, € 980). La mezza giornata a € 620 e la giornata nel Chianti a € 1.250 seguono la stessa scala.</p>
+
+    <h3>Il secondo minibus</h3>
+    <p>Non è stato inserito. 26 passeggeri stanno sul Beluga al posto esatto, quindi per ora un mezzo basta; se il numero cresce o i bagagli non ci stanno serve il Tourengo di Francesco, e <strong>la decisione è di Girolamo</strong>, con il costo da concordare con Francesco prima di metterlo a preventivo. Al cliente la cosa è segnalata come punto da chiarire, senza aggiungere nulla d'iniziativa.</p>
+
+    <h3>Margine</h3>
+    <p>Il preventivo è costruito sul mezzo di proprietà. Costo diretto stimato € 250-350 a giornata di servizio e nessun pernottamento del conducente: il margine è buono su tutte e tre le voci. Se il lavoro venisse subappaltato a Francesco (€ 600-700 al giorno) i prezzi vanno rivisti al rialzo del 20-25% prima di inviare.</p>
+
+    <h3>Da chiarire prima di inviare</h3>
+    <ol>
+      <li><strong>La data.</strong> 29 maggio 2028 è a 21 mesi di distanza, ma è il lunedì di festa di fine maggio nel Regno Unito: la data è plausibile e va confermata, non corretta d'ufficio.</li>
+      <li><strong>Il programma.</strong> Il modulo dice solo «Other» e «Florence»: la giornata a disposizione è un'ipotesi nostra e va sostituita appena arriva il programma vero.</li>
+      <li><strong>L'aeroporto.</strong> Quotato Pisa. Firenze costerebbe € 420,00 a tratta, Bologna di più.</li>
+      <li><strong>Bagagli e numero esatto.</strong> È il punto tecnico vero: 26 valigie da stiva sono al limite del vano.</li>
+      <li><strong>L'indirizzo a Firenze.</strong> Serve per capire se scatta il permesso ZTL da € 350.</li>
+      <li><strong>Quanti voli in arrivo.</strong> Se il gruppo arriva spezzato, ogni corsa è un servizio in più.</li>
+      <li><strong>Bloccare la disponibilità</strong> per il 29 maggio 2028 se la richiesta si consolida.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2028-0529-TW · 23 agosto 2026</span>
+  </footer>
+
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Florence and airport transfers
+      <span class="sub">A likely shape of the programme to work from, while we wait for yours</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Client</span><span class="v">Tracey Williams</span></div>
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">Mon 29 May 2028</span></div>
+      <div class="fact"><span class="eyebrow">Passengers</span><span class="v">up to 26</span></div>
+      <div class="fact"><span class="eyebrow">Vehicle</span><span class="v">1 minibus</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2028-0529-TW</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">22 September 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicle</h2>
+    <p class="lede">One minibus for the group, up to 26 people, with the same driver across every service.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus driver, 7.64 m</span>
+      <p>Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.</p>
+      <p>The group fits: 26 passenger seats are exactly your 26 people. Precisely because the count comes out to the last seat, the final passenger number and the amount of luggage are worth settling together before you confirm — that is the first of the notes.</p>
+      <p>The 7.64 m length, on the other hand, is an advantage worth using: the minibus reaches places a full-size coach cannot, from the courtyards of the villas outside Florence to the narrow hill roads.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">Your enquiry reached us without the detail of the programme: Florence, up to 26 people, airport pickups. Below is the most likely shape of it, with each item priced on its own. Distances and journey times are road estimates, traffic excluded.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">29 May 2028 <span class="wd">· Monday</span></span>
+          <span class="badge">Group arrival</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">flight</span>
+            <span class="r">Pisa Airport (PSA) <span class="to">→ your address in Florence</span></span>
+            <span class="d">85 km · 1 h 15</span>
+          </div>
+        </div>
+        <div class="engaged">Welcome in the arrivals hall with the GiroMunna sign, luggage loaded, transfer. We monitor the flight ourselves: waiting is free for up to 90 minutes from the actual landing time. Vehicle engaged approx. 3 hours.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">Date to be set</span>
+          <span class="badge">Day at disposal</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">8 hrs</span>
+            <span class="r">Florence and surroundings <span class="to">→ itinerary to be set together</span></span>
+            <span class="d">up to 120 km</span>
+          </div>
+        </div>
+        <div class="engaged">The villas and villages around Florence, a Chianti winery, the coast, or simply moving the group around the city and its outskirts.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">Date to be set</span>
+          <span class="badge">Departure</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">flight</span>
+            <span class="r">Florence <span class="to">→ Pisa Airport (PSA)</span></span>
+            <span class="d">85 km · 1 h 15</span>
+          </div>
+        </div>
+        <div class="engaged">Timed against your flight: in high season we leave Florence three and a half hours before departure. Vehicle engaged approx. 3 hours.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col" class="num">Amount</th>
+            <th scope="col" class="num">VAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Mon 29 May 2028</span>Transfer Pisa airport → Florence, on arrival</td>
+            <td class="num">€ 700.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Date to be set</span>Day at disposal in Florence and surroundings, 8 hours up to 120 km</td>
+            <td class="num">€ 990.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Date to be set</span>Transfer Florence → Pisa airport, on departure</td>
+            <td class="num">€ 700.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Driver's board and lodging, should the programme require overnight stays</td>
+            <td class="num vat"><em>at your charge</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Total, excluding VAT</td>
+            <td class="num">€ 2,390.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Total payable, VAT 10% included
+        <small>about € 101.00 per person with the minibus full</small>
+      </span>
+      <span class="fig">€ 2,629.00</span>
+    </div>
+
+    <p class="hint">Each of the three items stands on its own: if you only need part of them, the total comes down accordingly.</p>
+
+    <h3>Other items, should you need them</h3>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Half day at disposal, 4 hours up to 60 km</td><td class="num">€ 620.00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Transfer between Florence airport (FLR) and Florence, each way</td><td class="num">€ 420.00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Day in Chianti starting from Florence, 10 hours up to 200 km</td><td class="num">€ 1,250.00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Additional pickup at Pisa, for a second arriving flight</td><td class="num">€ 700.00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Waiting beyond the agreed times, per hour per vehicle</td><td class="num">€ 50.00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Return after 02:00, per vehicle</td><td class="num">€ 250.00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Tourist coach access permit for the centre of Florence, if needed</td><td class="num">approx. € 350.00</td><td class="num vat">at cost</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Deposit 30% on confirmation</td>
+            <td class="num"><strong>€ 790.00</strong></td>
+            <td class="num vat">VAT included</td>
+          </tr>
+          <tr>
+            <td>Balance, within 5 days of the service</td>
+            <td class="num"><strong>€ 1,839.00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Vehicle and driver, fuel, motorway tolls, parking — including the coach parking fee at Pisa airport —, full insurance, luggage handling, flight monitoring and the welcome in the arrivals hall with the GiroMunna sign.</li>
+      <li><strong>Flight delays.</strong> On arrival the driver waits at no extra cost for up to 90 minutes from the actual landing time, however late the flight comes in.</li>
+      <li><strong>At your charge.</strong> The driver's board and lodging, should the programme require overnight stays: you book and pay for them directly. The programme as set out here requires no overnight stay.</li>
+      <li><strong>Not included.</strong> Entrance fees, meals, guides and gratuities. Waiting beyond the agreed times, € 50.00 per hour per vehicle. Additional stops or changes to the itinerary, quoted on request. Return after 02:00, € 250.00. Any access permit for the historic centre of Florence, about € 350.00, and the Siena municipal permit, about € 160.00, should the programme take in Siena.</li>
+      <li><strong>Availability and cancellation.</strong> The vehicle is currently free for those dates. Cancellation is free of charge more than 60 days before the service, so up to 30 March 2028, with the deposit refunded in full; from 60 to 30 days the deposit is retained; from 30 to 10 days 50%; in the last 10 days, 100%.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <ul class="conds">
+      <li><strong>Luggage is the first thing to look at.</strong> The Beluga has 26 passenger seats: the group fits, but exactly, with no seat to spare. If a tour leader, a guide or a twenty-seventh passenger travels with you, one minibus is no longer enough and a second one has to be arranged in good time. And 26 people arriving from the UK means up to 26 hold suitcases plus hand luggage, while the hold of a 7.64 m vehicle comfortably takes around twenty large cases, not thirty. Tell us how many large cases there really are, and whether there are pushchairs, golf bags or equipment: if the numbers are tight we will plan a support vehicle for the luggage alone.</li>
+      <li><strong>Florence, the restricted traffic zone and the drop-off point.</strong> The historic centre is a restricted traffic zone and taking a tourist coach into it requires a separate permit, about € 350.00. In most cases it is not needed: we load and unload at the authorised points — Fortezza da Basso and Piazzale Montelungo for hotels near the station, the Lungarni, Piazza della Libertà — and the hotel is a few minutes' walk from there. With 26 suitcases in tow, though, those few minutes count: send us the address and we will tell you where the vehicle stops.</li>
+      <li><strong>Which airport you fly into.</strong> We have quoted Pisa (PSA), the airport most used by flights from the UK. If you land at Florence (FLR) the transfer costs € 420.00 net each way rather than € 700.00. From Bologna or Rome the price goes up.</li>
+      <li><strong>&ldquo;Airport pickups too&rdquo;: how many pickups.</strong> A group of 26 rarely arrives on a single flight. If you arrive split across two or three flights, each run is a service in its own right: send us the times and we will tell you whether it works out cheaper to hold the vehicle at the airport (€ 50.00 per hour) or to make two separate journeys.</li>
+      <li><strong>The date.</strong> We have taken Monday 29 May 2028 at face value — the late May bank holiday Monday in the UK, in the middle of the Florentine high season. If the year or the day are not what you meant, tell us and we will redo the quotation the same day.</li>
+      <li><strong>The price two years out.</strong> The amounts are built on our current tariffs. At final confirmation we reconfirm them, reserving only the adjustment of direct costs — fuel, tolls, drivers' pay agreement — communicated well in advance.</li>
+      <li><strong>To build you a tailored quotation we need</strong> the final number of passengers and suitcases, how many days of service and on which dates, the stops or the broad idea of the programme, the address in Florence where you are staying, the airport with the number and time of the flights, and a WhatsApp contact for the person travelling with the group.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal — not part of the quotation sent to the client</div>
+    <h2>How the prices were built</h2>
+
+    <p>Benchmarked against the <strong>Le Filigare</strong> quotation (GM-2026-0821-LF) and the <strong>Alvora</strong> quotation (GM-2026-0913-BI), both single-vehicle jobs like this one. The Corte Francigena figures must not be used as a base: that job runs two vehicles and its per-vehicle amounts already carry a volume discount.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — transfer FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500.00</td></tr>
+          <tr><td>Le Filigare — day at disposal in Siena, ~80 km, 5 h</td><td class="num">€ 809.00</td></tr>
+          <tr><td>Alvora — day at disposal, ~115 km, 8 h</td><td class="num">€ 980.00</td></tr>
+          <tr><td>Alvora — transfer from FLR with a winery stop, ~83 km</td><td class="num">€ 950.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>From there to these prices</h3>
+    <p><strong>Pisa → Florence, € 700.00.</strong> 85 km against the 50 km at € 500 of Le Filigare, plus the Pisa coach parking fee (~€ 61) which is included here. The vehicle leaves from and returns to base: about 220 km on the day.</p>
+    <p><strong>Florence airport (FLR) → Florence, € 420.00.</strong> The run is 12 km, but base to airport is 50 km: the vehicle covers 120 km regardless. It is the floor below which we do not go, not a proportion of the run itself.</p>
+    <p><strong>Day at disposal, € 990.00.</strong> In line with the Alvora day of 14 September (8 h, ~115 km, € 980). The half day at € 620 and the Chianti day at € 1,250 follow the same scale.</p>
+
+    <h3>The second minibus</h3>
+    <p>Not included. 26 passengers fit the Beluga to the last seat, so one vehicle is enough for now; if the number grows or the luggage does not fit, Francesco's Tourengo is needed, and <strong>that is Girolamo's decision</strong>, with the cost to be agreed with Francesco before it goes into a quotation. The client is told about it as a point to clarify, with nothing added on our own initiative.</p>
+
+    <h3>Margin</h3>
+    <p>The quotation is built on the owned vehicle. Estimated direct cost € 250-350 per service day and no driver overnight: the margin is healthy on all three items. If the job were subcontracted to Francesco (€ 600-700 per day), raise the prices by 20-25% before sending.</p>
+
+    <h3>To settle before sending</h3>
+    <ol>
+      <li><strong>The date.</strong> 29 May 2028 is 21 months away, but it is the late May bank holiday Monday in the UK: the date is plausible and should be confirmed, not silently corrected.</li>
+      <li><strong>The programme.</strong> The form only says "Other" and "Florence": the day at disposal is our own assumption and must be replaced as soon as the real programme arrives.</li>
+      <li><strong>The airport.</strong> Quoted from Pisa. Florence would be € 420.00 each way, Bologna more.</li>
+      <li><strong>Luggage and the exact head count.</strong> The real technical point: 26 hold suitcases are at the limit of the hold.</li>
+      <li><strong>The address in Florence.</strong> Needed to tell whether the € 350 ZTL permit comes into play.</li>
+      <li><strong>How many arriving flights.</strong> If the group arrives split, each run is an extra service.</li>
+      <li><strong>Block the vehicle</strong> for 29 May 2028 if the enquiry firms up.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2028-0529-TW · 23 August 2026</span>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
