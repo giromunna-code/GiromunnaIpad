@@ -1,0 +1,869 @@
+<title>Preventivo — Tour in Toscana, 30 settembre - 2 ottobre 2026</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+  .day.flagged { border-left: 3px solid var(--note-line); }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<div class="wrap lang" data-lang="it">
+<header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Tour in Toscana
+      <span class="sub">Montalcino · Firenze · Chianti · Siena</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Cliente</span><span class="v">Sir Catering</span></div>
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">30 set - 2 ott 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passeggeri</span><span class="v">24</span></div>
+      <div class="fact"><span class="eyebrow">Servizi</span><span class="v">3 giornate</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2026-0930-SC</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">9 settembre 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Il mezzo</h2>
+    <p class="lede">Un Beluga per il gruppo di 24 persone, con lo stesso conducente per tutta la durata del programma.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista, 7,64 m</span>
+      <p>Aria condizionata, sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.</p>
+      <p>Con 24 ospiti a bordo restano due posti liberi: comodi per le giornate fra le cantine, un margine più risicato per i bagagli dell'arrivo e della partenza in aeroporto. I 7,64 metri raggiungono senza difficoltà i piazzali delle cantine in programma e il parcheggio bus autorizzato di Siena.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Distanze e tempi di percorrenza sono stime stradali, traffico escluso.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">30 settembre <span class="wd">· mercoledì</span></span>
+          <span class="badge">Trasferimento con sosta pranzo</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">10:30</span>
+            <span class="r">Aeroporto di Pisa (PSA) <span class="to">→ sosta pranzo lungo il percorso (località da confermare)</span></span>
+            <span class="d">~70 km · 60-90 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">14:00</span>
+            <span class="r">Sosta pranzo <span class="to">→ Le Ragnaie, Montalcino</span></span>
+            <span class="d">~100 km · 120 min</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 10:30 – 16:00; da lì mezzo e conducente si liberano fino al ritrovo del giorno dopo.</div>
+      </article>
+
+      <article class="day flagged">
+        <div class="day-head">
+          <span class="day-date">1 ottobre <span class="wd">· giovedì</span></span>
+          <span class="badge">Giornata lunga · quasi 12 ore</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">11:45</span>
+            <span class="r">Le Ragnaie <span class="to">→ Vineria Aperta, Montalcino</span></span>
+            <span class="d">15 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">15:45</span>
+            <span class="r">Vineria Aperta <span class="to">→ Antinori nel Chianti Classico, San Casciano in Val di Pesa</span></span>
+            <span class="d">90 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:30</span>
+            <span class="r">Antinori <span class="to">→ hotel a Montalcino (sosta di 20 min)</span></span>
+            <span class="d">90 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">20:30</span>
+            <span class="r">Hotel <span class="to">→ ristorante Saloni → hotel</span></span>
+            <span class="d">10 min ciascuna tratta</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 11:45 – 23:40. La giornata più lunga del programma: vedi la nota sul riposo del conducente.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">2 ottobre <span class="wd">· venerdì</span></span>
+          <span class="badge">Siena, Chianti e rientro in aeroporto</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">09:30</span>
+            <span class="r">Hotel a Montalcino <span class="to">→ Siena, ristorante Le Logge</span></span>
+            <span class="d">~45 km · 60 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">15:15</span>
+            <span class="r">Siena <span class="to">→ Querciabella, Greve in Chianti</span></span>
+            <span class="d">~45 km · 60 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:15</span>
+            <span class="r">Querciabella <span class="to">→ Aeroporto di Pisa (PSA)</span></span>
+            <span class="d">~90 km · 105 min</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 09:30 – 19:00, fine del servizio.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Servizio</th>
+            <th scope="col" class="num">Importo</th>
+            <th scope="col" class="num">IVA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Mer 30 set</span>Aeroporto di Pisa → sosta pranzo → Le Ragnaie (Montalcino)</td>
+            <td class="num">€ 990,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Gio 1 ott</span>Giornata intera: Vineria Aperta, Antinori, cena da Saloni</td>
+            <td class="num">€ 1.480,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Ven 2 ott</span>Siena (Le Logge) → Querciabella → aeroporto di Pisa, permesso Comune di Siena incluso</td>
+            <td class="num">€ 1.230,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Vitto e alloggio del conducente, 1 notte (1 ottobre)</td>
+            <td class="num vat"><em>a carico vostro</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Totale, al netto di IVA</td>
+            <td class="num">€ 3.700,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Totale da corrispondere, IVA 10% inclusa
+        <small>circa € 170,00 a persona per l'intero programma</small>
+      </span>
+      <span class="fig">€ 4.070,00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Acconto 30% alla conferma</td>
+            <td class="num"><strong>€ 1.221,00</strong></td>
+            <td class="num vat">IVA inclusa</td>
+          </tr>
+          <tr>
+            <td>Saldo, entro 5 giorni dal servizio</td>
+            <td class="num"><strong>€ 2.849,00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Mezzo e conducente, carburante, pedaggi autostradali, assicurazione completa, movimentazione bagagli e monitoraggio dei due voli.</li>
+      <li><strong>Oneri di accesso già compresi.</strong> Parcheggio bus dell'aeroporto di Pisa (circa € 61,00 per i due transiti) e permesso comunale per i bus turistici di Siena (circa € 160,00).</li>
+      <li><strong>Ritardi del volo.</strong> Il 30 settembre l'autista attende senza costi aggiuntivi fino a 90 minuti dall'orario di atterraggio effettivo.</li>
+      <li><strong>A vostro carico.</strong> Vitto e alloggio del conducente per la notte dell'1 ottobre: la prenotazione e il pagamento li curate voi direttamente. Serve perché fra il rientro di giovedì sera e la partenza di venerdì mattina il conducente non ha il tempo per rientrare alla base.</li>
+      <li><strong>Non incluso.</strong> Ingressi, degustazioni, pasti, guide e mance in cantina e nei ristoranti. Attesa oltre gli orari indicati, € 50,00 all'ora per mezzo. Soste aggiuntive o modifiche all'itinerario, quotate su richiesta. Rientro alla struttura dopo le 02:00, € 250,00.</li>
+      <li><strong>Disponibilità e cancellazione.</strong> Cancellazione gratuita oltre 60 giorni prima del servizio; da 60 a 30 giorni viene trattenuto l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%. Mancando oggi 35 giorni al primo servizio, la prenotazione ricade nella fascia da 60 a 30 giorni, e dal 31 agosto passerà in quella da 30 a 10.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Interno — non fa parte del preventivo inviato</div>
+    <h2>Come sono stati costruiti i prezzi</h2>
+
+    <p>Riferimento: il preventivo <strong>Le Filigare (GM-2026-0821-LF)</strong>, a mezzo singolo come questo lavoro. Non si è usato il Corte Francigena come base: quei prezzi sono per mezzo su un lavoro a due mezzi, quindi già scontati per volume.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — trasferimento FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500,00</td></tr>
+          <tr><td>Le Filigare — giornata a disposizione Siena, ~80 km, 5 h</td><td class="num">€ 809,00</td></tr>
+          <tr><td>Sir Catering — mer 30/9, trasferimento con sosta, ~170 km, 5 h 30</td><td class="num">€ 990,00</td></tr>
+          <tr><td>Sir Catering — gio 1/10, giornata intera, ~168 km, 11 h 55</td><td class="num">€ 1.480,00</td></tr>
+          <tr><td>Sir Catering — ven 2/10, giornata intera + permesso Siena, ~190 km, 9 h 30</td><td class="num">€ 1.230,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>La giornata di giovedì</h3>
+    <p>È il giorno critico: quasi 12 ore di impegno del mezzo, la più lunga vista finora. Prezzata sopra la media a km percorso rispetto agli altri due giorni, per il tempo di attesa durante visita, degustazione e cena. Restano solo 9 h 50 di riposo fra il rientro di giovedì (23:40) e la partenza di venerdì (09:30): sotto le 11 ore previste per un autista professionista. Segnalato al cliente come nota, con proposta di soluzione (spostare di un'ora l'uno o l'altro orario), non silenziato.</p>
+
+    <h3>La notte del conducente</h3>
+    <p>Una sola notte (1 ottobre) a carico del cliente, non tre come nel preventivo Alvora: la sera di mercoledì il conducente ha margine sufficiente (quasi 20 ore fra le 16:00 e le 11:45 del giorno dopo) per rientrare alla base a Ponte Buggianese e tornare, mentre fra giovedì e venerdì no.</p>
+
+    <h3>Margine</h3>
+    <p>Costruito sul <strong>mezzo di proprietà</strong> (Beluga). Costo diretto stimato € 250-350 a giornata di servizio più il rientro a vuoto di mercoledì sera (~130 km) e il pernottamento del conducente di giovedì, che paga il cliente: il margine sui tre servizi resta buono, anche se un po' eroso dal chilometraggio a vuoto di mercoledì. <strong>Se si subappalta a Francesco</strong> il costo sale sui € 600-700 al giorno: in quel caso vanno rivisti i prezzi al rialzo del 20-25% prima di inviare.</p>
+
+    <h3>Da chiarire prima di inviare</h3>
+    <ol>
+      <li><strong>Indirizzo mail del cliente.</strong> Nel testo compare solo il recapito di Tim (tim@sircatering.be): confermare che sia il destinatario giusto.</li>
+      <li><strong>Le Ragnaie e l'hotel del giovedì.</strong> Sono la stessa struttura o due diverse? Cambia i punti di ritrovo e dove alloggia il conducente.</li>
+      <li><strong>Riposo del conducente fra giovedì e venerdì.</strong> Il punto più delicato del programma: serve una decisione del cliente su quale orario spostare.</li>
+      <li><strong>Località della sosta pranzo di mercoledì</strong>, non ancora nota: il prezzo è stimato sulla direttrice Siena-Grosseto.</li>
+      <li><strong>Quale sede Antinori</strong>, quotata come Antinori nel Chianti Classico a San Casciano in Val di Pesa.</li>
+      <li><strong>Bloccare la disponibilità del mezzo</strong> per il 30 settembre - 2 ottobre.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2026-0930-SC · 26 agosto 2026</span>
+  </footer>
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Tuscany Tour
+      <span class="sub">Montalcino · Florence · Chianti · Siena</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Client</span><span class="v">Sir Catering</span></div>
+      <div class="fact"><span class="eyebrow">Dates</span><span class="v">30 Sep - 2 Oct 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passengers</span><span class="v">24</span></div>
+      <div class="fact"><span class="eyebrow">Services</span><span class="v">3 days</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2026-0930-SC</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">9 September 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicle</h2>
+    <p class="lede">One Beluga for the group of 24, with the same driver throughout the programme.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus driver, 7.64 m</span>
+      <p>Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.</p>
+      <p>With 24 guests on board two seats stay free: comfortable for the days among the wineries, a tighter margin for the luggage on the airport transfers. At 7.64 m the vehicle reaches the courtyard of every winery on the programme, and the authorised coach park in Siena, without difficulty.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">Distances and driving times are approximate road estimates, excluding traffic.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">30 September <span class="wd">· Wednesday</span></span>
+          <span class="badge">Transfer with lunch stop</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">10:30</span>
+            <span class="r">Pisa Airport (PSA) <span class="to">→ lunch stop along the way (venue to be confirmed)</span></span>
+            <span class="d">~70 km · 60-90 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">14:00</span>
+            <span class="r">Lunch stop <span class="to">→ Le Ragnaie, Montalcino</span></span>
+            <span class="d">~100 km · 120 min</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 10:30 – 16:00; from there vehicle and driver are released until the following day's pick-up.</div>
+      </article>
+
+      <article class="day flagged">
+        <div class="day-head">
+          <span class="day-date">1 October <span class="wd">· Thursday</span></span>
+          <span class="badge">Long day · almost 12 hours</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">11:45</span>
+            <span class="r">Le Ragnaie <span class="to">→ Vineria Aperta, Montalcino</span></span>
+            <span class="d">15 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">15:45</span>
+            <span class="r">Vineria Aperta <span class="to">→ Antinori nel Chianti Classico, San Casciano in Val di Pesa</span></span>
+            <span class="d">90 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:30</span>
+            <span class="r">Antinori <span class="to">→ hotel in Montalcino (20 min stop)</span></span>
+            <span class="d">90 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">20:30</span>
+            <span class="r">Hotel <span class="to">→ Saloni restaurant → hotel</span></span>
+            <span class="d">10 min each leg</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 11:45 – 23:40. The longest day of the programme: see the note on the driver's rest.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">2 October <span class="wd">· Friday</span></span>
+          <span class="badge">Siena, Chianti and return to the airport</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">09:30</span>
+            <span class="r">Hotel in Montalcino <span class="to">→ Siena, Le Logge restaurant</span></span>
+            <span class="d">~45 km · 60 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">15:15</span>
+            <span class="r">Siena <span class="to">→ Querciabella, Greve in Chianti</span></span>
+            <span class="d">~45 km · 60 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:15</span>
+            <span class="r">Querciabella <span class="to">→ Pisa Airport (PSA)</span></span>
+            <span class="d">~90 km · 105 min</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 09:30 – 19:00, end of service.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col" class="num">Amount</th>
+            <th scope="col" class="num">VAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Wed 30 Sep</span>Pisa airport → lunch stop → Le Ragnaie (Montalcino)</td>
+            <td class="num">€ 990.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Thu 1 Oct</span>Full day: Vineria Aperta, Antinori, dinner at Saloni</td>
+            <td class="num">€ 1,480.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Fri 2 Oct</span>Siena (Le Logge) → Querciabella → Pisa airport, Siena municipal permit included</td>
+            <td class="num">€ 1,230.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Driver's board and lodging, 1 night (1 October)</td>
+            <td class="num vat"><em>at your charge</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Total, excluding VAT</td>
+            <td class="num">€ 3,700.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Total payable, VAT 10% included
+        <small>about € 170.00 per person for the complete programme</small>
+      </span>
+      <span class="fig">€ 4,070.00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Deposit 30% on confirmation</td>
+            <td class="num"><strong>€ 1,221.00</strong></td>
+            <td class="num vat">VAT included</td>
+          </tr>
+          <tr>
+            <td>Balance, within 5 days of the service</td>
+            <td class="num"><strong>€ 2,849.00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Vehicle and driver, fuel, motorway tolls, full insurance, luggage handling and flight monitoring on both flights.</li>
+      <li><strong>Access charges already included.</strong> Pisa Airport coach parking (about € 61.00 for the two transits) and the municipal permit for tourist coaches in Siena (about € 160.00).</li>
+      <li><strong>Flight delays.</strong> On 30 September the driver waits at no extra cost for up to 90 minutes from the actual landing time.</li>
+      <li><strong>At your charge.</strong> The driver's board and lodging for the night of 1 October: you book and pay for them directly. It is needed because between Thursday evening's return and Friday morning's departure the driver has no time to get back to base.</li>
+      <li><strong>Not included.</strong> Winery entrance fees, tastings, meals, guides and gratuities at the wineries and restaurants. Waiting beyond the times set out here, € 50.00 per hour per vehicle. Additional stops or changes to the itinerary, quoted on request. Return to the property after 02:00, € 250.00.</li>
+      <li><strong>Availability and cancellation.</strong> Cancellation is free of charge more than 60 days before the service; from 60 to 30 days the deposit is retained; from 30 to 10 days 50%; in the last 10 days 100%. With 35 days to the first service today, the booking falls in the 60-to-30-day band, and from 31 August it moves into the 30-to-10 band.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal — not part of the quotation sent to the client</div>
+    <h2>How the prices were built</h2>
+
+    <p>Benchmarked against the <strong>Le Filigare</strong> quotation (GM-2026-0821-LF), a single-vehicle job like this one. The Corte Francigena figures were not used as a base: those are per-vehicle amounts on a two-vehicle job, already discounted for volume.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — transfer FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500.00</td></tr>
+          <tr><td>Le Filigare — day at disposal in Siena, ~80 km, 5 h</td><td class="num">€ 809.00</td></tr>
+          <tr><td>Sir Catering — Wed 30/9, transfer with stop, ~170 km, 5 h 30</td><td class="num">€ 990.00</td></tr>
+          <tr><td>Sir Catering — Thu 1/10, full day, ~168 km, 11 h 55</td><td class="num">€ 1,480.00</td></tr>
+          <tr><td>Sir Catering — Fri 2/10, full day + Siena permit, ~190 km, 9 h 30</td><td class="num">€ 1,230.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Thursday's day</h3>
+    <p>The critical day: almost 12 hours of vehicle engagement, the longest seen so far. Priced above the per-km average of the other two days, for the waiting time through the visit, tasting and dinner. Only 9 h 50 of rest remain between Thursday's return (23:40) and Friday's departure (09:30): below the 11 hours required for a professional driver. Flagged to the client as a note, with a proposed fix (shift one of the two times by an hour), not silenced.</p>
+
+    <h3>The driver's night</h3>
+    <p>Only one night (1 October) at the client's charge, not three as in the Alvora quotation: on Wednesday evening the driver has enough margin (almost 20 hours between 16:00 and 11:45 the next day) to return to base in Ponte Buggianese and come back, while between Thursday and Friday there is not.</p>
+
+    <h3>Margin</h3>
+    <p>Built on the <strong>owned vehicle</strong> (Beluga). Estimated direct cost € 250-350 per service day plus the empty return leg on Wednesday evening (~130 km) and the driver's night on Thursday, paid by the client: the margin across the three services stays healthy, though somewhat eroded by Wednesday's dead-head mileage. <strong>If subcontracted to Francesco</strong> the cost rises to around € 600-700 per day — in that case raise the prices by 20-25% before sending.</p>
+
+    <h3>To settle before sending</h3>
+    <ol>
+      <li><strong>Client email address.</strong> Only Tim's contact appears in the text (tim@sircatering.be): confirm he is the right recipient.</li>
+      <li><strong>Le Ragnaie and Thursday's hotel.</strong> Same property or two different ones? Changes the meeting points and where the driver stays.</li>
+      <li><strong>Driver's rest between Thursday and Friday.</strong> The most delicate point of the programme: needs a decision from the client on which time to shift.</li>
+      <li><strong>Wednesday's lunch stop location</strong>, not yet known: the price is estimated on the Siena-Grosseto route.</li>
+      <li><strong>Which Antinori estate</strong>, quoted as Antinori nel Chianti Classico at San Casciano in Val di Pesa.</li>
+      <li><strong>Block the vehicle</strong> for 30 September - 2 October.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2026-0930-SC · 26 August 2026</span>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
