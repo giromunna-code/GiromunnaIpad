@@ -14,6 +14,11 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
 - **Mai preparare bozze di mail e mai inviare niente.** Alle mail ci pensa Girolamo: scrive
   lui ai clienti, con i suoi tempi e le sue parole. Il lavoro si ferma al documento
   consegnato — niente bozze in Gmail, niente invii, e non serve nemmeno proporlo.
+- **La risposta deve pesare quanto la richiesta.** Se Girolamo chiede una risposta breve
+  (per esempio "non ho disponibilità"), si scrivono quelle due righe, in italiano e in
+  inglese, e basta: niente ricerche, niente preventivo, niente PDF o file non richiesti.
+  Si apre un preventivo completo solo quando Girolamo chiede un preventivo. Nel dubbio su
+  quanto lavoro serve, si chiede prima di partire — consuma molto meno che rifare tutto.
 
 ## Dati aziendali
 
