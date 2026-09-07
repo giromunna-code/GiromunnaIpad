@@ -11,9 +11,10 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
   le mail ai clienti e qualsiasi altro materiale destinato all'esterno: i clienti scrivono
   spesso in inglese, ma la versione che Girolamo deve poter leggere è quella italiana.
   Nessuna delle due sostituisce l'altra.
-- **Mai preparare bozze di mail e mai inviare niente.** Alle mail ci pensa Girolamo: scrive
-  lui ai clienti, con i suoi tempi e le sue parole. Il lavoro si ferma al documento
-  consegnato — niente bozze in Gmail, niente invii, e non serve nemmeno proporlo.
+- **Mai inviare niente direttamente.** Alle mail ci pensa sempre Girolamo: le manda lui, con
+  i suoi tempi. Se chiede il testo di una mail, lo scrivo in chat (italiano e inglese, come
+  ogni documento esterno) e lui lo copia e lo invia da sé — non lo salvo mai come bozza in
+  Gmail e non lo mando io.
 
 ## Dati aziendali
 
