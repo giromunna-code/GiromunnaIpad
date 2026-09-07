@@ -32,11 +32,20 @@ python3 genera_proforma_saldo.py --lingua it
 python3 genera_proforma_saldo.py --lingua en
 ```
 
-Riepiloga: totale € 5.104,00 IVA inclusa, acconto già versato € 1.530,00, **saldo da
-versare € 3.574,00**. Il testo riporta la condizione già presente nel preventivo ("saldo
-entro 5 giorni dal servizio") senza inventare una nuova scadenza: se serve una data precisa
-va decisa da Girolamo. Non è una fattura fiscale, solo un documento di riepilogo per il
+**Importi confermati da Girolamo (7 settembre), non quelli del PDF del preventivo:**
+totale € 4.800,00 IVA inclusa, acconto già versato € 1.440,00 (30%), **saldo da versare
+€ 3.360,00**. Il testo riporta la condizione già presente nel preventivo ("saldo entro 5
+giorni dal servizio") senza inventare una nuova scadenza: se serve una data precisa va
+decisa da Girolamo. Non è una fattura fiscale, solo un documento di riepilogo per il
 pagamento.
+
+**Da chiarire:** il preventivo PDF e la tabella "Prezzi" più sotto in questo file riportano
+ancora il totale € 5.104,00 (rialzato l'8 agosto rispetto alla prima stesura da € 4.015,00).
+€ 4.800,00 è un terzo importo, diverso da entrambi, che a quanto risulta è quello
+realmente confermato con Alvora — probabilmente concordato a voce o comunque fuori da questo
+repository. Il preventivo PDF non è stato aggiornato di conseguenza: se il totale giusto
+resta € 4.800,00 andrebbe rifatto anche quello, altrimenti il documento archiviato non
+corrisponde a cosa è stato effettivamente venduto.
 
 ---
 

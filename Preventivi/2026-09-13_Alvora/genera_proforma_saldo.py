@@ -64,11 +64,11 @@ IT = dict(
     ),
     h_riepilogo="Riepilogo",
     rows=[
-        ("Totale servizio, IVA 10% inclusa", "€ 5.104,00"),
-        ("Acconto già versato (30%)", "− € 1.530,00"),
+        ("Totale servizio, IVA 10% inclusa", "€ 4.800,00"),
+        ("Acconto già versato (30%)", "− € 1.440,00"),
     ],
     saldo_label="Saldo da versare",
-    saldo="€ 3.574,00",
+    saldo="€ 3.360,00",
     h_pagamento="Pagamento",
     pagamento=(
         "Il saldo è dovuto secondo le condizioni indicate nel preventivo di riferimento: entro 5 giorni "
@@ -102,11 +102,11 @@ EN = dict(
     ),
     h_riepilogo="Summary",
     rows=[
-        ("Total service, VAT 10% included", "€ 5,104.00"),
-        ("Deposit already paid (30%)", "− € 1,530.00"),
+        ("Total service, VAT 10% included", "€ 4,800.00"),
+        ("Deposit already paid (30%)", "− € 1,440.00"),
     ],
     saldo_label="Balance due",
-    saldo="€ 3,574.00",
+    saldo="€ 3,360.00",
     h_pagamento="Payment",
     pagamento=(
         "The balance is due under the terms set out in the reference quotation: within 5 days of the "
