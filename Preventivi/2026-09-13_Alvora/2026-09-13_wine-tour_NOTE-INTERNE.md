@@ -35,7 +35,9 @@ Con `--cliente "Altro Nome"` si cambia l'intestatario.
 
 - **Totale € 4.800,00 IVA inclusa** (imponibile € 4.363,64 + IVA 10% € 436,36).
 - **Acconto 30% € 1.440,00** alla conferma, **saldo entro 5 giorni prima dell'inizio del
-  servizio** — cioè entro l'**8 settembre 2026**, non dopo il servizio.
+  servizio** — cioè entro l'**8 settembre 2026**, non dopo il servizio. Acconto già
+  ricevuto da Alvora tramite bonifico (confermato da Girolamo il 7 settembre 2026):
+  coerente con l'IBAN corretto, che sul preventivo realmente inviato era giusto.
 - **Vitto e alloggio del conducente per tutto il tour sono INCLUSI nel prezzo**, alla voce
   "Included" del PDF. Non vanno indicati come a carico del cliente: è l'opposto di quanto
   scritto nella prima stesura di questo repository e nelle versioni precedenti della
