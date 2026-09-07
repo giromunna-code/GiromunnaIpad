@@ -55,12 +55,13 @@ IT = dict(
     footer1="GiroMunna — Munna Girolamo Giuseppe  ·  Ponte Buggianese (PT), Toscana, Italia  ·  P. IVA IT 02124530474",
     footer2="+39 335 587 4744  ·  info@giromunna.com  ·  giromunna.com",
     page="pag. %d",
-    title="Proforma — Saldo",
+    title="Fattura Proforma — Saldo",
     subtitle="Wine tour in Toscana, Valdarno · Chianti · Colline Pisane · Versilia  ·  13-18 settembre 2026",
     meta="Intestata a %s  ·  7 settembre 2026  ·  Rif. preventivo " + RIF,
     intro=(
-        "Questa proforma riepiloga il saldo dovuto per il servizio in oggetto, già confermato con il "
-        "versamento dell'acconto. Non è una fattura fiscale, ma un documento di riepilogo per il pagamento."
+        "Questa fattura proforma riepiloga il saldo dovuto per il servizio in oggetto, già confermato con "
+        "il versamento dell'acconto. Non ha valore fiscale: è un documento di richiesta pagamento; la "
+        "fattura fiscale, se dovuta, viene emessa separatamente."
     ),
     h_riepilogo="Riepilogo",
     rows=[
@@ -93,12 +94,13 @@ EN = dict(
     footer1="GiroMunna — Munna Girolamo Giuseppe  ·  Ponte Buggianese (PT), Tuscany, Italy  ·  VAT IT 02124530474",
     footer2="+39 335 587 4744  ·  info@giromunna.com  ·  giromunna.com",
     page="page %d",
-    title="Pro Forma — Balance",
+    title="Pro Forma Invoice — Balance",
     subtitle="Tuscany wine tour, Valdarno · Chianti · Pisan Hills · Versilia  ·  13-18 September 2026",
     meta="Issued to %s  ·  7 September 2026  ·  Quotation ref. " + RIF,
     intro=(
-        "This pro forma summarises the balance due for the service below, already confirmed with the "
-        "deposit payment. It is not a tax invoice, but a summary document for payment."
+        "This pro forma invoice summarises the balance due for the service below, already confirmed with "
+        "the deposit payment. It has no tax/fiscal value: it is a payment request document; the tax "
+        "invoice, if applicable, is issued separately."
     ),
     h_riepilogo="Summary",
     rows=[

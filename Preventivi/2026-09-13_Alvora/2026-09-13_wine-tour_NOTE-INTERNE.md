@@ -22,10 +22,10 @@ python3 genera_preventivo_tuscany_wine_tour.py --lingua en
 
 Con `--cliente "Altro Nome"` si cambia l'intestatario.
 
-### Proforma a saldo
+### Fattura proforma a saldo
 
-Il 7 settembre 2026 è stata generata la proforma per il saldo (stesso schema visivo del
-preventivo, riferimento GM-2026-0913-BI):
+Il 7 settembre 2026 è stata generata la fattura proforma per il saldo, da inviare ad Alvora
+(stesso schema visivo del preventivo, riferimento GM-2026-0913-BI):
 
 ```bash
 python3 genera_proforma_saldo.py --lingua it
@@ -36,8 +36,12 @@ python3 genera_proforma_saldo.py --lingua en
 totale € 4.800,00 IVA inclusa, acconto già versato € 1.440,00 (30%), **saldo da versare
 € 3.360,00**. Il testo riporta la condizione già presente nel preventivo ("saldo entro 5
 giorni dal servizio") senza inventare una nuova scadenza: se serve una data precisa va
-decisa da Girolamo. Non è una fattura fiscale, solo un documento di riepilogo per il
-pagamento.
+decisa da Girolamo.
+
+**Non ha valore fiscale.** È una richiesta di pagamento, non la fattura vera emessa
+dall'Agenzia delle Entrate: quella, se dovuta, va emessa da Girolamo tramite il proprio
+sistema di fatturazione elettronica o il commercialista, con numerazione progressiva e dati
+fiscali che questo repository non ha.
 
 **Da chiarire:** il preventivo PDF e la tabella "Prezzi" più sotto in questo file riportano
 ancora il totale € 5.104,00 (rialzato l'8 agosto rispetto alla prima stesura da € 4.015,00).
