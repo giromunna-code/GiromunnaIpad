@@ -1,6 +1,15 @@
 # Note interne — Wine tour Toscana 13-18.09.2026, 21 pax
 
-**Cliente:** Alvora · **Rif. preventivo:** GM-2026-0913-BI · **Preparato:** 8 agosto 2026 · **Validità:** 22 agosto 2026
+**Cliente:** Alvora (Viaggi Alvora – Edgars Kolodnickis) · **Rif. preventivo realmente
+inviato:** GM-2026-0913-WT21 · **Data:** 29 luglio 2026 · **Validità:** 29 agosto 2026
+
+> ⚠️ Il 7 settembre 2026 Girolamo ha caricato il PDF realmente inviato ad Alvora
+> (`b2181fc6-GiroMunnaquotationwinetour1318September2026.pdf`). Il preventivo generato in
+> questa cartella (`GiroMunna_Preventivo_Tuscany_Wine_Tour..._IT/EN.pdf`, rif.
+> GM-2026-0913-BI) **non è quello usato**: importi, riferimento, date e alcune condizioni
+> sono diversi. Vedi "Cosa dice il preventivo realmente inviato" più sotto — è la fonte di
+> verità per qualsiasi documento futuro su questo lavoro, non la tabella prezzi in fondo a
+> questo file, che resta come archivio della prima stesura.
 
 File generati:
 - `GiroMunna_Preventivo_Tuscany_Wine_Tour_13-18_settembre_2026_IT.pdf`
@@ -22,34 +31,46 @@ python3 genera_preventivo_tuscany_wine_tour.py --lingua en
 
 Con `--cliente "Altro Nome"` si cambia l'intestatario.
 
+### Cosa dice il preventivo realmente inviato (GM-2026-0913-WT21, 29 luglio 2026)
+
+- **Totale € 4.800,00 IVA inclusa** (imponibile € 4.363,64 + IVA 10% € 436,36).
+- **Acconto 30% € 1.440,00** alla conferma, **saldo entro 5 giorni prima dell'inizio del
+  servizio** — cioè entro l'**8 settembre 2026**, non dopo il servizio.
+- **Vitto e alloggio del conducente per tutto il tour sono INCLUSI nel prezzo**, alla voce
+  "Included" del PDF. Non vanno indicati come a carico del cliente: è l'opposto di quanto
+  scritto nella prima stesura di questo repository e nelle versioni precedenti della
+  fattura proforma.
+- Attesa oltre gli orari: € 50/ora (invariato). Partenza da una tenuta dopo le 23:00: € 250
+  (non "rientro dopo le 02:00" come nelle condizioni ricorrenti generali).
+- Cancellazione: gratuita oltre 30gg; da 29 a 10gg trattenuto l'acconto; negli ultimi 9gg
+  50% del totale. Diversa dallo schema 60/30/10gg con 100% finale usato di default.
+- IBAN corretto: **IT59 O050 3413 7070 0000 0003 424**. Quello che avevamo in CLAUDE.md e
+  in tutti i documenti di questa cartella (`IT59 O053 4137 0700 0000 0034 24`) era
+  **sbagliato di una cifra** (26 caratteri invece di 27, IBAN italiano non valido) — corretto
+  ovunque il 7 settembre 2026, compreso CLAUDE.md.
+
 ### Fattura proforma a saldo
 
-Il 7 settembre 2026 è stata generata la fattura proforma per il saldo, da inviare ad Alvora
-(stesso schema visivo del preventivo, riferimento GM-2026-0913-BI):
+Generata il 7 settembre 2026, aggiornata lo stesso giorno con i dati sopra (rif. corretto
+GM-2026-0913-WT21, vitto/alloggio tolto dal "non incluso", scadenza saldo con data precisa
+8 settembre, IBAN corretto). Da inviare ad Alvora, stesso schema visivo del preventivo:
 
 ```bash
 python3 genera_proforma_saldo.py --lingua it
 python3 genera_proforma_saldo.py --lingua en
 ```
 
-**Importi confermati da Girolamo (7 settembre), non quelli del PDF del preventivo:**
-totale € 4.800,00 IVA inclusa, acconto già versato € 1.440,00 (30%), **saldo da versare
-€ 3.360,00**. Il testo riporta la condizione già presente nel preventivo ("saldo entro 5
-giorni dal servizio") senza inventare una nuova scadenza: se serve una data precisa va
-decisa da Girolamo.
+Riepiloga: totale € 4.800,00 IVA inclusa, acconto già versato € 1.440,00, **saldo da
+versare € 3.360,00**.
 
 **Non ha valore fiscale.** È una richiesta di pagamento, non la fattura vera emessa
 dall'Agenzia delle Entrate: quella, se dovuta, va emessa da Girolamo tramite il proprio
 sistema di fatturazione elettronica o il commercialista, con numerazione progressiva e dati
 fiscali che questo repository non ha.
 
-**Da chiarire:** il preventivo PDF e la tabella "Prezzi" più sotto in questo file riportano
-ancora il totale € 5.104,00 (rialzato l'8 agosto rispetto alla prima stesura da € 4.015,00).
-€ 4.800,00 è un terzo importo, diverso da entrambi, che a quanto risulta è quello
-realmente confermato con Alvora — probabilmente concordato a voce o comunque fuori da questo
-repository. Il preventivo PDF non è stato aggiornato di conseguenza: se il totale giusto
-resta € 4.800,00 andrebbe rifatto anche quello, altrimenti il documento archiviato non
-corrisponde a cosa è stato effettivamente venduto.
+**Il preventivo PDF archiviato in questa cartella (rif. GM-2026-0913-BI) resta quello della
+prima stesura e non corrisponde a quanto realmente inviato.** Se serve, va rifatto da capo
+sul contenuto del PDF reale (orari, condizioni e importi sopra), non solo sui prezzi.
 
 ---
 

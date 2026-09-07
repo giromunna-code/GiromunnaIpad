@@ -3,7 +3,8 @@
 Genera la proforma per il saldo del wine tour in Toscana 13-18 settembre 2026 (Alvora).
 
 Riproduce l'impaginazione dei documenti GiroMunna (logo, verde bottiglia e oro,
-intestazione e piè di pagina su ogni pagina). Riferimento preventivo: GM-2026-0913-BI.
+intestazione e piè di pagina su ogni pagina). Riferimento preventivo: GM-2026-0913-WT21
+(il numero realmente usato nel preventivo inviato ad Alvora il 29 luglio 2026).
 
     python3 genera_proforma_saldo.py --lingua it --cliente "Nome Cliente"
     python3 genera_proforma_saldo.py --lingua en --cliente "Client Name"
@@ -47,7 +48,7 @@ MARGIN = 20 * mm
 TOP = 30 * mm
 BOTTOM = 24 * mm
 
-RIF = "GM-2026-0913-BI"
+RIF = "GM-2026-0913-WT21"
 
 # --- contenuto ------------------------------------------------------------------
 IT = dict(
@@ -73,16 +74,16 @@ IT = dict(
     h_pagamento="Pagamento",
     pagamento=(
         "Il saldo è dovuto secondo le condizioni indicate nel preventivo di riferimento: entro 5 giorni "
-        "dal servizio."
+        "prima dell'inizio del servizio, quindi entro l'8 settembre 2026."
     ),
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
-          "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05. "
+          "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05. "
           "Nella causale, indicare il riferimento " + RIF + "."),
     h_note="Note",
     note=(
-        "Il vitto e l'alloggio del conducente per le notti del 13, 14 e 15 settembre restano a carico "
-        "vostro, prenotati e pagati direttamente: non sono compresi in questo saldo. Per il dettaglio "
-        "completo del servizio, i giorni, gli orari e le condizioni si rimanda al preventivo " + RIF + "."
+        "Il prezzo comprende vitto e alloggio del conducente per tutta la durata del tour. Per il "
+        "dettaglio completo del servizio, i giorni, gli orari e le condizioni si rimanda al preventivo "
+        + RIF + "."
     ),
     closing=("Restiamo a disposizione per qualsiasi chiarimento.<br/><br/>"
              "Cordiali saluti,<br/>"
@@ -111,17 +112,16 @@ EN = dict(
     saldo="€ 3,360.00",
     h_pagamento="Payment",
     pagamento=(
-        "The balance is due under the terms set out in the reference quotation: within 5 days of the "
-        "service."
+        "The balance is due under the terms set out in the reference quotation: no later than 5 days "
+        "before the start of the service, i.e. by 8 September 2026."
     ),
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
-          "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05. "
+          "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05. "
           "Please quote reference " + RIF + " in the transfer description."),
     h_note="Notes",
     note=(
-        "The driver's board and lodging for the nights of 13, 14 and 15 September remain at your charge, "
-        "booked and paid for directly: they are not included in this balance. For the full service detail, "
-        "days, times and conditions, please refer to quotation " + RIF + "."
+        "The price includes the driver's board and lodging for the whole tour. For the full service "
+        "detail, days, times and conditions, please refer to quotation " + RIF + "."
     ),
     closing=("We remain at your disposal for any clarification.<br/><br/>"
              "Kind regards,<br/>"
