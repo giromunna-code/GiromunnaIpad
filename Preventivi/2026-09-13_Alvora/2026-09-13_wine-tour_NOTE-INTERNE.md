@@ -7,10 +7,13 @@ File generati:
 - `GiroMunna_Preventivo_Tuscany_Wine_Tour_13-18_settembre_2026_EN.pdf`
 - `genera_preventivo_tuscany_wine_tour.py` — rigenera entrambi i PDF
 - `preventivo_wine_tour_13-18_settembre_2026.html` — la pagina web bilingue
+- `GiroMunna_Proforma_Saldo_Tuscany_Wine_Tour_13-18_settembre_2026_IT.pdf`
+- `GiroMunna_Proforma_Saldo_Tuscany_Wine_Tour_13-18_settembre_2026_EN.pdf`
+- `genera_proforma_saldo.py` — rigenera i due PDF della proforma a saldo
 
 Tutto dentro `Preventivi/2026-09-13_Alvora/`.
 
-Il cliente (Alvora) è già il valore predefinito dello script. Per rigenerare i due PDF:
+Il cliente (Alvora) è già il valore predefinito dello script. Per rigenerare i due PDF del preventivo:
 
 ```bash
 python3 genera_preventivo_tuscany_wine_tour.py --lingua it
@@ -18,6 +21,22 @@ python3 genera_preventivo_tuscany_wine_tour.py --lingua en
 ```
 
 Con `--cliente "Altro Nome"` si cambia l'intestatario.
+
+### Proforma a saldo
+
+Il 7 settembre 2026 è stata generata la proforma per il saldo (stesso schema visivo del
+preventivo, riferimento GM-2026-0913-BI):
+
+```bash
+python3 genera_proforma_saldo.py --lingua it
+python3 genera_proforma_saldo.py --lingua en
+```
+
+Riepiloga: totale € 5.104,00 IVA inclusa, acconto già versato € 1.530,00, **saldo da
+versare € 3.574,00**. Il testo riporta la condizione già presente nel preventivo ("saldo
+entro 5 giorni dal servizio") senza inventare una nuova scadenza: se serve una data precisa
+va decisa da Girolamo. Non è una fattura fiscale, solo un documento di riepilogo per il
+pagamento.
 
 ---
 
