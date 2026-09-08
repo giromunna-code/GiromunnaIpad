@@ -1,0 +1,973 @@
+<title>Preventivo — Navetta matrimonio a Reggello, 25-26 settembre 2026</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+  .day.released { background: transparent; border-style: dashed; border-color: var(--line-strong); }
+  .day.released .day-date { color: var(--ink-soft); }
+  .day.released .badge { color: var(--ink-soft); background: transparent; border-color: var(--line-strong); }
+  .day.released p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<style>
+  .runs { display: flex; flex-direction: column; gap: 4px; }
+  .run {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 16px 20px 18px;
+  }
+  .run-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .run-name { font-weight: 700; font-size: 1rem; }
+  .run-count { font-size: 0.79rem; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+  .stops { display: flex; flex-direction: column; gap: 7px; margin: 0; padding: 0; list-style: none; }
+  .stops li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 14px;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    padding-bottom: 7px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .stops li:last-child { border-bottom: none; padding-bottom: 0; }
+  .stops .pax { font-variant-numeric: tabular-nums; color: var(--ink); font-weight: 600; }
+  .flag {
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    border-left: 3px solid var(--gold);
+    padding: 18px 20px;
+    margin-top: 6px;
+  }
+  .flag p { margin: 0; font-size: 0.93rem; }
+  .flag p + p { margin-top: 9px; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<div class="wrap lang" data-lang="it">
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Navetta per matrimonio
+      <span class="sub">Reggello (FI) · dodici indirizzi di raccolta → Via Bonsi 47</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">25-26 set 2026</span></div>
+      <div class="fact"><span class="eyebrow">Ospiti</span><span class="v">54</span></div>
+      <div class="fact"><span class="eyebrow">Indirizzi</span><span class="v">12</span></div>
+      <div class="fact"><span class="eyebrow">Mezzi a preventivo</span><span class="v">1</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2026-0925-VB</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">15 settembre 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Il mezzo</h2>
+    <p class="lede">Un minibus con lo stesso conducente per tutte e due le serate, che raccoglie gli ospiti ai dodici indirizzi e li riporta a casa a fine festa.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista, 7,64 m</span>
+      <p>Aria condizionata, sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.</p>
+      <p>Sotto gli 8 metri: arriva dove un autobus gran turismo non passa, sulle strade strette che salgono ai poderi e nelle vie del paese.</p>
+    </div>
+    <div class="flag">
+      <p><strong>Gli ospiti sono 54, i posti a bordo 26.</strong> Un mezzo solo non li porta in una volta: il programma qui sotto è costruito su tre giri di raccolta consecutivi e il prezzo è riferito a un mezzo.</p>
+      <p>Con <strong>due minibus</strong> i primi due giri viaggiano in parallelo e resta un solo giro di coda. Con <strong>tre minibus</strong> tutti partono e rientrano insieme, e il supplemento per il rientro oltre le 02:00 non è più dovuto. La raccomandazione per un gruppo di questa dimensione sono tre mezzi il sabato e almeno due il venerdì.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Gli orari sono calcolati a ritroso dalle scadenze indicate dal cliente: le 18:00 del venerdì e le 15:30 del sabato.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">25 settembre <span class="wd">· venerdì</span></span>
+          <span class="badge">Andata · tre giri</span>
+        </div>
+        <div class="legs">
+          <div class="leg"><span class="t">15:05</span><span class="r">Giro 1, Pietrapiana <span class="to">→ Via Bonsi 47</span></span><span class="d">arrivo 15:45</span></div>
+          <div class="leg"><span class="t">15:55</span><span class="r">Giro 2, La Romola e i poderi <span class="to">→ Via Bonsi 47</span></span><span class="d">arrivo 16:45</span></div>
+          <div class="leg"><span class="t">16:55</span><span class="r">Giro 3, Reggello, Donnini e San Giovenale <span class="to">→ Via Bonsi 47</span></span><span class="d">arrivo 17:55</span></div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 15:00 – 18:00. I primi ospiti arrivano oltre due ore prima degli ultimi.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">25 settembre <span class="wd">· notte</span></span>
+          <span class="badge">Rientro · tre giri</span>
+        </div>
+        <div class="legs">
+          <div class="leg"><span class="t">23:00</span><span class="r">Via Bonsi 47 <span class="to">→ giro 1, Pietrapiana</span></span><span class="d">rientro 23:50</span></div>
+          <div class="leg"><span class="t">23:55</span><span class="r">Via Bonsi 47 <span class="to">→ giro 2, La Romola e i poderi</span></span><span class="d">rientro 00:50</span></div>
+          <div class="leg"><span class="t">00:55</span><span class="r">Via Bonsi 47 <span class="to">→ giro 3, Reggello, Donnini e San Giovenale</span></span><span class="d">ultimo ospite 01:45</span></div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 23:00 – 01:45. Si chiude entro le 02:00: nessun supplemento.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">26 settembre <span class="wd">· sabato</span></span>
+          <span class="badge">Andata · tre giri</span>
+        </div>
+        <div class="legs">
+          <div class="leg"><span class="t">12:45</span><span class="r">Giro 1, Pietrapiana <span class="to">→ Via Bonsi 47</span></span><span class="d">arrivo 13:25</span></div>
+          <div class="leg"><span class="t">13:35</span><span class="r">Giro 2, La Romola e i poderi <span class="to">→ Via Bonsi 47</span></span><span class="d">arrivo 14:25</span></div>
+          <div class="leg"><span class="t">14:35</span><span class="r">Giro 3, Reggello, Donnini e San Giovenale <span class="to">→ Via Bonsi 47</span></span><span class="d">arrivo 15:25</span></div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 12:40 – 15:30.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">27 settembre <span class="wd">· notte fra sabato e domenica</span></span>
+          <span class="badge">Rientro · tre giri</span>
+        </div>
+        <div class="legs">
+          <div class="leg"><span class="t">01:00</span><span class="r">Via Bonsi 47 <span class="to">→ giro 1, Pietrapiana</span></span><span class="d">rientro 01:50</span></div>
+          <div class="leg"><span class="t">01:55</span><span class="r">Via Bonsi 47 <span class="to">→ giro 2, La Romola e i poderi</span></span><span class="d">rientro 02:50</span></div>
+          <div class="leg"><span class="t">02:55</span><span class="r">Via Bonsi 47 <span class="to">→ giro 3, Reggello, Donnini e San Giovenale</span></span><span class="d">ultimo ospite 03:45</span></div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 01:00 – 03:45. L'ultimo gruppo lascia la festa alle 02:55: scatta il supplemento oltre le 02:00.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>I tre giri di raccolta</h2>
+    <p class="lede">I dodici indirizzi raggruppati per zona, in modo che ogni giro resti compatto e che il gruppo più numeroso viaggi tutto insieme.</p>
+    <div class="runs">
+
+      <div class="run">
+        <div class="run-head"><span class="run-name">Giro 1 · Pietrapiana</span><span class="run-count">24 ospiti · 3 fermate</span></div>
+        <ul class="stops">
+          <li><span>Via Casalino 66, Loc. Pietrapiana</span><span class="pax">14</span></li>
+          <li><span>Hotel Archimede, Ponte di Casalino 68</span><span class="pax">7</span></li>
+          <li><span>Località Rovai 26, Pietrapiana</span><span class="pax">3</span></li>
+        </ul>
+      </div>
+
+      <div class="run">
+        <div class="run-head"><span class="run-name">Giro 2 · La Romola e i poderi</span><span class="run-count">22 ospiti · 4 fermate</span></div>
+        <ul class="stops">
+          <li><span>Località Podere la Romola 78</span><span class="pax">14</span></li>
+          <li><span>Podere Houston / Giusti, Località Giusti 105</span><span class="pax">4</span></li>
+          <li><span>Loc. I Trebbiali 116</span><span class="pax">2</span></li>
+          <li><span>Via dei Glicini 14, Poggio ai Giubbiani</span><span class="pax">2</span></li>
+        </ul>
+      </div>
+
+      <div class="run">
+        <div class="run-head"><span class="run-name">Giro 3 · Reggello, Donnini e San Giovenale</span><span class="run-count">8 ospiti · 5 fermate</span></div>
+        <ul class="stops">
+          <li><span>La Terrazza di Reggello, Via di Fano 6</span><span class="pax">2</span></li>
+          <li><span>Appartamento Olivella, Via Fornacina 32</span><span class="pax">2</span></li>
+          <li><span>Località S. Giovenale 55</span><span class="pax">2</span></li>
+          <li><span>Le Siepi, Via Filippo Turati, Montanino 16</span><span class="pax">1</span></li>
+          <li><span>Villa Pitiana Hotel, Donnini</span><span class="pax">1</span></li>
+        </ul>
+      </div>
+
+    </div>
+    <p style="margin-top:16px;">Il terzo giro è il più lungo: otto ospiti sparsi su cinque indirizzi, dal centro di Reggello fino a Donnini e San Giovenale. È quello che pesa di più sugli orari, ed è il primo da affidare a un secondo mezzo.</p>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Servizio</th>
+            <th scope="col" class="num">Importo</th>
+            <th scope="col" class="num">IVA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Ven 25 set</span>Andata dai dodici indirizzi e rientro notturno, tre giri per verso</td>
+            <td class="num">€ 1.480,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Sab 26 set</span>Andata dai dodici indirizzi e rientro notturno, tre giri per verso</td>
+            <td class="num">€ 1.560,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Notte sab-dom</span>Supplemento rientro oltre le 02:00</td>
+            <td class="num">€ 250,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Vitto e alloggio del conducente, 2 notti (25 e 26 settembre)</td>
+            <td class="num vat"><em>a carico vostro</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Totale, al netto di IVA</td>
+            <td class="num">€ 3.290,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Totale da corrispondere, IVA 10% inclusa
+        <small>riferito a un mezzo — il secondo e il terzo minibus sono quotati a parte</small>
+      </span>
+      <span class="fig">€ 3.619,00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Acconto 30% alla conferma</td>
+            <td class="num"><strong>€ 1.090,00</strong></td>
+            <td class="num vat">IVA inclusa</td>
+          </tr>
+          <tr>
+            <td>Saldo, entro 5 giorni dal servizio</td>
+            <td class="num"><strong>€ 2.529,00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Mezzo e conducente per tutte e due le serate, carburante, pedaggi, parcheggi, assicurazione completa e i tre giri di raccolta e i tre di rientro in ciascuna delle due giornate.</li>
+      <li><strong>Nessun onere di accesso.</strong> Reggello non ha zone a traffico limitato né permessi comunali per i bus turistici.</li>
+      <li><strong>Le ore di attesa.</strong> Il conducente resta a disposizione in zona fra l'andata e il rientro — cinque ore il venerdì, nove e mezza il sabato — senza alcun addebito per quel tempo.</li>
+      <li><strong>A vostro carico.</strong> Vitto e alloggio del conducente per le notti del 25 e del 26 settembre: prenotazione e pagamento li curate voi direttamente. Reggello dista circa 90 km dalla base e ogni giornata si chiude fra l'una e le quattro del mattino: il rientro giornaliero sforerebbe i tempi di riposo.</li>
+      <li><strong>Non incluso.</strong> Il secondo e il terzo minibus, quotati a parte. Attesa oltre gli orari concordati, € 50,00 all'ora per mezzo. Giri aggiuntivi o modifiche al programma dopo la conferma, quotati su richiesta.</li>
+      <li><strong>Disponibilità e cancellazione.</strong> Cancellazione gratuita oltre 60 giorni prima del servizio; da 60 a 30 giorni viene trattenuto l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%. Mancando diciassette giorni al primo servizio, la prenotazione ricade già nella fascia da 30 a 10 giorni, e dal 15 settembre passa in quella degli ultimi 10 giorni.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>I punti da chiarire</h2>
+    <ul class="conds">
+      <li><strong>Quanti mezzi.</strong> È la decisione principale: con un mezzo solo la raccolta si spalma su due ore e mezza e il rientro del sabato finisce alle 03:45. Il preventivo per i mezzi in più parte appena il cliente dice come vuole procedere.</li>
+      <li><strong>Dove il minibus arriva davvero.</strong> Diversi indirizzi sono poderi su strade strette, a volte bianche e senza spazio di manovra. Serve il punto esatto sulla mappa di tutti e dodici: sopralluogo stradale e, dove serve, punto di ritrovo concordato sulla strada asfaltata.</li>
+      <li><strong>Via Bonsi 47.</strong> Punto di salita e discesa con spazio per fermare e girare un mezzo di quasi otto metri, e posto dove sostare durante la festa.</li>
+      <li><strong>Gli orari.</strong> Le 18:00 e le 15:30 sono state lette come l'ora entro cui gli ospiti devono essere in Via Bonsi. Se sono invece l'ora della cerimonia, i giri si spostano.</li>
+      <li><strong>Gli ospiti per fermata.</strong> Lista definitiva dieci giorni prima, più un referente sul posto con il telefono acceso la sera del servizio.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Interno — non fa parte del preventivo inviato</div>
+    <h2>Come sono stati costruiti i prezzi</h2>
+
+    <p>Base di riferimento: il preventivo <strong>Le Filigare (GM-2026-0821-LF)</strong>, che è a mezzo singolo come questo. I prezzi del Corte Francigena non si usano: sono per mezzo su un lavoro a due mezzi, già scontati per volume.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — trasferimento FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500,00</td></tr>
+          <tr><td>Le Filigare — giornata a disposizione Siena, ~80 km, 5 h</td><td class="num">€ 809,00</td></tr>
+          <tr><td>Reggello ven 25 — mezzo impegnato ~11 h, sei giri, lavoro notturno</td><td class="num">€ 1.480,00</td></tr>
+          <tr><td>Reggello sab 26 — mezzo impegnato ~12 h, sei giri, chiusura alle 03:45</td><td class="num">€ 1.560,00</td></tr>
+          <tr><td>Supplemento rientro oltre le 02:00 (tariffa di casa)</td><td class="num">€ 250,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>La scala</h3>
+    <p>Le Filigare vale € 809 per 80 km e 5 ore. Qui la giornata è più che doppia in ore, con sei attraversamenti di Reggello per verso, lavoro fra mezzanotte e le quattro e nessun rientro in base fra un servizio e l'altro. Il sabato costa più del venerdì perché l'attesa è di nove ore e mezza e la chiusura arriva alle 03:45.</p>
+
+    <h3>Le due notti del conducente</h3>
+    <p>Servono davvero: Reggello dista ~90 km dalla base, si finisce all'01:45 il venerdì e alle 03:45 la domenica mattina, e il sabato si riparte alle 12:40. A preventivo sono indicate ma non conteggiate, come da regola.</p>
+
+    <h3>I mezzi aggiuntivi</h3>
+    <p><strong>Il secondo e il terzo minibus li decide Girolamo.</strong> Il preventivo non li quota e non ne anticipa il prezzo: vanno concordati prima con Francesco (Tuscany T.O. &amp; Munna Bus Operator, Montecatini Terme). Le sue tariffe sono all'ingrosso e vanno ricaricate. Il testo dice al cliente che il preventivo per i mezzi in più arriva appena risponde: è una promessa da onorare in fretta, mancano diciassette giorni.</p>
+
+    <h3>Da chiarire prima di inviare</h3>
+    <ol>
+      <li><strong>Nome e indirizzo del cliente.</strong> La richiesta è arrivata senza intestatario: i PDF vanno rigenerati con <code>--cliente "Nome"</code>.</li>
+      <li><strong>Quanti mezzi mettere.</strong> Decisione di Girolamo, previo accordo con Francesco sul costo del secondo e del terzo minibus.</li>
+      <li><strong>Il raggruppamento dei dodici indirizzi</strong> è fatto a tavolino sulla toponomastica di Reggello. Prima della conferma serve il sopralluogo stradale, soprattutto per La Romola, I Trebbiali, Poggio ai Giubbiani e Località Giusti.</li>
+      <li><strong>Il supplemento oltre le 02:00</strong> è a preventivo per la notte fra sabato e domenica. Se si va a tre mezzi va tolto.</li>
+      <li><strong>Bloccare il mezzo</strong> per il 25-27 settembre e le due notti del conducente in zona.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2026-0925-VB · 8 settembre 2026</span>
+  </footer>
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Wedding shuttle
+      <span class="sub">Reggello (FI) · twelve pick-up addresses → Via Bonsi 47</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Dates</span><span class="v">25-26 Sep 2026</span></div>
+      <div class="fact"><span class="eyebrow">Guests</span><span class="v">54</span></div>
+      <div class="fact"><span class="eyebrow">Addresses</span><span class="v">12</span></div>
+      <div class="fact"><span class="eyebrow">Vehicles quoted</span><span class="v">1</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2026-0925-VB</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">15 September 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicle</h2>
+    <p class="lede">One minibus with the same driver on both evenings, collecting the guests from the twelve addresses and taking them home at the end of the night.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus driver, 7.64 m</span>
+      <p>Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.</p>
+      <p>Under eight metres: it reaches places a full-size coach cannot, on the narrow roads climbing to the farmhouses and in the village streets.</p>
+    </div>
+    <div class="flag">
+      <p><strong>There are 54 guests and 26 seats.</strong> One vehicle cannot carry them in a single movement: the programme below is built on three consecutive collection runs and the price is for one vehicle.</p>
+      <p>With <strong>two minibuses</strong> the first two runs travel in parallel and only one trailing run is left. With <strong>three minibuses</strong> everyone leaves and returns together, and the supplement for the return beyond 02:00 no longer applies. The recommendation for a party this size is three vehicles on the Saturday and at least two on the Friday.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">Times are worked backwards from the deadlines given by the client: 18:00 on the Friday and 15:30 on the Saturday.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">25 September <span class="wd">· Friday</span></span>
+          <span class="badge">Outward · three runs</span>
+        </div>
+        <div class="legs">
+          <div class="leg"><span class="t">15:05</span><span class="r">Run 1, Pietrapiana <span class="to">→ Via Bonsi 47</span></span><span class="d">arrives 15:45</span></div>
+          <div class="leg"><span class="t">15:55</span><span class="r">Run 2, La Romola and the farmhouses <span class="to">→ Via Bonsi 47</span></span><span class="d">arrives 16:45</span></div>
+          <div class="leg"><span class="t">16:55</span><span class="r">Run 3, Reggello, Donnini and San Giovenale <span class="to">→ Via Bonsi 47</span></span><span class="d">arrives 17:55</span></div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 15:00 – 18:00. The first guests arrive more than two hours before the last.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">25 September <span class="wd">· night</span></span>
+          <span class="badge">Return · three runs</span>
+        </div>
+        <div class="legs">
+          <div class="leg"><span class="t">23:00</span><span class="r">Via Bonsi 47 <span class="to">→ run 1, Pietrapiana</span></span><span class="d">back 23:50</span></div>
+          <div class="leg"><span class="t">23:55</span><span class="r">Via Bonsi 47 <span class="to">→ run 2, La Romola and the farmhouses</span></span><span class="d">back 00:50</span></div>
+          <div class="leg"><span class="t">00:55</span><span class="r">Via Bonsi 47 <span class="to">→ run 3, Reggello, Donnini and San Giovenale</span></span><span class="d">last guest 01:45</span></div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 23:00 – 01:45. It closes before 02:00: no supplement.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">26 September <span class="wd">· Saturday</span></span>
+          <span class="badge">Outward · three runs</span>
+        </div>
+        <div class="legs">
+          <div class="leg"><span class="t">12:45</span><span class="r">Run 1, Pietrapiana <span class="to">→ Via Bonsi 47</span></span><span class="d">arrives 13:25</span></div>
+          <div class="leg"><span class="t">13:35</span><span class="r">Run 2, La Romola and the farmhouses <span class="to">→ Via Bonsi 47</span></span><span class="d">arrives 14:25</span></div>
+          <div class="leg"><span class="t">14:35</span><span class="r">Run 3, Reggello, Donnini and San Giovenale <span class="to">→ Via Bonsi 47</span></span><span class="d">arrives 15:25</span></div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 12:40 – 15:30.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">27 September <span class="wd">· night of Saturday to Sunday</span></span>
+          <span class="badge">Return · three runs</span>
+        </div>
+        <div class="legs">
+          <div class="leg"><span class="t">01:00</span><span class="r">Via Bonsi 47 <span class="to">→ run 1, Pietrapiana</span></span><span class="d">back 01:50</span></div>
+          <div class="leg"><span class="t">01:55</span><span class="r">Via Bonsi 47 <span class="to">→ run 2, La Romola and the farmhouses</span></span><span class="d">back 02:50</span></div>
+          <div class="leg"><span class="t">02:55</span><span class="r">Via Bonsi 47 <span class="to">→ run 3, Reggello, Donnini and San Giovenale</span></span><span class="d">last guest 03:45</span></div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 01:00 – 03:45. The last group leaves the party at 02:55: the after-02:00 supplement applies.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>The three collection runs</h2>
+    <p class="lede">The twelve addresses grouped by area, so that each run stays compact and the largest party travels together.</p>
+    <div class="runs">
+
+      <div class="run">
+        <div class="run-head"><span class="run-name">Run 1 · Pietrapiana</span><span class="run-count">24 guests · 3 stops</span></div>
+        <ul class="stops">
+          <li><span>Via Casalino 66, Loc. Pietrapiana</span><span class="pax">14</span></li>
+          <li><span>Hotel Archimede, Ponte di Casalino 68</span><span class="pax">7</span></li>
+          <li><span>Località Rovai 26, Pietrapiana</span><span class="pax">3</span></li>
+        </ul>
+      </div>
+
+      <div class="run">
+        <div class="run-head"><span class="run-name">Run 2 · La Romola and the farmhouses</span><span class="run-count">22 guests · 4 stops</span></div>
+        <ul class="stops">
+          <li><span>Località Podere la Romola 78</span><span class="pax">14</span></li>
+          <li><span>Podere Houston / Giusti, Località Giusti 105</span><span class="pax">4</span></li>
+          <li><span>Loc. I Trebbiali 116</span><span class="pax">2</span></li>
+          <li><span>Via dei Glicini 14, Poggio ai Giubbiani</span><span class="pax">2</span></li>
+        </ul>
+      </div>
+
+      <div class="run">
+        <div class="run-head"><span class="run-name">Run 3 · Reggello, Donnini and San Giovenale</span><span class="run-count">8 guests · 5 stops</span></div>
+        <ul class="stops">
+          <li><span>La Terrazza di Reggello, Via di Fano 6</span><span class="pax">2</span></li>
+          <li><span>Appartamento Olivella, Via Fornacina 32</span><span class="pax">2</span></li>
+          <li><span>Località S. Giovenale 55</span><span class="pax">2</span></li>
+          <li><span>Le Siepi, Via Filippo Turati, Montanino 16</span><span class="pax">1</span></li>
+          <li><span>Villa Pitiana Hotel, Donnini</span><span class="pax">1</span></li>
+        </ul>
+      </div>
+
+    </div>
+    <p style="margin-top:16px;">Run 3 is the longest: eight guests scattered over five addresses, from the centre of Reggello out to Donnini and San Giovenale. It is the one that weighs most on the timings, and the first to hand to a second vehicle.</p>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col" class="num">Amount</th>
+            <th scope="col" class="num">VAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Fri 25 Sep</span>Outward from the twelve addresses and night return, three runs each way</td>
+            <td class="num">€ 1,480.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Sat 26 Sep</span>Outward from the twelve addresses and night return, three runs each way</td>
+            <td class="num">€ 1,560.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Sat-Sun night</span>Supplement for the return beyond 02:00</td>
+            <td class="num">€ 250.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Driver's board and lodging, 2 nights (25 and 26 September)</td>
+            <td class="num vat"><em>at your charge</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Total, excluding VAT</td>
+            <td class="num">€ 3,290.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Total payable, VAT 10% included
+        <small>for one vehicle — a second and third minibus are quoted separately</small>
+      </span>
+      <span class="fig">€ 3,619.00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Deposit 30% on confirmation</td>
+            <td class="num"><strong>€ 1,090.00</strong></td>
+            <td class="num vat">VAT included</td>
+          </tr>
+          <tr>
+            <td>Balance, within 5 days of the service</td>
+            <td class="num"><strong>€ 2,529.00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Vehicle and driver on both evenings, fuel, tolls, parking, full insurance, and the three collection runs and three return runs on each of the two days.</li>
+      <li><strong>No access charges.</strong> Reggello has no restricted traffic zone and no municipal coach permit.</li>
+      <li><strong>The waiting hours.</strong> The driver stays available in the area between the outward and return runs — five hours on the Friday, nine and a half on the Saturday — at no charge for that time.</li>
+      <li><strong>At your charge.</strong> The driver's board and lodging for the nights of 25 and 26 September: you book and pay for them directly. Reggello is about 90 km from our base and each day closes between one and four in the morning, so a daily return would breach the rest periods.</li>
+      <li><strong>Not included.</strong> The second and third minibus, quoted separately. Waiting beyond the agreed times, € 50.00 per hour per vehicle. Additional runs or changes to the programme after confirmation, quoted on request.</li>
+      <li><strong>Availability and cancellation.</strong> Cancellation is free of charge more than 60 days before the service; from 60 to 30 days the deposit is retained; from 30 to 10 days 50%; in the last 10 days 100%. With seventeen days to the first service, the booking already falls in the 30-to-10-day band, and from 15 September it moves into the last-10-days band.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Points to settle</h2>
+    <ul class="conds">
+      <li><strong>How many vehicles.</strong> This is the main decision: with one vehicle collection is spread over two and a half hours and the Saturday return ends at 03:45. The quotation for extra vehicles follows as soon as the client says how they want to proceed.</li>
+      <li><strong>Where the minibus can actually reach.</strong> Several addresses are farmhouses on narrow roads, sometimes unmade and with no room to turn. We need the exact map location of all twelve: a road survey and, where needed, an agreed meeting point on the surfaced road.</li>
+      <li><strong>Via Bonsi 47.</strong> The pick-up and drop-off point, with room to stop and turn a vehicle of nearly eight metres, and somewhere to wait during the party.</li>
+      <li><strong>The times.</strong> The 18:00 and the 15:30 have been read as the time by which guests must be at Via Bonsi. If they are instead the time of the ceremony, the runs shift.</li>
+      <li><strong>Guests per stop.</strong> Final list ten days beforehand, plus a contact on the ground with their phone on during the service.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal — not part of the quotation sent to the client</div>
+    <h2>How the prices were built</h2>
+
+    <p>Reference: the <strong>Le Filigare quotation (GM-2026-0821-LF)</strong>, which is single-vehicle like this one. The Corte Francigena prices are not used: they are per vehicle on a two-vehicle job and already discounted for volume.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — transfer FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500.00</td></tr>
+          <tr><td>Le Filigare — day at disposal, Siena, ~80 km, 5 h</td><td class="num">€ 809.00</td></tr>
+          <tr><td>Reggello Fri 25 — vehicle engaged ~11 h, six runs, night work</td><td class="num">€ 1,480.00</td></tr>
+          <tr><td>Reggello Sat 26 — vehicle engaged ~12 h, six runs, closing at 03:45</td><td class="num">€ 1,560.00</td></tr>
+          <tr><td>Supplement for the return beyond 02:00 (house rate)</td><td class="num">€ 250.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>The scale</h3>
+    <p>Le Filigare is € 809 for 80 km and 5 hours. Here the day is more than twice as long in hours, with six crossings of Reggello each way, work between midnight and four in the morning and no return to base between services. The Saturday costs more than the Friday because the wait is nine and a half hours and the day closes at 03:45.</p>
+
+    <h3>The driver's two nights</h3>
+    <p>They are genuinely needed: Reggello is ~90 km from base, the Friday ends at 01:45 and the Sunday morning at 03:45, and the Saturday starts again at 12:40. Shown in the quotation but not charged, as the house rule requires.</p>
+
+    <h3>The additional vehicles</h3>
+    <p><strong>The second and third minibus are Girolamo's decision.</strong> The quotation does not price them and does not hint at a figure: they must be agreed first with Francesco (Tuscany T.O. &amp; Munna Bus Operator, Montecatini Terme). His rates are wholesale and must be marked up. The text promises the client a quotation for the extra vehicles as soon as they reply: a promise to keep quickly, seventeen days out.</p>
+
+    <h3>To settle before sending</h3>
+    <ol>
+      <li><strong>Client name and address.</strong> The request arrived with no addressee: regenerate the PDFs with <code>--cliente "Name"</code>.</li>
+      <li><strong>How many vehicles to put on.</strong> Girolamo's decision, subject to agreeing the cost of the second and third minibus with Francesco.</li>
+      <li><strong>The grouping of the twelve addresses</strong> was done on paper from Reggello's place names. Before confirmation a road survey is needed, above all for La Romola, I Trebbiali, Poggio ai Giubbiani and Località Giusti.</li>
+      <li><strong>The after-02:00 supplement</strong> is in the quotation for the Saturday-to-Sunday night. If it goes to three vehicles, it comes out.</li>
+      <li><strong>Block the vehicle</strong> for 25-27 September, and the driver's two nights in the area.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2026-0925-VB · 8 September 2026</span>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
