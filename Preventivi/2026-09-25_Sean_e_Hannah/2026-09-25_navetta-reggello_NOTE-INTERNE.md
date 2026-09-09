@@ -5,12 +5,16 @@
 Location: Fattoria I Bonsi, Via Bonsi 47, Reggello (FI). Due minibus, quattro corse di
 raccolta e quattro di rientro, undici punti di carico.
 
-File generati:
+File nella cartella:
 
-- `GiroMunna_Preventivo_Navetta_Matrimonio_Reggello_25_settembre_2026_IT.pdf`
-- `GiroMunna_Preventivo_Navetta_Matrimonio_Reggello_25_settembre_2026_EN.pdf`
-- `genera_preventivo_navetta_reggello.py` — rigenera entrambi i PDF
-- `preventivo_navetta_matrimonio_reggello_25_settembre_2026.html` — la pagina web bilingue
+- `..._rev1_IT.pdf` e `..._rev1_EN.pdf` — la **versione dell'8 settembre**, quella mandata al
+  cliente: orari 18:00-23:00, 50 ospiti, € 2.420 IVA inclusa.
+- `..._rev2_IT.pdf` e `..._rev2_EN.pdf` — la **revisione 2 del 9 settembre**, sugli orari veri
+  del cliente: 15:30-01:00, 54 ospiti, € 3.190 IVA inclusa. È questa la versione da mandare.
+- `cliente_Loading_Points_Saturday.pdf` — lo schema dei punti di carico del cliente.
+- `genera_preventivo_navetta_reggello.py` — genera la revisione 2 nelle due lingue.
+- `preventivo_navetta_matrimonio_reggello_25_settembre_2026.html` — la pagina web bilingue,
+  aggiornata alla revisione 2.
 
 Tutto dentro `Preventivi/2026-09-25_Sean_e_Hannah/`.
 
@@ -35,7 +39,7 @@ italiana che mancava. Nessun importo e nessuna condizione sono stati cambiati di
 i punti che si discostano dalle regole della casa sono elencati qui sotto, così la decisione
 resta a Girolamo.
 
-## Prezzi
+## Prezzi della prima versione (revisione 1, mandata l'8 settembre)
 
 | Voce | Netto |
 |---|---|
@@ -214,15 +218,39 @@ dell'acconto.
 ## Stato — 9 settembre
 
 Girolamo ha risposto al cliente che **è disponibile solo il 25**, che è appunto il giorno di
-questo piano.
+questo servizio: il 25 è venerdì e la festa si chiude alle due del mattino di sabato.
+
+**La revisione 2 è pronta nelle due lingue.** Va mandata prima che arrivi qualunque acconto:
+il cliente ha in mano la revisione 1, che vale € 2.420 su orari che non sono più quelli. Se
+bonifica i € 726 su quel documento, il servizio è impegnato a quel prezzo con i mezzi fermi
+in location quattro ore e mezza in più.
+
+Prezzo della revisione 2: **€ 1.450,00 netti a mezzo**, cioè € 2.900,00 netti e € 3.190,00
+IVA inclusa, acconto € 957,00 e saldo € 2.233,00. È il minimo difendibile sui riferimenti di
+casa. Per cambiarlo basta toccare le due righe `price_rows` nello script e rigenerare.
+
+Cosa contiene la revisione 2 che la prima non aveva:
+
+- gli orari veri: primo ritiro alle 14:25, mezzi in location dalle 15:30 all'01:00, ultimo
+  rientro all'01:55;
+- i 54 ospiti sui dieci punti di carico del cliente, con le tre corse di andata e le tre di
+  rientro;
+- la **cena dei due conducenti** in tabella con la dicitura *a carico vostro*, come vuole la
+  regola della casa;
+- la riga dei «più di 52 ospiti» riscritta sulla capienza della singola corsa;
+- la condizione del **rientro oltre le 02:00** a € 250,00 per mezzo, con la spiegazione che
+  il programma si chiude alle 01:55 e quindi non è dovuta;
+- la corsa del Mezzo 2 spostata alle **14:25** invece che alle 14:45, con il motivo scritto
+  fra i punti da confermare;
+- il fatto che **all'01:00 partono 37 ospiti sui 54**, e gli ultimi 17 restano al ricevimento
+  fino all'01:35.
 
 Resta da fare:
 
-1. **Rifare il preventivo sugli orari nuovi** (15:30-01:00, 54 ospiti, 10 punti di carico) e
-   mandarlo prima che arrivi l'acconto.
+1. **Mandare la revisione 2** prima di incassare l'acconto.
 2. **Riconcordare con Francesco** il costo del secondo mezzo sulla notte lunga.
-3. **Farsi confermare i numeri per indirizzo**, che qui sono 54 contro i 50 della richiesta
-   iniziale.
+3. **Farsi confermare i numeri per indirizzo** e la posizione di Podere la Romola e Loc.
+   Giusti, che insieme fanno 19 ospiti sui 54.
 4. **Bloccare i due mezzi** per il 25.
-5. **La validità del preventivo attuale scade il 15 settembre**: la versione aggiornata
-   riparte con una validità sua.
+5. La validità resta il **15 settembre**: dopo quella data il preventivo va riemesso e sotto
+   i dieci giorni la cancellazione passa al 70%.
