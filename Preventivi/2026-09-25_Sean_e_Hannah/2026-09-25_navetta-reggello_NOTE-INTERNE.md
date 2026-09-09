@@ -220,37 +220,39 @@ dell'acconto.
 Girolamo ha risposto al cliente che **è disponibile solo il 25**, che è appunto il giorno di
 questo servizio: il 25 è venerdì e la festa si chiude alle due del mattino di sabato.
 
-**La revisione 2 è pronta nelle due lingue.** Va mandata prima che arrivi qualunque acconto:
-il cliente ha in mano la revisione 1, che vale € 2.420 su orari che non sono più quelli. Se
-bonifica i € 726 su quel documento, il servizio è impegnato a quel prezzo con i mezzi fermi
-in location quattro ore e mezza in più.
+**Decisione: vale il preventivo mandato l'8 settembre (revisione 1), € 2.420 IVA inclusa,
+acconto € 726.** La revisione 2 resta in cartella come lavoro fatto, non va al cliente.
 
-Prezzo della revisione 2: **€ 1.450,00 netti a mezzo**, cioè € 2.900,00 netti e € 3.190,00
-IVA inclusa, acconto € 957,00 e saldo € 2.233,00. È il minimo difendibile sui riferimenti di
-casa. Per cambiarlo basta toccare le due righe `price_rows` nello script e rigenerare.
+Questo vuol dire che il servizio si farà sugli orari nuovi — primo ritiro alle 14:25, mezzi in
+location dalle 15:30 all'01:00, ultimo rientro all'01:55 — al prezzo costruito su quelli
+vecchi. Sono circa € 800 sotto il valore di mercato del servizio effettivo, ed è una scelta
+commerciale presa sapendolo.
 
-Cosa contiene la revisione 2 che la prima non aveva:
+### Quello che resta da sistemare, e non è il prezzo
 
-- gli orari veri: primo ritiro alle 14:25, mezzi in location dalle 15:30 all'01:00, ultimo
-  rientro all'01:55;
-- i 54 ospiti sui dieci punti di carico del cliente, con le tre corse di andata e le tre di
-  rientro;
-- la **cena dei due conducenti** in tabella con la dicitura *a carico vostro*, come vuole la
-  regola della casa;
-- la riga dei «più di 52 ospiti» riscritta sulla capienza della singola corsa;
-- la condizione del **rientro oltre le 02:00** a € 250,00 per mezzo, con la spiegazione che
-  il programma si chiude alle 01:55 e quindi non è dovuta;
-- la corsa del Mezzo 2 spostata alle **14:25** invece che alle 14:45, con il motivo scritto
-  fra i punti da confermare;
-- il fatto che **all'01:00 partono 37 ospiti sui 54**, e gli ultimi 17 restano al ricevimento
-  fino all'01:35.
+Il documento in mano al cliente descrive **orari che non sono quelli che faremo**: dice
+raccolta dalle 16:20, mezzi a disposizione dalle 18:00 alle 23:00, ultimo rientro alle 00:25.
+Gli orari veri sono altri. Vanno concordati per iscritto prima del servizio, altrimenti il
+giorno del matrimonio il documento e il servizio dicono due cose diverse — e in caso di
+discussione fa fede il documento.
 
-Resta da fare:
+Va tenuto presente che **la revisione 1 prezza già l'attesa oltre gli orari concordati a
+€ 50,00 all'ora per mezzo**. Sugli orari nuovi sono 4,5 ore in più per mezzo (dalle 15:30 alle
+18:00 e dalle 23:00 all'01:00): **€ 225,00 per mezzo, € 450,00 in tutto**, dentro le condizioni
+già scritte e accettate. Restano due strade oneste, ed è una scelta di Girolamo:
 
-1. **Mandare la revisione 2** prima di incassare l'acconto.
-2. **Riconcordare con Francesco** il costo del secondo mezzo sulla notte lunga.
-3. **Farsi confermare i numeri per indirizzo** e la posizione di Podere la Romola e Loc.
-   Giusti, che insieme fanno 19 ospiti sui 54.
+- concordare i nuovi orari senza addebitare nulla, e allora conviene scriverlo chiaro, così il
+  cliente sa che è un gesto e non un diritto acquisito;
+- oppure far presente che gli orari nuovi escono dalla finestra 18:00-23:00 del preventivo e
+  applicare la voce dell'attesa: € 450,00, nessun documento da rifare.
+
+### Resta da fare
+
+1. **Concordare per iscritto gli orari veri** (14:25 - 01:55) e i 54 ospiti.
+2. **Riconcordare con Francesco** il costo del secondo mezzo sulla notte lunga: il margine del
+   Mezzo 2 a questo prezzo dipende tutto da lì.
+3. **Farsi confermare la posizione** di Podere la Romola e Loc. Giusti, che insieme fanno 19
+   ospiti sui 54.
 4. **Bloccare i due mezzi** per il 25.
-5. La validità resta il **15 settembre**: dopo quella data il preventivo va riemesso e sotto
-   i dieci giorni la cancellazione passa al 70%.
+5. La validità resta il **15 settembre**: dopo quella data il preventivo va comunque riemesso,
+   e sotto i dieci giorni la cancellazione passa al 70%.
