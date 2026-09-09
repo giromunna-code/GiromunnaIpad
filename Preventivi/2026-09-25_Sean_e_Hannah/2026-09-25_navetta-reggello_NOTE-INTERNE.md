@@ -7,8 +7,11 @@ raccolta e quattro di rientro, undici punti di carico.
 
 File nella cartella:
 
+- `..._programma_aggiornato_IT.pdf` e `..._programma_aggiornato_EN.pdf` — **la versione da
+  mandare**: programma rifatto sullo schema del venerdì del cliente, **stesso prezzo**
+  € 2.420 IVA inclusa, acconto € 726.
 - `GiroMunna_Preventivo_Navetta_Matrimonio_Reggello_25_settembre_2026_IT.pdf` e `..._EN.pdf` —
-  **il preventivo in vigore**, mandato l'8 settembre: € 2.420 IVA inclusa, acconto € 726.
+  la versione mandata l'8 settembre, tenuta per memoria di cosa ha ricevuto il cliente.
 - `cliente_Loading_Points_Friday.pdf` — lo schema del cliente per il **venerdì 25, welcome
   event**: 9 punti di carico, 50 ospiti, arrivo 18:00, partenza 23:00. È il nostro servizio.
 - `cliente_Loading_Points_Saturday.pdf` — lo schema del **sabato 26, giorno del matrimonio**:
@@ -194,19 +197,36 @@ sfora l'02:00.
 
 ## Stato — 9 settembre
 
-**Vale il preventivo mandato l'8 settembre**, € 2.420 IVA inclusa, acconto € 726. Il servizio
-è il welcome event di venerdì 25, 18:00-23:00, e il preventivo lo copre.
+**Vale il prezzo del preventivo mandato l'8 settembre: € 2.420 IVA inclusa, acconto € 726.**
+Su richiesta di Girolamo è stato rifatto **solo il programma**, allineato allo schema del
+venerdì del cliente. Il documento adesso descrive esattamente il servizio che si farà.
+
+Cosa cambia rispetto alla versione mandata, a parità di prezzo:
+
+- **nove punti di carico invece di undici**: spariscono Villa Pitiana e Le Siepi/Montanino,
+  quei due ospiti sono a Casalino (18) e a I Trebbiali (3);
+- **tre corse di raccolta e tre di rientro** invece di quattro e quattro;
+- gli orari del cliente, con **due partenze anticipate di un quarto d'ora**: il Mezzo 2 alle
+  17:10 invece che alle 17:25, perché cinque fermate in 35 minuti non tengono, e la seconda
+  corsa del Mezzo 1 alle 17:20 invece che alle 17:35, perché sono 21 persone a due fermate;
+- **Rovai e Casalino invertiti** all'andata: Casalino è a tre minuti dalla location ed è la
+  fermata da 18 ospiti, servirla per ultima tiene quelle 18 persone a bordo tre minuti invece
+  di venti. Al rientro l'ordine resta quello naturale;
+- la **cena dei due conducenti** in tabella con la dicitura *a carico vostro*, come vuole la
+  regola della casa. Non è un addebito: è la voce che dice al cliente che se ne occupa lui.
+  Se Girolamo preferisce toglierla, si cancella la terza riga di `price_rows` e si rigenera;
+- la riga dei «più di 52 ospiti» riscritta sulla capienza della singola corsa, che è il limite
+  vero quando le corse sono sfalsate;
+- scritto che **alle 23:00 partono 33 ospiti sui 50** e gli ultimi 17 restano alla festa fino
+  alle 23:35.
+
+Il servizio è più leggero di quello quotato l'8 settembre — due punti e due corse in meno, si
+parte più tardi e si finisce prima — quindi a € 2.420 il lavoro sta in piedi bene.
 
 Resta da fare:
 
-1. **Concordare i due anticipi di orario** delle corse (17:10 e 17:20 invece di 17:25 e 17:35)
-   e far presente che al rientro delle 23:00 partono 33 ospiti sui 50.
-2. **Riconcordare con Francesco** il costo del secondo mezzo.
-3. **Farsi confermare la posizione** di Podere la Romola e Loc. Giusti: 18 ospiti sui 50.
-4. **Bloccare i due mezzi** per la sera del 25.
-5. La validità resta il **15 settembre**: dopo va riemesso, e sotto i dieci giorni la
+1. **Riconcordare con Francesco** il costo del secondo mezzo.
+2. **Farsi confermare la posizione** di Podere la Romola e Loc. Giusti: 18 ospiti sui 50.
+3. **Bloccare i due mezzi** per la sera del 25.
+4. La validità resta il **15 settembre**: dopo va riemesso, e sotto i dieci giorni la
    cancellazione passa al 70%.
-
-Se si vuole allineare il programma del preventivo allo schema vero — 9 punti di carico e tre
-corse invece di undici e quattro — basta cambiare la sezione *Il servizio* nello script e
-rigenerare, tenendo il prezzo dov'è.
