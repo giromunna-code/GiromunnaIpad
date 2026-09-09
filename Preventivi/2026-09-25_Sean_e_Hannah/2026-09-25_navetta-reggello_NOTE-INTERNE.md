@@ -198,10 +198,20 @@ sfora l'02:00.
 ## Stato — 9 settembre
 
 **Vale il prezzo del preventivo mandato l'8 settembre: € 2.420 IVA inclusa, acconto € 726.**
-Su richiesta di Girolamo è stato rifatto **solo il programma**, allineato allo schema del
-venerdì del cliente. Il documento adesso descrive esattamente il servizio che si farà.
+Su richiesta di Girolamo è stato rifatto il programma, allineato allo schema del venerdì del
+cliente, e adesso il documento include anche **l'IBAN e i dati bancari completi**, così il
+cliente può pagare l'acconto senza aspettare un secondo messaggio.
 
-Cosa cambia rispetto alla versione mandata, a parità di prezzo:
+Cosa dice il documento in vigore, oltre al programma allineato (vedi sotto):
+
+- **Coordinate bancarie in chiaro** nella sezione Pagamento: bonifico intestato a Munna
+  Girolamo Giuseppe, IBAN IT59 O053 4137 0700 0000 0034 24, BIC/SWIFT BAPPIT21S05, causale
+  con nome cliente e riferimento GM-2026-0925-REGGELLO. Prima diceva solo «le coordinate
+  bancarie vengono inviate con la richiesta di conferma»: adesso non serve un secondo giro.
+- Il testo di chiusura non promette più di mandare l'IBAN in un secondo momento: dice che è
+  già sopra e che la conferma arriva appena l'acconto risulta accreditato.
+
+Cosa cambia rispetto alla versione mandata l'8 settembre, a parità di prezzo:
 
 - **nove punti di carico invece di undici**: spariscono Villa Pitiana e Le Siepi/Montanino,
   quei due ospiti sono a Casalino (18) e a I Trebbiali (3);
@@ -213,15 +223,21 @@ Cosa cambia rispetto alla versione mandata, a parità di prezzo:
   fermata da 18 ospiti, servirla per ultima tiene quelle 18 persone a bordo tre minuti invece
   di venti. Al rientro l'ordine resta quello naturale;
 - la **cena dei due conducenti** in tabella con la dicitura *a carico vostro*, come vuole la
-  regola della casa. Non è un addebito: è la voce che dice al cliente che se ne occupa lui.
-  Se Girolamo preferisce toglierla, si cancella la terza riga di `price_rows` e si rigenera;
-- la riga dei «più di 52 ospiti» riscritta sulla capienza della singola corsa, che è il limite
-  vero quando le corse sono sfalsate;
+  regola della casa;
+- la riga dei «più di 52 ospiti» riscritta sulla capienza della singola corsa;
 - scritto che **alle 23:00 partono 33 ospiti sui 50** e gli ultimi 17 restano alla festa fino
   alle 23:35.
 
 Il servizio è più leggero di quello quotato l'8 settembre — due punti e due corse in meno, si
 parte più tardi e si finisce prima — quindi a € 2.420 il lavoro sta in piedi bene.
+
+### Sulla wedding planner (9 settembre)
+
+Ha contattato Girolamo offrendo di girare i contatti; risentiti per telefono, lei ha detto che
+non può aggiungere una sua percentuale visto che il preventivo era già stato fatto
+direttamente con Sean e Hannah. **Girolamo ha deciso di non riconoscerle nulla di tasca sua**:
+nessun impatto sul prezzo del cliente. Da valutare solo se in futuro porta altri lavori, nel
+qual caso la commissione andrebbe messa a preventivo fin dall'inizio.
 
 Resta da fare:
 

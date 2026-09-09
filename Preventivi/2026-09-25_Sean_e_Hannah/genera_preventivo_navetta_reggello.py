@@ -182,9 +182,14 @@ IT = dict(
         ("Saldo, entro il 20 settembre 2026", "€ 1.694,00", ""),
     ],
     pay_text=(
-        "Il saldo è dovuto entro il 20 settembre 2026, cinque giorni prima del servizio. Le coordinate bancarie "
-        "vengono inviate con la richiesta di conferma; <b>la prenotazione diventa definitiva quando l'acconto "
-        "arriva sul nostro conto</b>, non prima. Per l'intero importo viene emessa regolare fattura."
+        "Il saldo è dovuto entro il 20 settembre 2026, cinque giorni prima del servizio. <b>La prenotazione "
+        "diventa definitiva quando l'acconto arriva sul nostro conto</b>, non prima. Per l'intero importo viene "
+        "emessa regolare fattura."
+    ),
+    bank=(
+        "<b>Coordinate bancarie.</b> Bonifico bancario intestato a Munna Girolamo Giuseppe — "
+        "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05. Come causale indicate il vostro nome e il "
+        "riferimento " + RIF + "."
     ),
     validita=(
         "<b>Validità.</b> Questo preventivo è valido fino al 15 settembre 2026. La data è vicina: fino ad allora "
@@ -219,9 +224,9 @@ IT = dict(
         "<b>I vostri dati di fatturazione.</b>",
     ],
     closing=(
-        "Restiamo a disposizione per organizzare il servizio. Alla conferma vi invieremo le coordinate bancarie e, "
-        "sotto data, i nomi e i numeri diretti dei due autisti insieme all'orario definitivo di ritiro per ogni "
-        "indirizzo.<br/><br/>"
+        "Restiamo a disposizione per organizzare il servizio. Le coordinate bancarie per l'acconto sono qui sopra: "
+        "appena arriva vi confermiamo la prenotazione, e sotto data vi mandiamo i nomi e i numeri diretti dei due "
+        "autisti insieme all'orario definitivo di ritiro per ogni indirizzo.<br/><br/>"
         "Cordiali saluti,<br/>"
         "Girolamo Munna — GiroMunna NCC, Toscana · +39 335 587 4744 · info@giromunna.com"
     ),
@@ -352,9 +357,13 @@ EN = dict(
         ("Balance, by 20 September 2026", "€ 1,694.00", ""),
     ],
     pay_text=(
-        "The balance is due by 20 September 2026, five days before the service. Bank details are sent with the "
-        "confirmation request; <b>the booking becomes firm when the deposit reaches our account</b>, not before. "
-        "A tax invoice is issued for the full amount."
+        "The balance is due by 20 September 2026, five days before the service. <b>The booking becomes firm when "
+        "the deposit reaches our account</b>, not before. A tax invoice is issued for the full amount."
+    ),
+    bank=(
+        "<b>Bank details.</b> Bank transfer to Munna Girolamo Giuseppe — "
+        "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05. Please quote your name and reference " +
+        RIF + " as the payment reference."
     ),
     validita=(
         "<b>Validity.</b> This quotation is valid until 15 September 2026. The date is close: we hold the two "
@@ -389,9 +398,9 @@ EN = dict(
         "<b>Your billing details.</b>",
     ],
     closing=(
-        "We are at your disposal to organise the service. On confirmation we will send the bank details and, "
-        "closer to the date, the names and direct numbers of the two drivers together with the final pick-up time "
-        "for each address.<br/><br/>"
+        "We are at your disposal to organise the service. The bank details for the deposit are above: as soon as "
+        "it arrives we will confirm the booking, and closer to the date send the names and direct numbers of the "
+        "two drivers together with the final pick-up time for each address.<br/><br/>"
         "Kind regards,<br/>"
         "Girolamo Munna — GiroMunna NCC, Tuscany · +39 335 587 4744 · info@giromunna.com"
     ),
@@ -591,6 +600,7 @@ def build(lang, cliente, out):
     F.append(yt)
     F.append(Spacer(1, 6))
     F.append(Paragraph(L["pay_text"], S["small"]))
+    F.append(Paragraph(L["bank"], S["small"]))
     F.append(Paragraph(L["validita"], S["small"]))
     F.append(Paragraph(L["cancellazione"], S["small"]))
 

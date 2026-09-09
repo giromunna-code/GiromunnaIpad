@@ -11,12 +11,12 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
   le mail ai clienti e qualsiasi altro materiale destinato all'esterno: i clienti scrivono
   spesso in inglese, ma la versione che Girolamo deve poter leggere è quella italiana.
   Nessuna delle due sostituisce l'altra.
-- **Mai toccare Gmail e mai inviare niente.** Nessuna bozza in Gmail, nessun invio, in nessun
-  canale — a mandare è sempre e solo Girolamo.
-- **I testi dei messaggi ai clienti (WhatsApp, SMS, o simili) si scrivono in chat, su
-  richiesta.** Italiano e inglese, pronti da incollare e mandare. Non è una bozza salvata da
-  qualche parte: è testo in chat che Girolamo legge, eventualmente aggiusta e incolla lui
-  stesso nell'app che usa.
+- **Mai toccare Gmail: nessuna bozza, nessun invio, in nessun caso.** Non si usano gli
+  strumenti di Gmail per creare bozze o mandare messaggi — questo vale sempre, senza eccezioni.
+- **I testi per i clienti si scrivono in chat, su richiesta — mail comprese, non solo
+  WhatsApp o SMS.** Italiano e inglese, pronti da copiare e incollare. Non sono bozze salvate
+  da qualche parte: è testo in chat che Girolamo legge, eventualmente aggiusta, e incolla e
+  invia lui stesso nell'app che usa — Gmail compreso.
 
 ## Dati aziendali
 
@@ -69,6 +69,12 @@ I preventivi si generano come PDF nel formato della casa: logo circolare, verde 
 Struttura: titolo e riferimento, *Il mezzo*, *Il servizio* (tabella per data), *Il prezzo*
 (importi al netto con `+ IVA 10%` e totale IVA inclusa), *Incluso* / *Non incluso*,
 *Pagamento* (acconto 30% alla conferma, saldo), *Note*.
+
+**Il preventivo contiene sempre l'IBAN e i dati bancari completi**, nella sezione *Pagamento*:
+bonifico intestato a Munna Girolamo Giuseppe, IBAN e BIC/SWIFT (vedi tabella qui sopra),
+causale con nome cliente e riferimento del preventivo. Non si rimanda l'invio delle
+coordinate a un momento successivo: il cliente deve poter pagare l'acconto avendo in mano
+solo il preventivo, senza aspettare un secondo messaggio.
 
 Il riferimento segue lo schema `GM-AAAA-MMGG-XX`, dove `MMGG` è la data del primo servizio
 e `XX` sono le iniziali del cliente o della struttura.
