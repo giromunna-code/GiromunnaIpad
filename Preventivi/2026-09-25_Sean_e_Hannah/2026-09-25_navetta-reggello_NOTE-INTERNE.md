@@ -191,11 +191,27 @@ mezzo e una serata che finisce quasi due ore più tardi. Gli € 1.100 del vener
 cioè **€ 2.900-3.000 netti, € 3.190-3.300 IVA inclusa** per i due mezzi, più i € 250 per
 mezzo se il rientro slitta oltre le 02:00.
 
-## Stato
+## Stato — 9 settembre
 
-Girolamo risponde che **la disponibilità è solo quella del preventivo** e che la conferma la
-dà l'acconto. Il piano del sabato resta qui archiviato: se lo vorrà quotare, i numeri sopra
-sono già pronti.
+**Girolamo ha risposto al cliente che è disponibile solo il 25.** Il sabato non si quota. Il
+piano del sabato resta archiviato qui: se la richiesta tornasse, i numeri sopra sono già
+pronti (€ 1.450-1.500 netti a mezzo, preventivo a sé con riferimento GM-2026-0926-SH).
+
+Sul venerdì resta aperto:
+
+1. **I numeri per indirizzo del 25.** Quelli in mano sono i 50 della richiesta iniziale; il
+   documento del sabato ne conta 54. La prima corsa del Mezzo 1 è a 24 posti su 25 se i
+   numeri nuovi valgono anche per il venerdì.
+2. **La riga dei 52 ospiti** fra le voci non incluse, da riformulare sulla capienza della
+   singola corsa.
+3. **Il costo del secondo mezzo con Francesco**, ancora da concordare.
+4. **Bloccare i due mezzi** per la sera del 25.
+5. **La validità scade il 15 settembre** e l'acconto è di € 726,00: senza acconto entro
+   quella data il preventivo va riemesso, e sotto i dieci giorni cambia anche la fascia di
+   cancellazione.
+
+Da tenere presente: il cliente chiama **il sabato** il giorno del matrimonio. Se il venerdì
+per loro era il contorno, la risposta sulla disponibilità può chiudere l'intera richiesta.
 
 ## Cosa cambia sul preventivo del venerdì: niente
 
