@@ -173,8 +173,11 @@ non questo schema a tre corse.
    in location **dalle 15:30 all'01:00, nove ore e mezza**, ultimo rientro all'01:55.
 4. **Impegno reale del sabato:** partenza dalla rimessa verso le 13:30, ritorno in rimessa
    intorno alle **03:00**. Sono circa **13,5 ore per conducente**, contro le 10 del venerdì.
-5. **Rientro dopo le 02:00.** I mezzi lasciano l'ultimo indirizzo verso le 01:55 e rientrano
-   in rimessa dopo le 02:00: scatta la condizione dei **€ 250,00 per mezzo**.
+5. **Rientro al limite delle 02:00.** L'ultimo ospite è a casa verso le **01:55**: cinque
+   minuti dentro la soglia, quindi la condizione dei **€ 250,00 per mezzo non scatta** sul
+   piano come è scritto. Basta però un ritardo qualsiasi perché scatti, e in rimessa i mezzi
+   tornano comunque verso le 03:00. Va messa a preventivo come condizione, non come importo
+   fisso.
 6. **All'01:00 non partono tutti.** I due mezzi portano via 37 ospiti su 54: gli ultimi 17
    restano in location fino alle 01:35 circa. Va detto, perché è l'unico punto del piano che
    il cliente potrebbe non aver messo in conto.
@@ -183,11 +186,47 @@ non questo schema a tre corse.
    sono due notti consecutive per gli stessi due autisti.
 
 **Il sabato non si può quotare al prezzo del venerdì.** Sono 3,5 ore in più di impegno per
-mezzo, con rientro oltre le 02:00. Partendo dagli € 1.100 del venerdì, il sabato non sta
-sotto i € 1.400-1.500 netti a mezzo, più i € 250 per mezzo del rientro notturno.
+mezzo e una serata che finisce quasi due ore più tardi. Gli € 1.100 del venerdì valgono circa
+€ 110 all'ora di impegno: sulle 13,5 ore del sabato fanno **€ 1.450-1.500 netti a mezzo**,
+cioè **€ 2.900-3.000 netti, € 3.190-3.300 IVA inclusa** per i due mezzi, più i € 250 per
+mezzo se il rientro slitta oltre le 02:00.
 
 ## Stato
 
 Girolamo risponde che **la disponibilità è solo quella del preventivo** e che la conferma la
 dà l'acconto. Il piano del sabato resta qui archiviato: se lo vorrà quotare, i numeri sopra
 sono già pronti.
+
+## Cosa cambia sul preventivo del venerdì: niente
+
+Il documento del sabato non tocca il prezzo del venerdì. Le due corse per mezzo sono già
+dentro gli € 1.100: il preventivo dice *prezzo fisso, quattro corse di raccolta e quattro di
+rientro comprese*. Una seconda corsa non è un supplemento, è il modo in cui il servizio è
+costruito.
+
+**Regge anche se il gruppo passa da 50 a 54.** Sul venerdì nessuno viaggia tutto insieme e le
+corse sono sfalsate. Riportando i numeri del sabato sugli indirizzi del venerdì, la corsa più
+carica diventa la prima del Mezzo 1: Casalino sale da 17 a 21 ospiti e con i 3 di Rovai fa
+**24 su 25 posti**. Ci sta, ma con un posto di margine.
+
+Due cose da sistemare in quel caso, e nessuna delle due tocca l'importo:
+
+- La riga fra le voci non incluse — *«più di 52 ospiti, capienza complessiva dei due mezzi»* —
+  è scritta come se viaggiassero tutti insieme. Con le corse sfalsate il limite vero è la
+  capienza della singola corsa: va riformulata.
+- Servono i **numeri per indirizzo del venerdì**, non solo quelli del sabato. La prima corsa
+  del Mezzo 1 è a un posto dal pieno: se al Casalino sono 22 invece di 21, quella corsa va
+  spezzata e il piano orario cambia.
+
+## Sul piano del sabato: due orari tirati
+
+Non è un problema di prezzo, ma se il sabato si fa vanno detti al cliente.
+
+- **Corsa C del Bus 2**: sei fermate fra le 14:45 e le 15:30. Sono 45 minuti per Via dei
+  Glicini, Via Fornacina, Podere Giusti, S. Giovenale, Via di Fano e Hotel Archimede, più il
+  tratto fino in location: sette minuti a fermata, salite comprese. Su strade strette non
+  tiene.
+- **Il Bus 1 ha dieci minuti di respiro**: arriva in location alle 14:55 con la corsa B e
+  riparte alle 15:05 per prendere Casalino e Rovai ed essere di ritorno alle 15:30.
+
+Con i numeri veri per indirizzo si aggiustano spostando indietro la partenza di venti minuti.
