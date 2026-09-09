@@ -111,11 +111,15 @@ di matrimonio con rientri dopo la mezzanotte.
 
 ---
 
-# Il piano del sabato mandato dal cliente (9 settembre)
+# Il piano aggiornato mandato dal cliente (9 settembre)
 
 Documento del cliente: `cliente_Loading_Points_Saturday.pdf` — «Guest Pickup — Loading Points
-& Timings · SATURDAY — WEDDING DAY». Arrivato con la domanda se conosciamo qualcuno
-disponibile **il sabato**.
+& Timings · SATURDAY — WEDDING DAY».
+
+**Non è un secondo servizio: è lo stesso servizio del 25.** Il 25 settembre è venerdì e la
+festa si chiude alle 2 del mattino di sabato, ed è per questo che il cliente ha intestato il
+foglio al sabato. Quello che è cambiato non è il giorno, sono **gli orari e il numero degli
+ospiti**.
 
 ## Cosa chiede
 
@@ -152,97 +156,73 @@ location all'01:00.**
 | Bus 2 | C | Hotel Archimede → Via di Fano → S. Giovenale → Podere Giusti → Via Fornacina → Via dei Glicini | 20 | 01:00 | ~01:40 |
 | Bus 1 | B | I Trebbiali → Podere la Romola | 17 | ~01:35 | ~01:55 |
 
-## Compatibilità con il servizio
+## Cosa cambia rispetto al preventivo mandato
 
-**Sui mezzi il piano regge.** Le corse sono sfalsate e la punta massima è di 20 passeggeri
-su una corsa: 17 e 17 sul Bus 1, 20 sul Bus 2. I due minibus del preventivo (25 e 27 posti)
-bastano, i 54 ospiti non sono un problema perché non viaggiano mai tutti insieme. Il limite
-dei 52 posti scritto fra le voci non incluse riguarda il trasporto in un'unica soluzione,
-non questo schema a tre corse.
+| | Preventivo GM-2026-0925-REGGELLO | Piano nuovo del cliente |
+|---|---|---|
+| Ospiti | 50 | **54** |
+| Punti di carico | 11 | 10 |
+| Arrivo in location | entro le 18:00 | **entro le 15:30** |
+| Prima partenza dei mezzi | 16:20 | **14:35** |
+| Mezzi fermi in location | 18:00-23:00, 5 ore | **15:30-01:00, 9 ore e mezza** |
+| Partenza dei rientri | 23:00 | **01:00** |
+| Ultimo ospite a casa | 00:25 | **~01:55** |
+| Corse | 4 andata + 4 rientro | 3 andata + 3 rientro |
+| Impegno per conducente | ~10 ore (15:15 → 01:30) | **~13,5 ore (13:30 → 03:00)** |
 
-**Ma non è il servizio del preventivo. È un secondo servizio, su un altro giorno.**
+Le corse sono meno, ma non è quello che conta: il mezzo è bloccato **tre ore e mezza in più**
+e la serata finisce un'ora e mezza più tardi, in piena notte.
 
-1. **Giorno diverso.** Il preventivo GM-2026-0925-REGGELLO è per **venerdì 25 settembre**.
-   Questo documento è intestato «SATURDAY — WEDDING DAY», quindi **sabato 26**. Da chiarire
-   subito: il venerdì è un evento a parte e ne vogliono due, oppure il giorno del matrimonio
-   è il sabato e la richiesta di partenza era sbagliata? Cambia tutto, compreso a quale
-   giorno si riferisce l'acconto.
-2. **Ospiti 54 invece di 50**, su 10 punti di carico invece di 11.
-3. **Orari molto più lunghi.** Il venerdì: raccolta dalle 16:20, mezzi in location dalle
-   18:00 alle 23:00, ultimo rientro alle 00:25. Il sabato: raccolta dalle 14:35, mezzi fermi
-   in location **dalle 15:30 all'01:00, nove ore e mezza**, ultimo rientro all'01:55.
-4. **Impegno reale del sabato:** partenza dalla rimessa verso le 13:30, ritorno in rimessa
-   intorno alle **03:00**. Sono circa **13,5 ore per conducente**, contro le 10 del venerdì.
-5. **Rientro al limite delle 02:00.** L'ultimo ospite è a casa verso le **01:55**: cinque
-   minuti dentro la soglia, quindi la condizione dei **€ 250,00 per mezzo non scatta** sul
-   piano come è scritto. Basta però un ritardo qualsiasi perché scatti, e in rimessa i mezzi
-   tornano comunque verso le 03:00. Va messa a preventivo come condizione, non come importo
-   fisso.
-6. **All'01:00 non partono tutti.** I due mezzi portano via 37 ospiti su 54: gli ultimi 17
-   restano in location fino alle 01:35 circa. Va detto, perché è l'unico punto del piano che
-   il cliente potrebbe non aver messo in conto.
-7. **Due giorni di fila.** Se vogliono venerdì *e* sabato, fra il rientro del venerdì
-   (~01:30) e la partenza del sabato (~13:30) restano dodici ore di riposo: si può fare, ma
-   sono due notti consecutive per gli stessi due autisti.
+**Sui posti il piano regge**: le tre corse portano 17, 20 e 17 passeggeri su mezzi da 25 e 27
+posti. I 54 ospiti non sono un problema perché non viaggiano mai tutti insieme — resta da
+riformulare la riga fra le voci non incluse, quella dei «più di 52 ospiti», che è scritta come
+se il trasporto fosse in un'unica soluzione.
 
-**Il sabato non si può quotare al prezzo del venerdì.** Sono 3,5 ore in più di impegno per
-mezzo e una serata che finisce quasi due ore più tardi. Gli € 1.100 del venerdì valgono circa
-€ 110 all'ora di impegno: sulle 13,5 ore del sabato fanno **€ 1.450-1.500 netti a mezzo**,
-cioè **€ 2.900-3.000 netti, € 3.190-3.300 IVA inclusa** per i due mezzi, più i € 250 per
-mezzo se il rientro slitta oltre le 02:00.
+## Conseguenza sul prezzo: il preventivo va rifatto
+
+Gli € 1.100 a mezzo valgono circa **€ 110 all'ora** sulle dieci ore del servizio quotato.
+Sulle 13,5 ore del piano nuovo fanno **€ 1.450-1.500 netti a mezzo**:
+
+| | Preventivo mandato | Da rifare |
+|---|---|---|
+| Netto a mezzo | € 1.100,00 | € 1.450-1.500 |
+| Totale netto | € 2.200,00 | € 2.900-3.000 |
+| **Totale IVA 10% inclusa** | **€ 2.420,00** | **€ 3.190-3.300** |
+| Acconto 30% | € 726,00 | € 957-990 |
+
+Sono circa **€ 800 in più**. Il punto delicato è che **la conferma la dà l'acconto**: se
+arrivano i € 726 sul preventivo attuale, il servizio è impegnato a quel prezzo con orari che
+costano tre ore e mezza in più a mezzo. La versione aggiornata va mandata **prima**
+dell'acconto.
+
+## Altri punti da mettere nel preventivo aggiornato
+
+- **Rientro alle 02:00 esatte.** L'ultimo ospite è a casa verso le 01:55, cinque minuti dentro
+  la soglia: i € 250,00 per mezzo non scattano, ma basta un ritardo qualsiasi. Va tenuta come
+  condizione scritta; il prezzo sopra tiene già conto della notte.
+- **Cena dei due conducenti.** Tredici ore e mezza a cavallo dell'ora di cena: va indicata *a
+  carico vostro*, come vuole la regola della casa.
+- **All'01:00 non partono tutti.** I due mezzi portano via 37 ospiti su 54: gli ultimi 17
+  restano in location fino alle 01:35 circa. È l'unico punto del piano che il cliente
+  potrebbe non aver messo in conto.
+- **Il costo del secondo mezzo con Francesco** va riconcordato: adesso è una notte più lunga.
+- **Due orari tirati nel piano del cliente.** La corsa C del Bus 2 fa sei fermate fra le 14:45
+  e le 15:30 — sette minuti a fermata, salite comprese, su strade strette non tiene. E il Bus 1
+  ha dieci minuti fra l'arrivo delle 14:55 e la ripartenza delle 15:05. Si sistemano
+  anticipando la partenza di venti minuti.
 
 ## Stato — 9 settembre
 
-**Girolamo ha risposto al cliente che è disponibile solo il 25.** Il sabato non si quota. Il
-piano del sabato resta archiviato qui: se la richiesta tornasse, i numeri sopra sono già
-pronti (€ 1.450-1.500 netti a mezzo, preventivo a sé con riferimento GM-2026-0926-SH).
+Girolamo ha risposto al cliente che **è disponibile solo il 25**, che è appunto il giorno di
+questo piano.
 
-Sul venerdì resta aperto:
+Resta da fare:
 
-1. **I numeri per indirizzo del 25.** Quelli in mano sono i 50 della richiesta iniziale; il
-   documento del sabato ne conta 54. La prima corsa del Mezzo 1 è a 24 posti su 25 se i
-   numeri nuovi valgono anche per il venerdì.
-2. **La riga dei 52 ospiti** fra le voci non incluse, da riformulare sulla capienza della
-   singola corsa.
-3. **Il costo del secondo mezzo con Francesco**, ancora da concordare.
-4. **Bloccare i due mezzi** per la sera del 25.
-5. **La validità scade il 15 settembre** e l'acconto è di € 726,00: senza acconto entro
-   quella data il preventivo va riemesso, e sotto i dieci giorni cambia anche la fascia di
-   cancellazione.
-
-Da tenere presente: il cliente chiama **il sabato** il giorno del matrimonio. Se il venerdì
-per loro era il contorno, la risposta sulla disponibilità può chiudere l'intera richiesta.
-
-## Cosa cambia sul preventivo del venerdì: niente
-
-Il documento del sabato non tocca il prezzo del venerdì. Le due corse per mezzo sono già
-dentro gli € 1.100: il preventivo dice *prezzo fisso, quattro corse di raccolta e quattro di
-rientro comprese*. Una seconda corsa non è un supplemento, è il modo in cui il servizio è
-costruito.
-
-**Regge anche se il gruppo passa da 50 a 54.** Sul venerdì nessuno viaggia tutto insieme e le
-corse sono sfalsate. Riportando i numeri del sabato sugli indirizzi del venerdì, la corsa più
-carica diventa la prima del Mezzo 1: Casalino sale da 17 a 21 ospiti e con i 3 di Rovai fa
-**24 su 25 posti**. Ci sta, ma con un posto di margine.
-
-Due cose da sistemare in quel caso, e nessuna delle due tocca l'importo:
-
-- La riga fra le voci non incluse — *«più di 52 ospiti, capienza complessiva dei due mezzi»* —
-  è scritta come se viaggiassero tutti insieme. Con le corse sfalsate il limite vero è la
-  capienza della singola corsa: va riformulata.
-- Servono i **numeri per indirizzo del venerdì**, non solo quelli del sabato. La prima corsa
-  del Mezzo 1 è a un posto dal pieno: se al Casalino sono 22 invece di 21, quella corsa va
-  spezzata e il piano orario cambia.
-
-## Sul piano del sabato: due orari tirati
-
-Non è un problema di prezzo, ma se il sabato si fa vanno detti al cliente.
-
-- **Corsa C del Bus 2**: sei fermate fra le 14:45 e le 15:30. Sono 45 minuti per Via dei
-  Glicini, Via Fornacina, Podere Giusti, S. Giovenale, Via di Fano e Hotel Archimede, più il
-  tratto fino in location: sette minuti a fermata, salite comprese. Su strade strette non
-  tiene.
-- **Il Bus 1 ha dieci minuti di respiro**: arriva in location alle 14:55 con la corsa B e
-  riparte alle 15:05 per prendere Casalino e Rovai ed essere di ritorno alle 15:30.
-
-Con i numeri veri per indirizzo si aggiustano spostando indietro la partenza di venti minuti.
+1. **Rifare il preventivo sugli orari nuovi** (15:30-01:00, 54 ospiti, 10 punti di carico) e
+   mandarlo prima che arrivi l'acconto.
+2. **Riconcordare con Francesco** il costo del secondo mezzo sulla notte lunga.
+3. **Farsi confermare i numeri per indirizzo**, che qui sono 54 contro i 50 della richiesta
+   iniziale.
+4. **Bloccare i due mezzi** per il 25.
+5. **La validità del preventivo attuale scade il 15 settembre**: la versione aggiornata
+   riparte con una validità sua.
