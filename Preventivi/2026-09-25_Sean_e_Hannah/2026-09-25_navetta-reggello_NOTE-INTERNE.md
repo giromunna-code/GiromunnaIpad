@@ -7,14 +7,14 @@ raccolta e quattro di rientro, undici punti di carico.
 
 File nella cartella:
 
-- `..._rev1_IT.pdf` e `..._rev1_EN.pdf` — la **versione dell'8 settembre**, quella mandata al
-  cliente: orari 18:00-23:00, 50 ospiti, € 2.420 IVA inclusa.
-- `..._rev2_IT.pdf` e `..._rev2_EN.pdf` — la **revisione 2 del 9 settembre**, sugli orari veri
-  del cliente: 15:30-01:00, 54 ospiti, € 3.190 IVA inclusa. È questa la versione da mandare.
-- `cliente_Loading_Points_Saturday.pdf` — lo schema dei punti di carico del cliente.
-- `genera_preventivo_navetta_reggello.py` — genera la revisione 2 nelle due lingue.
-- `preventivo_navetta_matrimonio_reggello_25_settembre_2026.html` — la pagina web bilingue,
-  aggiornata alla revisione 2.
+- `GiroMunna_Preventivo_Navetta_Matrimonio_Reggello_25_settembre_2026_IT.pdf` e `..._EN.pdf` —
+  **il preventivo in vigore**, mandato l'8 settembre: € 2.420 IVA inclusa, acconto € 726.
+- `cliente_Loading_Points_Friday.pdf` — lo schema del cliente per il **venerdì 25, welcome
+  event**: 9 punti di carico, 50 ospiti, arrivo 18:00, partenza 23:00. È il nostro servizio.
+- `cliente_Loading_Points_Saturday.pdf` — lo schema del **sabato 26, giorno del matrimonio**:
+  10 punti, 54 ospiti, 15:30-01:00. Non lo facciamo.
+- `genera_preventivo_navetta_reggello.py` — rigenera i due PDF in vigore.
+- `preventivo_navetta_matrimonio_reggello_25_settembre_2026.html` — la pagina web bilingue.
 
 Tutto dentro `Preventivi/2026-09-25_Sean_e_Hannah/`.
 
@@ -115,144 +115,98 @@ di matrimonio con rientri dopo la mezzanotte.
 
 ---
 
-# Il piano aggiornato mandato dal cliente (9 settembre)
+# I due schemi mandati dal cliente (9 settembre)
 
-Documento del cliente: `cliente_Loading_Points_Saturday.pdf` — «Guest Pickup — Loading Points
-& Timings · SATURDAY — WEDDING DAY».
+Il cliente ha mandato due fogli di punti di carico, e sono **due eventi diversi in due giorni
+diversi**:
 
-**Non è un secondo servizio: è lo stesso servizio del 25.** Il 25 settembre è venerdì e la
-festa si chiude alle 2 del mattino di sabato, ed è per questo che il cliente ha intestato il
-foglio al sabato. Quello che è cambiato non è il giorno, sono **gli orari e il numero degli
-ospiti**.
-
-## Cosa chiede
-
-**10 punti di carico · 54 ospiti · arrivo in location entro le 15:30 · partenza dalla
-location all'01:00.**
-
-| # | Punto di carico | Ospiti |
+| | `cliente_Loading_Points_Friday.pdf` | `cliente_Loading_Points_Saturday.pdf` |
 |---|---|---|
-| 1 | Hotel Archimede, Via Ponte di Casalino 68 | 7 |
-| 2 | Podere Casalino, Via Ponte di Casalino 66 | 14 |
-| 3 | Podere Giusti, Loc. Giusti 105 | 5 |
-| 4 | Podere la Romola, Loc. Podere la Romola 78 | 14 |
-| 5 | Rovai, Loc. Rovai 26, Pietrapiana | 3 |
-| 6 | La Terrazza di Reggello, Via di Fano 6 | 2 |
-| 7 | Appartamento Olivella, Via Fornacina 32 | 2 |
-| 8 | Via dei Glicini 14, Poggio ai Giubbiani | 2 |
-| 9 | I Trebbiali, Loc. I Trebbiali 116 | 3 |
-| 10 | San Giovenale, Loc. S. Giovenale 55 | 2 |
-| | **Totale** | **54** |
+| Intestazione | FRIDAY — WELCOME EVENT | SATURDAY — WEDDING DAY |
+| Giorno | venerdì 25 settembre | sabato 26 settembre |
+| Punti di carico | 9 | 10 |
+| Ospiti | 50 | 54 |
+| Orari | arrivo 18:00, partenza 23:00 | arrivo 15:30, partenza 01:00 |
+| Ultimo rientro | ~23:55 | ~01:55 |
+| | **è il nostro servizio** | non lo facciamo |
 
-**Andata, arrivo previsto 15:30**
+Girolamo ha risposto che è disponibile **solo il 25**, quindi il sabato resta fuori.
 
-| Mezzo | Corsa | Percorso | Ospiti | Partenza | Arrivo |
-|---|---|---|---|---|---|
-| Bus 1 | B | I Trebbiali → Podere la Romola | 17 | ~14:35 | 14:55 |
-| Bus 2 | C | Via dei Glicini → Via Fornacina → Podere Giusti → S. Giovenale → Via di Fano → Hotel Archimede | 20 | ~14:45 | 15:30 |
-| Bus 1 | A | Podere Casalino → Rovai | 17 | ~15:05 | 15:30 |
+## Il venerdì 25: il preventivo mandato regge
 
-**Rientro, partenza dalla location all'01:00**
-
-| Mezzo | Corsa | Percorso | Ospiti | Partenza | A casa |
-|---|---|---|---|---|---|
-| Bus 1 | A | Podere Casalino → Rovai | 17 | 01:00 | ~01:25 |
-| Bus 2 | C | Hotel Archimede → Via di Fano → S. Giovenale → Podere Giusti → Via Fornacina → Via dei Glicini | 20 | 01:00 | ~01:40 |
-| Bus 1 | B | I Trebbiali → Podere la Romola | 17 | ~01:35 | ~01:55 |
-
-## Cosa cambia rispetto al preventivo mandato
-
-| | Preventivo GM-2026-0925-REGGELLO | Piano nuovo del cliente |
+| | Preventivo mandato | Schema vero del venerdì |
 |---|---|---|
-| Ospiti | 50 | **54** |
-| Punti di carico | 11 | 10 |
-| Arrivo in location | entro le 18:00 | **entro le 15:30** |
-| Prima partenza dei mezzi | 16:20 | **14:35** |
-| Mezzi fermi in location | 18:00-23:00, 5 ore | **15:30-01:00, 9 ore e mezza** |
-| Partenza dei rientri | 23:00 | **01:00** |
-| Ultimo ospite a casa | 00:25 | **~01:55** |
-| Corse | 4 andata + 4 rientro | 3 andata + 3 rientro |
-| Impegno per conducente | ~10 ore (15:15 → 01:30) | **~13,5 ore (13:30 → 03:00)** |
+| Ospiti | 50 | 50 |
+| Punti di carico | 11 | **9** |
+| Arrivo in location | entro le 18:00 | entro le 18:00 |
+| Mezzi in location | 18:00-23:00 | 18:00-23:00 |
+| Primo ritiro | 16:20 | **17:05** |
+| Corse | 4 andata + 4 rientro | **3 andata + 3 rientro** |
+| Ultimo ospite a casa | 00:25 | **~23:55** |
 
-Le corse sono meno, ma non è quello che conta: il mezzo è bloccato **tre ore e mezza in più**
-e la serata finisce un'ora e mezza più tardi, in piena notte.
+**Il servizio vero è più leggero di quello quotato**: due punti di carico in meno, due corse
+in meno, si parte 45 minuti più tardi e si finisce mezz'ora prima. Gli orari a preventivo —
+18:00-23:00 — sono esattamente quelli richiesti. Il preventivo non va toccato, e non c'è
+nessuna attesa fuori orario da addebitare: quella questione riguardava lo schema del sabato,
+che non facciamo.
 
-**Sui posti il piano regge**: le tre corse portano 17, 20 e 17 passeggeri su mezzi da 25 e 27
-posti. I 54 ospiti non sono un problema perché non viaggiano mai tutti insieme — resta da
-riformulare la riga fra le voci non incluse, quella dei «più di 52 ospiti», che è scritta come
-se il trasporto fosse in un'unica soluzione.
+**Punti di carico del venerdì:** Casalino, fermata unica per Hotel Archimede (3) e Podere
+Casalino, Via Ponte di Casalino 66 (15) = 18 · Podere Giusti (4) · Podere la Romola (14) ·
+Rovai (3) · La Terrazza di Reggello (2) · Appartamento Olivella (2) · Via dei Glicini (2) ·
+I Trebbiali (3) · S. Giovenale (2). Totale 50.
 
-## Conseguenza sul prezzo: il preventivo va rifatto
+Rispetto al preventivo spariscono **Villa Pitiana** e **Le Siepi/Montanino**: quei due ospiti
+sono adesso a Casalino e a I Trebbiali. Il totale resta 50.
 
-Gli € 1.100 a mezzo valgono circa **€ 110 all'ora** sulle dieci ore del servizio quotato.
-Sulle 13,5 ore del piano nuovo fanno **€ 1.450-1.500 netti a mezzo**:
+**Le corse:** Bus 1 corsa B, I Trebbiali → Podere la Romola, 17 ospiti, 17:05 → 17:25 · Bus 2
+corsa C, Via di Fano → S. Giovenale → Podere Giusti → Via Fornacina → Via dei Glicini, 12
+ospiti, 17:25 → 18:00 · Bus 1 corsa A, Casalino → Rovai, 21 ospiti, 17:35 → 18:00. Rientri
+dalle 23:00 con lo stesso schema: gli ultimi 17 di Podere la Romola e I Trebbiali partono
+alle 23:35 e sono a casa verso le 23:55.
 
-| | Preventivo mandato | Da rifare |
-|---|---|---|
-| Netto a mezzo | € 1.100,00 | € 1.450-1.500 |
-| Totale netto | € 2.200,00 | € 2.900-3.000 |
-| **Totale IVA 10% inclusa** | **€ 2.420,00** | **€ 3.190-3.300** |
-| Acconto 30% | € 726,00 | € 957-990 |
+**Sui posti nessun problema:** la corsa più carica è quella del Bus 1 con 21 ospiti su 25
+posti.
 
-Sono circa **€ 800 in più**. Il punto delicato è che **la conferma la dà l'acconto**: se
-arrivano i € 726 sul preventivo attuale, il servizio è impegnato a quel prezzo con orari che
-costano tre ore e mezza in più a mezzo. La versione aggiornata va mandata **prima**
-dell'acconto.
+## Due orari da sistemare con il cliente
 
-## Altri punti da mettere nel preventivo aggiornato
+Non cambiano il prezzo, ma sul campo contano:
 
-- **Rientro alle 02:00 esatte.** L'ultimo ospite è a casa verso le 01:55, cinque minuti dentro
-  la soglia: i € 250,00 per mezzo non scattano, ma basta un ritardo qualsiasi. Va tenuta come
-  condizione scritta; il prezzo sopra tiene già conto della notte.
-- **Cena dei due conducenti.** Tredici ore e mezza a cavallo dell'ora di cena: va indicata *a
-  carico vostro*, come vuole la regola della casa.
-- **All'01:00 non partono tutti.** I due mezzi portano via 37 ospiti su 54: gli ultimi 17
-  restano in location fino alle 01:35 circa. È l'unico punto del piano che il cliente
-  potrebbe non aver messo in conto.
-- **Il costo del secondo mezzo con Francesco** va riconcordato: adesso è una notte più lunga.
-- **Due orari tirati nel piano del cliente.** La corsa C del Bus 2 fa sei fermate fra le 14:45
-  e le 15:30 — sette minuti a fermata, salite comprese, su strade strette non tiene. E il Bus 1
-  ha dieci minuti fra l'arrivo delle 14:55 e la ripartenza delle 15:05. Si sistemano
-  anticipando la partenza di venti minuti.
+- **Corsa C del Bus 2**: cinque fermate fra le 17:25 e le 18:00. Sono 35 minuti per Via di
+  Fano, S. Giovenale, Podere Giusti, Via Fornacina e Via dei Glicini, più il tratto fino in
+  location. Conviene partire alle 17:10.
+- **Corsa A del Bus 1**: parte dalla location alle 17:35 e deve caricare 18 persone a Casalino
+  e 3 a Rovai ed essere di ritorno per le 18:00. Venticinque minuti per 21 persone a due
+  fermate sono pochi: meglio partire alle 17:20.
+- **Al rientro delle 23:00 non partono tutti**: 33 ospiti sui 50; gli ultimi 17 restano in
+  location fino alle 23:35. Va detto prima, non la sera stessa.
+
+## La revisione 2 è stata tolta
+
+Era stata costruita sullo schema del sabato credendo fosse lo stesso servizio del 25: orari
+15:30-01:00, 54 ospiti, € 1.450 netti a mezzo. Adesso che i due giorni sono distinti quel
+documento non ha più senso — e intestato al venerdì sarebbe pericoloso, perché qualcuno
+potrebbe mandarlo per sbaglio. Rimosso dalla cartella.
+
+**Restano validi i suoi numeri se un domani si dovesse quotare il sabato:** € 1.450-1.500
+netti a mezzo per 13,5 ore di impegno con rientro alle due, cioè € 3.190-3.300 IVA inclusa
+per i due mezzi, più la cena dei conducenti a carico del cliente e i € 250 per mezzo se si
+sfora l'02:00.
 
 ## Stato — 9 settembre
 
-Girolamo ha risposto al cliente che **è disponibile solo il 25**, che è appunto il giorno di
-questo servizio: il 25 è venerdì e la festa si chiude alle due del mattino di sabato.
+**Vale il preventivo mandato l'8 settembre**, € 2.420 IVA inclusa, acconto € 726. Il servizio
+è il welcome event di venerdì 25, 18:00-23:00, e il preventivo lo copre.
 
-**Decisione: vale il preventivo mandato l'8 settembre (revisione 1), € 2.420 IVA inclusa,
-acconto € 726.** La revisione 2 resta in cartella come lavoro fatto, non va al cliente.
+Resta da fare:
 
-Questo vuol dire che il servizio si farà sugli orari nuovi — primo ritiro alle 14:25, mezzi in
-location dalle 15:30 all'01:00, ultimo rientro all'01:55 — al prezzo costruito su quelli
-vecchi. Sono circa € 800 sotto il valore di mercato del servizio effettivo, ed è una scelta
-commerciale presa sapendolo.
+1. **Concordare i due anticipi di orario** delle corse (17:10 e 17:20 invece di 17:25 e 17:35)
+   e far presente che al rientro delle 23:00 partono 33 ospiti sui 50.
+2. **Riconcordare con Francesco** il costo del secondo mezzo.
+3. **Farsi confermare la posizione** di Podere la Romola e Loc. Giusti: 18 ospiti sui 50.
+4. **Bloccare i due mezzi** per la sera del 25.
+5. La validità resta il **15 settembre**: dopo va riemesso, e sotto i dieci giorni la
+   cancellazione passa al 70%.
 
-### Quello che resta da sistemare, e non è il prezzo
-
-Il documento in mano al cliente descrive **orari che non sono quelli che faremo**: dice
-raccolta dalle 16:20, mezzi a disposizione dalle 18:00 alle 23:00, ultimo rientro alle 00:25.
-Gli orari veri sono altri. Vanno concordati per iscritto prima del servizio, altrimenti il
-giorno del matrimonio il documento e il servizio dicono due cose diverse — e in caso di
-discussione fa fede il documento.
-
-Va tenuto presente che **la revisione 1 prezza già l'attesa oltre gli orari concordati a
-€ 50,00 all'ora per mezzo**. Sugli orari nuovi sono 4,5 ore in più per mezzo (dalle 15:30 alle
-18:00 e dalle 23:00 all'01:00): **€ 225,00 per mezzo, € 450,00 in tutto**, dentro le condizioni
-già scritte e accettate. Restano due strade oneste, ed è una scelta di Girolamo:
-
-- concordare i nuovi orari senza addebitare nulla, e allora conviene scriverlo chiaro, così il
-  cliente sa che è un gesto e non un diritto acquisito;
-- oppure far presente che gli orari nuovi escono dalla finestra 18:00-23:00 del preventivo e
-  applicare la voce dell'attesa: € 450,00, nessun documento da rifare.
-
-### Resta da fare
-
-1. **Concordare per iscritto gli orari veri** (14:25 - 01:55) e i 54 ospiti.
-2. **Riconcordare con Francesco** il costo del secondo mezzo sulla notte lunga: il margine del
-   Mezzo 2 a questo prezzo dipende tutto da lì.
-3. **Farsi confermare la posizione** di Podere la Romola e Loc. Giusti, che insieme fanno 19
-   ospiti sui 54.
-4. **Bloccare i due mezzi** per il 25.
-5. La validità resta il **15 settembre**: dopo quella data il preventivo va comunque riemesso,
-   e sotto i dieci giorni la cancellazione passa al 70%.
+Se si vuole allineare il programma del preventivo allo schema vero — 9 punti di carico e tre
+corse invece di undici e quattro — basta cambiare la sezione *Il servizio* nello script e
+rigenerare, tenendo il prezzo dov'è.
