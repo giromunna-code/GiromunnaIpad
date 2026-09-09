@@ -68,7 +68,7 @@ I preventivi si generano come PDF nel formato della casa: logo circolare, verde 
 
 Struttura: titolo e riferimento, *Il mezzo*, *Il servizio* (tabella per data), *Il prezzo*
 (importi al netto con `+ IVA 10%` e totale IVA inclusa), *Incluso* / *Non incluso*,
-*Pagamento* (acconto 30% alla conferma, saldo), *Note*.
+*Pagamento* (acconto 30% alla conferma, saldo entro 5 giorni prima del servizio), *Note*.
 
 **Il preventivo contiene sempre l'IBAN e i dati bancari completi**, nella sezione *Pagamento*:
 bonifico intestato a Munna Girolamo Giuseppe, IBAN e BIC/SWIFT (vedi tabella qui sopra),
@@ -98,6 +98,7 @@ sotto mercato svaluta il servizio e non si recupera.
 
 ### Condizioni ricorrenti
 
+- **Pagamento: acconto 30% alla conferma, saldo entro 5 giorni prima del servizio.**
 - IVA sui servizi di trasporto passeggeri: **10%**.
 - Attesa oltre gli orari concordati: **€ 50,00 all'ora per mezzo**.
 - Rientro dopo le 02:00: **€ 250,00 per mezzo**.
