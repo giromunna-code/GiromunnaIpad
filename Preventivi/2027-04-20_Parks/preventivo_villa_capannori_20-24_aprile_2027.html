@@ -1,0 +1,952 @@
+<title>Preventivo — Trasporto privato a Capannori, 20-24 aprile 2027</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+  .day.pending { background: transparent; border-style: dashed; border-color: var(--line-strong); }
+  .day.pending .day-date { color: var(--ink-soft); }
+  .day.pending .badge { color: var(--ink-soft); background: transparent; border-color: var(--line-strong); }
+  .day.pending p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<div class="wrap lang" data-lang="it">
+<header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Trasporto privato a Capannori
+      <span class="sub">Villa, Firenze, Lucca e dintorni</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Cliente</span><span class="v">Lisa Parks</span></div>
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">20-24 apr 2027</span></div>
+      <div class="fact"><span class="eyebrow">Passeggeri</span><span class="v">12-14</span></div>
+      <div class="fact"><span class="eyebrow">Servizi</span><span class="v">5 su 5 giornate</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2027-0420-LP</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">13 ottobre 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Il mezzo</h2>
+    <p class="lede">Un minibus per il vostro gruppo di 12-14 persone, con lo stesso conducente di lingua inglese per tutta la durata del programma.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista, 7,64 m</span>
+      <p>Aria condizionata, sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.</p>
+      <p>Con 12-14 ospiti a bordo restano fino a 14 posti liberi. I 7,64 metri del mezzo raggiungono senza difficoltà la villa e le strade di campagna intorno a Capannori, oltre ai centri storici di Lucca e Firenze, dove un autobus gran turismo non arriva.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Distanze e orari sono stime indicative; alcuni dettagli restano da confermare, come segnalato in ciascuna giornata.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">20 aprile <span class="wd">· martedì</span></span>
+          <span class="badge">Trasferimento + serata</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">da conf.</span>
+            <span class="r">Stazione di Firenze S.M.N. <span class="to">→ villa a Capannori (sosta supermercato 30-45 min)</span></span>
+            <span class="d">80 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">19:30</span>
+            <span class="r">Villa <span class="to">→ cena in un ristorante della zona</span></span>
+            <span class="d">8 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">21:30-22:00</span>
+            <span class="r">Ristorante <span class="to">→ villa</span></span>
+            <span class="d">8 km</span>
+          </div>
+        </div>
+        <div class="engaged">Bagagli del gruppo a bordo per il trasferimento. Orario di arrivo in stazione da confermare.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">21 aprile <span class="wd">· mercoledì</span></span>
+          <span class="badge">Due trasferimenti</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">mattina</span>
+            <span class="r">Villa a Capannori <span class="to">→ Firenze</span></span>
+            <span class="d">80 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">16:00</span>
+            <span class="r">Firenze <span class="to">→ villa a Capannori</span></span>
+            <span class="d">80 km</span>
+          </div>
+        </div>
+        <div class="engaged">Il mezzo resta libero durante la giornata; nessun servizio serale.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">22 aprile <span class="wd">· giovedì</span></span>
+          <span class="badge">Giornata + serata a disposizione</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">9:00</span>
+            <span class="r">Villa <span class="to">→ cantine delle Colline Lucchesi, pranzo e ore in zona</span></span>
+            <span class="d">circa 60 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">16:00</span>
+            <span class="r">Rientro <span class="to">in villa</span></span>
+            <span class="d">—</span>
+          </div>
+          <div class="leg">
+            <span class="t">19:30</span>
+            <span class="r">Villa <span class="to">→ Lucca, cena</span></span>
+            <span class="d">8 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">23:00-00:00</span>
+            <span class="r">Lucca <span class="to">→ villa</span></span>
+            <span class="d">8 km</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 9:00-16:00 e 19:30-00:00. Tappe esatte delle cantine da concordare.</div>
+      </article>
+
+      <article class="day pending">
+        <div class="day-head">
+          <span class="day-date">23 aprile <span class="wd">· venerdì</span></span>
+          <span class="badge">Da confermare</span>
+        </div>
+        <p>Trasporti locali a Capannori e dintorni, a disposizione fino alle 17:00 circa. Programma dettagliato ancora da definire: prezzo provvisorio, calcolato su una giornata piena a disposizione in zona.</p>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">24 aprile <span class="wd">· sabato</span></span>
+          <span class="badge">Trasferimento</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">da conf.</span>
+            <span class="r">Villa a Capannori <span class="to">→ Aeroporto di Firenze</span></span>
+            <span class="d">80 km</span>
+          </div>
+        </div>
+        <div class="engaged">Con bagagli. Orario da confermare in base al volo.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Servizio</th>
+            <th scope="col" class="num">Importo</th>
+            <th scope="col" class="num">IVA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Mar 20 apr</span>Stazione di Firenze S.M.N. → villa, cena in serata</td>
+            <td class="num">€ 680,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Mer 21 apr</span>Trasferimenti mattina e pomeriggio da/per Firenze</td>
+            <td class="num">€ 800,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Gio 22 apr</span>Giornata a disposizione in zona e cena a Lucca</td>
+            <td class="num">€ 1.430,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Ven 23 apr</span>Trasporti locali a Capannori (da confermare)</td>
+            <td class="num">€ 880,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Sab 24 apr</span>Villa a Capannori → aeroporto di Firenze</td>
+            <td class="num">€ 680,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr class="tot">
+            <td>Totale, al netto di IVA</td>
+            <td class="num">€ 4.470,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Totale da corrispondere, IVA 10% inclusa
+        <small>tra circa € 351,00 e € 410,00 a persona, secondo il numero definitivo (12-14)</small>
+      </span>
+      <span class="fig">€ 4.917,00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Acconto 30% alla conferma</td>
+            <td class="num"><strong>€ 1.475,10</strong></td>
+            <td class="num vat">IVA inclusa</td>
+          </tr>
+          <tr>
+            <td>Saldo, entro 5 giorni dal servizio</td>
+            <td class="num"><strong>€ 3.441,90</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Mezzo e conducente di lingua inglese, carburante, pedaggi autostradali, parcheggi, assicurazione completa, movimentazione bagagli e la sosta al supermercato del 20 aprile.</li>
+      <li><strong>Nessun onere all'aeroporto.</strong> L'aeroporto di Firenze non comporta oneri di accesso. Il ritrovo e il rilascio a Firenze del 21 aprile avvengono in un punto autorizzato alla sosta bus vicino al centro.</li>
+      <li><strong>Non incluso.</strong> Ingressi, degustazioni, pranzi e cene, guide e mance. Attesa oltre gli orari concordati, € 50,00 all'ora per mezzo. Soste aggiuntive o modifiche all'itinerario, quotate su richiesta. Rientro alla villa dopo le 02:00, € 250,00 per mezzo. L'eventuale ingresso di un bus turistico nel centro storico di Firenze, che richiederebbe un permesso a parte (circa € 350).</li>
+      <li><strong>Disponibilità e cancellazione.</strong> Il mezzo è al momento libero per il 20-24 aprile 2027. Cancellazione gratuita oltre 60 giorni prima del primo servizio; da 60 a 30 giorni si trattiene l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%. Preventivo valido fino al 13 ottobre 2026; siamo disponibili a riconfermarlo più vicino alla data.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Note</h2>
+    <ul class="conds">
+      <li><strong>Il ritrovo a Firenze del 21 aprile.</strong> Il centro storico è zona a traffico limitato per i bus turistici: il ritrovo e il rilascio avvengono in un punto autorizzato alla sosta bus vicino al centro. Fateci sapere dove preferite essere lasciati e ripresi.</li>
+      <li><strong>Furgoni invece del minibus.</strong> Ci avete chiesto anche il confronto con due furgoni da 6-7 posti ciascuno. La nostra flotta di proprietà è il Beluga: con 12-14 persone restano fino a 14 posti liberi e i suoi 7,64 metri raggiungono comunque strade e piazzali stretti. Non gestiamo direttamente furgoni di quella taglia: se restasse comunque preferibile viaggiare su due mezzi più piccoli, è un'opzione da valutare a parte con un fornitore dedicato, con un costo aggiuntivo non incluso in questo preventivo. Ditecelo se volete che la approfondiamo.</li>
+      <li><strong>Il 23 aprile.</strong> Programma ancora da definire: il prezzo è provvisorio, lo confermiamo appena ricevuto l'itinerario.</li>
+      <li><strong>Il rientro tardi del 22 e la partenza del 23.</strong> La cena a Lucca rientra fra le 23:00 e mezzanotte: vi chiediamo di non fissare l'inizio dei trasporti del 23 aprile prima delle 10:00 circa, per i tempi di riposo del conducente.</li>
+      <li><strong>Bagagli del 20 e del 24 aprile.</strong> Il vano del Beluga è ampio, spazio più che sufficiente per il gruppo; segnalateci in anticipo eventuali bagagli fuori misura.</li>
+      <li><strong>Orari di treno e volo.</strong> Ci servono l'orario del treno in arrivo il 20 aprile e il volo in partenza il 24 aprile, per confermare gli orari esatti.</li>
+      <li><strong>Le cantine del 22 aprile.</strong> Siamo lieti di suggerire un paio di cantine delle Colline Lucchesi, a pochi minuti dalla villa.</li>
+      <li><strong>Per confermare ci servono</strong> il numero definitivo dei partecipanti (12-14), l'indirizzo esatto della villa e i vostri dati di fatturazione.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Interno — non fa parte del preventivo inviato</div>
+    <h2>Come sono stati costruiti i prezzi</h2>
+
+    <p>Riferimento: il preventivo Le Filigare (GM-2026-0821-LF), a mezzo singolo come questo lavoro.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — trasferimento, ~50 km</td><td class="num">€ 500,00</td></tr>
+          <tr><td>Le Filigare — giornata a disposizione, ~80 km, 5 h</td><td class="num">€ 809,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>La scala usata qui</h3>
+    <p>20 apr: trasferimento ~80 km più una serata locale breve (~16 km) → € 680. 21 apr: due trasferimenti separati ~80 km ciascuno, nessuna attesa prolungata → € 800. 22 apr: la giornata più pesante, circa 7 ore a disposizione di giorno più una serata a Lucca, in tutto circa 11 ore su due turni → € 1.430. 23 apr: programma da confermare, prezzata come giornata piena a disposizione locale, provvisoria → € 880. 24 apr: trasferimento aeroporto ~80 km → € 680.</p>
+
+    <h3>Nessuna notte del conducente</h3>
+    <p>Ponte Buggianese dista da Capannori circa 25-30 km: il conducente può rientrare alla base ogni sera, quindi non serve vitto e alloggio a suo carico. Attenzione però al turnaround del 22-23: la cena a Lucca finisce verso mezzanotte, quindi il servizio del 23 non dovrebbe iniziare troppo presto.</p>
+
+    <h3>I furgoni da 6-7 posti</h3>
+    <p>La richiesta della cliente include un confronto con due furgoni più piccoli. GiroMunna non possiede né gestisce furgoni di quella taglia, e non rientrano nello schema Beluga/Tourengo: non è stato quotato un prezzo per non inventare una tariffa senza base reale. Segnalato al cliente come nota, e da valutare con Girolamo se si vuole approfondire con un fornitore esterno.</p>
+
+    <h3>Margine</h3>
+    <p>Preventivo costruito sul mezzo di proprietà (Beluga), nessuna notte del conducente da coprire: il margine sui cinque servizi è buono.</p>
+
+    <h3>Da verificare prima dell'invio</h3>
+    <ol>
+      <li><strong>Numero definitivo dei partecipanti</strong> (12-14) e indirizzo esatto della villa a Capannori.</li>
+      <li><strong>Orario del treno</strong> in arrivo il 20 aprile e <strong>orario del volo</strong> in partenza il 24 aprile.</li>
+      <li><strong>Programma del 23 aprile</strong>, ancora da definire: il prezzo potrà cambiare.</li>
+      <li><strong>Decisione sui furgoni</strong>: se la cliente insiste per due mezzi più piccoli, va sentito Francesco o un fornitore esterno per un preventivo dedicato.</li>
+      <li><strong>Cantine del 22 aprile</strong>: proporre un paio di indirizzi nelle Colline Lucchesi se la cliente non ne indica.</li>
+      <li><strong>Bloccare la disponibilità del mezzo</strong> per il 20-24 aprile 2027.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2027-0420-LP · 13 settembre 2026</span>
+  </footer>
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Private Transport in Capannori
+      <span class="sub">Villa, Florence, Lucca and surroundings</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Client</span><span class="v">Lisa Parks</span></div>
+      <div class="fact"><span class="eyebrow">Dates</span><span class="v">20-24 Apr 2027</span></div>
+      <div class="fact"><span class="eyebrow">Passengers</span><span class="v">12-14</span></div>
+      <div class="fact"><span class="eyebrow">Services</span><span class="v">5 over 5 days</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2027-0420-LP</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">13 October 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicle</h2>
+    <p class="lede">One minibus for your group of 12-14, with the same English-speaking driver throughout the programme.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus driver, 7.64 m</span>
+      <p>Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.</p>
+      <p>With 12-14 guests on board up to 14 seats stay free. At 7.64 m the minibus reaches the villa and the country lanes around Capannori without difficulty, as well as the historic centres of Lucca and Florence, which a full-size coach cannot manage.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">Distances and times are indicative estimates; a few details are still to be confirmed, as noted on each day.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">20 April <span class="wd">· Tuesday</span></span>
+          <span class="badge">Transfer + evening</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">tbc</span>
+            <span class="r">Florence S.M.N. station <span class="to">→ villa in Capannori (30-45 min supermarket stop)</span></span>
+            <span class="d">80 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">19:30</span>
+            <span class="r">Villa <span class="to">→ dinner at a local restaurant</span></span>
+            <span class="d">8 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">21:30-22:00</span>
+            <span class="r">Restaurant <span class="to">→ villa</span></span>
+            <span class="d">8 km</span>
+          </div>
+        </div>
+        <div class="engaged">Group luggage on board for the transfer. Station arrival time to be confirmed.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">21 April <span class="wd">· Wednesday</span></span>
+          <span class="badge">Two transfers</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">morning</span>
+            <span class="r">Villa in Capannori <span class="to">→ Florence</span></span>
+            <span class="d">80 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">16:00</span>
+            <span class="r">Florence <span class="to">→ villa in Capannori</span></span>
+            <span class="d">80 km</span>
+          </div>
+        </div>
+        <div class="engaged">The vehicle is free during the day; no evening service.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">22 April <span class="wd">· Thursday</span></span>
+          <span class="badge">Day + evening at disposal</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">9:00</span>
+            <span class="r">Villa <span class="to">→ wineries in the Colline Lucchesi, lunch and hours in the area</span></span>
+            <span class="d">approx. 60 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">16:00</span>
+            <span class="r">Return <span class="to">to the villa</span></span>
+            <span class="d">—</span>
+          </div>
+          <div class="leg">
+            <span class="t">19:30</span>
+            <span class="r">Villa <span class="to">→ Lucca, dinner</span></span>
+            <span class="d">8 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">23:00-00:00</span>
+            <span class="r">Lucca <span class="to">→ villa</span></span>
+            <span class="d">8 km</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 9:00-16:00 and 19:30-00:00. Exact winery stops to be agreed.</div>
+      </article>
+
+      <article class="day pending">
+        <div class="day-head">
+          <span class="day-date">23 April <span class="wd">· Friday</span></span>
+          <span class="badge">To be confirmed</span>
+        </div>
+        <p>Local transport around Capannori and nearby areas, at your disposal until about 17:00. Detailed schedule still being finalised: price provisional, based on a full day at disposal locally.</p>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">24 April <span class="wd">· Saturday</span></span>
+          <span class="badge">Transfer</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">tbc</span>
+            <span class="r">Villa in Capannori <span class="to">→ Florence Airport</span></span>
+            <span class="d">80 km</span>
+          </div>
+        </div>
+        <div class="engaged">With luggage. Time to be confirmed against the flight.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col" class="num">Amount</th>
+            <th scope="col" class="num">VAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Tue 20 Apr</span>Florence S.M.N. station → villa, dinner in the evening</td>
+            <td class="num">€ 680.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Wed 21 Apr</span>Morning and afternoon transfers to/from Florence</td>
+            <td class="num">€ 800.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Thu 22 Apr</span>Full day at disposal locally and dinner in Lucca</td>
+            <td class="num">€ 1,430.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Fri 23 Apr</span>Local transport around Capannori (to be confirmed)</td>
+            <td class="num">€ 880.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Sat 24 Apr</span>Villa in Capannori → Florence Airport</td>
+            <td class="num">€ 680.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr class="tot">
+            <td>Total, excluding VAT</td>
+            <td class="num">€ 4,470.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Total payable, VAT 10% included
+        <small>between about € 351.00 and € 410.00 per person, depending on the final number (12-14)</small>
+      </span>
+      <span class="fig">€ 4,917.00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Deposit 30% on confirmation</td>
+            <td class="num"><strong>€ 1,475.10</strong></td>
+            <td class="num vat">VAT included</td>
+          </tr>
+          <tr>
+            <td>Balance, within 5 days of the service</td>
+            <td class="num"><strong>€ 3,441.90</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> English-speaking driver and vehicle, fuel, motorway tolls, parking, full insurance, luggage handling and the supermarket stop on 20 April.</li>
+      <li><strong>No airport charge.</strong> Florence Airport carries no access charge. The pickup and drop-off in Florence on 21 April take place at a point authorised for coach parking near the centre.</li>
+      <li><strong>Not included.</strong> Entrance fees, tastings, lunches and dinners, guides and gratuities. Waiting beyond the agreed times, € 50.00 per hour per vehicle. Additional stops or changes to the itinerary, quoted on request. Return to the villa after 02:00, € 250.00 per vehicle. Any entry of a tourist coach into the historic centre of Florence, which would require a separate permit (about € 350).</li>
+      <li><strong>Availability and cancellation.</strong> The vehicle is currently free for 20-24 April 2027. Cancellation is free of charge more than 60 days before the first service; from 60 to 30 days the deposit is retained; from 30 to 10 days, 50%; in the last 10 days, 100%. Quotation valid until 13 October 2026; we are happy to reconfirm it closer to the date.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <ul class="conds">
+      <li><strong>The Florence meeting point on 21 April.</strong> The historic centre is a restricted traffic zone for tourist coaches: pickup and drop-off take place at a point authorised for coach parking near the centre. Let us know where you would like to be dropped off and picked up.</li>
+      <li><strong>Vans instead of the minibus.</strong> You also asked us to quote two vans of 6-7 passengers each. Our own fleet is the Beluga: with 12-14 people up to 14 seats stay free, and its 7.64 m still reaches narrow roads and courtyards. We do not operate vans of that size ourselves: if you would still rather travel on two smaller vehicles, that is an option to look into separately with a dedicated supplier, at an additional cost not included in this quotation. Let us know if you would like us to look into it.</li>
+      <li><strong>23 April.</strong> Programme still to be defined: the price is provisional, we will confirm it once we receive the itinerary.</li>
+      <li><strong>The late return on the 22nd and the start on the 23rd.</strong> Dinner in Lucca returns between 23:00 and midnight: we ask that transport on 23 April not start before about 10:00, to respect the driver's rest periods.</li>
+      <li><strong>Luggage on 20 and 24 April.</strong> The Beluga's hold is large, with more than enough room for the group; please let us know in advance about any oversized items.</li>
+      <li><strong>Train and flight times.</strong> We need the arrival time of the train on 20 April and the departure time of the flight on 24 April, to confirm the exact schedule.</li>
+      <li><strong>The wineries on 22 April.</strong> We are glad to suggest a couple of wineries in the Colline Lucchesi, a few minutes from the villa.</li>
+      <li><strong>To confirm we need</strong> the final number of participants (12-14), the exact address of the villa, and your invoicing details.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal — not part of the quotation sent to the client</div>
+    <h2>How the prices were built</h2>
+
+    <p>Benchmarked against the Le Filigare quotation (GM-2026-0821-LF), a single-vehicle job like this one.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — transfer, ~50 km</td><td class="num">€ 500.00</td></tr>
+          <tr><td>Le Filigare — day at disposal, ~80 km, 5 h</td><td class="num">€ 809.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>The scale used here</h3>
+    <p>20 Apr: ~80 km transfer plus a short local evening (~16 km) → € 680. 21 Apr: two separate ~80 km transfers, no extended waiting → € 800. 22 Apr: the heaviest day, about 7 hours at disposal by day plus an evening in Lucca, about 11 hours across two shifts → € 1,430. 23 Apr: programme to be confirmed, priced as a full day at local disposal, provisional → € 880. 24 Apr: ~80 km airport transfer → € 680.</p>
+
+    <h3>No driver's night</h3>
+    <p>Ponte Buggianese is about 25-30 km from Capannori: the driver can return to base every evening, so no board and lodging charge is needed. Watch the 22-23 turnaround though: dinner in Lucca ends around midnight, so the 23rd should not start too early.</p>
+
+    <h3>The 6-7 seat vans</h3>
+    <p>The client's request includes a comparison with two smaller vans. GiroMunna neither owns nor operates vans of that size, and they fall outside the Beluga/Tourengo framework: no price was quoted, to avoid inventing a rate with no real basis. Flagged to the client as a note, and to be discussed with Girolamo if this needs to be sourced externally.</p>
+
+    <h3>Margin</h3>
+    <p>Quotation built on the owned vehicle (Beluga), no driver's night to cover: the margin across the five services is healthy.</p>
+
+    <h3>To check before sending</h3>
+    <ol>
+      <li><strong>Final number of participants</strong> (12-14) and the exact address of the villa in Capannori.</li>
+      <li><strong>Train arrival time</strong> on 20 April and <strong>flight departure time</strong> on 24 April.</li>
+      <li><strong>23 April programme</strong>, still to be defined: the price may change.</li>
+      <li><strong>Decision on the vans</strong>: if the client insists on two smaller vehicles, ask Francesco or an outside supplier for a dedicated quote.</li>
+      <li><strong>Wineries on 22 April</strong>: propose a couple of addresses in the Colline Lucchesi if the client does not name any.</li>
+      <li><strong>Block the vehicle's availability</strong> for 20-24 April 2027.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2027-0420-LP · 13 September 2026</span>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
