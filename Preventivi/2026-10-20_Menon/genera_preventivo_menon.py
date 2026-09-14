@@ -57,16 +57,16 @@ IT = dict(
     footer2="+39 335 587 4744  ·  info@giromunna.com  ·  giromunna.com",
     page="pag. %d",
     title="Preventivo",
-    subtitle="Due trasferimenti privati — Castel Monastero → Castelfalfi (20) e Castelfalfi → Cape of Senses, Lago di Garda (23)",
-    meta="Preparato per %s  ·  9 settembre 2026, aggiornato il 14 settembre 2026  ·  Rif. " + RIF + "  ·  valido fino al 24 settembre 2026",
+    subtitle="Due trasferimenti privati — Castel Monastero → Castelfalfi (20 ottobre) e Castelfalfi → Cape of Senses, Lago di Garda (23 ottobre)",
+    meta="Preparato per %s  ·  9 settembre 2026, aggiornato il 14 settembre 2026  ·  Rif. " + RIF + "  ·  valido fino al 29 settembre 2026",
     intro=(
         "Grazie per averci confermato i bagagli — 23 valigie da stiva e 15 bagagli a mano: il carico rientra "
-        "nella capienza del minibus, come spiegato sotto. Era l'unico punto rimasto aperto nella prima versione "
-        "di questo preventivo, che ora è risolto. Confermiamo due dei quattro tratti richiesti: il 20 (Castel "
-        "Monastero → Castelfalfi) e il 23 (Castelfalfi → Cape of Senses, Lago di Garda). Il 17 e il 26 — i due "
-        "tratti da e per Milano — non rientrano purtroppo fra i servizi che possiamo offrire. Per i due "
-        "trasferimenti che possiamo effettuare useremmo il nostro minibus. I prezzi sono per singolo "
-        "trasferimento, come richiesto, non a giornata intera."
+        "nella capienza del minibus, come spiegato sotto — e il mese di viaggio, ottobre 2026. Erano i due punti "
+        "rimasti aperti nella prima versione di questo preventivo, ora risolti. Confermiamo due dei quattro tratti "
+        "richiesti: il 20 ottobre (Castel Monastero → Castelfalfi) e il 23 ottobre (Castelfalfi → Cape of Senses, "
+        "Lago di Garda). Il 17 e il 26 ottobre — i due tratti da e per Milano — non rientrano purtroppo fra i "
+        "servizi che possiamo offrire. Per i due trasferimenti che possiamo effettuare useremmo il nostro minibus. "
+        "I prezzi sono per singolo trasferimento, come richiesto, non a giornata intera."
     ),
     h_mezzo="Il mezzo",
     mezzo_rows=[
@@ -88,12 +88,12 @@ IT = dict(
     h_servizio="Il servizio",
     svc_head=["Data", "Percorso", "Durata"],
     svc=[
-        ("20",
+        ("20 ott",
          "<b>Castel Monastero → Castelfalfi.</b> Ritrovo a Castel Monastero, Castelnuovo Berardenga (SI), carico "
          "dei bagagli e trasferimento diretto a Castelfalfi, Montaione (FI). Sola andata: una volta lasciato il "
          "gruppo, il minibus rientra alla base senza passeggeri.",
          "circa 1 h 45, orario da definire"),
-        ("23",
+        ("23 ott",
          "<b>Castelfalfi → Cape of Senses Hideaway, Lago di Garda.</b> Ritrovo a Castelfalfi e trasferimento al "
          "Cape of Senses Hideaway, Torri del Benaco (VR), sulla sponda veronese del Lago di Garda. Sola andata, "
          "con sosta obbligatoria lungo il percorso e il minibus che rientra vuoto.",
@@ -101,10 +101,11 @@ IT = dict(
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("20 — Castel Monastero → Castelfalfi. Minibus con conducente professionista, trasferimento di sola "
-         "andata. Carburante, pedaggi, assicurazione e riposizionamento del mezzo da e per la nostra base inclusi.",
+        ("20 ottobre — Castel Monastero → Castelfalfi. Minibus con conducente professionista, trasferimento di "
+         "sola andata. Carburante, pedaggi, assicurazione e riposizionamento del mezzo da e per la nostra base "
+         "inclusi.",
          "€ 950,00", "+ IVA 10%"),
-        ("23 — Castelfalfi → Cape of Senses, Torri del Benaco (VR). Minibus con conducente professionista, "
+        ("23 ottobre — Castelfalfi → Cape of Senses, Torri del Benaco (VR). Minibus con conducente professionista, "
          "trasferimento di sola andata. Carburante, pedaggi, assicurazione e riposizionamento del mezzo da e per "
          "la nostra base inclusi.",
          "€ 1.650,00", "+ IVA 10%"),
@@ -129,15 +130,15 @@ IT = dict(
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
-        "I trasferimenti del 17 (Milano → Castel Monastero) e del 26 (Cape of Senses → Milano), che non siamo "
-        "in grado di coprire. Attesa oltre l'orario di partenza concordato, € 50,00 all'ora. Soste o destinazioni "
+        "I trasferimenti del 17 ottobre (Milano → Castel Monastero) e del 26 ottobre (Cape of Senses → Milano), "
+        "che non siamo in grado di coprire. Attesa oltre l'orario di partenza concordato, € 50,00 all'ora. Soste o destinazioni "
         "aggiuntive rispetto al trasferimento diretto, in particolare quelle che richiederebbero un permesso di "
         "accesso in città. Tutto quanto non espressamente elencato sopra."
     ),
     h_pagamento="Pagamento",
     pay_rows=[
         ("Acconto 30% alla conferma", "€ 858,00", ""),
-        ("Saldo, 5 giorni prima del primo trasferimento", "€ 2.002,00", "data da fissare col mese"),
+        ("Saldo, 5 giorni prima del primo trasferimento", "€ 2.002,00", "entro il 15 ottobre 2026"),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05. La prenotazione diventa definitiva "
@@ -149,21 +150,19 @@ IT = dict(
          "rientrano nella capienza del minibus: le valigie riempiono il vano fino al limite della sua capienza "
          "comoda, i bagagli a mano viaggiano con voi nell'abitacolo sui sedili liberi. Non c'è margine per bagagli "
          "ulteriori il giorno della partenza: se il numero dovesse cambiare, fatecelo sapere prima di confermare."),
-        ("<b>Trasferimenti non coperti.</b> Il 17 (Milano → Castel Monastero) e il 26 (Cape of Senses → Milano) "
-         "non rientrano fra i servizi che possiamo offrire."),
+        ("<b>Trasferimenti non coperti.</b> Il 17 ottobre (Milano → Castel Monastero) e il 26 ottobre (Cape of "
+         "Senses → Milano) non rientrano fra i servizi che possiamo offrire."),
         ("<b>Oneri di accesso in città.</b> Molte città italiane prevedono un permesso giornaliero per l'ingresso "
          "di autobus; quando è dovuto lo indichiamo in preventivo alla tariffa ufficiale. Per i due trasferimenti "
          "qui quotati non è dovuto alcun onere: Castel Monastero e Castelfalfi sono tenute di campagna fuori da "
          "ogni zona a traffico limitato, e Torri del Benaco non ha un permesso bus registrato. Se dovesse "
          "emergere, ve lo segnaliamo prima del servizio e lo giriamo alla tariffa ufficiale, senza alcun ricarico."),
-        ("<b>Il mese e l'anno.</b> La vostra richiesta indica il 17, il 20, il 23 e il 26, ma non il mese: ci "
-         "serve per fissare le date in modo definitivo."),
         ("<b>Gli orari di partenza</b> di ciascun trasferimento, ancora da concordare."),
         ("<b>Accesso al Cape of Senses Hideaway.</b> La struttura sorge sulla collina sopra Torri del Benaco: "
          "vorremmo verificare con voi, o direttamente con l'hotel, che la strada di accesso sia percorribile dal "
          "mezzo. In caso contrario, concordiamo un punto di sbarco a Torri del Benaco."),
         ("<b>Un numero di cellulare del gruppo</b>, da passare all'autista il giorno del servizio."),
-        ("<b>Validità e cancellazione.</b> Il preventivo è valido fino al 24 settembre 2026. Alla conferma le "
+        ("<b>Validità e cancellazione.</b> Il preventivo è valido fino al 29 settembre 2026. Alla conferma le "
          "date restano bloccate 48 ore: trascorse senza l'acconto, vengono rilasciate. La cancellazione è "
          "gratuita oltre 60 giorni prima del servizio; da 60 a 30 giorni si trattiene l'acconto; da 30 a 10 giorni "
          "il 50%; negli ultimi 10 giorni il 100%."),
@@ -181,16 +180,17 @@ EN = dict(
     footer2="+39 335 587 4744  ·  info@giromunna.com  ·  giromunna.com",
     page="page %d",
     title="Quotation",
-    subtitle="Two point-to-point transfers — Castel Monastero → Castelfalfi (20th) and Castelfalfi → Cape of Senses, Lake Garda (23rd)",
-    meta="Prepared for %s  ·  9 September 2026, updated 14 September 2026  ·  Ref. " + RIF + "  ·  valid until 24 September 2026",
+    subtitle="Two point-to-point transfers — Castel Monastero → Castelfalfi (20 October) and Castelfalfi → Cape of Senses, Lake Garda (23 October)",
+    meta="Prepared for %s  ·  9 September 2026, updated 14 September 2026  ·  Ref. " + RIF + "  ·  valid until 29 September 2026",
     intro=(
         "Thank you for confirming the luggage — 23 check-in suitcases and 15 cabin bags: the load fits within "
-        "the minibus, as explained below. That was the one point left open in the first version of this "
-        "quotation, and it is now resolved. Of the four legs you asked about, we can confirm two: the 20th "
-        "(Castel Monastero to Castelfalfi) and the 23rd (Castelfalfi to Cape of Senses, Lake Garda). The 17th and "
-        "the 26th — the two legs from and to Milan — are unfortunately not among the services we are able to "
-        "offer. For the two transfers we can operate we would use our minibus. These are priced as individual "
-        "point-to-point transfers, as you asked, not as full-day hire."
+        "the minibus, as explained below — and the travel month, October 2026. Those were the two points left "
+        "open in the first version of this quotation, now resolved. Of the four legs you asked about, we can "
+        "confirm two: the 20th of October (Castel Monastero to Castelfalfi) and the 23rd of October (Castelfalfi "
+        "to Cape of Senses, Lake Garda). The 17th and the 26th of October — the two legs from and to Milan — are "
+        "unfortunately not among the services we are able to offer. For the two transfers we can operate we would "
+        "use our minibus. These are priced as individual point-to-point transfers, as you asked, not as full-day "
+        "hire."
     ),
     h_mezzo="The vehicle",
     mezzo_rows=[
@@ -212,12 +212,12 @@ EN = dict(
     h_servizio="Programme",
     svc_head=["Date", "Route", "Duration"],
     svc=[
-        ("20th",
+        ("20 Oct",
          "<b>Castel Monastero → Castelfalfi.</b> Pick-up at Castel Monastero, Castelnuovo Berardenga (SI), "
          "loading of the luggage and direct transfer to Castelfalfi, Montaione (FI). One way: once the group has "
          "been dropped off, the minibus returns to our base with no passengers on board.",
          "approx. 1 h 45, time to be agreed"),
-        ("23rd",
+        ("23 Oct",
          "<b>Castelfalfi → Cape of Senses Hideaway, Lake Garda.</b> Pick-up at Castelfalfi and transfer to the "
          "Cape of Senses Hideaway, Torri del Benaco (VR), on the Verona shore of Lake Garda. One way as well, "
          "plus the statutory rest stop along the way, with the minibus returning empty.",
@@ -225,10 +225,10 @@ EN = dict(
     ],
     h_prezzo="Price",
     price_rows=[
-        ("20th — Castel Monastero → Castelfalfi. Minibus with professional driver, one-way transfer. Fuel, "
+        ("20 October — Castel Monastero → Castelfalfi. Minibus with professional driver, one-way transfer. Fuel, "
          "tolls, insurance and repositioning of the vehicle to and from our base included.",
          "€ 950.00", "+ VAT 10%"),
-        ("23rd — Castelfalfi → Cape of Senses, Torri del Benaco (VR). Minibus with professional driver, "
+        ("23 October — Castelfalfi → Cape of Senses, Torri del Benaco (VR). Minibus with professional driver, "
          "one-way transfer. Fuel, tolls, insurance and repositioning of the vehicle to and from our base "
          "included.",
          "€ 1,650.00", "+ VAT 10%"),
@@ -253,15 +253,15 @@ EN = dict(
     ),
     h_nonincluso="Not included.",
     nonincluso=(
-        "The transfers on the 17th (Milan → Castel Monastero) and on the 26th (Cape of Senses → Milan), which we "
-        "are unable to cover. Waiting beyond the agreed departure time, € 50.00 per hour. Any additional stops or "
+        "The transfers on 17 October (Milan → Castel Monastero) and on 26 October (Cape of Senses → Milan), "
+        "which we are unable to cover. Waiting beyond the agreed departure time, € 50.00 per hour. Any additional stops or "
         "destinations beyond the direct transfer, in particular any that would require a city access permit. "
         "Anything not expressly listed above."
     ),
     h_pagamento="Payment",
     pay_rows=[
         ("Deposit 30% on confirmation", "€ 858.00", ""),
-        ("Balance, 5 days before the first transfer", "€ 2,002.00", "exact date once the month is confirmed"),
+        ("Balance, 5 days before the first transfer", "€ 2,002.00", "by 15 October 2026"),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05. The booking becomes firm once the "
@@ -273,21 +273,19 @@ EN = dict(
          "capacity: the suitcases fill the hold up to its comfortable limit, and the cabin bags travel with you "
          "inside the passenger cabin, on the spare seats. There is no margin for extra luggage on the day: if "
          "the count changes, please let us know before confirming."),
-        ("<b>Transfers we cannot cover.</b> The 17th (Milan → Castel Monastero) and the 26th (Cape of Senses → "
-         "Milan) are not among the services we are able to offer."),
+        ("<b>Transfers we cannot cover.</b> 17 October (Milan → Castel Monastero) and 26 October (Cape of Senses "
+         "→ Milan) are not among the services we are able to offer."),
         ("<b>On city access charges.</b> Many Italian towns charge coaches a daily permit to enter, and whenever "
          "one applies we show it in the quotation at the official rate. For the two transfers quoted here no such "
          "charge is due: Castel Monastero and Castelfalfi are countryside estates, outside any restricted traffic "
          "zone, and Torri del Benaco has no coach access permit on record. Should one emerge, we will tell you "
          "before the service and pass it on at the official rate, with no mark-up."),
-        ("<b>The month and year.</b> Your enquiry gives the 17th, 20th, 23rd and 26th but not the month: we need "
-         "it to fix the dates for good."),
         ("<b>The departure time</b> for each transfer, still to be agreed."),
         ("<b>Access to the Cape of Senses Hideaway.</b> The property sits on the hillside above Torri del "
          "Benaco, and we would like to check with you, or directly with the hotel, that the approach road is "
          "suitable for the vehicle. If it is not, we will agree a workable drop-off point in Torri del Benaco."),
         ("<b>A mobile number for the group</b>, to pass to the driver on the day."),
-        ("<b>Validity and cancellation.</b> This quotation is valid until 24 September 2026. On confirmation the "
+        ("<b>Validity and cancellation.</b> This quotation is valid until 29 September 2026. On confirmation the "
          "dates are held for 48 hours: after that, without the deposit, they are released. Cancellation is free "
          "of charge more than 60 days before the service; from 60 to 30 days the deposit is retained; from 30 to "
          "10 days 50% of the price is charged; in the last 10 days, 100%."),
