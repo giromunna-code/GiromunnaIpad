@@ -59,18 +59,31 @@ lavoro.
 | Data | Servizio | Netto |
 |---|---|---|
 | Mar 20 apr | Stazione Firenze S.M.N. → villa (~80 km) + cena in serata (~16 km) | € 680,00 |
+| Mar 20 apr | Permesso bus centro storico di Firenze | € 350,00 |
 | Mer 21 apr | Due trasferimenti separati Capannori↔Firenze (~80 km ciascuno), nessuna attesa prolungata | € 800,00 |
+| Mer 21 apr | Permesso bus centro storico di Firenze | € 350,00 |
 | Gio 22 apr | Giornata più pesante: ~7 ore a disposizione di giorno (cantine, pranzo) + serata a Lucca, ~11 ore su due turni | € 1.430,00 |
 | Ven 23 apr | Programma da confermare, prezzata come giornata piena a disposizione locale — **provvisoria** | € 880,00 |
-| Sab 24 apr | Villa → aeroporto di Firenze (~80 km) | € 680,00 |
+| Sab 24 apr | Villa → aeroporto di Firenze (~80 km), nessun permesso | € 680,00 |
 
-**Totale netto € 4.470,00 · IVA 10% € 447,00 · Totale € 4.917,00** (tra € 351,00 e € 410,00
+**Totale netto € 5.170,00 · IVA 10% € 517,00 · Totale € 5.687,00** (tra € 406,00 e € 474,00
 a persona secondo il numero definitivo tra 12 e 14).
 
-Acconto 30% € 1.475,10 — saldo € 3.441,90.
+Acconto 30% € 1.706,10 — saldo € 3.980,90.
 
 Nel dubbio i prezzi sono stati tenuti alti, come da indicazione: il 23 aprile in particolare
 è una stima prudente in attesa del programma reale.
+
+### Correzione: il permesso di Firenze
+
+Nella prima stesura avevo ipotizzato che il permesso per il centro storico di Firenze si
+potesse evitare facendo ritrovo/rilascio in un punto periferico autorizzato alla sosta bus,
+per la giornata del 21 aprile. **Girolamo ha corretto questa lettura**: a Firenze il
+permesso ci vuole sempre, indipendentemente dal punto di ritrovo scelto in città — l'unica
+vera eccezione è l'aeroporto. Ho quindi aggiunto il permesso (circa € 350) sia per il 20
+aprile (stazione S.M.N., anch'essa "Firenze" e non aeroporto) sia per il 21 (giornata in
+città), € 700,00 in più sul totale. Ho anche aggiornato la regola in CLAUDE.md — sezione
+*Condizioni ricorrenti* — così i prossimi preventivi con Firenze non ripetono l'errore.
 
 ## Nessuna notte del conducente
 
