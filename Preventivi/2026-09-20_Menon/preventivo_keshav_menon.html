@@ -1,0 +1,678 @@
+<title>Preventivo — Keshav Menon, Castel Monastero · Castelfalfi · Lago di Garda</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; max-width: none; }
+  .vehicle p strong { color: var(--ink); }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .day p { margin: 0; font-size: 0.92rem; color: var(--ink-soft); }
+  .day p strong { color: var(--ink); }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  .callout {
+    margin-top: 16px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 16px 20px;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+  .callout strong { color: var(--ink); }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<div class="wrap lang" data-lang="it">
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Due trasferimenti privati
+      <span class="sub">Castel Monastero → Castelfalfi (20) · Castelfalfi → Cape of Senses, Lago di Garda (23)</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Cliente</span><span class="v">Keshav Menon</span></div>
+      <div class="fact"><span class="eyebrow">Gruppo</span><span class="v">16 persone</span></div>
+      <div class="fact"><span class="eyebrow">Bagagli</span><span class="v">23 stiva + 15 mano</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2026-MENON</span></div>
+      <div class="fact"><span class="eyebrow">Aggiornato</span><span class="v">14 settembre 2026</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">24 settembre 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <p class="lede">Grazie per averci confermato i bagagli — 23 valigie da stiva e 15 bagagli a mano: il carico rientra nella capienza del minibus. Era l'unico punto rimasto aperto nella prima versione di questo preventivo, ora risolto. Confermiamo due dei quattro tratti richiesti: il 20 e il 23. Il 17 e il 26 — i due tratti da e per Milano — non rientrano fra i servizi che possiamo offrire.</p>
+  </section>
+
+  <section>
+    <h2>Il mezzo</h2>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista</span>
+      <p>È la misura giusta per un gruppo di 16: i dieci posti liberi lasciano spazio a bordo, e la carrozzeria compatta raggiunge resort e strade di collina dove un autobus gran turismo non arriva.</p>
+      <p><strong>Bagagli, confermato.</strong> Le 23 valigie da stiva riempiono esattamente il vano bagagli dedicato, al limite della sua capienza comoda (~30 kg ciascuna): non resta margine per altro nel vano. I 15 bagagli a mano viaggiano con il gruppo nell'abitacolo, sui dieci sedili liberi.</p>
+      <p>Aria condizionata, sedili reclinabili con cinture, frigo bar, impianto audio di bordo. Conducente professionista: parla italiano e spagnolo, non inglese.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Orari di partenza ancora da concordare.</p>
+    <div class="days">
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">20 — Castel Monastero → Castelfalfi</span>
+          <span class="badge">circa 1 h 45</span>
+        </div>
+        <p>Ritrovo a Castel Monastero, Castelnuovo Berardenga (SI), carico dei bagagli e trasferimento diretto a Castelfalfi, Montaione (FI). Sola andata: una volta lasciato il gruppo, il minibus rientra alla base senza passeggeri.</p>
+      </article>
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">23 — Castelfalfi → Cape of Senses, Lago di Garda</span>
+          <span class="badge">circa 4 h</span>
+        </div>
+        <p>Ritrovo a Castelfalfi e trasferimento al Cape of Senses Hideaway, Torri del Benaco (VR), sulla sponda veronese del Lago di Garda. Sola andata, con sosta obbligatoria lungo il percorso e il minibus che rientra vuoto.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr><th>Servizio</th><th class="num">Importo</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">20 set</span>Castel Monastero → Castelfalfi, trasferimento di sola andata</td>
+            <td class="num">€ 950,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">23 set</span>Castelfalfi → Cape of Senses, Torri del Benaco (VR), sola andata</td>
+            <td class="num">€ 1.650,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr class="tot">
+            <td>Totale, al netto di IVA</td>
+            <td class="num">€ 2.600,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Totale da corrispondere, IVA 10% inclusa</span>
+      <span class="fig">€ 2.860,00</span>
+    </div>
+
+    <div class="callout">
+      Prezzo fisso per i due trasferimenti, ciascuno confermabile singolarmente. Calcolato sui bagagli ora confermati: 23 valigie da stiva, al limite della capienza del vano, e 15 bagagli a mano nell'abitacolo con il gruppo.
+    </div>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Minibus con conducente professionista a disposizione esclusiva del gruppo per ciascun trasferimento; carico e trasporto dei bagagli (23 in stiva, 15 a mano); carburante, pedaggi e assicurazione; riposizionamento del mezzo da e per la base; IVA 10% già compresa nel totale.</li>
+      <li><strong>Nessun onere di accesso.</strong> Castel Monastero e Castelfalfi sono tenute di campagna fuori da ogni ZTL; Torri del Benaco non ha un permesso bus registrato. Se dovesse emergerne uno, lo giriamo alla tariffa ufficiale, senza ricarico.</li>
+      <li><strong>Non incluso.</strong> I trasferimenti del 17 (Milano → Castel Monastero) e del 26 (Cape of Senses → Milano), che non copriamo. Attesa oltre l'orario concordato, € 50,00 all'ora. Soste o destinazioni aggiuntive, in particolare quelle che richiederebbero un permesso di accesso in città.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Acconto 30% alla conferma</td>
+            <td class="num"><strong>€ 858,00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr>
+            <td>Saldo, 5 giorni prima del primo trasferimento</td>
+            <td class="num"><strong>€ 2.002,00</strong></td>
+            <td class="num vat">data da fissare col mese</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05. La fattura viene emessa un'unica volta, per l'importo totale, al momento del saldo.</p>
+  </section>
+
+  <section>
+    <h2>Da confermare</h2>
+    <ul class="conds">
+      <li><strong>Il mese e l'anno.</strong> La richiesta indica il 17, il 20, il 23 e il 26, ma non il mese.</li>
+      <li><strong>Gli orari di partenza</strong> di ciascun trasferimento.</li>
+      <li><strong>Accesso al Cape of Senses Hideaway.</strong> Da verificare che la strada sulla collina sopra Torri del Benaco sia percorribile dal mezzo; altrimenti si concorda un punto di sbarco in paese.</li>
+      <li><strong>Un numero di cellulare del gruppo</strong>, da passare all'autista.</li>
+      <li><strong>Validità e cancellazione.</strong> Preventivo valido fino al 24 settembre 2026; date bloccate 48 ore dalla conferma. Cancellazione gratuita oltre 60 giorni; da 60 a 30 giorni si trattiene l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Interno — non fa parte del preventivo inviato</div>
+    <h2>Bagagli: perché ora va bene</h2>
+    <p>Il cliente aveva indicato 32 colli complessivi nella prima richiesta, 9 oltre la capienza del vano (~23 valigie). Ora ha chiarito la composizione: 23 da stiva e 15 a mano. I 23 da stiva riempiono il vano esattamente al limite — nessun margine, ma dentro la soglia dichiarata. I 15 a mano viaggiano nell'abitacolo: con 16 passeggeri su 26 posti ci sono 10 sedili liberi, più che sufficienti. Il totale (38 colli) è più alto di quello dichiarato all'inizio (32), ma la parte rilevante per il vano bagagliaio riguarda solo i 23 da stiva.</p>
+
+    <h3>Correzione applicata</h3>
+    <p>Le condizioni di cancellazione della prima bozza (libera oltre 30 gg, poi 10-3 gg 70%, ultime 72h 100%) non corrispondevano allo standard GiroMunna. Corrette allo standard: gratuita oltre 60 gg; 60-30 gg acconto trattenuto; 30-10 gg 50%; ultimi 10 gg 100%.</p>
+
+    <h3>Da chiarire prima di rispondere</h3>
+    <ol>
+      <li><strong>Il mese del viaggio</strong> non è confermato: il 20 e il 23 settembre sono un'ipotesi basata sulla validità del preventivo (fino al 24 settembre), non una certezza. Se risultasse un mese diverso, la cartella andrebbe rinominata.</li>
+      <li><strong>Riferimento preventivo</strong> mantenuto invariato (GM-2026-MENON) per continuità con la prima versione già inviata al cliente, anche se non segue lo schema standard GM-AAAA-MMGG-XX.</li>
+      <li><strong>17 e 26 settembre non coperti</strong>: verificare con il cliente se cercano un altro operatore per quei due tratti, nel caso Girolamo voglia comunque proporre una soluzione tramite Francesco.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2026-MENON · aggiornato il 14 settembre 2026</span>
+  </footer>
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Two point-to-point transfers
+      <span class="sub">Castel Monastero → Castelfalfi (20th) · Castelfalfi → Cape of Senses, Lake Garda (23rd)</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Client</span><span class="v">Keshav Menon</span></div>
+      <div class="fact"><span class="eyebrow">Group</span><span class="v">16 people</span></div>
+      <div class="fact"><span class="eyebrow">Luggage</span><span class="v">23 check-in + 15 cabin</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2026-MENON</span></div>
+      <div class="fact"><span class="eyebrow">Updated</span><span class="v">14 September 2026</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">24 September 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <p class="lede">Thank you for confirming the luggage — 23 check-in suitcases and 15 cabin bags: the load fits within the minibus. That was the one point left open in the first version of this quotation, now resolved. Of the four legs you asked about, we can confirm two: the 20th and the 23rd. The 17th and the 26th — the two legs from and to Milan — are not among the services we are able to offer.</p>
+  </section>
+
+  <section>
+    <h2>The vehicle</h2>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus the driver</span>
+      <p>The right size for a group of 16: the ten spare seats leave room on board, and its compact body reaches resorts and hill roads that a full-size touring coach cannot.</p>
+      <p><strong>Luggage, now confirmed.</strong> The 23 check-in bags fill the dedicated hold exactly at its comfortable limit (~30 kg each): there is no spare room left in the hold. The 15 cabin bags travel with the group inside the passenger cabin, on the ten spare seats.</p>
+      <p>Air conditioning, reclining seats with seatbelts, fridge bar, on-board sound system. Professional driver: he speaks Italian and Spanish, not English.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Programme</h2>
+    <p class="lede">Departure times still to be agreed.</p>
+    <div class="days">
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">20th — Castel Monastero → Castelfalfi</span>
+          <span class="badge">approx. 1 h 45</span>
+        </div>
+        <p>Pick-up at Castel Monastero, Castelnuovo Berardenga (SI), loading of the luggage and direct transfer to Castelfalfi, Montaione (FI). One way: once the group has been dropped off, the minibus returns to our base with no passengers on board.</p>
+      </article>
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">23rd — Castelfalfi → Cape of Senses, Lake Garda</span>
+          <span class="badge">approx. 4 h</span>
+        </div>
+        <p>Pick-up at Castelfalfi and transfer to the Cape of Senses Hideaway, Torri del Benaco (VR), on the Verona shore of Lake Garda. One way as well, plus the statutory rest stop along the way, with the minibus returning empty.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr><th>Service</th><th class="num">Amount</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">20 Sep</span>Castel Monastero → Castelfalfi, one-way transfer</td>
+            <td class="num">€ 950.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">23 Sep</span>Castelfalfi → Cape of Senses, Torri del Benaco (VR), one way</td>
+            <td class="num">€ 1,650.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr class="tot">
+            <td>Total, excluding VAT</td>
+            <td class="num">€ 2,600.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Total payable, VAT 10% included</span>
+      <span class="fig">€ 2,860.00</span>
+    </div>
+
+    <div class="callout">
+      Fixed price for the two transfers, each confirmable on its own. Priced for luggage as now confirmed: 23 check-in bags, at the hold's full capacity, and 15 cabin bags carried with the group in the passenger cabin.
+    </div>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Minibus with professional driver at your group's exclusive disposal for each transfer; loading and carriage of the luggage (23 in the hold, 15 cabin bags); fuel, tolls and insurance; repositioning of the vehicle to and from base; VAT 10% already included in the total.</li>
+      <li><strong>No access charges.</strong> Castel Monastero and Castelfalfi are countryside estates outside any restricted traffic zone; Torri del Benaco has no coach access permit on record. Should one emerge, we pass it on at the official rate, with no mark-up.</li>
+      <li><strong>Not included.</strong> The transfers on the 17th (Milan → Castel Monastero) and the 26th (Cape of Senses → Milan), which we do not cover. Waiting beyond the agreed time, € 50.00 per hour. Additional stops or destinations, in particular any requiring a city access permit.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Deposit 30% on confirmation</td>
+            <td class="num"><strong>€ 858.00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr>
+            <td>Balance, 5 days before the first transfer</td>
+            <td class="num"><strong>€ 2,002.00</strong></td>
+            <td class="num vat">exact date once the month is confirmed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05. The invoice is issued once, for the full amount, at the time of the balance payment.</p>
+  </section>
+
+  <section>
+    <h2>To confirm</h2>
+    <ul class="conds">
+      <li><strong>The month and year.</strong> The enquiry gives the 17th, 20th, 23rd and 26th but not the month.</li>
+      <li><strong>The departure time</strong> for each transfer.</li>
+      <li><strong>Access to the Cape of Senses Hideaway.</strong> To confirm the approach road above Torri del Benaco is suitable for the vehicle; otherwise we agree a drop-off point in town.</li>
+      <li><strong>A mobile number for the group</strong>, to pass to the driver.</li>
+      <li><strong>Validity and cancellation.</strong> Quotation valid until 24 September 2026; dates held for 48 hours on confirmation. Free cancellation more than 60 days out; 60-30 days deposit retained; 30-10 days 50%; last 10 days 100%.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal — not part of the quotation sent</div>
+    <h2>Luggage: why it now works</h2>
+    <p>The client's first enquiry gave 32 pieces overall, 9 over the hold's capacity (~23 suitcases). They have now clarified the breakdown: 23 check-in and 15 cabin. The 23 check-in bags fill the hold exactly at its limit — no margin, but within the stated threshold. The 15 cabin bags travel in the passenger cabin: with 16 passengers on 26 seats there are 10 spare seats, more than enough. The new total (38 pieces) is higher than the first figure (32), but only the 23 check-in bags matter for the hold.</p>
+
+    <h3>Correction applied</h3>
+    <p>The cancellation terms in the first draft (free beyond 30 days, then 70% at 10-3 days, 100% in the last 72h) did not match the GiroMunna standard. Corrected to the standard: free beyond 60 days; deposit retained 60-30 days; 50% at 30-10 days; 100% in the last 10 days.</p>
+
+    <h3>To settle before replying</h3>
+    <ol>
+      <li><strong>The travel month</strong> is not confirmed: 20-23 September is an assumption based on the quotation's validity (until 24 September), not a certainty. If it turns out to be a different month, the folder should be renamed.</li>
+      <li><strong>Quotation reference</strong> kept unchanged (GM-2026-MENON) for continuity with the version already sent, even though it does not follow the standard GM-YYYY-MMDD-XX scheme.</li>
+      <li><strong>17th and 26th not covered</strong>: check with the client whether they need another operator for those legs, in case Girolamo wants to offer a solution through Francesco.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2026-MENON · updated 14 September 2026</span>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
