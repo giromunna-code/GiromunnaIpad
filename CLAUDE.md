@@ -102,11 +102,16 @@ sotto mercato svaluta il servizio e non si recupera.
 - Cancellazione: gratuita oltre 60 giorni; da 60 a 30 giorni si trattiene l'acconto;
   da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%.
 - **A Firenze il permesso bus per il centro (circa € 350) ci vuole sempre, eccetto
-  l'aeroporto.** Non è evitabile scegliendo un punto di ritrovo diverso in città — stazione,
-  centro, qualunque indirizzo che non sia l'aeroporto — va sempre messo a preventivo come
-  costo, un permesso per ogni giornata di ingresso. L'aeroporto di Firenze è l'unica vera
-  eccezione e non comporta oneri di accesso. Quello di Pisa ha il parcheggio bus (circa
-  € 61). Siena ha il permesso comunale per i bus turistici (circa € 160).
+  l'aeroporto.** Non è evitabile scegliendo un altro punto di ritrovo *dentro* la città —
+  stazione, centro, qualunque indirizzo che non sia l'aeroporto — va sempre messo a
+  preventivo come costo, un permesso per ogni giornata di ingresso. L'unico modo reale per
+  evitarlo è **non entrare in città**: ritrovo/rilascio a **Villa Costanza** (Scandicci,
+  capolinea bus fuori dalla ZTL), da cui il gruppo prosegue con la tramvia T1 per il centro
+  di Firenze, circa 20 minuti. Va proposto e valutato caso per caso — è un'alternativa più
+  economica ma meno comoda (tram in più, non porta a porta), non un'opzione automatica.
+  L'aeroporto di Firenze è l'altra vera eccezione e non comporta oneri di accesso. Quello di
+  Pisa ha il parcheggio bus (circa € 61). Siena ha il permesso comunale per i bus turistici
+  (circa € 160).
 - **Anche Lucca richiede il permesso bus per il centro.** Stessa logica di Firenze: va
   sempre messo a preventivo per ogni giornata con un servizio a Lucca (ritrovo, rilascio o
   sosta in città). Importo esatto da confermare con Girolamo — non usare una cifra a caso
