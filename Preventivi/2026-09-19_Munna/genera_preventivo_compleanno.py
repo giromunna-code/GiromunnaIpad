@@ -85,17 +85,18 @@ IT = dict(
         ("Sab 19 set — serata a disposizione: Prato → Piazzale Michelangelo → Prato, ore 23:00-03:00 circa",
          "€ 480,00", "+ IVA 10%"),
         ("Supplemento rientro dopo le 02:00 (per mezzo)", "€ 250,00", "+ IVA 10%"),
+        ("Permesso ZTL Bus per la sosta a Piazzale Michelangelo (Firenze) — stima, da confermare",
+         "€ 235,00", "+ IVA 10%"),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 730,00",
+    price_total="€ 965,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 803,00.",
-    perhead="Sono circa € 80,30 a persona per la serata.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 1.061,50.",
+    perhead="Sono circa € 106,15 a persona per la serata.",
     h_incluso="Incluso.",
     incluso=(
-        "Mezzo e conducente, carburante, pedaggi, parcheggio, assicurazione completa. Piazzale Michelangelo "
-        "non è in zona a traffico limitato e non richiede alcun permesso di accesso: il Beluga ci arriva "
-        "senza problemi, come i bus turistici che vi sostano ogni giorno."
+        "Mezzo e conducente, carburante, pedaggi, parcheggio, assicurazione completa, permesso ZTL Bus per la "
+        "sosta a Piazzale Michelangelo."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
@@ -104,8 +105,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 240,90", "IVA inclusa"),
-        ("Saldo, entro il 18 settembre 2026", "€ 562,10", ""),
+        ("Acconto 30% alla conferma", "€ 318,45", "IVA inclusa"),
+        ("Saldo, entro il 18 settembre 2026", "€ 743,05", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -114,6 +115,11 @@ IT = dict(
         ("<b>Il supplemento per il rientro dopo le 02:00.</b> Il programma richiesto riporta il gruppo a Prato "
          "verso le 03:00, oltre l'orario delle 02:00 dal quale scatta la maggiorazione notturna di € 250,00 "
          "per mezzo. È già compresa nel prezzo qui sopra: se gli orari restano questi non si aggiunge altro."),
+        ("<b>Il permesso ZTL Bus per Piazzale Michelangelo.</b> La sosta per salita e discesa a Piazzale "
+         "Michelangelo rientra nella ZTL Bus del Comune di Firenze, che copre l'intero centro abitato ed è "
+         "attiva 24 ore su 24: serve un permesso a pagamento, che acquistiamo noi. Il prezzo qui sopra riporta "
+         "una stima indicativa, € 235,00: la confermiamo con la tariffa esatta del Beluga prima dell'invio "
+         "definitivo, l'importo in fattura sarà quello reale."),
         ("<b>Un gruppo di soli minorenni.</b> Per tutta la serata il conducente resta con il mezzo parcheggiato "
          "nei pressi di Piazzale Michelangelo ed è raggiungibile al telefono. Ci è utile avere, prima della "
          "partenza, il numero di un genitore o di un accompagnatore di riferimento per la serata."),
@@ -170,17 +176,18 @@ EN = dict(
         ("Sat 19 Sep — evening at disposal: Prato → Piazzale Michelangelo → Prato, approx. 23:00-03:00",
          "€ 480.00", "+ VAT 10%"),
         ("Surcharge for return after 02:00 (per vehicle)", "€ 250.00", "+ VAT 10%"),
+        ("Florence ZTL Bus permit for the stop at Piazzale Michelangelo — estimate, to be confirmed",
+         "€ 235.00", "+ VAT 10%"),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 730.00",
+    price_total="€ 965.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 803.00.",
-    perhead="That is about € 80.30 per person for the evening.",
+    grand="Total payable, VAT 10% included: € 1,061.50.",
+    perhead="That is about € 106.15 per person for the evening.",
     h_incluso="Included.",
     incluso=(
-        "Vehicle and driver, fuel, tolls, parking, full insurance. Piazzale Michelangelo is not inside a "
-        "restricted traffic zone and requires no access permit: the Beluga gets there with no trouble, "
-        "just like the tour coaches that stop there every day."
+        "Vehicle and driver, fuel, tolls, parking, full insurance, the Florence ZTL Bus permit for the stop "
+        "at Piazzale Michelangelo."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
@@ -189,8 +196,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 240.90", "VAT included"),
-        ("Balance, by 18 September 2026", "€ 562.10", ""),
+        ("Deposit 30% on confirmation", "€ 318.45", "VAT included"),
+        ("Balance, by 18 September 2026", "€ 743.05", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -199,6 +206,11 @@ EN = dict(
         ("<b>The surcharge for returning after 02:00.</b> The requested plan brings the group back to Prato "
          "around 03:00, past the 02:00 threshold at which the € 250.00 per-vehicle night surcharge applies. "
          "It is already included in the price above: if the times stay as they are, nothing further is added."),
+        ("<b>The Florence ZTL Bus permit for Piazzale Michelangelo.</b> Stopping for pick-up and drop-off at "
+         "Piazzale Michelangelo falls inside Florence's city-wide ZTL Bus zone, which covers the whole "
+         "built-up area and is active 24 hours a day: a paid permit is required, which we purchase. The price "
+         "above carries an indicative estimate, € 235.00: we will confirm the exact tariff for the Beluga "
+         "before the final invoice, and the amount charged will be the real one."),
         ("<b>A group of minors only.</b> Throughout the evening the driver stays with the vehicle parked near "
          "Piazzale Michelangelo and can be reached by phone. It is useful to have, before departure, the "
          "number of a parent or adult responsible for the evening."),

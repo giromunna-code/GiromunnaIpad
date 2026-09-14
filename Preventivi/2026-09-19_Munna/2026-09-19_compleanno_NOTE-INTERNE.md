@@ -36,10 +36,11 @@ prima di consegnarlo.
 |---|---|
 | Serata a disposizione: Prato → Piazzale Michelangelo → Prato, ore 23:00-03:00 circa | € 480,00 |
 | Supplemento rientro dopo le 02:00 (per mezzo) | € 250,00 |
+| Permesso ZTL Bus per la sosta a Piazzale Michelangelo — stima, da confermare | € 235,00 |
 
-**Totale netto € 730,00 · IVA 10% € 73,00 · Totale € 803,00** (≈ € 80,30 a persona)
+**Totale netto € 965,00 · IVA 10% € 96,50 · Totale € 1.061,50** (≈ € 106,15 a persona)
 
-Acconto 30% € 240,90 — saldo € 562,10, richiesto entro il 18 settembre invece dei soliti
+Acconto 30% € 318,45 — saldo € 743,05, richiesto entro il 18 settembre invece dei soliti
 termini più lunghi, vista la vicinanza della data.
 
 ## Come è stato costruito il prezzo
@@ -70,16 +71,32 @@ concordato con il cliente.
 
 Lavoro sul mezzo di proprietà (Beluga), nessun pernottamento del conducente da coprire,
 percorso breve e noto (Prato-Firenze, ~20 km): costo diretto stimato contenuto, margine
-buono sui € 730,00 netti.
+buono sui € 965,00 netti.
 
-## Verifiche di accesso
+## Verifiche di accesso — corrette dopo la prima stesura
 
-- Piazzale Michelangelo è fuori dalla ZTL del centro storico di Firenze: non serve il
-  permesso da ~€ 350 previsto per l'ingresso di un bus turistico in centro.
-- È un'area dove i bus turistici sostano regolarmente durante il giorno per il panorama;
-  non risultano restrizioni specifiche nella fascia notturna, ma vale la pena farsi
-  confermare dal conducente il punto di sosta esatto (piazzale o Viale Michelangelo) prima
-  del 19.
+**Nella prima versione avevo sbagliato**: avevo scritto che Piazzale Michelangelo, non
+essendo nel centro storico, non richiedesse alcun permesso. Girolamo ha segnalato che a
+Firenze "si paga il check point" e aveva ragione. Verificato:
+
+- La **ZTL Bus** del Comune di Firenze copre l'intero centro abitato (non solo il centro
+  storico, anche il quartiere di Galluzzo), attiva 24 ore su 24, tutti i giorni.
+- La sosta per salita/discesa a Piazzale Michelangelo rientra nella zona regolamentata:
+  serve il permesso online (il "check point", ora gestito solo via portale, non più ai
+  varchi fisici).
+- Fonti: [Servizi alla Strada — autorizzazioni circolazione e sosta autobus](https://www.serviziallastrada.it/servizi-al-turista/autorizzazioni-circolazione-e-sosta-autobus),
+  [Feel Florence — bus turistici](https://www.feelflorence.it/en/editorial-staff/tourist-coaches-arriving-florence-ztl-bus),
+  [Servizi alla Strada — Parcheggi salite/discese](https://www.serviziallastrada.it/servizi-al-turista/autorizzazioni-circolazione-e-sosta-autobus/parcheggi-salitediscese)
+  (a Piazzale Michelangelo salita/discesa 24/24, sosta max 20 minuti, accesso da Viale
+  Galileo/Viale Michelangelo).
+- Tariffa: per un mezzo Euro VI fino a 8 m (come il Beluga) risulta un permesso giornaliero
+  "tipo G ordinario" intorno a € 235,00; la forbice complessiva delle tariffe (€ 110-760)
+  varia molto per classe emissioni e lunghezza. Fonti dirette del portale Servizi alla
+  Strada non raggiungibili da qui (bloccate dal proxy di rete): **la tariffa esatta va
+  confermata sul portale con la classe emissioni reale del Beluga prima di inviare il
+  preventivo definitivo.**
+- Il preventivo attuale porta una stima di € 235,00, segnata esplicitamente come "da
+  confermare" sia nel PDF che nella pagina web.
 
 ## Da chiarire prima di consegnare
 
@@ -89,10 +106,13 @@ buono sui € 730,00 netti.
 3. **Punto di sosta preciso del mezzo** a Piazzale Michelangelo durante l'attesa.
 4. **Recapito di un genitore/accompagnatore di riferimento per la serata**, trattandosi di
    un gruppo di soli minorenni.
-5. **Tempi stretti** — mancano solo 5 giorni al servizio (oggi 14, servizio il 19): la
+5. **Tariffa esatta del permesso ZTL Bus** — verificare sul portale Servizi alla Strada con
+   la classe emissioni del Beluga e correggere il prezzo (oggi a € 235,00 stimati) prima
+   dell'invio.
+6. **Tempi stretti** — mancano solo 5 giorni al servizio (oggi 14, servizio il 19): la
    prenotazione ricade già nella fascia di cancellazione più stretta (ultimi 10 giorni,
-   100% in caso di disdetta). Conviene bloccare la disponibilità del mezzo appena
-   possibile.
+   100% in caso di disdetta). Conviene bloccare la disponibilità del mezzo e acquistare il
+   permesso ZTL Bus appena possibile.
 
 ## Promemoria
 
