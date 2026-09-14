@@ -14,10 +14,11 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
 - **Mai creare bozze in Gmail e mai inviare nulla con nessuno strumento.** L'invio è sempre
   e solo di Girolamo: lo fa lui, con i suoi tempi, dal suo account. Questo non si propone
   mai di iniziativa.
-- **Il testo di una mail si scrive, ma solo su richiesta esplicita** ("preparami la mail",
-  "scrivimi la mail"). In quel caso è un documento come gli altri — italiano e inglese,
-  consegnato in chat — che Girolamo copia e invia lui stesso. Non è una bozza in Gmail, è
-  testo da copiare: le due cose sono diverse, la prima è vietata, la seconda no.
+- **Il testo della mail si scrive sempre, non solo su richiesta.** Ogni volta che si
+  consegna un preventivo (o un altro documento per il cliente) va preparato anche il testo
+  della mail di accompagnamento — italiano e inglese, come il resto — consegnato in chat,
+  che Girolamo copia e invia lui stesso dal suo account. Non è una bozza in Gmail, è testo
+  da copiare: le due cose sono diverse, la prima è vietata, la seconda è la norma.
 - **Girolamo non usa GitHub.** Non gli si parla di GitHub, repository, cartelle del
   repository o link per navigarlo, e non gli si propone di mandargliene uno: sono dettagli
   tecnici che non gli servono e non sa cosa farsene. I file (PDF, ecc.) si consegnano
