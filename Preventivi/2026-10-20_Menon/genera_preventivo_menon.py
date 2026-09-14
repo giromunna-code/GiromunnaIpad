@@ -157,7 +157,9 @@ IT = dict(
          "qui quotati non è dovuto alcun onere: Castel Monastero e Castelfalfi sono tenute di campagna fuori da "
          "ogni zona a traffico limitato, e Torri del Benaco non ha un permesso bus registrato. Se dovesse "
          "emergere, ve lo segnaliamo prima del servizio e lo giriamo alla tariffa ufficiale, senza alcun ricarico."),
-        ("<b>Gli orari di partenza</b> di ciascun trasferimento, ancora da concordare."),
+        ("<b>Orari e punti di carico esatti.</b> Ci servono l'orario di partenza di ciascun trasferimento e il "
+         "punto di carico preciso — l'ingresso o il punto di ritrovo indicato dalla struttura — sia a Castel "
+         "Monastero il 20 ottobre sia a Castelfalfi il 23 ottobre."),
         ("<b>Accesso al Cape of Senses Hideaway.</b> La struttura sorge sulla collina sopra Torri del Benaco: "
          "vorremmo verificare con voi, o direttamente con l'hotel, che la strada di accesso sia percorribile dal "
          "mezzo. In caso contrario, concordiamo un punto di sbarco a Torri del Benaco."),
@@ -280,7 +282,9 @@ EN = dict(
          "charge is due: Castel Monastero and Castelfalfi are countryside estates, outside any restricted traffic "
          "zone, and Torri del Benaco has no coach access permit on record. Should one emerge, we will tell you "
          "before the service and pass it on at the official rate, with no mark-up."),
-        ("<b>The departure time</b> for each transfer, still to be agreed."),
+        ("<b>Exact times and pick-up points.</b> We need the departure time for each transfer and the precise "
+         "pick-up point — the entrance or meeting point set by the property — both at Castel Monastero on "
+         "20 October and at Castelfalfi on 23 October."),
         ("<b>Access to the Cape of Senses Hideaway.</b> The property sits on the hillside above Torri del "
          "Benaco, and we would like to check with you, or directly with the hotel, that the approach road is "
          "suitable for the vehicle. If it is not, we will agree a workable drop-off point in Torri del Benaco."),

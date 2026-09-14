@@ -71,8 +71,12 @@ Di conseguenza:
 2. **Il 17 e il 26 ottobre non sono coperti** (i due tratti da/per Milano): resta da vedere se
    Girolamo vuole proporre una soluzione tramite Francesco (Tuscany T.O. & Munna Bus Operator)
    per quei due trasferimenti, oppure lasciare che il cliente si organizzi altrimenti.
-3. Orari di partenza, accesso stradale al Cape of Senses Hideaway, numero di cellulare del
-   gruppo — tutti ancora da confermare, come nelle versioni precedenti.
+3. **Orari e punti di carico esatti**, per entrambi i trasferimenti — non solo l'orario di
+   partenza, ma anche il punto di carico preciso (ingresso o punto di ritrovo indicato dalla
+   struttura) a Castel Monastero il 20 ottobre e a Castelfalfi il 23 ottobre. Segnalato
+   esplicitamente da Girolamo come mancante nella nota; prima si parlava solo di orari.
+4. Accesso stradale al Cape of Senses Hideaway, numero di cellulare del gruppo — ancora da
+   confermare, come nelle versioni precedenti.
 
 ## Nota sul processo
 
