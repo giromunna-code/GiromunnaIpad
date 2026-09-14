@@ -107,6 +107,10 @@ sotto mercato svaluta il servizio e non si recupera.
   costo, un permesso per ogni giornata di ingresso. L'aeroporto di Firenze è l'unica vera
   eccezione e non comporta oneri di accesso. Quello di Pisa ha il parcheggio bus (circa
   € 61). Siena ha il permesso comunale per i bus turistici (circa € 160).
+- **Anche Lucca richiede il permesso bus per il centro.** Stessa logica di Firenze: va
+  sempre messo a preventivo per ogni giornata con un servizio a Lucca (ritrovo, rilascio o
+  sosta in città). Importo esatto da confermare con Girolamo — non usare una cifra a caso
+  finché non è confermato.
 
 ## Struttura del repository
 
