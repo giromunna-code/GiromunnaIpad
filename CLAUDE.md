@@ -14,6 +14,11 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
 - **Mai preparare bozze di mail e mai inviare niente.** Alle mail ci pensa Girolamo: scrive
   lui ai clienti, con i suoi tempi e le sue parole. Il lavoro si ferma al documento
   consegnato — niente bozze in Gmail, niente invii, e non serve nemmeno proporlo.
+- **Girolamo non usa GitHub.** Non gli si parla di GitHub, repository, cartelle del
+  repository o link per navigarlo, e non gli si propone di mandargliene uno: sono dettagli
+  tecnici che non gli servono e non sa cosa farsene. I file (PDF, ecc.) si consegnano
+  sempre come allegati in chat — quello è il modo in cui li riceve, punto. Il repository
+  resta solo l'organizzazione interna del lavoro.
 
 ## Dati aziendali
 
