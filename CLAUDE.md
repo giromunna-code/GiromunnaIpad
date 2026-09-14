@@ -102,8 +102,14 @@ sotto mercato svaluta il servizio e non si recupera.
 - Cancellazione: gratuita oltre 60 giorni; da 60 a 30 giorni si trattiene l'acconto;
   da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%.
 - L'aeroporto di Firenze non comporta oneri di accesso; quello di Pisa ha il parcheggio bus
-  (circa € 61). L'ingresso di un bus turistico nel centro di Firenze richiede un permesso a
-  parte (circa € 350). Siena ha il permesso comunale per i bus turistici (circa € 160).
+  (circa € 61). Siena ha il permesso comunale per i bus turistici (circa € 160).
+- **Firenze — permesso ZTL Bus (il "checkpoint"): € 415,00 per il nostro minibus.** Non è
+  solo il centro storico: la ZTL Bus del Comune di Firenze copre l'intero centro abitato
+  (compreso Piazzale Michelangelo), attiva 24 ore su 24, tutti i giorni. Qualsiasi sosta di
+  un bus turistico per salita/discesa dentro Firenze — non solo l'ingresso nel centro — va
+  quotata con questo permesso, acquistato online su Servizi alla Strada. Tariffa confermata
+  da Girolamo per il nostro mezzo; non usare la vecchia cifra di ~€ 350, era una stima
+  sbagliata riferita al solo centro storico.
 
 ## Struttura del repository
 
