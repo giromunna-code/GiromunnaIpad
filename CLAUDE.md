@@ -101,7 +101,7 @@ sotto mercato svaluta il servizio e non si recupera.
   sistemare il conducente nella stessa struttura del gruppo.
 - Cancellazione: gratuita oltre 60 giorni; da 60 a 30 giorni si trattiene l'acconto;
   da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%.
-- **A Firenze il permesso bus per il centro (circa € 350) ci vuole sempre, eccetto
+- **A Firenze il permesso bus per il centro (€ 415) ci vuole sempre, eccetto
   l'aeroporto.** Non è evitabile scegliendo un altro punto di ritrovo *dentro* la città —
   stazione, centro, qualunque indirizzo che non sia l'aeroporto — va sempre messo a
   preventivo come costo, un permesso per ogni giornata di ingresso. L'unico modo reale per

@@ -59,18 +59,18 @@ lavoro.
 | Data | Servizio | Netto |
 |---|---|---|
 | Mar 20 apr | Stazione Firenze S.M.N. → villa (~80 km) + cena in serata (~16 km) | € 680,00 |
-| Mar 20 apr | Permesso bus centro storico di Firenze | € 350,00 |
+| Mar 20 apr | Permesso bus centro storico di Firenze | € 415,00 |
 | Mer 21 apr | Due trasferimenti separati Capannori↔Firenze (~80 km ciascuno), nessuna attesa prolungata | € 800,00 |
-| Mer 21 apr | Permesso bus centro storico di Firenze | € 350,00 |
+| Mer 21 apr | Permesso bus centro storico di Firenze | € 415,00 |
 | Gio 22 apr | Giornata più pesante: ~7 ore a disposizione di giorno (cantine, pranzo) + serata a Lucca, ~11 ore su due turni | € 1.430,00 |
 | Gio 22 apr | Permesso bus centro storico di Lucca | € 180,00 |
 | Ven 23 apr | Programma da confermare, prezzata come giornata piena a disposizione locale — **provvisoria** | € 880,00 |
 | Sab 24 apr | Villa → aeroporto di Firenze (~80 km), nessun permesso | € 680,00 |
 
-**Totale netto € 5.350,00 · IVA 10% € 535,00 · Totale € 5.885,00** (tra € 420,00 e € 490,00
+**Totale netto € 5.480,00 · IVA 10% € 548,00 · Totale € 6.028,00** (tra € 431,00 e € 502,00
 a persona secondo il numero definitivo tra 12 e 14).
 
-Acconto 30% € 1.765,50 — saldo € 4.119,50.
+Acconto 30% € 1.808,40 — saldo € 4.219,60.
 
 Nel dubbio i prezzi sono stati tenuti alti, come da indicazione: il 23 aprile in particolare
 è una stima prudente in attesa del programma reale.
@@ -80,7 +80,8 @@ Nel dubbio i prezzi sono stati tenuti alti, come da indicazione: il 23 aprile in
 Nella prima stesura avevo ipotizzato che il permesso per il centro storico di Firenze si
 potesse evitare facendo ritrovo/rilascio in un punto periferico autorizzato alla sosta bus,
 per la giornata del 21 aprile, e non avevo considerato affatto un permesso per Lucca il 22.
-**Girolamo ha corretto entrambi i punti**:
+Avevo anche usato una cifra approssimativa per Firenze. **Girolamo ha corretto tutti e tre
+i punti**:
 
 - A Firenze il permesso ci vuole sempre, indipendentemente dal punto di ritrovo scelto
   *dentro* la città — l'unica vera eccezione è l'aeroporto. C'è però un modo reale per
@@ -90,11 +91,13 @@ per la giornata del 21 aprile, e non avevo considerato affatto un permesso per L
   decidere a Girolamo — vedi punto 4 sotto).
 - Anche **Lucca** richiede lo stesso tipo di permesso: Girolamo lo ha confermato a
   **€ 180,00**.
+- L'importo esatto del permesso di Firenze è **€ 415,00** (non più "circa € 350"):
+  Girolamo lo ha confermato, corretto sia nel preventivo sia in CLAUDE.md.
 
-Ho aggiunto entrambi in tabella come voci a parte: Firenze € 350 x 2 (20 e 21 aprile),
-Lucca € 180 (22 aprile), € 880,00 in più sul totale rispetto alla prima stesura. Ho anche
-aggiornato la regola in CLAUDE.md — sezione *Condizioni ricorrenti* — così i prossimi
-preventivi con Firenze o Lucca non ripetono l'errore.
+Ho aggiunto entrambi in tabella come voci a parte: Firenze € 415 x 2 (20 e 21 aprile),
+Lucca € 180 (22 aprile), € 1.010,00 in più sul totale rispetto alla primissima stesura senza
+permessi. Ho anche aggiornato la regola in CLAUDE.md — sezione *Condizioni ricorrenti* —
+così i prossimi preventivi con Firenze o Lucca non ripetono l'errore.
 
 Girolamo ha anche segnalato **Guidoni** (fermata/parcheggio della tramvia T2, verso
 l'aeroporto di Firenze) come possibile ulteriore alternativa a Villa Costanza, ma non sa
@@ -129,7 +132,7 @@ margine sui cinque servizi è buono, in linea con un lavoro locale a corto raggi
    cliente non ne indica.
 6. **Bloccare la disponibilità del mezzo** per il 20-24 aprile 2027.
 7. **Villa Costanza per il 21 aprile**: Girolamo deve decidere se proporlo alla cliente
-   (risparmia € 350 ma toglie il porta a porta, aggiunge un cambio in tram) o lasciare il
+   (risparmia € 415 ma toglie il porta a porta, aggiunge un cambio in tram) o lasciare il
    servizio diretto in città come quotato ora.
 8. **Costo di Guidoni**: ancora da confermare con Girolamo se si paga per entrare/sostare.
 
