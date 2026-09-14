@@ -113,24 +113,25 @@ IT = dict(
         ("Mer 21 apr — trasferimenti mattina e pomeriggio da/per Firenze", "€ 800,00", "+ IVA 10%"),
         ("Mer 21 apr — permesso bus centro storico di Firenze", "€ 350,00", "+ IVA 10%"),
         ("Gio 22 apr — giornata a disposizione in zona e cena a Lucca", "€ 1.430,00", "+ IVA 10%"),
+        ("Gio 22 apr — permesso bus centro storico di Lucca", "€ 180,00", "+ IVA 10%"),
         ("Ven 23 apr — trasporti locali a Capannori e dintorni (da confermare)", "€ 880,00", "+ IVA 10%"),
         ("Sab 24 apr — villa a Capannori → aeroporto di Firenze", "€ 680,00", "+ IVA 10%"),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 5.170,00",
+    price_total="€ 5.350,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 5.687,00.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 5.885,00.",
     perhead=(
-        "Sono tra circa € 406,00 e € 474,00 a persona, IVA inclusa, secondo il numero definitivo "
+        "Sono tra circa € 420,00 e € 490,00 a persona, IVA inclusa, secondo il numero definitivo "
         "dei partecipanti (12-14)."
     ),
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente di lingua inglese, carburante, pedaggi autostradali, parcheggi, "
-        "assicurazione completa, movimentazione bagagli, la sosta al supermercato del 20 aprile e il "
-        "permesso comunale per l'ingresso del bus nel centro di Firenze, richiesto per ogni giornata "
-        "con un ritrovo o un rilascio in città (20 e 21 aprile). L'aeroporto di Firenze del 24 aprile "
-        "è l'unica giornata che non comporta questo onere."
+        "assicurazione completa, movimentazione bagagli, la sosta al supermercato del 20 aprile, il "
+        "permesso comunale per l'ingresso del bus nel centro di Firenze (20 e 21 aprile) e quello per "
+        "il centro di Lucca (22 aprile). L'aeroporto di Firenze del 24 aprile è l'unica giornata che "
+        "non comporta questo onere; per il 23 aprile lo valutiamo appena il programma è confermato."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
@@ -140,19 +141,19 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 1.706,10", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 3.980,90", ""),
+        ("Acconto 30% alla conferma", "€ 1.765,50", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 4.119,50", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
-        ("<b>Il permesso bus per Firenze.</b> Ogni giornata con un ritrovo o un rilascio in città — la "
-         "stazione del 20 aprile, la giornata del 21 — richiede il permesso comunale per l'ingresso del "
-         "bus nel centro storico: non è evitabile scegliendo un punto diverso, quindi lo abbiamo messo "
-         "a preventivo per entrambe le giornate (circa € 350 ciascuna). Fa eccezione solo l'aeroporto "
+        ("<b>I permessi bus per Firenze e Lucca.</b> Ogni giornata con un ritrovo, un rilascio o una "
+         "sosta nel centro di queste due città richiede un permesso comunale, che non è evitabile "
+         "scegliendo un punto diverso: lo abbiamo messo a preventivo per il 20 e il 21 aprile a Firenze "
+         "(circa € 350 ciascuno) e per il 22 aprile a Lucca (circa € 180). Fa eccezione solo l'aeroporto "
          "del 24 aprile, che non lo richiede. Fateci sapere dove preferite essere lasciati e ripresi in "
-         "città, così vi confermiamo il punto esatto."),
+         "città, così vi confermiamo i punti esatti."),
         ("<b>Furgoni invece del minibus.</b> Ci avete chiesto anche il confronto con due furgoni da "
          "6-7 posti ciascuno. La nostra flotta di proprietà è il Mercedes-Benz Beluga: con 12-14 "
          "persone restano fino a 14 posti liberi, ampio spazio per i bagagli, e i suoi 7,64 metri "
@@ -253,23 +254,25 @@ EN = dict(
         ("Wed 21 Apr — morning and afternoon transfers to/from Florence", "€ 800.00", "+ VAT 10%"),
         ("Wed 21 Apr — Florence historic-centre bus permit", "€ 350.00", "+ VAT 10%"),
         ("Thu 22 Apr — full day at disposal locally and dinner in Lucca", "€ 1,430.00", "+ VAT 10%"),
+        ("Thu 22 Apr — Lucca historic-centre bus permit", "€ 180.00", "+ VAT 10%"),
         ("Fri 23 Apr — local transport around Capannori (to be confirmed)", "€ 880.00", "+ VAT 10%"),
         ("Sat 24 Apr — villa in Capannori → Florence Airport", "€ 680.00", "+ VAT 10%"),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 5,170.00",
+    price_total="€ 5,350.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 5,687.00.",
+    grand="Total payable, VAT 10% included: € 5,885.00.",
     perhead=(
-        "That is between about € 406.00 and € 474.00 per person, VAT included, depending on the final "
+        "That is between about € 420.00 and € 490.00 per person, VAT included, depending on the final "
         "number of participants (12-14)."
     ),
     h_incluso="Included.",
     incluso=(
         "English-speaking driver and vehicle, fuel, motorway tolls, parking, full insurance, luggage "
-        "handling, the supermarket stop on 20 April, and the municipal permit for the bus to enter "
-        "central Florence, required for every day with a pickup or drop-off in the city (20 and 21 "
-        "April). Florence Airport on 24 April is the only day that does not carry this charge."
+        "handling, the supermarket stop on 20 April, the municipal permit for the bus to enter central "
+        "Florence (20 and 21 April) and the one for central Lucca (22 April). Florence Airport on 24 "
+        "April is the only day that does not carry this charge; for 23 April we will confirm once the "
+        "programme is set."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
@@ -279,19 +282,19 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 1,706.10", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 3,980.90", ""),
+        ("Deposit 30% on confirmation", "€ 1,765.50", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 4,119.50", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
-        ("<b>The Florence bus permit.</b> Every day with a pickup or drop-off in the city — the station "
-         "on 20 April, the day in Florence on the 21st — requires the municipal permit for the coach to "
-         "enter the historic centre: it cannot be avoided by choosing a different meeting point, so we "
-         "have included it in the price for both days (about € 350 each). The only exception is the "
-         "airport on 24 April, which does not require it. Let us know where in the city you would like "
-         "to be dropped off and picked up, and we will confirm the exact spot."),
+        ("<b>The Florence and Lucca bus permits.</b> Every day with a pickup, drop-off or stop in the "
+         "centre of these two cities requires a municipal permit, which cannot be avoided by choosing a "
+         "different meeting point: we have included it for 20 and 21 April in Florence (about € 350 "
+         "each) and for 22 April in Lucca (about € 180). The only exception is the airport on 24 April, "
+         "which does not require it. Let us know where in each city you would like to be dropped off "
+         "and picked up, and we will confirm the exact spots."),
         ("<b>Vans instead of the minibus.</b> You also asked us to quote two vans of 6-7 passengers "
          "each for comparison. Our own fleet is the Mercedes-Benz Beluga: with 12-14 people on board up "
          "to 14 seats stay free, there is ample room for luggage, and its 7.64 m still reaches narrow "

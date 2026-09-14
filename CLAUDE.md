@@ -116,10 +116,9 @@ sotto mercato svaluta il servizio e non si recupera.
   Firenze) potrebbe essere un punto alternativo come Villa Costanza.** Non è ancora chiaro
   se il bus paghi qualcosa per entrare/sostare lì: non dare per scontato né il costo né la
   gratuità finché Girolamo non conferma.
-- **Anche Lucca richiede il permesso bus per il centro.** Stessa logica di Firenze: va
-  sempre messo a preventivo per ogni giornata con un servizio a Lucca (ritrovo, rilascio o
-  sosta in città). Importo esatto da confermare con Girolamo — non usare una cifra a caso
-  finché non è confermato.
+- **Anche Lucca richiede il permesso bus per il centro: € 180.** Stessa logica di Firenze:
+  va sempre messo a preventivo per ogni giornata con un servizio a Lucca (ritrovo, rilascio
+  o sosta in città).
 
 ## Struttura del repository
 
