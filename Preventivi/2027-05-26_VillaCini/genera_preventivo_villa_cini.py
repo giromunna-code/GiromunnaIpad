@@ -75,38 +75,39 @@ IT = dict(
     svc_head=["Data", "Percorso", "Impegno del mezzo"],
     svc=[
         ("Mer 26 mag",
-         "<b>Stazione di Bucine → alloggi (Villa Cini e dintorni).</b> Corsa di arrivo delle ore 15:00 per i "
-         "primi ospiti in arrivo in treno: un mezzo li accompagna dalla stazione agli alloggi.",
-         "ore 15:00, un mezzo"),
+         "<b>Stazione di Bucine → alloggi (Villa Cini e dintorni).</b> Primo ritiro alle 15:00, ultimo alle "
+         "23:00: un mezzo resta a disposizione per tutta la finestra, accompagnando agli alloggi gli ospiti "
+         "in arrivo in treno.",
+         "15:00 – 23:00, un mezzo"),
         ("Gio 27 mag",
-         "<b>Stazione di Bucine → alloggi, cinque corse nella giornata.</b> È la giornata di arrivo principale: "
-         "con circa 64 ospiti attesi e 52 posti complessivi sui due mezzi, i pullman fanno la spola più volte "
-         "fra la stazione e gli alloggi, scaglionando gli arrivi durante il giorno.",
-         "tutta la giornata, due mezzi"),
+         "<b>Stazione di Bucine → alloggi, cinque corse nella giornata.</b> Primo ritiro alle 10:00, ultimo "
+         "alle 23:00: è la giornata di arrivo principale, tredici ore di disponibilità in cui i due mezzi "
+         "fanno la spola più volte fra la stazione e gli alloggi, scaglionando gli arrivi.",
+         "10:00 – 23:00, due mezzi"),
         ("Ven 28 mag",
-         "<b>Alloggi → Villa Cini → alloggi.</b> Andata e ritorno per il giorno della cerimonia: i due mezzi "
-         "accompagnano gli invitati a Villa Cini e li riportano agli alloggi a fine serata.",
-         "andata e ritorno, due mezzi"),
+         "<b>Alloggi → Villa Cini → alloggi.</b> Primo ritiro alle 16:15 per la cerimonia, ultimo alle 24:00 "
+         "per il rientro dalla festa: i due mezzi restano a disposizione per tutta la serata.",
+         "16:15 – 00:00, due mezzi"),
         ("Sab 29 mag",
-         "<b>Alloggi → stazione di Bucine.</b> Corsa di partenza delle ore 11:00, la stessa stazione usata "
-         "per gli arrivi.",
+         "<b>Alloggi → stazione di Bucine.</b> Un'unica corsa di ritiro e riconsegna alle 11:00, la stessa "
+         "stazione usata per gli arrivi.",
          "ore 11:00, due mezzi"),
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Mer 26 mag — arrivo, stazione di Bucine → alloggi (ore 15:00)", "€ 600,00", "+ IVA 10%"),
-        ("Gio 27 mag — arrivi, cinque corse stazione di Bucine ↔ alloggi", "€ 2.400,00", "+ IVA 10%"),
-        ("Ven 28 mag — cerimonia a Villa Cini, andata e ritorno", "€ 1.500,00", "+ IVA 10%"),
+        ("Mer 26 mag — arrivo, stazione di Bucine → alloggi (15:00 – 23:00)", "€ 650,00", "+ IVA 10%"),
+        ("Gio 27 mag — arrivi, stazione di Bucine ↔ alloggi (10:00 – 23:00)", "€ 2.800,00", "+ IVA 10%"),
+        ("Ven 28 mag — cerimonia a Villa Cini (16:15 – 00:00)", "€ 1.600,00", "+ IVA 10%"),
         ("Sab 29 mag — partenza, alloggi → stazione di Bucine (ore 11:00)", "€ 1.200,00", "+ IVA 10%"),
         ("Vitto e alloggio dei due conducenti, 3 notti (26, 27 e 28 maggio)",
          "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 5.700,00",
+    price_total="€ 6.250,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 6.270,00.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 6.875,00.",
     perhead=(
-        "Sono circa € 98,00 a persona sul gruppo di circa 64 ospiti indicato; la cifra si aggiorna se il "
+        "Sono circa € 107,00 a persona sul gruppo di circa 64 ospiti indicato; la cifra si aggiorna se il "
         "numero finale cambia."
     ),
     h_incluso="Incluso.",
@@ -125,8 +126,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 1.900,00", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 4.370,00", ""),
+        ("Acconto 30% alla conferma", "€ 2.000,00", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 4.875,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -141,15 +142,19 @@ IT = dict(
          "prenotazioni finali risultassero più sparse nel territorio potrebbero servire corse aggiuntive o "
          "un adeguamento del prezzo: fatecelo sapere appena i vostri ospiti avranno confermato dove alloggiano."),
         ("<b>Le cinque corse del 27 maggio.</b> Con circa 64 ospiti attesi e 52 posti complessivi sui due "
-         "mezzi, nessuna corsa porta tutti insieme: è normale scaglionare gli arrivi durante la giornata, e "
-         "il prezzo lo prevede già. Se ci mandate gli orari dei treni possiamo organizzare le corse in "
-         "anticipo."),
+         "mezzi, nessuna corsa porta tutti insieme: è normale scaglionare gli arrivi nelle tredici ore fra le "
+         "10:00 e le 23:00, e il prezzo lo prevede già. Se ci mandate gli orari dei treni possiamo organizzare "
+         "le corse in anticipo."),
+        ("<b>L'ultimo ritiro del 28 maggio, a mezzanotte.</b> Se le corse di rientro agli alloggi dopo "
+         "l'ultimo ritiro si protraggono oltre le 02:00, si applica il supplemento per rientro notturno "
+         "indicato sotto, € 250,00 per mezzo. Fatecelo sapere se prevedete che la festa finisca più tardi, "
+         "così lo teniamo in conto fin da ora."),
         ("<b>Vitto e alloggio dei due conducenti.</b> Le notti del 26, 27 e 28 maggio restano a vostro "
          "carico: la prenotazione e il pagamento li curate voi direttamente. La soluzione più comoda è "
          "sistemarli a Palazzo Vanneschi o in una struttura vicina a Villa Cini."),
         ("<b>Per confermare ci servono</b> il numero definitivo degli ospiti (o almeno una stima "
-         "aggiornata), gli orari dei treni in arrivo il 26 e il 27 maggio, l'orario di fine della cerimonia "
-         "del 28 per organizzare il rientro serale, e i vostri dati di fatturazione."),
+         "aggiornata), gli orari dei treni in arrivo il 26 e il 27 maggio, l'orario effettivo di fine della "
+         "festa del 28 per organizzare il rientro serale, e i vostri dati di fatturazione."),
         ("<b>Disponibilità e cancellazione.</b> I due mezzi sono al momento liberi e li teniamo a vostra "
          "disposizione per tutta la validità del preventivo; la prenotazione diventa definitiva alla "
          "ricezione dell'acconto. Cancellazione gratuita oltre 60 giorni prima del servizio; da 60 a 30 "
@@ -185,40 +190,41 @@ EN = dict(
     svc_head=["Date", "Route", "Vehicle engaged"],
     svc=[
         ("Wed 26 May",
-         "<b>Bucine train station → accommodations (Villa Cini area).</b> Arrival run at 3:00 pm for the "
-         "first guests arriving by train: one coach takes them from the station to their accommodation.",
-         "3:00 pm, one coach"),
+         "<b>Bucine train station → accommodations (Villa Cini area).</b> First pickup at 3:00 pm, last at "
+         "11:00 pm: one coach stays at your disposal for the whole window, taking guests arriving by train "
+         "to their accommodation.",
+         "3:00 pm – 11:00 pm, one coach"),
         ("Thu 27 May",
-         "<b>Bucine train station → accommodations, five runs during the day.</b> This is the main arrival "
-         "day: with around 64 guests expected and 52 seats total across the two coaches, they shuttle back "
-         "and forth between the station and the accommodations several times, staggering arrivals through "
-         "the day.",
-         "all day, two coaches"),
+         "<b>Bucine train station → accommodations, five runs during the day.</b> First pickup at 10:00 am, "
+         "last at 11:00 pm: this is the main arrival day, thirteen hours of availability in which the two "
+         "coaches shuttle back and forth between the station and the accommodations several times, "
+         "staggering arrivals.",
+         "10:00 am – 11:00 pm, two coaches"),
         ("Fri 28 May",
-         "<b>Accommodations → Villa Cini → accommodations.</b> Round trip for the day of the ceremony: the "
-         "two coaches bring guests to Villa Cini and take them back to their accommodations at the end of "
-         "the evening.",
-         "round trip, two coaches"),
+         "<b>Accommodations → Villa Cini → accommodations.</b> First pickup at 4:15 pm for the ceremony, "
+         "last at midnight for the return from the party: the two coaches stay at your disposal for the "
+         "whole evening.",
+         "4:15 pm – midnight, two coaches"),
         ("Sat 29 May",
-         "<b>Accommodations → Bucine train station.</b> Departure run at 11:00 am, the same station used "
-         "for arrivals.",
+         "<b>Accommodations → Bucine train station.</b> A single pickup and drop-off at 11:00 am, the same "
+         "station used for arrivals.",
          "11:00 am, two coaches"),
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Wed 26 May — arrival, Bucine station → accommodations (3:00 pm)", "€ 600.00", "+ VAT 10%"),
-        ("Thu 27 May — arrivals, five runs Bucine station ↔ accommodations", "€ 2,400.00", "+ VAT 10%"),
-        ("Fri 28 May — ceremony at Villa Cini, round trip", "€ 1,500.00", "+ VAT 10%"),
+        ("Wed 26 May — arrival, Bucine station → accommodations (3:00 pm – 11:00 pm)", "€ 650.00", "+ VAT 10%"),
+        ("Thu 27 May — arrivals, Bucine station ↔ accommodations (10:00 am – 11:00 pm)", "€ 2,800.00", "+ VAT 10%"),
+        ("Fri 28 May — ceremony at Villa Cini (4:15 pm – midnight)", "€ 1,600.00", "+ VAT 10%"),
         ("Sat 29 May — departure, accommodations → Bucine station (11:00 am)", "€ 1,200.00", "+ VAT 10%"),
         ("Drivers' board and lodging, 3 nights (26, 27 and 28 May)",
          "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 5,700.00",
+    price_total="€ 6,250.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 6,270.00.",
+    grand="Total payable, VAT 10% included: € 6,875.00.",
     perhead=(
-        "That is about € 98.00 per person for the group of roughly 64 guests indicated; the figure will be "
+        "That is about € 107.00 per person for the group of roughly 64 guests indicated; the figure will be "
         "updated if the final headcount changes."
     ),
     h_incluso="Included.",
@@ -235,8 +241,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 1,900.00", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 4,370.00", ""),
+        ("Deposit 30% on confirmation", "€ 2,000.00", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 4,875.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -250,14 +256,17 @@ EN = dict(
          "bookings turn out to be more spread out across the area, additional runs or a price adjustment may "
          "be needed: let us know as soon as your guests have confirmed where they are staying."),
         ("<b>The five runs on 27 May.</b> With around 64 guests expected and 52 seats total across the two "
-         "coaches, no single run carries everyone at once: staggering arrivals through the day is normal, "
-         "and the price already accounts for it. If you send us the train times we can plan the runs in "
-         "advance."),
+         "coaches, no single run carries everyone at once: staggering arrivals across the thirteen hours "
+         "between 10:00 am and 11:00 pm is normal, and the price already accounts for it. If you send us "
+         "the train times we can plan the runs in advance."),
+        ("<b>The last pickup on 28 May, at midnight.</b> If the return runs to the accommodations after "
+         "the last pickup run past 2:00 am, the night-return surcharge below applies, € 250.00 per vehicle. "
+         "Let us know if you expect the party to run later, so we can account for it now."),
         ("<b>The drivers' board and lodging.</b> The nights of 26, 27 and 28 May remain at your charge: you "
          "book and pay for them directly. The easiest solution is to put them up at Palazzo Vanneschi or "
          "another property near Villa Cini."),
         ("<b>To confirm we need</b> the final guest count (or at least an updated estimate), the train "
-         "times arriving on 26 and 27 May, the finishing time of the ceremony on the 28th to plan the "
+         "times arriving on 26 and 27 May, the actual finishing time of the party on the 28th to plan the "
          "evening return, and your invoicing details."),
         ("<b>Availability and cancellation.</b> The two vehicles are currently free and we hold them for "
          "you for the whole validity of this quotation; the booking becomes firm on receipt of the deposit. "

@@ -31,33 +31,37 @@ accesso a Villa Cini, 800 m, non è asfaltato). Questo va quindi **subappaltato 
 Operator** (Francesco), che fornisce mezzi e tariffe all'ingrosso — come previsto da CLAUDE.md per i
 gruppi che non stanno sul Beluga.
 
-Ritrovo e riconsegna sempre alla stazione di Bucine. Programma:
+Ritrovo e riconsegna sempre alla stazione di Bucine. Orari comunicati dalla cliente (WhatsApp, 15
+settembre 2026) — non sono corse singole ma vere finestre di disponibilità, con primo e ultimo ritiro:
 
-| Data | Servizio | Mezzi |
-|---|---|---|
-| Mer 26 mag, 15:00 | Arrivo, stazione → alloggi | 1 |
-| Gio 27 mag | Arrivo principale, 5 corse | 2 |
-| Ven 28 mag | Cerimonia a Villa Cini, andata e ritorno | 2 |
-| Sab 29 mag, 11:00 | Partenza, alloggi → stazione | 2 |
+| Data | Primo ritiro | Ultimo ritiro | Mezzi |
+|---|---|---|---|
+| Mer 26 mag | 15:00 | 23:00 | 1 |
+| Gio 27 mag | 10:00 | 23:00 | 2 |
+| Ven 28 mag | 16:15 | 24:00 (mezzanotte) | 2 |
+| Sab 29 mag | 11:00 (unica corsa, ritiro e riconsegna) | — | 2 |
 
 ## Prezzi
 
 | Data | Servizio | Netto |
 |---|---|---|
-| Mer 26 mag | Arrivo (ore 15:00) | € 600,00 |
-| Gio 27 mag | Arrivi, 5 corse | € 2.400,00 |
-| Ven 28 mag | Cerimonia, andata e ritorno | € 1.500,00 |
+| Mer 26 mag | Arrivo, 15:00–23:00 (8h) | € 650,00 |
+| Gio 27 mag | Arrivi, 10:00–23:00 (13h) | € 2.800,00 |
+| Ven 28 mag | Cerimonia, 16:15–00:00 (~7h45) | € 1.600,00 |
 | Sab 29 mag | Partenza (ore 11:00) | € 1.200,00 |
 | — | Vitto e alloggio dei due conducenti, 3 notti | a carico del cliente |
 
-**Totale netto € 5.700,00 · IVA 10% € 570,00 · Totale € 6.270,00** (≈ € 98,00 a persona su ~64 ospiti)
+**Totale netto € 6.250,00 · IVA 10% € 625,00 · Totale € 6.875,00** (≈ € 107,00 a persona su ~64 ospiti)
 
-Acconto 30% € 1.900,00 — saldo € 4.370,00.
+Acconto 30% € 2.000,00 — saldo € 4.875,00.
 
-**Aggiornamento 15 settembre 2026 — prezzi rialzati.** La prima stima (netto € 4.250,00, totale
-€ 4.675,00) è sembrata troppo bassa a Girolamo. Ho rialzato ogni giornata di circa il 33% arrivando ai
-valori sopra; il margine lordo stimato passa dal ~35% al ~52% (vedi sotto). Se anche questi importi non
-convincono, vanno adattati ulteriormente: non sostituiscono comunque una tariffa reale di Francesco.
+**Aggiornamento 15 settembre 2026 (due passaggi).** Prima Girolamo ha segnalato che la stima iniziale
+(netto € 4.250,00, totale € 4.675,00) sembrava troppo bassa: ho rialzato ogni giornata di circa il 33%
+(netto € 5.700,00, totale € 6.270,00). Poi la cliente ha mandato via WhatsApp gli orari reali di primo e
+ultimo ritiro per ogni giornata, che si sono rivelati finestre molto più lunghe di quanto ipotizzato
+(13 ore il 27, fino a mezzanotte il 28): ho rifatto i prezzi su queste basi, arrivando ai valori sopra.
+Il rialzo ora è motivato sia dal riscontro di Girolamo sia dall'impegno effettivo di mezzi e conducenti,
+non solo dalla sua richiesta. Non sostituisce comunque una tariffa reale di Francesco.
 
 ## Come sono stati costruiti i prezzi — È una stima, non una tariffa reale
 
@@ -68,23 +72,31 @@ non concordati con Francesco.
 Base usata: il preventivo Alvora (GM-2026-0913-BI) osserva che, se il servizio sul mezzo di proprietà
 venisse subappaltato a Francesco, il costo si collocherebbe sui € 600-700 al giorno per un mezzo di
 classe Beluga (26 posti). I due mezzi di questo lavoro (25 e 27 posti) sono della stessa classe
-dimensionale, quindi ho preso quell'intervallo come riferimento, adattandolo a corse brevi ripetute
-invece che a una giornata intera a disposizione:
+dimensionale, quindi ho preso quell'intervallo come riferimento, adattandolo alle finestre orarie reali
+(non più corse brevi, ma giornate/serate lunghe a disposizione):
 
 | Giorno | Mezzi impiegati | Costo diretto stimato | Prezzo netto |
 |---|---|---|---|
-| 26 maggio (1 corsa) | 1 | ~€ 250 | € 600,00 |
-| 27 maggio (5 corse) | 2 | ~€ 1.100 | € 2.400,00 |
-| 28 maggio (cerimonia A/R) | 2 | ~€ 750 | € 1.500,00 |
+| 26 maggio (15:00–23:00, 8h) | 1 | ~€ 300 | € 650,00 |
+| 27 maggio (10:00–23:00, 13h) | 2 | ~€ 1.400 | € 2.800,00 |
+| 28 maggio (16:15–00:00, ~7h45) | 2 | ~€ 900 | € 1.600,00 |
 | 29 maggio (partenza) | 2 | ~€ 650 | € 1.200,00 |
 
-Costo diretto stimato complessivo ~€ 2.750 contro un netto di € 5.700,00: margine lordo stimato attorno
-al 52%, tenuto alto come da regola ("nel dubbio il prezzo va tenuto alto") e ulteriormente rialzato dopo
-il riscontro di Girolamo che la prima stima sembrava bassa.
+Costo diretto stimato complessivo ~€ 3.250 contro un netto di € 6.250,00: margine lordo stimato attorno
+al 48%, tenuto alto come da regola ("nel dubbio il prezzo va tenuto alto") e coerente sia con il riscontro
+di Girolamo sia con le ore di impegno effettivamente più lunghe di quanto stimato all'inizio.
 
 **Prima di inviare il preventivo, verificare con Francesco le tariffe reali dei due mezzi su queste date
-e correggere le cifre se risultano diverse dalla stima.** Se Francesco costa più di quanto stimato qui,
-il margine si assottiglia e i prezzi vanno rivisti al rialzo.
+e su queste finestre orarie, e correggere le cifre se risultano diverse dalla stima.** Se Francesco costa
+più di quanto stimato qui, il margine si assottiglia e i prezzi vanno rivisti al rialzo.
+
+## Rischio rientro dopo le 02:00 il 28 maggio
+
+L'ultimo ritiro è fissato a mezzanotte, ma non è garantito che tutte le corse di rientro agli alloggi si
+concludano prima delle 02:00 — specie se ci sono più giri in sequenza per riportare tutti a casa dalla
+festa. Se il rientro supera le 02:00 si applica il supplemento standard di € 250,00 per mezzo (già nelle
+condizioni del preventivo): da monitorare, non necessariamente da anticipare nel prezzo base. Ne vale la
+pena chiedere alla cliente l'orario effettivo previsto di fine festa.
 
 ## Distanza Bucine → Villa Cini
 
@@ -109,18 +121,19 @@ prezzo per persona nel preventivo lo segnala esplicitamente ("si aggiorna se il 
 ## Perché cinque corse il 27 maggio
 
 52 posti sui due mezzi contro ~64 ospiti attesi quel giorno: nessuna corsa porta tutti insieme, quindi
-ci vogliono più giri. Non è un problema, ma va spiegato al cliente (fatto, nelle Note del preventivo)
-perché altrimenti "5 corse" può sembrare un costo aggiuntivo ingiustificato.
+ci vogliono più giri nell'arco delle tredici ore (10:00–23:00). Non è un problema, ma va spiegato al
+cliente (fatto, nelle Note del preventivo) perché altrimenti "5 corse" può sembrare un costo aggiuntivo
+ingiustificato.
 
 ## Da chiarire prima di inviare
 
-1. **Le tariffe di Francesco** per i due mezzi da 25 e 27 posti su queste date — priorità più alta,
-   cambia tutti i prezzi di questo preventivo.
+1. **Le tariffe di Francesco** per i due mezzi da 25 e 27 posti su queste date e finestre orarie —
+   priorità più alta, cambia tutti i prezzi di questo preventivo.
 2. **Il numero definitivo degli ospiti**, o almeno una stima più aggiornata quando le prenotazioni
    avanzano.
-3. **Orari dei treni del 26 e del 27 maggio**, per organizzare in anticipo le corse (soprattutto le
-   cinque del 27).
-4. **Orario di fine della cerimonia del 28 maggio**, per organizzare il rientro serale agli alloggi.
+3. **Orari dei treni del 26 e del 27 maggio**, per organizzare le corse dentro le finestre indicate.
+4. **Orario effettivo di fine della festa del 28 maggio**, per capire se il rientro rischia di superare
+   le 02:00 (vedi sopra).
 5. **Indirizzi definitivi degli alloggi**, per verificare che il servizio a raggiera nella zona di Bucine
    basti, o se qualche struttura tra le nove indicate è più lontana del previsto (in tal caso andrebbero
    aggiunte corse o rivisto il prezzo).
