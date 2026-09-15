@@ -26,11 +26,14 @@ Con `--cliente "Altro Nome"` si cambia l'intestatario.
 ## Il lavoro, in breve
 
 Non è un lavoro sul Beluga: il gruppo (circa 64 persone) non ci sta, e il cliente aveva già concordato
-via mail due pullman da 25 e 27 posti (51 in origine, scartato perché l'ultimo tratto di accesso a
-Villa Cini, 800 m, non è asfaltato). **Attenzione: i due mezzi sono forniti direttamente da GiroMunna,
-non tramite Tuscany T.O. & Munna Bus Operator (Francesco).** Girolamo l'ha corretto esplicitamente: non
-va assunto il subappalto a Francesco a meno che non lo dica lui. Il preventivo (PDF e pagina web) è
-stato aggiornato per togliere ogni riferimento a Tuscany T.O. come fornitore dei due mezzi.
+via mail due minibus con più passaggi (51 posti in origine, scartato perché l'ultimo tratto di accesso
+a Villa Cini, 800 m, non è asfaltato). **Attenzione, principio generale confermato da Girolamo:** al
+cliente i mezzi si presentano sempre come GiroMunna, punto — anche quando solo uno dei due è
+effettivamente suo (l'altro può essere il Tourengo del fratello Francesco o un mezzo di Francesco stesso).
+Chi possiede davvero ciascun mezzo è un dettaglio interno che alla gente non interessa e nel preventivo
+non va scritto. Non significa che i costi reali siano quelli di Girolamo per entrambi i mezzi: significa
+solo non nominare mai un fornitore esterno nel documento che va al cliente. Ho tolto ogni riferimento a
+Tuscany T.O. & Munna Bus Operator dal PDF e dalla pagina web per questo motivo.
 
 Ritrovo e riconsegna sempre alla stazione di Bucine. Orari comunicati dalla cliente (WhatsApp, 15
 settembre 2026) — non sono corse singole ma vere finestre di disponibilità, con primo e ultimo ritiro:
@@ -64,11 +67,13 @@ ultimo ritiro per ogni giornata, che si sono rivelati finestre molto più lunghe
 Il rialzo ora è motivato sia dal riscontro di Girolamo sia dall'impegno effettivo di mezzi e conducenti,
 non solo dalla sua richiesta. Non sostituisce comunque i costi reali di Girolamo per i suoi due mezzi.
 
-**Aggiornamento ulteriore.** Girolamo ha corretto: i due mezzi sono suoi (GiroMunna), non forniti da
-Tuscany T.O. & Munna Bus Operator. Ho tolto dal PDF, dalla pagina web e da queste note ogni riferimento
-a Francesco come fornitore dei due mezzi di questo lavoro. Resta comunque vero che non ho i suoi costi
-diretti reali: la stima sotto non cambia nella logica, cambia solo a chi si deve chiedere la cifra vera
-(a Girolamo stesso, non a Francesco).
+**Aggiornamento ulteriore.** Girolamo ha corretto: al cliente i due mezzi si presentano come GiroMunna,
+punto — non si nomina Tuscany T.O. & Munna Bus Operator né alcun fornitore esterno. Ha anche precisato
+che, in realtà, solo uno dei due mezzi potrebbe essere davvero suo (l'altro magari del fratello
+Francesco): un dettaglio interno che alla gente non interessa e che nel documento al cliente non va
+scritto in nessun caso. Ho tolto dal PDF e dalla pagina web ogni riferimento a un fornitore esterno.
+Per il costo diretto stimato sotto, resta il punto di prima: non ho cifre reali, quindi la stima va
+verificata con Girolamo (che conosce i costi, comunque siano ripartiti tra i due mezzi).
 
 ## Come sono stati costruiti i prezzi — È una stima, non un costo reale
 
