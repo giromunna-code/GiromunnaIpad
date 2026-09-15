@@ -1,6 +1,6 @@
 # Note interne — Servizio navetta Villa Cini, 26-29 maggio 2027
 
-**Cliente:** Jenna (contatto) · **Struttura:** Villa Cini, Bucine (AR) · **Rif. preventivo:** GM-2027-0526-VC ·
+**Cliente:** Jenna Bowman · **Struttura:** Villa Cini, Bucine (AR) · **Rif. preventivo:** GM-2027-0526-VC ·
 **Preparato:** 15 settembre 2026 · **Validità:** 29 settembre 2026
 
 File generati:
@@ -11,7 +11,7 @@ File generati:
 
 Tutto dentro `Preventivi/2027-05-26_VillaCini/`.
 
-Il cliente (Jenna) è già il valore predefinito dello script. Per rigenerare i due PDF:
+Il cliente (Jenna Bowman) è già il valore predefinito dello script. Per rigenerare i due PDF:
 
 ```bash
 python3 genera_preventivo_villa_cini.py --lingua it
