@@ -150,10 +150,17 @@ ci vogliono più giri nell'arco delle tredici ore (10:00–23:00). Non è un pro
 cliente (fatto, nelle Note del preventivo) perché altrimenti "5 corse" può sembrare un costo aggiuntivo
 ingiustificato.
 
+## Prezzi confermati da Girolamo
+
+**Aggiornamento 15 settembre 2026 (quinto passaggio).** Girolamo ha confermato che i prezzi finali
+(netto € 6.600,00, totale € 7.260,00, dettaglio sopra) vanno bene. Il punto 1 sotto — verificare i
+costi reali — è quindi da considerarsi risolto per l'invio: il preventivo può partire con questi numeri.
+Gli altri punti (2-7) restano aperti perché riguardano informazioni che deve dare la cliente, non prezzi.
+
 ## Da chiarire prima di inviare
 
-1. **I costi reali di Girolamo** per i due mezzi da 25 e 27 posti su queste date e finestre orarie —
-   priorità più alta, cambia tutti i prezzi di questo preventivo.
+1. ~~**I costi reali di Girolamo** per i due mezzi da 25 e 27 posti — confermati il 15 settembre 2026,
+   i prezzi finali vanno bene.~~
 2. **Il numero definitivo degli ospiti**, o almeno una stima più aggiornata quando le prenotazioni
    avanzano.
 3. **Orari dei treni del 26 e del 27 maggio**, per organizzare le corse dentro le finestre indicate.
