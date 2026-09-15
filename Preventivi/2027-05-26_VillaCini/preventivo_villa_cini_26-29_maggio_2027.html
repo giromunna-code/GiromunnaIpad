@@ -1,0 +1,838 @@
+<title>Preventivo — Villa Cini, 26-29 maggio 2027</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol, .internal ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<div class="wrap lang" data-lang="it">
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Servizio navetta a Villa Cini
+      <span class="sub">Bucine (AR), Toscana</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Cliente</span><span class="v">Jenna</span></div>
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">26-29 mag 2027</span></div>
+      <div class="fact"><span class="eyebrow">Ospiti</span><span class="v">circa 64</span></div>
+      <div class="fact"><span class="eyebrow">Mezzi</span><span class="v">2, da 25 e 27 posti</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2027-0526-VC</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">29 settembre 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>I mezzi</h2>
+    <p class="lede">Due pullman a noleggio per il vostro gruppo, scelti per la strada di accesso a Villa Cini.</p>
+    <div class="vehicle">
+      <span class="name">Due pullman da 25 e 27 posti passeggeri più il conducente</span>
+      <p>Forniti da Tuscany T.O. &amp; Munna Bus Operator (Montecatini Terme). Le dimensioni non sono casuali: l'ultimo tratto di accesso a Villa Cini, circa 800 metri, non è asfaltato, e il pullman gran turismo da 51 posti inizialmente previsto non può percorrerlo. I due mezzi più piccoli entrano senza difficoltà.</p>
+      <p>I due mezzi lavorano insieme nelle giornate con più movimento — l'arrivo principale del 27 maggio e il giorno della cerimonia il 28 — mentre uno solo basta per le corse più leggere del 26 e del 29.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Ritrovo e riconsegna sempre alla stazione di Bucine, la stessa per arrivi e partenza.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">26 maggio <span class="wd">· mercoledì</span></span>
+          <span class="badge">Arrivo</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">15:00</span>
+            <span class="r">Stazione di Bucine <span class="to">→ alloggi (Villa Cini e dintorni)</span></span>
+            <span class="d">un mezzo</span>
+          </div>
+        </div>
+        <div class="engaged">Corsa per i primi ospiti in arrivo in treno.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">27 maggio <span class="wd">· giovedì</span></span>
+          <span class="badge">Arrivo principale · 5 corse</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">tutto il giorno</span>
+            <span class="r">Stazione di Bucine <span class="to">→ alloggi, cinque corse</span></span>
+            <span class="d">due mezzi</span>
+          </div>
+        </div>
+        <div class="engaged">Con circa 64 ospiti attesi e 52 posti complessivi sui due mezzi, i pullman fanno la spola più volte, scaglionando gli arrivi.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">28 maggio <span class="wd">· venerdì</span></span>
+          <span class="badge">Cerimonia · andata e ritorno</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">A/R</span>
+            <span class="r">Alloggi <span class="to">→ Villa Cini → alloggi</span></span>
+            <span class="d">due mezzi</span>
+          </div>
+        </div>
+        <div class="engaged">I due mezzi accompagnano gli invitati alla cerimonia e li riportano agli alloggi a fine serata.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">29 maggio <span class="wd">· sabato</span></span>
+          <span class="badge">Partenza</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">11:00</span>
+            <span class="r">Alloggi <span class="to">→ stazione di Bucine</span></span>
+            <span class="d">due mezzi</span>
+          </div>
+        </div>
+        <div class="engaged">Stessa stazione usata per gli arrivi.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Servizio</th>
+            <th scope="col" class="num">Importo</th>
+            <th scope="col" class="num">IVA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Mer 26 mag</span>Arrivo, stazione di Bucine → alloggi (ore 15:00)</td>
+            <td class="num">€ 450,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Gio 27 mag</span>Arrivi, cinque corse stazione di Bucine ↔ alloggi</td>
+            <td class="num">€ 1.800,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Ven 28 mag</span>Cerimonia a Villa Cini, andata e ritorno</td>
+            <td class="num">€ 1.100,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Sab 29 mag</span>Partenza, alloggi → stazione di Bucine (ore 11:00)</td>
+            <td class="num">€ 900,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Vitto e alloggio dei due conducenti, 3 notti (26, 27 e 28 maggio)</td>
+            <td class="num vat"><em>a carico vostro</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Totale, al netto di IVA</td>
+            <td class="num">€ 4.250,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Totale da corrispondere, IVA 10% inclusa
+        <small>circa € 73,00 a persona sul gruppo di circa 64 ospiti indicato</small>
+      </span>
+      <span class="fig">€ 4.675,00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Acconto 30% alla conferma</td>
+            <td class="num"><strong>€ 1.400,00</strong></td>
+            <td class="num vat">IVA inclusa</td>
+          </tr>
+          <tr>
+            <td>Saldo, entro 5 giorni dal servizio</td>
+            <td class="num"><strong>€ 3.275,00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Due mezzi e conducenti, carburante, pedaggi, parcheggi, assicurazione completa.</li>
+      <li><strong>Ritardi del treno.</strong> Attesa gratuita fino a 90 minuti dall'orario di arrivo effettivo del treno sulle corse del 26 e del 27 maggio.</li>
+      <li><strong>A vostro carico.</strong> Vitto e alloggio dei due conducenti per le notti del 26, 27 e 28 maggio: la prenotazione e il pagamento li curate voi direttamente. La soluzione più comoda è sistemarli a Palazzo Vanneschi o in una struttura vicina a Villa Cini.</li>
+      <li><strong>Non incluso.</strong> Attesa oltre gli orari indicati, € 50,00 all'ora per mezzo. Eventuali corse aggiuntive, se gli alloggi risultassero più sparsi di quanto previsto. Rientro dopo le 02:00, € 250,00 per mezzo.</li>
+      <li><strong>Disponibilità e cancellazione.</strong> Cancellazione gratuita oltre 60 giorni prima del servizio; da 60 a 30 giorni si trattiene l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%. Preventivo valido fino al 29 settembre 2026.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Interno — non fa parte del preventivo inviato</div>
+    <h2>Come sono stati costruiti i prezzi</h2>
+
+    <p>Nessuna tariffa reale di Francesco (Tuscany T.O. &amp; Munna Bus Operator) per questo lavoro specifico: i costi diretti sono una <strong>stima</strong>, basata sull'intervallo € 600-700/giorno per un mezzo di classe simile al Beluga già usato per il preventivo Alvora quando si ipotizzava il subappalto, alzato leggermente per due mezzi di taglia analoga (25 e 27 posti) impegnati su corse brevi ripetute invece che su una giornata intera a disposizione.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>26 mag — 1 corsa, un mezzo</td><td class="num">costo stimato ~€ 250 → prezzo € 450,00</td></tr>
+          <tr><td>27 mag — 5 corse, due mezzi</td><td class="num">costo stimato ~€ 1.100 → prezzo € 1.800,00</td></tr>
+          <tr><td>28 mag — cerimonia A/R, due mezzi</td><td class="num">costo stimato ~€ 750 → prezzo € 1.100,00</td></tr>
+          <tr><td>29 mag — partenza, due mezzi</td><td class="num">costo stimato ~€ 650 → prezzo € 900,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Margine</h3>
+    <p>Costo diretto stimato complessivo ~€ 2.750 contro un netto di € 4.250: margine lordo stimato attorno al 35%, in linea con la regola di tenere il prezzo alto nel dubbio. <strong>Verificare con Francesco le tariffe reali dei due mezzi prima di inviare il preventivo</strong> e correggere le cifre se risultano diverse dalla stima.</p>
+
+    <h3>Distanza Bucine → Villa Cini</h3>
+    <p>Da una ricerca pubblica, Villa Cini si trova nel comune di Bucine stesso (non a Siena o Arezzo città): le corse sono quindi transfer brevi, coerenti con l'impostazione a giornata/corsa invece che a chilometraggio lungo. Da confermare la distanza esatta quando saranno note le vie degli alloggi.</p>
+
+    <h3>Da chiarire prima di inviare</h3>
+    <ul>
+      <li><strong>Le tariffe di Francesco</strong> per i due mezzi da 25 e 27 posti su queste date — priorità più alta, cambia tutti i prezzi.</li>
+      <li><strong>Il numero definitivo degli ospiti</strong>: qui si è usato 22 (Palazzo Vanneschi) + circa 42 (nove alloggi non finalizzati) = circa 64, ma Jenna stessa ha detto di non conoscerlo con certezza finché le prenotazioni non saranno chiuse.</li>
+      <li><strong>Orari dei treni del 26 e del 27 maggio</strong>, per organizzare in anticipo le corse (soprattutto le cinque del 27).</li>
+      <li><strong>Orario di fine della cerimonia del 28 maggio</strong>, per il rientro serale.</li>
+      <li><strong>Indirizzi definitivi degli alloggi</strong>, per verificare che il servizio "a raggiera" nella zona di Bucine sia davvero sufficiente o se qualche struttura è più lontana del previsto.</li>
+      <li><strong>Dati di fatturazione del cliente.</strong></li>
+    </ul>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2027-0526-VC · 15 settembre 2026</span>
+  </footer>
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Shuttle service to Villa Cini
+      <span class="sub">Bucine (AR), Tuscany</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Client</span><span class="v">Jenna</span></div>
+      <div class="fact"><span class="eyebrow">Dates</span><span class="v">26-29 May 2027</span></div>
+      <div class="fact"><span class="eyebrow">Guests</span><span class="v">about 64</span></div>
+      <div class="fact"><span class="eyebrow">Vehicles</span><span class="v">2, 25 and 27 seats</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2027-0526-VC</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">29 September 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicles</h2>
+    <p class="lede">Two hired coaches for your group, chosen for Villa Cini's access road.</p>
+    <div class="vehicle">
+      <span class="name">Two coaches, 25 and 27 passenger seats plus driver</span>
+      <p>Supplied by Tuscany T.O. &amp; Munna Bus Operator (Montecatini Terme). The sizes are not incidental: the final 800 metres of the access road to Villa Cini are unpaved, and the 51-seat coach originally planned cannot get through. The two smaller vehicles manage it without difficulty.</p>
+      <p>The two vehicles work together on the busier days — the main arrival on 27 May and the ceremony day on the 28th — while a single one covers the lighter runs on the 26th and the 29th.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">Pickup and drop-off always at Bucine train station, the same one for arrivals and departure.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">26 May <span class="wd">· Wednesday</span></span>
+          <span class="badge">Arrival</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">3:00 pm</span>
+            <span class="r">Bucine train station <span class="to">→ accommodations (Villa Cini area)</span></span>
+            <span class="d">one coach</span>
+          </div>
+        </div>
+        <div class="engaged">Run for the first guests arriving by train.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">27 May <span class="wd">· Thursday</span></span>
+          <span class="badge">Main arrival · 5 runs</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">all day</span>
+            <span class="r">Bucine train station <span class="to">→ accommodations, five runs</span></span>
+            <span class="d">two coaches</span>
+          </div>
+        </div>
+        <div class="engaged">With around 64 guests expected and 52 seats total across the two coaches, they shuttle back and forth several times, staggering arrivals.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">28 May <span class="wd">· Friday</span></span>
+          <span class="badge">Ceremony · round trip</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">R/T</span>
+            <span class="r">Accommodations <span class="to">→ Villa Cini → accommodations</span></span>
+            <span class="d">two coaches</span>
+          </div>
+        </div>
+        <div class="engaged">The two coaches bring guests to the ceremony and take them back to their accommodations at the end of the evening.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">29 May <span class="wd">· Saturday</span></span>
+          <span class="badge">Departure</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">11:00 am</span>
+            <span class="r">Accommodations <span class="to">→ Bucine train station</span></span>
+            <span class="d">two coaches</span>
+          </div>
+        </div>
+        <div class="engaged">The same station used for arrivals.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col" class="num">Amount</th>
+            <th scope="col" class="num">VAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Wed 26 May</span>Arrival, Bucine station → accommodations (3:00 pm)</td>
+            <td class="num">€ 450.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Thu 27 May</span>Arrivals, five runs Bucine station ↔ accommodations</td>
+            <td class="num">€ 1,800.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Fri 28 May</span>Ceremony at Villa Cini, round trip</td>
+            <td class="num">€ 1,100.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Sat 29 May</span>Departure, accommodations → Bucine station (11:00 am)</td>
+            <td class="num">€ 900.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Drivers' board and lodging, 3 nights (26, 27 and 28 May)</td>
+            <td class="num vat"><em>at your charge</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Total, excluding VAT</td>
+            <td class="num">€ 4,250.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Total payable, VAT 10% included
+        <small>about € 73.00 per person for the group of roughly 64 guests indicated</small>
+      </span>
+      <span class="fig">€ 4,675.00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Deposit 30% on confirmation</td>
+            <td class="num"><strong>€ 1,400.00</strong></td>
+            <td class="num vat">VAT included</td>
+          </tr>
+          <tr>
+            <td>Balance, within 5 days of the service</td>
+            <td class="num"><strong>€ 3,275.00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Two vehicles and drivers, fuel, tolls, parking, full insurance.</li>
+      <li><strong>Train delays.</strong> Free waiting time of up to 90 minutes from the train's actual arrival time on the 26 and 27 May runs.</li>
+      <li><strong>At your charge.</strong> The drivers' board and lodging for the nights of 26, 27 and 28 May: you book and pay for them directly. The easiest solution is to put them up at Palazzo Vanneschi or another property near Villa Cini.</li>
+      <li><strong>Not included.</strong> Waiting beyond the times set out here, € 50.00 per hour per vehicle. Any additional runs, should the accommodations turn out to be more scattered than expected. Return after 2:00 am, € 250.00 per vehicle.</li>
+      <li><strong>Availability and cancellation.</strong> Cancellation is free of charge more than 60 days before the service; from 60 to 30 days the deposit is retained; from 30 to 10 days 50%; in the last 10 days 100%. Quotation valid until 29 September 2026.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal — not part of the quotation sent to the client</div>
+    <h2>How the prices were built</h2>
+
+    <p>No real rate from Francesco (Tuscany T.O. &amp; Munna Bus Operator) for this specific job: the direct costs are an <strong>estimate</strong>, based on the € 600-700/day range used for a Beluga-class vehicle in the Alvora quotation when subcontracting was hypothesised, raised slightly for two vehicles of similar size (25 and 27 seats) working repeated short runs rather than a single full day at disposal.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>26 May — 1 run, one coach</td><td class="num">estimated cost ~€ 250 → price € 450.00</td></tr>
+          <tr><td>27 May — 5 runs, two coaches</td><td class="num">estimated cost ~€ 1,100 → price € 1,800.00</td></tr>
+          <tr><td>28 May — ceremony R/T, two coaches</td><td class="num">estimated cost ~€ 750 → price € 1,100.00</td></tr>
+          <tr><td>29 May — departure, two coaches</td><td class="num">estimated cost ~€ 650 → price € 900.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Margin</h3>
+    <p>Estimated total direct cost ~€ 2,750 against a net total of € 4,250: estimated gross margin around 35%, in line with the rule to keep the price high when in doubt. <strong>Check the real rates for the two coaches with Francesco before sending the quotation</strong> and correct the figures if they differ from the estimate.</p>
+
+    <h3>Distance, Bucine → Villa Cini</h3>
+    <p>Public research shows Villa Cini sits within the municipality of Bucine itself (not in Siena or Arezzo town): the runs are therefore short transfers, consistent with pricing by day/run rather than by long mileage. The exact distance is to be confirmed once the accommodation addresses are known.</p>
+
+    <h3>To settle before sending</h3>
+    <ul>
+      <li><strong>Francesco's real rates</strong> for the two coaches (25 and 27 seats) on these dates — top priority, it changes every price.</li>
+      <li><strong>The final guest count</strong>: this used 22 (Palazzo Vanneschi) + about 42 (nine unconfirmed accommodations) = about 64, but Jenna herself said she will not know it for certain until bookings close.</li>
+      <li><strong>Train times on 26 and 27 May</strong>, to plan the runs in advance (especially the five on the 27th).</li>
+      <li><strong>Finishing time of the ceremony on 28 May</strong>, for the evening return.</li>
+      <li><strong>Final accommodation addresses</strong>, to confirm the hub-and-spoke service around Bucine is really enough, or whether any property is further out than assumed.</li>
+      <li><strong>Client's invoicing details.</strong></li>
+    </ul>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2027-0526-VC · 15 September 2026</span>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
