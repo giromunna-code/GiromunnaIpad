@@ -1,7 +1,8 @@
 # Note interne — Servizio navetta Villa Cini, 26-29 maggio 2027
 
 **Cliente:** Jenna Bowman · **Struttura:** Villa Cini, Bucine (AR) · **Rif. preventivo:** GM-2027-0526-VC ·
-**Preparato:** 15 settembre 2026 · **Validità:** 29 settembre 2026
+**Preparato:** 15 settembre 2026 · **Validità:** 29 settembre 2026 ·
+**Canale:** richiesta arrivata sia su WhatsApp che via mail
 
 File generati:
 - `GiroMunna_Preventivo_Villa_Cini_26-29_maggio_2027_IT.pdf`
