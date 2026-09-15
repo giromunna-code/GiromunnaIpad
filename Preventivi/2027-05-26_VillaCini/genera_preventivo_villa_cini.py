@@ -68,17 +68,17 @@ IT = dict(
         "senza difficoltà."
     ),
     mezzo_close=(
-        "I due mezzi lavorano insieme nelle giornate con più movimento — l'arrivo principale del 27 maggio e "
-        "il giorno della cerimonia il 28 — mentre uno solo basta per le corse più leggere del 26 e del 29."
+        "I due mezzi lavorano sempre insieme, in tutte le giornate del servizio: garantiscono la capienza "
+        "necessaria fin dai primi arrivi del 26 maggio."
     ),
     h_servizio="Il servizio",
     svc_head=["Data", "Percorso", "Impegno del mezzo"],
     svc=[
         ("Mer 26 mag",
          "<b>Stazione di Bucine → alloggi (Villa Cini e dintorni).</b> Primo ritiro alle 15:00, ultimo alle "
-         "23:00: un mezzo resta a disposizione per tutta la finestra, accompagnando agli alloggi gli ospiti "
-         "in arrivo in treno.",
-         "15:00 – 23:00, un mezzo"),
+         "23:00: i due mezzi restano a disposizione per tutta la finestra, accompagnando agli alloggi gli "
+         "ospiti in arrivo in treno.",
+         "15:00 – 23:00, due mezzi"),
         ("Gio 27 mag",
          "<b>Stazione di Bucine → alloggi, cinque corse nella giornata.</b> Primo ritiro alle 10:00, ultimo "
          "alle 23:00: è la giornata di arrivo principale, tredici ore di disponibilità in cui i due mezzi "
@@ -95,7 +95,7 @@ IT = dict(
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Mer 26 mag — arrivo, stazione di Bucine → alloggi (15:00 – 23:00)", "€ 650,00", "+ IVA 10%"),
+        ("Mer 26 mag — arrivo, stazione di Bucine → alloggi (15:00 – 23:00)", "€ 1.200,00", "+ IVA 10%"),
         ("Gio 27 mag — arrivi, stazione di Bucine ↔ alloggi (10:00 – 23:00)", "€ 2.800,00", "+ IVA 10%"),
         ("Ven 28 mag — cerimonia a Villa Cini (16:15 – 00:00)", "€ 1.600,00", "+ IVA 10%"),
         ("Sab 29 mag — partenza, alloggi → stazione di Bucine (ore 11:00)", "€ 1.200,00", "+ IVA 10%"),
@@ -103,11 +103,11 @@ IT = dict(
          "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 6.250,00",
+    price_total="€ 6.800,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 6.875,00.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 7.480,00.",
     perhead=(
-        "Sono circa € 107,00 a persona sul gruppo di circa 64 ospiti indicato; la cifra si aggiorna se il "
+        "Sono circa € 117,00 a persona sul gruppo di circa 64 ospiti indicato; la cifra si aggiorna se il "
         "numero finale cambia."
     ),
     h_incluso="Incluso.",
@@ -126,8 +126,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 2.000,00", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 4.875,00", ""),
+        ("Acconto 30% alla conferma", "€ 2.250,00", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 5.230,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -182,17 +182,17 @@ EN = dict(
         "cannot get through. The two smaller vehicles manage it without difficulty."
     ),
     mezzo_close=(
-        "The two vehicles work together on the busier days — the main arrival on 27 May and the ceremony day "
-        "on the 28th — while a single one covers the lighter runs on the 26th and the 29th."
+        "The two vehicles always work together, on every day of the service: they guarantee the capacity "
+        "needed from the very first arrivals on 26 May."
     ),
     h_servizio="The service",
     svc_head=["Date", "Route", "Vehicle engaged"],
     svc=[
         ("Wed 26 May",
          "<b>Bucine train station → accommodations (Villa Cini area).</b> First pickup at 3:00 pm, last at "
-         "11:00 pm: one coach stays at your disposal for the whole window, taking guests arriving by train "
-         "to their accommodation.",
-         "3:00 pm – 11:00 pm, one coach"),
+         "11:00 pm: the two coaches stay at your disposal for the whole window, taking guests arriving by "
+         "train to their accommodation.",
+         "3:00 pm – 11:00 pm, two coaches"),
         ("Thu 27 May",
          "<b>Bucine train station → accommodations, five runs during the day.</b> First pickup at 10:00 am, "
          "last at 11:00 pm: this is the main arrival day, thirteen hours of availability in which the two "
@@ -211,7 +211,7 @@ EN = dict(
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Wed 26 May — arrival, Bucine station → accommodations (3:00 pm – 11:00 pm)", "€ 650.00", "+ VAT 10%"),
+        ("Wed 26 May — arrival, Bucine station → accommodations (3:00 pm – 11:00 pm)", "€ 1,200.00", "+ VAT 10%"),
         ("Thu 27 May — arrivals, Bucine station ↔ accommodations (10:00 am – 11:00 pm)", "€ 2,800.00", "+ VAT 10%"),
         ("Fri 28 May — ceremony at Villa Cini (4:15 pm – midnight)", "€ 1,600.00", "+ VAT 10%"),
         ("Sat 29 May — departure, accommodations → Bucine station (11:00 am)", "€ 1,200.00", "+ VAT 10%"),
@@ -219,11 +219,11 @@ EN = dict(
          "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 6,250.00",
+    price_total="€ 6,800.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 6,875.00.",
+    grand="Total payable, VAT 10% included: € 7,480.00.",
     perhead=(
-        "That is about € 107.00 per person for the group of roughly 64 guests indicated; the figure will be "
+        "That is about € 117.00 per person for the group of roughly 64 guests indicated; the figure will be "
         "updated if the final headcount changes."
     ),
     h_incluso="Included.",
@@ -240,8 +240,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 2,000.00", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 4,875.00", ""),
+        ("Deposit 30% on confirmation", "€ 2,250.00", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 5,230.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
