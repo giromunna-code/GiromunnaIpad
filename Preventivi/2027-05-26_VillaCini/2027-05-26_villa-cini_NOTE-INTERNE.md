@@ -53,14 +53,14 @@ la capienza necessaria fin dai primi arrivi del 26, non solo dal 27 in poi.
 | Data | Servizio | Netto |
 |---|---|---|
 | Mer 26 mag | Arrivo, 15:00–23:00 (8h) | € 1.200,00 |
-| Gio 27 mag | Arrivi, 10:00–23:00 (13h) | € 2.800,00 |
+| Gio 27 mag | Arrivi, 10:00–23:00 (13h) | € 2.600,00 |
 | Ven 28 mag | Cerimonia, 16:15–00:00 (~7h45) | € 1.600,00 |
 | Sab 29 mag | Partenza (ore 11:00) | € 1.200,00 |
 | — | Vitto e alloggio dei due conducenti, 3 notti | a carico del cliente |
 
-**Totale netto € 6.800,00 · IVA 10% € 680,00 · Totale € 7.480,00** (≈ € 117,00 a persona su ~64 ospiti)
+**Totale netto € 6.600,00 · IVA 10% € 660,00 · Totale € 7.260,00** (≈ € 113,00 a persona su ~64 ospiti)
 
-Acconto 30% € 2.250,00 — saldo € 5.230,00.
+Acconto 30% € 2.178,00 — saldo € 5.082,00.
 
 **Aggiornamento 15 settembre 2026 (due passaggi).** Prima Girolamo ha segnalato che la stima iniziale
 (netto € 4.250,00, totale € 4.675,00) sembrava troppo bassa: ho rialzato ogni giornata di circa il 33%
@@ -81,7 +81,12 @@ verificata con Girolamo (che conosce i costi, comunque siano ripartiti tra i due
 **Aggiornamento 15 settembre 2026 (terzo passaggio).** Girolamo ha deciso di mettere due mezzi anche il
 26 maggio, non uno solo come ipotizzato all'inizio: vuole garantire la capienza fin dai primi arrivi,
 non solo dal 27 in poi. Prezzo del 26 raddoppiato da € 650,00 a € 1.200,00 (2 mezzi × 8h invece di 1);
-totale netto ora € 6.800,00, totale IVA inclusa € 7.480,00.
+totale netto € 6.800,00, totale IVA inclusa € 7.480,00.
+
+**Aggiornamento 15 settembre 2026 (quarto passaggio).** Per bilanciare l'aumento del 26, Girolamo ha
+scelto di abbassare di € 200 il 27 maggio (da € 2.800,00 a € 2.600,00): è il giorno con più margine
+(~50% prima del taglio), quindi assorbe meglio la riduzione. Totale netto ora € 6.600,00, IVA 10%
+€ 660,00, totale € 7.260,00 (≈ € 113,00 a persona). Acconto e saldo aggiornati di conseguenza.
 
 ## Come sono stati costruiti i prezzi — È una stima, non un costo reale
 
@@ -98,13 +103,13 @@ brevi, ma giornate/serate lunghe a disposizione):
 | Giorno | Mezzi impiegati | Costo diretto stimato | Prezzo netto |
 |---|---|---|---|
 | 26 maggio (15:00–23:00, 8h) | 2 | ~€ 600 | € 1.200,00 |
-| 27 maggio (10:00–23:00, 13h) | 2 | ~€ 1.400 | € 2.800,00 |
+| 27 maggio (10:00–23:00, 13h) | 2 | ~€ 1.400 | € 2.600,00 |
 | 28 maggio (16:15–00:00, ~7h45) | 2 | ~€ 900 | € 1.600,00 |
 | 29 maggio (partenza) | 2 | ~€ 650 | € 1.200,00 |
 
-Costo diretto stimato complessivo ~€ 3.550 contro un netto di € 6.800,00: margine lordo stimato attorno
-al 48%, tenuto alto come da regola ("nel dubbio il prezzo va tenuto alto") e coerente sia con il riscontro
-di Girolamo sia con le ore di impegno effettivamente più lunghe di quanto stimato all'inizio.
+Costo diretto stimato complessivo ~€ 3.550 contro un netto di € 6.600,00: margine lordo stimato attorno
+al 46%, ancora tenuto alto come da regola ("nel dubbio il prezzo va tenuto alto"), pur essendo sceso
+leggermente rispetto al 48% di prima per via del taglio di € 200 sul 27 maggio.
 
 **Prima di inviare il preventivo, verificare con Girolamo i costi reali dei due mezzi su queste date e su
 queste finestre orarie, e correggere le cifre se risultano diverse dalla stima.** Se il costo reale è più
