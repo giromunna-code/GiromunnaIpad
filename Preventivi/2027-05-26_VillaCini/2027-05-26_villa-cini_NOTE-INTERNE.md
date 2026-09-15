@@ -44,15 +44,20 @@ Ritrovo e riconsegna sempre alla stazione di Bucine. Programma:
 
 | Data | Servizio | Netto |
 |---|---|---|
-| Mer 26 mag | Arrivo (ore 15:00) | € 450,00 |
-| Gio 27 mag | Arrivi, 5 corse | € 1.800,00 |
-| Ven 28 mag | Cerimonia, andata e ritorno | € 1.100,00 |
-| Sab 29 mag | Partenza (ore 11:00) | € 900,00 |
+| Mer 26 mag | Arrivo (ore 15:00) | € 600,00 |
+| Gio 27 mag | Arrivi, 5 corse | € 2.400,00 |
+| Ven 28 mag | Cerimonia, andata e ritorno | € 1.500,00 |
+| Sab 29 mag | Partenza (ore 11:00) | € 1.200,00 |
 | — | Vitto e alloggio dei due conducenti, 3 notti | a carico del cliente |
 
-**Totale netto € 4.250,00 · IVA 10% € 425,00 · Totale € 4.675,00** (≈ € 73,00 a persona su ~64 ospiti)
+**Totale netto € 5.700,00 · IVA 10% € 570,00 · Totale € 6.270,00** (≈ € 98,00 a persona su ~64 ospiti)
 
-Acconto 30% € 1.400,00 — saldo € 3.275,00.
+Acconto 30% € 1.900,00 — saldo € 4.370,00.
+
+**Aggiornamento 15 settembre 2026 — prezzi rialzati.** La prima stima (netto € 4.250,00, totale
+€ 4.675,00) è sembrata troppo bassa a Girolamo. Ho rialzato ogni giornata di circa il 33% arrivando ai
+valori sopra; il margine lordo stimato passa dal ~35% al ~52% (vedi sotto). Se anche questi importi non
+convincono, vanno adattati ulteriormente: non sostituiscono comunque una tariffa reale di Francesco.
 
 ## Come sono stati costruiti i prezzi — È una stima, non una tariffa reale
 
@@ -68,13 +73,14 @@ invece che a una giornata intera a disposizione:
 
 | Giorno | Mezzi impiegati | Costo diretto stimato | Prezzo netto |
 |---|---|---|---|
-| 26 maggio (1 corsa) | 1 | ~€ 250 | € 450,00 |
-| 27 maggio (5 corse) | 2 | ~€ 1.100 | € 1.800,00 |
-| 28 maggio (cerimonia A/R) | 2 | ~€ 750 | € 1.100,00 |
-| 29 maggio (partenza) | 2 | ~€ 650 | € 900,00 |
+| 26 maggio (1 corsa) | 1 | ~€ 250 | € 600,00 |
+| 27 maggio (5 corse) | 2 | ~€ 1.100 | € 2.400,00 |
+| 28 maggio (cerimonia A/R) | 2 | ~€ 750 | € 1.500,00 |
+| 29 maggio (partenza) | 2 | ~€ 650 | € 1.200,00 |
 
-Costo diretto stimato complessivo ~€ 2.750 contro un netto di € 4.250,00: margine lordo stimato attorno
-al 35%, tenuto alto come da regola ("nel dubbio il prezzo va tenuto alto").
+Costo diretto stimato complessivo ~€ 2.750 contro un netto di € 5.700,00: margine lordo stimato attorno
+al 52%, tenuto alto come da regola ("nel dubbio il prezzo va tenuto alto") e ulteriormente rialzato dopo
+il riscontro di Girolamo che la prima stima sembrava bassa.
 
 **Prima di inviare il preventivo, verificare con Francesco le tariffe reali dei due mezzi su queste date
 e correggere le cifre se risultano diverse dalla stima.** Se Francesco costa più di quanto stimato qui,

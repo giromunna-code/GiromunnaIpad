@@ -94,19 +94,19 @@ IT = dict(
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Mer 26 mag — arrivo, stazione di Bucine → alloggi (ore 15:00)", "€ 450,00", "+ IVA 10%"),
-        ("Gio 27 mag — arrivi, cinque corse stazione di Bucine ↔ alloggi", "€ 1.800,00", "+ IVA 10%"),
-        ("Ven 28 mag — cerimonia a Villa Cini, andata e ritorno", "€ 1.100,00", "+ IVA 10%"),
-        ("Sab 29 mag — partenza, alloggi → stazione di Bucine (ore 11:00)", "€ 900,00", "+ IVA 10%"),
+        ("Mer 26 mag — arrivo, stazione di Bucine → alloggi (ore 15:00)", "€ 600,00", "+ IVA 10%"),
+        ("Gio 27 mag — arrivi, cinque corse stazione di Bucine ↔ alloggi", "€ 2.400,00", "+ IVA 10%"),
+        ("Ven 28 mag — cerimonia a Villa Cini, andata e ritorno", "€ 1.500,00", "+ IVA 10%"),
+        ("Sab 29 mag — partenza, alloggi → stazione di Bucine (ore 11:00)", "€ 1.200,00", "+ IVA 10%"),
         ("Vitto e alloggio dei due conducenti, 3 notti (26, 27 e 28 maggio)",
          "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 4.250,00",
+    price_total="€ 5.700,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 4.675,00.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 6.270,00.",
     perhead=(
-        "Sono circa € 73,00 a persona sul gruppo di circa 64 ospiti indicato; la cifra si aggiorna se il "
+        "Sono circa € 98,00 a persona sul gruppo di circa 64 ospiti indicato; la cifra si aggiorna se il "
         "numero finale cambia."
     ),
     h_incluso="Incluso.",
@@ -125,8 +125,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 1.400,00", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 3.275,00", ""),
+        ("Acconto 30% alla conferma", "€ 1.900,00", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 4.370,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -206,19 +206,19 @@ EN = dict(
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Wed 26 May — arrival, Bucine station → accommodations (3:00 pm)", "€ 450.00", "+ VAT 10%"),
-        ("Thu 27 May — arrivals, five runs Bucine station ↔ accommodations", "€ 1,800.00", "+ VAT 10%"),
-        ("Fri 28 May — ceremony at Villa Cini, round trip", "€ 1,100.00", "+ VAT 10%"),
-        ("Sat 29 May — departure, accommodations → Bucine station (11:00 am)", "€ 900.00", "+ VAT 10%"),
+        ("Wed 26 May — arrival, Bucine station → accommodations (3:00 pm)", "€ 600.00", "+ VAT 10%"),
+        ("Thu 27 May — arrivals, five runs Bucine station ↔ accommodations", "€ 2,400.00", "+ VAT 10%"),
+        ("Fri 28 May — ceremony at Villa Cini, round trip", "€ 1,500.00", "+ VAT 10%"),
+        ("Sat 29 May — departure, accommodations → Bucine station (11:00 am)", "€ 1,200.00", "+ VAT 10%"),
         ("Drivers' board and lodging, 3 nights (26, 27 and 28 May)",
          "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 4,250.00",
+    price_total="€ 5,700.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 4,675.00.",
+    grand="Total payable, VAT 10% included: € 6,270.00.",
     perhead=(
-        "That is about € 73.00 per person for the group of roughly 64 guests indicated; the figure will be "
+        "That is about € 98.00 per person for the group of roughly 64 guests indicated; the figure will be "
         "updated if the final headcount changes."
     ),
     h_incluso="Included.",
@@ -235,8 +235,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 1,400.00", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 3,275.00", ""),
+        ("Deposit 30% on confirmation", "€ 1,900.00", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 4,370.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
