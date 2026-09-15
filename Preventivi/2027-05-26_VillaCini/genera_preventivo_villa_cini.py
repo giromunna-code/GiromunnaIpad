@@ -60,12 +60,12 @@ IT = dict(
     subtitle="Servizio navetta a Villa Cini, Bucine (AR)  ·  26-29 maggio 2027",
     meta="Preparato per %s  ·  15 settembre 2026  ·  Rif. " + RIF,
     h_mezzo="I mezzi",
-    mezzo_intro="Due pullman a noleggio per il vostro gruppo, scelti per la strada di accesso a Villa Cini.",
+    mezzo_intro="Due pullman GiroMunna per il vostro gruppo, scelti per la strada di accesso a Villa Cini.",
     mezzo_bullet=(
-        "<b>Due pullman da 25 e 27 posti passeggeri più il conducente</b>, forniti da Tuscany T.O. & "
-        "Munna Bus Operator (Montecatini Terme). Le dimensioni non sono casuali: l'ultimo tratto di accesso "
-        "a Villa Cini, circa 800 metri, non è asfaltato, e il pullman gran turismo da 51 posti inizialmente "
-        "previsto non può percorrerlo. I due mezzi più piccoli entrano senza difficoltà."
+        "<b>Due pullman da 25 e 27 posti passeggeri più il conducente.</b> Le dimensioni non sono casuali: "
+        "l'ultimo tratto di accesso a Villa Cini, circa 800 metri, non è asfaltato, e il pullman gran "
+        "turismo da 51 posti inizialmente previsto non può percorrerlo. I due mezzi più piccoli entrano "
+        "senza difficoltà."
     ),
     mezzo_close=(
         "I due mezzi lavorano insieme nelle giornate con più movimento — l'arrivo principale del 27 maggio e "
@@ -175,12 +175,11 @@ EN = dict(
     subtitle="Shuttle service to Villa Cini, Bucine (AR)  ·  26-29 May 2027",
     meta="Prepared for %s  ·  15 September 2026  ·  Ref. " + RIF,
     h_mezzo="The vehicles",
-    mezzo_intro="Two hired coaches for your group, chosen for Villa Cini's access road.",
+    mezzo_intro="Two GiroMunna coaches for your group, chosen for Villa Cini's access road.",
     mezzo_bullet=(
-        "<b>Two coaches, 25 and 27 passenger seats plus driver</b>, supplied by Tuscany T.O. & Munna Bus "
-        "Operator (Montecatini Terme). The sizes are not incidental: the final 800 metres of the access road "
-        "to Villa Cini are unpaved, and the 51-seat coach originally planned cannot get through. The two "
-        "smaller vehicles manage it without difficulty."
+        "<b>Two coaches, 25 and 27 passenger seats plus driver.</b> The sizes are not incidental: the final "
+        "800 metres of the access road to Villa Cini are unpaved, and the 51-seat coach originally planned "
+        "cannot get through. The two smaller vehicles manage it without difficulty."
     ),
     mezzo_close=(
         "The two vehicles work together on the busier days — the main arrival on 27 May and the ceremony day "

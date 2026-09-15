@@ -26,10 +26,11 @@ Con `--cliente "Altro Nome"` si cambia l'intestatario.
 ## Il lavoro, in breve
 
 Non è un lavoro sul Beluga: il gruppo (circa 64 persone) non ci sta, e il cliente aveva già concordato
-via mail due pullman a noleggio da 25 e 27 posti (51 in origine, scartato perché l'ultimo tratto di
-accesso a Villa Cini, 800 m, non è asfaltato). Questo va quindi **subappaltato a Tuscany T.O. & Munna Bus
-Operator** (Francesco), che fornisce mezzi e tariffe all'ingrosso — come previsto da CLAUDE.md per i
-gruppi che non stanno sul Beluga.
+via mail due pullman da 25 e 27 posti (51 in origine, scartato perché l'ultimo tratto di accesso a
+Villa Cini, 800 m, non è asfaltato). **Attenzione: i due mezzi sono forniti direttamente da GiroMunna,
+non tramite Tuscany T.O. & Munna Bus Operator (Francesco).** Girolamo l'ha corretto esplicitamente: non
+va assunto il subappalto a Francesco a meno che non lo dica lui. Il preventivo (PDF e pagina web) è
+stato aggiornato per togliere ogni riferimento a Tuscany T.O. come fornitore dei due mezzi.
 
 Ritrovo e riconsegna sempre alla stazione di Bucine. Orari comunicati dalla cliente (WhatsApp, 15
 settembre 2026) — non sono corse singole ma vere finestre di disponibilità, con primo e ultimo ritiro:
@@ -61,19 +62,25 @@ Acconto 30% € 2.000,00 — saldo € 4.875,00.
 ultimo ritiro per ogni giornata, che si sono rivelati finestre molto più lunghe di quanto ipotizzato
 (13 ore il 27, fino a mezzanotte il 28): ho rifatto i prezzi su queste basi, arrivando ai valori sopra.
 Il rialzo ora è motivato sia dal riscontro di Girolamo sia dall'impegno effettivo di mezzi e conducenti,
-non solo dalla sua richiesta. Non sostituisce comunque una tariffa reale di Francesco.
+non solo dalla sua richiesta. Non sostituisce comunque i costi reali di Girolamo per i suoi due mezzi.
 
-## Come sono stati costruiti i prezzi — È una stima, non una tariffa reale
+**Aggiornamento ulteriore.** Girolamo ha corretto: i due mezzi sono suoi (GiroMunna), non forniti da
+Tuscany T.O. & Munna Bus Operator. Ho tolto dal PDF, dalla pagina web e da queste note ogni riferimento
+a Francesco come fornitore dei due mezzi di questo lavoro. Resta comunque vero che non ho i suoi costi
+diretti reali: la stima sotto non cambia nella logica, cambia solo a chi si deve chiedere la cifra vera
+(a Girolamo stesso, non a Francesco).
 
-**Non ho le tariffe di Francesco per questo lavoro.** Girolamo ha scelto di procedere con una stima
-(piuttosto che bloccare il preventivo in attesa dei numeri) quindi i costi diretti sotto sono ipotizzati,
-non concordati con Francesco.
+## Come sono stati costruiti i prezzi — È una stima, non un costo reale
+
+**Non ho i costi diretti reali di Girolamo per questi due mezzi.** Ha scelto di procedere con una stima
+(piuttosto che bloccare il preventivo in attesa dei numeri) quindi i costi diretti sotto sono ipotizzati.
 
 Base usata: il preventivo Alvora (GM-2026-0913-BI) osserva che, se il servizio sul mezzo di proprietà
 venisse subappaltato a Francesco, il costo si collocherebbe sui € 600-700 al giorno per un mezzo di
-classe Beluga (26 posti). I due mezzi di questo lavoro (25 e 27 posti) sono della stessa classe
-dimensionale, quindi ho preso quell'intervallo come riferimento, adattandolo alle finestre orarie reali
-(non più corse brevi, ma giornate/serate lunghe a disposizione):
+classe Beluga (26 posti). Ho preso quell'intervallo come proxy per un mezzo di classe analoga (25-27
+posti), pur sapendo che qui non si tratta di subappalto: è solo l'unico punto di riferimento numerico
+disponibile in assenza dei costi reali di Girolamo. Adattato alle finestre orarie reali (non più corse
+brevi, ma giornate/serate lunghe a disposizione):
 
 | Giorno | Mezzi impiegati | Costo diretto stimato | Prezzo netto |
 |---|---|---|---|
@@ -86,9 +93,9 @@ Costo diretto stimato complessivo ~€ 3.250 contro un netto di € 6.250,00: ma
 al 48%, tenuto alto come da regola ("nel dubbio il prezzo va tenuto alto") e coerente sia con il riscontro
 di Girolamo sia con le ore di impegno effettivamente più lunghe di quanto stimato all'inizio.
 
-**Prima di inviare il preventivo, verificare con Francesco le tariffe reali dei due mezzi su queste date
-e su queste finestre orarie, e correggere le cifre se risultano diverse dalla stima.** Se Francesco costa
-più di quanto stimato qui, il margine si assottiglia e i prezzi vanno rivisti al rialzo.
+**Prima di inviare il preventivo, verificare con Girolamo i costi reali dei due mezzi su queste date e su
+queste finestre orarie, e correggere le cifre se risultano diverse dalla stima.** Se il costo reale è più
+alto di quanto stimato qui, il margine si assottiglia e i prezzi vanno rivisti al rialzo.
 
 ## Rischio rientro dopo le 02:00 il 28 maggio
 
@@ -127,7 +134,7 @@ ingiustificato.
 
 ## Da chiarire prima di inviare
 
-1. **Le tariffe di Francesco** per i due mezzi da 25 e 27 posti su queste date e finestre orarie —
+1. **I costi reali di Girolamo** per i due mezzi da 25 e 27 posti su queste date e finestre orarie —
    priorità più alta, cambia tutti i prezzi di questo preventivo.
 2. **Il numero definitivo degli ospiti**, o almeno una stima più aggiornata quando le prenotazioni
    avanzano.
