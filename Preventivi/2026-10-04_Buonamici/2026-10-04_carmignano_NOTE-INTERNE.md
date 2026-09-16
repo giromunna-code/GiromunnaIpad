@@ -109,8 +109,10 @@ giro a vuoto di ~50-60 km compreso, il margine dovrebbe restare sano.
 2. **Nome dell'azienda e un recapito diretto** — la richiesta è firmata solo "Chiara
    Buonamici", senza ragione sociale, telefono o indirizzo email di risposta indicati nel
    testo che mi è stato girato.
-3. **Sola andata o andata e ritorno** — il testo dice "trasferimento", non è chiaro se il
-   gruppo debba poi tornare ad Artimino o proseguire altrove.
+3. **Orario di rientro** — Girolamo l'ha segnalato come punto specifico da chiedere (16
+   settembre): la richiesta dà solo l'orario del trasferimento (10:00–12:00), non l'orario
+   né la destinazione del rientro del gruppo. Cambia la durata dell'impegno del mezzo e, se
+   il rientro è nel pomeriggio o in serata, va quotato a parte rispetto a questo preventivo.
 4. **Accesso del mezzo alle due tenute** — da far confermare dalle strutture.
 5. **Bloccare la disponibilità del mezzo** per il 4 ottobre.
 

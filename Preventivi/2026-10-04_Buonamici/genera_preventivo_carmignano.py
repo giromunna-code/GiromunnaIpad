@@ -125,9 +125,10 @@ IT = dict(
         ("<b>Accesso alle due tenute.</b> Le strade interne delle tenute vinicole sono spesso strette: vi "
          "chiediamo di far confermare a Tenuta di Artimino e a Tenuta di Capezzana il punto di carico e "
          "scarico e lo spazio di manovra per un mezzo di 7,64 m. Meglio saperlo ora che il giorno stesso."),
-        ("<b>Percorso e orario.</b> L'orario indicato, 10:00–12:00, lo abbiamo preso come finestra di "
-         "servizio per il trasferimento fra le due tenute. Confermateci se si tratta di un trasferimento "
-         "di sola andata o se serve anche il rientro, e l'orario preciso di partenza da Artimino."),
+        ("<b>Orario di rientro.</b> L'orario indicato, 10:00–12:00, copre il trasferimento verso Tenuta di "
+         "Capezzana, ma non dice a che ora il gruppo debba rientrare. Fateci sapere l'orario di rientro "
+         "previsto e dove: cambia la durata dell'impegno del mezzo e, se il rientro è nel pomeriggio o in "
+         "serata, va quotato a parte rispetto a questo preventivo."),
         ("<b>Come si prenota.</b> Basta una vostra email di conferma di questo preventivo e il bonifico "
          "dell'acconto del 30% sull'IBAN sopra indicato; rispondiamo con la conferma scritta del servizio "
          "e blocchiamo il mezzo per il 4 ottobre."),
@@ -213,9 +214,10 @@ EN = dict(
         ("<b>Access at both estates.</b> The internal roads of wine estates are often narrow: please have "
          "Tenuta di Artimino and Tenuta di Capezzana confirm the pick-up/drop-off point and the manoeuvring "
          "space for a 7.64 m vehicle. Better settled now than on the day itself."),
-        ("<b>Route and timing.</b> We have read the stated 10:00–12:00 as the service window for the "
-         "transfer between the two estates. Please confirm whether this is a one-way transfer only or "
-         "whether a return is also needed, and the precise departure time from Artimino."),
+        ("<b>Return time.</b> The stated 10:00–12:00 covers the transfer to Tenuta di Capezzana, but does "
+         "not say what time the group needs to return, or to where. Please let us know the expected return "
+         "time: it changes how long the vehicle is engaged, and if the return is in the afternoon or "
+         "evening it will need to be quoted separately from this quotation."),
         ("<b>How to book.</b> An email confirming this quotation plus the 30% deposit transfer to the IBAN "
          "above are all we need; we will reply with written confirmation of the service and hold the "
          "vehicle for 4 October."),
