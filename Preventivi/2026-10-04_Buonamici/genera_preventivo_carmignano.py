@@ -85,18 +85,19 @@ IT = dict(
     h_prezzo="Il prezzo",
     price_rows=[
         ("Dom 4 ott — trasferimento Tenuta di Artimino → Tenuta di Capezzana (~10 km), "
-         "mezzo a disposizione 10:00–12:00 circa", "€ 450,00", "+ IVA 10%"),
+         "mezzo a disposizione 10:00–12:00 circa", "€ 550,00", "+ IVA 10%"),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 450,00",
+    price_total="€ 550,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 495,00.",
-    perhead="Sono circa € 16,50 a persona su 30 partecipanti (il numero esatto resta da confermare).",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 605,00.",
+    perhead="Sono circa € 20,15 a persona su 30 partecipanti (il numero esatto resta da confermare).",
     h_incluso="Incluso.",
     incluso=(
-        "Mezzo e conducente, carburante, pedaggi, parcheggi e assicurazione completa per il trasferimento "
-        "indicato. Non risulta alcun onere di accesso per le due tenute; ve lo confermiamo se una delle due "
-        "strutture ne richiedesse uno."
+        "Mezzo e conducente, carburante, pedaggi, parcheggi e assicurazione completa, comprensivi del "
+        "percorso di andata e rientro tra la nostra base di Ponte Buggianese e Carmignano. Non risulta "
+        "alcun onere di accesso per le due tenute; ve lo confermiamo se una delle due strutture ne "
+        "richiedesse uno."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
@@ -107,8 +108,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento e prenotazione",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 148,50", "IVA inclusa"),
-        ("Saldo, il giorno del servizio", "€ 346,50", ""),
+        ("Acconto 30% alla conferma", "€ 181,50", "IVA inclusa"),
+        ("Saldo, il giorno del servizio", "€ 423,50", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05. La prenotazione diventa "
@@ -174,18 +175,18 @@ EN = dict(
     h_prezzo="The price",
     price_rows=[
         ("Sun 4 Oct — transfer Tenuta di Artimino → Tenuta di Capezzana (~10 km), "
-         "vehicle at disposal approx. 10:00–12:00", "€ 450.00", "+ VAT 10%"),
+         "vehicle at disposal approx. 10:00–12:00", "€ 550.00", "+ VAT 10%"),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 450.00",
+    price_total="€ 550.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 495.00.",
-    perhead="That is about € 16.50 per person for 30 participants (exact number to be confirmed).",
+    grand="Total payable, VAT 10% included: € 605.00.",
+    perhead="That is about € 20.15 per person for 30 participants (exact number to be confirmed).",
     h_incluso="Included.",
     incluso=(
-        "Vehicle and driver, fuel, tolls, parking and full insurance for the transfer described above. No "
-        "access charge is currently known for either estate; we will confirm if one of the two properties "
-        "requires one."
+        "Vehicle and driver, fuel, tolls, parking and full insurance, including the outbound and return "
+        "run between our base in Ponte Buggianese and Carmignano. No access charge is currently known for "
+        "either estate; we will confirm if one of the two properties requires one."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
@@ -196,8 +197,8 @@ EN = dict(
     ),
     h_pagamento="Payment and booking",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 148.50", "VAT included"),
-        ("Balance, on the day of the service", "€ 346.50", ""),
+        ("Deposit 30% on confirmation", "€ 181.50", "VAT included"),
+        ("Balance, on the day of the service", "€ 423.50", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05. The booking becomes firm on "

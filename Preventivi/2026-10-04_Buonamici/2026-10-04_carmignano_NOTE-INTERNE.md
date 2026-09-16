@@ -32,12 +32,12 @@ Distanza indicativa circa 10 km. La cliente ha chiesto anche le modalità di pre
 
 | Data | Servizio | Netto |
 |---|---|---|
-| Dom 4 ott | Trasferimento Tenuta di Artimino → Tenuta di Capezzana (~10 km), mezzo a disposizione 10:00–12:00 circa | € 450,00 |
+| Dom 4 ott | Trasferimento Tenuta di Artimino → Tenuta di Capezzana (~10 km), mezzo a disposizione 10:00–12:00 circa | € 550,00 |
 
-**Totale netto € 450,00 · IVA 10% € 45,00 · Totale € 495,00** (≈ € 16,50 a persona su 30
+**Totale netto € 550,00 · IVA 10% € 55,00 · Totale € 605,00** (≈ € 20,15 a persona su 30
 partecipanti)
 
-Acconto 30% € 148,50 — saldo € 346,50 (il giorno del servizio, non essendoci notti di mezzo
+Acconto 30% € 181,50 — saldo € 423,50 (il giorno del servizio, non essendoci notti di mezzo
 tra acconto e servizio come nei lavori pluri-giornalieri).
 
 ## Come è stato costruito il prezzo
@@ -45,17 +45,23 @@ tra acconto e servizio come nei lavori pluri-giornalieri).
 Riferimento: **il preventivo Le Filigare (GM-2026-0821-LF)**, a mezzo singolo come questo:
 trasferimento di ~50 km a € 500,00 netti.
 
-Questo lavoro copre solo ~10 km pagati, molto meno dei 50 km di Le Filigare. Ma il Beluga
-deve comunque arrivare a Carmignano da Ponte Buggianese e tornare: sono circa 30 km per
-tratta, quindi ~60 km di trasferimento a vuoto, per un impegno complessivo di circa 2 ore
-sul posto più il viaggio di andata e ritorno del mezzo. Per questo **non** ho scalato il
-prezzo in proporzione ai soli 10 km pagati — sarebbe uscito un importo irrisorio e sotto
-mercato per un servizio che comunque impegna il mezzo e il conducente per mezza mattinata.
+Questo lavoro copre solo ~10 km pagati fra le due tenute, molto meno dei 50 km di Le
+Filigare. Ma il Beluga parte dalla base di Ponte Buggianese e vi rientra: sono circa 25-30 km
+per tratta, quindi ~50-60 km di trasferimento a vuoto, per un impegno complessivo di circa 2
+ore sul posto più il viaggio di andata e ritorno del mezzo.
 
-Ho tenuto € 450,00 netti: sotto i € 500,00 di Le Filigare (che ha più del quintuplo dei km
-pagati), ma abbastanza alto da coprire il trasferimento a vuoto e l'impegno minimo. Come da
-istruzioni, nel dubbio il prezzo resta alto: **Girolamo lo abbassa se conosce meglio i costi
-reali del tragitto Ponte Buggianese–Carmignano.**
+**Prima stesura (16 settembre): € 450,00.** Girolamo ha fatto notare che avevo sottostimato
+il peso del tragitto andata/ritorno dalla base — la prima stima usava ~30 km a tratta ma non
+l'avevo tradotta in un aumento di prezzo adeguato rispetto ai soli 10 km pagati. Ho provato a
+verificare la distanza reale online (siti di calcolo percorsi irraggiungibili dalla rete di
+questa sessione); l'unico dato indiretto trovato — Prato-Ponte Buggianese ~35 km, Prato-
+Carmignano ~13 km — colloca Ponte Buggianese-Carmignano tra 22 e 30 km a tratta.
+
+**Prezzo rivisto: € 550,00 netti.** Tiene conto per intero del giro a vuoto dalla base
+(~50-60 km) oltre ai 10 km di servizio pagato: resta sotto i € 500,00 di Le Filigare
+scalati e ben sotto la fascia della giornata a disposizione (€ 809,00 per ~80 km e 5 ore),
+ma non è più tarato solo sul tratto Artimino-Capezzana. **Girolamo conosce la strada meglio
+di qualunque stima online: se il tragitto reale è più corto, può abbassarlo.**
 
 **Attenzione:** non ho usato come base i prezzi del preventivo Corte Francigena, che sono per
 un lavoro a due mezzi e già scontati per volume.
@@ -86,9 +92,8 @@ resta aperta.
 ## Margine
 
 Preventivo costruito sul mezzo di proprietà (Beluga). Servizio breve e locale: nessuna notte
-del conducente da conteggiare, nessun pernottamento da organizzare. Il margine dovrebbe
-essere sano anche a € 450,00, considerato il basso costo diretto di un servizio di mezza
-mattinata rispetto al prezzo.
+del conducente da conteggiare, nessun pernottamento da organizzare. A € 550,00 netti, con un
+giro a vuoto di ~50-60 km compreso, il margine dovrebbe restare sano.
 
 ## Verifiche di accesso
 
