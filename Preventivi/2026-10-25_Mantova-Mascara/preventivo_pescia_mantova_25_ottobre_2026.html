@@ -1,0 +1,734 @@
+<title>Preventivo — Transfer Pescia → Mantova, 25 ottobre 2026</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+  .day.released { background: transparent; border-style: dashed; border-color: var(--line-strong); }
+  .day.released .day-date { color: var(--ink-soft); }
+  .day.released .badge { color: var(--ink-soft); background: transparent; border-color: var(--line-strong); }
+  .day.released p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<div class="wrap lang" data-lang="it">
+<header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Transfer serale Pescia → Mantova
+      <span class="sub">Discoteca Mascara · domenica 25 ottobre 2026</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Cliente</span><span class="v">il gruppo di 14 persone</span></div>
+      <div class="fact"><span class="eyebrow">Data</span><span class="v">25 ottobre 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passeggeri</span><span class="v">14</span></div>
+      <div class="fact"><span class="eyebrow">Servizio</span><span class="v">andata e ritorno, stessa notte</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2026-1025-MN</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">30 settembre 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Il mezzo</h2>
+    <p class="lede">Un minibus per il vostro gruppo di 14 persone, con lo stesso conducente per tutta la serata e per il rientro notturno.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista, 7,64 m</span>
+      <p>Aria condizionata, sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.</p>
+      <p>Con 14 ospiti a bordo restano dodici posti liberi: comodità piena per un viaggio lungo, con i sedili reclinabili utili anche per riposare durante il rientro notturno.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Distanze e tempi di percorrenza sono stime stradali, traffico escluso.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">25 ottobre <span class="wd">· domenica</span></span>
+          <span class="badge">Andata e ritorno · notte</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">15:00</span>
+            <span class="r">Via della Stazione, 76, Pescia <span class="to">→ Mantova, Discoteca Mascara, Viale della Favorita 17</span></span>
+            <span class="d">circa 240 km · 3 h 15</span>
+          </div>
+          <div class="leg">
+            <span class="t">00:00</span>
+            <span class="r">Discoteca Mascara <span class="to">→ Via della Stazione, 76, Pescia</span></span>
+            <span class="d">circa 240 km · 3 h 15</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 15:00 – 03:15, con arrivo a Pescia nella notte tra il 25 e il 26 ottobre. Attesa a Mantova, dalle 18:15 a mezzanotte circa, già compresa.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Servizio</th>
+            <th scope="col" class="num">Importo</th>
+            <th scope="col" class="num">IVA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Dom 25 ott</span>Trasferimento Pescia → Mantova → Pescia, mezzo e conducente a disposizione dalle 15:00 a fine servizio (~480 km)</td>
+            <td class="num">€ 1.750,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Supplemento rientro dopo le 02:00 (arrivo a Pescia previsto verso le 03:15)</td>
+            <td class="num">€ 250,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr class="tot">
+            <td>Totale, al netto di IVA</td>
+            <td class="num">€ 2.000,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Totale da corrispondere, IVA 10% inclusa
+        <small>circa € 157,00 a persona</small>
+      </span>
+      <span class="fig">€ 2.200,00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Acconto 30% alla conferma</td>
+            <td class="num"><strong>€ 660,00</strong></td>
+            <td class="num vat">IVA inclusa</td>
+          </tr>
+          <tr>
+            <td>Saldo, entro 5 giorni dal servizio</td>
+            <td class="num"><strong>€ 1.540,00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Mezzo e conducente, carburante, pedaggi autostradali, assicurazione completa. L'attesa a Mantova, dalle 18:15 a mezzanotte circa, è già compresa nel prezzo.</li>
+      <li><strong>Nessun pernottamento.</strong> Il conducente rientra in giornata: le ore di attesa a Mantova gli servono anche per riposare prima del viaggio di ritorno.</li>
+      <li><strong>Non incluso.</strong> Attesa oltre gli orari concordati, € 50,00 all'ora per mezzo. Soste per cena o altre tappe non comprese nel percorso indicato, quotate su richiesta. L'eventuale ingresso del mezzo in una zona a traffico limitato del centro di Mantova, se necessario, che comporterebbe un permesso a parte.</li>
+      <li><strong>Il rientro dopo le 02:00.</strong> Con partenza da Mantova verso mezzanotte, l'arrivo a Pescia è previsto intorno alle 03:15: il preventivo include già il relativo supplemento di € 250,00.</li>
+      <li><strong>Disponibilità e cancellazione.</strong> Cancellazione gratuita oltre 60 giorni prima del servizio; da 60 a 30 giorni viene trattenuto l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%. Mancando oggi 39 giorni al servizio, la prenotazione ricade nella fascia da 60 a 30 giorni, e dal 25 settembre passerà in quella da 30 a 10.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Interno — non fa parte del preventivo inviato</div>
+    <h2>Come è stato costruito il prezzo</h2>
+
+    <p>Base di riferimento: il preventivo Le Filigare (GM-2026-0821-LF), a mezzo singolo come questo lavoro.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — trasferimento FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500,00</td></tr>
+          <tr><td>Le Filigare — giornata a disposizione Siena, ~80 km, 5 h</td><td class="num">€ 809,00</td></tr>
+          <tr><td>Pescia → Mantova → Pescia — ~480 km, ~6 h di attesa, rientro dopo le 02:00</td><td class="num">€ 2.000,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Il lavoro è molto più grande del riferimento Le Filigare sia in km (480 contro 80) sia in impegno orario (circa 12 ore contro 5): il prezzo sale in proporzione, tenuto volutamente alto come da prassi GiroMunna. Non c'è un secondo preventivo a due mezzi comparabile: Corte Francigena resta fuori scala per questo tipo di lavoro.</p>
+
+    <h3>Perché non serve il pernottamento del conducente</h3>
+    <p>È un trasferimento in giornata, non un programma su più giorni: si parte e si torna nella stessa nottata. Le quasi sei ore di attesa a Mantova coprono il riposo del conducente prima del rientro. Per questo non c'è alcuna riga "vitto e alloggio conducente" — a differenza di Alvora, che restava fuori zona per più notti.</p>
+
+    <h3>Margine</h3>
+    <p>Costruito sul <strong>mezzo di proprietà</strong> (Beluga). Costo diretto stimato: carburante e pedaggi per ~480 km più l'ora extra del conducente per il rientro notturno. Il margine sul netto di € 2.000 è ampio. <strong>Se si subappalta a Francesco</strong>, il costo di un lavoro così lungo si avvicina ai € 900-1.100 e il margine si assottiglia: in quel caso vanno rivisti i prezzi al rialzo prima di inviare.</p>
+
+    <h3>Da chiarire prima di inviare</h3>
+    <ol>
+      <li><strong>Nome del cliente.</strong> La richiesta è arrivata senza firma: reference e cartella usano per ora "Mantova-Mascara"; il PDF va rigenerato con <code>--cliente "Nome"</code> appena lo si conosce.</li>
+      <li><strong>Recapito del cliente.</strong> Nessun telefono o indirizzo mail nel messaggio: serve per mandare il preventivo e restare raggiungibili la sera del 25.</li>
+      <li><strong>Distanza e tempi di percorrenza.</strong> Stimati (~240 km, ~3h15 a tratta) da ricerche stradali generiche Pescia–Mantova, non da un calcolo puntuale sull'indirizzo esatto della discoteca: da verificare con un calcolo percorso prima di confermare gli orari al cliente.</li>
+      <li><strong>Punto di carico/scarico alla discoteca.</strong> Non abbiamo informazioni su dove un pullman può fermarsi o sostare a Viale della Favorita 17: da verificare con il locale.</li>
+      <li><strong>ZTL di Mantova.</strong> Non è nell'elenco delle condizioni note (Firenze, Pisa, Siena): non si sa se Viale della Favorita rientra in zona a traffico limitato. Nel preventivo è stata lasciata come condizione generica "se necessario".</li>
+      <li><strong>Orario di rientro reale.</strong> Mezzanotte è presto per l'uscita da una discoteca: verificare con il cliente se è l'orario voluto o una stima di massima, perché ogni ora oltre si paga a parte (€ 50,00/ora).</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2026-1025-MN · 16 settembre 2026</span>
+  </footer>
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Evening transfer Pescia → Mantua
+      <span class="sub">Discoteca Mascara · Sunday 25 October 2026</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Client</span><span class="v">the group of 14</span></div>
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">25 October 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passengers</span><span class="v">14</span></div>
+      <div class="fact"><span class="eyebrow">Service</span><span class="v">round trip, same night</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2026-1025-MN</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">30 September 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicle</h2>
+    <p class="lede">One minibus for your group of 14, with the same driver for the whole evening and the night return.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus driver, 7.64 m</span>
+      <p>Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.</p>
+      <p>With 14 guests on board twelve seats stay free — full comfort for a long trip, with the reclining seats useful for resting on the way back.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">Distances and driving times are approximate road estimates, excluding traffic.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">25 October <span class="wd">· Sunday</span></span>
+          <span class="badge">Round trip · overnight</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">15:00</span>
+            <span class="r">Via della Stazione, 76, Pescia <span class="to">→ Mantua, Discoteca Mascara, Viale della Favorita 17</span></span>
+            <span class="d">approx. 240 km · 3 h 15</span>
+          </div>
+          <div class="leg">
+            <span class="t">00:00</span>
+            <span class="r">Discoteca Mascara <span class="to">→ Via della Stazione, 76, Pescia</span></span>
+            <span class="d">approx. 240 km · 3 h 15</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 15:00 – 03:15, arriving in Pescia in the night between 25 and 26 October. Waiting time in Mantua, from 18:15 to around midnight, already included.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col" class="num">Amount</th>
+            <th scope="col" class="num">VAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Sun 25 Oct</span>Transfer Pescia → Mantua → Pescia, vehicle and driver at your disposal from 15:00 to end of service (~480 km)</td>
+            <td class="num">€ 1,750.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Late-return surcharge after 02:00 (arrival in Pescia expected around 03:15)</td>
+            <td class="num">€ 250.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr class="tot">
+            <td>Total, excluding VAT</td>
+            <td class="num">€ 2,000.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Total payable, VAT 10% included
+        <small>about € 157.00 per person</small>
+      </span>
+      <span class="fig">€ 2,200.00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Deposit 30% on confirmation</td>
+            <td class="num"><strong>€ 660.00</strong></td>
+            <td class="num vat">VAT included</td>
+          </tr>
+          <tr>
+            <td>Balance, within 5 days of the service</td>
+            <td class="num"><strong>€ 1,540.00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Vehicle and driver, fuel, motorway tolls, full insurance. The wait in Mantua, from 18:15 to around midnight, is already included in the price.</li>
+      <li><strong>No overnight stay.</strong> The driver returns the same day: the hours of waiting in Mantua also let him rest before the return drive.</li>
+      <li><strong>Not included.</strong> Waiting beyond the agreed times, € 50.00 per hour per vehicle. Stops for dinner or other stops outside the route shown here, quoted on request. Any entry of the vehicle into a restricted traffic zone in central Mantua, if needed, which would require a separate permit.</li>
+      <li><strong>The return after 02:00.</strong> With departure from Mantua around midnight, arrival in Pescia is expected around 03:15: the quotation already includes the corresponding € 250.00 surcharge.</li>
+      <li><strong>Availability and cancellation.</strong> Cancellation is free of charge more than 60 days before the service; from 60 to 30 days the deposit is retained; from 30 to 10 days 50%; in the last 10 days 100%. With 39 days to the service today, the booking falls in the 60-to-30-day band, and from 25 September it moves into the 30-to-10 band.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal — not part of the quotation sent to the client</div>
+    <h2>How the price was built</h2>
+
+    <p>Benchmarked against the <strong>Le Filigare</strong> quotation (GM-2026-0821-LF), a single-vehicle job like this one.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — transfer FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500.00</td></tr>
+          <tr><td>Le Filigare — day at disposal in Siena, ~80 km, 5 h</td><td class="num">€ 809.00</td></tr>
+          <tr><td>Pescia → Mantua → Pescia — ~480 km, ~6 h waiting, return after 02:00</td><td class="num">€ 2,000.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>This job is far bigger than the Le Filigare benchmark, in both km (480 vs. 80) and total hours (about 12 vs. 5): the price scales up accordingly, kept deliberately high as per GiroMunna practice. There is no comparable two-vehicle reference for this kind of job — Corte Francigena is off-scale here.</p>
+
+    <h3>Why the driver needs no overnight stay</h3>
+    <p>This is a same-day transfer, not a multi-day programme: departure and return happen in the same night. The nearly six hours of waiting in Mantua cover the driver's rest before the return drive. That is why there is no "driver's board and lodging" line, unlike Alvora, which kept the driver away from base for several nights.</p>
+
+    <h3>Margin</h3>
+    <p>Built on the <strong>owned vehicle</strong> (Beluga). Estimated direct cost: fuel and tolls for ~480 km plus the driver's extra hour for the night return. The margin on the € 2,000 net is wide. <strong>If subcontracted to Francesco</strong>, the cost of a job this long would sit around € 900-1,100 and the margin thins out — in that case the prices should be revised upward before sending.</p>
+
+    <h3>To settle before sending</h3>
+    <ol>
+      <li><strong>Client name.</strong> The request arrived unsigned: the reference and folder use "Mantova-Mascara" for now; regenerate the PDF with <code>--cliente "Name"</code> once known.</li>
+      <li><strong>Client contact.</strong> No phone or email in the message: needed to send the quotation and to stay reachable on the evening of the 25th.</li>
+      <li><strong>Distance and driving times.</strong> Estimated (~240 km, ~3h15 each way) from generic Pescia–Mantua road searches, not a point-to-point calculation to the exact club address: verify with a proper route calculation before confirming times to the client.</li>
+      <li><strong>Loading/unloading point at the club.</strong> No information on where a coach can stop or wait at Viale della Favorita 17: check with the venue.</li>
+      <li><strong>Mantua's restricted traffic zone.</strong> Not among the known conditions (Florence, Pisa, Siena): unclear whether Viale della Favorita falls inside a limited traffic zone. Left in the quotation as a generic "if needed" condition.</li>
+      <li><strong>Actual return time.</strong> Midnight is early to leave a nightclub: confirm with the client whether that is the intended time or a rough estimate, since every extra hour is billed separately (€ 50.00/hour).</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2026-1025-MN · 16 September 2026</span>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
