@@ -60,9 +60,14 @@ reali del tragitto Ponte Buggianese–Carmignano.**
 **Attenzione:** non ho usato come base i prezzi del preventivo Corte Francigena, che sono per
 un lavoro a due mezzi e già scontati per volume.
 
-## Il problema dei 26 posti
+## Il problema dei posti
 
-La richiesta è per **circa 30 persone**, sopra i 26 posti passeggeri del Beluga (+ autista).
+La richiesta è per **circa 30 persone**. Girolamo ha confermato (16 settembre) che per questo
+servizio il Beluga ha **25 posti disponibili per il gruppo, più uno riservato
+all'accompagnatore** — non i 26 posti passeggeri nominali del mezzo. Preventivo e pagina web
+sono stati aggiornati di conseguenza (sezione *Il mezzo*, nota sui partecipanti, sezione
+*Incluso e non incluso*).
+
 Ho seguito lo stesso approccio del preventivo Le Filigare, citato come riferimento nelle
 istruzioni:
 

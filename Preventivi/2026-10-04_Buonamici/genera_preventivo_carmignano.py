@@ -66,11 +66,13 @@ IT = dict(
         "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli."
     ),
     mezzo_close=(
-        "Il Beluga ha 26 posti passeggeri più l'autista: con un gruppo di circa 30 persone la capienza di "
-        "un solo mezzo non basta. Questo preventivo è riferito a un solo Beluga; vi chiediamo il numero "
-        "esatto dei partecipanti, così da confermarvi se serve un secondo minibus di supporto, con il "
-        "relativo costo aggiuntivo da concordare a parte. I suoi 7,64 metri restano comunque un vantaggio "
-        "per l'accesso ai piazzali delle due tenute, dove un autobus gran turismo fatica a entrare."
+        "Il Beluga ha 26 posti passeggeri più l'autista, ma per questo servizio ne sono disponibili 25 per "
+        "il vostro gruppo, con un posto riservato all'eventuale accompagnatore. Con circa 30 persone la "
+        "capienza di un solo mezzo non basta: questo preventivo resta riferito a un solo Beluga. Vi "
+        "chiediamo il numero esatto dei partecipanti, così da confermarvi se serve un secondo minibus di "
+        "supporto, con il relativo costo aggiuntivo da concordare a parte. I suoi 7,64 metri restano "
+        "comunque un vantaggio per l'accesso ai piazzali delle due tenute, dove un autobus gran turismo "
+        "fatica a entrare."
     ),
     h_servizio="Il servizio",
     svc_head=["Data", "Percorso", "Impegno del mezzo"],
@@ -100,7 +102,7 @@ IT = dict(
     nonincluso=(
         "Attesa oltre l'orario concordato, € 50,00 all'ora per mezzo. Soste aggiuntive, deviazioni di "
         "percorso o servizi oltre le 12:00, quotati a parte. Rientro dopo le 02:00, € 250,00 per mezzo. "
-        "L'eventuale secondo minibus per la quota di gruppo che eccede i 26 posti del Beluga, da concordare "
+        "L'eventuale secondo minibus per la quota di gruppo che eccede i 25 posti disponibili sul Beluga, da concordare "
         "separatamente in base al numero esatto dei partecipanti."
     ),
     h_pagamento="Pagamento e prenotazione",
@@ -114,10 +116,11 @@ IT = dict(
           "vi rispondiamo con la conferma scritta del servizio."),
     h_note="Note",
     note=[
-        ("<b>Numero dei partecipanti.</b> La richiesta indica circa 30 persone, sopra i 26 posti del "
-         "Beluga. Fateci sapere il numero esatto: se supera i 26, valutiamo insieme se e come inserire un "
-         "secondo mezzo di supporto, con il relativo costo. Nel frattempo questo preventivo resta riferito "
-         "a un solo Beluga."),
+        ("<b>Numero dei partecipanti.</b> La richiesta indica circa 30 persone; per questo servizio il "
+         "Beluga ha 25 posti disponibili per il gruppo, più uno riservato all'accompagnatore. Fateci sapere "
+         "il numero esatto: se il gruppo supera i 25, valutiamo insieme se e come inserire un secondo mezzo "
+         "di supporto, con il relativo costo. Nel frattempo questo preventivo resta riferito a un solo "
+         "Beluga."),
         ("<b>Accesso alle due tenute.</b> Le strade interne delle tenute vinicole sono spesso strette: vi "
          "chiediamo di far confermare a Tenuta di Artimino e a Tenuta di Capezzana il punto di carico e "
          "scarico e lo spazio di manovra per un mezzo di 7,64 m. Meglio saperlo ora che il giorno stesso."),
@@ -152,9 +155,10 @@ EN = dict(
         "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold."
     ),
     mezzo_close=(
-        "The Beluga seats 26 passengers plus the driver: with a group of about 30 people, one vehicle is "
-        "not enough on its own. This quotation is for one Beluga only; please let us know the exact number "
-        "of participants so we can confirm whether a second support minibus is needed, with its additional "
+        "The Beluga seats 26 passengers plus the driver, but for this service 25 are available for your "
+        "group, with one seat reserved for an accompanying guide. With about 30 people, one vehicle is not "
+        "enough on its own: this quotation is for one Beluga only. Please let us know the exact number of "
+        "participants so we can confirm whether a second support minibus is needed, with its additional "
         "cost agreed separately. At 7.64 m it is still an advantage for reaching the courtyards of both "
         "estates, where a full-size coach struggles to get in."
     ),
@@ -187,7 +191,7 @@ EN = dict(
     nonincluso=(
         "Waiting beyond the agreed time, € 50.00 per hour per vehicle. Additional stops, route changes or "
         "service beyond 12:00, quoted separately. Return after 02:00, € 250.00 per vehicle. Any second "
-        "minibus needed for the share of the group above the Beluga's 26 seats, to be agreed separately "
+        "minibus needed for the share of the group above the Beluga's 25 available seats, to be agreed separately "
         "once the exact number of participants is known."
     ),
     h_pagamento="Payment and booking",
@@ -201,10 +205,10 @@ EN = dict(
           "need, and we will reply with written confirmation of the service."),
     h_note="Notes",
     note=[
-        ("<b>Number of participants.</b> The request states about 30 people, above the Beluga's 26 seats. "
-         "Please let us know the exact number: if it is above 26, we will work out together whether a "
-         "second support vehicle is needed and its cost. In the meantime this quotation covers one Beluga "
-         "only."),
+        ("<b>Number of participants.</b> The request states about 30 people; for this service the Beluga "
+         "has 25 seats available for the group, plus one reserved for the accompanying guide. Please let us "
+         "know the exact number: if the group is above 25, we will work out together whether a second "
+         "support vehicle is needed and its cost. In the meantime this quotation covers one Beluga only."),
         ("<b>Access at both estates.</b> The internal roads of wine estates are often narrow: please have "
          "Tenuta di Artimino and Tenuta di Capezzana confirm the pick-up/drop-off point and the manoeuvring "
          "space for a 7.64 m vehicle. Better settled now than on the day itself."),
