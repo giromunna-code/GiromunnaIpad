@@ -1,0 +1,773 @@
+<title>Preventivo — Trasferta basket a Siena, 27 settembre 2026</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+  .day.released { background: transparent; border-style: dashed; border-color: var(--line-strong); }
+  .day.released .day-date { color: var(--ink-soft); }
+  .day.released .badge { color: var(--ink-soft); background: transparent; border-color: var(--line-strong); }
+  .day.released p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<div class="wrap lang" data-lang="it">
+<header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Trasferta per la partita di basket a Siena
+      <span class="sub">Montecatini Terme → Siena e ritorno · domenica 27 settembre 2026</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Cliente</span><span class="v">da definire</span></div>
+      <div class="fact"><span class="eyebrow">Data</span><span class="v">dom 27 set 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passeggeri</span><span class="v">fino a 26</span></div>
+      <div class="fact"><span class="eyebrow">Percorso</span><span class="v">circa 220 km a/r</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2026-0927-BS</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">21 settembre 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Il mezzo</h2>
+    <p class="lede">Un minibus per tutto il gruppo, con lo stesso conducente dalla partenza al rientro.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista, 7,64 m</span>
+      <p>Aria condizionata, sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.</p>
+      <p>Fino a 26 persone viaggiano insieme su un mezzo solo, andata e ritorno, senza cambi e senza mezzi di appoggio. I sedili reclinabili contano sul rientro in nottata, e il vano bagagli porta senza problemi sacche, palloni e materiale.</p>
+      <p>Con i suoi 7,64 metri il Beluga sta sotto gli otto metri: arriva ai piazzali del palasport e alle aree di sosta riservate dove un autobus gran turismo non entra e deve fermarsi lontano.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Gli orari sono costruiti sulla palla a due delle 20:30: appena ci confermate l'orario esatto della partita li rifissiamo su quello. Distanze e tempi sono stime stradali, traffico escluso.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">27 settembre <span class="wd">· domenica</span></span>
+          <span class="badge">Andata, attesa e ritorno</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">17:15</span>
+            <span class="r">Ritrovo a Montecatini Terme <span class="to">· partenza alle 17:30</span></span>
+            <span class="d">—</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:30</span>
+            <span class="r">Montecatini Terme <span class="to">→ palasport di Siena, arrivo verso le 19:10</span></span>
+            <span class="d">110 km · 1 h 40</span>
+          </div>
+          <div class="leg">
+            <span class="t">20:30</span>
+            <span class="r">Partita <span class="to">· mezzo e conducente in attesa nell'area di sosta del palasport</span></span>
+            <span class="d">attesa</span>
+          </div>
+          <div class="leg">
+            <span class="t">23:00</span>
+            <span class="r">Palasport di Siena <span class="to">→ Montecatini Terme, rientro verso le 00:40</span></span>
+            <span class="d">110 km · 1 h 40</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 17:15 – 00:45, a disposizione del gruppo per tutta la serata.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Servizio</th>
+            <th scope="col" class="num">Importo</th>
+            <th scope="col" class="num">IVA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Dom 27 set</span>Montecatini Terme → Siena, attesa per tutta la partita, rientro a Montecatini (circa 220 km, mezzo impegnato fino a nove ore)</td>
+            <td class="num">€ 1.200,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Vitto del conducente durante l'attesa serale</td>
+            <td class="num vat"><em>a carico vostro</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Totale, al netto di IVA</td>
+            <td class="num">€ 1.200,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Totale da corrispondere, IVA 10% inclusa
+        <small>viaggiando in 26, circa € 51,00 a persona andata e ritorno</small>
+      </span>
+      <span class="fig">€ 1.320,00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Acconto 30% alla conferma</td>
+            <td class="num"><strong>€ 396,00</strong></td>
+            <td class="num vat">IVA inclusa</td>
+          </tr>
+          <tr>
+            <td>Saldo, entro il 25 settembre 2026</td>
+            <td class="num"><strong>€ 924,00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Mezzo e conducente, carburante, pedaggi autostradali, parcheggio del mezzo a Siena, assicurazione completa, carico di sacche e materiale e l'attesa a Siena per tutta la durata della partita entro gli orari indicati.</li>
+      <li><strong>Nessun onere di accesso.</strong> Il palasport di Siena si trova fuori dalle mura: non serve il permesso comunale per i bus turistici.</li>
+      <li><strong>A vostro carico.</strong> Il vitto del conducente, che durante la partita resta a Siena per circa quattro ore. Non serve invece alcun pernottamento: si rientra in nottata.</li>
+      <li><strong>Non incluso.</strong> I biglietti della partita. Attesa oltre gli orari concordati, € 50,00 all'ora. Rientro a Montecatini dopo le 02:00, € 250,00. Soste, deviazioni o riprese aggiuntive rispetto al percorso descritto, quotate su richiesta. L'eventuale permesso comunale per entrare nel centro storico di Siena, circa € 160,00.</li>
+      <li><strong>Disponibilità e cancellazione.</strong> Cancellazione gratuita oltre 60 giorni prima del servizio; da 60 a 30 giorni viene trattenuto l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%. Oggi la prenotazione ricade nella fascia da 30 a 10 giorni e dal 18 settembre entra negli ultimi dieci giorni.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Note</h2>
+    <ul class="conds">
+      <li><strong>L'orario della partita.</strong> È il dato su cui gira tutto e ci manca: sappiamo che si gioca in serata e abbiamo costruito il programma sulla palla a due delle 20:30. Mandateci l'orario esatto e fissiamo gli orari su quello, senza variazioni di prezzo: se per esempio si giocasse alle 18:00, la partenza da Montecatini si sposterebbe alle 15:00 e il rientro sarebbe intorno alle 22:15.</li>
+      <li><strong>Il rientro dopo le 02:00.</strong> Con questi orari si rientra ampiamente prima e non c'è alcun supplemento. Va tenuto d'occhio solo se dopo la partita volete fermarvi a mangiare o se la gara va per le lunghe: oltre le 02:00 scatta un supplemento di € 250,00. Se pensate a una sosta dopo la partita ditecelo adesso.</li>
+      <li><strong>Dove si ferma il mezzo a Siena.</strong> Confermateci l'impianto esatto e, se lo conoscete, il punto di discesa. Per le partite serali con un gruppo organizzato capita che la società o le forze dell'ordine indichino un'area di sosta obbligata per il pullman: segnalatecelo prima, così il conducente arriva già con le istruzioni giuste.</li>
+      <li><strong>Il centro storico di Siena.</strong> Se prima della partita voleste una sosta dentro le mura, l'ingresso di un bus turistico richiede il permesso del Comune, circa € 160,00, da chiedere in anticipo e non ottenibile in giornata. Fuori dalle mura ci muoviamo liberamente.</li>
+      <li><strong>Il vitto del conducente.</strong> La sua cena è a vostro carico, come d'uso, e l'organizzate voi: il modo più semplice è farlo mangiare con il gruppo o lasciargli un buono.</li>
+      <li><strong>Quante persone e quanto materiale.</strong> Confermateci il numero definitivo dei partecipanti e diteci se viaggiano borse, sacche, palloni, materiale sanitario o striscioni e tamburi. Se doveste superare i 26 partecipanti avvisateci subito, perché servirebbe un secondo minibus e va concordato prima.</li>
+      <li><strong>Punto di ritrovo e un recapito.</strong> Ci servono l'indirizzo esatto del ritrovo a Montecatini Terme e un numero di telefono o WhatsApp della persona che viaggia con il gruppo.</li>
+      <li><strong>Dieci giorni alla partita.</strong> Il mezzo oggi è libero e ve lo teniamo per tutta la validità del preventivo, ma una domenica sera di campionato è una data richiesta e non possiamo bloccarla a lungo: la prenotazione diventa definitiva alla ricezione dell'acconto.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Note interne · non vanno al cliente</div>
+    <h2>Come è costruito il prezzo</h2>
+    <p>Riferimento: il preventivo <strong>Le Filigare (GM-2026-0821-LF)</strong>, che è a mezzo singolo come questo. <strong>Mai</strong> gli importi del Corte Francigena divisi per due: quelli sono per mezzo su un lavoro a due mezzi e sono già scontati per volume.</p>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — trasferimento FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500,00</td></tr>
+          <tr><td>Le Filigare — giornata a disposizione Siena, ~80 km, 5 h</td><td class="num">€ 809,00</td></tr>
+          <tr><td>Alvora — giornata a disposizione, 115 km, 8 h</td><td class="num">€ 980,00</td></tr>
+          <tr><td>Alvora — giornata piena con tre tappe, 250 km, 8 h 30</td><td class="num">€ 1.250,00</td></tr>
+          <tr><td><strong>Questa trasferta — 220 km, fino a 9 h, di sera e di domenica</strong></td><td class="num"><strong>€ 1.200,00</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Il lavoro sta fra le due giornate Alvora per chilometri e ore, e in più è serale e domenicale, con il conducente impegnato fino all'una di notte: € 1.200,00 netti sono la parte alta della forchetta, come vuole la regola di non scendere sotto mercato. Se il gruppo è piccolo e il prezzo a testa spaventa, si scende trattando, non a preventivo.</p>
+
+    <h3>Margine</h3>
+    <p>Mezzo di proprietà: costo diretto stimato € 250-350 fra carburante, pedaggi e conducente, più la serata di lavoro. Nessuna notte da pagare. Il margine è buono. <strong>Se il mezzo fosse impegnato altrove</strong> e si girasse il lavoro a Francesco, il costo salirebbe a € 600-700 e il prezzo andrebbe rivisto al rialzo prima di inviare.</p>
+
+    <h3>Da chiarire prima di inviare</h3>
+    <ol>
+      <li><strong>Chi è il cliente.</strong> Società sportiva, gruppo di tifosi o privato: il PDF va rigenerato con <code>--cliente "Nome"</code> e il riferimento cambiato con le sue iniziali (<code>--rif GM-2026-0927-XX</code>).</li>
+      <li><strong>L'orario della partita.</strong> Quotata la palla a due delle 20:30. Con le 18:00 cambiano tutti gli orari, non il prezzo.</li>
+      <li><strong>Quale palasport.</strong> Quotato un impianto fuori dalle mura di Siena, quindi senza permesso comunale. Se il punto di ritrovo fosse dentro le mura, si aggiungono circa € 160,00.</li>
+      <li><strong>Numero esatto dei passeggeri.</strong> Fino a 26 sta sul Beluga. Oltre, serve il secondo minibus di Francesco e la decisione è tua.</li>
+      <li><strong>Bloccare la disponibilità del mezzo</strong> per la sera del 27 settembre.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2026-0927-BS · 17 settembre 2026</span>
+  </footer>
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+<header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Away trip for the basketball game in Siena
+      <span class="sub">Montecatini Terme → Siena and back · Sunday 27 September 2026</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Client</span><span class="v">to be confirmed</span></div>
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">Sun 27 Sep 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passengers</span><span class="v">up to 26</span></div>
+      <div class="fact"><span class="eyebrow">Distance</span><span class="v">about 220 km return</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2026-0927-BS</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">21 September 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicle</h2>
+    <p class="lede">One minibus for the whole group, with the same driver from departure to return.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus driver, 7.64 m</span>
+      <p>Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.</p>
+      <p>Up to 26 people travel together in a single vehicle, there and back, with no changes and no support car. The reclining seats count on a late-night return, and the hold takes kit bags, balls and equipment without difficulty.</p>
+      <p>At 7.64 m the Beluga stays under eight metres: it reaches the arena forecourt and the reserved parking areas a full-size coach cannot enter, where a coach has to stop further away.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">The schedule is built around a 20:30 tip-off: as soon as you confirm the exact time of the game we will set it against that. Distances and journey times are road estimates, traffic excluded.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">27 September <span class="wd">· Sunday</span></span>
+          <span class="badge">Out, wait and back</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">17:15</span>
+            <span class="r">Meeting point in Montecatini Terme <span class="to">· departure at 17:30</span></span>
+            <span class="d">—</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:30</span>
+            <span class="r">Montecatini Terme <span class="to">→ Siena arena, arriving around 19:10</span></span>
+            <span class="d">110 km · 1 h 40</span>
+          </div>
+          <div class="leg">
+            <span class="t">20:30</span>
+            <span class="r">The game <span class="to">· vehicle and driver waiting in the arena parking area</span></span>
+            <span class="d">waiting</span>
+          </div>
+          <div class="leg">
+            <span class="t">23:00</span>
+            <span class="r">Siena arena <span class="to">→ Montecatini Terme, back around 00:40</span></span>
+            <span class="d">110 km · 1 h 40</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 17:15 – 00:45, at the group's disposal for the whole evening.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col" class="num">Amount</th>
+            <th scope="col" class="num">VAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Sun 27 Sep</span>Montecatini Terme → Siena, waiting throughout the game, return to Montecatini (about 220 km, vehicle engaged up to nine hours)</td>
+            <td class="num">€ 1,200.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Driver's meal during the evening wait</td>
+            <td class="num vat"><em>at your charge</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Total, excluding VAT</td>
+            <td class="num">€ 1,200.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Total payable, VAT 10% included
+        <small>with 26 travelling, about € 51.00 per person for the return trip</small>
+      </span>
+      <span class="fig">€ 1,320.00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Deposit 30% on confirmation</td>
+            <td class="num"><strong>€ 396.00</strong></td>
+            <td class="num vat">VAT included</td>
+          </tr>
+          <tr>
+            <td>Balance, by 25 September 2026</td>
+            <td class="num"><strong>€ 924.00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Vehicle and driver, fuel, motorway tolls, parking in Siena, full insurance, loading of bags and equipment, and waiting in Siena for the whole game within the times set out here.</li>
+      <li><strong>No access charges.</strong> The Siena arena lies outside the city walls, so the municipal permit for tourist coaches is not required.</li>
+      <li><strong>At your charge.</strong> The driver's meal, as he stays in Siena for about four hours during the game. No overnight stay is needed: we return the same night.</li>
+      <li><strong>Not included.</strong> Match tickets. Waiting beyond the agreed times, € 50.00 per hour. Return to Montecatini after 02:00, € 250.00. Additional stops, detours or pick-ups beyond the route described, quoted on request. Any municipal permit to enter the historic centre of Siena, about € 160.00.</li>
+      <li><strong>Availability and cancellation.</strong> Cancellation is free of charge more than 60 days before the service; from 60 to 30 days the deposit is retained; from 30 to 10 days 50%; in the last 10 days, 100%. Today the booking falls in the 30-to-10-day band, and from 18 September it moves into the last ten days.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <ul class="conds">
+      <li><strong>The tip-off time.</strong> Everything turns on it and we do not have it yet: we know the game is in the evening and have built the programme around a 20:30 tip-off. Send us the exact time and we will set the schedule against it at no change in price: if the game were at 18:00, departure from Montecatini would move to 15:00 and the return would be around 22:15.</li>
+      <li><strong>Returning after 02:00.</strong> With this schedule you are back well before then and no surcharge applies. It only needs watching if you want to stop for a meal after the game or if the game runs long: after 02:00 a supplement of € 250.00 applies. If you are thinking of a stop afterwards, tell us now.</li>
+      <li><strong>Where the vehicle stops in Siena.</strong> Please confirm the exact venue and, if you know it, the drop-off point. For evening games with an organised group the club or the police sometimes assign a compulsory parking area for the bus: let us know in advance so the driver arrives with the right instructions.</li>
+      <li><strong>The historic centre of Siena.</strong> Should you want a stop inside the walls before the game, taking a tourist coach in requires the municipal permit, about € 160.00, applied for in advance and not obtainable on the day. Outside the walls we move freely.</li>
+      <li><strong>The driver's meal.</strong> His dinner is at your charge, as is standard, and you arrange it: the simplest thing is to have him eat with the group or give him a voucher.</li>
+      <li><strong>How many people and how much kit.</strong> Please confirm the final number of participants and tell us whether bags, kit bags, balls, medical equipment or banners and drums are travelling. If you go beyond 26 participants, tell us at once: a second minibus would be needed and has to be arranged beforehand.</li>
+      <li><strong>Meeting point and a contact number.</strong> We need the exact meeting address in Montecatini Terme and a mobile or WhatsApp number for the person travelling with the group.</li>
+      <li><strong>Ten days to the game.</strong> The vehicle is free today and we hold it for you for the whole validity of this quotation, but a Sunday evening in the season is a date in demand and we cannot block it for long: the booking becomes firm on receipt of the deposit.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal notes · not for the client</div>
+    <h2>How the price is built</h2>
+    <p>Reference: the <strong>Le Filigare quotation (GM-2026-0821-LF)</strong>, single vehicle like this one. <strong>Never</strong> the Corte Francigena figures divided by two: those are per vehicle on a two-vehicle job and already discounted for volume.</p>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — transfer FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500.00</td></tr>
+          <tr><td>Le Filigare — day at disposal in Siena, ~80 km, 5 h</td><td class="num">€ 809.00</td></tr>
+          <tr><td>Alvora — day at disposal, 115 km, 8 h</td><td class="num">€ 980.00</td></tr>
+          <tr><td>Alvora — full day, three stops, 250 km, 8 h 30</td><td class="num">€ 1,250.00</td></tr>
+          <tr><td><strong>This trip — 220 km, up to 9 h, evening and Sunday</strong></td><td class="num"><strong>€ 1,200.00</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The job sits between the two Alvora days on distance and hours, and on top of that it is an evening and a Sunday, with the driver working until one in the morning: € 1,200.00 net is the upper end of the range, as the rule of never going below market requires. If the group is small and the per-head price frightens them, come down in negotiation, not in the quotation.</p>
+
+    <h3>Margin</h3>
+    <p>Own vehicle: direct cost estimated at € 250-350 for fuel, tolls and driver, plus the evening's work. No night to pay for. The margin is good. <strong>If the vehicle were committed elsewhere</strong> and the job went to Francesco, the cost would rise to € 600-700 and the price would have to be revised upwards before sending.</p>
+
+    <h3>To settle before sending</h3>
+    <ol>
+      <li><strong>Who the client is.</strong> Sports club, supporters' group or private: regenerate the PDF with <code>--cliente "Name"</code> and change the reference to their initials (<code>--rif GM-2026-0927-XX</code>).</li>
+      <li><strong>The tip-off time.</strong> Quoted on a 20:30 tip-off. An 18:00 start changes every time, not the price.</li>
+      <li><strong>Which arena.</strong> Quoted a venue outside the walls of Siena, so no municipal permit. A meeting point inside the walls adds about € 160.00.</li>
+      <li><strong>Exact passenger count.</strong> Up to 26 fits the Beluga. Beyond that, Francesco's second minibus is needed and the decision is yours.</li>
+      <li><strong>Block the vehicle</strong> for the evening of 27 September.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2026-0927-BS · 17 September 2026</span>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
