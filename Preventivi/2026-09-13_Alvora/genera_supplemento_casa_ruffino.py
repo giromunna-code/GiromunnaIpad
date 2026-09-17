@@ -107,8 +107,9 @@ IT = dict(
     vat_note="+ IVA 10%",
     grand="Supplemento da corrispondere, IVA 10% inclusa: € 385,00.",
     perhead=(
-        "Con questo supplemento il programma completo passa da € 5.104,00 a € 5.489,00 IVA inclusa: "
-        "l'acconto di € 1.530,00 resta invariato e il saldo passa da € 3.574,00 a € 3.959,00."
+        "Il programma 13-18 settembre risulta già saldato per intero, e ve ne ringraziamo: questo "
+        "supplemento di € 385,00 è quindi l'unico importo che resta da corrispondere. Il totale del "
+        "lavoro passa così da € 5.104,00 a € 5.489,00 IVA inclusa."
     ),
     h_incluso="Incluso.",
     incluso=(
@@ -126,11 +127,11 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Saldo già a preventivo", "€ 3.574,00", "IVA inclusa"),
-        ("Supplemento del 18 settembre", "€ 385,00", "IVA inclusa"),
-        ("Nuovo saldo, entro 5 giorni dal servizio", "€ 3.959,00", ""),
+        ("Programma 13-18 settembre, preventivo " + RIF_MADRE, "€ 5.104,00", "saldato"),
+        ("Supplemento del 18 settembre — unico importo da corrispondere", "€ 385,00", "IVA inclusa"),
     ],
-    bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
+    bank=("Il supplemento lo potete regolare con un bonifico dopo il servizio, con la relativa fattura: "
+          "non c'è nulla da anticipare. Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
@@ -154,9 +155,11 @@ IT = dict(
          "confermateci i numeri, perché il conducente controlla i passeggeri prima di lasciare l'aeroporto."),
         ("<b>Per confermare.</b> Trattandosi del servizio di domani basta un messaggio o un WhatsApp al "
          "+39 335 587 4744 con l'ora di ritiro, l'indirizzo di Casa Ruffino e il numero dei passeggeri. "
-         "Il supplemento viene aggiunto al saldo, non serve un nuovo acconto."),
+         "Avendo già saldato il programma, non c'è nient'altro da versare prima: il supplemento lo "
+         "regolate dopo il servizio."),
     ],
-    closing=("Restiamo a disposizione e vi auguriamo buon ultimo giorno in Toscana.<br/><br/>"
+    closing=("Grazie del saldo, che abbiamo ricevuto. Restiamo a disposizione e vi auguriamo "
+             "buon ultimo giorno in Toscana.<br/><br/>"
              "Cordiali saluti,<br/>"
              "Girolamo Munna — GiroMunna NCC, Toscana · +39 335 587 4744 · info@giromunna.com"),
 )
@@ -215,8 +218,9 @@ EN = dict(
     vat_note="+ VAT 10%",
     grand="Supplement payable, VAT 10% included: € 385.00.",
     perhead=(
-        "With this supplement the complete programme goes from € 5,104.00 to € 5,489.00 including VAT: "
-        "the € 1,530.00 deposit is unchanged and the balance goes from € 3,574.00 to € 3,959.00."
+        "The 13-18 September programme is already settled in full, for which our thanks: this € 385.00 "
+        "supplement is therefore the only amount left to pay. The total for the work goes from "
+        "€ 5,104.00 to € 5,489.00 including VAT."
     ),
     h_incluso="Included.",
     incluso=(
@@ -234,11 +238,11 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Balance already quoted", "€ 3,574.00", "VAT included"),
-        ("Supplement of 18 September", "€ 385.00", "VAT included"),
-        ("New balance, within 5 days of the service", "€ 3,959.00", ""),
+        ("13-18 September programme, quotation " + RIF_MADRE, "€ 5,104.00", "settled"),
+        ("Supplement of 18 September — the only amount outstanding", "€ 385.00", "VAT included"),
     ],
-    bank=("Bank transfer to Munna Girolamo Giuseppe — "
+    bank=("You can settle the supplement by bank transfer after the service, with its invoice: there is "
+          "nothing to pay in advance. Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
@@ -260,10 +264,11 @@ EN = dict(
         ("<b>How many guests.</b> We have understood 16 departing and 5 travelling on, out of the 21 on the "
          "programme: please confirm the numbers, as the driver counts passengers before leaving the airport."),
         ("<b>To confirm.</b> As this is tomorrow's service, a text or WhatsApp to +39 335 587 4744 with the pick-up "
-         "time, the Casa Ruffino address and the passenger numbers is all we need. The supplement is added to the "
-         "balance; no further deposit is required."),
+         "time, the Casa Ruffino address and the passenger numbers is all we need. With the programme already "
+         "settled there is nothing further to pay beforehand: the supplement is settled after the service."),
     ],
-    closing=("We remain at your disposal and wish you a fine last day in Tuscany.<br/><br/>"
+    closing=("Thank you for the balance, which has reached us. We remain at your disposal and wish you "
+             "a fine last day in Tuscany.<br/><br/>"
              "Kind regards,<br/>"
              "Girolamo Munna — GiroMunna NCC, Tuscany · +39 335 587 4744 · info@giromunna.com"),
 )

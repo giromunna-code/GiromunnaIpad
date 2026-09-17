@@ -2,6 +2,7 @@
 
 **Cliente:** Alvora · **Rif.:** GM-2026-0918-BI · **Integra:** GM-2026-0913-BI (wine tour 13-18.09.2026)
 **Preparato:** 17 settembre 2026 — per il servizio del giorno dopo.
+**Aggiornato:** 17 settembre 2026, dopo che Alvora ha saldato il programma per intero.
 
 File generati:
 - `GiroMunna_Supplemento_18_settembre_2026_Casa_Ruffino_IT.pdf`
@@ -39,8 +40,20 @@ Forte dei Marmi, ~55 km), ritiro alle 11:30, partenze di Firenze verso le 12:50.
 | IVA 10% | € 35,00 |
 | **Totale supplemento** | **€ 385,00** |
 
-Il programma completo passa da € 5.104,00 a **€ 5.489,00** IVA inclusa: acconto invariato a
-€ 1.530,00, **saldo da € 3.574,00 a € 3.959,00**.
+**Alvora ha già saldato il programma per intero**, € 5.104,00. Il totale del lavoro sale a
+€ 5.489,00 IVA inclusa e **l'unico importo che resta da incassare è il supplemento, € 385,00**.
+Il documento non parla più di "nuovo saldo": la tabella del pagamento dà il programma per
+saldato e mette il supplemento come unica voce aperta, da regolare con un bonifico dopo il
+servizio.
+
+### Fatturazione
+
+Il supplemento va su una **fattura a parte**: € 350,00 imponibile + IVA 10% € 35,00 = € 385,00.
+Non si tocca quanto già fatturato e incassato per GM-2026-0913-BI.
+
+Da tenere presente: avendo già pagato tutto, per Alvora questo è un bonifico in più da fare a
+tour finito. È l'unico motivo pratico per cui potresti voler arrotondare (vedi il pavimento
+qui sotto) — ma il servizio in più c'è, e il cliente lo ha chiesto lui.
 
 ### Come è costruito il prezzo
 
@@ -107,5 +120,5 @@ solo quello che parte, senza svuotare tutto il bagagliaio sul marciapiede delle 
    poi. Se parte prima si anticipa ancora, sempre senza addebito.
 4. **A che ora aspettano gli ospiti a Casa Ruffino**, per calibrare la sosta in aeroporto.
 
-Essendo il servizio di domani, basta un WhatsApp al 335 587 4744: nessun nuovo acconto, il
-supplemento si somma al saldo.
+Essendo il servizio di domani, basta un WhatsApp al 335 587 4744: non c'è nulla da versare
+prima, il supplemento si regola dopo il servizio.
