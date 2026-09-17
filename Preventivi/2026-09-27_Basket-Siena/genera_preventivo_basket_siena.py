@@ -59,7 +59,7 @@ IT = dict(
     footer2="+39 335 587 4744  ·  info@giromunna.com  ·  giromunna.com",
     page="pag. %d",
     title="Preventivo",
-    subtitle="Trasferta per la partita di basket a Siena  ·  Montecatini Terme → Siena e ritorno  ·  domenica 27 settembre 2026",
+    subtitle="Trasferta per la partita di basket a Siena  ·  Dal palazzetto di Montecatini Terme al palazzetto di Siena e ritorno  ·  domenica 27 settembre 2026",
     meta="Preparato per %s  ·  17 settembre 2026  ·  Rif. %s",
     h_mezzo="Il mezzo",
     mezzo_intro="Un minibus per tutto il gruppo, con lo stesso conducente dalla partenza al rientro.",
@@ -70,45 +70,45 @@ IT = dict(
     mezzo_close=(
         "Fino a 26 persone viaggiano insieme su un mezzo solo, andata e ritorno, senza cambi e senza mezzi di appoggio. "
         "I sedili reclinabili contano sul rientro in nottata, e il vano bagagli porta senza problemi sacche, palloni e "
-        "materiale. Con i suoi 7,64 metri il Beluga sta sotto gli otto metri: arriva ai piazzali del palasport e alle "
-        "aree di sosta riservate dove un autobus gran turismo non entra e deve fermarsi lontano."
+        "materiale. Con i suoi 7,64 metri il Beluga sta sotto gli otto metri: entra nei piazzali dei palazzetti e nelle "
+        "aree di sosta riservate dove un autobus gran turismo non arriva e deve fermarsi lontano."
     ),
     h_servizio="Il servizio",
     svc_head=["Momento", "Percorso", "Impegno del mezzo"],
     svc=[
         ("Dom 27 set<br/>andata",
-         "<b>Montecatini Terme → palasport di Siena.</b> "
-         "Ritrovo alle 17:15 nel punto che ci indicate, partenza alle 17:30. Circa 110 km per l'A11 e il raccordo "
-         "Firenze-Siena, un'ora e quaranta di viaggio, arrivo al palasport verso le 19:10: un'ora abbondante prima "
-         "della palla a due delle 20:30.",
+         "<b>Palazzetto dello sport di Montecatini Terme → palazzetto dello sport di Siena.</b> "
+         "Ritrovo alle 17:15 davanti al palazzetto di Montecatini, partenza alle 17:30. Circa 110 km per l'A11 e il "
+         "raccordo Firenze-Siena, un'ora e quaranta di viaggio, con discesa davanti al palazzetto di Siena verso le "
+         "19:10: un'ora abbondante prima della palla a due delle 20:30.",
          "circa 17:15 – 19:15"),
         ("Dom 27 set<br/>partita",
          "<b>Attesa a Siena per tutta la durata della partita.</b> "
-         "Mezzo e conducente restano nell'area di sosta del palasport a vostra disposizione: nessuno deve pensare a "
+         "Mezzo e conducente restano nell'area di sosta del palazzetto a vostra disposizione: nessuno deve pensare a "
          "come rientrare e le borse possono restare a bordo. Al termine ci si ritrova al mezzo con calma.",
          "circa 19:15 – 23:00"),
         ("Dom 27 set<br/>ritorno",
-         "<b>Palasport di Siena → Montecatini Terme.</b> "
+         "<b>Palazzetto dello sport di Siena → palazzetto dello sport di Montecatini Terme.</b> "
          "Ripartenza verso le 23:00, mezz'ora dopo la fine della partita, per lasciare il tempo di uscire dal "
-         "palasport senza corse. Rientro a Montecatini verso le 00:40, al punto di partenza.",
+         "palazzetto senza corse. Rientro a Montecatini verso le 00:40, allo stesso punto della partenza.",
          "circa 23:00 – 00:45"),
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Dom 27 set — Montecatini Terme → Siena, attesa per tutta la partita, rientro a Montecatini "
-         "(circa 220 km, mezzo impegnato fino a nove ore)", "€ 1.200,00", "+ IVA 10%"),
+        ("Dom 27 set — palazzetto di Montecatini Terme → palazzetto di Siena, attesa per tutta la partita, "
+         "rientro a Montecatini (circa 220 km, mezzo impegnato fino a nove ore)", "€ 900,00", "+ IVA 10%"),
         ("Vitto del conducente durante l'attesa serale", "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 1.200,00",
+    price_total="€ 900,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 1.320,00.",
-    perhead="Viaggiando in 26 sono circa € 51,00 a persona, andata e ritorno.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 990,00.",
+    perhead="Viaggiando in 26 sono circa € 38,00 a persona, andata e ritorno.",
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente, carburante, pedaggi autostradali, parcheggio del mezzo a Siena, assicurazione completa, "
         "carico di sacche e materiale e l'attesa a Siena per tutta la durata della partita entro gli orari indicati. "
-        "Non sono dovuti oneri di accesso: il palasport di Siena si trova fuori dalle mura, quindi non serve il "
+        "Non sono dovuti oneri di accesso: il palazzetto di Siena si trova fuori dalle mura, quindi non serve il "
         "permesso comunale per i bus turistici."
     ),
     h_nonincluso="Non incluso.",
@@ -120,41 +120,38 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 396,00", "IVA inclusa"),
-        ("Saldo, entro il 25 settembre 2026", "€ 924,00", ""),
+        ("Acconto 30% alla conferma", "€ 297,00", "IVA inclusa"),
+        ("Saldo, entro il 25 settembre 2026", "€ 693,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
         ("<b>L'orario della partita.</b> È il dato su cui gira tutto e ci manca: sappiamo che si gioca in serata e "
-         "abbiamo costruito il programma sulla palla a due delle 20:30, l'orario serale più frequente. Mandateci "
+         "abbiamo costruito il programma sulla palla a due delle 20:30. Mandateci "
          "l'orario esatto e fissiamo gli orari su quello, senza variazioni di prezzo: se per esempio si giocasse "
          "alle 18:00, la partenza da Montecatini si sposterebbe alle 15:00 e il rientro sarebbe intorno alle 22:15."),
         ("<b>Il rientro dopo le 02:00.</b> Con gli orari qui sopra si rientra ampiamente prima e non c'è alcun "
          "supplemento. Va tenuto d'occhio solo se dopo la partita volete fermarvi a mangiare o se la gara va per le "
          "lunghe: oltre le 02:00 scatta un supplemento di € 250,00. Se pensate a una sosta dopo la partita ditecelo "
-         "adesso, così la mettiamo in programma e vi diciamo subito come cambia il rientro."),
-        ("<b>Dove si ferma il mezzo a Siena.</b> Abbiamo quotato il palasport di Siena, fuori dalle mura: "
-         "confermateci l'impianto esatto e, se lo conoscete, il punto di discesa. Per le partite serali con un gruppo "
-         "organizzato capita che la società o le forze dell'ordine indichino un'area di sosta obbligata per il "
-         "pullman: se è il vostro caso segnalatecelo prima, così il conducente arriva già con le istruzioni giuste. "
-         "Il Beluga, sotto gli otto metri, sta in spazi dove un gran turismo non entra."),
-        ("<b>Il centro storico di Siena.</b> Se prima della partita voleste una sosta dentro le mura, l'ingresso di "
-         "un bus turistico richiede il permesso del Comune, circa € 160,00, da chiedere in anticipo e non ottenibile "
-         "in giornata. Fatecelo sapere entro la conferma: fuori dalle mura, invece, ci muoviamo liberamente."),
+         "adesso, così la mettiamo in programma."),
+        ("<b>Il carico e lo scarico ai due palazzetti.</b> Partenza e rientro davanti al palazzetto di Montecatini, "
+         "discesa e risalita davanti a quello di Siena. Confermateci quale impianto è a Siena e dove possiamo "
+         "fermarci: per le partite serali capita che la società o le forze dell'ordine indichino un'area di sosta "
+         "obbligata per il pullman, e il conducente deve saperlo prima di partire."),
+        ("<b>Il centro storico di Siena.</b> Il palazzetto è fuori dalle mura e ci arriviamo senza oneri. Se prima "
+         "della partita voleste una sosta dentro le mura, l'ingresso di un bus turistico richiede il permesso del "
+         "Comune, circa € 160,00, da chiedere in anticipo e non ottenibile in giornata: fatecelo sapere entro la "
+         "conferma."),
         ("<b>Il vitto del conducente.</b> Durante la partita il conducente resta a Siena per circa quattro ore: la "
          "sua cena è a vostro carico, come d'uso, e l'organizzate voi. Il modo più semplice è farlo mangiare con il "
-         "gruppo o lasciargli un buono. <b>Non serve invece alcun pernottamento:</b> si rientra in nottata e la "
-         "nostra base di Ponte Buggianese è a quindici chilometri da Montecatini."),
+         "gruppo. <b>Non serve invece alcun pernottamento:</b> si rientra in nottata."),
         ("<b>Quante persone e quanto materiale.</b> Il Beluga ha 26 posti passeggeri più l'autista. Confermateci il "
-         "numero definitivo dei partecipanti e diteci se viaggiano borse, sacche, palloni, materiale sanitario o "
-         "striscioni e tamburi: entrano nel vano bagagli, ma sapendolo prima organizziamo il carico e i tempi di "
-         "salita. Se doveste superare i 26 partecipanti avvisateci subito, perché servirebbe un secondo minibus e va "
-         "concordato prima."),
-        ("<b>Punto di ritrovo e un recapito.</b> Ci servono l'indirizzo esatto del ritrovo a Montecatini Terme e un "
-         "numero di telefono o WhatsApp della persona che viaggia con il gruppo, per tenerci in contatto la sera "
-         "della partita."),
+         "numero definitivo dei partecipanti e diteci se viaggiano borse, sacche, palloni o striscioni: entrano nel "
+         "vano bagagli, ma sapendolo prima organizziamo il carico. Se doveste superare i 26 partecipanti avvisateci "
+         "subito, perché servirebbe un secondo minibus e va concordato prima."),
+        ("<b>Un recapito per la sera della partita.</b> Ci serve un numero di telefono o WhatsApp della persona che "
+         "viaggia con il gruppo, per tenerci in contatto all'andata e soprattutto all'uscita dal palazzetto."),
         ("<b>Disponibilità e cancellazione.</b> Alla partita mancano dieci giorni: il mezzo oggi è libero e ve lo "
          "teniamo per tutta la validità di questo preventivo, ma una domenica sera di campionato è una data "
          "richiesta e non possiamo bloccarla a lungo. La prenotazione diventa definitiva alla ricezione dell'acconto. "
@@ -174,7 +171,7 @@ EN = dict(
     footer2="+39 335 587 4744  ·  info@giromunna.com  ·  giromunna.com",
     page="page %d",
     title="Quotation",
-    subtitle="Away trip for the basketball game in Siena  ·  Montecatini Terme → Siena and back  ·  Sunday 27 September 2026",
+    subtitle="Away trip for the basketball game in Siena  ·  From the Montecatini Terme sports hall to the Siena sports hall and back  ·  Sunday 27 September 2026",
     meta="Prepared for %s  ·  17 September 2026  ·  Ref. %s",
     h_mezzo="The vehicle",
     mezzo_intro="One minibus for the whole group, with the same driver from departure to return.",
@@ -185,45 +182,45 @@ EN = dict(
     mezzo_close=(
         "Up to 26 people travel together in a single vehicle, there and back, with no changes and no support car. "
         "The reclining seats count on a late-night return, and the hold takes kit bags, balls and equipment without "
-        "difficulty. At 7.64 m the Beluga stays under eight metres: it reaches the arena forecourt and the reserved "
-        "parking areas a full-size coach cannot enter, where a coach has to stop further away."
+        "difficulty. At 7.64 m the Beluga stays under eight metres: it gets into the sports hall forecourts and the "
+        "reserved parking areas a full-size coach cannot reach, where a coach has to stop further away."
     ),
     h_servizio="The service",
     svc_head=["Stage", "Route", "Vehicle engaged"],
     svc=[
         ("Sun 27 Sep<br/>outward",
-         "<b>Montecatini Terme → Siena arena.</b> "
-         "Meeting point 17:15 at the address you give us, departure at 17:30. About 110 km along the A11 and the "
-         "Florence-Siena link road, one hour and forty minutes, reaching the arena around 19:10 — a good hour before "
-         "the 20:30 tip-off.",
+         "<b>Montecatini Terme sports hall → Siena sports hall.</b> "
+         "Meeting point 17:15 in front of the Montecatini sports hall, departure at 17:30. About 110 km along the A11 "
+         "and the Florence-Siena link road, one hour and forty minutes, dropping you in front of the Siena sports hall "
+         "around 19:10 — a good hour before the 20:30 tip-off.",
          "approx. 17:15 – 19:15"),
         ("Sun 27 Sep<br/>game",
          "<b>Waiting in Siena for the whole game.</b> "
-         "Vehicle and driver stay in the arena parking area at your disposal: nobody has to think about getting back "
-         "and bags can stay on board. Afterwards you make your way to the vehicle without rushing.",
+         "Vehicle and driver stay in the sports hall parking area at your disposal: nobody has to think about getting "
+         "back and bags can stay on board. Afterwards you make your way to the vehicle without rushing.",
          "approx. 19:15 – 23:00"),
         ("Sun 27 Sep<br/>return",
-         "<b>Siena arena → Montecatini Terme.</b> "
-         "Departure around 23:00, half an hour after the final buzzer, to allow time to leave the arena unhurried. "
-         "Back in Montecatini around 00:40, at the same meeting point.",
+         "<b>Siena sports hall → Montecatini Terme sports hall.</b> "
+         "Departure around 23:00, half an hour after the final buzzer, to allow time to leave the hall unhurried. "
+         "Back in Montecatini around 00:40, at the same point you left from.",
          "approx. 23:00 – 00:45"),
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Sun 27 Sep — Montecatini Terme → Siena, waiting throughout the game, return to Montecatini "
-         "(about 220 km, vehicle engaged up to nine hours)", "€ 1,200.00", "+ VAT 10%"),
+        ("Sun 27 Sep — Montecatini Terme sports hall → Siena sports hall, waiting throughout the game, return to "
+         "Montecatini (about 220 km, vehicle engaged up to nine hours)", "€ 900.00", "+ VAT 10%"),
         ("Driver's meal during the evening wait", "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 1,200.00",
+    price_total="€ 900.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 1,320.00.",
-    perhead="With 26 travelling that is about € 51.00 per person, return trip included.",
+    grand="Total payable, VAT 10% included: € 990.00.",
+    perhead="With 26 travelling that is about € 38.00 per person, return trip included.",
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver, fuel, motorway tolls, parking in Siena, full insurance, loading of bags and equipment, "
         "and waiting in Siena for the whole game within the times set out here. No access charges apply: the Siena "
-        "arena lies outside the city walls, so the municipal permit for tourist coaches is not required."
+        "sports hall lies outside the city walls, so the municipal permit for tourist coaches is not required."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
@@ -234,8 +231,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 396.00", "VAT included"),
-        ("Balance, by 25 September 2026", "€ 924.00", ""),
+        ("Deposit 30% on confirmation", "€ 297.00", "VAT included"),
+        ("Balance, by 25 September 2026", "€ 693.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -249,14 +246,14 @@ EN = dict(
          "It only needs watching if you want to stop for a meal after the game or if the game runs long: after 02:00 "
          "a supplement of € 250.00 applies. If you are thinking of a stop afterwards, tell us now so we can build it "
          "into the programme and show you straight away how the return changes."),
-        ("<b>Where the vehicle stops in Siena.</b> We have quoted the Siena arena, outside the city walls: please "
-         "confirm the exact venue and, if you know it, the drop-off point. For evening games with an organised group "
-         "the club or the police sometimes assign a compulsory parking area for the bus: if that applies to you, let "
-         "us know in advance so the driver arrives with the right instructions. The Beluga, under eight metres, fits "
-         "where a full-size coach does not."),
-        ("<b>The historic centre of Siena.</b> Should you want a stop inside the walls before the game, taking a "
-         "tourist coach in requires the municipal permit, about € 160.00, applied for in advance and not obtainable "
-         "on the day. Let us know by confirmation; outside the walls we move freely."),
+        ("<b>Pick-up and drop-off at the two sports halls.</b> Departure and return in front of the Montecatini hall, "
+         "drop-off and pick-up in front of the Siena one. Please confirm which venue it is in Siena and, if you know, "
+         "where we may stop: for evening games with an organised group the club or the police sometimes assign a "
+         "compulsory parking area for the bus, and if that applies the driver needs to know before setting off. "
+         "The Beluga, under eight metres, fits where a full-size coach does not."),
+        ("<b>The historic centre of Siena.</b> The sports hall is outside the walls and we reach it with no charges. "
+         "Should you want a stop inside the walls before the game, taking a tourist coach in requires the municipal "
+         "permit, about € 160.00, applied for in advance and not obtainable on the day: let us know by confirmation."),
         ("<b>The driver's meal.</b> During the game the driver stays in Siena for about four hours: his dinner is at "
          "your charge, as is standard, and you arrange it. The simplest thing is to have him eat with the group or "
          "give him a voucher. <b>No overnight stay is needed:</b> we return the same night and our base at Ponte "
@@ -266,9 +263,8 @@ EN = dict(
          "and drums are travelling: they fit in the hold, but knowing in advance lets us plan the loading and the "
          "boarding time. If you go beyond 26 participants, tell us at once: a second minibus would be needed and has "
          "to be arranged beforehand."),
-        ("<b>Meeting point and a contact number.</b> We need the exact meeting address in Montecatini Terme and a "
-         "mobile or WhatsApp number for the person travelling with the group, so we can stay in touch on the evening "
-         "of the game."),
+        ("<b>A contact number for the evening of the game.</b> We need a mobile or WhatsApp number for the person "
+         "travelling with the group, so we can stay in touch on the way out and above all when you leave the hall."),
         ("<b>Availability and cancellation.</b> The game is ten days away: the vehicle is free today and we hold it "
          "for you for the whole validity of this quotation, but a Sunday evening in the season is a date in demand "
          "and we cannot block it for long. The booking becomes firm on receipt of the deposit. Cancellation is free "
