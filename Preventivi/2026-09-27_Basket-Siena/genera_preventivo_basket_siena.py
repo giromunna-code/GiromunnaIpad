@@ -78,7 +78,7 @@ IT = dict(
     svc=[
         ("Dom 27 set<br/>andata",
          "<b>Palazzetto dello sport di Montecatini Terme → palazzetto dello sport di Siena.</b> "
-         "Ritrovo alle 17:15 davanti al palazzetto di Montecatini, partenza alle 17:30. Circa 110 km per l'A11 e il "
+         "Ritrovo alle 17:15 davanti al palazzetto di Montecatini, partenza alle 17:30. Circa 115 km per l'A11 e il "
          "raccordo Firenze-Siena, un'ora e quaranta di viaggio, con discesa davanti al palazzetto di Siena verso le "
          "19:10: un'ora abbondante prima della palla a due delle 20:30.",
          "circa 17:15 – 19:15"),
@@ -96,7 +96,7 @@ IT = dict(
     h_prezzo="Il prezzo",
     price_rows=[
         ("Dom 27 set — palazzetto di Montecatini Terme → palazzetto di Siena, attesa per tutta la partita, "
-         "rientro a Montecatini (circa 220 km, mezzo impegnato fino a nove ore)", "€ 900,00", "+ IVA 10%"),
+         "rientro a Montecatini (circa 230 km, mezzo impegnato fino a nove ore)", "€ 900,00", "+ IVA 10%"),
         ("Vitto del conducente durante l'attesa serale", "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
@@ -190,7 +190,7 @@ EN = dict(
     svc=[
         ("Sun 27 Sep<br/>outward",
          "<b>Montecatini Terme sports hall → Siena sports hall.</b> "
-         "Meeting point 17:15 in front of the Montecatini sports hall, departure at 17:30. About 110 km along the A11 "
+         "Meeting point 17:15 in front of the Montecatini sports hall, departure at 17:30. About 115 km along the A11 "
          "and the Florence-Siena link road, one hour and forty minutes, dropping you in front of the Siena sports hall "
          "around 19:10 — a good hour before the 20:30 tip-off.",
          "approx. 17:15 – 19:15"),
@@ -208,7 +208,7 @@ EN = dict(
     h_prezzo="The price",
     price_rows=[
         ("Sun 27 Sep — Montecatini Terme sports hall → Siena sports hall, waiting throughout the game, return to "
-         "Montecatini (about 220 km, vehicle engaged up to nine hours)", "€ 900.00", "+ VAT 10%"),
+         "Montecatini (about 230 km, vehicle engaged up to nine hours)", "€ 900.00", "+ VAT 10%"),
         ("Driver's meal during the evening wait", "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",

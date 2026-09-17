@@ -28,7 +28,7 @@ con l'intestazione generica *Gruppo trasferta basket* e le iniziali provvisorie 
 
 Dal **palazzetto dello sport di Montecatini Terme** al **palazzetto dello sport di Siena**,
 attesa per tutta la partita, rientro al palazzetto di Montecatini. Un mezzo, il Beluga, fino
-a 26 passeggeri. Circa 110 km per tratta, 220 in tutto, per l'A11 e il raccordo Firenze-Siena.
+a 26 passeggeri. Circa 115 km per tratta, 230 in tutto, per l'A11 e il raccordo Firenze-Siena.
 
 Orari costruiti sulla **palla a due delle 20:30** (Girolamo ha detto che si gioca in serata,
 l'orario esatto non c'è ancora):
@@ -47,7 +47,7 @@ Mezzo impegnato circa nove ore, rientro **prima delle 02:00**: nessun supplement
 
 | Servizio | Netto |
 |---|---|
-| Dom 27 set — palazzetto di Montecatini → palazzetto di Siena, attesa, rientro (220 km, fino a 9 h) | € 900,00 |
+| Dom 27 set — palazzetto di Montecatini → palazzetto di Siena, attesa, rientro (230 km, fino a 9 h) | € 900,00 |
 | Vitto del conducente | a carico del cliente |
 
 **Totale netto € 900,00 · IVA 10% € 90,00 · Totale € 990,00** (≈ € 38,00 a persona in 26)
@@ -65,7 +65,7 @@ giornate del preventivo Alvora:
 | Le Filigare — giornata a disposizione Siena, ~80 km, 5 h | € 809,00 |
 | Alvora — giornata a disposizione, 115 km, 8 h | € 980,00 |
 | Alvora — giornata piena con tre tappe, 250 km, 8 h 30 | € 1.250,00 |
-| Questa trasferta secondo la scala — 220 km, fino a 9 h, di sera e di domenica | € 1.200,00 |
+| Questa trasferta secondo la scala — 230 km, fino a 9 h, di sera e di domenica | € 1.200,00 |
 | **Prezzo messo a preventivo** | **€ 900,00** |
 
 Per chilometri e ore il lavoro sta fra le due giornate Alvora, e in più è serale e domenicale
