@@ -96,14 +96,14 @@ IT = dict(
     h_prezzo="Il prezzo",
     price_rows=[
         ("Dom 27 set — palazzetto di Montecatini Terme → palazzetto di Siena, attesa per tutta la partita, "
-         "rientro a Montecatini (circa 230 km, mezzo impegnato fino a nove ore)", "€ 900,00", "+ IVA 10%"),
+         "rientro a Montecatini (circa 230 km, mezzo impegnato fino a nove ore)", "€ 800,00", "+ IVA 10%"),
         ("Vitto del conducente durante l'attesa serale", "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 900,00",
+    price_total="€ 800,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 990,00.",
-    perhead="Viaggiando in 26 sono circa € 38,00 a persona, andata e ritorno.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 880,00.",
+    perhead="Viaggiando in 26 sono circa € 34,00 a persona, andata e ritorno.",
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente, carburante, pedaggi autostradali, parcheggio del mezzo a Siena, assicurazione completa, "
@@ -120,8 +120,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 297,00", "IVA inclusa"),
-        ("Saldo, entro il 25 settembre 2026", "€ 693,00", ""),
+        ("Acconto 30% alla conferma", "€ 264,00", "IVA inclusa"),
+        ("Saldo, entro il 25 settembre 2026", "€ 616,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -208,14 +208,14 @@ EN = dict(
     h_prezzo="The price",
     price_rows=[
         ("Sun 27 Sep — Montecatini Terme sports hall → Siena sports hall, waiting throughout the game, return to "
-         "Montecatini (about 230 km, vehicle engaged up to nine hours)", "€ 900.00", "+ VAT 10%"),
+         "Montecatini (about 230 km, vehicle engaged up to nine hours)", "€ 800.00", "+ VAT 10%"),
         ("Driver's meal during the evening wait", "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 900.00",
+    price_total="€ 800.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 990.00.",
-    perhead="With 26 travelling that is about € 38.00 per person, return trip included.",
+    grand="Total payable, VAT 10% included: € 880.00.",
+    perhead="With 26 travelling that is about € 34.00 per person, return trip included.",
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver, fuel, motorway tolls, parking in Siena, full insurance, loading of bags and equipment, "
@@ -231,8 +231,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 297.00", "VAT included"),
-        ("Balance, by 25 September 2026", "€ 693.00", ""),
+        ("Deposit 30% on confirmation", "€ 264.00", "VAT included"),
+        ("Balance, by 25 September 2026", "€ 616.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),

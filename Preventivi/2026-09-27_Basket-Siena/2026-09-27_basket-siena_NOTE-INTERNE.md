@@ -47,12 +47,12 @@ Mezzo impegnato circa nove ore, rientro **prima delle 02:00**: nessun supplement
 
 | Servizio | Netto |
 |---|---|
-| Dom 27 set — palazzetto di Montecatini → palazzetto di Siena, attesa, rientro (230 km, fino a 9 h) | € 900,00 |
+| Dom 27 set — palazzetto di Montecatini → palazzetto di Siena, attesa, rientro (230 km, fino a 9 h) | € 800,00 |
 | Vitto del conducente | a carico del cliente |
 
-**Totale netto € 900,00 · IVA 10% € 90,00 · Totale € 990,00** (≈ € 38,00 a persona in 26)
+**Totale netto € 800,00 · IVA 10% € 80,00 · Totale € 880,00** (≈ € 34,00 a persona in 26)
 
-Acconto 30% € 297,00 — saldo € 693,00 entro il 25 settembre.
+Acconto 30% € 264,00 — saldo € 616,00 entro il 25 settembre.
 
 ## Come è stato costruito il prezzo
 
@@ -66,16 +66,23 @@ giornate del preventivo Alvora:
 | Alvora — giornata a disposizione, 115 km, 8 h | € 980,00 |
 | Alvora — giornata piena con tre tappe, 250 km, 8 h 30 | € 1.250,00 |
 | Questa trasferta secondo la scala — 230 km, fino a 9 h, di sera e di domenica | € 1.200,00 |
-| **Prezzo messo a preventivo** | **€ 900,00** |
+| Prima stesura | € 1.200,00 |
+| Primo ribasso chiesto da Girolamo | € 900,00 |
+| **Prezzo messo a preventivo, secondo ribasso** | **€ 800,00** |
 
 Per chilometri e ore il lavoro sta fra le due giornate Alvora, e in più è serale e domenicale
 con il conducente impegnato fino all'una di notte: la scala lo porterebbe sui € 1.200,00 netti,
 che è la cifra della prima stesura.
 
-**Il prezzo è stato abbassato a € 900,00 su indicazione di Girolamo**, che lo ha ritenuto
-troppo alto per una trasferta sportiva di una sera sola. Sono € 990,00 IVA inclusa, cioè sotto
-i mille euro, che su una trasferta di squadra o di tifosi è la soglia che conta. Sotto questa
-cifra non si scende a preventivo: si tratta semmai a voce, altrimenti il servizio si svaluta.
+**Girolamo l'ha fatto scendere due volte**, prima a € 900,00 e poi a € 800,00, ritenendolo
+troppo alto per una trasferta sportiva di una sera sola. Sono € 880,00 IVA inclusa, cioè un
+terzo sotto la scala e ben sotto i mille euro, che su una trasferta di squadra o di tifosi è
+la soglia che conta.
+
+**Questo è il fondo.** Più giù il servizio si svaluta e la cifra non si recupera sui lavori
+successivi. Se il cliente tira ancora sul prezzo si tratta a voce, non si riscrive il
+preventivo. E **questo preventivo non va preso come riferimento per i prossimi**: vale per
+questa trasferta, la scala resta quella di Le Filigare.
 
 **Non sono stati usati i prezzi del Corte Francigena divisi per due**: quelli sono per mezzo
 su un lavoro a due mezzi e sono già scontati per volume.
@@ -84,12 +91,12 @@ su un lavoro a due mezzi e sono già scontati per volume.
 
 Mezzo di proprietà: costo diretto stimato € 250-350 fra carburante, pedaggi e conducente, più
 la serata di lavoro. Nessuna notte da pagare, perché si rientra in nottata e la base di Ponte
-Buggianese è a quindici chilometri da Montecatini. Anche a € 900,00 netti il margine resta
-ampio.
+Buggianese è a quindici chilometri da Montecatini. Anche a € 800,00 netti restano dai € 450
+ai € 550 sulla serata.
 
 **Se il Beluga fosse impegnato altrove** e il lavoro andasse a Francesco, il costo salirebbe
-sui € 600-700 e a questo prezzo non ci starebbe quasi più niente: in quel caso il preventivo
-va rifatto prima di inviarlo.
+sui € 600-700: a € 800,00 netti il lavoro andrebbe praticamente in pari. In quel caso il
+preventivo va rifatto prima di inviarlo, non girato così com'è.
 
 ## Verifiche di accesso
 
