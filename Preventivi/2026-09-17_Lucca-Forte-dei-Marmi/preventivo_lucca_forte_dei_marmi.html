@@ -1,0 +1,771 @@
+<title>Preventivo — Lucca, Forte dei Marmi e cantina, giornata a disposizione</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+  .day.released { background: transparent; border-style: dashed; border-color: var(--line-strong); }
+  .day.released .day-date { color: var(--ink-soft); }
+  .day.released .badge { color: var(--ink-soft); background: transparent; border-color: var(--line-strong); }
+  .day.released p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<div class="wrap lang" data-lang="it">
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Lucca, Forte dei Marmi e una cantina
+      <span class="sub">Giornata intera a disposizione · Versilia · Colline del vino</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Cliente</span><span class="v">Da confermare</span></div>
+      <div class="fact"><span class="eyebrow">Data</span><span class="v">Da concordare</span></div>
+      <div class="fact"><span class="eyebrow">Passeggeri</span><span class="v">16-20</span></div>
+      <div class="fact"><span class="eyebrow">Servizio</span><span class="v">1 giornata</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2026-0917-LV</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">17 ottobre 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Il mezzo</h2>
+    <p class="lede">Un minibus con conducente a disposizione dal ritrovo a Lucca fino al rientro della sera.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista, 7,64 m</span>
+      <p>Aria condizionata, sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.</p>
+      <p>Con 16 o 20 persone a bordo restano dai sei ai dieci posti liberi. Su questo itinerario i 7,64 metri contano più della capienza: il Beluga sta sotto gli otto metri e arriva ai piazzali della Versilia e alle strade di collina delle cantine, dove un autobus gran turismo non entra.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Orari e distanze sono stime stradali, traffico escluso. Si fissano sul programma definitivo appena arrivano data, ristorante e cantina.</p>
+
+    <div class="days">
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">Giornata unica <span class="wd">· data da concordare</span></span>
+          <span class="badge">Giornata a disposizione</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">09:00</span>
+            <span class="r">Lucca, punto di ritrovo da confermare <span class="to">→ Forte dei Marmi</span></span>
+            <span class="d">38 km · 45 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">09:45</span>
+            <span class="r">Mattinata a Forte dei Marmi <span class="to">— pontile, centro, lungomare; spostamenti brevi in paese compresi</span></span>
+            <span class="d">a disposizione</span>
+          </div>
+          <div class="leg">
+            <span class="t">13:00</span>
+            <span class="r">Forte dei Marmi <span class="to">→ il ristorante, in paese oppure a Pietrasanta</span></span>
+            <span class="d">0 – 8 km · 15 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">15:30</span>
+            <span class="r">Ristorante <span class="to">→ cantina: Candia dei Colli Apuani oppure Colline Lucchesi / Montecarlo</span></span>
+            <span class="d">25 – 45 km · 40 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">16:15</span>
+            <span class="r">Visita e degustazione <span class="to">— mezzo e conducente vi aspettano in cantina</span></span>
+            <span class="d">a disposizione</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:30</span>
+            <span class="r">Cantina <span class="to">→ Lucca, arrivo verso le 19:30</span></span>
+            <span class="d">15 – 45 km · 30-50 min</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 09:00 – 19:30, sempre con lo stesso conducente. Percorso completo intorno ai 120 km con l'una o con l'altra cantina.</div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <p class="lede">Il prezzo è del mezzo, non a testa: fra sedici e venti partecipanti l'importo non cambia.</p>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr><th>Voce</th><th class="num">Netto</th><th class="num">IVA</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">09:00 – 19:30</span>Giornata intera a disposizione — Lucca → Forte dei Marmi → cantina → Lucca, circa 120 km</td>
+            <td class="num">€ 1.050,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Vitto del conducente, il pranzo della giornata</td>
+            <td class="num"><em>a carico vostro</em></td>
+            <td class="num vat">—</td>
+          </tr>
+          <tr class="tot">
+            <td>Totale, al netto di IVA</td>
+            <td class="num">€ 1.050,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="total">
+      <span class="label">Totale, IVA 10% inclusa<small>€ 57,75 a persona in venti · € 72,19 in sedici</small></span>
+      <span class="fig">€ 1.155,00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Acconto 30% alla conferma</td><td class="num">€ 346,50</td></tr>
+          <tr><td>Saldo, entro 5 giorni dal servizio</td><td class="num">€ 808,50</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Mezzo e conducente per l'intera giornata, carburante, pedaggi autostradali, parcheggi ordinari, assicurazione completa e tutti gli spostamenti brevi dentro Forte dei Marmi.</li>
+      <li><strong>Nessun onere di accesso.</strong> L'itinerario non tocca l'aeroporto di Pisa, né il centro di Firenze, né Siena: non c'è alcun permesso da pagare.</li>
+      <li><strong>Non incluso.</strong> Vitto del conducente. Pranzo del gruppo, visite, degustazioni, ingressi e mance in cantina.</li>
+      <li><strong>Supplementi.</strong> Attesa oltre gli orari indicati € 50,00 all'ora per mezzo; soste aggiuntive o modifiche all'itinerario quotate su richiesta; rientro dopo le 02:00 € 250,00.</li>
+      <li><strong>Cancellazione.</strong> Gratuita oltre 60 giorni prima del servizio; da 60 a 30 giorni viene trattenuto l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Note</h2>
+    <p class="lede">I punti del programma che vale la pena guardare adesso, non il giorno prima.</p>
+    <ul class="conds">
+      <li><strong>La data.</strong> Nella richiesta non c'è, e senza data non si tiene il mezzo: il Beluga è uno solo e va a prenotazioni. Il prezzo vale per qualunque giorno dell'anno. Nei fine settimana di luglio e agosto, però, il traffico sulla costa versiliese è pesante: se c'è margine di scelta, un giorno infrasettimanale è un'altra giornata.</li>
+      <li><strong>Sedici o venti, il prezzo non cambia.</strong> Su 26 posti il gruppo sta comodo in entrambi i casi. Il numero esatto serve comunque, per l'assicurazione e perché con venti persone i tempi di salita e discesa a ogni tappa si allungano un po'.</li>
+      <li><strong>Ristorante e cantina sono ancora da scegliere.</strong> Per il pranzo, dentro Forte dei Marmi si resta sul mare, mentre Pietrasanta è a un quarto d'ora e ha il centro storico più bello della zona. Per la cantina ci sono due strade: <strong>Candia dei Colli Apuani</strong> sopra Massa, la denominazione più vicina al mare (per esempio Podere Scurtarola o Aurelio Cima), oppure le <strong>Colline Lucchesi e Montecarlo</strong> sulla via del rientro (per esempio Fattoria Sardi, Tenuta di Valgiano, Fattoria del Buonamico). Sono indicazioni da verificare, non prenotazioni. In entrambi i casi il chilometraggio è simile e il prezzo non cambia.</li>
+      <li><strong>Se la cantina è a Candia, la strada è stretta.</strong> L'ultimo tratto verso le colline di Massa è in salita, con tornanti e passaggi fra i muri: il minibus da 7,64 m ci arriva, un gran turismo no. Meglio farsi confermare dalla cantina il punto di discesa e lo spazio di manovra.</li>
+      <li><strong>Il punto di ritrovo a Lucca.</strong> Il centro dentro le mura è zona a traffico limitato. Serve l'indirizzo esatto: se è raggiungibile si prende lì, altrimenti si indica il punto accessibile più vicino, che a Lucca significa quasi sempre due minuti a piedi.</li>
+      <li><strong>Forte dei Marmi in alta stagione.</strong> Da giugno a settembre l'accesso al centro e al lungomare è regolato e i pullman hanno stalli dedicati fuori dal paese. Sotto gli otto metri ci si muove con più libertà, ma il piano traffico cambia di anno in anno: si verifica alla data confermata.</li>
+      <li><strong>Quanto dura la giornata.</strong> Dal ritrovo delle 09:00 al rientro delle 19:30 il programma sta dentro i limiti di guida e di servizio del conducente con circa un'ora di margine, contando il viaggio del mezzo dalla base e ritorno. Un rientro oltre le 20:30 si può fare, ma va deciso prima: partenza posticipata al mattino, oppure cambio del conducente.</li>
+      <li><strong>Il pranzo del conducente.</strong> A carico del cliente e non messo a preventivo. Nessun pernottamento: la giornata finisce a Lucca e il conducente rientra alla base in serata. La soluzione più semplice è un coperto in più al tavolo del gruppo.</li>
+      <li><strong>Un'alternativa.</strong> Diverse cantine della zona servono il pranzo insieme alla degustazione: accorpando le due tappe si toglie uno spostamento di mezzogiorno e resta tutto il pomeriggio libero sul mare. Stesso prezzo.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Interno — non fa parte del preventivo che va al cliente</div>
+    <h2>Come è stato costruito il prezzo</h2>
+
+    <p>Riferimento: il preventivo <strong>Le Filigare</strong> (GM-2026-0821-LF), a mezzo singolo come questo. I prezzi del Corte Francigena non si usano come base: quel lavoro ha due mezzi e i suoi importi per mezzo sono già scontati per volume.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — trasferimento ~50 km</td><td class="num">€ 500,00</td></tr>
+          <tr><td>Le Filigare — giornata a disposizione, ~80 km e 5 ore</td><td class="num">€ 809,00</td></tr>
+          <tr><td>Alvora — giornata a disposizione, 140 km e 8 ore</td><td class="num">€ 980,00</td></tr>
+          <tr class="tot"><td>Questa giornata — ~120 km e 10,5 ore a disposizione</td><td class="num">€ 1.050,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Perché sopra la giornata Alvora</h3>
+    <p>I chilometri sono meno, ma le ore sono di più: 10 ore e mezza di mezzo impegnato contro 8, e con le trasferte dalla base la giornata del conducente arriva a circa 12 ore, vicino al limite. Le ore, qui, pesano più della distanza.</p>
+
+    <h3>Margine</h3>
+    <p>Lavoro sul mezzo di proprietà, costo diretto stimato € 250-350 sulla giornata, senza pernottamento. Il margine è buono. Se si dovesse subappaltare a Francesco (€ 600-700 al giorno) il prezzo va rivisto al rialzo del 20-25%.</p>
+
+    <h3>Da chiarire prima di inviare</h3>
+    <ol>
+      <li><strong>Data del servizio.</strong> Manca del tutto: senza non si blocca il mezzo e non si calcola la fascia di cancellazione. È anche la cifra <code>MMGG</code> del riferimento, oggi provvisorio.</li>
+      <li><strong>Nome e mail del cliente.</strong> La richiesta è arrivata senza intestatario: i PDF escono senza nome. Si rigenerano con <code>--cliente "Nome"</code> e <code>--rif</code>.</li>
+      <li><strong>Ristorante e cantina.</strong> Quotate entrambe le direzioni perché il chilometraggio si equivale. Se la scelta cade più lontano — Bolgheri, per dire — il prezzo va rifatto.</li>
+      <li><strong>Punto di ritrovo a Lucca.</strong> Dentro le mura è ZTL: serve l'indirizzo per decidere dove si carica.</li>
+      <li><strong>Forte dei Marmi.</strong> Verificare il piano traffico in vigore alla data scelta, prima di confermare dove si scende.</li>
+      <li><strong>Durata.</strong> 09:00 – 19:30 sta nei limiti con circa un'ora di margine. Se il cliente chiede la cena in Versilia, serve il cambio conducente o una partenza più tardi: non è un dettaglio da sistemare la sera stessa.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2026-0917-LV · 17 settembre 2026</span>
+  </footer>
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Lucca, Forte dei Marmi and a winery
+      <span class="sub">Full day at disposal · Versilia · Wine hills</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Client</span><span class="v">To be confirmed</span></div>
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">To be agreed</span></div>
+      <div class="fact"><span class="eyebrow">Passengers</span><span class="v">16-20</span></div>
+      <div class="fact"><span class="eyebrow">Service</span><span class="v">1 day</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2026-0917-LV</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">17 October 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicle</h2>
+    <p class="lede">One minibus with driver at your disposal from the pick-up in Lucca to the evening return.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus driver, 7.64 m</span>
+      <p>Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.</p>
+      <p>With 16 or 20 people on board, six to ten seats stay free. On this itinerary the 7.64 m matter more than the capacity: the Beluga is under eight metres and reaches the Versilia seafront and the hill roads up to the wineries, where a full-size coach cannot go.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">Times and distances are road estimates, traffic aside. They are set against the final programme as soon as the date, the restaurant and the winery are known.</p>
+
+    <div class="days">
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">Single day <span class="wd">· date to be agreed</span></span>
+          <span class="badge">Day at disposal</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">09:00</span>
+            <span class="r">Lucca, pick-up point to be confirmed <span class="to">→ Forte dei Marmi</span></span>
+            <span class="d">38 km · 45 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">09:45</span>
+            <span class="r">Morning in Forte dei Marmi <span class="to">— the pier, the centre, the seafront; short hops within the town included</span></span>
+            <span class="d">at disposal</span>
+          </div>
+          <div class="leg">
+            <span class="t">13:00</span>
+            <span class="r">Forte dei Marmi <span class="to">→ the restaurant, in town or in Pietrasanta</span></span>
+            <span class="d">0 – 8 km · 15 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">15:30</span>
+            <span class="r">Restaurant <span class="to">→ winery: Candia dei Colli Apuani, or Colline Lucchesi / Montecarlo</span></span>
+            <span class="d">25 – 45 km · 40 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">16:15</span>
+            <span class="r">Visit and tasting <span class="to">— vehicle and driver wait for you at the winery</span></span>
+            <span class="d">at disposal</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:30</span>
+            <span class="r">Winery <span class="to">→ Lucca, arriving around 19:30</span></span>
+            <span class="d">15 – 45 km · 30-50 min</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 09:00 – 19:30, with the same driver throughout. The complete route comes to about 120 km with either winery.</div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <p class="lede">The price is for the vehicle, not per head: between sixteen and twenty passengers the amount does not change.</p>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr><th>Item</th><th class="num">Net</th><th class="num">VAT</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">09:00 – 19:30</span>Full day at disposal — Lucca → Forte dei Marmi → winery → Lucca, about 120 km</td>
+            <td class="num">€ 1,050.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Driver's meal, lunch on the day</td>
+            <td class="num"><em>at your charge</em></td>
+            <td class="num vat">—</td>
+          </tr>
+          <tr class="tot">
+            <td>Total, excluding VAT</td>
+            <td class="num">€ 1,050.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="total">
+      <span class="label">Total, VAT 10% included<small>€ 57.75 each at twenty · € 72.19 at sixteen</small></span>
+      <span class="fig">€ 1,155.00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Deposit 30% on confirmation</td><td class="num">€ 346.50</td></tr>
+          <tr><td>Balance, within 5 days of the service</td><td class="num">€ 808.50</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Vehicle and driver for the whole day, fuel, motorway tolls, ordinary parking, full insurance and every short transfer within Forte dei Marmi.</li>
+      <li><strong>No access charges.</strong> The itinerary touches neither Pisa airport, nor the centre of Florence, nor Siena: there is no permit to pay for.</li>
+      <li><strong>Not included.</strong> The driver's meal. The group's lunch, winery visits, tastings, entrance fees and gratuities.</li>
+      <li><strong>Supplements.</strong> Waiting beyond the times indicated € 50.00 per hour per vehicle; additional stops or changes to the itinerary quoted on request; return after 02:00 € 250.00.</li>
+      <li><strong>Cancellation.</strong> Free of charge more than 60 days before the service; from 60 to 30 days the deposit is retained; from 30 to 10 days 50%; in the last 10 days, 100%.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <p class="lede">The points of the programme worth looking at now, rather than the day before.</p>
+    <ul class="conds">
+      <li><strong>The date.</strong> The enquiry does not give one, and without a date the vehicle cannot be held: there is only one Beluga and it goes by booking order. The price applies to any day of the year. On July and August weekends, though, traffic along the Versilia coast is heavy: if there is any choice in the matter, a weekday is a different day altogether.</li>
+      <li><strong>Sixteen or twenty, the price is the same.</strong> On 26 seats the group travels comfortably either way. The exact number is still needed, for the insurance and because with twenty people boarding and alighting at each stop takes a little longer.</li>
+      <li><strong>Restaurant and winery are still open.</strong> For lunch, staying inside Forte dei Marmi keeps you by the sea, while Pietrasanta is fifteen minutes away and has the finest historic centre in the area. For the winery there are two directions: <strong>Candia dei Colli Apuani</strong> above Massa, the denomination closest to the coast (Podere Scurtarola or Aurelio Cima, for instance), or the <strong>Colline Lucchesi and Montecarlo</strong> on the way back (Fattoria Sardi, Tenuta di Valgiano, Fattoria del Buonamico). These are suggestions to look into, not bookings. Either way the mileage is similar and the price does not change.</li>
+      <li><strong>If the winery is at Candia, the road is narrow.</strong> The final stretch up the Massa hills climbs through hairpins and between stone walls: the 7.64 m minibus gets there, a full-size coach does not. Better to have the winery confirm the drop-off point and the manoeuvring space.</li>
+      <li><strong>The pick-up point in Lucca.</strong> The centre inside the walls is a restricted traffic zone. We need the exact address: if it can be reached we collect you there, otherwise we name the nearest accessible point, which in Lucca almost always means a two-minute walk.</li>
+      <li><strong>Forte dei Marmi in high season.</strong> From June to September access to the centre and the seafront is regulated and coaches have designated bays outside the town. Under eight metres we move more freely, but the traffic scheme changes from year to year: it is checked once the date is fixed.</li>
+      <li><strong>How long the day runs.</strong> From the 09:00 pick-up to the 19:30 return the programme sits inside the driver's legal driving and duty limits with about an hour to spare, counting the vehicle's run from base and back. A return later than 20:30 can be done, but it has to be decided beforehand: a later morning start, or a change of driver.</li>
+      <li><strong>The driver's lunch.</strong> At the client's charge and not quoted. No overnight stay: the day ends in Lucca and the driver returns to base that evening. The simplest arrangement is one more place at the group's table.</li>
+      <li><strong>An alternative.</strong> Several wineries in the area serve lunch alongside the tasting: merging the two stops removes a midday transfer and leaves the whole afternoon free by the sea. Same price.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal — not part of the quotation sent to the client</div>
+    <h2>How the price was built</h2>
+
+    <p>Benchmarked against the <strong>Le Filigare</strong> quotation (GM-2026-0821-LF), a single-vehicle job like this one. The Corte Francigena figures are not used as a base: that job runs two vehicles and its per-vehicle amounts already carry a volume discount.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — transfer ~50 km</td><td class="num">€ 500.00</td></tr>
+          <tr><td>Le Filigare — day at disposal, ~80 km and 5 h</td><td class="num">€ 809.00</td></tr>
+          <tr><td>Alvora — day at disposal, 140 km and 8 h</td><td class="num">€ 980.00</td></tr>
+          <tr class="tot"><td>This day — ~120 km and 10.5 h at disposal</td><td class="num">€ 1,050.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Why above the Alvora day</h3>
+    <p>Fewer kilometres, but more hours: ten and a half hours of vehicle engaged against eight, and with the runs from base the driver's day reaches about twelve hours, close to the limit. Here the hours weigh more than the distance.</p>
+
+    <h3>Margin</h3>
+    <p>Job on the owned vehicle, estimated direct cost € 250-350 for the day, no overnight. The margin is healthy. If it had to be subcontracted to Francesco (€ 600-700 per day) the price would need raising by 20-25%.</p>
+
+    <h3>To settle before sending</h3>
+    <ol>
+      <li><strong>Service date.</strong> Missing entirely: without it the vehicle cannot be blocked and the cancellation band cannot be worked out. It is also the <code>MMGG</code> of the reference, provisional for now.</li>
+      <li><strong>Client name and email.</strong> The enquiry arrived without a name, so the PDFs go out without one. Regenerate with <code>--cliente "Name"</code> and <code>--rif</code>.</li>
+      <li><strong>Restaurant and winery.</strong> Both directions quoted because the mileage evens out. If the choice falls further afield — Bolgheri, say — the price has to be redone.</li>
+      <li><strong>Pick-up point in Lucca.</strong> Inside the walls is a restricted zone: the address decides where the group is loaded.</li>
+      <li><strong>Forte dei Marmi.</strong> Check the traffic scheme in force on the chosen date before confirming the drop-off.</li>
+      <li><strong>Duration.</strong> 09:00 – 19:30 sits within the limits with about an hour to spare. If the client asks for dinner in Versilia, it needs a change of driver or a later start: not something to sort out on the evening itself.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2026-0917-LV · 17 September 2026</span>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
