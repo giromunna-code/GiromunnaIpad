@@ -10,8 +10,9 @@ File generati:
 - `genera_preventivo_lucca_forte_dei_marmi.py` — rigenera entrambi i PDF
 - `preventivo_lucca_forte_dei_marmi.html` — la pagina web bilingue
 - `messaggio_whatsapp_IT.txt` / `messaggio_whatsapp_EN.txt` — il messaggio WhatsApp che
-  accompagna il preventivo e chiede data e orari. Quello che va al cliente è l'inglese,
-  l'italiano è la versione da leggere. **Lo manda Girolamo**, da qui non parte niente.
+  chiede al cliente data, orari e punti di carico e scarico. Quello che va al cliente è
+  l'inglese, l'italiano è la versione da leggere. **Lo manda Girolamo**, da qui non parte
+  niente.
 
 Tutto dentro `Preventivi/2026-09-17_Lucca-Forte-dei-Marmi/`.
 
@@ -31,6 +32,18 @@ python3 genera_preventivo_lucca_forte_dei_marmi.py --lingua en --cliente "Nome" 
 ```
 
 ---
+
+## Il prezzo non esce finché non arrivano i dati
+
+Decisione di Girolamo: **al cliente non si manda nessun prezzo** finché non dà data, orari e
+punti di carico e scarico. Il preventivo qui sotto è pronto e resta in casa: si aggiorna sui
+dati veri e si manda dopo. Il primo contatto è il messaggio WhatsApp, che chiede soltanto
+quelle tre cose.
+
+Il motivo è buono: il programma è ancora tutto da fissare — ristorante e cantina non sono
+scelti, il ritrovo a Lucca non ha un indirizzo, gli orari sono nostri — e un prezzo mandato
+adesso diventa il tetto di qualunque trattativa successiva, anche se poi la giornata si
+allunga.
 
 ## La richiesta
 
@@ -120,3 +133,12 @@ prezzo va rivisto al rialzo del 20-25% prima di inviare.
    chiedono la cena in Versilia serve il cambio del conducente o una partenza più tardi: va
    deciso in fase di conferma, non la sera stessa.
 7. **Bloccare la disponibilità del mezzo** appena la data è fissata.
+
+## Ordine di lavoro
+
+1. Mandare il messaggio WhatsApp (versione inglese) e aspettare i dati.
+2. Arrivati data, orari e punti di carico e scarico, rivedere il programma: se il ritrovo non
+   è alle 09:00 o il rientro non è alle 19:30, controllare che la giornata del conducente
+   resti nei limiti e, se serve, rifare il prezzo.
+3. Rigenerare i due PDF con `--cliente` e `--rif` giusti, rinominare la cartella con la data
+   del primo servizio, e solo allora mandare il preventivo.
