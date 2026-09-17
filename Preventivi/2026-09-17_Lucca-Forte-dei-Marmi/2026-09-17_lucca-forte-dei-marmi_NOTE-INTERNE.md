@@ -9,6 +9,9 @@ File generati:
 - `GiroMunna_Preventivo_Lucca_Forte_dei_Marmi_EN.pdf`
 - `genera_preventivo_lucca_forte_dei_marmi.py` — rigenera entrambi i PDF
 - `preventivo_lucca_forte_dei_marmi.html` — la pagina web bilingue
+- `messaggio_whatsapp_IT.txt` / `messaggio_whatsapp_EN.txt` — il messaggio WhatsApp che
+  accompagna il preventivo e chiede data e orari. Quello che va al cliente è l'inglese,
+  l'italiano è la versione da leggere. **Lo manda Girolamo**, da qui non parte niente.
 
 Tutto dentro `Preventivi/2026-09-17_Lucca-Forte-dei-Marmi/`.
 
