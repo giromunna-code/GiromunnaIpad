@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
-Genera il supplemento GiroMunna del 18 settembre 2026 per il wine tour Alvora:
-ritiro anticipato alle 11:30 dall'hotel di Forte dei Marmi e proseguimento
-dall'aeroporto di Firenze a Casa Ruffino per i 5 ospiti che restano.
+Genera il preventivo GiroMunna per il trasferimento del 18 settembre 2026:
+aeroporto di Firenze → Casa Rufina, per i cinque ospiti del gruppo Alvora che
+restano in Toscana dopo la partenza degli altri.
 
-Integra il preventivo GM-2026-0913-BI e ne riprende l'impaginazione.
+Integra il preventivo GM-2026-0913-BI (wine tour 13-18 settembre) e ne riprende
+l'impaginazione.
 
-    python3 genera_supplemento_casa_ruffino.py --lingua it --cliente "Nome Cliente"
-    python3 genera_supplemento_casa_ruffino.py --lingua en --cliente "Client Name"
+    python3 genera_preventivo_casa_rufina.py --lingua it --cliente "Nome Cliente"
+    python3 genera_preventivo_casa_rufina.py --lingua en --cliente "Client Name"
 """
 
 import argparse
@@ -57,15 +58,14 @@ IT = dict(
     footer1="GiroMunna — Munna Girolamo Giuseppe  ·  Ponte Buggianese (PT), Toscana, Italia  ·  P. IVA IT 02124530474",
     footer2="+39 335 587 4744  ·  info@giromunna.com  ·  giromunna.com",
     page="pag. %d",
-    title="Supplemento al preventivo",
-    subtitle="Venerdì 18 settembre 2026  ·  Ritiro alle 11:30 da Forte dei Marmi e proseguimento per Casa Ruffino",
+    title="Preventivo",
+    subtitle="Aeroporto di Firenze → Casa Rufina  ·  venerdì 18 settembre 2026",
     meta=("Preparato per %s  ·  17 settembre 2026  ·  Rif. " + RIF +
           "  ·  Integra il preventivo " + RIF_MADRE),
     intro=(
-        "Rispondiamo ai due punti che ci avete chiesto per la giornata di domani: il ritiro anticipato "
-        "dall'hotel e il proseguimento per Casa Ruffino dei cinque ospiti che non ripartono. "
-        "Il primo non comporta alcun addebito, il secondo è quotato qui sotto. "
-        "Tutto il resto del preventivo " + RIF_MADRE + " resta invariato."
+        "Ecco il preventivo per il proseguimento che ci avete chiesto: dopo l'aeroporto, i cinque ospiti che "
+        "restano in Toscana vengono accompagnati a Casa Rufina. Il ritiro anticipato alle 11:30 dall'hotel di "
+        "Forte dei Marmi è confermato e non comporta alcun addebito."
     ),
     h_mezzo="Il mezzo",
     mezzo_intro="Lo stesso mezzo e lo stesso conducente già in servizio con voi dal 13 settembre.",
@@ -73,90 +73,67 @@ IT = dict(
         "<b>Mercedes-Benz Beluga</b> — 26 posti passeggeri più l'autista, 7,64 m. Aria condizionata, "
         "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli."
     ),
-    mezzo_close=(
-        "Dopo l'aeroporto restano a bordo cinque ospiti con i loro bagagli: spazio più che sufficiente, "
-        "e i 7,64 metri del mezzo raggiungono senza problemi il piazzale della tenuta, come il 13 settembre."
-    ),
     h_servizio="Il servizio",
     svc_head=["Data e ora", "Percorso", "Impegno del mezzo"],
     svc=[
-        ("Ven 18 set<br/>11:30",
-         "<b>Hotel a Forte dei Marmi → Aeroporto di Firenze (FLR).</b> "
-         "Ritiro alle 11:30 come ci avete chiesto, un'ora prima delle 12:30 previste a preventivo. "
-         "Circa 110 km, arrivo alle partenze di Firenze verso le 12:50. "
-         "L'anticipo non comporta alcun costo aggiuntivo.",
-         "circa 11:15 – 12:50"),
         ("Ven 18 set<br/>12:50",
-         "<b>Sosta all'aeroporto di Firenze.</b> Discesa dei passeggeri in partenza e scarico dei loro bagagli; "
-         "i cinque ospiti che proseguono restano a bordo con i propri. Ripartenza verso le 13:10.",
+         "<b>Sosta alle partenze dell'aeroporto di Firenze (FLR).</b> Discesa dei passeggeri in partenza e "
+         "scarico dei loro bagagli; i cinque ospiti che proseguono restano a bordo con i propri.",
          "circa 20 minuti"),
         ("Ven 18 set<br/>13:10",
-         "<b>Aeroporto di Firenze (FLR) → Casa Ruffino.</b> "
-         "Circa 30 km per i cinque ospiti che restano in Toscana, arrivo in tenuta verso le 14:00. "
+         "<b>Aeroporto di Firenze (FLR) → Casa Rufina.</b> Circa 30 km, arrivo verso le 14:00. "
          "Il conducente rientra poi alla base in giornata.",
          "circa 13:10 – 14:00"),
     ],
     h_prezzo="Il prezzo",
     price_rows=[
+        ("Aeroporto di Firenze → Casa Rufina, 5 passeggeri, circa 30 km", "€ 350,00", "+ IVA 10%"),
         ("Ritiro dall'hotel alle 11:30 anziché alle 12:30", "<i>nessun addebito</i>", ""),
-        ("Aeroporto di Firenze → Casa Ruffino, 5 passeggeri, circa 30 km", "€ 350,00", "+ IVA 10%"),
         ("Vitto e alloggio del conducente — nessuna notte aggiuntiva", "<i>invariato</i>", ""),
     ],
-    price_total_label="Supplemento, al netto di IVA",
+    price_total_label="Totale, al netto di IVA",
     price_total="€ 350,00",
     vat_note="+ IVA 10%",
-    grand="Supplemento da corrispondere, IVA 10% inclusa: € 385,00.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 385,00.",
     perhead=(
-        "Il programma 13-18 settembre risulta già saldato per intero, e ve ne ringraziamo: questo "
-        "supplemento di € 385,00 è quindi l'unico importo che resta da corrispondere. Il totale del "
-        "lavoro passa così da € 5.104,00 a € 5.489,00 IVA inclusa."
+        "Il programma 13-18 settembre risulta già saldato per intero, e ve ne ringraziamo: questo è quindi "
+        "l'unico importo che resta da corrispondere."
     ),
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente, carburante, pedaggi autostradali, parcheggio all'aeroporto di Firenze, assicurazione "
-        "completa e movimentazione dei bagagli, sia di chi parte sia di chi prosegue. La sosta all'aeroporto per far "
-        "scendere il gruppo in partenza è compresa fino a 30 minuti. L'aeroporto di Firenze non comporta oneri di "
-        "accesso e Casa Ruffino non si trova in zona a traffico limitato: non sono dovuti altri oneri."
+        "completa e movimentazione dei bagagli, sia di chi parte sia di chi prosegue. La sosta all'aeroporto è "
+        "compresa fino a 30 minuti. L'aeroporto di Firenze non comporta oneri di accesso e la destinazione non si "
+        "trova in zona a traffico limitato: non sono dovuti altri oneri."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
-        "Attesa oltre gli orari qui indicati, € 50,00 all'ora. Soste aggiuntive o cambi di destinazione rispetto a "
-        "quanto sopra, quotati su richiesta. Ingressi, degustazioni, pasti e mance in tenuta. Vitto e alloggio del "
-        "conducente, che restano a vostro carico come da preventivo: questo proseguimento non aggiunge però alcuna "
-        "notte, perché il 18 il conducente rientra alla base in giornata."
+        "Attesa oltre gli orari qui indicati, € 50,00 all'ora. Soste aggiuntive o cambi di destinazione, quotati su "
+        "richiesta. Vitto e alloggio del conducente, che restano a vostro carico come da preventivo: questo "
+        "trasferimento non aggiunge però alcuna notte, perché il 18 il conducente rientra alla base in giornata."
     ),
     h_pagamento="Pagamento",
-    pay_rows=[
-        ("Programma 13-18 settembre, preventivo " + RIF_MADRE, "€ 5.104,00", "saldato"),
-        ("Supplemento del 18 settembre — unico importo da corrispondere", "€ 385,00", "IVA inclusa"),
-    ],
-    bank=("Il supplemento lo potete regolare con un bonifico dopo il servizio, con la relativa fattura: "
-          "non c'è nulla da anticipare. Bonifico bancario intestato a Munna Girolamo Giuseppe — "
-          "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
+    pay_text=(
+        "Potete regolare l'importo con un bonifico dopo il servizio, con la relativa fattura: non c'è nulla da "
+        "anticipare. Bonifico bancario intestato a Munna Girolamo Giuseppe — "
+        "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."
+    ),
     h_note="Note",
     note=[
-        ("<b>L'ordine delle due tappe è quello giusto.</b> Prima l'aeroporto e poi Casa Ruffino, come lo avete "
-         "impostato voi: la tenuta si trova dall'altra parte di Firenze rispetto all'aeroporto, e passarci prima "
-         "allungherebbe di oltre un'ora la corsa di chi deve imbarcarsi. Chi parte scende con un margine pieno, "
-         "chi resta arriva in tenuta poco dopo."),
-        ("<b>Quale Casa Ruffino.</b> Abbiamo calcolato i 30 km sulla Tenuta Poggio Casciano di Bagno a Ripoli, "
-         "la stessa visitata il 13 settembre, che dall'aeroporto dista appunto una trentina di chilometri. "
-         "Se invece si tratta di un'altra proprietà Ruffino, mandateci l'indirizzo esatto: rifacciamo il conto e "
-         "vi diciamo subito se il prezzo cambia."),
-        ("<b>I bagagli all'aeroporto.</b> È l'unico punto che può far perdere tempo domani. Al check-out "
-         "dell'hotel fate caricare per ultime le valigie dei cinque ospiti che proseguono: restano davanti nel "
-         "vano e all'aeroporto si scarica solo quello che parte, senza svuotare tutto il bagagliaio sul "
-         "marciapiede delle partenze."),
-        ("<b>Gli orari del volo.</b> Con il ritiro alle 11:30 si è alle partenze verso le 12:50, comodi per un "
-         "volo dalle 15:00 in poi. Se il volo parte prima, ditecelo e anticipiamo ancora: anche questo senza costi "
-         "aggiuntivi. Fateci sapere anche a che ora vi aspettano a Casa Ruffino, così calibriamo la sosta in "
-         "aeroporto."),
+        ("<b>L'indirizzo esatto di Casa Rufina.</b> Ci serve per confermare l'orario. I 30 km che ci avete indicato "
+         "portano nella zona a sud-est di Firenze; se invece la destinazione è su nella valle della Sieve, verso "
+         "Rufina e Pontassieve, sono una quarantina di chilometri e l'arrivo slitta di un quarto d'ora circa. "
+         "Il prezzo non cambia in nessuno dei due casi: mandateci l'indirizzo e vi confermiamo l'orario esatto."),
+        ("<b>L'ordine delle due tappe è quello giusto.</b> Prima l'aeroporto e poi Casa Rufina, come lo avete "
+         "impostato voi: la destinazione si trova dall'altra parte di Firenze rispetto all'aeroporto, e passarci "
+         "prima allungherebbe di oltre un'ora la corsa di chi deve imbarcarsi."),
+        ("<b>I bagagli all'aeroporto.</b> È l'unico punto che può far perdere tempo. Al check-out dell'hotel fate "
+         "caricare per ultime le valigie dei cinque ospiti che proseguono: restano davanti nel vano e all'aeroporto "
+         "si scarica solo quello che parte, senza svuotare tutto il bagagliaio sul marciapiede delle partenze."),
         ("<b>Quante persone.</b> Abbiamo capito 16 ospiti in partenza e 5 che proseguono, per i 21 del programma: "
          "confermateci i numeri, perché il conducente controlla i passeggeri prima di lasciare l'aeroporto."),
         ("<b>Per confermare.</b> Trattandosi del servizio di domani basta un messaggio o un WhatsApp al "
-         "+39 335 587 4744 con l'ora di ritiro, l'indirizzo di Casa Ruffino e il numero dei passeggeri. "
-         "Avendo già saldato il programma, non c'è nient'altro da versare prima: il supplemento lo "
-         "regolate dopo il servizio."),
+         "+39 335 587 4744 con l'indirizzo di Casa Rufina e il numero dei passeggeri."),
     ],
     closing=("Grazie del saldo, che abbiamo ricevuto. Restiamo a disposizione e vi auguriamo "
              "buon ultimo giorno in Toscana.<br/><br/>"
@@ -169,14 +146,14 @@ EN = dict(
     footer1="GiroMunna — Munna Girolamo Giuseppe  ·  Ponte Buggianese (PT), Tuscany, Italy  ·  VAT IT 02124530474",
     footer2="+39 335 587 4744  ·  info@giromunna.com  ·  giromunna.com",
     page="page %d",
-    title="Supplement to the quotation",
-    subtitle="Friday 18 September 2026  ·  11:30 pick-up in Forte dei Marmi and onward leg to Casa Ruffino",
+    title="Quotation",
+    subtitle="Florence Airport → Casa Rufina  ·  Friday 18 September 2026",
     meta=("Prepared for %s  ·  17 September 2026  ·  Ref. " + RIF +
           "  ·  Supplements quotation " + RIF_MADRE),
     intro=(
-        "Here are the answers to the two points you raised for tomorrow: the earlier pick-up from the hotel and "
-        "the onward leg to Casa Ruffino for the five guests who are not flying out. The first carries no charge, "
-        "the second is quoted below. Everything else in quotation " + RIF_MADRE + " stays as it is."
+        "Here is the quotation for the onward leg you asked about: after the airport, the five guests staying on "
+        "in Tuscany are taken to Casa Rufina. The earlier 11:30 pick-up from the hotel in Forte dei Marmi is "
+        "confirmed and carries no charge."
     ),
     h_mezzo="The vehicle",
     mezzo_intro="The same vehicle and the same driver who have been with you since 13 September.",
@@ -184,88 +161,67 @@ EN = dict(
         "<b>Mercedes-Benz Beluga</b> — 26 passenger seats plus driver, 7.64 m. Air conditioning, "
         "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold."
     ),
-    mezzo_close=(
-        "After the airport five guests stay on board with their luggage: more than enough room, and at 7.64 m "
-        "the minibus reaches the estate courtyard without difficulty, exactly as on 13 September."
-    ),
     h_servizio="The service",
     svc_head=["Date and time", "Route", "Vehicle engaged"],
     svc=[
-        ("Fri 18 Sep<br/>11:30",
-         "<b>Hotel in Forte dei Marmi → Florence Airport (FLR).</b> "
-         "Pick-up at 11:30 as you asked, one hour earlier than the 12:30 in the quotation. "
-         "About 110 km, reaching Florence departures around 12:50. "
-         "The earlier start carries no additional charge.",
-         "approx. 11:15 – 12:50"),
         ("Fri 18 Sep<br/>12:50",
-         "<b>Stop at Florence Airport.</b> Departing passengers get off and their luggage is unloaded; "
-         "the five guests travelling on stay aboard with theirs. Departure around 13:10.",
+         "<b>Stop at Florence Airport (FLR) departures.</b> Departing passengers get off and their luggage is "
+         "unloaded; the five guests travelling on stay aboard with theirs.",
          "approx. 20 minutes"),
         ("Fri 18 Sep<br/>13:10",
-         "<b>Florence Airport (FLR) → Casa Ruffino.</b> "
-         "About 30 km for the five guests staying on in Tuscany, reaching the estate around 14:00. "
+         "<b>Florence Airport (FLR) → Casa Rufina.</b> About 30 km, reaching the property around 14:00. "
          "The driver then returns to base the same day.",
          "approx. 13:10 – 14:00"),
     ],
     h_prezzo="The price",
     price_rows=[
+        ("Florence Airport → Casa Rufina, 5 passengers, about 30 km", "€ 350.00", "+ VAT 10%"),
         ("Pick-up from the hotel at 11:30 instead of 12:30", "<i>no charge</i>", ""),
-        ("Florence Airport → Casa Ruffino, 5 passengers, about 30 km", "€ 350.00", "+ VAT 10%"),
         ("Driver's board and lodging — no additional night", "<i>unchanged</i>", ""),
     ],
-    price_total_label="Supplement, excluding VAT",
+    price_total_label="Total, excluding VAT",
     price_total="€ 350.00",
     vat_note="+ VAT 10%",
-    grand="Supplement payable, VAT 10% included: € 385.00.",
+    grand="Total payable, VAT 10% included: € 385.00.",
     perhead=(
-        "The 13-18 September programme is already settled in full, for which our thanks: this € 385.00 "
-        "supplement is therefore the only amount left to pay. The total for the work goes from "
-        "€ 5,104.00 to € 5,489.00 including VAT."
+        "The 13-18 September programme is already settled in full, for which our thanks: this is therefore the "
+        "only amount left to pay."
     ),
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver, fuel, motorway tolls, parking at Florence Airport, full insurance and luggage handling "
-        "for both the departing and the continuing guests. The airport stop to set down the departing group is "
-        "included for up to 30 minutes. Florence Airport carries no access fee and Casa Ruffino does not sit inside "
-        "a restricted traffic zone: no other charges apply."
+        "for both the departing and the continuing guests. The airport stop is included for up to 30 minutes. "
+        "Florence Airport carries no access fee and the destination does not sit inside a restricted traffic zone: "
+        "no other charges apply."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
-        "Waiting beyond the times set out here, € 50.00 per hour. Additional stops or a change of destination "
-        "compared with the above, quoted on request. Entrance fees, tastings, meals and gratuities at the estate. "
-        "The driver's board and lodging, which remain at your charge as per the quotation: this onward leg adds no "
-        "night at all, as on 18 September the driver returns to base the same day."
+        "Waiting beyond the times set out here, € 50.00 per hour. Additional stops or a change of destination, "
+        "quoted on request. The driver's board and lodging, which remain at your charge as per the quotation: this "
+        "transfer adds no night at all, as on 18 September the driver returns to base the same day."
     ),
     h_pagamento="Payment",
-    pay_rows=[
-        ("13-18 September programme, quotation " + RIF_MADRE, "€ 5,104.00", "settled"),
-        ("Supplement of 18 September — the only amount outstanding", "€ 385.00", "VAT included"),
-    ],
-    bank=("You can settle the supplement by bank transfer after the service, with its invoice: there is "
-          "nothing to pay in advance. Bank transfer to Munna Girolamo Giuseppe — "
-          "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
+    pay_text=(
+        "You can settle the amount by bank transfer after the service, with its invoice: there is nothing to pay "
+        "in advance. Bank transfer to Munna Girolamo Giuseppe — "
+        "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."
+    ),
     h_note="Notes",
     note=[
-        ("<b>The order of the two stops is the right one.</b> Airport first and Casa Ruffino afterwards, just as "
-         "you set it out: the estate lies on the far side of Florence from the airport, and calling there first "
-         "would add more than an hour to the run for those catching a flight. The departing guests get out with "
-         "time in hand, and those staying reach the estate shortly after."),
-        ("<b>Which Casa Ruffino.</b> We have based the 30 km on Tenuta Poggio Casciano at Bagno a Ripoli, the same "
-         "estate you visited on 13 September, which is indeed about thirty kilometres from the airport. If it is a "
-         "different Ruffino property, send us the exact address: we will redo the figures and tell you straight "
-         "away whether the price changes."),
-        ("<b>Luggage at the airport.</b> This is the one thing that can cost you time tomorrow. At hotel check-out, "
-         "have the suitcases of the five guests travelling on loaded last: they stay at the front of the hold, and "
-         "at the airport only the departing luggage comes out, without emptying the whole hold onto the departures "
-         "kerb."),
-        ("<b>Flight times.</b> With an 11:30 pick-up you are at departures around 12:50, comfortable for a flight "
-         "from 15:00 onwards. If yours leaves earlier, tell us and we will start earlier still — again at no extra "
-         "cost. Do let us know what time Casa Ruffino expects you as well, so we can judge the airport stop."),
+        ("<b>The exact address of Casa Rufina.</b> We need it to confirm the timing. The 30 km you mention point to "
+         "the area south-east of Florence; if the destination is instead up the Sieve valley, towards Rufina and "
+         "Pontassieve, it is about forty kilometres and the arrival shifts by roughly a quarter of an hour. "
+         "The price is the same either way: send us the address and we will confirm the exact time."),
+        ("<b>The order of the two stops is the right one.</b> Airport first and Casa Rufina afterwards, just as you "
+         "set it out: the destination lies on the far side of Florence from the airport, and calling there first "
+         "would add more than an hour to the run for those catching a flight."),
+        ("<b>Luggage at the airport.</b> This is the one thing that can cost time. At hotel check-out, have the "
+         "suitcases of the five guests travelling on loaded last: they stay at the front of the hold, and at the "
+         "airport only the departing luggage comes out, without emptying the whole hold onto the departures kerb."),
         ("<b>How many guests.</b> We have understood 16 departing and 5 travelling on, out of the 21 on the "
          "programme: please confirm the numbers, as the driver counts passengers before leaving the airport."),
-        ("<b>To confirm.</b> As this is tomorrow's service, a text or WhatsApp to +39 335 587 4744 with the pick-up "
-         "time, the Casa Ruffino address and the passenger numbers is all we need. With the programme already "
-         "settled there is nothing further to pay beforehand: the supplement is settled after the service."),
+        ("<b>To confirm.</b> As this is tomorrow's service, a text or WhatsApp to +39 335 587 4744 with the Casa "
+         "Rufina address and the passenger numbers is all we need."),
     ],
     closing=("Thank you for the balance, which has reached us. We remain at your disposal and wish you "
              "a fine last day in Tuscany.<br/><br/>"
@@ -286,7 +242,6 @@ def styles():
         "h2": ParagraphStyle("h2", fontName="Helvetica-Bold", fontSize=12.5,
                              textColor=GREEN, leading=15, spaceBefore=13, spaceAfter=6),
         "body": ParagraphStyle("body", alignment=TA_JUSTIFY, spaceAfter=6, **base),
-        "cell": ParagraphStyle("cell", **base),
         "cellsm": ParagraphStyle("cellsm", fontName="Helvetica", fontSize=8.6,
                                  textColor=INK, leading=12),
         "cellmut": ParagraphStyle("cellmut", fontName="Helvetica", fontSize=8.6,
@@ -367,8 +322,6 @@ def build(lang, cliente, out):
         ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
     ]))
     F.append(bullet)
-    F.append(Spacer(1, 7))
-    F.append(Paragraph(L["mezzo_close"], S["body"]))
 
     # --- servizio
     F.append(Paragraph(L["h_servizio"], S["h2"]))
@@ -429,21 +382,7 @@ def build(lang, cliente, out):
 
     # --- pagamento
     F.append(Paragraph(L["h_pagamento"], S["h2"]))
-    ydata = [[Paragraph(a, S["cellsm"]), Paragraph("<b>%s</b>" % b, S["cellsm"]),
-              Paragraph(c, S["cellmut"])] for a, b, c in L["pay_rows"]]
-    yt = Table(ydata, colWidths=pcols)
-    yt.setStyle(TableStyle([
-        ("LINEBELOW", (0, 0), (-1, -2), 0.5, RULE),
-        ("ALIGN", (1, 0), (1, -1), "RIGHT"),
-        ("VALIGN", (0, 0), (-1, -1), "TOP"),
-        ("LEFTPADDING", (0, 0), (-1, -1), 6),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 6),
-        ("TOPPADDING", (0, 0), (-1, -1), 6),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 6),
-    ]))
-    F.append(yt)
-    F.append(Spacer(1, 6))
-    F.append(Paragraph(L["bank"], S["small"]))
+    F.append(Paragraph(L["pay_text"], S["small"]))
 
     # --- note
     F.append(Paragraph(L["h_note"], S["h2"]))
@@ -464,5 +403,5 @@ if __name__ == "__main__":
     ap.add_argument("--out", default=None)
     a = ap.parse_args()
     name = a.out or os.path.join(
-        HERE, "GiroMunna_Supplemento_18_settembre_2026_Casa_Ruffino_%s.pdf" % a.lang.upper())
+        HERE, "GiroMunna_Preventivo_18_settembre_2026_Casa_Rufina_%s.pdf" % a.lang.upper())
     print(build(a.lang, a.cliente, name))
