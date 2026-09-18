@@ -1,0 +1,767 @@
+<title>Preventivo — Sovicille ⇄ Antinori nel Chianti Classico, 19 settembre 2026</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+  .day.released { background: transparent; border-style: dashed; border-color: var(--line-strong); }
+  .day.released .day-date { color: var(--ink-soft); }
+  .day.released .badge { color: var(--ink-soft); background: transparent; border-color: var(--line-strong); }
+  .day.released p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+
+<div class="wrap lang" data-lang="it">
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Sovicille ⇄ Antinori nel Chianti Classico
+      <span class="sub">Borgo Il Poggiaccio · Bargino · andata e ritorno in giornata</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Cliente</span><span class="v">Trevor Bailey</span></div>
+      <div class="fact"><span class="eyebrow">Data</span><span class="v">sab 19 set 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passeggeri</span><span class="v">18-20</span></div>
+      <div class="fact"><span class="eyebrow">Servizio</span><span class="v">1 giornata a disposizione</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2026-0919-TB</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">18 settembre 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Il mezzo</h2>
+    <p class="lede">Un solo minibus per il gruppo di 18-20 ospiti, con lo stesso conducente per tutta la giornata.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista, 7,64 m</span>
+      <p>Aria condizionata, sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.</p>
+      <p>Con 18-20 ospiti a bordo restano da sei a otto posti liberi: il gruppo viaggia su un mezzo solo, senza bisogno di dividerlo. I 7,64 metri contano su entrambi i capi del percorso, dove un autobus gran turismo avrebbe più di una difficoltà.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Distanze e tempi di percorrenza sono stime stradali, traffico escluso.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">19 settembre <span class="wd">· sabato</span></span>
+          <span class="badge">Giornata a disposizione</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">10:45</span>
+            <span class="r">Borgo Il Poggiaccio, Strada Provinciale Maremmana 541, Sovicille (SI) <span class="to">→ Antinori nel Chianti Classico, Via Cassia per Siena 133, Bargino (FI)</span></span>
+            <span class="d">55 km · 55 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">11:40</span>
+            <span class="r">Antinori nel Chianti Classico / Rinuccio 1180 <span class="to">— visita e pranzo, mezzo e conducente fermi sul posto</span></span>
+            <span class="d">a disposizione</span>
+          </div>
+          <div class="leg">
+            <span class="t">15:00 – 16:00</span>
+            <span class="r">Antinori nel Chianti Classico <span class="to">→ Borgo Il Poggiaccio, Sovicille</span></span>
+            <span class="d">55 km · 55 min</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato dalle 10:45 alle 16:00, a disposizione per tutta la permanenza in cantina. Il percorso aggira Siena sul raccordo Firenze-Siena senza entrare in città.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Servizio</th>
+            <th scope="col" class="num">Importo</th>
+            <th scope="col" class="num">IVA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Sab 19 set</span>Borgo Il Poggiaccio → Antinori nel Chianti Classico → Borgo Il Poggiaccio, mezzo e conducente a disposizione dalle 10:45 alle 16:00</td>
+            <td class="num">€ 900,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Vitto del conducente, il pranzo durante l'attesa</td>
+            <td class="num vat"><em>a carico vostro</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Totale, al netto di IVA</td>
+            <td class="num">€ 900,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Totale da corrispondere, IVA 10% inclusa
+        <small>da € 49,50 a € 55,00 a persona secondo il numero definitivo</small>
+      </span>
+      <span class="fig">€ 990,00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Acconto 30% alla conferma</td>
+            <td class="num"><strong>€ 297,00</strong></td>
+            <td class="num vat">IVA inclusa</td>
+          </tr>
+          <tr>
+            <td>Saldo</td>
+            <td class="num"><strong>€ 693,00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05. Con il servizio a ventiquattr'ore, la contabile dell'acconto vale come conferma e il saldo si regola il giorno stesso.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Mezzo e conducente per l'intera giornata, carburante, pedaggi, parcheggi, assicurazione completa e movimentazione bagagli. È compreso anche il viaggio del mezzo da e per la base di Ponte Buggianese.</li>
+      <li><strong>Nessun onere di accesso.</strong> Né Sovicille né Bargino sono in zona a traffico limitato, il percorso aggira Siena senza entrare in città — quindi non serve il permesso comunale per i bus turistici — e Antinori nel Chianti Classico dispone di un proprio piazzale.</li>
+      <li><strong>A vostro carico.</strong> Il vitto del conducente: il pranzo durante le quattro ore di attesa a Bargino. Non lo mettiamo a preventivo e non lo organizziamo noi. La giornata non richiede pernottamenti, quindi non c'è alcun costo di alloggio.</li>
+      <li><strong>Non incluso.</strong> Visita, degustazione, pranzo, guide e mance in cantina. Attesa oltre le 16:00 alla partenza da Antinori, € 50,00 all'ora. Soste aggiuntive o modifiche al percorso, quotate su richiesta. Rientro dopo le 02:00, € 250,00.</li>
+      <li><strong>Disponibilità.</strong> Con un giorno di preavviso la disponibilità del mezzo non si dà per scontata: va confermata al telefono prima di tutto il resto.</li>
+      <li><strong>Cancellazione.</strong> La scala di penali prevede il 100% del prezzo nei dieci giorni che precedono il servizio, e qui ne manca uno: una volta confermato, il preventivo è dovuto per intero anche in caso di rinuncia.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Note</h2>
+    <ul class="conds">
+      <li><strong>Il budget indicato.</strong> € 250-300 per l'andata e ritorno non coprono questo servizio, né da noi né da un operatore serio della zona. Il punto non è la tratta, 55 km per senso, ma la giornata intera: il mezzo parte da Ponte Buggianese, a circa 115 km da Sovicille, resta a disposizione fino al pomeriggio e rientra in serata — circa 300 km e nove ore di lavoro del conducente. Se il budget non è spostabile conviene dirlo subito, così resta un giorno per cercare un'altra soluzione.</li>
+      <li><strong>Liberare il mezzo durante il pranzo costerebbe di più.</strong> Lasciare il gruppo a Bargino, far rientrare il minibus e tornare a prenderlo significa due viaggi a vuoto in più, circa 160 km aggiuntivi. Tenere mezzo e conducente fermi sul posto è la formula più economica delle due, oltre che la più comoda.</li>
+      <li><strong>La prenotazione in cantina.</strong> Antinori nel Chianti Classico e Rinuccio 1180 ricevono solo su prenotazione, e un gruppo di venti persone di sabato non entra senza. Serve l'orario esatto: su quello si tara la partenza, senza costi aggiuntivi.</li>
+      <li><strong>Il punto di ritrovo al Poggiaccio.</strong> La struttura si raggiunge dalla Strada Provinciale Maremmana per un tratto di strada di campagna. Il minibus da 7,64 m ci arriva, ma il punto esatto di salita e lo spazio di manovra vanno confermati dalla reception.</li>
+      <li><strong>L'orario di rientro.</strong> La finestra 15:00 – 16:00 va bene così e non serve stringerla ora: il conducente resta sul posto e parte quando il gruppo è pronto. Se si sa già che il pranzo finirà più tardi, la finestra si sposta in preventivo senza sovrapprezzo.</li>
+      <li><strong>Per confermare servono</strong> il numero definitivo dei passeggeri, l'orario della prenotazione in cantina, un recapito telefonico o WhatsApp della persona che viaggia con il gruppo e i dati di fatturazione.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Interno — non fa parte del preventivo inviato</div>
+    <h2>Come è stato costruito il prezzo</h2>
+
+    <p>Base di riferimento: il preventivo <strong>Le Filigare (GM-2026-0821-LF)</strong>, che è a mezzo singolo come questo. I prezzi del Corte Francigena non si usano: sono per mezzo su un lavoro a due mezzi, quindi già scontati per volume.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Riferimento Le Filigare — trasferimento ~50 km</td><td class="num">€ 500,00</td></tr>
+          <tr><td>Riferimento Le Filigare — giornata a disposizione ~80 km, 5 ore</td><td class="num">€ 809,00</td></tr>
+          <tr class="tot"><td>Questo lavoro — ~300 km totali, conducente impegnato ~9 ore</td><td class="num">€ 900,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Il conto della giornata</h3>
+    <p>Ponte Buggianese → Sovicille ~115 km a vuoto; Sovicille → Bargino 55 km; attesa a Bargino ~4 ore; Bargino → Sovicille 55 km; Sovicille → Ponte Buggianese ~80 km a vuoto. Totale ~300 km per 110 km di trasporto passeggeri, con il conducente fuori da circa le 09:00 alle 17:45.</p>
+    <p>Sta sopra gli € 809 della giornata a disposizione delle Filigare (80 km, 5 ore) perché qui i chilometri sono quasi quattro volte tanti e la giornata del conducente è di nove ore. Sta sotto gli € 980 della giornata piena di Alvora perché l'impegno con il cliente è più corto. Nel dubbio si è tenuto alto: Girolamo lo abbassa se vuole.</p>
+
+    <h3>Margine</h3>
+    <p>Mezzo di proprietà, nessun pernottamento, nessun onere di accesso. Costo diretto stimato € 250-350 fra carburante, pedaggi e conducente: il margine è buono anche se Girolamo scende.</p>
+
+    <h3>Da verificare prima di rispondere</h3>
+    <ol>
+      <li><strong>La disponibilità del Beluga e del conducente per sabato 19.</strong> È la prima cosa: senza quella il resto non serve. Il preventivo è scritto come se il mezzo fosse libero.</li>
+      <li><strong>Il divario di budget.</strong> Loro chiedono € 250-300, il prezzo è € 990 IVA inclusa: più del triplo. Nelle note è spiegato apertamente. Se si vuole chiudere comunque, il margine c'è fino a circa € 700 netti, ma sotto si va in territorio Corte Francigena a mezzo singolo, che è l'errore da non ripetere.</li>
+      <li><strong>Le distanze sono stime stradali</strong> fatte a memoria, non da un calcolo su mappa: vanno ricontrollate se si vuole essere precisi al chilometro.</li>
+      <li><strong>Il gruppo sta sul Beluga.</strong> 18-20 ospiti su 26 posti: non serve il secondo minibus e non è il caso di tirare in ballo Francesco.</li>
+      <li><strong>L'acconto a ventiquattr'ore.</strong> Il bonifico non fa in tempo a incassarsi: decidere se basta la contabile o se si preferisce incassare il giorno stesso.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2026-0919-TB · 18 settembre 2026</span>
+  </footer>
+
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Sovicille ⇄ Antinori nel Chianti Classico
+      <span class="sub">Borgo Il Poggiaccio · Bargino · out and back in the day</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Client</span><span class="v">Trevor Bailey</span></div>
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">Sat 19 Sep 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passengers</span><span class="v">18-20</span></div>
+      <div class="fact"><span class="eyebrow">Service</span><span class="v">1 day at disposal</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2026-0919-TB</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">18 September 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicle</h2>
+    <p class="lede">A single minibus for the group of 18-20 guests, with the same driver for the whole day.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus driver, 7.64 m</span>
+      <p>Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.</p>
+      <p>With 18-20 guests on board, six to eight seats stay free: the group travels in one vehicle, with no need to split it. The 7.64 m length matters at both ends of the route, where a full-size coach would meet more than one difficulty.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">Distances and journey times are road estimates, traffic excluded.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">19 September <span class="wd">· Saturday</span></span>
+          <span class="badge">Day at disposal</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">10:45</span>
+            <span class="r">Borgo Il Poggiaccio, Strada Provinciale Maremmana 541, Sovicille (SI) <span class="to">→ Antinori nel Chianti Classico, Via Cassia per Siena 133, Bargino (FI)</span></span>
+            <span class="d">55 km · 55 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">11:40</span>
+            <span class="r">Antinori nel Chianti Classico / Rinuccio 1180 <span class="to">— visit and lunch, vehicle and driver parked on site</span></span>
+            <span class="d">at disposal</span>
+          </div>
+          <div class="leg">
+            <span class="t">15:00 – 16:00</span>
+            <span class="r">Antinori nel Chianti Classico <span class="to">→ Borgo Il Poggiaccio, Sovicille</span></span>
+            <span class="d">55 km · 55 min</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged from 10:45 to 16:00, at your disposal for the whole stay at the winery. The route skirts Siena on the Florence-Siena dual carriageway without entering the city.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col" class="num">Amount</th>
+            <th scope="col" class="num">VAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Sat 19 Sep</span>Borgo Il Poggiaccio → Antinori nel Chianti Classico → Borgo Il Poggiaccio, vehicle and driver at your disposal from 10:45 to 16:00</td>
+            <td class="num">€ 900.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Driver's meal, lunch during the wait</td>
+            <td class="num vat"><em>at your charge</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Total, excluding VAT</td>
+            <td class="num">€ 900.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Total payable, VAT 10% included
+        <small>€ 49.50 to € 55.00 per person depending on the final count</small>
+      </span>
+      <span class="fig">€ 990.00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Deposit 30% on confirmation</td>
+            <td class="num"><strong>€ 297.00</strong></td>
+            <td class="num vat">VAT included</td>
+          </tr>
+          <tr>
+            <td>Balance</td>
+            <td class="num"><strong>€ 693.00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05. With the service twenty-four hours away, the deposit's transfer receipt counts as confirmation and the balance is settled on the day.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Vehicle and driver for the whole day, fuel, tolls, parking, full insurance and luggage handling. The vehicle's journey to and from the base at Ponte Buggianese is covered too.</li>
+      <li><strong>No access charges.</strong> Neither Sovicille nor Bargino lies in a restricted traffic zone, the route skirts Siena without entering the city — so no municipal tourist-coach permit is needed — and Antinori nel Chianti Classico has its own forecourt.</li>
+      <li><strong>At your charge.</strong> The driver's meal: lunch during the four-hour wait at Bargino. We neither quote it nor arrange it. The day requires no overnight stay, so there is no accommodation cost at all.</li>
+      <li><strong>Not included.</strong> Winery visit, tasting, lunch, guides and gratuities. Waiting beyond 16:00 for the departure from Antinori, € 50.00 per hour. Additional stops or changes to the route, quoted on request. Return after 02:00, € 250.00.</li>
+      <li><strong>Availability.</strong> At one day's notice the vehicle's availability cannot be taken for granted: it must be confirmed on the phone before anything else.</li>
+      <li><strong>Cancellation.</strong> Our scale charges 100% of the price within the ten days before the service, and one day remains: once confirmed, the quotation is due in full even if you pull out.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <ul class="conds">
+      <li><strong>The stated budget.</strong> € 250-300 for the round trip does not cover this service, not with us and not with any serious operator in the area. The issue is not the distance, 55 km each way, but the whole day: the vehicle leaves Ponte Buggianese, some 115 km from Sovicille, stays at your disposal into the afternoon and gets back in the evening — around 300 km and nine hours of the driver's working day. If the budget cannot move, better to say so straight away, leaving a day to find another solution.</li>
+      <li><strong>Releasing the vehicle over lunch would cost more.</strong> Dropping the group at Bargino, sending the minibus home and coming back means two extra empty runs, roughly 160 km on top. Keeping vehicle and driver parked on site is the cheaper of the two arrangements, as well as the more comfortable one.</li>
+      <li><strong>The winery booking.</strong> Antinori nel Chianti Classico and Rinuccio 1180 receive guests by reservation only, and a party of twenty on a Saturday will not get in without one. We need the exact time: the departure is set against it, at no extra cost.</li>
+      <li><strong>The pick-up point at the Poggiaccio.</strong> The property is reached from the Strada Provinciale Maremmana along a stretch of country road. The 7.64 m minibus manages it, but the exact boarding point and the turning space should be confirmed by reception.</li>
+      <li><strong>The return time.</strong> The 15:00 – 16:00 window is fine as it stands and need not be narrowed now: the driver stays on site and leaves when the group is ready. If lunch is already known to run later, the window moves in the quotation at no extra cost.</li>
+      <li><strong>To confirm we need</strong> the final passenger count, the time of the winery booking, a mobile or WhatsApp contact for the person travelling with the group, and your invoicing details.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal — not part of the quotation sent out</div>
+    <h2>How the price was built</h2>
+
+    <p>Reference: the <strong>Le Filigare quotation (GM-2026-0821-LF)</strong>, single-vehicle like this one. The Corte Francigena prices are not used: they are per vehicle on a two-vehicle job, so already discounted for volume.</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare reference — transfer ~50 km</td><td class="num">€ 500.00</td></tr>
+          <tr><td>Le Filigare reference — day at disposal ~80 km, 5 hours</td><td class="num">€ 809.00</td></tr>
+          <tr class="tot"><td>This job — ~300 km in all, driver engaged ~9 hours</td><td class="num">€ 900.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>The day, counted out</h3>
+    <p>Ponte Buggianese → Sovicille ~115 km empty; Sovicille → Bargino 55 km; wait at Bargino ~4 hours; Bargino → Sovicille 55 km; Sovicille → Ponte Buggianese ~80 km empty. Around 300 km in total for 110 km of passenger transport, with the driver out from about 09:00 to 17:45.</p>
+    <p>It sits above the € 809 of the Le Filigare day at disposal (80 km, 5 hours) because the mileage here is nearly four times greater and the driver's day is a nine-hour one. It sits below the € 980 of the Alvora full day because the client-facing engagement is shorter. Kept high where in doubt: Girolamo lowers it if he wants to.</p>
+
+    <h3>Margin</h3>
+    <p>Own vehicle, no overnight, no access charges. Estimated direct cost € 250-350 across fuel, tolls and driver: the margin holds even if Girolamo comes down.</p>
+
+    <h3>To check before replying</h3>
+    <ol>
+      <li><strong>Availability of the Beluga and the driver for Saturday 19th.</strong> First thing: without it the rest is pointless. The quotation is written as if the vehicle were free.</li>
+      <li><strong>The budget gap.</strong> They ask € 250-300, the price is € 990 VAT included: more than three times. The notes say so openly. If the job is to be closed anyway, there is margin down to about € 700 net, but below that it is Corte Francigena territory on a single vehicle, which is the mistake not to repeat.</li>
+      <li><strong>The distances are road estimates</strong> made from memory, not calculated on a map: they need re-checking to be accurate to the kilometre.</li>
+      <li><strong>The group fits on the Beluga.</strong> 18-20 guests in 26 seats: no second minibus is needed and there is no reason to bring Francesco into it.</li>
+      <li><strong>The deposit at twenty-four hours.</strong> A transfer will not clear in time: decide whether the receipt is enough or whether to collect on the day.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2026-0919-TB · 18 September 2026</span>
+  </footer>
+
+</div>
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
