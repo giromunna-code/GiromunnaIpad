@@ -38,31 +38,57 @@ Sabato 19 settembre 2026, andata e ritorno in giornata:
 
 ## Prezzo
 
-| Data | Servizio | Netto |
-|---|---|---|
-| Sab 19 set | Poggiaccio → Antinori → Poggiaccio, mezzo a disposizione 10:45-16:00 | € 900,00 |
-| — | Vitto del conducente (pranzo durante l'attesa) | a carico del cliente |
+| Voce | Netto |
+|---|---|
+| Giornata a disposizione, Poggiaccio → Antinori → Poggiaccio, 110 km, 10:45-16:00 | € 850,00 |
+| Trasferimento del mezzo da e per Ponte Buggianese, 195 km a vuoto | € 350,00 |
+| Vitto del conducente (pranzo durante l'attesa) | a carico del cliente |
 
-**Totale netto € 900,00 · IVA 10% € 90,00 · Totale € 990,00**
-(da € 49,50 a € 55,00 a persona secondo il numero definitivo)
+**Totale netto € 1.200,00 · IVA 10% € 120,00 · Totale € 1.320,00**
+(da € 66,00 a € 73,33 a persona secondo il numero definitivo)
 
-Acconto 30% € 297,00 — saldo € 693,00.
+Acconto 30% € 396,00 — saldo € 924,00.
 
 Nessun pernottamento: la giornata si apre e si chiude in serata, quindi al cliente non resta
 alcun costo di alloggio. Resta il pranzo del conducente durante le circa quattro ore di attesa
 a Bargino, che per prassi è a carico del cliente: a preventivo è indicato ma non conteggiato,
 con il suggerimento di aggiungere un coperto per lui alla prenotazione da Rinuccio 1180.
 
+## La scelta che regge tutto il preventivo: il posizionamento è una voce a sé
+
+Il prezzo **non è gonfiato**: è lo stesso lavoro di prima, smesso di nascondere.
+
+Il cliente guarda i 55 km da Sovicille a Bargino e ci vede sopra € 1.320: gli sembra un furto,
+e da lì non si esce. Messo in tabella che il mezzo parte da **Ponte Buggianese** e fa 195 km a
+vuoto per servirlo, il conto torna e non c'è più niente da contestare — ogni riga è un costo
+reale e verificabile.
+
+Questo vale più di qualsiasi maggiorazione inventata. Un supplemento d'urgenza sarebbe stato
+legittimo ma discutibile; il viaggio a vuoto no: o c'è o non c'è, e c'è.
+
+Nel programma della giornata i due tratti a vuoto sono ora **righe visibili**, alle 09:00 e alle
+17:00, così si vede che la giornata del mezzo va dalle nove alle diciotto e non dalle 10:45 alle
+16:00.
+
 ## Come è stato costruito il prezzo
 
 Riferimento: **il preventivo Le Filigare (GM-2026-0821-LF)**, che è a mezzo singolo come questo.
 
-| Riferimento Le Filigare | Netto |
+| Riferimento | Netto |
 |---|---|
-| Trasferimento ~50 km | € 500,00 |
-| Giornata a disposizione ~80 km, 5 ore | € 809,00 |
+| Le Filigare — trasferimento ~50 km | € 500,00 |
+| Le Filigare — giornata a disposizione ~80 km, 5 ore | € 809,00 |
+| **Questa giornata a disposizione** — 110 km, 5 ore e un quarto | **€ 850,00** |
+| **Posizionamento** — 195 km a vuoto, ~€ 1,79 al km | **€ 350,00** |
 
-Il conto della giornata, mezzo incluso il viaggio da e per la base:
+La giornata a disposizione sta **sopra** gli € 809 delle Filigare perché lì erano 80 km e 5 ore,
+qui sono 110 km e 5 ore e un quarto. Il posizionamento a € 350 è **conservativo**: a tariffa
+piena chilometrica si arriverebbe oltre i € 450, e resterebbe difendibile.
+
+**Non sono stati usati i prezzi del Corte Francigena**, che sono per mezzo su un lavoro a due
+mezzi e quindi già scontati per volume.
+
+## Il conto della giornata
 
 | Tratta | km |
 |---|---|
@@ -72,37 +98,33 @@ Il conto della giornata, mezzo incluso il viaggio da e per la base:
 | Sovicille → Ponte Buggianese (a vuoto) | ~80 |
 | **Totale** | **~300** |
 
-Il conducente esce dalla base verso le 09:00 e rientra verso le 17:45: **nove ore**, per
-110 km di trasporto passeggeri e circa quattro ore di attesa ferma a Bargino.
+Conducente fuori dalle **09:00 alle 18:00**: nove ore, per 110 km di trasporto passeggeri e
+circa quattro ore di attesa ferma a Bargino.
 
-Da qui gli € 900: **sopra** gli € 809 della giornata a disposizione delle Filigare, perché lì
-erano 80 km e 5 ore e qui i chilometri sono quasi quattro volte tanti; **sotto** gli € 980
-della giornata piena di Alvora, perché l'impegno con il cliente è più corto e il mezzo sta
-fermo mezza giornata. Nel dubbio si è tenuto alto, come da regola: Girolamo lo abbassa se
-vuole, il contrario non si recupera.
-
-**Non sono stati usati i prezzi del Corte Francigena**, che sono per mezzo su un lavoro a due
-mezzi e quindi già scontati per volume.
-
-## Margine
+## Margine e spazio di trattativa
 
 Mezzo di proprietà (Beluga), nessun pernottamento, nessun onere di accesso. Costo diretto
-stimato € 250-350 fra carburante, pedaggi e conducente. Il margine è buono e regge anche a
-€ 700-750 netti, se Girolamo vuole scendere per chiudere. **Sotto i € 700 netti non conviene
-andare**: si finisce nella fascia del Corte Francigena applicata a un mezzo singolo, che è
-l'errore già fatto una volta.
+stimato € 250-350 fra carburante, pedaggi e conducente.
+
+A € 1.200 netti il margine è ottimo. Se Girolamo volesse trattare, **regge fino a € 900 netti**
+senza toccare la struttura del preventivo (basta ridurre la giornata a disposizione e lasciare
+il posizionamento dov'è). **Sotto i € 700 netti non si va**: è la fascia Corte Francigena
+applicata a un mezzo singolo, l'errore già fatto una volta.
 
 ## Il divario di budget
 
-È il punto della trattativa. Loro chiedono **€ 250-300**, il preventivo è a **€ 990** IVA
-inclusa: più del triplo. Nelle note del preventivo il divario è affrontato apertamente, senza
-giri di parole, spiegando che il costo non è la tratta ma la giornata intera del mezzo e del
-conducente, e invitandoli a dirlo subito se il budget non è spostabile, così hanno ancora un
-giorno per cercare altro.
+Loro chiedono **€ 250-300**, il preventivo è a **€ 1.320** IVA inclusa. Il confronto che chiude
+la discussione è quello a persona: **€ 12-15 a testa contro € 66**, per una giornata intera di
+un mezzo da 26 posti con conducente. Nelle note del preventivo è detto senza giri di parole,
+compreso il paragone con la corsa urbana in taxi.
 
-Una nota risponde in anticipo alla controproposta prevedibile — *«e se ci lasciaste lì e
-tornaste a prenderci?»* — spiegando che costerebbe di più, perché sono circa 160 km di viaggi
-a vuoto in più.
+Il preventivo affronta in anticipo anche la controproposta prevedibile — *«e se ci lasciaste lì
+e tornaste a prenderci?»* — spiegando che sarebbero quattro trasferimenti a vuoto invece di due,
+circa 160 km in più di quelli già in tabella, quindi più caro e non più economico.
+
+Il tono delle note è stato reso **asciutto**: niente inviti a chiudere, niente «se potete
+arrivare alla cifra», niente aperture alla trattativa. Un prezzo, il motivo, e la porta.
+Se vanno via, vanno via sapendo perché.
 
 ## Verifiche di accesso
 
@@ -113,17 +135,15 @@ a vuoto in più.
   gruppi in pullman.
 - Nessun ingresso nel centro di Firenze, quindi nessun permesso da € 350.
 
-Il preventivo lo dice esplicitamente fra le voci incluse: è un argomento di vendita, perché
-significa nessun costo a sorpresa il giorno stesso.
-
 ## Da verificare prima di rispondere
 
 1. **La disponibilità del Beluga e del conducente per sabato 19.** È la prima cosa da guardare:
    il preventivo è scritto come se il mezzo fosse libero, ma con un giorno di preavviso non si
    può darlo per scontato. Nelle note al cliente è indicato di telefonare prima di tutto il resto.
 2. **Le distanze sono stime stradali**, non un calcolo su mappa: ~115 km base-Sovicille,
-   55 km Sovicille-Bargino, ~80 km Bargino-base. Se si vuole essere precisi al chilometro vanno
-   ricontrollate, ma l'ordine di grandezza regge il prezzo.
+   55 km Sovicille-Bargino, ~80 km Bargino-base. Reggono l'ordine di grandezza, ma adesso i
+   195 km a vuoto sono **una voce in fattura**: se qualcuno li mette in discussione conviene
+   averli ricontrollati.
 3. **Il gruppo sta sul Beluga.** 18-20 ospiti su 26 posti, restano da sei a otto posti liberi:
    non serve il secondo minibus e non c'è motivo di tirare in ballo Francesco.
 4. **L'orario della prenotazione in cantina.** Antinori e Rinuccio 1180 ricevono solo su
@@ -135,8 +155,7 @@ significa nessun costo a sorpresa il giorno stesso.
    scritto che la contabile vale come conferma e il saldo si regola il giorno stesso. Se
    Girolamo preferisce diversamente, è una riga da cambiare.
 7. **La penale al 100%.** Mancando un giorno al servizio, la cancellazione dopo la conferma
-   costa l'intero importo. Nel preventivo è detto chiaramente prima che dicano di sì: meglio
-   perderli adesso che litigarci domani.
+   costa l'intero importo. Nel preventivo è detto chiaramente prima che dicano di sì.
 
 ## Chi risponde
 

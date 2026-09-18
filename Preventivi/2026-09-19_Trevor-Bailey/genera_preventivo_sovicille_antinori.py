@@ -80,10 +80,14 @@ IT = dict(
     ),
     svc_head=["Orario", "Percorso", "Percorrenza"],
     svc=[
+        ("09:00",
+         "<b>Il mezzo parte a vuoto da Ponte Buggianese (PT), dove ha sede l'azienda.</b> "
+         "Circa 115 km fino a Sovicille per essere al Poggiaccio con un quarto d'ora di anticipo. "
+         "Questo tratto non trasporta passeggeri ed è esposto come voce a sé nella tabella del prezzo.",
+         "circa 115 km · 1 h 40"),
         ("10:45",
          "<b>Residenza d'Epoca Borgo Il Poggiaccio, Strada Provinciale Maremmana 541, Sovicille (SI).</b> "
-         "Il mezzo è sul posto con un quarto d'ora di anticipo. Si esce verso Siena, si prende il raccordo "
-         "Firenze-Siena senza entrare in città e si esce a Bargino.",
+         "Si esce verso Siena, si prende il raccordo Firenze-Siena senza entrare in città e si esce a Bargino.",
          "circa 55 km · 55 min"),
         ("11:40 – 16:00",
          "<b>Antinori nel Chianti Classico / Rinuccio 1180, Via Cassia per Siena 133, Bargino (FI).</b> "
@@ -94,26 +98,32 @@ IT = dict(
          "<b>Antinori nel Chianti Classico → Borgo Il Poggiaccio.</b> "
          "Partenza nella finestra che ci indicate, stesso percorso a ritroso, rientro alla struttura entro un'ora.",
          "circa 55 km · 55 min"),
+        ("17:00",
+         "<b>Il mezzo rientra a vuoto a Ponte Buggianese.</b> "
+         "Altri 80 km senza passeggeri a bordo, conducente in base verso le 18:00: nona ora di lavoro della giornata.",
+         "circa 80 km · 1 h 10"),
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Sab 19 set — Borgo Il Poggiaccio → Antinori nel Chianti Classico → Borgo Il Poggiaccio, "
-         "mezzo e conducente a disposizione dalle 10:45 alle 16:00", "€ 900,00", "+ IVA 10%"),
+        ("Sab 19 set — giornata a disposizione: Borgo Il Poggiaccio → Antinori nel Chianti Classico → "
+         "Borgo Il Poggiaccio, 110 km, mezzo e conducente con voi dalle 10:45 alle 16:00", "€ 850,00", "+ IVA 10%"),
+        ("Trasferimento del mezzo da e per la sede di Ponte Buggianese, 195 km a vuoto, senza passeggeri a bordo",
+         "€ 350,00", "+ IVA 10%"),
         ("Vitto del conducente, il pranzo durante l'attesa", "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 900,00",
+    price_total="€ 1.200,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 990,00.",
-    perhead=("Sono da € 49,50 a € 55,00 a persona secondo il numero definitivo, per l'intera giornata "
+    grand="Totale da corrispondere, IVA 10% inclusa: € 1.320,00.",
+    perhead=("Sono da € 66,00 a € 73,33 a persona secondo il numero definitivo, per l'intera giornata "
              "di un mezzo da 26 posti con conducente."),
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente per l'intera giornata, carburante, pedaggi, parcheggi, assicurazione completa e "
         "movimentazione bagagli. Nessun onere di accesso: né Sovicille né Bargino sono in zona a traffico limitato, "
         "il percorso aggira Siena sul raccordo senza entrare in città — quindi non serve il permesso comunale per "
-        "i bus turistici — e Antinori nel Chianti Classico dispone di un proprio piazzale. Il prezzo è comprensivo "
-        "del viaggio del mezzo da e per la nostra base di Ponte Buggianese."
+        "i bus turistici — e Antinori nel Chianti Classico dispone di un proprio piazzale. Nessuna voce a sorpresa "
+        "il giorno del servizio: il viaggio del mezzo da e per la nostra sede è già in tabella, non arriva dopo."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
@@ -124,61 +134,59 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 297,00", "IVA inclusa"),
-        ("Saldo", "€ 693,00", ""),
+        ("Acconto 30% alla conferma", "€ 396,00", "IVA inclusa"),
+        ("Saldo", "€ 924,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
-        ("<b>Il budget che ci avete indicato.</b> Ci avete scritto € 250-300 per l'andata e ritorno e vi rispondiamo "
-         "con franchezza, perché domani non c'è tempo per un secondo giro di mail: a quella cifra questo servizio "
-         "non esiste, né da noi né da un operatore serio della zona. Il punto non è la tratta, che è di circa 55 km "
-         "per senso, ma la giornata intera: il mezzo parte da Ponte Buggianese, a circa 115 km da Sovicille, resta "
-         "con voi fino al pomeriggio e rientra in serata, per un totale di circa 300 km e nove ore di lavoro del "
-         "conducente. € 250-300 coprirebbero appena il carburante e i pedaggi. Preferiamo dirvelo adesso piuttosto "
-         "che accettare e servirvi male domani: se il budget non è spostabile, ditecelo subito, così avete ancora "
-         "un giorno per cercare un'altra soluzione. Se invece potete arrivare alla cifra qui sopra, sono circa "
-         "€ 50 a testa e il mezzo è vostro dalla mattina al pomeriggio."),
-        ("<b>Perché non conviene liberare il mezzo durante il pranzo.</b> La domanda è legittima: non costa meno "
-         "lasciarvi a Bargino, far rientrare il minibus e tornare a prendervi? No, costa di più. Sarebbero due "
-         "viaggi a vuoto in più, circa 160 km aggiuntivi, e il prezzo salirebbe invece di scendere. Tenere mezzo e "
-         "conducente fermi sul posto è, in questo caso, la formula più economica delle due — oltre che la più comoda "
-         "per voi, perché l'orario di rientro lo decidete a tavola e non un giorno prima."),
+        ("<b>Il budget che ci avete indicato.</b> € 250-300 per l'andata e ritorno non corrispondono a questo "
+         "servizio, e non esiste una versione del preventivo che ci arrivi. Su venti passeggeri la vostra cifra "
+         "fa € 12-15 a testa per l'intera giornata di un mezzo da 26 posti con conducente: è il prezzo di una "
+         "corsa urbana in taxi, non di quello che ci avete chiesto. Se il budget non è spostabile non ha senso "
+         "andare avanti, e ve lo diciamo oggi perché vi resta un giorno per organizzarvi diversamente."),
+        ("<b>Perché il viaggio a vuoto è una voce a sé.</b> È la parte che di solito resta nascosta dentro il "
+         "prezzo e che qui abbiamo messo in chiaro. Noi siamo a Ponte Buggianese, in provincia di Pistoia: per "
+         "essere al Poggiaccio alle 10:45 il mezzo parte alle 09:00 e percorre circa 115 km senza nessuno a bordo, "
+         "e la sera ne fa altri 80 per rientrare. Sono 195 km e tre ore di conducente che non trasportano un "
+         "passeggero e che nessun altro paga. La tratta che interessa a voi, Sovicille-Bargino, è di 55 km: se il "
+         "prezzo vi sembra alto rispetto a quei 55 km, è perché state guardando un terzo della giornata."),
+        ("<b>Liberare il mezzo durante il pranzo costerebbe di più, non di meno.</b> La domanda arriva sempre, "
+         "quindi la anticipiamo. Lasciarvi a Bargino, far rientrare il minibus e tornare a prendervi significa "
+         "quattro trasferimenti a vuoto invece di due: circa 160 km in più di quelli già in tabella. Tenere mezzo "
+         "e conducente fermi sul posto è la formula più economica delle due, oltre che l'unica che vi lascia "
+         "decidere l'ora del rientro stando a tavola."),
         ("<b>Disponibilità di domani.</b> Questo preventivo vale se il mezzo è libero sabato 19: con un giorno di "
-         "preavviso non possiamo darlo per scontato per iscritto. Chiamate Girolamo al +39 335 587 4744 prima di "
-         "qualsiasi altra cosa: la disponibilità ve la conferma lui in due minuti al telefono, e solo a quel punto "
-         "ha senso parlare del resto."),
-        ("<b>L'orario di partenza da Antinori.</b> Ci avete indicato una finestra fra le 15:00 e le 16:00. Per noi "
-         "va bene così e non serve che la stringiate ora: il conducente resta sul posto e parte quando siete pronti "
-         "entro le 16:00. Oltre quell'ora scatta l'attesa a € 50,00 all'ora, ma è una clausola che nella pratica non "
-         "si applica quasi mai — se sapete già che il pranzo finirà più tardi, ditecelo e la spostiamo in preventivo "
-         "senza sovrapprezzo."),
+         "preavviso non lo diamo per scontato per iscritto. La disponibilità la conferma Girolamo al telefono, "
+         "+39 335 587 4744, e prima di quella conferma il resto non ha peso."),
         ("<b>La prenotazione in cantina.</b> Antinori nel Chianti Classico e il ristorante Rinuccio 1180 ricevono "
-         "solo su prenotazione, e un gruppo di venti persone di sabato non entra senza. Confermateci l'orario esatto "
-         "che vi hanno dato: se la visita comincia alle 12:00 il ritrovo alle 10:45 è giusto, se comincia alle 11:30 "
-         "conviene anticipare di venti minuti. Ditecelo e tariamo la partenza su quella, senza costi aggiuntivi."),
-        ("<b>Il vitto del conducente.</b> La giornata non richiede pernottamenti — si parte e si rientra in serata — "
-         "quindi non avete alcun costo di alloggio. Resta il pranzo del conducente durante le quattro ore di attesa "
-         "a Bargino, che per prassi è a carico del cliente: non lo mettiamo a preventivo e non lo organizziamo noi. "
-         "Il modo più semplice è aggiungere un coperto per lui quando prenotate da Rinuccio 1180, o segnalare alla "
-         "cantina che c'è un autista da sistemare."),
-        ("<b>Il punto di ritrovo al Poggiaccio.</b> La struttura si raggiunge dalla Strada Provinciale Maremmana per "
-         "un tratto di strada di campagna. Il nostro minibus da 7,64 m ci arriva senza problemi, ma vi chiediamo di "
-         "farvi confermare dalla reception il punto esatto di salita e lo spazio di manovra per un mezzo di questa "
-         "lunghezza: meglio chiarirlo stasera che domani mattina con venti persone e le valigie in mano."),
+         "solo su prenotazione, e un gruppo di venti persone di sabato non entra senza. Ci serve l'orario esatto "
+         "che vi hanno dato: il ritrovo alle 10:45 è tarato su una visita che comincia verso mezzogiorno. Se "
+         "l'orario è un altro spostiamo la partenza, senza variazione di prezzo."),
+        ("<b>Il vitto del conducente.</b> La giornata non richiede pernottamenti — si parte e si rientra in serata "
+         "— quindi non avete alcun costo di alloggio. Resta il pranzo del conducente durante le quattro ore di "
+         "attesa a Bargino, che per prassi è a carico del cliente: non lo mettiamo a preventivo e non lo "
+         "organizziamo noi. Il modo più semplice è aggiungere un coperto per lui quando prenotate da Rinuccio 1180."),
+        ("<b>Il punto di ritrovo al Poggiaccio.</b> La struttura si raggiunge dalla Strada Provinciale Maremmana "
+         "per un tratto di strada di campagna. Il nostro minibus da 7,64 m ci arriva, dove un autobus gran turismo "
+         "avrebbe più di una difficoltà, ma fatevi confermare dalla reception il punto esatto di salita e lo spazio "
+         "di manovra: meglio stasera che domattina con venti persone e le valigie in mano."),
+        ("<b>L'orario di partenza da Antinori.</b> La finestra fra le 15:00 e le 16:00 va bene così e non serve "
+         "stringerla adesso: il conducente resta sul posto e parte quando siete pronti entro le 16:00. Oltre "
+         "quell'ora si applica l'attesa a € 50,00 all'ora. Se sapete già che il pranzo finirà più tardi, ditecelo "
+         "e spostiamo la finestra in preventivo senza sovrapprezzo."),
         ("<b>Pagamento, viste le ventiquattr'ore.</b> Le condizioni di casa prevedono il 30% alla conferma e il "
-         "saldo dopo, ma con il servizio domani un bonifico non fa in tempo ad arrivare. Per noi la contabile "
-         "dell'acconto vale come conferma, e il saldo si regola il giorno stesso: concordate con Girolamo al "
-         "telefono come preferite chiudere."),
-        ("<b>Cancellazione.</b> Va detto chiaramente: la nostra scala di penali prevede il 100% del prezzo nei dieci "
-         "giorni che precedono il servizio, e qui ne manca uno. Una volta confermato, il preventivo è dovuto per "
-         "intero anche in caso di rinuncia. Preferiamo che lo sappiate prima di dire di sì."),
+         "saldo dopo, ma con il servizio domani un bonifico non fa in tempo ad arrivare: per noi la contabile "
+         "dell'acconto vale come conferma e il saldo si regola il giorno stesso."),
+        ("<b>Cancellazione.</b> La nostra scala di penali prevede il 100% del prezzo nei dieci giorni che "
+         "precedono il servizio, e qui ne manca uno. Una volta confermato, il preventivo è dovuto per intero anche "
+         "in caso di rinuncia. Vale la pena saperlo prima di dire di sì."),
         ("<b>Per confermare ci servono</b> il numero definitivo dei passeggeri, l'orario della prenotazione in "
          "cantina, un recapito telefonico o WhatsApp della persona che viaggia con il gruppo e i vostri dati di "
          "fatturazione. Preventivo valido per la giornata di oggi, 18 settembre 2026."),
     ],
-    closing=("Restiamo a disposizione e, visti i tempi, un colpo di telefono vale più di una mail.<br/><br/>"
+    closing=("Per la disponibilità di domani e per qualsiasi chiarimento, il telefono è il canale più rapido.<br/><br/>"
              "Cordiali saluti,<br/>"
              "Girolamo Munna — GiroMunna NCC, Toscana · +39 335 587 4744 · info@giromunna.com"),
 )
@@ -211,10 +219,15 @@ EN = dict(
     ),
     svc_head=["Time", "Route", "Distance"],
     svc=[
+        ("09:00",
+         "<b>The vehicle leaves Ponte Buggianese (PT), where the company is based, empty.</b> "
+         "About 115 km to Sovicille, to be at the Poggiaccio fifteen minutes early. "
+         "This leg carries no passengers and is priced as a separate line below.",
+         "approx. 115 km · 1 h 40"),
         ("10:45",
          "<b>Residenza d'Epoca Borgo Il Poggiaccio, Strada Provinciale Maremmana 541, Sovicille (SI).</b> "
-         "The vehicle is on site fifteen minutes early. Out towards Siena, onto the Florence-Siena dual "
-         "carriageway without entering the city, and off at the Bargino exit.",
+         "Out towards Siena, onto the Florence-Siena dual carriageway without entering the city, "
+         "and off at the Bargino exit.",
          "approx. 55 km · 55 min"),
         ("11:40 – 16:00",
          "<b>Antinori nel Chianti Classico / Rinuccio 1180, Via Cassia per Siena 133, Bargino (FI).</b> "
@@ -225,26 +238,32 @@ EN = dict(
          "<b>Antinori nel Chianti Classico → Borgo Il Poggiaccio.</b> "
          "Departure within the window you give us, the same route back, at the property within the hour.",
          "approx. 55 km · 55 min"),
+        ("17:00",
+         "<b>The vehicle returns empty to Ponte Buggianese.</b> "
+         "Another 80 km with no passengers on board, driver back at base around 18:00: the ninth hour of his day.",
+         "approx. 80 km · 1 h 10"),
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Sat 19 Sep — Borgo Il Poggiaccio → Antinori nel Chianti Classico → Borgo Il Poggiaccio, "
-         "vehicle and driver at your disposal from 10:45 to 16:00", "€ 900.00", "+ VAT 10%"),
+        ("Sat 19 Sep — day at disposal: Borgo Il Poggiaccio → Antinori nel Chianti Classico → "
+         "Borgo Il Poggiaccio, 110 km, vehicle and driver with you from 10:45 to 16:00", "€ 850.00", "+ VAT 10%"),
+        ("Repositioning of the vehicle to and from our base at Ponte Buggianese, 195 km empty, "
+         "with no passengers on board", "€ 350.00", "+ VAT 10%"),
         ("Driver's meal, lunch during the wait", "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 900.00",
+    price_total="€ 1,200.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 990.00.",
-    perhead=("That is € 49.50 to € 55.00 per person depending on the final count, for a full day of a "
+    grand="Total payable, VAT 10% included: € 1,320.00.",
+    perhead=("That is € 66.00 to € 73.33 per person depending on the final count, for a full day of a "
              "26-seat vehicle with driver."),
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver for the whole day, fuel, tolls, parking, full insurance and luggage handling. "
         "No access charges apply: neither Sovicille nor Bargino lies in a restricted traffic zone, the route "
         "skirts Siena on the dual carriageway without entering the city — so no municipal tourist-coach permit "
-        "is needed — and Antinori nel Chianti Classico has its own forecourt. The price already covers the "
-        "vehicle's journey to and from our base at Ponte Buggianese."
+        "is needed — and Antinori nel Chianti Classico has its own forecourt. Nothing surprises you on the day: "
+        "the vehicle's journey to and from our base is already in the table above, not added afterwards."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
@@ -255,61 +274,59 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 297.00", "VAT included"),
-        ("Balance", "€ 693.00", ""),
+        ("Deposit 30% on confirmation", "€ 396.00", "VAT included"),
+        ("Balance", "€ 924.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
-        ("<b>The budget you gave us.</b> You wrote € 250-300 for the round trip, and we will answer plainly, "
-         "because tomorrow leaves no room for a second exchange of emails: at that figure this service does not "
-         "exist, not with us and not with any serious operator in the area. The issue is not the distance, about "
-         "55 km each way, but the whole day: the vehicle leaves Ponte Buggianese, some 115 km from Sovicille, "
-         "stays with you into the afternoon and gets back in the evening — around 300 km in all and nine hours of "
-         "the driver's working day. € 250-300 would barely cover fuel and tolls. We would rather tell you now than "
-         "accept and serve you badly tomorrow: if the budget cannot move, say so straight away and you still have "
-         "a day to find another solution. If you can reach the figure above, it works out at about € 50 a head and "
-         "the vehicle is yours from morning to afternoon."),
-        ("<b>Why releasing the vehicle over lunch does not help.</b> It is a fair question: would it not be cheaper "
-         "to drop you at Bargino, send the minibus home and come back for you? No — it costs more. That means two "
-         "extra empty runs, roughly 160 km on top, and the price goes up rather than down. Keeping vehicle and "
-         "driver parked on site is the cheaper of the two arrangements here, as well as the more comfortable one "
-         "for you, because you decide the return time at the table rather than the day before."),
+        ("<b>The budget you gave us.</b> € 250-300 for the round trip does not correspond to this service, and "
+         "there is no version of this quotation that reaches it. Across twenty passengers your figure works out "
+         "at € 12-15 a head for a full day of a 26-seat vehicle with driver: that is the price of a short taxi "
+         "ride in town, not of what you have asked for. If the budget cannot move there is no point going further, "
+         "and we are telling you today because it leaves you a day to arrange something else."),
+        ("<b>Why the empty running is a line of its own.</b> This is the part usually buried inside the price, and "
+         "we have put it in plain sight. We are based at Ponte Buggianese, in the province of Pistoia: to be at "
+         "the Poggiaccio at 10:45 the vehicle leaves at 09:00 and covers about 115 km with nobody on board, then "
+         "another 80 km to get home in the evening. That is 195 km and three hours of the driver's time carrying "
+         "no passengers, which nobody else pays for. The leg you care about, Sovicille to Bargino, is 55 km: if "
+         "the price looks high against those 55 km, it is because you are looking at a third of the day."),
+        ("<b>Releasing the vehicle over lunch would cost more, not less.</b> The question always comes, so here is "
+         "the answer in advance. Dropping you at Bargino, sending the minibus home and coming back for you means "
+         "four empty runs instead of two: roughly 160 km on top of those already in the table. Keeping vehicle and "
+         "driver parked on site is the cheaper of the two arrangements, and the only one that lets you decide the "
+         "return time from the table."),
         ("<b>Availability tomorrow.</b> This quotation holds if the vehicle is free on Saturday 19th: at one day's "
-         "notice we cannot take that for granted in writing. Call Girolamo on +39 335 587 4744 before anything "
-         "else — he will confirm availability in two minutes on the phone, and only then is there any point "
-         "discussing the rest."),
-        ("<b>The departure time from Antinori.</b> You gave a window between 15:00 and 16:00. That is fine for us "
-         "and you do not need to narrow it now: the driver stays on site and leaves when you are ready, up to 16:00. "
-         "Beyond that hour the € 50.00 hourly waiting charge applies, but in practice it almost never does — if you "
-         "already know lunch will run later, tell us and we will move the window in the quotation at no extra cost."),
+         "notice we will not take that for granted in writing. Girolamo confirms availability on the phone, "
+         "+39 335 587 4744, and until he does the rest carries no weight."),
         ("<b>The winery booking.</b> Antinori nel Chianti Classico and the Rinuccio 1180 restaurant receive guests "
-         "by reservation only, and a party of twenty on a Saturday will not get in without one. Please confirm the "
-         "exact time they have given you: if the visit starts at 12:00, a 10:45 pick-up is right; if it starts at "
-         "11:30, we should leave twenty minutes earlier. Tell us and we will set the departure against it, at no "
-         "extra cost."),
+         "by reservation only, and a party of twenty on a Saturday will not get in without one. We need the exact "
+         "time they have given you: the 10:45 pick-up is set against a visit starting around midday. If the time "
+         "is different we move the departure, at no change in price."),
         ("<b>The driver's meal.</b> The day requires no overnight stay — out and back the same evening — so you "
          "have no accommodation cost at all. What remains is the driver's lunch during the four-hour wait at "
          "Bargino, which by custom is at the client's charge: we neither quote it nor arrange it. The simplest "
-         "thing is to add a cover for him when you book at Rinuccio 1180, or to tell the winery there is a driver "
-         "to look after."),
-        ("<b>The pick-up point at the Poggiaccio.</b> The property is reached from the Strada Provinciale Maremmana "
-         "along a stretch of country road. Our 7.64 m minibus manages it without difficulty, but please have "
-         "reception confirm the exact boarding point and the turning space for a vehicle of this length: far better "
-         "settled tonight than tomorrow morning with twenty people and their luggage in hand."),
+         "thing is to add a cover for him when you book at Rinuccio 1180."),
+        ("<b>The pick-up point at the Poggiaccio.</b> The property is reached from the Strada Provinciale "
+         "Maremmana along a stretch of country road. Our 7.64 m minibus manages it, where a full-size coach would "
+         "meet more than one difficulty, but do have reception confirm the exact boarding point and the turning "
+         "space: better tonight than tomorrow morning with twenty people and their luggage in hand."),
+        ("<b>The departure time from Antinori.</b> The window between 15:00 and 16:00 is fine as it stands and "
+         "need not be narrowed now: the driver stays on site and leaves when you are ready, up to 16:00. Beyond "
+         "that hour the € 50.00 hourly waiting charge applies. If you already know lunch will run later, tell us "
+         "and we will move the window in the quotation at no extra cost."),
         ("<b>Payment, given the twenty-four hours.</b> Our house terms are 30% on confirmation and the balance "
-         "afterwards, but with the service tomorrow a bank transfer will not clear in time. The deposit's transfer "
-         "receipt counts as confirmation for us, and the balance is settled on the day: agree with Girolamo on the "
-         "phone how you prefer to close it."),
-        ("<b>Cancellation.</b> This should be said plainly: our scale charges 100% of the price within the ten days "
-         "before the service, and one day remains. Once confirmed, the quotation is due in full even if you pull "
-         "out. We would rather you knew that before saying yes."),
+         "afterwards, but with the service tomorrow a bank transfer will not clear in time: the deposit's transfer "
+         "receipt counts as confirmation for us and the balance is settled on the day."),
+        ("<b>Cancellation.</b> Our scale charges 100% of the price within the ten days before the service, and one "
+         "day remains. Once confirmed, the quotation is due in full even if you pull out. Worth knowing before "
+         "saying yes."),
         ("<b>To confirm we need</b> the final passenger count, the time of the winery booking, a mobile or WhatsApp "
          "contact for the person travelling with the group, and your invoicing details. "
          "Quotation valid for today, 18 September 2026."),
     ],
-    closing=("We remain at your disposal and, given the timing, a phone call is worth more than an email.<br/><br/>"
+    closing=("For tomorrow's availability and for any clarification, the phone is the quickest channel.<br/><br/>"
              "Kind regards,<br/>"
              "Girolamo Munna — GiroMunna NCC, Tuscany · +39 335 587 4744 · info@giromunna.com"),
 )
