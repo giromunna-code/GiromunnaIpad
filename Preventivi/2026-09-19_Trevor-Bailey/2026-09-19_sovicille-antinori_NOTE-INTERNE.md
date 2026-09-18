@@ -47,7 +47,10 @@ Sabato 19 settembre 2026, andata e ritorno in giornata:
 **Totale netto € 1.500,00 · IVA 10% € 150,00 · Totale € 1.650,00**
 (da € 82,50 a € 91,67 a persona secondo il numero definitivo)
 
-Acconto 30% € 495,00 — saldo € 1.155,00.
+**Pagamento: bonifico unico di € 1.650,00 alla conferma, niente acconto.** Deciso da Girolamo
+il 18 settembre: vista la data non ha senso spezzare in acconto e saldo. È un'eccezione alle
+condizioni di casa (30% + saldo) motivata dai tempi, non un cambio di prassi. Il bonifico non
+fa in tempo a essere accreditato entro domattina, quindi la contabile vale come conferma.
 
 Nessun pernottamento: la giornata si apre e si chiude in serata, quindi al cliente non resta
 alcun costo di alloggio. Resta il pranzo del conducente durante le circa quattro ore di attesa
@@ -177,9 +180,8 @@ Se vanno via, vanno via sapendo perché.
    se l'orario vero è un altro, la partenza si sposta senza cambiare il prezzo.
 5. **Il punto di salita al Poggiaccio** e lo spazio di manovra, da farsi confermare dalla
    struttura.
-6. **L'acconto a ventiquattr'ore.** Il bonifico non fa in tempo a incassarsi: nel preventivo è
-   scritto che la contabile vale come conferma e il saldo si regola il giorno stesso. Se
-   Girolamo preferisce diversamente, è una riga da cambiare.
+6. **Pagamento: risolto.** Niente acconto, bonifico unico di € 1.650,00 alla conferma, con la
+   contabile a fare da conferma della prenotazione.
 7. **La penale al 100%.** Mancando un giorno al servizio, la cancellazione dopo la conferma
    costa l'intero importo. Nel preventivo è detto chiaramente prima che dicano di sì.
 

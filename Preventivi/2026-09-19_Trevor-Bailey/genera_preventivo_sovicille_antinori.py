@@ -135,8 +135,7 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 495,00", "IVA inclusa"),
-        ("Saldo", "€ 1.155,00", ""),
+        ("Bonifico unico alla conferma, prima del servizio", "€ 1.650,00", "IVA inclusa"),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -185,9 +184,9 @@ IT = dict(
          "stringerla adesso: il conducente resta sul posto e parte quando siete pronti entro le 16:00. Oltre "
          "quell'ora si applica l'attesa a € 50,00 all'ora. Se sapete già che il pranzo finirà più tardi, ditecelo "
          "e spostiamo la finestra in preventivo senza sovrapprezzo."),
-        ("<b>Pagamento, viste le ventiquattr'ore.</b> Le condizioni di casa prevedono il 30% alla conferma e il "
-         "saldo dopo, ma con il servizio domani un bonifico non fa in tempo ad arrivare: per noi la contabile "
-         "dell'acconto vale come conferma e il saldo si regola il giorno stesso."),
+        ("<b>Pagamento.</b> Vista la data non chiediamo acconto e saldo: si regola tutto con un bonifico unico "
+         "di € 1.650,00 alla conferma, prima del servizio. Il bonifico non farà in tempo a essere accreditato "
+         "entro domani mattina, quindi ci basta la contabile: mandatecela e la prenotazione è ferma."),
         ("<b>Cancellazione.</b> La nostra scala di penali prevede il 100% del prezzo nei dieci giorni che "
          "precedono il servizio, e qui ne manca uno. Una volta confermato, il preventivo è dovuto per intero anche "
          "in caso di rinuncia. Vale la pena saperlo prima di dire di sì."),
@@ -285,8 +284,7 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 495.00", "VAT included"),
-        ("Balance", "€ 1,155.00", ""),
+        ("Single bank transfer on confirmation, before the service", "€ 1,650.00", "VAT included"),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -335,9 +333,9 @@ EN = dict(
          "need not be narrowed now: the driver stays on site and leaves when you are ready, up to 16:00. Beyond "
          "that hour the € 50.00 hourly waiting charge applies. If you already know lunch will run later, tell us "
          "and we will move the window in the quotation at no extra cost."),
-        ("<b>Payment, given the twenty-four hours.</b> Our house terms are 30% on confirmation and the balance "
-         "afterwards, but with the service tomorrow a bank transfer will not clear in time: the deposit's transfer "
-         "receipt counts as confirmation for us and the balance is settled on the day."),
+        ("<b>Payment.</b> Given the date we are not asking for a deposit and balance: it is settled with a "
+         "single transfer of € 1,650.00 on confirmation, before the service. The transfer will not clear by "
+         "tomorrow morning, so the receipt is enough for us: send it over and the booking is firm."),
         ("<b>Cancellation.</b> Our scale charges 100% of the price within the ten days before the service, and one "
          "day remains. Once confirmed, the quotation is due in full even if you pull out. Worth knowing before "
          "saying yes."),
