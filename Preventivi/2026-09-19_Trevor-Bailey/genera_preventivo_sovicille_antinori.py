@@ -109,13 +109,14 @@ IT = dict(
         ("Sab 19 set — giornata a disposizione: Borgo Il Poggiaccio → Antinori nel Chianti Classico → "
          "Borgo Il Poggiaccio, mezzo e conducente con voi dalle 10:45 alle 16:00, viaggio del mezzo da e per "
          "la nostra sede compreso", "€ 1.200,00", "+ IVA 10%"),
+        ("Supplemento per conferma e servizio sotto le 24 ore dalla richiesta, 25%", "€ 300,00", "+ IVA 10%"),
         ("Vitto del conducente, il pranzo durante l'attesa", "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 1.200,00",
+    price_total="€ 1.500,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 1.320,00.",
-    perhead=("Sono da € 66,00 a € 73,33 a persona secondo il numero definitivo, per l'intera giornata "
+    grand="Totale da corrispondere, IVA 10% inclusa: € 1.650,00.",
+    perhead=("Sono da € 82,50 a € 91,67 a persona secondo il numero definitivo, per l'intera giornata "
              "di un mezzo da 26 posti con conducente."),
     h_incluso="Incluso.",
     incluso=(
@@ -134,8 +135,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 396,00", "IVA inclusa"),
-        ("Saldo", "€ 924,00", ""),
+        ("Acconto 30% alla conferma", "€ 495,00", "IVA inclusa"),
+        ("Saldo", "€ 1.155,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -153,6 +154,12 @@ IT = dict(
          "110 km di trasporto passeggeri e quattro ore di attesa ferma a Bargino. È tutto compreso nel prezzo qui "
          "sopra e nessun supplemento vi arriverà dopo: ve lo spieghiamo perché il conto torni, non per "
          "addebitarvelo a parte."),
+        ("<b>Il supplemento per le ventiquattr'ore.</b> La vostra richiesta è arrivata ieri sera per domani "
+         "mattina. Un servizio confermato con meno di ventiquattro ore di preavviso comporta da noi un "
+         "supplemento del 25%, ed è una voce che scriviamo in chiaro invece di nasconderla nel prezzo: significa "
+         "rimettere mano al programma del conducente a settimana già chiusa e rinunciare a quello che potrebbe "
+         "entrare nel frattempo per una giornata che teniamo bloccata sulla vostra risposta. Nasce dai tempi, non "
+         "dal servizio: con due settimane di anticipo lo stesso lavoro questo supplemento non l'avrebbe."),
         ("<b>Liberare il mezzo durante il pranzo costerebbe di più, non di meno.</b> La domanda arriva sempre, "
          "quindi la anticipiamo. Lasciarvi a Bargino, far rientrare il minibus e tornare a prendervi significa "
          "quattro trasferimenti a vuoto invece di due: circa 160 km in più di quelli già in tabella. Tenere mezzo "
@@ -252,13 +259,14 @@ EN = dict(
         ("Sat 19 Sep — day at disposal: Borgo Il Poggiaccio → Antinori nel Chianti Classico → "
          "Borgo Il Poggiaccio, vehicle and driver with you from 10:45 to 16:00, the vehicle's journey to and "
          "from our base included", "€ 1,200.00", "+ VAT 10%"),
+        ("Supplement for confirmation and service within 24 hours of enquiry, 25%", "€ 300.00", "+ VAT 10%"),
         ("Driver's meal, lunch during the wait", "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 1,200.00",
+    price_total="€ 1,500.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 1,320.00.",
-    perhead=("That is € 66.00 to € 73.33 per person depending on the final count, for a full day of a "
+    grand="Total payable, VAT 10% included: € 1,650.00.",
+    perhead=("That is € 82.50 to € 91.67 per person depending on the final count, for a full day of a "
              "26-seat vehicle with driver."),
     h_incluso="Included.",
     incluso=(
@@ -277,8 +285,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 396.00", "VAT included"),
-        ("Balance", "€ 924.00", ""),
+        ("Deposit 30% on confirmation", "€ 495.00", "VAT included"),
+        ("Balance", "€ 1,155.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -296,6 +304,12 @@ EN = dict(
          "driver's time, for 110 km of passenger transport and four hours parked at Bargino. All of it is included "
          "in the price above and no supplement will reach you later: we explain it so the sum adds up, not to "
          "charge it separately."),
+        ("<b>The twenty-four-hour supplement.</b> Your enquiry reached us yesterday evening for tomorrow "
+         "morning. A service confirmed less than twenty-four hours ahead carries a 25% supplement with us, and it "
+         "is a line we set out in plain sight rather than bury in the price: it means reopening the driver's "
+         "schedule with the week already closed, and turning away whatever might come in for a day we are holding "
+         "against your answer. It comes from the timing, not from the service: at two weeks' notice the same job "
+         "would not carry it."),
         ("<b>Releasing the vehicle over lunch would cost more, not less.</b> The question always comes, so here is "
          "the answer in advance. Dropping you at Bargino, sending the minibus home and coming back for you means "
          "four empty runs instead of two: roughly 160 km on top of those already in the table. Keeping vehicle and "
