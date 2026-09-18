@@ -40,8 +40,7 @@ Sabato 19 settembre 2026, andata e ritorno in giornata:
 
 | Voce | Netto |
 |---|---|
-| Giornata a disposizione, Poggiaccio → Antinori → Poggiaccio, 110 km, 10:45-16:00 | € 850,00 |
-| Trasferimento del mezzo da e per Ponte Buggianese, 195 km a vuoto | € 350,00 |
+| Giornata a disposizione, Poggiaccio → Antinori → Poggiaccio, 10:45-16:00, viaggio del mezzo da e per la sede compreso | € 1.200,00 |
 | Vitto del conducente (pranzo durante l'attesa) | a carico del cliente |
 
 **Totale netto € 1.200,00 · IVA 10% € 120,00 · Totale € 1.320,00**
@@ -54,21 +53,22 @@ alcun costo di alloggio. Resta il pranzo del conducente durante le circa quattro
 a Bargino, che per prassi è a carico del cliente: a preventivo è indicato ma non conteggiato,
 con il suggerimento di aggiungere un coperto per lui alla prenotazione da Rinuccio 1180.
 
-## La scelta che regge tutto il preventivo: il posizionamento è una voce a sé
+## Il posizionamento non si fattura a parte — errore da non ripetere
 
-Il prezzo **non è gonfiato**: è lo stesso lavoro di prima, smesso di nascondere.
+In una stesura precedente il viaggio da e per Ponte Buggianese era stato messo come **riga a
+sé** in tabella (€ 850 di giornata + € 350 di posizionamento), sopra una giornata a disposizione
+calcolata sulla scala Le Filigare.
 
-Il cliente guarda i 55 km da Sovicille a Bargino e ci vede sopra € 1.320: gli sembra un furto,
-e da lì non si esce. Messo in tabella che il mezzo parte da **Ponte Buggianese** e fa 195 km a
-vuoto per servirlo, il conto torna e non c'è più niente da contestare — ogni riga è un costo
-reale e verificabile.
+**Sbagliato.** Da Ponte Buggianese si parte *sempre*, in ogni lavoro: quel viaggio è già dentro
+gli € 809 delle Filigare e dentro tutti gli altri prezzi di riferimento della casa. Esporlo come
+voce aggiuntiva lo faceva pagare **due volte**. Il prezzo qui è uno solo e comprende tutto, come
+in ogni altro preventivo GiroMunna.
 
-Questo vale più di qualsiasi maggiorazione inventata. Un supplemento d'urgenza sarebbe stato
-legittimo ma discutibile; il viaggio a vuoto no: o c'è o non c'è, e c'è.
-
-Nel programma della giornata i due tratti a vuoto sono ora **righe visibili**, alle 09:00 e alle
-17:00, così si vede che la giornata del mezzo va dalle nove alle diciotto e non dalle 10:45 alle
-16:00.
+Il posizionamento resta però **l'argomento migliore da spendere nelle note**: spiega al cliente
+perché una tratta di 55 km costa quanto costa, senza comparire come voce di prezzo.
+*Spiegazione, non fattura.* La nota lo dice esplicitamente — «ve lo spieghiamo perché il conto
+torni, non per addebitarvelo a parte» — e i due tratti a vuoto restano visibili nel programma
+della giornata, alle 09:00 e alle 17:00, marcati come compresi nel prezzo.
 
 ## Come è stato costruito il prezzo
 
@@ -78,12 +78,12 @@ Riferimento: **il preventivo Le Filigare (GM-2026-0821-LF)**, che è a mezzo sin
 |---|---|
 | Le Filigare — trasferimento ~50 km | € 500,00 |
 | Le Filigare — giornata a disposizione ~80 km, 5 ore | € 809,00 |
-| **Questa giornata a disposizione** — 110 km, 5 ore e un quarto | **€ 850,00** |
-| **Posizionamento** — 195 km a vuoto, ~€ 1,79 al km | **€ 350,00** |
+| **Questa giornata** — ~300 km totali, 9 ore di conducente, tutto compreso | **€ 1.200,00** |
 
-La giornata a disposizione sta **sopra** gli € 809 delle Filigare perché lì erano 80 km e 5 ore,
-qui sono 110 km e 5 ore e un quarto. Il posizionamento a € 350 è **conservativo**: a tariffa
-piena chilometrica si arriverebbe oltre i € 450, e resterebbe difendibile.
+Gli € 1.200 stanno **sopra** gli € 809 della giornata a disposizione delle Filigare perché lì
+erano 80 km di servizio e 5 ore, qui la giornata del mezzo è di ~300 km e nove ore: una volta e
+mezza il prezzo, per una giornata che pesa parecchio di più. Entrambe le cifre sono **tutto
+compreso**, posizionamento incluso, quindi il confronto è omogeneo.
 
 **Non sono stati usati i prezzi del Corte Francigena**, che sono per mezzo su un lavoro a due
 mezzi e quindi già scontati per volume.
@@ -107,8 +107,7 @@ Mezzo di proprietà (Beluga), nessun pernottamento, nessun onere di accesso. Cos
 stimato € 250-350 fra carburante, pedaggi e conducente.
 
 A € 1.200 netti il margine è ottimo. Se Girolamo volesse trattare, **regge fino a € 900 netti**
-senza toccare la struttura del preventivo (basta ridurre la giornata a disposizione e lasciare
-il posizionamento dov'è). **Sotto i € 700 netti non si va**: è la fascia Corte Francigena
+senza toccare la struttura del preventivo: si cambia una cifra sola. **Sotto i € 700 netti non si va**: è la fascia Corte Francigena
 applicata a un mezzo singolo, l'errore già fatto una volta.
 
 ## Il divario di budget
@@ -141,8 +140,8 @@ Se vanno via, vanno via sapendo perché.
    il preventivo è scritto come se il mezzo fosse libero, ma con un giorno di preavviso non si
    può darlo per scontato. Nelle note al cliente è indicato di telefonare prima di tutto il resto.
 2. **Le distanze sono stime stradali**, non un calcolo su mappa: ~115 km base-Sovicille,
-   55 km Sovicille-Bargino, ~80 km Bargino-base. Reggono l'ordine di grandezza, ma adesso i
-   195 km a vuoto sono **una voce in fattura**: se qualcuno li mette in discussione conviene
+   55 km Sovicille-Bargino, ~80 km Bargino-base. Reggono l'ordine di grandezza e non compaiono
+   come voce di prezzo, ma sono citati nelle note: se qualcuno li mette in discussione conviene
    averli ricontrollati.
 3. **Il gruppo sta sul Beluga.** 18-20 ospiti su 26 posti, restano da sei a otto posti liberi:
    non serve il secondo minibus e non c'è motivo di tirare in ballo Francesco.

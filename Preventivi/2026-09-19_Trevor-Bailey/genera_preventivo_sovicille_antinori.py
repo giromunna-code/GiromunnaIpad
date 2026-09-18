@@ -83,7 +83,7 @@ IT = dict(
         ("09:00",
          "<b>Il mezzo parte a vuoto da Ponte Buggianese (PT), dove ha sede l'azienda.</b> "
          "Circa 115 km fino a Sovicille per essere al Poggiaccio con un quarto d'ora di anticipo. "
-         "Questo tratto non trasporta passeggeri ed è esposto come voce a sé nella tabella del prezzo.",
+         "Nessun passeggero a bordo e nessun addebito a parte: è compreso nel prezzo.",
          "circa 115 km · 1 h 40"),
         ("10:45",
          "<b>Residenza d'Epoca Borgo Il Poggiaccio, Strada Provinciale Maremmana 541, Sovicille (SI).</b> "
@@ -100,15 +100,15 @@ IT = dict(
          "circa 55 km · 55 min"),
         ("17:00",
          "<b>Il mezzo rientra a vuoto a Ponte Buggianese.</b> "
-         "Altri 80 km senza passeggeri a bordo, conducente in base verso le 18:00: nona ora di lavoro della giornata.",
+         "Altri 80 km senza passeggeri a bordo, conducente in base verso le 18:00: nona ora di lavoro "
+         "della giornata, anch'essa compresa nel prezzo.",
          "circa 80 km · 1 h 10"),
     ],
     h_prezzo="Il prezzo",
     price_rows=[
         ("Sab 19 set — giornata a disposizione: Borgo Il Poggiaccio → Antinori nel Chianti Classico → "
-         "Borgo Il Poggiaccio, 110 km, mezzo e conducente con voi dalle 10:45 alle 16:00", "€ 850,00", "+ IVA 10%"),
-        ("Trasferimento del mezzo da e per la sede di Ponte Buggianese, 195 km a vuoto, senza passeggeri a bordo",
-         "€ 350,00", "+ IVA 10%"),
+         "Borgo Il Poggiaccio, mezzo e conducente con voi dalle 10:45 alle 16:00, viaggio del mezzo da e per "
+         "la nostra sede compreso", "€ 1.200,00", "+ IVA 10%"),
         ("Vitto del conducente, il pranzo durante l'attesa", "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
@@ -146,12 +146,13 @@ IT = dict(
          "fa € 12-15 a testa per l'intera giornata di un mezzo da 26 posti con conducente: è il prezzo di una "
          "corsa urbana in taxi, non di quello che ci avete chiesto. Se il budget non è spostabile non ha senso "
          "andare avanti, e ve lo diciamo oggi perché vi resta un giorno per organizzarvi diversamente."),
-        ("<b>Perché il viaggio a vuoto è una voce a sé.</b> È la parte che di solito resta nascosta dentro il "
-         "prezzo e che qui abbiamo messo in chiaro. Noi siamo a Ponte Buggianese, in provincia di Pistoia: per "
-         "essere al Poggiaccio alle 10:45 il mezzo parte alle 09:00 e percorre circa 115 km senza nessuno a bordo, "
-         "e la sera ne fa altri 80 per rientrare. Sono 195 km e tre ore di conducente che non trasportano un "
-         "passeggero e che nessun altro paga. La tratta che interessa a voi, Sovicille-Bargino, è di 55 km: se il "
-         "prezzo vi sembra alto rispetto a quei 55 km, è perché state guardando un terzo della giornata."),
+        ("<b>Perché costa più dei 55 km che avete in mente.</b> La tratta Sovicille-Bargino è di 55 km, ma non "
+         "è quello che state comprando. GiroMunna ha sede a Ponte Buggianese, in provincia di Pistoia: per essere "
+         "al Poggiaccio alle 10:45 il mezzo parte alle 09:00 e percorre circa 115 km senza nessuno a bordo, e la "
+         "sera ne fa altri 80 per rientrare. La giornata del mezzo è di circa 300 km e nove ore di conducente, per "
+         "110 km di trasporto passeggeri e quattro ore di attesa ferma a Bargino. È tutto compreso nel prezzo qui "
+         "sopra e nessun supplemento vi arriverà dopo: ve lo spieghiamo perché il conto torni, non per "
+         "addebitarvelo a parte."),
         ("<b>Liberare il mezzo durante il pranzo costerebbe di più, non di meno.</b> La domanda arriva sempre, "
          "quindi la anticipiamo. Lasciarvi a Bargino, far rientrare il minibus e tornare a prendervi significa "
          "quattro trasferimenti a vuoto invece di due: circa 160 km in più di quelli già in tabella. Tenere mezzo "
@@ -222,7 +223,7 @@ EN = dict(
         ("09:00",
          "<b>The vehicle leaves Ponte Buggianese (PT), where the company is based, empty.</b> "
          "About 115 km to Sovicille, to be at the Poggiaccio fifteen minutes early. "
-         "This leg carries no passengers and is priced as a separate line below.",
+         "No passengers on board and nothing charged separately: it is included in the price.",
          "approx. 115 km · 1 h 40"),
         ("10:45",
          "<b>Residenza d'Epoca Borgo Il Poggiaccio, Strada Provinciale Maremmana 541, Sovicille (SI).</b> "
@@ -240,15 +241,15 @@ EN = dict(
          "approx. 55 km · 55 min"),
         ("17:00",
          "<b>The vehicle returns empty to Ponte Buggianese.</b> "
-         "Another 80 km with no passengers on board, driver back at base around 18:00: the ninth hour of his day.",
+         "Another 80 km with no passengers on board, driver back at base around 18:00: the ninth hour of "
+         "his day, included in the price as well.",
          "approx. 80 km · 1 h 10"),
     ],
     h_prezzo="The price",
     price_rows=[
         ("Sat 19 Sep — day at disposal: Borgo Il Poggiaccio → Antinori nel Chianti Classico → "
-         "Borgo Il Poggiaccio, 110 km, vehicle and driver with you from 10:45 to 16:00", "€ 850.00", "+ VAT 10%"),
-        ("Repositioning of the vehicle to and from our base at Ponte Buggianese, 195 km empty, "
-         "with no passengers on board", "€ 350.00", "+ VAT 10%"),
+         "Borgo Il Poggiaccio, vehicle and driver with you from 10:45 to 16:00, the vehicle's journey to and "
+         "from our base included", "€ 1,200.00", "+ VAT 10%"),
         ("Driver's meal, lunch during the wait", "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
@@ -286,12 +287,13 @@ EN = dict(
          "at € 12-15 a head for a full day of a 26-seat vehicle with driver: that is the price of a short taxi "
          "ride in town, not of what you have asked for. If the budget cannot move there is no point going further, "
          "and we are telling you today because it leaves you a day to arrange something else."),
-        ("<b>Why the empty running is a line of its own.</b> This is the part usually buried inside the price, and "
-         "we have put it in plain sight. We are based at Ponte Buggianese, in the province of Pistoia: to be at "
+        ("<b>Why it costs more than the 55 km you have in mind.</b> The Sovicille-Bargino leg is 55 km, but that "
+         "is not what you are buying. GiroMunna is based at Ponte Buggianese, in the province of Pistoia: to be at "
          "the Poggiaccio at 10:45 the vehicle leaves at 09:00 and covers about 115 km with nobody on board, then "
-         "another 80 km to get home in the evening. That is 195 km and three hours of the driver's time carrying "
-         "no passengers, which nobody else pays for. The leg you care about, Sovicille to Bargino, is 55 km: if "
-         "the price looks high against those 55 km, it is because you are looking at a third of the day."),
+         "another 80 km to get home in the evening. The vehicle's day comes to about 300 km and nine hours of the "
+         "driver's time, for 110 km of passenger transport and four hours parked at Bargino. All of it is included "
+         "in the price above and no supplement will reach you later: we explain it so the sum adds up, not to "
+         "charge it separately."),
         ("<b>Releasing the vehicle over lunch would cost more, not less.</b> The question always comes, so here is "
          "the answer in advance. Dropping you at Bargino, sending the minibus home and coming back for you means "
          "four empty runs instead of two: roughly 160 km on top of those already in the table. Keeping vehicle and "
