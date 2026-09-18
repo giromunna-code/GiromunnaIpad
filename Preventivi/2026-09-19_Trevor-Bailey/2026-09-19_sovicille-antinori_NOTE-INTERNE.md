@@ -2,7 +2,7 @@
 
 **Cliente:** Trevor Bailey (richiesta arrivata da Duckbill Concierge, +1 617-644-4351) ·
 **Rif. preventivo:** GM-2026-0919-TB · **Preparato:** 18 settembre 2026 ·
-**Validità:** 18 settembre 2026 — il servizio è domani.
+**Validità:** fino alle 20:00 del 18 settembre 2026 — il servizio è domani.
 
 File generati, tutti dentro `Preventivi/2026-09-19_Trevor-Bailey/`:
 
@@ -136,9 +136,11 @@ Se vanno via, vanno via sapendo perché.
 
 ## Da verificare prima di rispondere
 
-1. **La disponibilità del Beluga e del conducente per sabato 19.** È la prima cosa da guardare:
-   il preventivo è scritto come se il mezzo fosse libero, ma con un giorno di preavviso non si
-   può darlo per scontato. Nelle note al cliente è indicato di telefonare prima di tutto il resto.
+1. **Disponibilità: verificata.** Sabato 19 il Beluga e il conducente sono liberi, confermato da
+   Girolamo il 18 settembre. Il preventivo lo dice al cliente e ci mette una **scadenza reale**:
+   il mezzo è tenuto fermo fino alle **20:00 di oggi**, oltre quell'ora il conducente va
+   organizzato diversamente. È una scadenza vera, non una leva retorica, quindi va rispettata:
+   se alle 20:00 non hanno risposto, il mezzo si libera davvero.
 2. **Le distanze sono stime stradali**, non un calcolo su mappa: ~115 km base-Sovicille,
    55 km Sovicille-Bargino, ~80 km Bargino-base. Reggono l'ordine di grandezza e non compaiono
    come voce di prezzo, ma sono citati nelle note: se qualcuno li mette in discussione conviene
@@ -155,6 +157,17 @@ Se vanno via, vanno via sapendo perché.
    Girolamo preferisce diversamente, è una riga da cambiare.
 7. **La penale al 100%.** Mancando un giorno al servizio, la cancellazione dopo la conferma
    costa l'intero importo. Nel preventivo è detto chiaramente prima che dicano di sì.
+
+## Cosa cambia ora che il mezzo è libero
+
+Il Beluga fermo il sabato non produce nulla: il costo opportunità di questo lavoro è **zero**,
+perché non ci sono altri impegni a cui rinunciare. Questo **non è un motivo per abbassare il
+prezzo** — un preventivo sotto mercato svaluta il servizio e non si recupera — ma è il dato che
+serve a Girolamo per decidere fin dove trattare, se decide di trattare: a € 900 netti il lavoro
+resta ottimo e il mezzo lavora invece di stare in rimessa.
+
+Resta la scadenza delle 20:00, che ora è un fatto e non una pressione inventata: il conducente
+per domani va organizzato stasera.
 
 ## Chi risponde
 

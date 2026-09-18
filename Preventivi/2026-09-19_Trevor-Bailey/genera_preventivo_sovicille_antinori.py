@@ -158,9 +158,10 @@ IT = dict(
          "quattro trasferimenti a vuoto invece di due: circa 160 km in più di quelli già in tabella. Tenere mezzo "
          "e conducente fermi sul posto è la formula più economica delle due, oltre che l'unica che vi lascia "
          "decidere l'ora del rientro stando a tavola."),
-        ("<b>Disponibilità di domani.</b> Questo preventivo vale se il mezzo è libero sabato 19: con un giorno di "
-         "preavviso non lo diamo per scontato per iscritto. La disponibilità la conferma Girolamo al telefono, "
-         "+39 335 587 4744, e prima di quella conferma il resto non ha peso."),
+        ("<b>Il mezzo è libero e ve lo teniamo fino a stasera.</b> Abbiamo verificato: sabato 19 il Beluga è "
+         "disponibile e il conducente anche. Lo teniamo fermo per voi <b>fino alle 20:00 di oggi</b>. Oltre "
+         "quell'ora il conducente va organizzato diversamente e non possiamo più garantirvelo, quindi se la cosa "
+         "vi interessa conviene una telefonata al +39 335 587 4744 e non uno scambio di mail."),
         ("<b>La prenotazione in cantina.</b> Antinori nel Chianti Classico e il ristorante Rinuccio 1180 ricevono "
          "solo su prenotazione, e un gruppo di venti persone di sabato non entra senza. Ci serve l'orario esatto "
          "che vi hanno dato: il ritrovo alle 10:45 è tarato su una visita che comincia verso mezzogiorno. Se "
@@ -185,9 +186,10 @@ IT = dict(
          "in caso di rinuncia. Vale la pena saperlo prima di dire di sì."),
         ("<b>Per confermare ci servono</b> il numero definitivo dei passeggeri, l'orario della prenotazione in "
          "cantina, un recapito telefonico o WhatsApp della persona che viaggia con il gruppo e i vostri dati di "
-         "fatturazione. Preventivo valido per la giornata di oggi, 18 settembre 2026."),
+         "fatturazione. Preventivo valido fino alle 20:00 di oggi, 18 settembre 2026."),
     ],
-    closing=("Per la disponibilità di domani e per qualsiasi chiarimento, il telefono è il canale più rapido.<br/><br/>"
+    closing=("Il mezzo è fermo e vi aspetta fino a stasera: per confermare o per qualsiasi chiarimento, "
+             "il telefono è il canale più rapido.<br/><br/>"
              "Cordiali saluti,<br/>"
              "Girolamo Munna — GiroMunna NCC, Toscana · +39 335 587 4744 · info@giromunna.com"),
 )
@@ -299,9 +301,10 @@ EN = dict(
          "four empty runs instead of two: roughly 160 km on top of those already in the table. Keeping vehicle and "
          "driver parked on site is the cheaper of the two arrangements, and the only one that lets you decide the "
          "return time from the table."),
-        ("<b>Availability tomorrow.</b> This quotation holds if the vehicle is free on Saturday 19th: at one day's "
-         "notice we will not take that for granted in writing. Girolamo confirms availability on the phone, "
-         "+39 335 587 4744, and until he does the rest carries no weight."),
+        ("<b>The vehicle is free and we are holding it until this evening.</b> We have checked: on Saturday 19th "
+         "the Beluga is available and so is the driver. We are holding it for you <b>until 20:00 today</b>. Beyond "
+         "that hour the driver has to be scheduled otherwise and we can no longer guarantee it, so if this is of "
+         "interest to you a phone call to +39 335 587 4744 beats an exchange of emails."),
         ("<b>The winery booking.</b> Antinori nel Chianti Classico and the Rinuccio 1180 restaurant receive guests "
          "by reservation only, and a party of twenty on a Saturday will not get in without one. We need the exact "
          "time they have given you: the 10:45 pick-up is set against a visit starting around midday. If the time "
@@ -326,9 +329,10 @@ EN = dict(
          "saying yes."),
         ("<b>To confirm we need</b> the final passenger count, the time of the winery booking, a mobile or WhatsApp "
          "contact for the person travelling with the group, and your invoicing details. "
-         "Quotation valid for today, 18 September 2026."),
+         "Quotation valid until 20:00 today, 18 September 2026."),
     ],
-    closing=("For tomorrow's availability and for any clarification, the phone is the quickest channel.<br/><br/>"
+    closing=("The vehicle is standing by for you until this evening: to confirm, or for any clarification, "
+             "the phone is the quickest channel.<br/><br/>"
              "Kind regards,<br/>"
              "Girolamo Munna — GiroMunna NCC, Tuscany · +39 335 587 4744 · info@giromunna.com"),
 )
