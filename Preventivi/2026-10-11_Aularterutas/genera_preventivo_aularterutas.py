@@ -88,20 +88,21 @@ IT = dict(
         ("Dom 11 ott — giornata a disposizione: Siena → Monteriggioni → San Gimignano → Firenze",
          "€ 1.250,00", "+ IVA 10%"),
         ("Permesso bus turistici del Comune di Siena", "€ 160,00", "+ IVA 10%"),
+        ("Checkpoint bus del Comune di San Gimignano", "€ 220,00", "+ IVA 10%"),
         ("Permesso di accesso bus al centro di Firenze, fino all'hotel", "€ 450,00", "+ IVA 10%"),
         ("Vitto del conducente, pranzo dell'11 ottobre (nessun pernottamento)",
          "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 1.860,00",
+    price_total="€ 2.080,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 2.046,00.",
-    perhead="Sono circa € 82,00 a persona con 25 partecipanti.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 2.288,00.",
+    perhead="Sono circa € 92,00 a persona con 25 partecipanti.",
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente per tutta la giornata, avvicinamento a Siena e rientro dalla nostra base, carburante, "
-        "pedaggi, parcheggi bus a Monteriggioni e San Gimignano, assicurazione completa, carico e scarico dei "
-        "bagagli. I permessi di Siena e Firenze sono indicati a parte nella tabella del prezzo."
+        "pedaggi, parcheggio bus a Monteriggioni, assicurazione completa, carico e scarico dei "
+        "bagagli. I permessi di Siena e Firenze e il checkpoint di San Gimignano sono indicati a parte nella tabella del prezzo."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
@@ -111,8 +112,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 610,00", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 1.436,00", ""),
+        ("Acconto 30% alla conferma", "€ 680,00", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 1.608,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -138,7 +139,8 @@ IT = dict(
          "Il Comune di Siena richiede comunque il permesso per i bus turistici anche solo per una salita di "
          "passeggeri: è la voce da € 160,00 in tabella, la sbrighiamo noi."),
         ("<b>San Gimignano.</b> I bus lasciano il gruppo al terminal di Porta San Giovanni, all'ingresso del "
-         "centro storico, e lì lo riprendono alle 16:00. Il conducente vi lascia il suo numero alla partenza, "
+         "centro storico, e lì lo riprendono alle 16:00. L'accesso passa dal checkpoint comunale per i bus "
+         "turistici: è la voce da € 220,00 in tabella, la sbrighiamo noi. Il conducente vi lascia il suo numero alla partenza, "
          "così ci si ritrova senza problemi."),
         ("<b>Vitto del conducente.</b> Non serve alcun pernottamento: il conducente parte la mattina dalla nostra "
          "base e ci rientra la sera. Resta a vostro carico il suo pranzo dell'11 ottobre, che organizzate e pagate "
@@ -194,20 +196,21 @@ EN = dict(
         ("Sun 11 Oct — full day at disposal: Siena → Monteriggioni → San Gimignano → Florence",
          "€ 1,250.00", "+ VAT 10%"),
         ("City of Siena tourist coach permit", "€ 160.00", "+ VAT 10%"),
+        ("City of San Gimignano coach checkpoint", "€ 220.00", "+ VAT 10%"),
         ("Coach access permit for central Florence, to the hotel door", "€ 450.00", "+ VAT 10%"),
         ("Driver's meal, lunch on 11 October (no overnight stay)",
          "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 1,860.00",
+    price_total="€ 2,080.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 2,046.00.",
-    perhead="That is about € 82.00 per person with 25 participants.",
+    grand="Total payable, VAT 10% included: € 2,288.00.",
+    perhead="That is about € 92.00 per person with 25 participants.",
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver for the whole day, positioning to Siena and return to our base, fuel, tolls, coach "
-        "parking at Monteriggioni and San Gimignano, full insurance, luggage loading and unloading. The Siena and "
-        "Florence permits are shown separately in the price table."
+        "parking at Monteriggioni, full insurance, luggage loading and unloading. The Siena and Florence permits "
+        "and the San Gimignano checkpoint are shown separately in the price table."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
@@ -217,8 +220,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 610.00", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 1,436.00", ""),
+        ("Deposit 30% on confirmation", "€ 680.00", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 1,608.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -244,7 +247,8 @@ EN = dict(
          "The City of Siena still requires its tourist coach permit even for a passenger pick-up: that is the "
          "€ 160.00 line in the table, and we take care of it."),
         ("<b>San Gimignano.</b> Coaches drop groups at the Porta San Giovanni terminal, at the entrance to the "
-         "historic centre, and collect them there at 16:00. The driver will give you his number on departure so "
+         "historic centre, and collect them there at 16:00. Access goes through the town's checkpoint for "
+         "tourist coaches: that is the € 220.00 line in the table, and we take care of it. The driver will give you his number on departure so "
          "meeting up again is straightforward."),
         ("<b>The driver's meal.</b> No overnight stay is needed: the driver leaves our base in the morning and "
          "returns in the evening. His lunch on 11 October remains at your charge, arranged and paid for by you: "
