@@ -6,8 +6,8 @@
 Richiesta: 15/20 studenti + 2 insegnanti (17-22 persone), aeroporto di Pisa → Colle di Val d'Elsa il
 16 gennaio, ritorno il 23 gennaio. Nessun orario di volo indicato.
 
-File (tutti in questa cartella): i tre PDF IT/EN/ES (la cliente scrive in spagnolo) e `genera_preventivo_pisa_colle.py`
-(`--lingua it|en|es`, `--cliente "Nome"`). Pagina web non prodotta.
+File (tutti in questa cartella): i due PDF IT/ES (la cliente scrive in spagnolo) e `genera_preventivo_pisa_colle.py`
+(`--lingua it|es`, `--cliente "Nome"`). Pagina web non prodotta.
 
 ## Prezzi
 
