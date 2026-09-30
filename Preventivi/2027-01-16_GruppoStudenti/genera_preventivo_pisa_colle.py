@@ -280,6 +280,124 @@ EN = dict(
 )
 
 
+ES = dict(
+    tagline="Alquiler de Autobuses con Conductor  ·  Toscana, Italia",
+    footer1="GiroMunna — Munna Girolamo Giuseppe  ·  Ponte Buggianese (PT), Toscana, Italia  ·  NIF/IVA IT 02124530474",
+    footer2="+39 335 587 4744  ·  info@giromunna.com  ·  giromunna.com",
+    page="pág. %d",
+    title="Presupuesto",
+    subtitle="Traslados desde el aeropuerto de Pisa a Colle di Val d'Elsa y vuelta  ·  16 y 23 de enero de 2027",
+    meta="Preparado para %s  ·  30 de septiembre de 2026  ·  Ref. " + RIF,
+    h_mezzo="El vehículo",
+    mezzo_intro="Un minibús para su grupo de 17-22 personas (estudiantes y profesoras), con conductor profesional.",
+    mezzo_bullet=(
+        "<b>Mercedes-Benz Beluga</b> — 26 plazas para pasajeros más el conductor, 7,64 m. Aire acondicionado, "
+        "asientos ultra cómodos reclinables, minibar, equipo de audio a bordo, amplio maletero."
+    ),
+    mezzo_close=(
+        "Incluso con el grupo completo (20 estudiantes y 2 profesoras, 22 personas) quedan cuatro plazas libres. "
+        "Con sus 7,64 metros, el minibús llega donde un autocar de gran turismo no puede entrar, y eso cuenta en "
+        "Colle di Val d'Elsa, donde las calles alrededor del casco antiguo son estrechas."
+    ),
+    h_servizio="El servicio",
+    svc_head=["Fecha", "Recorrido", "Disponibilidad del vehículo"],
+    svc=[
+        ("Sáb 16 ene 2027",
+         "<b>Aeropuerto de Pisa (PSA) → Colle di Val d'Elsa.</b> "
+         "El conductor les recibe en la sala de llegadas con el cartel de GiroMunna y les ayuda con el equipaje. "
+         "Unos 100 km, algo más de una hora de trayecto, hasta la dirección de su alojamiento. La hora de salida "
+         "depende de la hora de aterrizaje del vuelo, que necesitamos conocer.",
+         "por confirmar según el vuelo"),
+        ("17-22 ene",
+         "<b>Sin servicio solicitado.</b> El vehículo vuelve a la base y no se mantiene en espera: "
+         "estos días no suponen ningún cargo.",
+         "—"),
+        ("Sáb 23 ene 2027",
+         "<b>Colle di Val d'Elsa → Aeropuerto de Pisa (PSA).</b> "
+         "Salida desde el alojamiento con el grupo, unos 100 km hasta las salidas de Pisa. La hora de salida "
+         "se calcula según el vuelo, dejando al grupo tiempo para el check-in.",
+         "por confirmar según el vuelo"),
+    ],
+    h_prezzo="El precio",
+    price_rows=[
+        ("Sáb 16 ene — aeropuerto de Pisa → Colle di Val d'Elsa", "€ 900,00", "+ IVA 10%"),
+        ("Sáb 23 ene — Colle di Val d'Elsa → aeropuerto de Pisa", "€ 900,00", "+ IVA 10%"),
+        ("Manutención y alojamiento del conductor (ninguna noche prevista, véanse las Notas)",
+         "<i>a su cargo</i>", ""),
+    ],
+    price_total_label="Total, sin IVA",
+    price_total="€ 1.800,00",
+    vat_note="+ IVA 10%",
+    grand="Total a pagar, IVA 10% incluido: € 1.980,00.",
+    perhead="Son unos € 90,00 por persona con 22 participantes y unos € 116,00 con 17, ida y vuelta.",
+    h_incluso="Incluido.",
+    incluso=(
+        "Vehículo y conductor, combustible, peajes de autopista, aparcamientos (incluido el aparcamiento de autobuses "
+        "del aeropuerto de Pisa), seguro a todo riesgo, manejo del equipaje y seguimiento del vuelo. "
+        "El 16 de enero el conductor espera sin coste adicional hasta 90 minutos desde la hora de aterrizaje "
+        "real, por mucho que se retrase el vuelo."
+    ),
+    h_nonincluso="No incluido.",
+    nonincluso=(
+        "Manutención y alojamiento del conductor, que quedan a su cargo si hacen falta (véanse las Notas): la reserva "
+        "y el pago corren por su cuenta directamente. Espera más allá de los horarios indicados, € 50,00 por hora y "
+        "vehículo. Regreso después de las 02:00, € 250,00. Excursiones y desplazamientos durante la semana, "
+        "presupuestados bajo petición: la entrada de un autocar turístico en el centro de Florencia requiere un "
+        "permiso aparte (unos € 350), y también el centro de Siena (unos € 160)."
+    ),
+    h_pagamento="Pago",
+    pay_rows=[
+        ("Anticipo del 30% al confirmar", "€ 594,00", "IVA incluido"),
+        ("Saldo, dentro de los 5 días posteriores al servicio del 23 de enero", "€ 1.386,00", ""),
+    ],
+    bank=("Transferencia bancaria a nombre de Munna Girolamo Giuseppe — "
+          "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
+    h_note="Notas",
+    note=[
+        ("<b>Equipaje.</b> Es el punto que merece más atención. El maletero del Beluga admite sin problema unas "
+         "veinte maletas normales, pero para una semana de estancia con 17-22 personas la cuenta se ajusta si cada "
+         "una lleva un trolley grande, además de mochila y equipaje de mano. Indíquennos el número aproximado de "
+         "maletas y avísennos de cualquier bulto de tamaño fuera de lo normal: si hiciera falta más espacio, lo "
+         "organizamos antes, no en el momento de cargar. Las mochilas y el equipaje de mano viajan en el habitáculo, "
+         "bajo los asientos y en los portaequipajes superiores."),
+        ("<b>Número de pasajeros.</b> Este presupuesto es para un vehículo y cubre hasta 26 personas. La cifra que "
+         "nos han indicado, 15-20 estudiantes y dos profesoras, cabe cómodamente a bordo: necesitamos el "
+         "número definitivo para confirmar."),
+        ("<b>El vuelo de llegada del 16 de enero.</b> Necesitamos el número de vuelo y la hora de aterrizaje. "
+         "Si estudiantes y profesoras llegan en vuelos distintos, indíquennos los horarios: esperamos a todos sin "
+         "coste hasta 90 minutos desde el aterrizaje del primer vuelo; pasado ese tiempo se aplican € 50,00 por hora."),
+        ("<b>El vuelo de salida del 23 de enero.</b> De Colle di Val d'Elsa al aeropuerto de Pisa hay algo más de "
+         "una hora de carretera y un grupo necesita margen para el check-in. Envíennos número y hora del vuelo y "
+         "fijamos la salida en función de él. Si el vuelo sale antes de las 09:00, el grupo tendría que salir de "
+         "madrugada: en ese caso el conductor debe dormir en Colle la noche del 22 (véase más abajo)."),
+        ("<b>Manutención y alojamiento del conductor.</b> Con los vuelos de llegada y de salida en horarios normales, "
+         "el conductor sale y regresa el mismo día desde nuestra base y no hace falta ninguna noche. Si el vuelo del "
+         "23 de enero sale temprano por la mañana, hace falta una noche en Colle di Val d'Elsa, la del 22: en ese "
+         "caso la habitación y la cena corren a su cargo y las reservan y pagan directamente. Muchos de nuestros "
+         "clientes alojan al conductor en el mismo establecimiento que el grupo, que es la solución más cómoda "
+         "para todos."),
+        ("<b>Hasta dónde puede llegar el vehículo en Colle di Val d'Elsa.</b> Colle Alta, el casco antiguo, tiene "
+         "acceso restringido. Envíennos la dirección exacta del alojamiento: comprobamos el punto de bajada más "
+         "cercano al que puede llegar un minibús de 7,64 m y les decimos si el grupo tendrá que hacer un tramo a "
+         "pie con el equipaje. Mejor aclararlo ahora que el mismo día."),
+        ("<b>Durante la semana.</b> No se solicita ningún servicio y no cobramos nada. Si profesoras y estudiantes "
+         "quisieran organizar excursiones de un día, por ejemplo a Siena, San Gimignano, Florencia o Pisa, el "
+         "vehículo está a su disposición: presupuestamos cada excursión bajo petición."),
+        ("<b>Para confirmar necesitamos</b> el número definitivo de pasajeros, la dirección exacta del alojamiento "
+         "en Colle di Val d'Elsa, los horarios de los dos vuelos, el número aproximado de maletas, un teléfono "
+         "móvil o WhatsApp de la persona que viaja con el grupo y sus datos de facturación."),
+        ("<b>Disponibilidad y cancelación.</b> El vehículo está libre en este momento y se lo reservamos durante "
+         "toda la validez del presupuesto; la reserva pasa a ser firme al recibir el anticipo. La cancelación es "
+         "gratuita con más de 60 días de antelación al servicio, es decir, hasta el 17 de noviembre de 2026; de 60 "
+         "a 30 días se retiene el anticipo; de 30 a 10 días se cobra el 50% del precio; en los últimos 10 días, el "
+         "100%. Presupuesto válido hasta el 14 de octubre de 2026."),
+    ],
+    closing=("Quedamos a su disposición para cualquier aclaración y a la espera de sus noticias.<br/><br/>"
+             "Un cordial saludo,<br/>"
+             "Girolamo Munna — GiroMunna NCC, Toscana · +39 335 587 4744 · info@giromunna.com"),
+)
+
+
 def styles():
     base = dict(fontName="Helvetica", textColor=INK, leading=13.2, fontSize=9.2)
     return {
@@ -341,7 +459,7 @@ def make_chrome(L):
 
 
 def build(lang, cliente, out):
-    L = IT if lang == "it" else EN
+    L = {"it": IT, "en": EN, "es": ES}[lang]
     S = styles()
     w, _ = A4
     usable = w - 2 * MARGIN
@@ -465,7 +583,7 @@ def build(lang, cliente, out):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--lingua", "--lang", dest="lang", default="it", choices=["it", "en"])
+    ap.add_argument("--lingua", "--lang", dest="lang", default="it", choices=["it", "en", "es"])
     ap.add_argument("--cliente", "--client", dest="cliente", default="María José López")
     ap.add_argument("--out", default=None)
     a = ap.parse_args()

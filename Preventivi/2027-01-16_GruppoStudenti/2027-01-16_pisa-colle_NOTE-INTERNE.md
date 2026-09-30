@@ -6,8 +6,8 @@
 Richiesta: 15/20 studenti + 2 insegnanti (17-22 persone), aeroporto di Pisa → Colle di Val d'Elsa il
 16 gennaio, ritorno il 23 gennaio. Nessun orario di volo indicato.
 
-File (tutti in questa cartella): i due PDF IT/EN e `genera_preventivo_pisa_colle.py`
-(`--lingua it|en`, `--cliente "Nome"`). Pagina web non prodotta.
+File (tutti in questa cartella): i tre PDF IT/EN/ES (la cliente scrive in spagnolo) e `genera_preventivo_pisa_colle.py`
+(`--lingua it|en|es`, `--cliente "Nome"`). Pagina web non prodotta.
 
 ## Prezzi
 
@@ -39,4 +39,3 @@ parcheggio bus di Pisa (~€ 61). Tenuto **alto** come da regola: Girolamo può 
 2. Numero esatto di passeggeri e di valigie (una settimana: il vano regge ~20 valigie normali).
 3. Orari dei due voli, e se tutti arrivano con lo stesso volo.
 4. Indirizzo dell'alloggio a Colle: Colle Alta ha accessi limitati, da verificare dove arriva il Beluga.
-5. Il cliente scrive in spagnolo: se serve, si può aggiungere una terza versione.
