@@ -119,6 +119,9 @@ IT = dict(
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
+        ("<b>La data del servizio.</b> Abbiamo quotato <b>domenica 11 ottobre 2026</b>, come indicato nella "
+         "vostra richiesta (2026-10-11). Vi chiediamo di confermarcela: se intendevate un altro giorno, ditecelo "
+         "e aggiorniamo il preventivo."),
         ("<b>I bagagli sono il punto da guardare per primo.</b> Il gruppo lascia l'hotel di Siena e arriva a "
          "Firenze solo la sera: le valigie viaggiano con voi tutto il giorno. Il vano del Beluga porta bene una "
          "ventina di valigie di misura normale; venticinque valigie grandi non ci stanno tutte. Ci servono quindi "
@@ -227,6 +230,9 @@ EN = dict(
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
+        ("<b>Date of service.</b> We have quoted for <b>Sunday 11 October 2026</b>, as given in your request "
+         "(2026-10-11). Please confirm it: if you meant a different day, let us know and we will update the "
+         "quotation."),
         ("<b>Luggage is the first thing to look at.</b> The group checks out in Siena and only reaches Florence "
          "in the evening, so the suitcases travel with you all day. The Beluga's hold takes about twenty "
          "normal-size suitcases comfortably; twenty-five large ones will not all fit. We therefore need the number "

@@ -70,4 +70,6 @@ margine buono. Se per qualche motivo si dovesse subappaltare a Francesco, rivede
    Monteriggioni, si parte da Siena alle 10:30, stesso prezzo.
 5. **Tempi stretti.** Oggi mancano 11 giorni; dal 1° ottobre il servizio è negli ultimi 10
    giorni (cancellazione 100%). Acconto da incassare subito alla conferma.
-6. **Lingua.** La cliente è spagnola; il preventivo è in italiano e inglese come da regola.
+6. **Data del servizio.** La richiesta dice `2026-10-11`, letta come 11 ottobre (formato
+   anno-mese-giorno) e non 10 novembre. Nel preventivo c'è una nota che chiede conferma alla cliente.
+7. **Lingua.** La cliente è spagnola; il preventivo è in italiano e inglese come da regola.
