@@ -1,0 +1,685 @@
+<title>Preventivo Siena–Firenze, 11 ottobre 2026</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+  .day.released { background: transparent; border-style: dashed; border-color: var(--line-strong); }
+  .day.released .day-date { color: var(--ink-soft); }
+  .day.released .badge { color: var(--ink-soft); background: transparent; border-color: var(--line-strong); }
+  .day.released p { margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<div class="wrap lang" data-lang="it">
+<header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Siena · Monteriggioni · San Gimignano · Firenze
+      <span class="sub">Giornata a disposizione con cambio hotel</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Cliente</span><span class="v">Aularterutas</span></div>
+      <div class="fact"><span class="eyebrow">Data</span><span class="v">dom 11 ott 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passeggeri</span><span class="v">fino a 25</span></div>
+      <div class="fact"><span class="eyebrow">Servizio</span><span class="v">1 giornata</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2026-1011-LA</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">3 ottobre 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Il mezzo</h2>
+    <p class="lede">Un minibus per il gruppo fino a 25 persone, a disposizione per tutta la giornata.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista, 7,64 m</span>
+      <p>Aria condizionata, sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.</p>
+      <p>Con 25 ospiti resta un posto libero, per la guida o l'accompagnatore. Sotto gli 8 metri, il Beluga si muove bene fra i piazzali ai piedi dei borghi e le vie del centro di Firenze.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Distanze e tempi di percorrenza sono stime stradali, traffico escluso.</p>
+    <div class="days">
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">11 ottobre <span class="wd">· domenica</span></span>
+          <span class="badge">Giornata a disposizione</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">08:30</span>
+            <span class="r">NH Siena, Via La Lizza 1 <span class="to">→ Monteriggioni, parcheggio bus sotto le mura</span></span>
+            <span class="d">20 km · 25 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">11:00</span>
+            <span class="r">Monteriggioni <span class="to">→ San Gimignano, terminal bus di Porta San Giovanni</span></span>
+            <span class="d">30 km · 40 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">16:00</span>
+            <span class="r">San Gimignano <span class="to">→ Grand Hotel Adriatico, Via Maso Finiguerra 9, Firenze</span></span>
+            <span class="d">55 km · 1 h 15</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo davanti all'hotel dalle 08:15, impegnato fino all'arrivo a Firenze verso le 17:15-17:30. Bagagli a bordo per tutta la giornata.</div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Servizio</th>
+            <th scope="col" class="num">Importo</th>
+            <th scope="col" class="num">IVA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="svc-date">Dom 11 ott</span>Giornata a disposizione: Siena → Monteriggioni → San Gimignano → Firenze</td><td class="num">€ 1.250,00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Permesso bus turistici del Comune di Siena</td><td class="num">€ 160,00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Permesso di accesso bus al centro di Firenze, fino all'hotel</td><td class="num">€ 350,00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Vitto del conducente, pranzo dell'11 ottobre (nessun pernottamento)</td><td class="num vat"><em>a carico vostro</em></td><td class="num vat"></td></tr>
+          <tr class="tot"><td>Totale, al netto di IVA</td><td class="num">€ 1.760,00</td><td class="num vat">+ 10%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Totale da corrispondere, IVA 10% inclusa
+        <small>circa € 77,00 a persona con 25 partecipanti</small>
+      </span>
+      <span class="fig">€ 1.936,00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Acconto 30% alla conferma</td><td class="num"><strong>€ 580,00</strong></td><td class="num vat">IVA inclusa</td></tr>
+          <tr><td>Saldo, entro 5 giorni dal servizio</td><td class="num"><strong>€ 1.356,00</strong></td><td class="num vat"></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Mezzo e conducente per tutta la giornata, avvicinamento a Siena e rientro alla base, carburante, pedaggi, parcheggi bus a Monteriggioni e San Gimignano, assicurazione completa, carico e scarico dei bagagli.</li>
+      <li><strong>A vostro carico.</strong> Il pranzo del conducente dell'11 ottobre, che organizzate e pagate voi: la cosa più semplice è aggiungerlo al pranzo del gruppo. Nessun pernottamento necessario.</li>
+      <li><strong>Non incluso.</strong> Ingressi, guide, pasti e mance. Attesa oltre gli orari indicati, € 50,00 all'ora. Soste aggiuntive o modifiche all'itinerario e un eventuale mezzo per i bagagli, quotati su richiesta.</li>
+      <li><strong>Prenotazione e cancellazione.</strong> Definitiva alla ricezione dell'acconto. Cancellazione gratuita oltre 60 giorni; da 60 a 30 giorni si trattiene l'acconto; da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%. Mancando oggi 11 giorni, la prenotazione è nella fascia da 30 a 10 giorni, e dal 1° ottobre negli ultimi 10.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Note</h2>
+    <ul class="conds">
+      <li><strong>Bagagli.</strong> Il gruppo lascia Siena e arriva a Firenze la sera: le valigie viaggiano tutto il giorno. Il vano del Beluga porta bene una ventina di valigie normali; 25 valigie grandi non ci stanno tutte. Servono numero e misura dei bagagli. Soluzioni: una valigia media a testa, oppure un furgone che porta i bagagli da Siena all'hotel di Firenze, quotato su richiesta.</li>
+      <li><strong>Orari.</strong> Letti come partenze: 11:00 da Monteriggioni e 16:00 da San Gimignano. Se le 11:00 sono l'arrivo a Monteriggioni, si parte da Siena alle 10:30, stesso prezzo.</li>
+      <li><strong>Arrivo a Firenze.</strong> Via Maso Finiguerra è nel centro storico: per arrivare davanti all'hotel serve il permesso bus (€ 350,00, incluso). Senza, discesa al punto bus autorizzato più vicino, 10-15 minuti a piedi: con i bagagli lo sconsigliamo.</li>
+      <li><strong>Partenza da Siena.</strong> L'NH Siena è fuori dalle mura, raggiungibile dal mezzo, ma il Comune richiede comunque il permesso bus (€ 160,00, incluso).</li>
+      <li><strong>Passeggeri.</strong> 26 posti oltre all'autista: con 25 ospiti resta un posto per la guida. Oltre i 26, avvisateci subito.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Interno — non fa parte del preventivo inviato</div>
+    <h2>Come è stato costruito il prezzo</h2>
+    <p>Riferimento a mezzo singolo: <strong>Le Filigare</strong> (GM-2026-0821-LF), giornata a disposizione di ~80 km e 5 ore a € 809,00 netti. Qui la giornata è di circa 9 ore di servizio (08:15-17:30), ~105 km con il gruppo, più l'avvicinamento a vuoto Ponte Buggianese → Siena (~115 km) e il rientro Firenze → base (~50 km): circa 270 km e 12 ore di impegno del conducente. Da qui € 1.250,00, tenuto alto come da regola.</p>
+    <p>I due permessi sono voci a parte, così se il cliente rinuncia all'ingresso a Firenze si tolgono € 350,00 senza toccare il resto.</p>
+    <h3>Margine</h3>
+    <p>Mezzo di proprietà, nessun pernottamento. Costo diretto stimato € 300-400 per la giornata (carburante su ~270 km, pedaggi, parcheggi, conducente): margine buono.</p>
+    <h3>Da chiarire prima di inviare</h3>
+    <ol>
+      <li><strong>Disponibilità del Beluga domenica 11 ottobre.</strong> Nel preventivo non c'è scritto che il mezzo è libero: va verificato.</li>
+      <li><strong>Importi dei permessi.</strong> Siena ~€ 160 e Firenze ~€ 350 sono le cifre di riferimento: verificare le tariffe attuali per un bus da 26 posti e la procedura per una domenica.</li>
+      <li><strong>Bagagli.</strong> Con 25 persone e cambio hotel il vano non basta per 25 valigie grandi: è il punto che può far saltare il servizio.</li>
+      <li><strong>Orari</strong> — 11:00 e 16:00 letti come partenze.</li>
+      <li><strong>Tempi stretti.</strong> Dal 1° ottobre il servizio è negli ultimi 10 giorni: acconto da incassare subito alla conferma.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2026-1011-LA · 30 settembre 2026</span>
+  </footer>
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+<header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Siena · Monteriggioni · San Gimignano · Florence
+      <span class="sub">Full day at disposal with hotel change</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Client</span><span class="v">Aularterutas</span></div>
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">Sun 11 Oct 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passengers</span><span class="v">up to 25</span></div>
+      <div class="fact"><span class="eyebrow">Service</span><span class="v">1 day</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2026-1011-LA</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">3 October 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicle</h2>
+    <p class="lede">One minibus for the group of up to 25, at your disposal for the whole day.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus driver, 7.64 m</span>
+      <p>Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.</p>
+      <p>With 25 guests one seat stays free, for the guide or tour leader. At under 8 metres the Beluga moves easily between the coach parks below the hill towns and the streets of central Florence.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">Distances and journey times are road estimates, excluding traffic.</p>
+    <div class="days">
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">11 October <span class="wd">· Sunday</span></span>
+          <span class="badge">Full day at disposal</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">08:30</span>
+            <span class="r">NH Siena, Via La Lizza 1 <span class="to">→ Monteriggioni, coach park below the walls</span></span>
+            <span class="d">20 km · 25 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">11:00</span>
+            <span class="r">Monteriggioni <span class="to">→ San Gimignano, Porta San Giovanni coach terminal</span></span>
+            <span class="d">30 km · 40 min</span>
+          </div>
+          <div class="leg">
+            <span class="t">16:00</span>
+            <span class="r">San Gimignano <span class="to">→ Grand Hotel Adriatico, Via Maso Finiguerra 9, Florence</span></span>
+            <span class="d">55 km · 1 h 15</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle at the hotel from 08:15, engaged until arrival in Florence around 17:15-17:30. Luggage on board all day.</div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col" class="num">Amount</th>
+            <th scope="col" class="num">VAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="svc-date">Sun 11 Oct</span>Full day at disposal: Siena → Monteriggioni → San Gimignano → Florence</td><td class="num">€ 1,250.00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>City of Siena tourist coach permit</td><td class="num">€ 160.00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Coach access permit for central Florence, to the hotel door</td><td class="num">€ 350.00</td><td class="num vat">+ 10%</td></tr>
+          <tr><td>Driver's meal, lunch on 11 October (no overnight stay)</td><td class="num vat"><em>at your charge</em></td><td class="num vat"></td></tr>
+          <tr class="tot"><td>Total, excluding VAT</td><td class="num">€ 1,760.00</td><td class="num vat">+ 10%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Total payable, VAT 10% included
+        <small>about € 77.00 per person with 25 participants</small>
+      </span>
+      <span class="fig">€ 1,936.00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Deposit 30% on confirmation</td><td class="num"><strong>€ 580.00</strong></td><td class="num vat">VAT included</td></tr>
+          <tr><td>Balance, within 5 days of the service</td><td class="num"><strong>€ 1,356.00</strong></td><td class="num vat"></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Vehicle and driver for the whole day, positioning to Siena and return to base, fuel, tolls, coach parking at Monteriggioni and San Gimignano, full insurance, luggage loading and unloading.</li>
+      <li><strong>At your charge.</strong> The driver's lunch on 11 October, arranged and paid for by you: the simplest option is to add him to the group lunch. No overnight stay is needed.</li>
+      <li><strong>Not included.</strong> Entrance fees, guides, meals and gratuities. Waiting beyond the times shown, € 50.00 per hour. Additional stops, itinerary changes and any separate luggage vehicle, quoted on request.</li>
+      <li><strong>Booking and cancellation.</strong> Firm on receipt of the deposit. Free cancellation more than 60 days before; 60 to 30 days, deposit retained; 30 to 10 days, 50%; last 10 days, 100%. With 11 days to go today, the booking is in the 30-to-10-day band, and from 1 October in the last 10 days.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <ul class="conds">
+      <li><strong>Luggage.</strong> The group leaves Siena and reaches Florence in the evening, so the suitcases travel all day. The Beluga's hold takes about twenty normal suitcases; 25 large ones will not all fit. We need the number and size of the bags. Solutions: one medium suitcase each, or a van taking the luggage from Siena to the Florence hotel, quoted on request.</li>
+      <li><strong>Timings.</strong> Read as departures: 11:00 from Monteriggioni and 16:00 from San Gimignano. If 11:00 is the arrival in Monteriggioni, we leave Siena at 10:30, same price.</li>
+      <li><strong>Arriving in Florence.</strong> Via Maso Finiguerra is in the historic centre: reaching the hotel door requires the coach permit (€ 350.00, included). Without it, drop-off at the nearest authorised coach stop, 10-15 minutes' walk: not recommended with luggage.</li>
+      <li><strong>Leaving Siena.</strong> The NH Siena is outside the walls and reachable by the vehicle, but the city still requires its coach permit (€ 160.00, included).</li>
+      <li><strong>Passengers.</strong> 26 seats besides the driver: with 25 guests one seat remains for the guide. Above 26, please tell us straight away.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal — not part of the quotation sent</div>
+    <h2>How the price was built</h2>
+    <p>Single-vehicle benchmark: <strong>Le Filigare</strong> (GM-2026-0821-LF), day at disposal of ~80 km and 5 hours at € 809.00 net. This day runs about 9 hours of service (08:15-17:30), ~105 km with the group, plus the empty run Ponte Buggianese → Siena (~115 km) and the return Florence → base (~50 km): about 270 km and a 12-hour driver day. Hence € 1,250.00, kept high as per the rule.</p>
+    <p>The two permits are separate lines, so if the client drops the Florence entry € 350.00 comes off without touching the rest.</p>
+    <h3>Margin</h3>
+    <p>Owned vehicle, no overnight stay. Estimated direct cost € 300-400 for the day: healthy margin.</p>
+    <h3>To settle before sending</h3>
+    <ol>
+      <li><strong>Beluga availability on Sunday 11 October.</strong> The quotation does not state the vehicle is free: check it.</li>
+      <li><strong>Permit amounts.</strong> Siena ~€ 160 and Florence ~€ 350 are reference figures: check current rates for a 26-seat coach and the Sunday procedure.</li>
+      <li><strong>Luggage.</strong> 25 people changing hotel: the hold will not take 25 large suitcases.</li>
+      <li><strong>Timings</strong> — 11:00 and 16:00 read as departures.</li>
+      <li><strong>Short notice.</strong> From 1 October the service is inside the last 10 days: collect the deposit on confirmation.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2026-1011-LA · 30 September 2026</span>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
