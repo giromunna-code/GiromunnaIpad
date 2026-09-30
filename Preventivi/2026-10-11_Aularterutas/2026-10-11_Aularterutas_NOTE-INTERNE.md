@@ -30,12 +30,12 @@ Domenica 11 ottobre 2026, giornata a disposizione, fino a 25 persone, Beluga:
 |---|---|
 | Giornata a disposizione Siena → Monteriggioni → San Gimignano → Firenze | € 1.250,00 |
 | Permesso bus Comune di Siena | € 160,00 |
-| Permesso accesso bus centro di Firenze | € 350,00 |
+| Permesso accesso bus centro di Firenze | € 450,00 |
 | Vitto conducente (pranzo), nessun pernottamento | a carico del cliente |
 
-**Totale netto € 1.760,00 · IVA 10% € 176,00 · Totale € 1.936,00** (≈ € 77,00 a persona su 25)
+**Totale netto € 1.860,00 · IVA 10% € 186,00 · Totale € 2.046,00** (≈ € 82,00 a persona su 25)
 
-Acconto 30% € 580,00 — saldo € 1.356,00.
+Acconto 30% € 610,00 — saldo € 1.436,00.
 
 ## Come è stato costruito il prezzo
 
@@ -48,7 +48,7 @@ Riferimento a mezzo singolo: **Le Filigare** (GM-2026-0821-LF), giornata a dispo
 - in tutto ~270 km e una giornata del conducente di circa 12 ore (partenza ~06:45, rientro ~18:30).
 
 Da qui € 1.250,00 per la giornata, tenuto alto. I permessi sono righe a parte: se il cliente
-rinuncia all'ingresso nel centro di Firenze si tolgono € 350,00 senza rifare il resto.
+rinuncia all'ingresso nel centro di Firenze si tolgono € 450,00 senza rifare il resto.
 Nessun importo del Corte Francigena usato come base.
 
 ## Margine
@@ -60,8 +60,8 @@ margine buono. Se per qualche motivo si dovesse subappaltare a Francesco, rivede
 
 1. **Disponibilità del Beluga domenica 11 ottobre.** Il preventivo non dice che il mezzo è
    libero: va verificato.
-2. **Importi dei permessi.** Siena ~€ 160 e Firenze ~€ 350 sono le cifre di riferimento:
-   controllare le tariffe attuali per un 26 posti e la procedura per la domenica.
+2. **Importi dei permessi.** Firenze € 450, confermato da Girolamo. Siena ~€ 160 resta la
+   cifra di riferimento: controllare la tariffa attuale per un 26 posti.
 3. **Bagagli.** Cambio hotel Siena → Firenze con 25 persone: il vano porta una ventina di
    valigie normali, non 25 grandi. Nel preventivo si propongono una valigia media a testa o un
    furgone bagagli separato (da quotare se lo chiedono).

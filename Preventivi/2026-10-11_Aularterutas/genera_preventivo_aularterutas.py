@@ -88,15 +88,15 @@ IT = dict(
         ("Dom 11 ott — giornata a disposizione: Siena → Monteriggioni → San Gimignano → Firenze",
          "€ 1.250,00", "+ IVA 10%"),
         ("Permesso bus turistici del Comune di Siena", "€ 160,00", "+ IVA 10%"),
-        ("Permesso di accesso bus al centro di Firenze, fino all'hotel", "€ 350,00", "+ IVA 10%"),
+        ("Permesso di accesso bus al centro di Firenze, fino all'hotel", "€ 450,00", "+ IVA 10%"),
         ("Vitto del conducente, pranzo dell'11 ottobre (nessun pernottamento)",
          "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 1.760,00",
+    price_total="€ 1.860,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 1.936,00.",
-    perhead="Sono circa € 77,00 a persona con 25 partecipanti.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 2.046,00.",
+    perhead="Sono circa € 82,00 a persona con 25 partecipanti.",
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente per tutta la giornata, avvicinamento a Siena e rientro dalla nostra base, carburante, "
@@ -111,8 +111,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 580,00", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 1.356,00", ""),
+        ("Acconto 30% alla conferma", "€ 610,00", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 1.436,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -133,7 +133,7 @@ IT = dict(
         ("<b>L'arrivo a Firenze.</b> Via Maso Finiguerra è nel centro storico, dove un bus turistico entra "
          "solo con un permesso comunale a parte. Lo abbiamo messo a preventivo per portarvi davanti all'hotel "
          "con le valigie. In alternativa possiamo lasciarvi al punto di discesa bus autorizzato più vicino, a "
-         "10-15 minuti a piedi, e togliere i € 350,00 del permesso: con i bagagli al seguito ve lo sconsigliamo."),
+         "10-15 minuti a piedi, e togliere i € 450,00 del permesso: con i bagagli al seguito ve lo sconsigliamo."),
         ("<b>La partenza da Siena.</b> L'NH Siena è in Via La Lizza, fuori dalle mura e raggiungibile dal mezzo. "
          "Il Comune di Siena richiede comunque il permesso per i bus turistici anche solo per una salita di "
          "passeggeri: è la voce da € 160,00 in tabella, la sbrighiamo noi."),
@@ -194,15 +194,15 @@ EN = dict(
         ("Sun 11 Oct — full day at disposal: Siena → Monteriggioni → San Gimignano → Florence",
          "€ 1,250.00", "+ VAT 10%"),
         ("City of Siena tourist coach permit", "€ 160.00", "+ VAT 10%"),
-        ("Coach access permit for central Florence, to the hotel door", "€ 350.00", "+ VAT 10%"),
+        ("Coach access permit for central Florence, to the hotel door", "€ 450.00", "+ VAT 10%"),
         ("Driver's meal, lunch on 11 October (no overnight stay)",
          "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 1,760.00",
+    price_total="€ 1,860.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 1,936.00.",
-    perhead="That is about € 77.00 per person with 25 participants.",
+    grand="Total payable, VAT 10% included: € 2,046.00.",
+    perhead="That is about € 82.00 per person with 25 participants.",
     h_incluso="Included.",
     incluso=(
         "Vehicle and driver for the whole day, positioning to Siena and return to our base, fuel, tolls, coach "
@@ -217,8 +217,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 580.00", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 1,356.00", ""),
+        ("Deposit 30% on confirmation", "€ 610.00", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 1,436.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -239,7 +239,7 @@ EN = dict(
         ("<b>Arriving in Florence.</b> Via Maso Finiguerra is in the historic centre, which a tourist coach may "
          "only enter with a separate city permit. We have included it so we can bring you to the hotel door with "
          "your luggage. Alternatively we can drop you at the nearest authorised coach stop, 10-15 minutes' walk "
-         "away, and remove the € 350.00 permit: with luggage in tow we would not recommend it."),
+         "away, and remove the € 450.00 permit: with luggage in tow we would not recommend it."),
         ("<b>Leaving Siena.</b> The NH Siena is on Via La Lizza, outside the walls and reachable by the vehicle. "
          "The City of Siena still requires its tourist coach permit even for a passenger pick-up: that is the "
          "€ 160.00 line in the table, and we take care of it."),
