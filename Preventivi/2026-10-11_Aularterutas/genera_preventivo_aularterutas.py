@@ -66,7 +66,8 @@ IT = dict(
         "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli."
     ),
     mezzo_close=(
-        "Con 25 ospiti a bordo resta un posto libero, per esempio per la vostra guida o l'accompagnatore. "
+        "Con 25 ospiti a bordo resta un posto libero, per esempio per la vostra guida o l'accompagnatore; "
+        "se a bordo foste più di 26, avvisateci subito. "
         "Sotto gli 8 metri di lunghezza, il Beluga si muove bene fra i piazzali ai piedi dei borghi e le vie "
         "del centro di Firenze, dove un autobus gran turismo fatica o non arriva."
     ),
@@ -88,21 +89,22 @@ IT = dict(
         ("Dom 11 ott — giornata a disposizione: Siena → Monteriggioni → San Gimignano → Firenze",
          "€ 1.250,00", "+ IVA 10%"),
         ("Permesso bus turistici del Comune di Siena", "€ 160,00", "+ IVA 10%"),
+        ("Parcheggio bus Il Cipressino, Monteriggioni", "€ 20,00", "+ IVA 10%"),
         ("Checkpoint bus del Comune di San Gimignano", "€ 220,00", "+ IVA 10%"),
         ("Permesso di accesso bus al centro di Firenze, fino all'hotel", "€ 450,00", "+ IVA 10%"),
         ("Vitto del conducente, pranzo dell'11 ottobre (nessun pernottamento)",
          "<i>a carico vostro</i>", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 2.080,00",
+    price_total="€ 2.100,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 2.288,00.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 2.310,00.",
     perhead="Sono circa € 92,00 a persona con 25 partecipanti.",
     h_incluso="Incluso.",
     incluso=(
         "Mezzo e conducente per tutta la giornata, avvicinamento a Siena e rientro dalla nostra base, carburante, "
-        "pedaggi, parcheggio bus a Monteriggioni, assicurazione completa, carico e scarico dei "
-        "bagagli. I permessi di Siena e Firenze e il checkpoint di San Gimignano sono indicati a parte nella tabella del prezzo."
+        "pedaggi, assicurazione completa, carico e scarico dei bagagli. I permessi di Siena e Firenze, il "
+        "parcheggio di Monteriggioni e il checkpoint di San Gimignano sono indicati a parte nella tabella del prezzo."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
@@ -112,8 +114,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 680,00", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 1.608,00", ""),
+        ("Acconto 30% alla conferma", "€ 690,00", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 1.620,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -148,8 +150,6 @@ IT = dict(
         ("<b>Vitto del conducente.</b> Non serve alcun pernottamento: il conducente parte la mattina dalla nostra "
          "base e ci rientra la sera. Resta a vostro carico il suo pranzo dell'11 ottobre, che organizzate e pagate "
          "voi: la cosa più semplice è aggiungerlo al pranzo del gruppo a San Gimignano."),
-        ("<b>Il numero dei passeggeri.</b> Il Beluga ha 26 posti oltre all'autista. Con 25 ospiti resta un posto "
-         "per la guida o l'accompagnatore; se a bordo foste più di 26, avvisateci subito."),
         ("<b>Per confermare ci servono</b> il numero definitivo dei passeggeri, numero e misura dei bagagli, un "
          "recapito telefonico o WhatsApp della persona che accompagna il gruppo e i vostri dati di fatturazione."),
         ("<b>Prenotazione e cancellazione.</b> La prenotazione diventa definitiva alla ricezione dell'acconto. "
@@ -178,7 +178,8 @@ EN = dict(
         "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold."
     ),
     mezzo_close=(
-        "With 25 guests on board one seat stays free, for your guide or tour leader. At under 8 metres the "
+        "With 25 guests on board one seat stays free, for your guide or tour leader; if there would be more "
+        "than 26 on board, please tell us straight away. At under 8 metres the "
         "Beluga moves easily between the coach parks below the hill towns and the streets of central Florence, "
         "where a full-size coach struggles or cannot go."
     ),
@@ -199,21 +200,22 @@ EN = dict(
         ("Sun 11 Oct — full day at disposal: Siena → Monteriggioni → San Gimignano → Florence",
          "€ 1,250.00", "+ VAT 10%"),
         ("City of Siena tourist coach permit", "€ 160.00", "+ VAT 10%"),
+        ("Il Cipressino coach park, Monteriggioni", "€ 20.00", "+ VAT 10%"),
         ("City of San Gimignano coach checkpoint", "€ 220.00", "+ VAT 10%"),
         ("Coach access permit for central Florence, to the hotel door", "€ 450.00", "+ VAT 10%"),
         ("Driver's meal, lunch on 11 October (no overnight stay)",
          "<i>at your charge</i>", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 2,080.00",
+    price_total="€ 2,100.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 2,288.00.",
+    grand="Total payable, VAT 10% included: € 2,310.00.",
     perhead="That is about € 92.00 per person with 25 participants.",
     h_incluso="Included.",
     incluso=(
-        "Vehicle and driver for the whole day, positioning to Siena and return to our base, fuel, tolls, coach "
-        "parking at Monteriggioni, full insurance, luggage loading and unloading. The Siena and Florence permits "
-        "and the San Gimignano checkpoint are shown separately in the price table."
+        "Vehicle and driver for the whole day, positioning to Siena and return to our base, fuel, tolls, "
+        "full insurance, luggage loading and unloading. The Siena and Florence permits, the Monteriggioni coach "
+        "park and the San Gimignano checkpoint are shown separately in the price table."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
@@ -223,8 +225,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 680.00", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 1,608.00", ""),
+        ("Deposit 30% on confirmation", "€ 690.00", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 1,620.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -259,8 +261,6 @@ EN = dict(
         ("<b>The driver's meal.</b> No overnight stay is needed: the driver leaves our base in the morning and "
          "returns in the evening. His lunch on 11 October remains at your charge, arranged and paid for by you: "
          "the simplest option is to add him to the group lunch in San Gimignano."),
-        ("<b>Passenger numbers.</b> The Beluga has 26 seats besides the driver. With 25 guests one seat remains "
-         "for the guide or tour leader; if there would be more than 26 on board, please tell us straight away."),
         ("<b>To confirm we need</b> the final passenger count, the number and size of the bags, a mobile or "
          "WhatsApp contact for the person accompanying the group, and your invoicing details."),
         ("<b>Booking and cancellation.</b> The booking becomes firm on receipt of the deposit. Cancellation is "

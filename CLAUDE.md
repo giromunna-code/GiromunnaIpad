@@ -109,7 +109,8 @@ sotto mercato svaluta il servizio e non si recupera.
 - L'aeroporto di Firenze non comporta oneri di accesso; quello di Pisa ha il parcheggio bus
   (circa € 61). L'ingresso di un bus turistico nel centro di Firenze richiede un permesso a
   parte (€ 450). Siena ha il permesso comunale per i bus turistici (circa € 160). San Gimignano ha il
-  checkpoint per i bus turistici (€ 220).
+  checkpoint per i bus turistici (€ 220). Monteriggioni ha il parcheggio bus Il Cipressino, sotto
+  le mura (a preventivo € 20; la tariffa trovata in rete è € 10 la giornata, da verificare).
 
 ## Struttura del repository
 
