@@ -1,6 +1,6 @@
 # Note interne — Pisa (PSA) ⇄ Colle di Val d'Elsa, 16 e 23 gennaio 2027
 
-**Cliente:** gruppo di studenti (nome non indicato; richiesta in spagnolo) · **Rif.:** GM-2027-0116-GS ·
+**Cliente:** María José López, insegnante di un istituto di istruzione secondaria a Siviglia (Spagna); scrive in spagnolo · **Rif.:** GM-2027-0116-GS ·
 **Preparato:** 30 settembre 2026 · **Validità:** 14 ottobre 2026
 
 Richiesta: 15/20 studenti + 2 insegnanti (17-22 persone), aeroporto di Pisa → Colle di Val d'Elsa il
@@ -35,7 +35,7 @@ parcheggio bus di Pisa (~€ 61). Tenuto **alto** come da regola: Girolamo può 
 
 ## Da chiarire con il cliente
 
-1. Nome del cliente/scuola e mail — il PDF porta "Gruppo studenti".
+1. Mail e nome della scuola — il PDF porta solo "María José López".
 2. Numero esatto di passeggeri e di valigie (una settimana: il vano regge ~20 valigie normali).
 3. Orari dei due voli, e se tutti arrivano con lo stesso volo.
 4. Indirizzo dell'alloggio a Colle: Colle Alta ha accessi limitati, da verificare dove arriva il Beluga.
