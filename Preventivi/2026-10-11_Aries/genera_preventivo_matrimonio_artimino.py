@@ -107,7 +107,8 @@ IT = dict(
     price_total="€ 2.200,00",
     vat_note="+ IVA 10%",
     grand="Totale da corrispondere, IVA 10% inclusa: € 2.420,00.",
-    perhead="Sono € 55,00 a ospite per andata e ritorno, su 44 ospiti.",
+    perhead=("Sono € 55,00 a ospite per andata e ritorno, su 44 ospiti. "
+             "<b>I prezzi comprendono già la vostra commissione del 10%, pari a € 200,00.</b>"),
     h_incluso="Incluso.",
     incluso=(
         "Due mezzi con i rispettivi conducenti, carburante, pedaggi, parcheggi e assicurazione completa. "
@@ -221,7 +222,8 @@ EN = dict(
     price_total="€ 2,200.00",
     vat_note="+ VAT 10%",
     grand="Total payable, VAT 10% included: € 2,420.00.",
-    perhead="That is € 55.00 per guest for the round trip, across 44 guests.",
+    perhead=("That is € 55.00 per guest for the round trip, across 44 guests. "
+             "<b>The prices already include your 10% commission, amounting to € 200.00.</b>"),
     h_incluso="Included.",
     incluso=(
         "Two vehicles with their drivers, fuel, tolls, parking and full insurance. No access charges apply: "

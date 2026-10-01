@@ -39,8 +39,8 @@ per l'agenzia**.
 
 IVA 10% € 220,00 · **Totale IVA inclusa € 2.420,00** — acconto € 726,00, saldo € 1.694,00.
 
-Il PDF mostra solo i prezzi con la commissione già dentro e non la nomina, così l'agenzia
-può girarlo agli sposi.
+Su indicazione di Girolamo, il PDF dice esplicitamente che i prezzi comprendono la
+commissione del 10% per le wedding planner (€ 200).
 
 ## Da decidere / verificare
 
