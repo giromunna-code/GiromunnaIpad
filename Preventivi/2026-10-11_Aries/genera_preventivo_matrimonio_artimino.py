@@ -60,6 +60,9 @@ IT = dict(
     meta="Preparato per %s  ·  1 ottobre 2026  ·  Rif. " + RIF,
     h_mezzo="I mezzi",
     mezzo_intro=(
+        "<b>Il servizio riguarda soltanto due gruppi: i 18 ospiti del Borgo di Villa Castelletti e i 26 "
+        "di Villa la Malva.</b> Non sono compresi i 7 ospiti dell'Airbnb di Lastra a Signa né i 3 di "
+        "Villa le Farnette a Comeano, per i quali non abbiamo disponibilità.<br/><br/>"
         "Due minibus, uno per ciascuna struttura, ognuno con il proprio conducente: gli ospiti salgono "
         "davanti alla propria villa e scendono alla Tenuta senza cambi e senza giri intermedi."
     ),
@@ -171,6 +174,9 @@ EN = dict(
     meta="Prepared for %s  ·  1 October 2026  ·  Ref. " + RIF,
     h_mezzo="The vehicles",
     mezzo_intro=(
+        "<b>The service covers only two groups: the 18 guests at Borgo di Villa Castelletti and the 26 at "
+        "Villa la Malva.</b> It does not include the 7 guests at the Airbnb in Lastra a Signa or the 3 at "
+        "Villa le Farnette in Comeano, for whom we have no availability.<br/><br/>"
         "Two minibuses, one for each property, each with its own driver: guests board in front of their own "
         "villa and step off at the Tenuta, with no changes and no detours."
     ),
