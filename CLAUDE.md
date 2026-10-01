@@ -11,9 +11,9 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
   le mail ai clienti e qualsiasi altro materiale destinato all'esterno: i clienti scrivono
   spesso in inglese, ma la versione che Girolamo deve poter leggere è quella italiana.
   Nessuna delle due sostituisce l'altra.
-- **Mai preparare bozze di mail e mai inviare niente.** Alle mail ci pensa Girolamo: scrive
-  lui ai clienti, con i suoi tempi e le sue parole. Il lavoro si ferma al documento
-  consegnato — niente bozze in Gmail, niente invii, e non serve nemmeno proporlo.
+- **Ogni preventivo si consegna con il testo della mail da inviare al cliente**, in italiano
+  e in inglese, salvato nella cartella del preventivo (`MAIL.md`) e riportato in chat. La mail
+  la invia Girolamo: non si invia mai niente e non si creano bozze in Gmail.
 - **La risposta deve pesare quanto la richiesta.** Se Girolamo chiede una risposta breve
   (per esempio "non ho disponibilità"), si scrivono quelle due righe, in italiano e in
   inglese, e basta: niente ricerche, niente preventivo, niente PDF o file non richiesti.
