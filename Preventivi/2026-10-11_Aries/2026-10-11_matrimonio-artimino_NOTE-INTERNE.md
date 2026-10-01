@@ -27,26 +27,25 @@ Nel preventivo è detto che per loro non c'è disponibilità.
 
 ## Prezzi
 
-| Voce | Netto |
-|---|---|
-| Beluga, andata e ritorno | € 1.000,00 |
-| Tourengo, andata e ritorno | € 1.000,00 |
-| Supplemento rientro dopo le 02:00, 2 × € 250 | € 500,00 |
+Prezzi decisi da Girolamo: **€ 1.000 + IVA per mezzo**, andata e ritorno alle 03:00, rientro
+notturno compreso (niente supplemento separato dopo le 02:00), **più il 10% di commissione
+per l'agenzia**.
 
-**Totale netto € 2.500,00 · IVA 10% € 250,00 · Totale € 2.750,00** — acconto € 825,00, saldo € 1.925,00.
+| Voce | Al cliente (netto) | Di cui commissione Aries | A GiroMunna |
+|---|---|---|---|
+| Beluga, andata e ritorno | € 1.100,00 | € 100,00 | € 1.000,00 |
+| Tourengo, andata e ritorno | € 1.100,00 | € 100,00 | € 1.000,00 |
+| **Totale** | **€ 2.200,00** | **€ 200,00** | **€ 2.000,00** |
 
-Ogni andata e ogni ritorno è un trasferimento breve (6–15 km), ma i mezzi partono e rientrano da
-Ponte Buggianese (~40 km da Artimino), quindi sono quattro uscite in tutto, una di notte.
-Riferimento Le Filigare: € 500 netti per un trasferimento di ~50 km.
+IVA 10% € 220,00 · **Totale IVA inclusa € 2.420,00** — acconto € 726,00, saldo € 1.694,00.
+
+Il PDF mostra solo i prezzi con la commissione già dentro e non la nomina, così l'agenzia
+può girarlo agli sposi.
 
 ## Da decidere / verificare
 
-1. **Commissione.** L'agenzia chiede il prezzo "incluso di commissione" senza indicare la
-   percentuale. I prezzi sono stati tenuti alti per assorbirla: con una commissione del 10%
-   (€ 250 sul netto) a GiroMunna restano € 2.250. Il PDF non nomina la commissione, così
-   l'agenzia può girarlo agli sposi; la percentuale va detta nella mail.
-2. **Costo del Tourengo con Francesco** — da concordare prima di inviare.
-3. Il Beluga è pieno a 26: se cresce anche di una persona non basta.
-4. Il Tourengo con 18 ospiti ha 10 posti liberi: 7 (Lastra a Signa) + 3 (Comeano) = 10.
+1. **Costo del Tourengo con Francesco** — da concordare prima di inviare.
+2. Il Beluga è pieno a 26: se cresce anche di una persona non basta.
+3. Il Tourengo con 18 ospiti ha 10 posti liberi: 7 (Lastra a Signa) + 3 (Comeano) = 10.
    Volendo, potrebbe prendere anche loro, ma l'andata di Castelletti e dell'Airbnb è alla
    stessa ora (14:30): bisognerebbe spostare un ritiro.

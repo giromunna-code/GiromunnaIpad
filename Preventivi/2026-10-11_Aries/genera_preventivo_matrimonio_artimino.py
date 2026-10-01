@@ -97,15 +97,14 @@ IT = dict(
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Beluga — Villa la Malva – Tenuta di Artimino, andata e ritorno", "€ 1.000,00", "+ IVA 10%"),
-        ("Tourengo — Borgo di Villa Castelletti – Tenuta di Artimino, andata e ritorno", "€ 1.000,00", "+ IVA 10%"),
-        ("Supplemento per il rientro dopo le 02:00, € 250,00 per ciascuno dei due mezzi", "€ 500,00", "+ IVA 10%"),
+        ("Beluga — Villa la Malva – Tenuta di Artimino, andata e ritorno alle 03:00", "€ 1.100,00", "+ IVA 10%"),
+        ("Tourengo — Borgo di Villa Castelletti – Tenuta di Artimino, andata e ritorno alle 03:00", "€ 1.100,00", "+ IVA 10%"),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 2.500,00",
+    price_total="€ 2.200,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 2.750,00.",
-    perhead="Sono € 62,50 a ospite per andata e ritorno, su 44 ospiti.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 2.420,00.",
+    perhead="Sono € 55,00 a ospite per andata e ritorno, su 44 ospiti.",
     h_incluso="Incluso.",
     incluso=(
         "Due mezzi con i rispettivi conducenti, carburante, pedaggi, parcheggi e assicurazione completa. "
@@ -121,8 +120,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 825,00", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 1.925,00", ""),
+        ("Acconto 30% alla conferma", "€ 726,00", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 1.694,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -141,9 +140,9 @@ IT = dict(
          "famiglie con bambini e chi ha un volo il giorno dopo di solito vogliono rientrare prima. "
          "Se pensate che serva, possiamo aggiungere una corsa di ritorno intorno a mezzanotte e mezza: "
          "ditecelo prima della conferma e ve la quotiamo."),
-        ("<b>Il rientro dopo le 02:00.</b> La partenza alle 03:00 porta il servizio oltre le 02:00, "
-         "e per questo abbiamo indicato il supplemento di € 250,00 per mezzo. Se il ritorno venisse "
-         "anticipato a prima delle 02:00, il supplemento non si applica e lo togliamo dal totale."),
+        ("<b>Il rientro notturno è compreso.</b> Di norma un rientro dopo le 02:00 comporta un "
+         "supplemento di € 250,00 per mezzo: per questo servizio lo abbiamo già compreso nel prezzo, "
+         "con la partenza dalla Tenuta alle 03:00."),
         ("<b>Ritardi a fine serata.</b> I mezzi sono pronti alla Tenuta dalle 02:45. Se la festa si "
          "prolunga, l'attesa oltre le 03:00 si conteggia a € 50,00 all'ora per mezzo. Vi chiediamo di "
          "indicarci chi, fra voi coordinatrici o gli sposi, può dare al conducente il via alla partenza."),
@@ -209,15 +208,14 @@ EN = dict(
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Beluga — Villa la Malva – Tenuta di Artimino, outbound and return", "€ 1,000.00", "+ VAT 10%"),
-        ("Tourengo — Borgo di Villa Castelletti – Tenuta di Artimino, outbound and return", "€ 1,000.00", "+ VAT 10%"),
-        ("Supplement for return after 02:00, € 250.00 for each of the two vehicles", "€ 500.00", "+ VAT 10%"),
+        ("Beluga — Villa la Malva – Tenuta di Artimino, outbound and return at 03:00", "€ 1,100.00", "+ VAT 10%"),
+        ("Tourengo — Borgo di Villa Castelletti – Tenuta di Artimino, outbound and return at 03:00", "€ 1,100.00", "+ VAT 10%"),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 2,500.00",
+    price_total="€ 2,200.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 2,750.00.",
-    perhead="That is € 62.50 per guest for the round trip, across 44 guests.",
+    grand="Total payable, VAT 10% included: € 2,420.00.",
+    perhead="That is € 55.00 per guest for the round trip, across 44 guests.",
     h_incluso="Included.",
     incluso=(
         "Two vehicles with their drivers, fuel, tolls, parking and full insurance. No access charges apply: "
@@ -233,8 +231,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 825.00", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 1,925.00", ""),
+        ("Deposit 30% on confirmation", "€ 726.00", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 1,694.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -253,9 +251,9 @@ EN = dict(
          "with children and anyone flying the next day usually want to leave earlier. If you think it is "
          "needed, we can add a return run around half past midnight: let us know before confirming and we "
          "will quote it."),
-        ("<b>Return after 02:00.</b> Departing at 03:00 takes the service past 02:00, which is why we have "
-         "included the supplement of € 250.00 per vehicle. Should the return be brought forward to before "
-         "02:00, the supplement does not apply and we will remove it from the total."),
+        ("<b>The late-night return is included.</b> A return after 02:00 normally carries a supplement of "
+         "€ 250.00 per vehicle: for this service it is already included in the price, with departure from the "
+         "Tenuta at 03:00."),
         ("<b>Delays at the end of the evening.</b> The vehicles are ready at the Tenuta from 02:45. If the party "
          "runs on, waiting beyond 03:00 is charged at € 50.00 per hour per vehicle. Please tell us who — one of "
          "you coordinators or the couple — can give the drivers the signal to leave."),
