@@ -32,6 +32,10 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
 | Sito | giromunna.com |
 | IBAN | IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05 |
 
+La casella **giromunna@gmail.com**, collegata a questo spazio, **non è quella di lavoro**:
+lì non ci sono le mail dei clienti né i preventivi fatti dal Mac, quindi non serve cercarli lì.
+Per il lavoro Girolamo usa info@giromunna.com, che da qui non si vede.
+
 ## Mezzi
 
 GiroMunna ha **un solo mezzo di proprietà**:
