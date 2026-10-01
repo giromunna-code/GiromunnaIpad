@@ -44,7 +44,7 @@ commissione del 10% per le wedding planner (€ 200).
 
 ## Da decidere / verificare
 
-1. **Costo del Tourengo con Francesco** — da concordare prima di inviare.
+1. **Costo del Tourengo con Francesco** — già concordato (conferma di Girolamo, 1 ottobre).
 2. Il Beluga è pieno a 26: se cresce anche di una persona non basta.
 3. Il Tourengo con 18 ospiti ha 10 posti liberi: 7 (Lastra a Signa) + 3 (Comeano) = 10.
    Volendo, potrebbe prendere anche loro, ma l'andata di Castelletti e dell'Airbnb è alla
