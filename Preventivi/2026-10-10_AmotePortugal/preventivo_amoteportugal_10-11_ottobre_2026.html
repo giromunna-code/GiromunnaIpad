@@ -1,0 +1,810 @@
+<title>Preventivo — AMOTEPORTUGAL, 10-11 ottobre 2026</title>
+<style>
+  :root {
+    --ground: #F5F3EE;
+    --surface: #FFFFFF;
+    --ink: #2B2B2B;
+    --ink-soft: #6B6B6B;
+    --ink-faint: #93918B;
+    --green: #1F4636;
+    --green-deep: #17352A;
+    --gold: #C9A24B;
+    --gold-soft: #F3EBD8;
+    --line: #E4E1D8;
+    --line-strong: #CFCBBE;
+    --note-ground: #FBF7EC;
+    --note-line: #E3D5AE;
+    --note-ink: #7A6524;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12160F;
+      --surface: #1A1F19;
+      --ink: #E9EBE3;
+      --ink-soft: #A2A99C;
+      --ink-faint: #79806F;
+      --green: #7FB394;
+      --green-deep: #A8CDB6;
+      --gold: #D9B25E;
+      --gold-soft: #2A2517;
+      --line: #29301F;
+      --line-strong: #3A4230;
+      --note-ground: #221E11;
+      --note-line: #4B4126;
+      --note-ink: #D6C289;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12160F;
+    --surface: #1A1F19;
+    --ink: #E9EBE3;
+    --ink-soft: #A2A99C;
+    --ink-faint: #79806F;
+    --green: #7FB394;
+    --green-deep: #A8CDB6;
+    --gold: #D9B25E;
+    --gold-soft: #2A2517;
+    --line: #29301F;
+    --line-strong: #3A4230;
+    --note-ground: #221E11;
+    --note-line: #4B4126;
+    --note-ink: #D6C289;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: 'Avenir Next', Avenir, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 90px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.71rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+
+  header.masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 52px 0 30px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .brand-name { font-size: 1.3rem; font-weight: 700; color: var(--green); letter-spacing: -0.01em; }
+  .brand-rule { flex: 1; height: 1px; background: var(--line-strong); min-width: 20px; }
+  .brand-tag { font-size: 0.76rem; color: var(--ink-soft); }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0;
+    color: var(--green);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+  h1 .sub {
+    display: block;
+    font-size: clamp(0.98rem, 2.5vw, 1.12rem);
+    font-weight: 400;
+    color: var(--ink-soft);
+    margin-top: 10px;
+    letter-spacing: 0;
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 18px 26px;
+  }
+  .fact { display: flex; flex-direction: column; gap: 3px; }
+  .fact .v { font-size: 0.94rem; font-weight: 600; }
+
+  section { padding-top: 48px; }
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    color: var(--green);
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-soft); margin: 0 0 22px; max-width: 62ch; }
+  p { max-width: 66ch; }
+
+  .vehicle {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .vehicle .name { font-size: 1.02rem; font-weight: 700; }
+  .vehicle p { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+  .days { display: flex; flex-direction: column; gap: 4px; }
+  .day {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .day-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .day-date { font-weight: 700; font-size: 1rem; }
+  .day-date .wd { color: var(--ink-faint); font-weight: 400; }
+  .badge {
+    font-size: 0.68rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--green);
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    border-radius: 2px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .legs { display: flex; flex-direction: column; gap: 10px; }
+  .leg {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 4px 14px;
+    align-items: baseline;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted var(--line-strong);
+  }
+  .leg:last-child { border-bottom: none; padding-bottom: 0; }
+  .leg .t {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.94rem;
+  }
+  .leg .r { font-size: 0.94rem; }
+  .leg .r .to { color: var(--ink-soft); }
+  .leg .d {
+    font-size: 0.79rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .engaged {
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--line);
+    padding-top: 11px;
+  }
+
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.91rem; min-width: 460px; }
+  th {
+    text-align: left;
+    font-size: 0.69rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 700;
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--gold);
+  }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th:last-child, td:last-child { padding-right: 0; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td .svc-date {
+    display: block;
+    font-size: 0.77rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 2px;
+  }
+  tr.tot td {
+    border-top: 1.5px solid var(--green);
+    border-bottom: none;
+    padding-top: 14px;
+    font-weight: 700;
+  }
+  td.vat { color: var(--ink-faint); font-size: 0.83rem; font-weight: 400; }
+
+  .total {
+    margin-top: 10px;
+    background: var(--green);
+    padding: 22px 24px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px 24px;
+    flex-wrap: wrap;
+  }
+  .total .label { font-weight: 700; color: #FFFFFF; letter-spacing: 0.01em; }
+  .total .label small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.72);
+    margin-top: 3px;
+  }
+  .total .fig {
+    font-size: clamp(1.8rem, 5.5vw, 2.35rem);
+    font-weight: 700;
+    color: var(--gold);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .total { background: #1B3A2D; }
+  }
+  :root[data-theme="dark"] .total { background: #1B3A2D; }
+
+  ul.conds {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 68ch;
+  }
+  ul.conds li { padding-left: 20px; position: relative; font-size: 0.92rem; color: var(--ink-soft); }
+  ul.conds li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--gold);
+  }
+  ul.conds strong { color: var(--ink); font-weight: 700; }
+
+  .internal {
+    margin-top: 56px;
+    background: var(--note-ground);
+    border: 1px solid var(--note-line);
+    padding: 24px 24px 28px;
+  }
+  .internal-flag {
+    font-size: 0.69rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--note-ink);
+    margin-bottom: 14px;
+  }
+  .internal h2 { margin-bottom: 12px; }
+  .internal h3 { font-size: 0.94rem; font-weight: 700; margin: 20px 0 6px; }
+  .internal p { font-size: 0.91rem; color: var(--ink-soft); margin: 0 0 8px; }
+  .internal ol, .internal ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.91rem;
+    color: var(--ink-soft);
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    max-width: 66ch;
+  }
+  .internal strong { color: var(--ink); font-weight: 700; }
+  .internal table { min-width: 380px; }
+
+  footer {
+    margin-top: 52px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  a { color: var(--green); }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  @media (max-width: 560px) {
+    .leg { grid-template-columns: 3.4rem 1fr; }
+    .leg .d { grid-column: 2; }
+    .day, .vehicle, .internal, .total { padding-left: 17px; padding-right: 17px; }
+  }
+</style>
+
+<style>
+  [hidden] { display: none !important; }
+  .langbar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .langbar .group {
+    display: inline-flex;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .langbar button {
+    font: inherit;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    background: transparent;
+    border: 0;
+    padding: 7px 14px;
+    cursor: pointer;
+  }
+  .langbar button + button { border-left: 1px solid var(--line-strong); }
+  .langbar button[aria-pressed="true"] { background: var(--green); color: #FFFFFF; }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+  }
+  :root[data-theme="dark"] .langbar button[aria-pressed="true"] { background: #1B3A2D; color: #E9EBE3; }
+</style>
+
+<div class="langbar">
+  <div class="group" role="group" aria-label="Lingua del documento / Document language">
+    <button type="button" data-set="it" aria-pressed="true">Italiano</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<div class="wrap lang" data-lang="it">
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Noleggio Autobus con Conducente · Toscana, Italia</span>
+    </div>
+    <h1>Val d'Orcia e Maremma
+      <span class="sub">Due giornate nel tour AMOTEPORTUGAL</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Cliente</span><span class="v">AMOTEPORTUGAL s.r.o.</span></div>
+      <div class="fact"><span class="eyebrow">Date</span><span class="v">10-11 ott 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passeggeri</span><span class="v">22</span></div>
+      <div class="fact"><span class="eyebrow">Riferimento</span><span class="v">GM-2026-1010-AP</span></div>
+      <div class="fact"><span class="eyebrow">Validità</span><span class="v">9 ottobre 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Il mezzo</h2>
+    <p class="lede">Un minibus per il gruppo di 22 persone, con lo stesso conducente per i due giorni di servizio.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 posti passeggeri più l'autista, 7,64 m</span>
+      <p>Aria condizionata, sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.</p>
+      <p>Con 22 ospiti a bordo restano quattro posti liberi, utili anche per i bagagli del trasferimento del 10 ottobre.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Il servizio</h2>
+    <p class="lede">Distanze e tempi di percorrenza sono stime stradali, traffico escluso.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">10 ottobre <span class="wd">· sabato</span></span>
+          <span class="badge">Pienza · Montepulciano</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">9:30</span>
+            <span class="r">Borgo Elissa, Certaldo <span class="to">→ Pienza</span></span>
+            <span class="d">95 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">13:30</span>
+            <span class="r">Pienza <span class="to">→ La Boutique del Pastore</span></span>
+            <span class="d">breve</span>
+          </div>
+          <div class="leg">
+            <span class="t">16:00</span>
+            <span class="r">La Boutique del Pastore <span class="to">→ Montepulciano</span></span>
+            <span class="d">12 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">18:30</span>
+            <span class="r">Montepulciano <span class="to">→ Hotel Dei Capitani, Montalcino</span></span>
+            <span class="d">28 km</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 9:30 – 19:00. Trasporta anche i bagagli del gruppo per il trasferimento di struttura.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">11 ottobre <span class="wd">· domenica</span></span>
+          <span class="badge">Saturnia · Pitigliano · 195 km</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">8:30</span>
+            <span class="r">Hotel Dei Capitani, Montalcino <span class="to">→ Saturnia</span></span>
+            <span class="d">85 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">—</span>
+            <span class="r">Saturnia <span class="to">→ Pitigliano</span></span>
+            <span class="d">25 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">17:00</span>
+            <span class="r">Pitigliano <span class="to">→ Piombaia → Hotel Dei Capitani</span></span>
+            <span class="d">~85 km</span>
+          </div>
+        </div>
+        <div class="engaged">Mezzo impegnato circa 8:30 – 19:00. La giornata più lunga del servizio.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Il prezzo</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Servizio</th>
+            <th scope="col" class="num">Importo</th>
+            <th scope="col" class="num">IVA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Sab 10 ott</span>Borgo Elissa → Pienza → Montepulciano → Montalcino</td>
+            <td class="num">€ 1.050,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Dom 11 ott</span>Montalcino → Saturnia → Pitigliano → Montalcino</td>
+            <td class="num">€ 1.250,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Vitto e alloggio del conducente, 1 notte (10 ottobre)</td>
+            <td class="num vat"><em>a carico vostro</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Totale, al netto di IVA</td>
+            <td class="num">€ 2.300,00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Totale da corrispondere, IVA 10% inclusa
+        <small>circa € 115,00 a persona per i due giorni, su 22 persone</small>
+      </span>
+      <span class="fig">€ 2.530,00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pagamento</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Acconto 30% alla conferma</td>
+            <td class="num"><strong>€ 760,00</strong></td>
+            <td class="num vat">IVA inclusa</td>
+          </tr>
+          <tr>
+            <td>Saldo, entro 5 giorni dal servizio</td>
+            <td class="num"><strong>€ 1.770,00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bonifico bancario intestato a Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Incluso e non incluso</h2>
+    <ul class="conds">
+      <li><strong>Incluso.</strong> Mezzo e conducente, carburante, pedaggi autostradali, parcheggi, assicurazione completa, movimentazione bagagli per il trasferimento del 10 ottobre.</li>
+      <li><strong>A vostro carico.</strong> Vitto e alloggio del conducente per la notte del 10 ottobre: la prenotazione e il pagamento li curate voi direttamente. La soluzione più comoda è lo stesso Hotel Dei Capitani dove soggiorna il gruppo.</li>
+      <li><strong>Non incluso.</strong> Ingressi, pranzi, degustazioni, guide e mance. Attesa oltre gli orari indicati, € 50,00 all'ora. Soste aggiuntive o modifiche all'itinerario, quotate su richiesta. Rientro dopo le 02:00, € 250,00. Eventuali permessi comunali per l'accesso dei bus ai centri storici di Montepulciano o Pitigliano.</li>
+      <li><strong>Disponibilità e cancellazione.</strong> Mancano oggi 7 giorni al primo servizio: la prenotazione rientra già nella fascia degli ultimi 10 giorni, quindi un'eventuale cancellazione dopo la conferma comporta il 100% del prezzo. Preventivo valido fino al 9 ottobre 2026.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Interno — non fa parte del preventivo inviato</div>
+    <h2>Come sono stati costruiti i prezzi</h2>
+
+    <p>Riferimento: il preventivo <strong>Le Filigare</strong> (GM-2026-0821-LF), a mezzo singolo come questo (il gruppo di 22 persone sta comodamente sul Beluga, nessun secondo mezzo necessario).</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — trasferimento FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500,00</td></tr>
+          <tr><td>Le Filigare — giornata a disposizione Siena, ~80 km, 5 h</td><td class="num">€ 809,00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Perché solo due giorni su otto</h3>
+    <p>Il cliente ha mandato un programma di 8 giornate (7-14 ottobre), ma Girolamo ha disponibilità del Beluga solo per il 10 e l'11: il preventivo quota solo queste due, con una nota esplicita che per il resto serve un altro fornitore. Non è stato fatto alcun tentativo di coprire le altre giornate con Francesco o un mezzo a noleggio — Girolamo non lo ha chiesto.</p>
+
+    <h3>Scala dei due prezzi</h3>
+    <p>10 ottobre: ~145 km totali (95+12+28, soste comprese), 9 ore e mezza, trasferimento con cambio di alloggio (bagagli a bordo) — quotato € 1.050,00, in proporzione fra il trasferimento Le Filigare (€500/50km) e la giornata a disposizione (€809/80km), più il carico di gestire tre tappe e il trasloco. 11 ottobre: ~195 km, 10 ore e mezza, la giornata più pesante per distanza — quotata € 1.250,00, leggermente sopra la proporzione lineare per il margine di sicurezza su una giornata lunga e su una zona (Maremma) più distante dalla base.</p>
+
+    <h3>Margine</h3>
+    <p>Mezzo di proprietà (Beluga): costo diretto stimato € 250-350 a giornata di servizio, senza l'alloggio del conducente che paga il cliente. Il margine sulle due giornate è buono, in linea con Le Filigare.</p>
+
+    <h3>Vitto e alloggio del conducente</h3>
+    <p>Una sola notte serve davvero, quella del 10 ottobre a Montalcino: la base di Ponte Buggianese è troppo lontana da Certaldo/Montalcino per un rientro giornaliero comodo prima del nuovo inizio alle 8:30 dell'11. Dopo l'11 ottobre il conducente può rientrare alla base in serata (Montalcino-base ~110 km), quindi non serve una seconda notte.</p>
+
+    <h3>Da chiarire prima di inviare</h3>
+    <ul>
+      <li><strong>Il numero definitivo dei passeggeri</strong> — qui si è usato 22 come indicato dalla cliente (21 ospiti + 1 accompagnatore).</li>
+      <li><strong>Punto di discesa a Montepulciano e Pitigliano</strong> — da confermare con le guide locali, specie se serve un permesso comunale per il bus.</li>
+      <li><strong>Recapito telefonico/WhatsApp</strong> di chi viaggia con il gruppo.</li>
+      <li><strong>Dati di fatturazione</strong> di AMOTEPORTUGAL s.r.o.</li>
+      <li><strong>Tempistica:</strong> la richiesta è arrivata il 3 ottobre per un servizio che inizia il 10 — pochissimo margine. Preventivo impostato con validità al 9 ottobre, il giorno prima del servizio.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · P. IVA IT 02124530474</span>
+    <span>Rif. GM-2026-1010-AP · 3 ottobre 2026</span>
+  </footer>
+</div>
+
+<div class="wrap lang" data-lang="en" hidden>
+  <header class="masthead">
+    <div class="brand">
+      <span class="brand-name">GiroMunna</span>
+      <span class="brand-rule"></span>
+      <span class="brand-tag">Coach Hire with Driver · Tuscany, Italy</span>
+    </div>
+    <h1>Val d'Orcia and the Maremma
+      <span class="sub">Two days within the AMOTEPORTUGAL tour</span>
+    </h1>
+    <div class="facts">
+      <div class="fact"><span class="eyebrow">Client</span><span class="v">AMOTEPORTUGAL s.r.o.</span></div>
+      <div class="fact"><span class="eyebrow">Dates</span><span class="v">10-11 Oct 2026</span></div>
+      <div class="fact"><span class="eyebrow">Passengers</span><span class="v">22</span></div>
+      <div class="fact"><span class="eyebrow">Reference</span><span class="v">GM-2026-1010-AP</span></div>
+      <div class="fact"><span class="eyebrow">Valid until</span><span class="v">9 October 2026</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>The vehicle</h2>
+    <p class="lede">One minibus for the group of 22, with the same driver for both days of service.</p>
+    <div class="vehicle">
+      <span class="name">Mercedes-Benz Beluga — 26 passenger seats plus driver, 7.64 m</span>
+      <p>Air conditioning, reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold.</p>
+      <p>With 22 guests on board four seats stay free, which also helps with luggage on the 10 October transfer.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The service</h2>
+    <p class="lede">Distances and driving times are approximate road estimates, excluding traffic.</p>
+
+    <div class="days">
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">10 October <span class="wd">· Saturday</span></span>
+          <span class="badge">Pienza · Montepulciano</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">9:30 am</span>
+            <span class="r">Borgo Elissa, Certaldo <span class="to">→ Pienza</span></span>
+            <span class="d">95 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">1:30 pm</span>
+            <span class="r">Pienza <span class="to">→ La Boutique del Pastore</span></span>
+            <span class="d">short hop</span>
+          </div>
+          <div class="leg">
+            <span class="t">4:00 pm</span>
+            <span class="r">La Boutique del Pastore <span class="to">→ Montepulciano</span></span>
+            <span class="d">12 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">6:30 pm</span>
+            <span class="r">Montepulciano <span class="to">→ Hotel Dei Capitani, Montalcino</span></span>
+            <span class="d">28 km</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 9:30 am – 7:00 pm. Also carries the group's luggage for the change of accommodation.</div>
+      </article>
+
+      <article class="day">
+        <div class="day-head">
+          <span class="day-date">11 October <span class="wd">· Sunday</span></span>
+          <span class="badge">Saturnia · Pitigliano · 195 km</span>
+        </div>
+        <div class="legs">
+          <div class="leg">
+            <span class="t">8:30 am</span>
+            <span class="r">Hotel Dei Capitani, Montalcino <span class="to">→ Saturnia</span></span>
+            <span class="d">85 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">—</span>
+            <span class="r">Saturnia <span class="to">→ Pitigliano</span></span>
+            <span class="d">25 km</span>
+          </div>
+          <div class="leg">
+            <span class="t">5:00 pm</span>
+            <span class="r">Pitigliano <span class="to">→ Piombaia → Hotel Dei Capitani</span></span>
+            <span class="d">~85 km</span>
+          </div>
+        </div>
+        <div class="engaged">Vehicle engaged approx. 8:30 am – 7:00 pm. The longest day of the service.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>The price</h2>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Service</th>
+            <th scope="col" class="num">Amount</th>
+            <th scope="col" class="num">VAT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="svc-date">Sat 10 Oct</span>Borgo Elissa → Pienza → Montepulciano → Montalcino</td>
+            <td class="num">€ 1,050.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td><span class="svc-date">Sun 11 Oct</span>Montalcino → Saturnia → Pitigliano → Montalcino</td>
+            <td class="num">€ 1,250.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+          <tr>
+            <td>Driver's board and lodging, 1 night (10 October)</td>
+            <td class="num vat"><em>at your charge</em></td>
+            <td class="num vat"></td>
+          </tr>
+          <tr class="tot">
+            <td>Total, excluding VAT</td>
+            <td class="num">€ 2,300.00</td>
+            <td class="num vat">+ 10%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="total">
+      <span class="label">Total payable, VAT 10% included
+        <small>about € 115.00 per person for the two days, for the group of 22</small>
+      </span>
+      <span class="fig">€ 2,530.00</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Payment</h2>
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr>
+            <td>Deposit 30% on confirmation</td>
+            <td class="num"><strong>€ 760.00</strong></td>
+            <td class="num vat">VAT included</td>
+          </tr>
+          <tr>
+            <td>Balance, within 5 days of the service</td>
+            <td class="num"><strong>€ 1,770.00</strong></td>
+            <td class="num vat"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:16px;color:var(--ink-soft);font-size:0.9rem;">Bank transfer to Munna Girolamo Giuseppe — IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05.</p>
+  </section>
+
+  <section>
+    <h2>Included and not included</h2>
+    <ul class="conds">
+      <li><strong>Included.</strong> Vehicle and driver, fuel, motorway tolls, parking, full insurance, luggage handling for the 10 October transfer.</li>
+      <li><strong>At your charge.</strong> The driver's board and lodging for the night of 10 October: you book and pay for them directly. The easiest solution is the same Hotel Dei Capitani where the group is staying.</li>
+      <li><strong>Not included.</strong> Entrance fees, lunches, tastings, guides and gratuities. Waiting beyond the times indicated, € 50.00 per hour. Additional stops or changes to the itinerary, quoted on request. Return after 2:00 am, € 250.00. Any municipal permit for coach access to the historic centres of Montepulciano or Pitigliano.</li>
+      <li><strong>Availability and cancellation.</strong> With 7 days to the first service today, this booking already falls in the last-10-days band, so any cancellation after confirmation incurs 100% of the price. Quotation valid until 9 October 2026.</li>
+    </ul>
+  </section>
+
+  <div class="internal">
+    <div class="internal-flag">Internal — not part of the quotation sent to the client</div>
+    <h2>How the prices were built</h2>
+
+    <p>Benchmarked against the <strong>Le Filigare</strong> quotation (GM-2026-0821-LF), a single-vehicle job like this one (the group of 22 fits comfortably on the Beluga, no second vehicle needed).</p>
+
+    <div class="scroll">
+      <table>
+        <tbody>
+          <tr><td>Le Filigare — transfer FLR → San Donato in Poggio, ~50 km</td><td class="num">€ 500.00</td></tr>
+          <tr><td>Le Filigare — day at disposal in Siena, ~80 km, 5 h</td><td class="num">€ 809.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Why only two days out of eight</h3>
+    <p>The client sent an 8-day programme (7-14 October), but Girolamo only has the Beluga free on the 10th and 11th: the quotation prices only these two, with an explicit note that another provider is needed for the rest. No attempt was made to cover the other days through Francesco or a hired vehicle — Girolamo didn't ask for that.</p>
+
+    <h3>How the two prices scale</h3>
+    <p>10 October: ~145 km total (95+12+28, stops included), 9.5 hours, a transfer with a change of accommodation (luggage on board) — priced at € 1,050.00, between the Le Filigare transfer rate (€500/50km) and the day-at-disposal rate (€809/80km), plus the extra load of three stops and the move. 11 October: ~195 km, 10.5 hours, the heaviest day by distance — priced at € 1,250.00, slightly above straight-line proportion for safety margin on a long day in an area (the Maremma) further from base.</p>
+
+    <h3>Margin</h3>
+    <p>Owned vehicle (Beluga): estimated direct cost € 250-350 per service day, excluding the driver's lodging which the client pays. The margin on both days is healthy, in line with Le Filigare.</p>
+
+    <h3>Driver's board and lodging</h3>
+    <p>Only one night is genuinely needed, that of 10 October in Montalcino: the Ponte Buggianese base is too far from Certaldo/Montalcino for a comfortable daily return before the 8:30 am restart on the 11th. After 11 October the driver can return to base that evening (Montalcino-base ~110 km), so no second night is needed.</p>
+
+    <h3>To settle before sending</h3>
+    <ul>
+      <li><strong>The final passenger count</strong> — 22 was used here, as given by the client (21 guests + 1 tour leader).</li>
+      <li><strong>Drop-off point in Montepulciano and Pitigliano</strong> — to confirm with local guides, especially if a municipal coach permit is needed.</li>
+      <li><strong>A mobile/WhatsApp contact</strong> for whoever travels with the group.</li>
+      <li><strong>Invoicing details</strong> for AMOTEPORTUGAL s.r.o.</li>
+      <li><strong>Timing:</strong> the request arrived on 3 October for a service starting on the 10th — very little margin. The quotation is set with validity until 9 October, the day before the service.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <span>GiroMunna — Munna Girolamo Giuseppe · Ponte Buggianese (PT) · VAT IT 02124530474</span>
+    <span>Ref. GM-2026-1010-AP · 3 October 2026</span>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.langbar button');
+    var panels = document.querySelectorAll('.lang');
+    function show(lang) {
+      panels.forEach(function (p) { p.hidden = (p.dataset.lang !== lang); });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.set === lang)); });
+      document.documentElement.lang = lang;
+    }
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () { show(b.dataset.set); });
+    });
+    show('it');
+  })();
+</script>
