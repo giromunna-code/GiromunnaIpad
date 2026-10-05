@@ -38,3 +38,23 @@ Il centro storico di Lucca è ZTL, quindi il ritiro è appena fuori dalle Mura (
 Per confermare ci servono solo il numero definitivo degli ospiti, un referente per la giornata, un'email e i dati per la fattura. Il preventivo è valido fino al 7 ottobre.
 
 Girolamo – GiroMunna
+
+---
+
+# Secondo messaggio — risposta su "2 rides" e pagamento in contanti
+
+## English (da inviare)
+
+Hi Ferdi, the price stays the same, €1,100 + VAT 10% = €1,210: it covers the minibus and driver for the whole service, so 4 or 5 rides make no difference. We'd keep the three return rides (21:00, 21:30, 22:00), which gives your guests more flexibility at no extra cost.
+
+Cash payment is no problem, with a regular invoice; the price stays the same.
+
+Girolamo – GiroMunna
+
+## Italiano (per Girolamo)
+
+Ciao Ferdi, il prezzo resta lo stesso, €1.100 + IVA 10% = €1.210: comprende il minibus con conducente per tutto il servizio, quindi 4 o 5 corse non cambiano nulla. Lasceremmo le tre corse di ritorno (21:00, 21:30, 22:00), che danno più libertà agli ospiti senza costi in più.
+
+Il pagamento in contanti va benissimo, con regolare fattura; il prezzo resta lo stesso.
+
+Girolamo – GiroMunna

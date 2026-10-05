@@ -39,6 +39,10 @@ I tre ritorni restano agli orari del cliente.
 ospite. Prezzo deciso da Girolamo (5 ottobre). Nessuna commissione: è un privato, non
 un'agenzia. Margine di trattativa: fino a € 1.000 netti, non sotto.
 
+Il cliente ha poi chiesto il prezzo con 2 corse di andata e 2 di ritorno, e se c'è uno
+sconto pagando in contanti. Girolamo: **prezzo uguale, € 1.100 + IVA, anche con 4 corse**.
+Si lasciano le tre corse di ritorno. Contanti accettati con fattura regolare, senza sconto.
+
 Versioni precedenti: € 900, € 1.250 e € 1.000 netti.
 Il mezzo è impegnato di sabato in due fasce (circa 12:00–13:15 e 20:45–22:30), con due
 avvicinamenti da Ponte Buggianese (circa 30 km a tratta), e non può fare altri lavori di
