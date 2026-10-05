@@ -35,14 +35,13 @@ I tre ritorni restano agli orari del cliente.
 
 ## Prezzo
 
-**€ 900,00 + IVA 10% = € 990,00** (acconto € 297,00, saldo € 693,00). Nessuna commissione:
-è un privato, non un'agenzia.
+**€ 1.250,00 + IVA 10% = € 1.375,00** (acconto € 412,50, saldo € 962,50), circa € 34 a
+ospite. Nessuna commissione: è un privato, non un'agenzia.
 
-Ragionamento: chilometri pochi per ogni corsa, ma il mezzo è impegnato in due fasce
-(circa 12:00–13:15 e 20:45–22:30) di sabato, con cinque corse e due avvicinamenti da
-Ponte Buggianese (circa 30 km a tratta). Artimino era € 1.000 netti per mezzo con rientro
-alle 03:00 compreso; qui niente notturno ma più corse. Tenuto alto come da regola:
-Girolamo può scendere.
+La prima versione era a € 900 netti: Girolamo l'ha giudicata bassa per cinque corse
+(5 ottobre). Il prezzo ora vale circa € 250 netti a corsa. Il mezzo è impegnato di sabato
+in due fasce (circa 12:00–13:15 e 20:45–22:30), con due avvicinamenti da Ponte Buggianese
+(circa 30 km a tratta).
 
 Vitto e alloggio del conducente: non servono, fra le due fasce il mezzo rientra alla base.
 Nel preventivo è detto.

@@ -96,13 +96,13 @@ IT = dict(
     h_prezzo="Il prezzo",
     price_rows=[
         ("Beluga con conducente — navetta Lucca – Villa Rossi, 2 corse di andata e 3 di ritorno",
-         "€ 900,00", "+ IVA 10%"),
+         "€ 1.250,00", "+ IVA 10%"),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 900,00",
+    price_total="€ 1.250,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 990,00.",
-    perhead="Sono € 24,75 a ospite per andata e ritorno, IVA inclusa, su 40 ospiti.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 1.375,00.",
+    perhead="Sono € 34,38 a ospite per andata e ritorno, IVA inclusa, su 40 ospiti.",
     h_incluso="Incluso.",
     incluso=(
         "Il minibus con conducente, carburante, pedaggi, parcheggi e assicurazione completa. Tutte e cinque "
@@ -116,8 +116,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 297,00", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 693,00", ""),
+        ("Acconto 30% alla conferma", "€ 412,50", "IVA inclusa"),
+        ("Saldo, entro 5 giorni dal servizio", "€ 962,50", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
@@ -202,13 +202,13 @@ EN = dict(
     h_prezzo="The price",
     price_rows=[
         ("Beluga with driver — Lucca – Villa Rossi shuttle, 2 outbound and 3 return runs",
-         "€ 900.00", "+ VAT 10%"),
+         "€ 1,250.00", "+ VAT 10%"),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 900.00",
+    price_total="€ 1,250.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 990.00.",
-    perhead="That is € 24.75 per guest for the round trip, VAT included, across 40 guests.",
+    grand="Total payable, VAT 10% included: € 1,375.00.",
+    perhead="That is € 34.38 per guest for the round trip, VAT included, across 40 guests.",
     h_incluso="Included.",
     incluso=(
         "The minibus with driver, fuel, tolls, parking and full insurance. All five runs listed above. "
@@ -222,8 +222,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 297.00", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 693.00", ""),
+        ("Deposit 30% on confirmation", "€ 412.50", "VAT included"),
+        ("Balance, within 5 days of the service", "€ 962.50", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),

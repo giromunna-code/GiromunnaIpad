@@ -13,7 +13,7 @@ Our minibus seats 26, so 40 guests need two rides on the way out. A full loop Lu
 • To the villa: 12:15 and 12:50
 • Back to Lucca: 21:00, 21:30 and 22:00
 
-Price for the whole service (5 rides): €900 + VAT 10% = €990.
+Price for the whole service (5 rides): €1,250 + VAT 10% = €1,375.
 
 Lucca's old town is a restricted traffic zone, so pick-up is just outside the walls (e.g. Piazzale Verdi). Let us know where the guests are staying and we'll suggest the best spot.
 
@@ -31,7 +31,7 @@ Il nostro minibus ha 26 posti, quindi per 40 ospiti all'andata servono due corse
 • Verso la villa: 12:15 e 12:50
 • Ritorno a Lucca: 21:00, 21:30 e 22:00
 
-Prezzo per tutto il servizio (5 corse): €900 + IVA 10% = €990.
+Prezzo per tutto il servizio (5 corse): €1.250 + IVA 10% = €1.375.
 
 Il centro storico di Lucca è ZTL, quindi il ritiro è appena fuori dalle Mura (per esempio Piazzale Verdi). Ci dica dove alloggiano gli ospiti e le indichiamo il punto migliore.
 
