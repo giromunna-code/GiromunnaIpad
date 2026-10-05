@@ -30,7 +30,7 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
 | Telefono | +39 335 587 4744 |
 | Email | info@giromunna.com |
 | Sito | giromunna.com |
-| IBAN | IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05 |
+| IBAN | IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05 |
 
 La casella **giromunna@gmail.com**, collegata a questo spazio, **non è quella di lavoro**:
 lì non ci sono le mail dei clienti né i preventivi fatti dal Mac, quindi non serve cercarli lì.

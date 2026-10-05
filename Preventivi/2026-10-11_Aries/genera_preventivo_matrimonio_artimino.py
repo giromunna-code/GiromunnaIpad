@@ -128,7 +128,7 @@ IT = dict(
         ("Saldo, entro 5 giorni dal servizio", "€ 1.694,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
-          "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
+          "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
         ("<b>Gli ospiti di Lastra a Signa e di Villa le Farnette.</b> Per i 7 ospiti dell'Airbnb di Via "
@@ -243,7 +243,7 @@ EN = dict(
         ("Balance, within 5 days of the service", "€ 1,694.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
-          "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
+          "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
         ("<b>The guests in Lastra a Signa and at Villa le Farnette.</b> For the 7 guests at the Airbnb on Via "

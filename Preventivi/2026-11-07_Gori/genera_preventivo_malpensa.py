@@ -117,7 +117,7 @@ IT = dict(
         ("Saldo, entro il 7 novembre 2026, giorno della partenza", "€ 2.733,50", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
-          "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
+          "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
         ("<b>L'orario del volo di andata.</b> Partendo da Prato alle 5:00 si arriva a Malpensa "
@@ -221,7 +221,7 @@ EN = dict(
         ("Balance, by 7 November 2026, the day of departure", "€ 2,733.50", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
-          "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
+          "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
         ("<b>The outbound flight time.</b> Leaving Prato at 5:00 we reach Malpensa around 8:45. "
