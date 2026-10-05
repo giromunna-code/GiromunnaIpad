@@ -35,13 +35,16 @@ I tre ritorni restano agli orari del cliente.
 
 ## Prezzo
 
-**€ 1.000,00 + IVA 10% = € 1.100,00 in tutto** (acconto € 330,00, saldo € 770,00),
-€ 27,50 a ospite. Prezzo finale deciso da Girolamo (5 ottobre), **uguale in contanti o con
-bonifico**, sempre con fattura. Nessuna commissione: è un privato.
+**€ 1.000,00 + IVA 10% = € 1.100,00 in tutto**, € 27,50 a ospite. Prezzo finale deciso da
+Girolamo (5 ottobre). **Pagamento solo in contanti, tutto al conducente il 10 ottobre prima
+della prima corsa.** Niente acconto. Il conducente lascia una ricevuta, la fattura si manda
+dopo il servizio. Nessuna commissione: è un privato.
+
+Attenzione: senza acconto, se il cliente disdice all'ultimo non c'è niente in mano.
 
 Storia: il primo PDF inviato era a € 1.100 + IVA (€ 1.210). Il cliente ha chiesto il prezzo
-con 4 corse e uno sconto pagando in contanti. Girolamo ha deciso: € 1.100 IVA inclusa, con
-qualsiasi pagamento, mantenendo le 5 corse.
+con 4 corse e uno sconto pagando in contanti. Girolamo ha deciso: € 1.100 IVA inclusa, solo in
+contanti prima della corsa, mantenendo le 5 corse.
 
 Vitto e alloggio del conducente: non servono, fra le due fasce il mezzo rientra alla base.
 Nel preventivo è detto.

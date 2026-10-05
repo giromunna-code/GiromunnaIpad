@@ -116,11 +116,11 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 330,00", "IVA inclusa"),
-        ("Saldo, entro 5 giorni dal servizio", "€ 770,00", ""),
+        ("Intero importo in contanti al conducente, il 10 ottobre prima della prima corsa",
+         "€ 1.100,00", "IVA inclusa"),
     ],
-    bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
-          "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
+    bank=("Pagamento solo in contanti, in un'unica soluzione. Il conducente rilascia la ricevuta; "
+          "la fattura vi viene inviata dopo il servizio."),
     h_note="Note",
     note=[
         ("<b>Perché 12:15 e non 12:30.</b> Fra Lucca e Villa Rossi ci vogliono circa 15 minuti a tratta, "
@@ -147,7 +147,7 @@ IT = dict(
          "la fattura."),
         ("<b>Disponibilità e cancellazione.</b> Il minibus è al momento libero e lo teniamo a vostra "
          "disposizione fino al 7 ottobre 2026, data di validità del preventivo; la prenotazione diventa "
-         "definitiva alla ricezione dell'acconto. Mancando meno di 10 giorni al servizio, una volta "
+         "definitiva con la vostra conferma scritta, anche via WhatsApp. Mancando meno di 10 giorni al servizio, una volta "
          "confermata la prenotazione la cancellazione comporta l'addebito dell'intero importo."),
     ],
     closing=("Restiamo a disposizione per qualsiasi chiarimento e in attesa di un vostro riscontro.<br/><br/>"
@@ -222,11 +222,11 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 330.00", "VAT included"),
-        ("Balance, within 5 days of the service", "€ 770.00", ""),
+        ("Full amount in cash to the driver, on 10 October before the first run",
+         "€ 1,100.00", "VAT included"),
     ],
-    bank=("Bank transfer to Munna Girolamo Giuseppe — "
-          "IBAN IT59 O053 4137 0700 0000 0034 24 — BIC/SWIFT BAPPIT21S05."),
+    bank=("Payment in cash only, in a single instalment. The driver will give you a receipt; "
+          "the invoice will be sent to you after the service."),
     h_note="Notes",
     note=[
         ("<b>Why 12:15 and not 12:30.</b> The drive between Lucca and Villa Rossi takes about 15 minutes each "
@@ -249,8 +249,8 @@ EN = dict(
         ("<b>To confirm we need</b> the final number of guests, the pick-up point in Lucca, the name and mobile "
          "number of a contact person for the wedding day, an email address and your invoicing details."),
         ("<b>Availability and cancellation.</b> The minibus is currently free and we hold it for you until "
-         "7 October 2026, the validity date of this quotation; the booking becomes firm on receipt of the "
-         "deposit. With less than 10 days to the service, once the booking is confirmed a cancellation is "
+         "7 October 2026, the validity date of this quotation; the booking becomes firm with your "
+         "written confirmation, WhatsApp included. With less than 10 days to the service, once the booking is confirmed a cancellation is "
          "charged at the full amount."),
     ],
     closing=("We remain at your disposal for any clarification and look forward to hearing from you.<br/><br/>"
