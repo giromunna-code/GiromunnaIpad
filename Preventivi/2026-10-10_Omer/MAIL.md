@@ -47,12 +47,12 @@ Girolamo – GiroMunna
 
 ## English (da inviare)
 
-Hi Ferdi, the best we can do is €1,100 in total, VAT included, payable in cash to the driver on the day, before the first ride. We'll keep the three return rides (21:00, 21:30, 22:00) for your guests' flexibility. Updated quote attached: just confirm and we'll hold the minibus for you.
+Hi Ferdi, the best we can do is €1,100 in total, VAT included, instead of €1,210, payable in cash to the driver on the day, before the first ride. We'll keep the three return rides (21:00, 21:30, 22:00) for your guests' flexibility. Updated quote attached: just confirm and we'll hold the minibus for you.
 
 Girolamo – GiroMunna
 
 ## Italiano (per Girolamo)
 
-Ciao Ferdi, il meglio che possiamo fare è €1.100 in tutto, IVA inclusa, da pagare in contanti al conducente il giorno del servizio, prima della prima corsa. Manteniamo le tre corse di ritorno (21:00, 21:30, 22:00) per dare più libertà agli ospiti. In allegato il preventivo aggiornato: ci confermi e le teniamo il minibus.
+Ciao Ferdi, il meglio che possiamo fare è €1.100 in tutto, IVA inclusa, invece di €1.210, da pagare in contanti al conducente il giorno del servizio, prima della prima corsa. Manteniamo le tre corse di ritorno (21:00, 21:30, 22:00) per dare più libertà agli ospiti. In allegato il preventivo aggiornato: ci confermi e le teniamo il minibus.
 
 Girolamo – GiroMunna
