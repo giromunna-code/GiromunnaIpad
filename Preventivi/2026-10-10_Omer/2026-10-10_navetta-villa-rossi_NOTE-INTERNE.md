@@ -41,7 +41,8 @@ un'agenzia. Margine di trattativa: fino a € 1.000 netti, non sotto.
 
 Il cliente ha poi chiesto il prezzo con 2 corse di andata e 2 di ritorno, e se c'è uno
 sconto pagando in contanti. Girolamo: **prezzo uguale, € 1.100 + IVA, anche con 4 corse**.
-Si lasciano le tre corse di ritorno. Contanti accettati con fattura regolare, senza sconto.
+Si lasciano le tre corse di ritorno. Per il pagamento in contanti Girolamo concede **€ 1.100 IVA inclusa** (fattura € 1.000 + IVA
+€ 100) invece di € 1.210.
 
 Versioni precedenti: € 900, € 1.250 e € 1.000 netti.
 Il mezzo è impegnato di sabato in due fasce (circa 12:00–13:15 e 20:45–22:30), con due
