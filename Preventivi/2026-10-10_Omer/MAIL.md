@@ -1,69 +1,40 @@
-# Mail da inviare — Ferdi Omer, navetta matrimonio Lucca – Villa Rossi 10.10.2026
+# Messaggio WhatsApp da inviare — Ferdi Omer, navetta matrimonio Lucca – Villa Rossi 10.10.2026
 
-**A:** email da chiedere al cliente (per ora c'è solo WhatsApp: +44 7785 367482)
-**Allegato:** GiroMunna_Preventivo_Navetta_Villa_Rossi_10_ottobre_2026_EN.pdf (o _IT)
-
----
-
-## Italiano
-
-**Oggetto:** Preventivo navetta ospiti Lucca – Villa Rossi, 10 ottobre 2026 (Rif. GM-2026-1010-FO)
-
-Gentile Ferdi,
-
-grazie per la richiesta. Le allego il preventivo per la navetta degli ospiti di sabato
-10 ottobre.
-
-Il nostro minibus ha 26 posti, quindi per 40 persone all'andata servono due corse. Fra Lucca e
-Villa Rossi un giro completo richiede circa 35 minuti: per questo abbiamo anticipato la prima
-partenza alle **12:15**, così la seconda resta alle **12:50**. Il ritorno è con tre corse dalla
-villa, alle **21:00, 21:30 e 22:00**, come ci ha chiesto.
-
-Il prezzo per tutto il servizio, cinque corse in totale, è di **€ 900,00 + IVA 10%, cioè
-€ 990,00**.
-
-Il centro di Lucca dentro le Mura è zona a traffico limitato: gli ospiti salgono e scendono appena
-fuori dalle Mura, per esempio a Piazzale Verdi. Se ci dice dove alloggiano, le indichiamo il punto
-più comodo.
-
-Il preventivo è valido fino al 7 ottobre. Per confermare ci servono il numero definitivo degli
-ospiti, il punto di ritiro, il nome e il cellulare di un referente per il giorno del matrimonio e i
-dati per la fattura.
-
-Restiamo a disposizione per qualsiasi chiarimento.
-
-Cordiali saluti,
-Girolamo Munna
-GiroMunna NCC · +39 335 587 4744 · info@giromunna.com
+**A:** WhatsApp +44 7785 367482
+**Allegato:** GiroMunna_Preventivo_Navetta_Villa_Rossi_10_ottobre_2026_EN.pdf
 
 ---
 
-## English
+## English (da inviare)
 
-**Subject:** Guest shuttle quotation Lucca – Villa Rossi, 10 October 2026 (Ref. GM-2026-1010-FO)
+Hi Ferdi, thank you! Here is our quote for Saturday 10 October (attached).
 
-Dear Ferdi,
+Our minibus seats 26, so 40 guests need two rides on the way out. A full loop Lucca – Villa Rossi takes about 35 min, so we suggest:
+• To the villa: 12:15 and 12:50
+• Back to Lucca: 21:00, 21:30 and 22:00
 
-thank you for your request. Please find attached our quotation for the guest shuttle on
-Saturday 10 October.
+Price for the whole service (5 rides): €900 + VAT 10% = €990.
 
-Our minibus seats 26 passengers, so 40 guests will need two runs on the way out. A full loop
-between Lucca and Villa Rossi takes about 35 minutes, so we have moved the first departure to
-**12:15**, which lets the second one leave at **12:50**. The way back is three runs from the
-villa at **21:00, 21:30 and 22:00**, as you asked.
+Lucca's old town is a restricted traffic zone, so pick-up is just outside the walls (e.g. Piazzale Verdi). Let us know where the guests are staying and we'll suggest the best spot.
 
-The price for the whole service, five runs in total, is **€ 900.00 + VAT 10%, i.e. € 990.00**.
+To confirm we just need the final number of guests, a contact person for the day, an email and invoicing details. The quote is valid until 7 October.
 
-Lucca's historic centre inside the walls is a restricted traffic zone: guests board and step off
-just outside the walls, for example at Piazzale Verdi. If you tell us where the guests are staying,
-we will suggest the most convenient spot.
+Girolamo – GiroMunna
 
-The quotation is valid until 7 October. To confirm we need the final number of guests, the
-pick-up point, the name and mobile number of a contact person for the wedding day, and your
-invoicing details.
+---
 
-We remain at your disposal for any clarification.
+## Italiano (per Girolamo)
 
-Kind regards,
-Girolamo Munna
-GiroMunna NCC · +39 335 587 4744 · info@giromunna.com
+Ciao Ferdi, grazie! Ecco il nostro preventivo per sabato 10 ottobre (in allegato).
+
+Il nostro minibus ha 26 posti, quindi per 40 ospiti all'andata servono due corse. Un giro completo Lucca – Villa Rossi richiede circa 35 minuti, quindi proponiamo:
+• Verso la villa: 12:15 e 12:50
+• Ritorno a Lucca: 21:00, 21:30 e 22:00
+
+Prezzo per tutto il servizio (5 corse): €900 + IVA 10% = €990.
+
+Il centro storico di Lucca è ZTL, quindi il ritiro è appena fuori dalle Mura (per esempio Piazzale Verdi). Ci dica dove alloggiano gli ospiti e le indichiamo il punto migliore.
+
+Per confermare ci servono solo il numero definitivo degli ospiti, un referente per la giornata, un'email e i dati per la fattura. Il preventivo è valido fino al 7 ottobre.
+
+Girolamo – GiroMunna
