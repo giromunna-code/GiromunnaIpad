@@ -43,18 +43,16 @@ Girolamo – GiroMunna
 
 # Secondo messaggio — risposta su "2 rides" e pagamento in contanti
 
+**Allegato:** il PDF aggiornato (_EN), a € 1.000 + IVA = € 1.100
+
 ## English (da inviare)
 
-Hi Ferdi, the price covers the minibus and driver for the whole service, so 4 or 5 rides make no difference: we'd keep the three return rides (21:00, 21:30, 22:00), which gives your guests more flexibility.
-
-If you pay in cash, we can do €1,100 in total, VAT included (instead of €1,210), with a regular invoice.
+Hi Ferdi, the best we can do is €1,100 in total, VAT included, whether you pay in cash or by bank transfer. The price covers the minibus and driver for the whole service, so we'll keep the three return rides (21:00, 21:30, 22:00), which gives your guests more flexibility. Updated quote attached.
 
 Girolamo – GiroMunna
 
 ## Italiano (per Girolamo)
 
-Ciao Ferdi, il prezzo comprende il minibus con conducente per tutto il servizio, quindi 4 o 5 corse non cambiano nulla: lasceremmo le tre corse di ritorno (21:00, 21:30, 22:00), che danno più libertà agli ospiti.
-
-Se paga in contanti, possiamo fare €1.100 in tutto, IVA inclusa (invece di €1.210), con regolare fattura.
+Ciao Ferdi, il meglio che possiamo fare è €1.100 in tutto, IVA inclusa, sia in contanti sia con bonifico. Il prezzo comprende il minibus con conducente per tutto il servizio, quindi manteniamo le tre corse di ritorno (21:00, 21:30, 22:00), che danno più libertà agli ospiti. In allegato il preventivo aggiornato.
 
 Girolamo – GiroMunna
