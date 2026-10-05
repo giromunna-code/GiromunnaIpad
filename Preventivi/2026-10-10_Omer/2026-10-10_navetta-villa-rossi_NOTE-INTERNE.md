@@ -35,13 +35,14 @@ I tre ritorni restano agli orari del cliente.
 
 ## Prezzo
 
-**€ 1.000,00 + IVA 10% = € 1.100,00** (acconto € 330,00, saldo € 770,00), € 27,50 a
+**€ 1.100,00 + IVA 10% = € 1.210,00** (acconto € 363,00, saldo € 847,00), € 30,25 a
 ospite. Prezzo deciso da Girolamo (5 ottobre). Nessuna commissione: è un privato, non
-un'agenzia.
+un'agenzia. Margine di trattativa: fino a € 1.000 netti, non sotto.
 
-Versioni precedenti: € 900 netti (giudicato basso per cinque corse), poi € 1.250 netti.
+Versioni precedenti: € 900, € 1.250 e € 1.000 netti.
 Il mezzo è impegnato di sabato in due fasce (circa 12:00–13:15 e 20:45–22:30), con due
-avvicinamenti da Ponte Buggianese (circa 30 km a tratta).
+avvicinamenti da Ponte Buggianese (circa 30 km a tratta), e non può fare altri lavori di
+giornata.
 
 Vitto e alloggio del conducente: non servono, fra le due fasce il mezzo rientra alla base.
 Nel preventivo è detto.
