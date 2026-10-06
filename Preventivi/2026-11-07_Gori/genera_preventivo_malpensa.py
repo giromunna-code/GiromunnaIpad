@@ -67,7 +67,7 @@ IT = dict(
         "e senza altri passeggeri."
     ),
     mezzo_bullet=(
-        "<b>Mercedes-Benz Beluga</b> — 25 posti passeggeri più l'autista, 7,64 m. Aria condizionata, "
+        "<b>Mercedes-Benz Beluga</b> — 25 posti passeggeri più accompagnatore e autista, 7,64 m. Aria condizionata, "
         "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli."
     ),
     mezzo_close=(
@@ -139,8 +139,8 @@ IT = dict(
         ("<b>Il punto di partenza a Prato.</b> Ci serve l'indirizzo esatto di ritiro e di arrivo. "
          "Se si trova dentro le mura, nella zona a traffico limitato, vi proponiamo un punto di "
          "ritrovo appena fuori, comodo da raggiungere con le valigie."),
-        ("<b>Il numero dei passeggeri.</b> Il Beluga ha 25 posti: con 25 persone il mezzo è pieno, "
-         "senza un posto libero. Ogni bambino, anche piccolo, conta come un passeggero. Se il gruppo "
+        ("<b>Il numero dei passeggeri.</b> Il Beluga ha 25 posti passeggeri più il posto "
+         "dell'accompagnatore: con 25 persone è al completo. Ogni bambino, anche piccolo, conta come un passeggero. Se il gruppo "
          "dovesse crescere anche di una sola persona, avvisateci prima della conferma."),
         ("<b>Per confermare ci servono</b> i numeri e gli orari dei due voli, l'indirizzo di ritiro "
          "a Prato, il numero definitivo dei passeggeri e dei bagagli, il nome e il cellulare di un "
@@ -172,7 +172,7 @@ EN = dict(
         "stops and no other passengers."
     ),
     mezzo_bullet=(
-        "<b>Mercedes-Benz Beluga</b> — 25 passenger seats plus driver, 7.64 m. Air conditioning, "
+        "<b>Mercedes-Benz Beluga</b> — 25 passenger seats plus guide seat and driver, 7.64 m. Air conditioning, "
         "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold."
     ),
     mezzo_close=(
@@ -243,8 +243,8 @@ EN = dict(
         ("<b>The pick-up point in Prato.</b> We need the exact pick-up and drop-off address. If it "
          "is inside the city walls, in the restricted traffic zone, we will suggest a meeting point "
          "just outside, easy to reach with suitcases."),
-        ("<b>Number of passengers.</b> The Beluga has 25 seats: with 25 people it is full, "
-         "with no seat to spare. Every child, however small, counts as a passenger. If the group should "
+        ("<b>Number of passengers.</b> The Beluga has 25 passenger seats plus the guide "
+         "seat: with 25 people it is fully booked. Every child, however small, counts as a passenger. If the group should "
          "grow by even one person, please let us know before confirming."),
         ("<b>To confirm we need</b> the numbers and times of both flights, the pick-up address in "
          "Prato, the final number of passengers and pieces of luggage, the name and mobile number of "

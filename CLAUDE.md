@@ -40,7 +40,7 @@ Per il lavoro Girolamo usa info@giromunna.com, che da qui non si vede.
 
 GiroMunna ha **un solo mezzo di proprietà**:
 
-- **Mercedes-Benz Beluga** — **25 posti passeggeri più l'autista** (25+1), 7,64 m. Aria condizionata,
+- **Mercedes-Benz Beluga** — **25 posti passeggeri, più il posto dell'accompagnatore e l'autista** (25+1+1), 7,64 m. Aria condizionata,
   sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.
 
 **Il riferimento è sempre il Beluga.** Si quota e si descrive sempre quello, in ogni

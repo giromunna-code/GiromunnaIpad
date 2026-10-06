@@ -66,7 +66,7 @@ IT = dict(
         "fermate intermedie e senza altri passeggeri."
     ),
     mezzo_bullet=(
-        "<b>Mercedes-Benz Beluga</b> — 25 posti passeggeri più l'autista, 7,64 m. Aria condizionata, "
+        "<b>Mercedes-Benz Beluga</b> — 25 posti passeggeri più accompagnatore e autista, 7,64 m. Aria condizionata, "
         "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli."
     ),
     mezzo_close=(
@@ -165,7 +165,7 @@ EN = dict(
         "intermediate stops and no other passengers."
     ),
     mezzo_bullet=(
-        "<b>Mercedes-Benz Beluga</b> — 25 passenger seats plus driver, 7.64 m. Air conditioning, "
+        "<b>Mercedes-Benz Beluga</b> — 25 passenger seats plus guide seat and driver, 7.64 m. Air conditioning, "
         "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold."
     ),
     mezzo_close=(
