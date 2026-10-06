@@ -41,3 +41,5 @@ Base Le Filigare: € 500 per un trasferimento di ~50 km. Fra le due corse il me
    il materiale va sul loro furgone; sperano di finire prima delle 2:00. Nel preventivo: se
    partono da Montecatini entro l'1:10 il supplemento notturno si toglie (totale € 1.100 IVA
    inclusa). Anche così il Beluga rientra in sede verso le 2:45: la sovrapposizione con Gori resta.
+3. **Prezzo deciso da Girolamo (6 ottobre): € 1.000,00 IVA inclusa in tutto** (€ 909,09 + IVA
+   € 90,91), rientro notturno compreso. Acconto € 300, saldo € 700. Sostituisce i € 1.375 iniziali.

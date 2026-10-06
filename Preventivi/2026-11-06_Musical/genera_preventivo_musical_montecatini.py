@@ -87,15 +87,14 @@ IT = dict(
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Venerdì 6 novembre — Firenze → Montecatini Terme", "€ 500,00", "+ IVA 10%"),
-        ("Notte 6–7 novembre — Montecatini Terme → Firenze", "€ 500,00", "+ IVA 10%"),
-        ("Supplemento rientro dopo le 02:00", "€ 250,00", "+ IVA 10%"),
+        ("Firenze → Montecatini Terme venerdì 6 novembre e ritorno nella notte fra il 6 e il 7, "
+         "rientro notturno compreso", "€ 909,09", "+ IVA 10%"),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 1.250,00",
+    price_total="€ 909,09",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 1.375,00.",
-    perhead=("Su 23 persone sono circa € 60,00 a testa per andata e ritorno, IVA inclusa. "
+    grand="Totale da corrispondere, IVA 10% inclusa: € 1.000,00.",
+    perhead=("Su 23 persone sono circa € 43,50 a testa per andata e ritorno, IVA inclusa. "
              "Il prezzo è per il mezzo, non per persona: non cambia se siete qualcuno in meno."),
     h_incluso="Incluso.",
     incluso=(
@@ -109,8 +108,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 412,50", "IVA inclusa"),
-        ("Saldo, entro il 6 novembre 2026, giorno del servizio", "€ 962,50", ""),
+        ("Acconto 30% alla conferma", "€ 300,00", "IVA inclusa"),
+        ("Saldo, entro il 6 novembre 2026, giorno del servizio", "€ 700,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
@@ -123,12 +122,10 @@ IT = dict(
          "venerdì mattina il tratto fra Scandicci e Firenze Nord e la A11 sono spesso trafficati: con "
          "questo margine arriviamo in tempo anche con qualche rallentamento. Se volete essere in teatro "
          "prima, anticipiamo senza costi aggiuntivi."),
-        ("<b>Il ritorno, e se finite prima delle 2:00.</b> Il preventivo è fatto sulla partenza dal "
-         "teatro alle 2:00, con arrivo all'Off Musical verso le 2:50: per questo comprende il supplemento "
-         "di € 250,00 per il rientro dopo le 02:00. Se riuscite a partire da Montecatini entro l'1:10, "
-         "si arriva a Firenze entro le 2:00 e il supplemento non si applica: il totale scende a "
-         "€ 1.100,00 IVA inclusa. Ci basta saperlo qualche giorno prima. Se invece la serata si allunga "
-         "oltre le 2:00, l'attesa si conteggia a € 50,00 all'ora. Vi chiediamo il nome di chi darà al "
+        ("<b>Il ritorno alle 2:00.</b> La partenza dal teatro è alle 2:00, con arrivo all'Off Musical "
+         "verso le 2:50. Il rientro notturno è già compreso nel prezzo, che resta lo stesso anche se "
+         "finite prima: basta avvisarci e il conducente è pronto. Se invece la serata si allunga oltre "
+         "le 2:00, l'attesa si conteggia a € 50,00 all'ora. Vi chiediamo il nome di chi darà al "
          "conducente il via alla partenza."),
         ("<b>Bagagli.</b> Ognuno con il proprio borsone, mentre il materiale di scena viaggia sul vostro "
          "furgone: nel vano del Beluga c'è spazio per tutti."),
@@ -186,15 +183,14 @@ EN = dict(
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Friday 6 November — Florence → Montecatini Terme", "€ 500.00", "+ VAT 10%"),
-        ("Night 6–7 November — Montecatini Terme → Florence", "€ 500.00", "+ VAT 10%"),
-        ("Supplement for return after 02:00", "€ 250.00", "+ VAT 10%"),
+        ("Florence → Montecatini Terme on Friday 6 November and return on the night of 6–7 November, "
+         "late-night return included", "€ 909.09", "+ VAT 10%"),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 1,250.00",
+    price_total="€ 909.09",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 1,375.00.",
-    perhead=("Across 23 people that is about € 60.00 each for the round trip, VAT included. "
+    grand="Total payable, VAT 10% included: € 1,000.00.",
+    perhead=("Across 23 people that is about € 43.50 each for the round trip, VAT included. "
              "The price is for the vehicle, not per person: it does not change if a few of you are missing."),
     h_incluso="Included.",
     incluso=(
@@ -208,8 +204,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 412.50", "VAT included"),
-        ("Balance, by 6 November 2026, the day of the service", "€ 962.50", ""),
+        ("Deposit 30% on confirmation", "€ 300.00", "VAT included"),
+        ("Balance, by 6 November 2026, the day of the service", "€ 700.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
@@ -222,12 +218,11 @@ EN = dict(
          "the stretch between Scandicci and Firenze Nord and the A11 are often busy: this margin gets us "
          "there on time even with some delays. If you want to be at the theatre earlier, we bring it "
          "forward at no extra cost."),
-        ("<b>The return, and if you finish before 2:00.</b> This quotation is based on leaving the theatre "
-         "at 2:00 and arriving at Off Musical around 2:50, which is why it includes the € 250.00 "
-         "supplement for a return after 02:00. If you can leave Montecatini by 1:10, we reach Florence "
-         "by 2:00 and the supplement does not apply: the total drops to € 1,100.00 VAT included. We only "
-         "need to know a few days ahead. If instead the evening runs beyond 2:00, waiting is charged at "
-         "€ 50.00 per hour. Please let us know who will give the driver the signal to leave."),
+        ("<b>The return at 2:00.</b> The theatre departure is at 2:00, arriving at Off Musical around "
+         "2:50. The late-night return is already included in the price, which stays the same even if you "
+         "finish earlier: just let us know and the driver will be ready. If instead the evening runs "
+         "beyond 2:00, waiting is charged at € 50.00 per hour. Please let us know who will give the "
+         "driver the signal to leave."),
         ("<b>Luggage.</b> Everyone with their own holdall, while the stage material travels in your van: "
          "the Beluga's hold has room for all of it."),
         ("<b>Number of people.</b> The Beluga has 25 seats: for 22–23 people that leaves 2 or 3 free seats, "
@@ -257,7 +252,8 @@ def styles():
         "meta": ParagraphStyle("meta", fontName="Helvetica", fontSize=8.6,
                                textColor=MUTED, leading=12, spaceAfter=14),
         "h2": ParagraphStyle("h2", fontName="Helvetica-Bold", fontSize=12.5,
-                             textColor=GREEN, leading=15, spaceBefore=13, spaceAfter=6),
+                             textColor=GREEN, leading=15, spaceBefore=13, spaceAfter=6,
+                             keepWithNext=1),
         "body": ParagraphStyle("body", alignment=TA_JUSTIFY, spaceAfter=6, **base),
         "cell": ParagraphStyle("cell", **base),
         "cellsm": ParagraphStyle("cellsm", fontName="Helvetica", fontSize=8.6,
