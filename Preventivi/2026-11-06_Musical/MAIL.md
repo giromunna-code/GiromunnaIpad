@@ -18,9 +18,12 @@ Mercedes-Benz Beluga da 26 posti:
 
 Totale € 1.375,00 IVA inclusa, con autista, carburante, pedaggi e parcheggi: non ci sono altri costi.
 
-Per organizzarci ci servono il punto di partenza a Firenze (meglio fuori dalla ZTL) e un'idea
-del materiale che portate (costumi, bauli, strumenti), per essere sicuri che entri tutto nel
-vano bagagli.
+Ci può indicare da dove partite esattamente a Firenze (indirizzo o zona) e dove volete essere
+riaccompagnati al ritorno? Se siete in centro, dentro la ZTL, vi proponiamo noi un punto di
+ritrovo appena fuori: per entrare con il minibus si paga il check point, circa € 350 al giorno,
+e qui le giornate sarebbero due (il 6 per l'andata e il 7 per il ritorno dopo mezzanotte).
+Ci dica anche se portate materiale di scena (costumi, bauli, strumenti), così verifichiamo che
+entri tutto nel vano bagagli.
 
 Il preventivo è valido fino al 13 ottobre. Resto a disposizione!
 
@@ -41,9 +44,13 @@ Mercedes-Benz Beluga minibus:
 
 Total € 1,375.00 VAT included, with driver, fuel, tolls and parking: no other costs.
 
-To organise things we need the departure point in Florence (ideally outside the restricted
-traffic zone) and an idea of the material you are bringing (costumes, trunks, instruments),
-to make sure everything fits in the luggage hold.
+Could you tell us exactly where in Florence you are leaving from (address or area) and where
+you would like to be dropped off on the way back? If you are in the centre, inside the
+restricted traffic zone, we will suggest a meeting point just outside: entering with the
+minibus means paying the check-point fee, about € 350 per day, and here it would be two days
+(the 6th for the outbound run and the 7th for the return after midnight). Please also let us
+know if you are bringing stage material (costumes, trunks, instruments), so we can check that
+everything fits in the luggage hold.
 
 The quotation is valid until 13 October. I remain at your disposal!
 
