@@ -66,7 +66,7 @@ IT = dict(
         "fermate intermedie e senza altri passeggeri."
     ),
     mezzo_bullet=(
-        "<b>Mercedes-Benz Beluga</b> — 26 posti passeggeri più l'autista, 7,64 m. Aria condizionata, "
+        "<b>Mercedes-Benz Beluga</b> — 25 posti passeggeri più l'autista, 7,64 m. Aria condizionata, "
         "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli."
     ),
     mezzo_close=(
@@ -138,8 +138,8 @@ IT = dict(
          "facilmente: se pensate di partire più tardi, ditecelo prima, perché l'attesa oltre le 2:00 "
          "si conteggia a € 50,00 all'ora. Vi chiediamo il nome di chi darà al conducente il via alla "
          "partenza."),
-        ("<b>Il numero delle persone.</b> Il Beluga ha 26 posti: per 22–23 persone resta un piccolo "
-         "margine, utile se si aggiunge qualcuno dello staff tecnico. Oltre i 26 non basta: in quel caso "
+        ("<b>Il numero delle persone.</b> Il Beluga ha 25 posti: per 22–23 persone restano 2 o 3 posti liberi, "
+         "utili se si aggiunge qualcuno dello staff tecnico. Oltre i 25 non basta: in quel caso "
          "avvisateci prima della conferma."),
         ("<b>Al teatro.</b> Indicateci se il gruppo deve scendere all'ingresso degli artisti o a quello "
          "principale, e un recapito del teatro per l'arrivo del mattino."),
@@ -172,7 +172,7 @@ EN = dict(
         "intermediate stops and no other passengers."
     ),
     mezzo_bullet=(
-        "<b>Mercedes-Benz Beluga</b> — 26 passenger seats plus driver, 7.64 m. Air conditioning, "
+        "<b>Mercedes-Benz Beluga</b> — 25 passenger seats plus driver, 7.64 m. Air conditioning, "
         "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold."
     ),
     mezzo_close=(
@@ -242,8 +242,8 @@ EN = dict(
          "get-out, make-up removal and goodbyes, times easily stretch on show night: if you expect to "
          "leave later, tell us in advance, as waiting beyond 2:00 is charged at € 50.00 per hour. Please "
          "let us know who will give the driver the signal to leave."),
-        ("<b>Number of people.</b> The Beluga has 26 seats: for 22–23 people that leaves a small margin, "
-         "useful if a member of the technical crew joins. Beyond 26 it is not enough: in that case please "
+        ("<b>Number of people.</b> The Beluga has 25 seats: for 22–23 people that leaves 2 or 3 free seats, "
+         "useful if a member of the technical crew joins. Beyond 25 it is not enough: in that case please "
          "let us know before confirming."),
         ("<b>At the theatre.</b> Tell us whether the group should be dropped at the stage door or the main "
          "entrance, and give us a theatre contact for the morning arrival."),

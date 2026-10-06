@@ -14,7 +14,7 @@ Gentile Francesca,
 grazie per averci contattato.
 
 Le allego il preventivo per il trasferimento del vostro gruppo, fino a 25 persone, con il
-nostro minibus Mercedes-Benz Beluga da 26 posti:
+nostro minibus Mercedes-Benz Beluga da 25 posti:
 
 - **Sabato 7 novembre — Prato → Malpensa**, partenza alle 5:00 — € 1.650,00 + IVA
 - **Sabato 14 novembre — Malpensa → Prato**, atterraggio verso le 23:00 — € 1.650,00 + IVA
@@ -45,7 +45,7 @@ Dear Francesca,
 thank you for contacting us.
 
 Please find attached our quotation for your group's transfer, up to 25 people, on our
-26-seat Mercedes-Benz Beluga minibus:
+25-seat Mercedes-Benz Beluga minibus:
 
 - **Saturday 7 November — Prato → Malpensa**, departure at 5:00 — € 1,650.00 + VAT
 - **Saturday 14 November — Malpensa → Prato**, landing around 23:00 — € 1,650.00 + VAT

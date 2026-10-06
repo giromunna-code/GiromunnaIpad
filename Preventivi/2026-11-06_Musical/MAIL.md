@@ -10,7 +10,7 @@
 Buongiorno Gianna, grazie per averci contattato!
 
 Le allego il preventivo per il trasporto della compagnia (22–23 persone) con il nostro minibus
-Mercedes-Benz Beluga da 26 posti:
+Mercedes-Benz Beluga da 25 posti:
 
 • Venerdì 6 novembre, Firenze → Teatro Verdi: partenza alle 8:30, arrivo entro le 10:00 — € 500 + IVA
 • Notte fra il 6 e il 7, Teatro Verdi → Firenze: partenza alle 2:00 — € 500 + IVA
@@ -35,7 +35,7 @@ Girolamo Munna – GiroMunna NCC
 
 Good morning Gianna, thank you for contacting us!
 
-Please find attached our quotation for the company's transport (22–23 people) on our 26-seat
+Please find attached our quotation for the company's transport (22–23 people) on our 25-seat
 Mercedes-Benz Beluga minibus:
 
 • Friday 6 November, Florence → Teatro Verdi: departure at 8:30, arrival by 10:00 — € 500 + VAT
@@ -62,7 +62,7 @@ Girolamo Munna – GiroMunna NCC
 
 Buongiorno Gianna, grazie per averci contattato!
 
-Per il vostro gruppo abbiamo il minibus Mercedes-Benz Beluga da 26 posti, con autista, adatto
+Per il vostro gruppo abbiamo il minibus Mercedes-Benz Beluga da 25 posti, con autista, adatto
 sia all'andata del mattino sia al rientro di notte.
 
 Per prepararvi un preventivo preciso ci servono ancora alcune informazioni:
@@ -82,7 +82,7 @@ Girolamo Munna – GiroMunna NCC
 
 Good morning Gianna, thank you for contacting us!
 
-For your group we have our 26-seat Mercedes-Benz Beluga minibus, with driver, suitable for both
+For your group we have our 25-seat Mercedes-Benz Beluga minibus, with driver, suitable for both
 the morning run and the night-time return.
 
 To prepare an accurate quotation we still need a few details:

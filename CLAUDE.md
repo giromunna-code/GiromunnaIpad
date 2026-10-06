@@ -40,7 +40,7 @@ Per il lavoro Girolamo usa info@giromunna.com, che da qui non si vede.
 
 GiroMunna ha **un solo mezzo di proprietà**:
 
-- **Mercedes-Benz Beluga** — 26 posti passeggeri più l'autista, 7,64 m. Aria condizionata,
+- **Mercedes-Benz Beluga** — **25 posti passeggeri più l'autista** (25+1), 7,64 m. Aria condizionata,
   sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli.
 
 **Il riferimento è sempre il Beluga.** Si quota e si descrive sempre quello, in ogni
@@ -49,7 +49,7 @@ preventivo, senza eccezioni decise a tavolino.
 Il **Mercedes-Benz Tourengo** (28 posti più l'autista, 7,86 m) **non è di GiroMunna: è del
 fratello di Girolamo**, Francesco Munna. Entra in gioco solo come secondo minibus, e
 **la decisione è di Girolamo**: va inserito soltanto quando lo dice lui. Non va aggiunto di
-iniziativa, nemmeno quando il gruppo supera i 26 passeggeri e sembra ovvio che serva un
+iniziativa, nemmeno quando il gruppo supera i 25 passeggeri e sembra ovvio che serva un
 altro mezzo. Al cliente i due minibus si presentano insieme, come nel preventivo Corte
 Francigena, ma il secondo ha un costo: va concordato con Francesco prima di metterlo a
 preventivo.
