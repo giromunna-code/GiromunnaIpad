@@ -123,9 +123,9 @@ IT = dict(
          "strumenti o parti di scenografia diteci quanti e quanto ingombranti: se non entrano, è "
          "meglio saperlo adesso e organizzare un trasporto a parte per il materiale."),
         ("<b>Il punto di partenza a Firenze.</b> Il centro di Firenze è zona a traffico limitato e per "
-         "un bus turistico l'ingresso richiede il pagamento del check point, circa € 350 per ogni "
+         "un bus turistico l'ingresso richiede il pagamento del check point, € 421,00 per ogni "
          "giornata. Qui le giornate sarebbero due, il 6 per l'andata e il 7 per il ritorno, che "
-         "arriva dopo mezzanotte: circa € 700 in più. Vi proponiamo "
+         "arriva dopo mezzanotte: € 842,00 in più. Vi proponiamo "
          "quindi un punto di ritrovo appena fuori dalla ZTL, comodo per tutti: indicateci la zona da "
          "cui partite e ve lo suggeriamo noi. Lo stesso vale per la discesa al ritorno."),
         ("<b>L'orario del mattino.</b> Per arrivare al teatro entro le 10:00 partiamo da Firenze alle "
@@ -228,9 +228,9 @@ EN = dict(
          "or pieces of set, tell us how many and how bulky: if they do not fit, it is better to know now "
          "and arrange separate transport for the material."),
         ("<b>The departure point in Florence.</b> The centre of Florence is a restricted traffic zone, and "
-         "entry for a tourist coach requires a check-point fee of about € 350 per day. Here it would be "
+         "entry for a tourist coach requires a check-point fee of € 421.00 per day. Here it would be "
          "two days, the 6th for the outbound run and the 7th for the return, which arrives after "
-         "midnight: about € 700 extra. We therefore suggest a "
+         "midnight: € 842.00 extra. We therefore suggest a "
          "meeting point just outside the zone, convenient for everyone: tell us the area you are leaving "
          "from and we will propose one. The same applies to the drop-off on the way back."),
         ("<b>The morning schedule.</b> To reach the theatre by 10:00 we leave Florence at 8:30. On a Friday "

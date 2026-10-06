@@ -111,8 +111,9 @@ sotto mercato svaluta il servizio e non si recupera.
 - Cancellazione: gratuita oltre 60 giorni; da 60 a 30 giorni si trattiene l'acconto;
   da 30 a 10 giorni il 50%; negli ultimi 10 giorni il 100%.
 - L'aeroporto di Firenze non comporta oneri di accesso; quello di Pisa ha il parcheggio bus
-  (circa € 61). L'ingresso di un bus turistico nel centro di Firenze richiede un permesso a
-  parte (circa € 350). Siena ha il permesso comunale per i bus turistici (circa € 160).
+  (circa € 61). L'ingresso di un bus turistico nel centro di Firenze richiede il check point a
+  parte: **€ 421,00 al giorno**; un servizio che rientra dopo mezzanotte lo paga per due
+  giornate. Siena ha il permesso comunale per i bus turistici (circa € 160).
 
 ## Struttura del repository
 

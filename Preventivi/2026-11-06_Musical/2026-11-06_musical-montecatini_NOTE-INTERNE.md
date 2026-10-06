@@ -37,4 +37,4 @@ Base Le Filigare: € 500 per un trasferimento di ~50 km. Fra le due corse il me
    impossibile per il riposo obbligatorio. Se si confermano entrambi: secondo autista o
    Tourengo di Francesco per uno dei due. Decide Girolamo.
 2. **Materiale di scena.** Chiesto al cliente: costumi, bauli, strumenti potrebbero non entrare.
-3. **Punto di partenza a Firenze** fuori ZTL, altrimenti permesso ~€ 350 a parte.
+3. **Punto di partenza a Firenze** fuori ZTL, altrimenti check point € 421 al giorno, due giornate = € 842 (dato di Girolamo).
