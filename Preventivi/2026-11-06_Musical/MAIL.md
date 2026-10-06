@@ -97,3 +97,52 @@ As soon as we hear from you we will send the quotation. I remain at your disposa
 
 Girolamo Munna – GiroMunna NCC
 +39 335 587 4744
+
+---
+
+## Risposta dopo le informazioni di Gianna (WhatsApp, con il PDF) — italiano
+
+Grazie Gianna, perfetto!
+
+Allora partenza e rientro all'Off Musical in Via di San Giusto, davanti a Torregalli: è fuori
+dalla ZTL, quindi nessun costo di accesso. E con solo i borsoni personali c'è spazio per tutti.
+
+Le allego il preventivo:
+• Venerdì 6 novembre, Off Musical → Teatro Verdi: partenza alle 8:30, arrivo entro le 10:00 — € 500 + IVA
+• Notte fra il 6 e il 7, Teatro Verdi → Off Musical: partenza alle 2:00 — € 500 + IVA
+• Supplemento per il rientro dopo le 2:00 — € 250 + IVA
+
+Totale € 1.375,00 IVA inclusa, con autista, carburante e pedaggi.
+
+E se finite prima, come speriamo 😄: partendo da Montecatini entro l'1:10 si arriva a Firenze
+entro le 2:00, il supplemento non c'è e il totale scende a € 1.100,00 IVA inclusa.
+
+Per confermare ci servono il nome e il cellulare di un referente e i dati per la fattura.
+Resto a disposizione!
+
+Girolamo Munna – GiroMunna NCC
++39 335 587 4744
+
+## Reply after Gianna's details (WhatsApp, with the PDF) — English
+
+Thank you Gianna, perfect!
+
+So departure and return at Off Musical in Via di San Giusto, in front of Torregalli: it is
+outside the restricted traffic zone, so no access charges. And with personal holdalls only
+there is room for everyone.
+
+Please find the quotation attached:
+• Friday 6 November, Off Musical → Teatro Verdi: departure at 8:30, arrival by 10:00 — € 500 + VAT
+• Night of 6–7 November, Teatro Verdi → Off Musical: departure at 2:00 — € 500 + VAT
+• Supplement for return after 2:00 — € 250 + VAT
+
+Total € 1,375.00 VAT included, with driver, fuel and tolls.
+
+And if you finish earlier, as we hope 😄: leaving Montecatini by 1:10 we reach Florence by
+2:00, there is no supplement and the total drops to € 1,100.00 VAT included.
+
+To confirm we need the name and mobile number of a contact person and your invoicing details.
+I remain at your disposal!
+
+Girolamo Munna – GiroMunna NCC
++39 335 587 4744

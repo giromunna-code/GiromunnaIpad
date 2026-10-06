@@ -36,5 +36,8 @@ Base Le Filigare: € 500 per un trasferimento di ~50 km. Fra le due corse il me
    del 7/11 e per Gori deve ripartire verso le 4:15 (Prato alle 5:00). Stesso autista
    impossibile per il riposo obbligatorio. Se si confermano entrambi: secondo autista o
    Tourengo di Francesco per uno dei due. Decide Girolamo.
-2. **Materiale di scena.** Chiesto al cliente: costumi, bauli, strumenti potrebbero non entrare.
-3. **Punto di partenza a Firenze** fuori ZTL, altrimenti check point € 421 al giorno, due giornate = € 842 (dato di Girolamo).
+2. **Risposte di Gianna (6 ottobre):** partenza e rientro all'Off Musical, Via di San Giusto,
+   davanti all'ospedale di Torregalli (fuori ZTL, niente check point); solo borsoni personali,
+   il materiale va sul loro furgone; sperano di finire prima delle 2:00. Nel preventivo: se
+   partono da Montecatini entro l'1:10 il supplemento notturno si toglie (totale € 1.100 IVA
+   inclusa). Anche così il Beluga rientra in sede verso le 2:45: la sovrapposizione con Gori resta.

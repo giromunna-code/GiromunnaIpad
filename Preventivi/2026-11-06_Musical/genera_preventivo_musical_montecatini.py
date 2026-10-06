@@ -78,11 +78,11 @@ IT = dict(
     svc_head=["Data", "Percorso", "Orario"],
     svc=[
         ("Ven 6 nov",
-         "<b>Firenze → Teatro Verdi, Montecatini Terme.</b> Circa 50 km, autostrada A11. "
+         "<b>Off Musical, Via di San Giusto (Firenze) → Teatro Verdi, Montecatini Terme.</b> Circa 55 km, A1 e A11. "
          "Arrivo al teatro entro le 10:00.",
          "partenza 8:30"),
         ("Notte 6–7 nov",
-         "<b>Teatro Verdi, Montecatini Terme → Firenze.</b> Arrivo a Firenze verso le 2:50.",
+         "<b>Teatro Verdi, Montecatini Terme → Off Musical, Via di San Giusto (Firenze).</b> Arrivo verso le 2:50.",
          "partenza 2:00"),
     ],
     h_prezzo="Il prezzo",
@@ -105,9 +105,7 @@ IT = dict(
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
-        "Attesa oltre la partenza delle 2:00, € 50,00 all'ora. Fermate aggiuntive a Firenze, quotate "
-        "su richiesta. L'eventuale permesso per entrare nella zona a traffico limitato di Firenze, "
-        "per cui vedete le note."
+        "Attesa oltre la partenza delle 2:00, € 50,00 all'ora. Fermate aggiuntive, quotate su richiesta."
     ),
     h_pagamento="Pagamento",
     pay_rows=[
@@ -118,34 +116,29 @@ IT = dict(
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
-        ("<b>Costumi, attrezzatura e strumenti.</b> Una compagnia di musical di solito non viaggia "
-         "solo con le borse personali. Il vano del Beluga è ampio, ma se portate costumi, bauli, "
-         "strumenti o parti di scenografia diteci quanti e quanto ingombranti: se non entrano, è "
-         "meglio saperlo adesso e organizzare un trasporto a parte per il materiale."),
-        ("<b>Il punto di partenza a Firenze.</b> Il centro di Firenze è zona a traffico limitato e per "
-         "un bus turistico l'ingresso richiede il pagamento del check point, € 421,00 per ogni "
-         "giornata. Qui le giornate sarebbero due, il 6 per l'andata e il 7 per il ritorno, che "
-         "arriva dopo mezzanotte: € 842,00 in più. Vi proponiamo "
-         "quindi un punto di ritrovo appena fuori dalla ZTL, comodo per tutti: indicateci la zona da "
-         "cui partite e ve lo suggeriamo noi. Lo stesso vale per la discesa al ritorno."),
-        ("<b>L'orario del mattino.</b> Per arrivare al teatro entro le 10:00 partiamo da Firenze alle "
-         "8:30. Il venerdì mattina l'uscita di Firenze Nord e la A11 sono spesso trafficate: con questo "
-         "margine arriviamo in tempo anche con qualche rallentamento. Se volete essere in teatro prima, "
-         "anticipiamo senza costi aggiuntivi."),
-        ("<b>Il ritorno alle 2:00.</b> Il rientro dopo le 02:00 comporta un supplemento di € 250,00, che "
-         "abbiamo già messo a preventivo, così non ci sono sorprese. Il conducente è al teatro dalle "
-         "1:45. Fra smontaggio, struccatura e saluti la sera dello spettacolo i tempi si allungano "
-         "facilmente: se pensate di partire più tardi, ditecelo prima, perché l'attesa oltre le 2:00 "
-         "si conteggia a € 50,00 all'ora. Vi chiediamo il nome di chi darà al conducente il via alla "
-         "partenza."),
-        ("<b>Il numero delle persone.</b> Il Beluga ha 25 posti: per 22–23 persone restano 2 o 3 posti liberi, "
-         "utili se si aggiunge qualcuno dello staff tecnico. Oltre i 25 non basta: in quel caso "
+        ("<b>Partenza e rientro all'Off Musical.</b> Vi prendiamo e vi riportiamo in Via di San Giusto, "
+         "davanti all'ospedale di Torregalli. La zona è fuori dalla ZTL di Firenze: nessun check point "
+         "e nessun permesso da pagare. Il minibus vi aspetta lì dalle 8:20."),
+        ("<b>L'orario del mattino.</b> Per arrivare al teatro entro le 10:00 partiamo alle 8:30. Il "
+         "venerdì mattina il tratto fra Scandicci e Firenze Nord e la A11 sono spesso trafficati: con "
+         "questo margine arriviamo in tempo anche con qualche rallentamento. Se volete essere in teatro "
+         "prima, anticipiamo senza costi aggiuntivi."),
+        ("<b>Il ritorno, e se finite prima delle 2:00.</b> Il preventivo è fatto sulla partenza dal "
+         "teatro alle 2:00, con arrivo all'Off Musical verso le 2:50: per questo comprende il supplemento "
+         "di € 250,00 per il rientro dopo le 02:00. Se riuscite a partire da Montecatini entro l'1:10, "
+         "si arriva a Firenze entro le 2:00 e il supplemento non si applica: il totale scende a "
+         "€ 1.100,00 IVA inclusa. Ci basta saperlo qualche giorno prima. Se invece la serata si allunga "
+         "oltre le 2:00, l'attesa si conteggia a € 50,00 all'ora. Vi chiediamo il nome di chi darà al "
+         "conducente il via alla partenza."),
+        ("<b>Bagagli.</b> Ognuno con il proprio borsone, mentre il materiale di scena viaggia sul vostro "
+         "furgone: nel vano del Beluga c'è spazio per tutti."),
+        ("<b>Il numero delle persone.</b> Il Beluga ha 25 posti: per 22–23 persone restano 2 o 3 posti "
+         "liberi, utili se si aggiunge qualcuno dello staff tecnico. Oltre i 25 non basta: in quel caso "
          "avvisateci prima della conferma."),
         ("<b>Al teatro.</b> Indicateci se il gruppo deve scendere all'ingresso degli artisti o a quello "
          "principale, e un recapito del teatro per l'arrivo del mattino."),
-        ("<b>Per confermare ci servono</b> il numero definitivo dei passeggeri, il punto di partenza e di "
-         "arrivo a Firenze, cosa portate come materiale, il nome e il cellulare di un referente e i dati "
-         "per la fattura."),
+        ("<b>Per confermare ci servono</b> il numero definitivo dei passeggeri, il nome e il cellulare di "
+         "un referente e i dati per la fattura."),
         ("<b>Disponibilità e cancellazione.</b> Il mezzo è al momento libero e lo teniamo a vostra "
          "disposizione fino al 13 ottobre 2026, data di validità del preventivo; la prenotazione diventa "
          "definitiva alla ricezione dell'acconto. Mancando meno di 30 giorni al servizio, dopo la "
@@ -184,11 +177,11 @@ EN = dict(
     svc_head=["Date", "Route", "Time"],
     svc=[
         ("Fri 6 Nov",
-         "<b>Florence → Teatro Verdi, Montecatini Terme.</b> About 50 km, A11 motorway. "
+         "<b>Off Musical, Via di San Giusto (Florence) → Teatro Verdi, Montecatini Terme.</b> About 55 km, A1 and A11. "
          "Arrival at the theatre by 10:00.",
          "departure 8:30"),
         ("Night 6–7 Nov",
-         "<b>Teatro Verdi, Montecatini Terme → Florence.</b> Arrival in Florence around 2:50.",
+         "<b>Teatro Verdi, Montecatini Terme → Off Musical, Via di San Giusto (Florence).</b> Arrival around 2:50.",
          "departure 2:00"),
     ],
     h_prezzo="The price",
@@ -211,8 +204,7 @@ EN = dict(
     ),
     h_nonincluso="Not included.",
     nonincluso=(
-        "Waiting beyond the 2:00 departure, € 50.00 per hour. Additional stops in Florence, quoted on "
-        "request. Any permit to enter the Florence restricted traffic zone — see the notes."
+        "Waiting beyond the 2:00 departure, € 50.00 per hour. Additional stops, quoted on request."
     ),
     h_pagamento="Payment",
     pay_rows=[
@@ -223,33 +215,28 @@ EN = dict(
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
-        ("<b>Costumes, equipment and instruments.</b> A musical company rarely travels with personal "
-         "bags only. The Beluga's hold is large, but if you are bringing costumes, trunks, instruments "
-         "or pieces of set, tell us how many and how bulky: if they do not fit, it is better to know now "
-         "and arrange separate transport for the material."),
-        ("<b>The departure point in Florence.</b> The centre of Florence is a restricted traffic zone, and "
-         "entry for a tourist coach requires a check-point fee of € 421.00 per day. Here it would be "
-         "two days, the 6th for the outbound run and the 7th for the return, which arrives after "
-         "midnight: € 842.00 extra. We therefore suggest a "
-         "meeting point just outside the zone, convenient for everyone: tell us the area you are leaving "
-         "from and we will propose one. The same applies to the drop-off on the way back."),
-        ("<b>The morning schedule.</b> To reach the theatre by 10:00 we leave Florence at 8:30. On a Friday "
-         "morning the Firenze Nord junction and the A11 are often busy: this margin gets us there on time "
-         "even with some delays. If you want to be at the theatre earlier, we bring it forward at no extra "
-         "cost."),
-        ("<b>The 2:00 return.</b> A return after 02:00 carries a supplement of € 250.00, already included "
-         "in this quotation so there are no surprises. The driver is at the theatre from 1:45. Between "
-         "get-out, make-up removal and goodbyes, times easily stretch on show night: if you expect to "
-         "leave later, tell us in advance, as waiting beyond 2:00 is charged at € 50.00 per hour. Please "
-         "let us know who will give the driver the signal to leave."),
+        ("<b>Departure and return at Off Musical.</b> We pick you up and bring you back to Via di San "
+         "Giusto, in front of Torregalli hospital. The area is outside the Florence restricted traffic "
+         "zone: no check point and no permit to pay. The minibus will be waiting there from 8:20."),
+        ("<b>The morning schedule.</b> To reach the theatre by 10:00 we leave at 8:30. On a Friday morning "
+         "the stretch between Scandicci and Firenze Nord and the A11 are often busy: this margin gets us "
+         "there on time even with some delays. If you want to be at the theatre earlier, we bring it "
+         "forward at no extra cost."),
+        ("<b>The return, and if you finish before 2:00.</b> This quotation is based on leaving the theatre "
+         "at 2:00 and arriving at Off Musical around 2:50, which is why it includes the € 250.00 "
+         "supplement for a return after 02:00. If you can leave Montecatini by 1:10, we reach Florence "
+         "by 2:00 and the supplement does not apply: the total drops to € 1,100.00 VAT included. We only "
+         "need to know a few days ahead. If instead the evening runs beyond 2:00, waiting is charged at "
+         "€ 50.00 per hour. Please let us know who will give the driver the signal to leave."),
+        ("<b>Luggage.</b> Everyone with their own holdall, while the stage material travels in your van: "
+         "the Beluga's hold has room for all of it."),
         ("<b>Number of people.</b> The Beluga has 25 seats: for 22–23 people that leaves 2 or 3 free seats, "
          "useful if a member of the technical crew joins. Beyond 25 it is not enough: in that case please "
          "let us know before confirming."),
         ("<b>At the theatre.</b> Tell us whether the group should be dropped at the stage door or the main "
          "entrance, and give us a theatre contact for the morning arrival."),
-        ("<b>To confirm we need</b> the final number of passengers, the departure and arrival point in "
-         "Florence, what material you are bringing, the name and mobile number of a contact person and "
-         "your invoicing details."),
+        ("<b>To confirm we need</b> the final number of passengers, the name and mobile number of a "
+         "contact person and your invoicing details."),
         ("<b>Availability and cancellation.</b> The vehicle is currently free and we hold it for you until "
          "13 October 2026, the validity date of this quotation; the booking becomes firm on receipt of the "
          "deposit. With less than 30 days to the service, once confirmed a cancellation is charged at 50% "
