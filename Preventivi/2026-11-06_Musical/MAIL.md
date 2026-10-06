@@ -111,7 +111,7 @@ Le allego il preventivo:
 • Venerdì 6 novembre, Off Musical → Teatro Verdi: partenza alle 8:30, arrivo entro le 10:00
 • Notte fra il 6 e il 7, Teatro Verdi → Off Musical: partenza alle 2:00
 
-Totale € 1.000,00 IVA inclusa per andata e ritorno, con autista, carburante, pedaggi e rientro
+Totale € 1.100,00 + IVA (€ 1.210,00 IVA inclusa) per andata e ritorno, con autista, carburante, pedaggi e rientro
 notturno compresi. Se finite prima, come speriamo 😄, basta avvisarci e il conducente è pronto.
 
 Per confermare ci servono il nome e il cellulare di un referente e i dati per la fattura.
@@ -132,7 +132,7 @@ Please find the quotation attached:
 • Friday 6 November, Off Musical → Teatro Verdi: departure at 8:30, arrival by 10:00
 • Night of 6–7 November, Teatro Verdi → Off Musical: departure at 2:00
 
-Total € 1,000.00 VAT included for the round trip, with driver, fuel, tolls and the late-night
+Total € 1,100.00 + VAT (€ 1,210.00 VAT included) for the round trip, with driver, fuel, tolls and the late-night
 return included. If you finish earlier, as we hope 😄, just let us know and the driver will be ready.
 
 To confirm we need the name and mobile number of a contact person and your invoicing details.

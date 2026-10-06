@@ -88,13 +88,13 @@ IT = dict(
     h_prezzo="Il prezzo",
     price_rows=[
         ("Firenze → Montecatini Terme venerdì 6 novembre e ritorno nella notte fra il 6 e il 7, "
-         "rientro notturno compreso", "€ 909,09", "+ IVA 10%"),
+         "rientro notturno compreso", "€ 1.100,00", "+ IVA 10%"),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 909,09",
+    price_total="€ 1.100,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 1.000,00.",
-    perhead=("Su 23 persone sono circa € 43,50 a testa per andata e ritorno, IVA inclusa. "
+    grand="Totale da corrispondere, IVA 10% inclusa: € 1.210,00.",
+    perhead=("Su 23 persone sono circa € 53,00 a testa per andata e ritorno, IVA inclusa. "
              "Il prezzo è per il mezzo, non per persona: non cambia se siete qualcuno in meno."),
     h_incluso="Incluso.",
     incluso=(
@@ -108,8 +108,8 @@ IT = dict(
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 300,00", "IVA inclusa"),
-        ("Saldo, entro il 6 novembre 2026, giorno del servizio", "€ 700,00", ""),
+        ("Acconto 30% alla conferma", "€ 363,00", "IVA inclusa"),
+        ("Saldo, entro il 6 novembre 2026, giorno del servizio", "€ 847,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
@@ -184,13 +184,13 @@ EN = dict(
     h_prezzo="The price",
     price_rows=[
         ("Florence → Montecatini Terme on Friday 6 November and return on the night of 6–7 November, "
-         "late-night return included", "€ 909.09", "+ VAT 10%"),
+         "late-night return included", "€ 1,100.00", "+ VAT 10%"),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 909.09",
+    price_total="€ 1,100.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 1,000.00.",
-    perhead=("Across 23 people that is about € 43.50 each for the round trip, VAT included. "
+    grand="Total payable, VAT 10% included: € 1,210.00.",
+    perhead=("Across 23 people that is about € 53.00 each for the round trip, VAT included. "
              "The price is for the vehicle, not per person: it does not change if a few of you are missing."),
     h_incluso="Included.",
     incluso=(
@@ -204,8 +204,8 @@ EN = dict(
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 300.00", "VAT included"),
-        ("Balance, by 6 November 2026, the day of the service", "€ 700.00", ""),
+        ("Deposit 30% on confirmation", "€ 363.00", "VAT included"),
+        ("Balance, by 6 November 2026, the day of the service", "€ 847.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
