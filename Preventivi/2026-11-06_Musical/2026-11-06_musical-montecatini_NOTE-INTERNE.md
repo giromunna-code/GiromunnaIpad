@@ -1,6 +1,6 @@
 # Note interne — Compagnia di musical, Firenze ↔ Teatro Verdi di Montecatini, 6.11.2026
 
-**Cliente:** compagnia di musical di Firenze (nome, referente ed email da completare)
+**Cliente:** Gianna, compagnia di musical di Firenze — richiesta arrivata su WhatsApp, +39 328 927 3339 (nome della compagnia ed email da completare)
 **Rif. preventivo:** GM-2026-1106-MF · **Preparato:** 6 ottobre 2026 · **Validità:** 13 ottobre 2026
 
 File generati:
@@ -12,8 +12,8 @@ File generati:
 Quando si sa il nome della compagnia, rigenerare con:
 
 ```bash
-python3 genera_preventivo_musical_montecatini.py --lingua it --cliente "Nome compagnia"
-python3 genera_preventivo_musical_montecatini.py --lingua en --cliente "Nome compagnia"
+python3 genera_preventivo_musical_montecatini.py --lingua it --cliente "Gianna, compagnia di musical di Firenze"
+python3 genera_preventivo_musical_montecatini.py --lingua en --cliente "Gianna, compagnia di musical di Firenze"
 ```
 
 ## Prezzi
