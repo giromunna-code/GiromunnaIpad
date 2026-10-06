@@ -69,7 +69,6 @@ Per prepararvi un preventivo preciso ci servono ancora alcune informazioni:
 • da dove partite esattamente a Firenze (indirizzo o zona) e dove volete essere riaccompagnati
   al ritorno: se siete in centro, dentro la ZTL, conviene un punto di ritrovo appena fuori,
   perché l'ingresso con il minibus ha un costo per ogni giornata;
-• il numero definitivo dei passeggeri;
 • se portate materiale di scena (costumi, bauli, strumenti), per verificare che entri tutto nel
   vano bagagli;
 • l'orario di rientro, se pensate che possa andare oltre le 2:00.
@@ -90,7 +89,6 @@ To prepare an accurate quotation we still need a few details:
 • exactly where in Florence you are leaving from (address or area) and where you would like to
   be dropped off on the way back: if you are in the centre, inside the restricted traffic zone,
   a meeting point just outside is better, as entering with the minibus has a cost for each day;
-• the final number of passengers;
 • whether you are bringing stage material (costumes, trunks, instruments), to check that
   everything fits in the luggage hold;
 • the return time, if you think it may go beyond 2:00.
