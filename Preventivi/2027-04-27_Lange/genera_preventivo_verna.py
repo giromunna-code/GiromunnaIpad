@@ -77,16 +77,16 @@ IT = dict(
     svc_head=["Data", "Percorso", "Orario"],
     svc=[
         ("Mar 27 apr",
-         "<b>Piazzale di Porta Romana (Firenze) → Santuario della Verna, Chiusi della Verna (AR).</b> "
-         "Circa 95 km per Pontassieve, il passo della Consuma e Bibbiena; arrivo verso le 9:45.",
+         "<b>Parcheggio Villa Costanza (A1, Scandicci) → Santuario della Verna, Chiusi della Verna (AR).</b> "
+         "Circa 105 km per l'A1, Pontassieve, il passo della Consuma e Bibbiena; arrivo verso le 9:45.",
          "partenza 7:45"),
         ("",
          "<b>Sosta al santuario.</b> Il minibus e il conducente restano a vostra disposizione alla Verna "
          "per tutta la visita.",
          "circa 7 ore"),
         ("",
-         "<b>Santuario della Verna → Piazzale di Porta Romana (Firenze).</b> Stesso percorso; arrivo "
-         "verso le 19:00.",
+         "<b>Santuario della Verna → Parcheggio Villa Costanza.</b> Stesso percorso; arrivo "
+         "verso le 19:00, poi tramvia per il centro.",
          "partenza 17:00"),
     ],
     h_prezzo="Il prezzo",
@@ -104,14 +104,15 @@ IT = dict(
     h_incluso="Incluso.",
     incluso=(
         "Minibus con conducente per tutta la giornata, carburante, eventuali pedaggi, parcheggi, "
-        "permessi e assicurazione completa. Con il ritrovo a Porta Romana non ci sono costi di accesso "
-        "a Firenze: nessun altro costo oltre a quelli indicati."
+        "permessi e assicurazione completa. Con il ritrovo a Villa Costanza il minibus non entra in "
+        "città e non ci sono costi di accesso a Firenze: nessun altro costo oltre a quelli indicati."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
         "Il pranzo del conducente, a carico vostro (vedi le note). Attesa oltre il rientro delle 19:00, "
-        "€ 50,00 all'ora. Fermate o deviazioni aggiuntive, quotate su richiesta. Se si sceglie un "
-        "ritrovo dentro la ZTL di Firenze, il check point per i bus turistici, € 421,00."
+        "€ 50,00 all'ora. I biglietti della tramvia per Villa Costanza. Fermate o deviazioni "
+        "aggiuntive, quotate su richiesta. Se si preferisce un ritrovo in centro a Firenze, il check "
+        "point per i bus turistici, € 421,00."
     ),
     h_pagamento="Pagamento",
     pay_rows=[
@@ -122,13 +123,17 @@ IT = dict(
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
-        ("<b>Il punto di ritrovo: Piazzale di Porta Romana.</b> Da Piazza Santo Spirito sono circa "
-         "10–12 minuti a piedi, per Via Maggio o Via de' Serragli e poi Via Romana, in piano. Il "
-         "piazzale è appena fuori dalle mura e dalla ZTL: il minibus vi aspetta lì dalle 7:35, senza "
-         "entrare in centro e quindi senza il check point per i bus turistici (€ 421,00 al giorno). "
-         "In serata vi riportiamo nello stesso punto."),
+        ("<b>Il punto di ritrovo: parcheggio Villa Costanza.</b> È il parcheggio scambiatore sull'A1 fra "
+         "Firenze e Scandicci, capolinea della tramvia T1. Da Santo Spirito si va a piedi alla fermata "
+         "Alamanni – Stazione, attraversando l'Arno al Ponte alla Carraia (circa 15 minuti), e da lì "
+         "il tram porta a Villa Costanza in circa 20 minuti, con corse frequenti fin dal primo mattino. "
+         "Vi consigliamo di uscire da Santo Spirito alle 7:00; il minibus vi aspetta dalle 7:30. "
+         "Così il mezzo non entra in città: niente check point per i bus turistici (€ 421,00 al giorno), "
+         "niente traffico cittadino, e si parte direttamente in autostrada, con orari più sicuri sia al "
+         "mattino sia al rientro della sera. In serata vi riportiamo a Villa Costanza, da dove il tram "
+         "vi riporta in centro."),
         ("<b>La strada.</b> Il percorso più diretto passa per il passo della Consuma: circa due ore, "
-         "con un lungo tratto di curve. Chi soffre il mal d'auto si trova meglio nei posti davanti; il "
+         "con un lungo tratto di curve dopo Pontassieve. Chi soffre il mal d'auto si trova meglio nei posti davanti; il "
          "conducente conosce la strada e procede con calma. Se qualcuno lo preferisce, al ritorno si "
          "può fare il giro per Arezzo e l'autostrada: è più lungo in chilometri, ma con meno curve, e "
          "il prezzo non cambia."),
@@ -136,7 +141,7 @@ IT = dict(
          "ore per la visita, la messa e il pranzo. Al santuario i frati salgono ogni giorno in "
          "processione alla Cappella delle Stimmate nel primo pomeriggio: se volete assistervi, vi "
          "consigliamo di verificare l'orario con il santuario. Ripartendo alle 17:00 siete a Firenze "
-         "verso le 19:00; il rientro in città la sera può essere rallentato dal traffico. Gli orari si "
+         "verso le 19:00, a Villa Costanza, senza il traffico serale del centro. Gli orari si "
          "possono spostare senza costi, purché la giornata resti entro le 19:00."),
         ("<b>Il pranzo, e quello del conducente.</b> Il santuario ha un refettorio per i pellegrini, che "
          "per un gruppo di 25 persone va prenotato con anticipo. Il pranzo del conducente è a carico "
@@ -190,16 +195,16 @@ EN = dict(
     svc_head=["Date", "Route", "Time"],
     svc=[
         ("Tue 27 Apr",
-         "<b>Piazzale di Porta Romana (Florence) → Sanctuary of La Verna, Chiusi della Verna (AR).</b> "
-         "About 95 km via Pontassieve, the Consuma pass and Bibbiena; arrival around 9:45.",
+         "<b>Villa Costanza car park (A1, Scandicci) → Sanctuary of La Verna, Chiusi della Verna (AR).</b> "
+         "About 105 km via the A1, Pontassieve, the Consuma pass and Bibbiena; arrival around 9:45.",
          "departure 7:45"),
         ("",
          "<b>Stay at the sanctuary.</b> The minibus and driver remain at your disposal at La Verna "
          "throughout the visit.",
          "about 7 hours"),
         ("",
-         "<b>Sanctuary of La Verna → Piazzale di Porta Romana (Florence).</b> Same route; arrival "
-         "around 19:00.",
+         "<b>Sanctuary of La Verna → Villa Costanza car park.</b> Same route; arrival "
+         "around 19:00, then tram to the centre.",
          "departure 17:00"),
     ],
     h_prezzo="The price",
@@ -217,14 +222,14 @@ EN = dict(
     h_incluso="Included.",
     incluso=(
         "Minibus with driver for the whole day, fuel, any tolls, parking, permits and full insurance. "
-        "With the meeting point at Porta Romana there are no access charges in Florence: no costs "
-        "other than those shown."
+        "With the meeting point at Villa Costanza the minibus does not enter the city and there are no "
+        "access charges in Florence: no costs other than those shown."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
         "The driver's lunch, at your charge (see the notes). Waiting beyond the 19:00 return, € 50.00 "
-        "per hour. Additional stops or detours, quoted on request. If a meeting point inside the Florence "
-        "restricted traffic zone is chosen, the tourist-coach check point, € 421.00."
+        "per hour. Tram tickets to Villa Costanza. Additional stops or detours, quoted on request. If a "
+        "meeting point in central Florence is preferred, the tourist-coach check point, € 421.00."
     ),
     h_pagamento="Payment",
     pay_rows=[
@@ -235,20 +240,24 @@ EN = dict(
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
-        ("<b>The meeting point: Piazzale di Porta Romana.</b> From Piazza Santo Spirito it is about "
-         "10–12 minutes on foot, along Via Maggio or Via de' Serragli and then Via Romana, all on the "
-         "flat. The square is just outside the city walls and the restricted traffic zone: the minibus "
-         "will be waiting there from 7:35, without entering the centre and therefore without the "
-         "tourist-coach check point (€ 421.00 per day). In the evening we bring you back to the same spot."),
+        ("<b>The meeting point: Villa Costanza car park.</b> It is the park-and-ride on the A1 between "
+         "Florence and Scandicci, terminus of tram line T1. From Santo Spirito you walk to the Alamanni – "
+         "Stazione stop, crossing the Arno at Ponte alla Carraia (about 15 minutes), and from there the "
+         "tram reaches Villa Costanza in about 20 minutes, with frequent services from early morning. "
+         "We suggest leaving Santo Spirito at 7:00; the minibus will be waiting from 7:30. This way the "
+         "vehicle does not enter the city: no tourist-coach check point (€ 421.00 per day), no city "
+         "traffic, and we start directly on the motorway, with more reliable times both in the morning "
+         "and on the evening return. In the evening we bring you back to Villa Costanza, where the tram "
+         "takes you back to the centre."),
         ("<b>The road.</b> The most direct route crosses the Consuma pass: about two hours, with a long "
-         "winding stretch. Anyone prone to travel sickness is better off in the front seats; the driver "
+         "winding stretch after Pontassieve. Anyone prone to travel sickness is better off in the front seats; the driver "
          "knows the road and takes it calmly. If preferred, the return can go via Arezzo and the "
          "motorway: longer in kilometres but with fewer bends, and the price does not change."),
         ("<b>The schedule.</b> Leaving at 7:45 you reach the sanctuary around 9:45, with about seven hours "
          "for the visit, Mass and lunch. Every day the friars walk in procession to the Chapel of the "
          "Stigmata in the early afternoon: if you wish to attend, we suggest checking the time with the "
-         "sanctuary. Leaving at 17:00 you are in Florence around 19:00; evening traffic into the city "
-         "can slow the last stretch. Times can be moved at no cost, as long as the day ends by 19:00."),
+         "sanctuary. Leaving at 17:00 you are back at Villa Costanza around 19:00, avoiding evening "
+         "traffic in the centre. Times can be moved at no cost, as long as the day ends by 19:00."),
         ("<b>Lunch, and the driver's lunch.</b> The sanctuary has a pilgrims' refectory, which for a "
          "group of 25 should be booked in advance. The driver's lunch is at your charge and is not "
          "priced in this quotation: the simplest solution is to include it in your own booking, at the "
