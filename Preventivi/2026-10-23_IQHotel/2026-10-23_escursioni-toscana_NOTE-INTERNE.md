@@ -68,8 +68,8 @@ servizio: l'ho lasciato compreso.
 
 ## Da verificare
 
-1. **Disponibilità del Beluga 23–24 ottobre.** Nel PDF e nella mail ho scritto che è libero:
-   nei preventivi del repository non risultano lavori in quelle date, ma va confermato.
+1. **Disponibilità del Beluga 23–24 ottobre: confermata da Girolamo.** Se nel frattempo il
+   Beluga si impegna, Girolamo valuta il Tourengo di Francesco (costo da concordare con lui).
 2. **Tariffe dei permessi** di Pisa, Lucca e San Gimignano.
 3. **Tempi stretti.** Il servizio è fra 8 giorni: siamo negli ultimi 10 giorni, quindi dopo
    la conferma la cancellazione è al 100%. Validità messa al 17 ottobre e saldo entro il 22.
