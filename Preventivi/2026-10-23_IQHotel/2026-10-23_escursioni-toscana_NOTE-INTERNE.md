@@ -8,7 +8,7 @@ File generati:
 - `GiroMunna_Preventivo_Escursioni_Toscana_23-24_ottobre_2026_IT.pdf`
 - `GiroMunna_Preventivo_Escursioni_Toscana_23-24_ottobre_2026_EN.pdf`
 - `genera_preventivo_escursioni_toscana.py` — rigenera entrambi i PDF
-- `MAIL.md` — testo della mail, italiano e inglese
+- `MAIL.md` — testo del messaggio (WhatsApp o mail), italiano e inglese
 
 Quando si sa il nome della cliente, rigenerare con:
 
@@ -19,10 +19,13 @@ python3 genera_preventivo_escursioni_toscana.py --lingua en --cliente "Nome Cogn
 
 ## Richiesta
 
-Due preventivi separati: (1) solo minibus per i due giorni, tutto compreso (carburante,
-parcheggi, pedaggi, tasse); (2) lo stesso più visita guidata e degustazione in cantina con
-aperitivo o prodotti tipici, 10 persone, cantina scelta e prenotata da noi. Chiedono
-conferma della disponibilità. Li ho messi tutti e due nello stesso PDF, come opzione 1 e 2.
+Prima richiesta: due preventivi, solo minibus e minibus più cantina prenotata da noi, con
+veicolo da 10 posti. Girolamo ha risposto su WhatsApp, senza prezzi: il mezzo più piccolo è
+da 25 posti, **GiroMunna non prenota le cantine**, le consiglia soltanto. La cliente ha
+accettato e chiede un preventivo per le due giornate, partenza e rientro all'iQ Hotel,
+tutto compreso. Il preventivo è quindi **solo minibus**; nelle note ci sono tre cantine
+consigliate (Antinori Bargino, Badia a Passignano, Castello di Verrazzano), scelta e
+prenotazione a loro.
 
 ## Prezzi
 
@@ -32,12 +35,9 @@ conferma della disponibilità. Li ho messi tutti e due nello stesso PDF, come op
 | Sab 24/10 Firenze – Siena – San Gimignano – Chianti – Firenze, 10 ore, ~180 km | € 1.250,00 |
 | Permessi bus (vedi sotto) | € 1.320,00 |
 | Pranzo conducente | a carico del cliente |
-| **Totale netto opzione 1** | **€ 3.720,00** |
+| **Totale netto** | **€ 3.720,00** |
 
-IVA 10% € 372,00 · **Opzione 1: € 4.092,00** — acconto € 1.227,60, saldo € 2.864,40.
-
-**Opzione 2:** + cantina € 950,00 IVA inclusa (€ 95 a persona) = **€ 5.042,00** — acconto
-€ 1.512,60, saldo € 3.529,40.
+IVA 10% € 372,00 · **Totale € 4.092,00** — acconto € 1.227,60, saldo € 2.864,40.
 
 Come sono costruiti: base Le Filigare (giornata 80 km / 5 ore € 809). Qui le giornate sono
 di 9 e 10 ore, ~190 e ~180 km di servizio più ~110 km di vuoto da e per Ponte Buggianese ogni
@@ -66,28 +66,13 @@ Costanza, raggiungibile con la tramvia T1 dalla fermata Fortezza, a pochi passi 
 si risparmiano € 926 IVA inclusa. Per un gruppo così però il ritiro in hotel è il punto del
 servizio: l'ho lasciato compreso.
 
-## Cantina — da confermare prima di inviare
-
-Proposta: **Antinori nel Chianti Classico**, Bargino (San Casciano V.P.), sulla
-Firenze–Siena, mezz'ora dall'hotel: ultima tappa perfetta sulla strada del ritorno.
-Prenotazioni: visite@antinorichianticlassico.it. Il Tinaia Tour standard costa circa € 45 a
-persona (fonte non ufficiale), 1h30, 3 vini, **in gruppo con altri ospiti e senza cibo**:
-non basta per quello che chiede la cliente. Serve un formato privato con degustazione e
-prodotti tipici: chiedere prezzo e disponibilità per sabato 24 verso le 16:15.
-
-A preventivo € 95 a persona IVA inclusa, cifra tenuta alta. Se Antinori non ha posto o costa
-di più, alternative sulla strada SG → Firenze con degustazione e tagliere: Badia a
-Passignano, Castello di Verrazzano (Greve, un po' fuori strada). Se Girolamo ha una cantina
-di fiducia, meglio quella: il testo del PDF dice già che si può proporre un'altra tenuta.
-
 ## Da verificare
 
 1. **Disponibilità del Beluga 23–24 ottobre.** Nel PDF e nella mail ho scritto che è libero:
    nei preventivi del repository non risultano lavori in quelle date, ma va confermato.
-2. **Prezzo e orario della cantina** (sopra) prima di inviare l'opzione 2.
-3. **Tariffe dei permessi** di Pisa, Lucca e San Gimignano.
-4. **Tempi stretti.** Il servizio è fra 8 giorni: siamo negli ultimi 10 giorni, quindi dopo
+2. **Tariffe dei permessi** di Pisa, Lucca e San Gimignano.
+3. **Tempi stretti.** Il servizio è fra 8 giorni: siamo negli ultimi 10 giorni, quindi dopo
    la conferma la cancellazione è al 100%. Validità messa al 17 ottobre e saldo entro il 22.
-5. **Ore del conducente.** Sabato: partenza dalla base verso le 7:30, rientro verso le 19:30,
+4. **Ore del conducente.** Sabato: partenza dalla base verso le 7:30, rientro verso le 19:30,
    circa 12 ore di impegno e 5 di guida. Nei limiti.
-6. Nome, mail e telefono della cliente, per l'intestazione del PDF.
+5. Nome, mail e telefono della cliente, per l'intestazione del PDF.

@@ -3,8 +3,7 @@
 Genera il preventivo GiroMunna per due escursioni in minibus con conducente da Firenze
 (iQ Hotel), 23 e 24 ottobre 2026: Pisa e Lucca; Siena, San Gimignano e una cantina del Chianti.
 
-Due opzioni nello stesso documento: solo minibus, oppure minibus con visita e degustazione
-in cantina per 10 persone.
+Solo il minibus: la cantina la scelgono e la prenotano le clienti, GiroMunna consiglia.
 
 Riproduce l'impaginazione dei preventivi GiroMunna (logo, verde bottiglia e oro,
 intestazione e piè di pagina su ogni pagina).
@@ -92,7 +91,6 @@ IT = dict(
          "8:30 – 18:30"),
     ],
     h_prezzo="Il prezzo",
-    h_opz1="Opzione 1 — Minibus con conducente per le due giornate",
     price_rows=[
         ("Venerdì 23 ottobre, Firenze – Pisa – Lucca – Firenze, 9 ore", "€ 1.150,00", "+ IVA 10%"),
         ("Sabato 24 ottobre, Firenze – Siena – San Gimignano – Chianti – Firenze, 10 ore",
@@ -104,36 +102,25 @@ IT = dict(
     price_total_label="Totale, al netto di IVA",
     price_total="€ 3.720,00",
     vat_note="+ IVA 10%",
-    grand="Opzione 1, totale IVA 10% inclusa: € 4.092,00.",
+    grand="Totale da corrispondere, IVA 10% inclusa: € 4.092,00.",
     perhead=("Su 10 persone sono circa € 409,00 a testa per le due giornate, IVA inclusa. Il prezzo è per "
              "il mezzo, non per persona: non cambia se siete qualcuna in meno."),
-    h_opz2="Opzione 2 — Minibus con conducente e visita in cantina",
-    opz2_rows=[
-        ("Opzione 1, minibus con conducente per le due giornate", "€ 4.092,00", "IVA inclusa"),
-        ("Visita guidata della cantina e degustazione di vini accompagnata da prodotti tipici, "
-         "sabato 24 ottobre, 10 persone, prenotazione a cura nostra", "€ 950,00", "IVA inclusa"),
-    ],
-    opz2_total_label="Totale opzione 2",
-    opz2_total="€ 5.042,00",
-    opz2_note="IVA inclusa",
-    grand2="Opzione 2, totale IVA inclusa: € 5.042,00, circa € 504,00 a persona.",
     h_incluso="Incluso.",
     incluso=(
         "Minibus con conducente per le due giornate, carburante, pedaggi autostradali, parcheggi, "
         "check point di Firenze e permessi di accesso dei bus turistici a Pisa, Lucca, Siena e San "
-        "Gimignano, assicurazione completa. Con l'opzione 2, anche la visita e la degustazione in "
-        "cantina per 10 persone, con la prenotazione."
+        "Gimignano, assicurazione completa."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
         "Pranzo del conducente nelle due giornate, a carico vostro. Pasti del gruppo, ingressi a "
-        "monumenti e musei, guide turistiche e acquisti in cantina. Attesa oltre gli orari concordati, "
+        "monumenti e musei, guide turistiche, visita e degustazione in cantina. Attesa oltre gli orari concordati, "
         "€ 50,00 all'ora. Soste o modifiche di percorso non previste, quotate su richiesta."
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma — opzione 1 / opzione 2", "€ 1.227,60 / € 1.512,60", "IVA inclusa"),
-        ("Saldo entro il 22 ottobre 2026 — opzione 1 / opzione 2", "€ 2.864,40 / € 3.529,40", ""),
+        ("Acconto 30% alla conferma", "€ 1.227,60", "IVA inclusa"),
+        ("Saldo entro il 22 ottobre 2026", "€ 2.864,40", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
@@ -157,13 +144,15 @@ IT = dict(
          "dopo la degustazione nessuna di voi deve guidare e in mezz'ora siete in hotel. A Siena e a "
          "San Gimignano i bus si fermano fuori dalle mura: dal parcheggio al centro sono una decina di "
          "minuti a piedi, in salita. Conviene avere scarpe comode."),
-        ("<b>La cantina che vi proponiamo.</b> Per l'opzione 2 vi consigliamo Antinori nel Chianti "
-         "Classico, a Bargino: una cantina scavata nella collina, con il tetto coperto di vigne e la "
-         "vista sui filari del Chianti, a mezz'ora da Firenze e proprio sulla strada del rientro. La "
-         "visita guidata dura circa un'ora e mezza e si chiude con la degustazione di diversi vini "
-         "accompagnati da prodotti tipici toscani. Prenotiamo noi e vi mandiamo la conferma con "
-         "l'orario. Il sabato di fine ottobre è molto richiesto: confermando subito, la data è sicura. "
-         "Se preferite una tenuta più piccola, a conduzione familiare, ve ne proponiamo un'altra."),
+        ("<b>Le cantine che vi consigliamo.</b> La scelta e la prenotazione sono vostre; qui qualche "
+         "indirizzo sulla strada fra San Gimignano e Firenze, tutte con visita guidata, degustazione e "
+         "vista sui vigneti. <b>Antinori nel Chianti Classico</b>, a Bargino: cantina moderna scavata "
+         "nella collina, con il tetto coperto di vigne, a mezz'ora da Firenze. <b>Badia a Passignano</b>, "
+         "vicino a Tavarnelle: un'abbazia dell'XI secolo in mezzo ai filari, con le cantine storiche dei "
+         "monaci. <b>Castello di Verrazzano</b>, sopra Greve in Chianti: castello e giardini con la "
+         "vista sulla valle, degustazioni accompagnate da prodotti tipici. Prenotate per sabato 24 "
+         "verso le 16:15 e diteci il nome della cantina e l'orario: il resto della giornata lo "
+         "organizziamo noi intorno a quello. Il Beluga arriva senza problemi a tutte e tre."),
         ("<b>Il pranzo del conducente.</b> Nelle due giornate il conducente rientra in sede la sera, "
          "quindi non servono pernottamenti. Il suo pranzo è a carico vostro: potete invitarlo al "
          "vostro tavolo oppure lasciargli la cifra di un pasto, come preferite."),
@@ -219,7 +208,6 @@ EN = dict(
          "8:30 – 18:30"),
     ],
     h_prezzo="The price",
-    h_opz1="Option 1 — Minibus with driver for both days",
     price_rows=[
         ("Friday 23 October, Florence – Pisa – Lucca – Florence, 9 hours", "€ 1,150.00", "+ VAT 10%"),
         ("Saturday 24 October, Florence – Siena – San Gimignano – Chianti – Florence, 10 hours",
@@ -231,35 +219,24 @@ EN = dict(
     price_total_label="Total, excluding VAT",
     price_total="€ 3,720.00",
     vat_note="+ VAT 10%",
-    grand="Option 1, total VAT 10% included: € 4,092.00.",
+    grand="Total payable, VAT 10% included: € 4,092.00.",
     perhead=("Across 10 people that is about € 409.00 each for the two days, VAT included. The price is "
              "for the vehicle, not per person: it does not change if one or two of you are missing."),
-    h_opz2="Option 2 — Minibus with driver and winery visit",
-    opz2_rows=[
-        ("Option 1, minibus with driver for both days", "€ 4,092.00", "VAT included"),
-        ("Guided winery tour and tasting of several wines with local Tuscan products, Saturday "
-         "24 October, 10 people, booked by us", "€ 950.00", "VAT included"),
-    ],
-    opz2_total_label="Total option 2",
-    opz2_total="€ 5,042.00",
-    opz2_note="VAT included",
-    grand2="Option 2, total VAT included: € 5,042.00, about € 504.00 per person.",
     h_incluso="Included.",
     incluso=(
         "Minibus with driver for both days, fuel, motorway tolls, parking, the Florence check point and "
-        "the tourist coach access permits for Pisa, Lucca, Siena and San Gimignano, full insurance. With "
-        "option 2, also the winery tour and tasting for 10 people, including the booking."
+        "the tourist coach access permits for Pisa, Lucca, Siena and San Gimignano, full insurance."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
         "The driver's lunch on both days, at your charge. Group meals, entrance fees to monuments and "
-        "museums, tour guides and purchases at the winery. Waiting beyond the agreed times, € 50.00 per "
+        "museums, tour guides, the winery tour and tasting. Waiting beyond the agreed times, € 50.00 per "
         "hour. Unplanned stops or route changes, quoted on request."
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation — option 1 / option 2", "€ 1,227.60 / € 1,512.60", "VAT included"),
-        ("Balance by 22 October 2026 — option 1 / option 2", "€ 2,864.40 / € 3,529.40", ""),
+        ("Deposit 30% on confirmation", "€ 1,227.60", "VAT included"),
+        ("Balance by 22 October 2026", "€ 2,864.40", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
@@ -283,13 +260,15 @@ EN = dict(
          "you has to drive, and half an hour later you are at your hotel. In Siena and San Gimignano coaches "
          "stop outside the walls: from the car park to the centre is about ten minutes on foot, uphill. "
          "Comfortable shoes are a good idea."),
-        ("<b>The winery we suggest.</b> For option 2 we recommend Antinori nel Chianti Classico, in "
-         "Bargino: a winery carved into the hillside, its roof covered in vines, looking out over the "
-         "Chianti vineyards, half an hour from Florence and right on the way back. The guided tour lasts "
-         "about an hour and a half and ends with a tasting of several wines with local Tuscan products. "
-         "We make the booking and send you the confirmation with the time. Late-October Saturdays are in "
-         "high demand: if you confirm now, the date is secured. If you would rather visit a smaller, "
-         "family-run estate, we will suggest another one."),
+        ("<b>The wineries we recommend.</b> The choice and the booking are yours; here are a few "
+         "addresses on the way between San Gimignano and Florence, all with guided tours, tastings and "
+         "vineyard views. <b>Antinori nel Chianti Classico</b>, in Bargino: a modern winery carved into the "
+         "hillside, its roof covered in vines, half an hour from Florence. <b>Badia a Passignano</b>, near "
+         "Tavarnelle: an 11th-century abbey surrounded by vineyards, with the monks' historic cellars. "
+         "<b>Castello di Verrazzano</b>, above Greve in Chianti: a castle and gardens overlooking the "
+         "valley, with tastings accompanied by local products. Book for Saturday 24 at around 16:15 "
+         "and tell us the winery and the time: we will plan the rest of the day around it. The Beluga "
+         "reaches all three without any problem."),
         ("<b>The driver's lunch.</b> On both days the driver returns to base in the evening, so no overnight "
          "stay is needed. His lunch is at your charge: you can invite him to your table or give him the "
          "cost of a meal, whichever you prefer."),
@@ -452,22 +431,14 @@ def build(lang, cliente, out):
     ]))
     F.append(t)
 
-    # --- prezzo: due opzioni, ognuna non si spezza fra due pagine
+    # --- prezzo (intestazione e tabella non si spezzano fra due pagine)
     pcols = [usable - 42 * mm - 20 * mm, 42 * mm, 20 * mm]
     F.append(KeepTogether([
         Paragraph(L["h_prezzo"], S["h2"]),
-        Paragraph(L["h_opz1"], S["h3"]),
         price_table(L["price_rows"], L["price_total_label"], L["price_total"], L["vat_note"],
                     S, pcols),
         Paragraph(L["grand"], S["grand"]),
         Paragraph(L["perhead"], S["small"]),
-    ]))
-    F.append(Spacer(1, 6))
-    F.append(KeepTogether([
-        Paragraph(L["h_opz2"], S["h3"]),
-        price_table(L["opz2_rows"], L["opz2_total_label"], L["opz2_total"], L["opz2_note"],
-                    S, pcols),
-        Paragraph(L["grand2"], S["grand"]),
     ]))
     F.append(Spacer(1, 4))
     F.append(Paragraph("<b>%s</b> %s" % (L["h_incluso"], L["incluso"]), S["small"]))
