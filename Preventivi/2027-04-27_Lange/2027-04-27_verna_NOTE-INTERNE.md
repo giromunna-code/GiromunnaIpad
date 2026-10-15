@@ -50,3 +50,6 @@ scendere a € 1.200 + IVA se la cliente chiede uno sconto.
    prezzo.
 5. **Processione delle 15.** Nel preventivo è scritto "nel primo pomeriggio" con invito a
    verificare l'orario col santuario, per non impegnarsi su un'ora precisa.
+6. **Parcheggio Villa Costanza** (deciso da Girolamo, 15 ottobre): compreso nel prezzo,
+   scritto esplicitamente fra l'incluso e nella mail. Tariffa pullman non verificata su fonte
+   ufficiale (si parla di circa € 100 al giorno). Per ora il costo è assorbito nei € 1.300.

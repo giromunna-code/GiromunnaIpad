@@ -27,7 +27,7 @@ traffico cittadino e partenza direttamente in autostrada, con orari più sicuri 
 sia al rientro della sera.
 
 Prezzo complessivo: € 1.300,00 + IVA 10%, cioè € 1.430,00 IVA inclusa (circa € 57 a persona),
-comprensivo di conducente, carburante, pedaggi, parcheggi e permessi. Restano a vostro carico
+comprensivo di conducente, carburante, pedaggi, parcheggi (anche quello di Villa Costanza) e permessi. Restano a vostro carico
 solo i biglietti del tram e il pranzo del conducente, che si può semplicemente aggiungere alla prenotazione del
 gruppo.
 
@@ -65,7 +65,7 @@ a start directly on the motorway, with more reliable times both in the morning a
 evening return.
 
 Total price: € 1,300.00 + VAT 10%, i.e. € 1,430.00 VAT included (about € 57 per person),
-including driver, fuel, tolls, parking and permits. Only the tram tickets and the
+including driver, fuel, tolls, parking (Villa Costanza included) and permits. Only the tram tickets and the
 driver's lunch are at your charge; the lunch can simply be added to the group's booking.
 
 The quotation also includes some practical advice: the road over the Consuma pass is very

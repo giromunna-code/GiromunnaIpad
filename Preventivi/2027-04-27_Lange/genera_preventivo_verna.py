@@ -103,7 +103,7 @@ IT = dict(
              "Il prezzo è per il mezzo, non per persona: non cambia se siete qualcuno in meno."),
     h_incluso="Incluso.",
     incluso=(
-        "Minibus con conducente per tutta la giornata, carburante, eventuali pedaggi, parcheggi, "
+        "Minibus con conducente per tutta la giornata, carburante, eventuali pedaggi, parcheggi (compreso quello di Villa Costanza), "
         "permessi e assicurazione completa. Con il ritrovo a Villa Costanza il minibus non entra in "
         "città e non ci sono costi di accesso a Firenze: nessun altro costo oltre a quelli indicati."
     ),
@@ -221,7 +221,7 @@ EN = dict(
              "The price is for the vehicle, not per person: it does not change if a few of you are missing."),
     h_incluso="Included.",
     incluso=(
-        "Minibus with driver for the whole day, fuel, any tolls, parking, permits and full insurance. "
+        "Minibus with driver for the whole day, fuel, any tolls, parking (Villa Costanza included), permits and full insurance. "
         "With the meeting point at Villa Costanza the minibus does not enter the city and there are no "
         "access charges in Florence: no costs other than those shown."
     ),
