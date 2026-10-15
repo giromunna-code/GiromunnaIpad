@@ -6,7 +6,7 @@ con conducente (NCC), Ponte Buggianese (PT), Toscana.
 ## Regole di lavoro
 
 - **Parlare sempre in italiano.** Girolamo non parla inglese: ogni risposta, spiegazione o
-  messaggio va scritto in italiano.
+  messaggio va scritto in italiano. Con Girolamo si usa il **tu**.
 - **Ogni documento va prodotto in due versioni, italiana e inglese.** Vale per i preventivi,
   le mail ai clienti e qualsiasi altro materiale destinato all'esterno: i clienti scrivono
   spesso in inglese, ma la versione che Girolamo deve poter leggere è quella italiana.
