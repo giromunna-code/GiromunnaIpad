@@ -69,3 +69,41 @@ The quotation is valid until 6 November. I remain at your disposal for any clari
 Kind regards,
 Girolamo Munna – GiroMunna NCC
 +39 335 587 4744 · info@giromunna.com
+
+---
+
+## WhatsApp — italiano
+
+Buongiorno Natascia, sono Girolamo di GiroMunna 😊
+
+Per la gita del Cral A.T. Pistoia di martedì 8 dicembre:
+• 9:30 ritrovo in via dell'Annone, partenza 9:45 per Castiglione del Lago
+• 14:00 partenza per Arezzo
+• 20:00 partenza da Arezzo, rientro a Pistoia verso le 21:45
+
+Minibus Mercedes Beluga da 25 posti con autista.
+*Costo del bus € 1.000 + IVA 10% + eventuali parcheggi.*
+Pranzo e cena dell'autista a carico vostro.
+
+Mi dice quanti siete? Le mando il preventivo in PDF.
+
+Girolamo Munna – GiroMunna NCC
++39 335 587 4744
+
+## WhatsApp — English
+
+Good morning Natascia, this is Girolamo from GiroMunna 😊
+
+For the Cral A.T. Pistoia day trip on Tuesday 8 December:
+• 9:30 meeting in via dell'Annone, 9:45 departure for Castiglione del Lago
+• 14:00 departure for Arezzo
+• 20:00 departure from Arezzo, back in Pistoia around 21:45
+
+25-seat Mercedes Beluga minibus with driver.
+*Cost of the bus € 1,000 + VAT 10% + any parking fees.*
+Driver's lunch and dinner at your charge.
+
+Could you tell me how many you are? I'll send you the quotation as a PDF.
+
+Girolamo Munna – GiroMunna NCC
++39 335 587 4744
