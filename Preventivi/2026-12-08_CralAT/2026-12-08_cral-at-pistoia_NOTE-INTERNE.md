@@ -29,11 +29,12 @@ cliente.
 |---|---|
 | Giornata a disposizione Pistoia – Castiglione del Lago – Arezzo – Pistoia | € 1.000,00 |
 | Eventuali parcheggi del mezzo | a carico del cliente |
-| Pranzo e cena del conducente | a carico del cliente |
 | **Totale netto** | **€ 1.000,00** |
 
 IVA 10% € 100,00 · **Totale € 1.100,00** — acconto € 330,00, saldo € 770,00.
-**Mezzo: Mercedes-Benz Tourismo**, deciso da Girolamo (non il Beluga).
+**Mezzo: Mercedes-Benz Tourismo, 51+1+1 posti**, deciso da Girolamo (non il Beluga).
+Per scelta di Girolamo nel preventivo non si citano pranzo e cena del conducente e non si
+chiede il numero dei partecipanti.
 
 Per il mezzo sono circa 400 km (base → Pistoia 20, Pistoia → Castiglione 185, Castiglione →
 Arezzo 50, Arezzo → Pistoia 125, Pistoia → base 20) e circa 13 ore, dalle 9:00 alle 22:15.
@@ -42,9 +43,8 @@ parcheggi compresi.
 
 ## Da decidere / verificare
 
-1. **Tourismo.** Nel preventivo non c'è il numero di posti né la lunghezza: da aggiungere quando
-   Girolamo li indica. Il mezzo non è di GiroMunna: confermare disponibilità e costo con chi lo
-   fornisce. Numero di partecipanti ancora da avere.
+1. **Tourismo.** Il mezzo non è di GiroMunna: confermare disponibilità e costo con chi lo
+   fornisce.
 2. **Arezzo l'8 dicembre.** Con la Città del Natale gli accessi dei bus al centro sono regolati e
    può esserci un ticket per la sosta dei bus turistici: verificare con il Comune di Arezzo il
    punto di discesa e l'eventuale costo, che è a carico del cliente.

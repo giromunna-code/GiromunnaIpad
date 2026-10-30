@@ -11,7 +11,7 @@
 Gentile Natascia,
 
 grazie per la richiesta. Le allego il preventivo per la gita del Cral A.T. Pistoia di martedì 8 dicembre con un
-autobus gran turismo Mercedes-Benz Tourismo, con conducente:
+autobus gran turismo Mercedes-Benz Tourismo da 51+1+1 posti, con conducente:
 
 • ore 9:30 ritrovo a Pistoia in via dell'Annone, partenza alle 9:45
 • arrivo a Castiglione del Lago verso le 12:00
@@ -20,10 +20,9 @@ autobus gran turismo Mercedes-Benz Tourismo, con conducente:
 
 **Costo del bus € 1.000,00 + IVA 10% + eventuali parcheggi.**
 
-Carburante e pedaggi sono compresi; restano a carico vostro il pranzo e la cena del conducente.
+Carburante e pedaggi sono compresi.
 
 Per completare ci servono:
-• il numero dei partecipanti;
 • il punto preciso di via dell'Annone dove fermarci, dove un autobus possa accostare;
 • il nome e il cellulare di un referente e i dati per la fattura.
 
@@ -43,7 +42,7 @@ Girolamo Munna – GiroMunna NCC
 Dear Natascia,
 
 thank you for your request. Please find attached our quotation for the Cral A.T. Pistoia day trip on Tuesday
-8 December with a Mercedes-Benz Tourismo touring coach, with driver:
+8 December with a 51+1+1-seat Mercedes-Benz Tourismo touring coach, with driver:
 
 • 9:30 meeting in Pistoia, via dell'Annone, departure at 9:45
 • arrival in Castiglione del Lago around 12:00
@@ -52,10 +51,9 @@ thank you for your request. Please find attached our quotation for the Cral A.T.
 
 **Cost of the bus € 1,000.00 + VAT 10% + any parking fees.**
 
-Fuel and tolls are included; the driver's lunch and dinner remain at your charge.
+Fuel and tolls are included.
 
 To complete the booking we need:
-• the number of participants;
 • the exact spot in via dell'Annone where we should stop, where a coach can pull in;
 • the name and mobile number of a contact person and your invoicing details.
 
@@ -79,11 +77,10 @@ Per la gita del Cral di martedì 8 dicembre:
 • 14:00 partenza per Arezzo
 • 20:00 partenza da Arezzo, rientro a Pistoia verso le 21:45
 
-Vi porto con il Tourismo, autobus gran turismo.
+Vi porto con il Tourismo, autobus gran turismo da 51+1+1 posti.
 *Costo del bus € 1.000 + IVA 10% + eventuali parcheggi.*
-Pranzo e cena dell'autista a carico vostro.
 
-Mi dici quanti siete? Se ti serve ti mando anche il preventivo in PDF.
+Se ti serve ti mando anche il preventivo in PDF.
 
 Un abbraccio,
 Girolamo
@@ -97,11 +94,10 @@ For the Cral trip on Tuesday 8 December:
 • 14:00 departure for Arezzo
 • 20:00 departure from Arezzo, back in Pistoia around 21:45
 
-I'll take you in the Tourismo, a full-size touring coach.
+I'll take you in the Tourismo, a 51+1+1-seat touring coach.
 *Cost of the bus € 1,000 + VAT 10% + any parking fees.*
-Driver's lunch and dinner at your charge.
 
-Can you tell me how many you are? If you need it I'll send you the quotation as a PDF too.
+If you need it I'll send you the quotation as a PDF too.
 
 A big hug,
 Girolamo

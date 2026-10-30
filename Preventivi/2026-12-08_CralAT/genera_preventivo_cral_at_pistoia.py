@@ -66,7 +66,7 @@ IT = dict(
         "Il mezzo resta con voi a ogni tappa, senza altri passeggeri."
     ),
     mezzo_bullet=(
-        "<b>Mercedes-Benz Tourismo</b> — autobus gran turismo con conducente. Aria condizionata, "
+        "<b>Mercedes-Benz Tourismo</b> — autobus gran turismo, 51 posti passeggeri più accompagnatore e autista (51+1+1). Aria condizionata, "
         "sedili reclinabili, impianto audio di bordo, ampio vano bagagli."
     ),
     mezzo_close=(
@@ -95,7 +95,6 @@ IT = dict(
         ("Autobus con conducente a disposizione per la giornata di martedì 8 dicembre: Pistoia – "
          "Castiglione del Lago – Arezzo – Pistoia, circa 400 km", "€ 1.000,00", "+ IVA 10%"),
         ("Eventuali parcheggi del mezzo", "a carico vostro", ""),
-        ("Pranzo e cena del conducente", "a carico vostro", ""),
     ],
     price_total_label="Totale, al netto di IVA",
     price_total="€ 1.000,00",
@@ -110,7 +109,7 @@ IT = dict(
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
-        "Eventuali parcheggi del mezzo, pagati sul posto. Pranzo e cena del conducente. Attesa oltre la partenza da Arezzo delle 20:00, € 50,00 all'ora. "
+        "Eventuali parcheggi del mezzo, pagati sul posto. Attesa oltre la partenza da Arezzo delle 20:00, € 50,00 all'ora. "
         "Ingressi, visite guidate, pasti del gruppo e fermate aggiuntive non previste dal programma."
     ),
     h_pagamento="Pagamento",
@@ -122,8 +121,6 @@ IT = dict(
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
-        ("<b>Il numero dei partecipanti.</b> Nella richiesta non è indicato: ci serve sapere quanti "
-         "siete, per confermare il mezzo. Il prezzo è riferito a un autobus."),
         ("<b>L'8 dicembre sulla A1.</b> È festa e chiude il ponte dell'Immacolata: al mattino il traffico "
          "verso sud è in genere scorrevole, mentre la sera il rientro verso Firenze è spesso rallentato, "
          "soprattutto fra Valdarno e Firenze Sud. L'arrivo a Pistoia previsto verso le 21:45 può slittare "
@@ -137,14 +134,10 @@ IT = dict(
         ("<b>Castiglione del Lago.</b> Arrivando verso le 12:00 avete due ore: il tempo per il pranzo "
          "e una passeggiata nel borgo fino alla Rocca. Se avete prenotato un ristorante, indicateci quale: "
          "vi lasciamo all'area di sosta dei bus più comoda."),
-        ("<b>Pranzo e cena del conducente.</b> Il conducente è con voi dalle 9:20 alle 22:00 circa e "
-         "non rientra in sede fra una tappa e l'altra: il suo pranzo e la sua cena restano a carico "
-         "vostro. Non sono compresi nel prezzo e non li organizziamo noi; la soluzione più semplice è "
-         "aggiungerlo alla prenotazione del ristorante del gruppo. Non servono pernottamenti."),
         ("<b>Il ritrovo in via dell'Annone.</b> Indicateci il punto preciso (numero civico o "
          "riferimento) dove volete che il bus si fermi per la salita e per il rientro della sera: deve essere "
          "un punto dove un autobus gran turismo possa accostare e sostare qualche minuto."),
-        ("<b>Per confermare ci servono</b> il numero definitivo dei partecipanti, il nome e il "
+        ("<b>Per confermare ci servono</b> il nome e il "
          "cellulare di un referente che viaggia con il gruppo e i dati per la fattura."),
         ("<b>Disponibilità e cancellazione.</b> Il mezzo è al momento libero e lo teniamo a vostra "
          "disposizione fino al 6 novembre 2026, data di validità del preventivo; la prenotazione diventa "
@@ -172,7 +165,7 @@ EN = dict(
         "with you at every stop, with no other passengers."
     ),
     mezzo_bullet=(
-        "<b>Mercedes-Benz Tourismo</b> — touring coach with driver. Air conditioning, "
+        "<b>Mercedes-Benz Tourismo</b> — touring coach, 51 passenger seats plus guide seat and driver (51+1+1). Air conditioning, "
         "reclining seats, on-board audio system, large luggage hold."
     ),
     mezzo_close=(
@@ -201,7 +194,6 @@ EN = dict(
         ("Coach with driver at your disposal for the day on Tuesday 8 December: Pistoia – "
          "Castiglione del Lago – Arezzo – Pistoia, about 400 km", "€ 1,000.00", "+ VAT 10%"),
         ("Any vehicle parking fees", "at your charge", ""),
-        ("Driver's lunch and dinner", "at your charge", ""),
     ],
     price_total_label="Total, excluding VAT",
     price_total="€ 1,000.00",
@@ -215,7 +207,7 @@ EN = dict(
     ),
     h_nonincluso="Not included.",
     nonincluso=(
-        "Any vehicle parking fees, paid on the spot. Driver's lunch and dinner. Waiting beyond the 20:00 departure from Arezzo, € 50.00 per hour. "
+        "Any vehicle parking fees, paid on the spot. Waiting beyond the 20:00 departure from Arezzo, € 50.00 per hour. "
         "Entrance fees, guided tours, the group's meals and additional stops not in the programme."
     ),
     h_pagamento="Payment",
@@ -227,8 +219,6 @@ EN = dict(
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
-        ("<b>Number of participants.</b> The request does not give a number: we need to know how many "
-         "you are, to confirm the vehicle. The price refers to one coach."),
         ("<b>8 December on the A1.</b> It is a public holiday and the end of the Immacolata long weekend: "
          "in the morning southbound traffic is usually light, while in the evening the return towards "
          "Florence is often slow, especially between Valdarno and Firenze Sud. The arrival in Pistoia "
@@ -243,14 +233,10 @@ EN = dict(
         ("<b>Castiglione del Lago.</b> Arriving around 12:00 you have two hours: time for lunch and a "
          "walk through the old town up to the Rocca. If you have booked a restaurant, tell us which one: "
          "we will drop you at the most convenient coach stop."),
-        ("<b>Driver's lunch and dinner.</b> The driver is with you from 9:20 to about 22:00 and does not "
-         "return to base between stops: his lunch and dinner are at your charge. They are not included "
-         "in the price and we do not arrange them; the simplest solution is to add him to the group's "
-         "restaurant booking. No overnight stay is needed."),
         ("<b>The meeting point in via dell'Annone.</b> Please give us the exact spot (street number or "
          "landmark) where you want the coach to stop for boarding and for the evening return: it must be a "
          "place where a full-size coach can pull in and wait a few minutes."),
-        ("<b>To confirm we need</b> the final number of participants, the name and mobile number of a "
+        ("<b>To confirm we need</b> the name and mobile number of a "
          "contact person travelling with the group and your invoicing details."),
         ("<b>Availability and cancellation.</b> The vehicle is currently free and we hold it for you until "
          "6 November 2026, the validity date of this quotation; the booking becomes firm on receipt of the "
