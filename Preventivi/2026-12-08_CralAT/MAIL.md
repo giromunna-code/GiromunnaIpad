@@ -1,7 +1,7 @@
-# Mail da inviare — Il Tourismo (c.a. Natascia), Cral A.T. Pistoia, gita Castiglione del Lago e Arezzo, 8.12.2026
+# Mail da inviare — Natascia, Cral A.T. Pistoia, gita Castiglione del Lago e Arezzo, 8.12.2026
 
 **Allegato:** GiroMunna_Preventivo_Pistoia_Castiglione_Arezzo_8_dicembre_2026_IT.pdf (o _EN)
-**A:** Il Tourismo, alla cortese attenzione di Natascia
+**A:** Natascia, Cral A.T. Pistoia
 **Oggetto:** Preventivo gita Cral A.T. Pistoia 8 dicembre – Castiglione del Lago e Arezzo – Rif. GM-2026-1208-AT
 
 ---
@@ -10,8 +10,8 @@
 
 Gentile Natascia,
 
-grazie per la richiesta. Le allego il preventivo per la gita del Cral A.T. Pistoia di martedì 8 dicembre con il nostro
-minibus Mercedes-Benz Beluga da 25 posti, con conducente:
+grazie per la richiesta. Le allego il preventivo per la gita del Cral A.T. Pistoia di martedì 8 dicembre con un
+autobus gran turismo Mercedes-Benz Tourismo, con conducente:
 
 • ore 9:30 ritrovo a Pistoia in via dell'Annone, partenza alle 9:45
 • arrivo a Castiglione del Lago verso le 12:00
@@ -23,9 +23,8 @@ minibus Mercedes-Benz Beluga da 25 posti, con conducente:
 Carburante e pedaggi sono compresi; restano a carico vostro il pranzo e la cena del conducente.
 
 Per completare ci servono:
-• il numero dei partecipanti: il Beluga ha 25 posti più l'accompagnatore. Se siete di più,
-  ce lo dica subito e le proponiamo la soluzione per tutto il gruppo;
-• il punto preciso di via dell'Annone dove fermarci;
+• il numero dei partecipanti;
+• il punto preciso di via dell'Annone dove fermarci, dove un autobus possa accostare;
 • il nome e il cellulare di un referente e i dati per la fattura.
 
 Una sola avvertenza: l'8 dicembre la sera l'autostrada verso Firenze è spesso trafficata per il
@@ -44,7 +43,7 @@ Girolamo Munna – GiroMunna NCC
 Dear Natascia,
 
 thank you for your request. Please find attached our quotation for the Cral A.T. Pistoia day trip on Tuesday
-8 December with our 25-seat Mercedes-Benz Beluga minibus, with driver:
+8 December with a Mercedes-Benz Tourismo touring coach, with driver:
 
 • 9:30 meeting in Pistoia, via dell'Annone, departure at 9:45
 • arrival in Castiglione del Lago around 12:00
@@ -56,9 +55,8 @@ thank you for your request. Please find attached our quotation for the Cral A.T.
 Fuel and tolls are included; the driver's lunch and dinner remain at your charge.
 
 To complete the booking we need:
-• the number of participants: the Beluga has 25 seats plus the guide seat. If you are more,
-  please tell us at once and we will propose a solution for the whole group;
-• the exact spot in via dell'Annone where we should stop;
+• the number of participants;
+• the exact spot in via dell'Annone where we should stop, where a coach can pull in;
 • the name and mobile number of a contact person and your invoicing details.
 
 Just one warning: on the evening of 8 December the motorway towards Florence is often busy with
@@ -81,7 +79,7 @@ Per la gita del Cral di martedì 8 dicembre:
 • 14:00 partenza per Arezzo
 • 20:00 partenza da Arezzo, rientro a Pistoia verso le 21:45
 
-Vi porto con il Beluga, 25 posti.
+Vi porto con il Tourismo, autobus gran turismo.
 *Costo del bus € 1.000 + IVA 10% + eventuali parcheggi.*
 Pranzo e cena dell'autista a carico vostro.
 
@@ -99,7 +97,7 @@ For the Cral trip on Tuesday 8 December:
 • 14:00 departure for Arezzo
 • 20:00 departure from Arezzo, back in Pistoia around 21:45
 
-I'll take you in the Beluga, 25 seats.
+I'll take you in the Tourismo, a full-size touring coach.
 *Cost of the bus € 1,000 + VAT 10% + any parking fees.*
 Driver's lunch and dinner at your charge.
 

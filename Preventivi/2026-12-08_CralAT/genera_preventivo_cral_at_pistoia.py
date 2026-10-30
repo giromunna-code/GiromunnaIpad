@@ -6,8 +6,8 @@ Pistoia - Castiglione del Lago - Arezzo - Pistoia, giornata intera.
 Riproduce l'impaginazione dei preventivi GiroMunna (logo, verde bottiglia e oro,
 intestazione e piè di pagina su ogni pagina).
 
-    python3 genera_preventivo_cral_at_pistoia.py --lingua it --cliente "Natascia, Il Tourismo"
-    python3 genera_preventivo_cral_at_pistoia.py --lingua en --cliente "Natascia, Il Tourismo"
+    python3 genera_preventivo_cral_at_pistoia.py --lingua it --cliente "Natascia, Cral A.T. Pistoia"
+    python3 genera_preventivo_cral_at_pistoia.py --lingua en --cliente "Natascia, Cral A.T. Pistoia"
 """
 
 import argparse
@@ -61,25 +61,23 @@ IT = dict(
     meta="Preparato per %s  ·  30 ottobre 2026  ·  Rif. " + RIF,
     h_mezzo="Il mezzo",
     mezzo_intro=(
-        "Un minibus riservato al vostro gruppo, con il conducente, per tutta la giornata: da Pistoia "
-        "al lago Trasimeno, poi ad Arezzo per il pomeriggio e la sera, e ritorno a Pistoia. Il mezzo "
-        "resta con voi a ogni tappa, senza altri passeggeri."
+        "Un autobus gran turismo riservato al vostro gruppo, con il conducente, per tutta la giornata: "
+        "da Pistoia al lago Trasimeno, poi ad Arezzo per il pomeriggio e la sera, e ritorno a Pistoia. "
+        "Il mezzo resta con voi a ogni tappa, senza altri passeggeri."
     ),
     mezzo_bullet=(
-        "<b>Mercedes-Benz Beluga</b> — 25 posti passeggeri più accompagnatore e autista, 7,64 m. Aria condizionata, "
-        "sedili ultra comfort reclinabili, frigo bar, impianto audio di bordo, ampio vano bagagli."
+        "<b>Mercedes-Benz Tourismo</b> — autobus gran turismo con conducente. Aria condizionata, "
+        "sedili reclinabili, impianto audio di bordo, ampio vano bagagli."
     ),
     mezzo_close=(
-        "Con meno di 8 metri di lunghezza il Beluga vi lascia più vicino al centro di quanto possa fare "
-        "un autobus gran turismo: a Castiglione del Lago sotto il borgo, ad Arezzo il più vicino possibile "
-        "alla città alta, che l'8 dicembre, con i mercatini di Natale, è uno dei giorni più affollati "
-        "dell'anno."
+        "Un autobus da turismo vero e proprio, comodo per una giornata con circa quattro ore di viaggio: "
+        "c'è posto per tutto il gruppo e lo spazio per muoversi senza stare stretti."
     ),
     h_servizio="Il servizio",
     svc_head=["Orario", "Percorso", "Note"],
     svc=[
         ("ore 9:30",
-         "<b>Pistoia, via dell'Annone.</b> Ritrovo alle 9:30, partenza alle 9:45. Il minibus è sul posto dalle 9:20.",
+         "<b>Pistoia, via dell'Annone.</b> Ritrovo alle 9:30, partenza alle 9:45. Il bus è sul posto dalle 9:20.",
          "ritrovo e partenza"),
         ("ore 9:45",
          "<b>Pistoia → Castiglione del Lago.</b> Circa 185 km, A11 e A1 fino a Valdichiana, poi lungo il Trasimeno. "
@@ -94,7 +92,7 @@ IT = dict(
     ],
     h_prezzo="Il prezzo",
     price_rows=[
-        ("Minibus con conducente a disposizione per la giornata di martedì 8 dicembre: Pistoia – "
+        ("Autobus con conducente a disposizione per la giornata di martedì 8 dicembre: Pistoia – "
          "Castiglione del Lago – Arezzo – Pistoia, circa 400 km", "€ 1.000,00", "+ IVA 10%"),
         ("Eventuali parcheggi del mezzo", "a carico vostro", ""),
         ("Pranzo e cena del conducente", "a carico vostro", ""),
@@ -103,11 +101,10 @@ IT = dict(
     price_total="€ 1.000,00",
     vat_note="+ IVA 10%",
     grand="Totale da corrispondere, IVA 10% inclusa: € 1.100,00.",
-    perhead=("Su 25 persone sono € 44,00 a testa per tutta la giornata, IVA inclusa. "
-             "Il prezzo è per il mezzo, non per persona: non cambia se siete qualcuno in meno."),
+    perhead=("Il prezzo è per il mezzo, non per persona: non cambia se siete qualcuno in meno."),
     h_incluso="Incluso.",
     incluso=(
-        "Minibus con conducente per tutta la giornata, carburante, pedaggi autostradali e "
+        "Autobus con conducente per tutta la giornata, carburante, pedaggi autostradali e "
         "assicurazione completa. Le soste a Castiglione del Lago e ad Arezzo sono comprese: il "
         "conducente resta a vostra disposizione."
     ),
@@ -125,29 +122,28 @@ IT = dict(
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
     h_note="Note",
     note=[
-        ("<b>Il numero dei partecipanti.</b> Il Beluga ha 25 posti passeggeri, più il posto "
-         "dell'accompagnatore. Nella richiesta il numero non è indicato: ci serve sapere quanti siete. "
-         "Il prezzo è riferito a un mezzo; se gli iscritti superano i 25, avvisateci subito e vi "
-         "proponiamo la soluzione per tutto il gruppo."),
+        ("<b>Il numero dei partecipanti.</b> Nella richiesta non è indicato: ci serve sapere quanti "
+         "siete, per confermare il mezzo. Il prezzo è riferito a un autobus."),
         ("<b>L'8 dicembre sulla A1.</b> È festa e chiude il ponte dell'Immacolata: al mattino il traffico "
          "verso sud è in genere scorrevole, mentre la sera il rientro verso Firenze è spesso rallentato, "
          "soprattutto fra Valdarno e Firenze Sud. L'arrivo a Pistoia previsto verso le 21:45 può slittare "
          "verso le 22:15: vi consigliamo di dirlo ai partecipanti, per chi viene a riprenderli."),
         ("<b>Ad Arezzo con i mercatini di Natale.</b> Il giorno dell'Immacolata la città è piena e "
          "l'accesso dei mezzi verso il centro è regolato. Vi lasciamo e vi riprendiamo nel punto "
-         "consentito più vicino alla città alta e ve lo indichiamo prima della partenza, insieme al "
+         "consentito ai bus turistici più vicino alla città alta e ve lo indichiamo prima della partenza, insieme al "
          "numero del conducente. Se in quel punto la sosta dei bus è a pagamento, il costo è a "
          "carico vostro, come gli altri eventuali parcheggi della giornata. Per ripartire puntuali alle 20:00 conviene fissare il ritrovo al "
-         "minibus per le 19:45: con la folla della sera ci vuole qualche minuto in più."),
+         "bus per le 19:45: con la folla della sera ci vuole qualche minuto in più."),
         ("<b>Castiglione del Lago.</b> Arrivando verso le 12:00 avete due ore: il tempo per il pranzo "
          "e una passeggiata nel borgo fino alla Rocca. Se avete prenotato un ristorante, indicateci quale: "
-         "vi lasciamo il più vicino possibile."),
+         "vi lasciamo all'area di sosta dei bus più comoda."),
         ("<b>Pranzo e cena del conducente.</b> Il conducente è con voi dalle 9:20 alle 22:00 circa e "
          "non rientra in sede fra una tappa e l'altra: il suo pranzo e la sua cena restano a carico "
          "vostro. Non sono compresi nel prezzo e non li organizziamo noi; la soluzione più semplice è "
          "aggiungerlo alla prenotazione del ristorante del gruppo. Non servono pernottamenti."),
         ("<b>Il ritrovo in via dell'Annone.</b> Indicateci il punto preciso (numero civico o "
-         "riferimento) dove volete che il minibus si fermi per la salita e per il rientro della sera."),
+         "riferimento) dove volete che il bus si fermi per la salita e per il rientro della sera: deve essere "
+         "un punto dove un autobus gran turismo possa accostare e sostare qualche minuto."),
         ("<b>Per confermare ci servono</b> il numero definitivo dei partecipanti, il nome e il "
          "cellulare di un referente che viaggia con il gruppo e i dati per la fattura."),
         ("<b>Disponibilità e cancellazione.</b> Il mezzo è al momento libero e lo teniamo a vostra "
@@ -171,24 +167,23 @@ EN = dict(
     meta="Prepared for %s  ·  30 October 2026  ·  Ref. " + RIF,
     h_mezzo="The vehicle",
     mezzo_intro=(
-        "A minibus reserved for your group, with its driver, for the whole day: from Pistoia to Lake "
+        "A coach reserved for your group, with its driver, for the whole day: from Pistoia to Lake "
         "Trasimeno, then to Arezzo for the afternoon and evening, and back to Pistoia. The vehicle stays "
         "with you at every stop, with no other passengers."
     ),
     mezzo_bullet=(
-        "<b>Mercedes-Benz Beluga</b> — 25 passenger seats plus guide seat and driver, 7.64 m. Air conditioning, "
-        "reclining ultra-comfort seats, fridge bar, on-board audio system, large luggage hold."
+        "<b>Mercedes-Benz Tourismo</b> — touring coach with driver. Air conditioning, "
+        "reclining seats, on-board audio system, large luggage hold."
     ),
     mezzo_close=(
-        "At under 8 metres long the Beluga drops you closer to the centre than a full-size coach can: in "
-        "Castiglione del Lago right below the old town, in Arezzo as close as possible to the upper town, "
-        "which on 8 December, with the Christmas markets, is one of the busiest days of the year."
+        "A proper touring coach, comfortable for a day with about four hours on the road: there is "
+        "room for the whole group and space to move without feeling cramped."
     ),
     h_servizio="The service",
     svc_head=["Time", "Route", "Notes"],
     svc=[
         ("9:30",
-         "<b>Pistoia, via dell'Annone.</b> Meeting at 9:30, departure at 9:45. The minibus is there from 9:20.",
+         "<b>Pistoia, via dell'Annone.</b> Meeting at 9:30, departure at 9:45. The coach is there from 9:20.",
          "meeting and departure"),
         ("9:45",
          "<b>Pistoia → Castiglione del Lago.</b> About 185 km, A11 and A1 to Valdichiana, then along Lake "
@@ -203,7 +198,7 @@ EN = dict(
     ],
     h_prezzo="The price",
     price_rows=[
-        ("Minibus with driver at your disposal for the day on Tuesday 8 December: Pistoia – "
+        ("Coach with driver at your disposal for the day on Tuesday 8 December: Pistoia – "
          "Castiglione del Lago – Arezzo – Pistoia, about 400 km", "€ 1,000.00", "+ VAT 10%"),
         ("Any vehicle parking fees", "at your charge", ""),
         ("Driver's lunch and dinner", "at your charge", ""),
@@ -212,11 +207,10 @@ EN = dict(
     price_total="€ 1,000.00",
     vat_note="+ VAT 10%",
     grand="Total payable, VAT 10% included: € 1,100.00.",
-    perhead=("Across 25 people that is € 44.00 each for the whole day, VAT included. "
-             "The price is for the vehicle, not per person: it does not change if a few of you are missing."),
+    perhead=("The price is for the vehicle, not per person: it does not change if a few of you are missing."),
     h_incluso="Included.",
     incluso=(
-        "Minibus with driver for the whole day, fuel, motorway tolls and full insurance. "
+        "Coach with driver for the whole day, fuel, motorway tolls and full insurance. "
         "The stops in Castiglione del Lago and Arezzo are included: the driver remains at your disposal."
     ),
     h_nonincluso="Not included.",
@@ -233,10 +227,8 @@ EN = dict(
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
     h_note="Notes",
     note=[
-        ("<b>Number of participants.</b> The Beluga has 25 passenger seats, plus the guide seat. The "
-         "request does not give a number: we need to know how many you are. The price refers to one "
-         "vehicle; if more than 25 sign up, please let us know at once and we will propose a solution "
-         "for the whole group."),
+        ("<b>Number of participants.</b> The request does not give a number: we need to know how many "
+         "you are, to confirm the vehicle. The price refers to one coach."),
         ("<b>8 December on the A1.</b> It is a public holiday and the end of the Immacolata long weekend: "
          "in the morning southbound traffic is usually light, while in the evening the return towards "
          "Florence is often slow, especially between Valdarno and Firenze Sud. The arrival in Pistoia "
@@ -244,19 +236,20 @@ EN = dict(
          "is collecting them."),
         ("<b>Arezzo with the Christmas markets.</b> On the Immacolata holiday the city is packed and "
          "vehicle access towards the centre is regulated. We drop you off and pick you up at the "
-         "permitted point closest to the upper town and will tell you where before departure, together "
+         "point permitted for coaches closest to the upper town and will tell you where before departure, together "
          "with the driver's number. If parking for coaches there is charged, the cost is at your charge, "
-         "like any other parking fees during the day. To leave on time at 20:00 it is best to meet at the minibus at 19:45: "
+         "like any other parking fees during the day. To leave on time at 20:00 it is best to meet at the coach at 19:45: "
          "with the evening crowds it takes a few extra minutes."),
         ("<b>Castiglione del Lago.</b> Arriving around 12:00 you have two hours: time for lunch and a "
          "walk through the old town up to the Rocca. If you have booked a restaurant, tell us which one: "
-         "we will drop you as close as possible."),
+         "we will drop you at the most convenient coach stop."),
         ("<b>Driver's lunch and dinner.</b> The driver is with you from 9:20 to about 22:00 and does not "
          "return to base between stops: his lunch and dinner are at your charge. They are not included "
          "in the price and we do not arrange them; the simplest solution is to add him to the group's "
          "restaurant booking. No overnight stay is needed."),
         ("<b>The meeting point in via dell'Annone.</b> Please give us the exact spot (street number or "
-         "landmark) where you want the minibus to stop for boarding and for the evening return."),
+         "landmark) where you want the coach to stop for boarding and for the evening return: it must be a "
+         "place where a full-size coach can pull in and wait a few minutes."),
         ("<b>To confirm we need</b> the final number of participants, the name and mobile number of a "
          "contact person travelling with the group and your invoicing details."),
         ("<b>Availability and cancellation.</b> The vehicle is currently free and we hold it for you until "
@@ -454,7 +447,7 @@ def build(lang, cliente, out):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--lingua", "--lang", dest="lang", default="it", choices=["it", "en"])
-    ap.add_argument("--cliente", "--client", dest="cliente", default="Natascia, Il Tourismo")
+    ap.add_argument("--cliente", "--client", dest="cliente", default="Natascia, Cral A.T. Pistoia")
     ap.add_argument("--out", default=None)
     a = ap.parse_args()
     name = a.out or os.path.join(
