@@ -32,7 +32,7 @@ rientro dal ponte, quindi l'arrivo a Pistoia potrebbe slittare verso le 22:15.
 Il preventivo è valido fino al 6 novembre. Resto a disposizione per qualsiasi chiarimento.
 
 Cordiali saluti,
-Girolamo Munna – GiroMunna NCC
+Munna Giuseppe – GiroMunna NCC
 +39 335 587 4744 · info@giromunna.com
 
 ---
@@ -63,7 +63,7 @@ traffic returning from the long weekend, so the arrival in Pistoia may slip towa
 The quotation is valid until 6 November. I remain at your disposal for any clarification.
 
 Kind regards,
-Girolamo Munna – GiroMunna NCC
+Munna Giuseppe – GiroMunna NCC
 +39 335 587 4744 · info@giromunna.com
 
 ---
@@ -83,7 +83,7 @@ Vi porto con il Tourismo, autobus gran turismo da 51+1+1 posti.
 Se ti serve ti mando anche il preventivo in PDF.
 
 Un abbraccio,
-Girolamo
+Munna Giuseppe
 
 ## WhatsApp — English
 
@@ -100,4 +100,4 @@ I'll take you in the Tourismo, a 51+1+1-seat touring coach.
 If you need it I'll send you the quotation as a PDF too.
 
 A big hug,
-Girolamo
+Munna Giuseppe

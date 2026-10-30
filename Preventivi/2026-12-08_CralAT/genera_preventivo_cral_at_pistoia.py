@@ -147,7 +147,7 @@ IT = dict(
     ],
     closing=("Grazie Natascia, per qualsiasi cosa chiamami pure. A presto!<br/><br/>"
              "Un abbraccio,<br/>"
-             "Girolamo Munna — GiroMunna NCC, Toscana · +39 335 587 4744 · info@giromunna.com"),
+             "Munna Giuseppe — GiroMunna NCC, Toscana · +39 335 587 4744 · info@giromunna.com"),
 )
 
 EN = dict(
@@ -245,7 +245,7 @@ EN = dict(
     ],
     closing=("Thank you Natascia, call me any time if you need anything. Talk soon!<br/><br/>"
              "A big hug,<br/>"
-             "Girolamo Munna — GiroMunna NCC, Tuscany · +39 335 587 4744 · info@giromunna.com"),
+             "Munna Giuseppe — GiroMunna NCC, Tuscany · +39 335 587 4744 · info@giromunna.com"),
 )
 
 def styles():
