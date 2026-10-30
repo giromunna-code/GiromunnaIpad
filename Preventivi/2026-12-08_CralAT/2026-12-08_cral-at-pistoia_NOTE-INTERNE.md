@@ -1,6 +1,6 @@
 # Note interne — Cral A.T. Pistoia, gita Castiglione del Lago e Arezzo, 8.12.2026
 
-**Cliente:** Cral A.T. Pistoia (referente, email e numero di partecipanti da completare)
+**Cliente:** Il Tourismo, alla cortese attenzione di Natascia, per il Cral A.T. Pistoia (email e numero di partecipanti da completare)
 **Rif. preventivo:** GM-2026-1208-AT · **Preparato:** 30 ottobre 2026 · **Validità:** 6 novembre 2026
 
 File generati:
@@ -10,8 +10,8 @@ File generati:
 - `MAIL.md` — testo della mail, italiano e inglese
 
 ```bash
-python3 genera_preventivo_cral_at_pistoia.py --lingua it --cliente "Cral A.T. Pistoia"
-python3 genera_preventivo_cral_at_pistoia.py --lingua en --cliente "Cral A.T. Pistoia"
+python3 genera_preventivo_cral_at_pistoia.py --lingua it --cliente "Il Tourismo, alla cortese attenzione di Natascia"
+python3 genera_preventivo_cral_at_pistoia.py --lingua en --cliente "Il Tourismo, alla cortese attenzione di Natascia"
 ```
 
 ## Richiesta
@@ -22,21 +22,23 @@ Numero di partecipanti non indicato.
 
 ## Prezzo
 
+Deciso da Girolamo (30 ottobre): **€ 1.000,00 + IVA 10%, più eventuali parcheggi** a carico del
+cliente.
+
 | Voce | Netto |
 |---|---|
-| Giornata a disposizione Pistoia – Castiglione del Lago – Arezzo – Pistoia | € 1.500,00 |
+| Giornata a disposizione Pistoia – Castiglione del Lago – Arezzo – Pistoia | € 1.000,00 |
+| Eventuali parcheggi del mezzo | a carico del cliente |
 | Pranzo e cena del conducente | a carico del cliente |
-| **Totale netto** | **€ 1.500,00** |
+| **Totale netto** | **€ 1.000,00** |
 
-IVA 10% € 150,00 · **Totale € 1.650,00** — acconto € 495,00, saldo € 1.155,00.
-A 25 persone: € 66 a testa IVA inclusa.
+IVA 10% € 100,00 · **Totale € 1.100,00** — acconto € 330,00, saldo € 770,00.
+A 25 persone: € 44 a testa IVA inclusa.
 
-Come è costruito: per il mezzo sono circa 400 km (base → Pistoia 20, Pistoia → Castiglione 185,
-Castiglione → Arezzo 50, Arezzo → Pistoia 125, Pistoia → base 20) e circa 13 ore, dalle 9:00 alle
-22:15. Le Filigare (€ 809 per 80 km e 5 ore) in proporzione porterebbe oltre € 1.900, ma qui buona
-parte delle ore è sosta; Gori (€ 1.650 per ~700 km e 9 ore) conferma la fascia. Tenuto € 1.500,
-nella parte alta. Costi vivi stimati: gasolio ~€ 140, pedaggi ~€ 60, parcheggio ad Arezzo.
-Margine di trattativa: un Cral di solito tratta; si può scendere a € 1.400 + IVA.
+Per il mezzo sono circa 400 km (base → Pistoia 20, Pistoia → Castiglione 185, Castiglione →
+Arezzo 50, Arezzo → Pistoia 125, Pistoia → base 20) e circa 13 ore, dalle 9:00 alle 22:15.
+Costi vivi stimati: gasolio ~€ 140, pedaggi ~€ 60. La prima proposta era € 1.500 + IVA,
+parcheggi compresi.
 
 ## Da decidere / verificare
 
@@ -44,7 +46,7 @@ Margine di trattativa: un Cral di solito tratta; si può scendere a € 1.400 + 
    Girolamo se mettere il Tourengo di Francesco (costo da concordare con lui).
 2. **Arezzo l'8 dicembre.** Con la Città del Natale gli accessi dei bus al centro sono regolati e
    può esserci un ticket per la sosta dei bus turistici: verificare con il Comune di Arezzo il
-   punto di discesa e l'eventuale costo (assorbito nel prezzo).
+   punto di discesa e l'eventuale costo, che è a carico del cliente.
 3. **Tempi di guida.** Guida effettiva circa 5 ore e mezza, ma l'impegno va dalle 9:00 alle 22:15
    (oltre 13 ore): serve il riposo giornaliero ridotto (9 ore) il giorno dopo. Controllare che il
    9 dicembre il conducente non abbia una partenza presto.

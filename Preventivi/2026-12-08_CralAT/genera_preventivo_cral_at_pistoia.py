@@ -6,8 +6,8 @@ Pistoia - Castiglione del Lago - Arezzo - Pistoia, giornata intera.
 Riproduce l'impaginazione dei preventivi GiroMunna (logo, verde bottiglia e oro,
 intestazione e piè di pagina su ogni pagina).
 
-    python3 genera_preventivo_cral_at_pistoia.py --lingua it --cliente "Cral A.T. Pistoia"
-    python3 genera_preventivo_cral_at_pistoia.py --lingua en --cliente "Cral A.T. Pistoia"
+    python3 genera_preventivo_cral_at_pistoia.py --lingua it --cliente "Il Tourismo, alla cortese attenzione di Natascia"
+    python3 genera_preventivo_cral_at_pistoia.py --lingua en --cliente "Il Tourismo, alla cortese attenzione di Natascia"
 """
 
 import argparse
@@ -57,7 +57,7 @@ IT = dict(
     footer2="+39 335 587 4744  ·  info@giromunna.com  ·  giromunna.com",
     page="pag. %d",
     title="Preventivo",
-    subtitle="Gita Pistoia – Castiglione del Lago – Arezzo – Pistoia  ·  martedì 8 dicembre 2026",
+    subtitle="Gita del Cral A.T. Pistoia: Pistoia – Castiglione del Lago – Arezzo – Pistoia  ·  martedì 8 dicembre 2026",
     meta="Preparato per %s  ·  30 ottobre 2026  ·  Rif. " + RIF,
     h_mezzo="Il mezzo",
     mezzo_intro=(
@@ -95,30 +95,31 @@ IT = dict(
     h_prezzo="Il prezzo",
     price_rows=[
         ("Minibus con conducente a disposizione per la giornata di martedì 8 dicembre: Pistoia – "
-         "Castiglione del Lago – Arezzo – Pistoia, circa 400 km", "€ 1.500,00", "+ IVA 10%"),
+         "Castiglione del Lago – Arezzo – Pistoia, circa 400 km", "€ 1.000,00", "+ IVA 10%"),
+        ("Eventuali parcheggi del mezzo", "a carico vostro", ""),
         ("Pranzo e cena del conducente", "a carico vostro", ""),
     ],
     price_total_label="Totale, al netto di IVA",
-    price_total="€ 1.500,00",
+    price_total="€ 1.000,00",
     vat_note="+ IVA 10%",
-    grand="Totale da corrispondere, IVA 10% inclusa: € 1.650,00.",
-    perhead=("Su 25 persone sono € 66,00 a testa per tutta la giornata, IVA inclusa. "
+    grand="Totale da corrispondere, IVA 10% inclusa: € 1.100,00.",
+    perhead=("Su 25 persone sono € 44,00 a testa per tutta la giornata, IVA inclusa. "
              "Il prezzo è per il mezzo, non per persona: non cambia se siete qualcuno in meno."),
     h_incluso="Incluso.",
     incluso=(
-        "Minibus con conducente per tutta la giornata, carburante, pedaggi autostradali, parcheggi del "
-        "mezzo e assicurazione completa. Le soste a Castiglione del Lago e ad Arezzo sono comprese: il "
+        "Minibus con conducente per tutta la giornata, carburante, pedaggi autostradali e "
+        "assicurazione completa. Le soste a Castiglione del Lago e ad Arezzo sono comprese: il "
         "conducente resta a vostra disposizione."
     ),
     h_nonincluso="Non incluso.",
     nonincluso=(
-        "Pranzo e cena del conducente. Attesa oltre la partenza da Arezzo delle 20:00, € 50,00 all'ora. "
+        "Eventuali parcheggi del mezzo, pagati sul posto. Pranzo e cena del conducente. Attesa oltre la partenza da Arezzo delle 20:00, € 50,00 all'ora. "
         "Ingressi, visite guidate, pasti del gruppo e fermate aggiuntive non previste dal programma."
     ),
     h_pagamento="Pagamento",
     pay_rows=[
-        ("Acconto 30% alla conferma", "€ 495,00", "IVA inclusa"),
-        ("Saldo, entro l'8 dicembre 2026, giorno del servizio", "€ 1.155,00", ""),
+        ("Acconto 30% alla conferma", "€ 330,00", "IVA inclusa"),
+        ("Saldo, entro l'8 dicembre 2026, giorno del servizio", "€ 770,00", ""),
     ],
     bank=("Bonifico bancario intestato a Munna Girolamo Giuseppe — "
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
@@ -135,7 +136,8 @@ IT = dict(
         ("<b>Ad Arezzo con i mercatini di Natale.</b> Il giorno dell'Immacolata la città è piena e "
          "l'accesso dei mezzi verso il centro è regolato. Vi lasciamo e vi riprendiamo nel punto "
          "consentito più vicino alla città alta e ve lo indichiamo prima della partenza, insieme al "
-         "numero del conducente. Per ripartire puntuali alle 20:00 conviene fissare il ritrovo al "
+         "numero del conducente. Se in quel punto la sosta dei bus è a pagamento, il costo è a "
+         "carico vostro, come gli altri eventuali parcheggi della giornata. Per ripartire puntuali alle 20:00 conviene fissare il ritrovo al "
          "minibus per le 19:45: con la folla della sera ci vuole qualche minuto in più."),
         ("<b>Castiglione del Lago.</b> Arrivando verso le 12:00 avete due ore: il tempo per il pranzo "
          "e una passeggiata nel borgo fino alla Rocca. Se avete prenotato un ristorante, indicateci quale: "
@@ -147,7 +149,7 @@ IT = dict(
         ("<b>Il ritrovo in via dell'Annone.</b> Indicateci il punto preciso (numero civico o "
          "riferimento) dove volete che il minibus si fermi per la salita e per il rientro della sera."),
         ("<b>Per confermare ci servono</b> il numero definitivo dei partecipanti, il nome e il "
-         "cellulare di un referente che viaggia con il gruppo e i dati per la fattura del Cral."),
+         "cellulare di un referente che viaggia con il gruppo e i dati per la fattura."),
         ("<b>Disponibilità e cancellazione.</b> Il mezzo è al momento libero e lo teniamo a vostra "
          "disposizione fino al 6 novembre 2026, data di validità del preventivo; la prenotazione diventa "
          "definitiva alla ricezione dell'acconto. Dopo la conferma, fino all'8 novembre la "
@@ -165,7 +167,7 @@ EN = dict(
     footer2="+39 335 587 4744  ·  info@giromunna.com  ·  giromunna.com",
     page="page %d",
     title="Quotation",
-    subtitle="Day trip Pistoia – Castiglione del Lago – Arezzo – Pistoia  ·  Tuesday 8 December 2026",
+    subtitle="Cral A.T. Pistoia day trip: Pistoia – Castiglione del Lago – Arezzo – Pistoia  ·  Tuesday 8 December 2026",
     meta="Prepared for %s  ·  30 October 2026  ·  Ref. " + RIF,
     h_mezzo="The vehicle",
     mezzo_intro=(
@@ -202,29 +204,30 @@ EN = dict(
     h_prezzo="The price",
     price_rows=[
         ("Minibus with driver at your disposal for the day on Tuesday 8 December: Pistoia – "
-         "Castiglione del Lago – Arezzo – Pistoia, about 400 km", "€ 1,500.00", "+ VAT 10%"),
+         "Castiglione del Lago – Arezzo – Pistoia, about 400 km", "€ 1,000.00", "+ VAT 10%"),
+        ("Any vehicle parking fees", "at your charge", ""),
         ("Driver's lunch and dinner", "at your charge", ""),
     ],
     price_total_label="Total, excluding VAT",
-    price_total="€ 1,500.00",
+    price_total="€ 1,000.00",
     vat_note="+ VAT 10%",
-    grand="Total payable, VAT 10% included: € 1,650.00.",
-    perhead=("Across 25 people that is € 66.00 each for the whole day, VAT included. "
+    grand="Total payable, VAT 10% included: € 1,100.00.",
+    perhead=("Across 25 people that is € 44.00 each for the whole day, VAT included. "
              "The price is for the vehicle, not per person: it does not change if a few of you are missing."),
     h_incluso="Included.",
     incluso=(
-        "Minibus with driver for the whole day, fuel, motorway tolls, vehicle parking and full insurance. "
+        "Minibus with driver for the whole day, fuel, motorway tolls and full insurance. "
         "The stops in Castiglione del Lago and Arezzo are included: the driver remains at your disposal."
     ),
     h_nonincluso="Not included.",
     nonincluso=(
-        "Driver's lunch and dinner. Waiting beyond the 20:00 departure from Arezzo, € 50.00 per hour. "
+        "Any vehicle parking fees, paid on the spot. Driver's lunch and dinner. Waiting beyond the 20:00 departure from Arezzo, € 50.00 per hour. "
         "Entrance fees, guided tours, the group's meals and additional stops not in the programme."
     ),
     h_pagamento="Payment",
     pay_rows=[
-        ("Deposit 30% on confirmation", "€ 495.00", "VAT included"),
-        ("Balance, by 8 December 2026, the day of the service", "€ 1,155.00", ""),
+        ("Deposit 30% on confirmation", "€ 330.00", "VAT included"),
+        ("Balance, by 8 December 2026, the day of the service", "€ 770.00", ""),
     ],
     bank=("Bank transfer to Munna Girolamo Giuseppe — "
           "IBAN IT59 O050 3413 7070 0000 0003 424 — BIC/SWIFT BAPPIT21S05."),
@@ -242,7 +245,8 @@ EN = dict(
         ("<b>Arezzo with the Christmas markets.</b> On the Immacolata holiday the city is packed and "
          "vehicle access towards the centre is regulated. We drop you off and pick you up at the "
          "permitted point closest to the upper town and will tell you where before departure, together "
-         "with the driver's number. To leave on time at 20:00 it is best to meet at the minibus at 19:45: "
+         "with the driver's number. If parking for coaches there is charged, the cost is at your charge, "
+         "like any other parking fees during the day. To leave on time at 20:00 it is best to meet at the minibus at 19:45: "
          "with the evening crowds it takes a few extra minutes."),
         ("<b>Castiglione del Lago.</b> Arriving around 12:00 you have two hours: time for lunch and a "
          "walk through the old town up to the Rocca. If you have booked a restaurant, tell us which one: "
@@ -254,7 +258,7 @@ EN = dict(
         ("<b>The meeting point in via dell'Annone.</b> Please give us the exact spot (street number or "
          "landmark) where you want the minibus to stop for boarding and for the evening return."),
         ("<b>To confirm we need</b> the final number of participants, the name and mobile number of a "
-         "contact person travelling with the group and the Cral's invoicing details."),
+         "contact person travelling with the group and your invoicing details."),
         ("<b>Availability and cancellation.</b> The vehicle is currently free and we hold it for you until "
          "6 November 2026, the validity date of this quotation; the booking becomes firm on receipt of the "
          "deposit. Once confirmed, a cancellation up to 8 November forfeits the deposit; from 9 to "
@@ -450,7 +454,7 @@ def build(lang, cliente, out):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--lingua", "--lang", dest="lang", default="it", choices=["it", "en"])
-    ap.add_argument("--cliente", "--client", dest="cliente", default="Cral A.T. Pistoia")
+    ap.add_argument("--cliente", "--client", dest="cliente", default="Il Tourismo, alla cortese attenzione di Natascia")
     ap.add_argument("--out", default=None)
     a = ap.parse_args()
     name = a.out or os.path.join(
