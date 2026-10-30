@@ -80,7 +80,7 @@ Per la gita del Cral di martedì 8 dicembre:
 Vi porto con il Tourismo, autobus gran turismo da 51+1+1 posti.
 *Costo del bus € 1.000 + IVA 10% + eventuali parcheggi.*
 
-Se ti serve ti mando anche il preventivo in PDF.
+Ti allego il preventivo in PDF.
 
 Un abbraccio,
 Munna Giuseppe
@@ -97,7 +97,7 @@ For the Cral trip on Tuesday 8 December:
 I'll take you in the Tourismo, a 51+1+1-seat touring coach.
 *Cost of the bus € 1,000 + VAT 10% + any parking fees.*
 
-If you need it I'll send you the quotation as a PDF too.
+I'm attaching the quotation as a PDF.
 
 A big hug,
 Munna Giuseppe
