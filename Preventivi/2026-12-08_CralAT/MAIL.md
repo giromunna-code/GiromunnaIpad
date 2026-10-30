@@ -18,9 +18,9 @@ minibus Mercedes-Benz Beluga da 25 posti, con conducente:
 • ore 14:00 partenza per Arezzo, arrivo verso le 15:00
 • ore 20:00 partenza da Arezzo, rientro a Pistoia verso le 21:45
 
-Costo del bus € 1.000,00 + IVA 10%, cioè € 1.100,00 IVA inclusa, con carburante e pedaggi
-compresi. Restano a carico vostro gli eventuali parcheggi del mezzo e il pranzo e la cena
-del conducente.
+**Costo del bus € 1.000,00 + IVA 10% + eventuali parcheggi.**
+
+Carburante e pedaggi sono compresi; restano a carico vostro il pranzo e la cena del conducente.
 
 Per completare ci servono:
 • il numero dei partecipanti: il Beluga ha 25 posti più l'accompagnatore. Se siete di più,
@@ -51,8 +51,9 @@ thank you for your request. Please find attached our quotation for the Cral A.T.
 • 14:00 departure for Arezzo, arrival around 15:00
 • 20:00 departure from Arezzo, back in Pistoia around 21:45
 
-Cost of the bus € 1,000.00 + VAT 10%, i.e. € 1,100.00 VAT included, with fuel and tolls
-included. Any vehicle parking fees and the driver's lunch and dinner remain at your charge.
+**Cost of the bus € 1,000.00 + VAT 10% + any parking fees.**
+
+Fuel and tolls are included; the driver's lunch and dinner remain at your charge.
 
 To complete the booking we need:
 • the number of participants: the Beluga has 25 seats plus the guide seat. If you are more,
