@@ -1,6 +1,6 @@
 # Note interne — Cral A.T. Pistoia, gita Castiglione del Lago e Arezzo, 8.12.2026
 
-**Cliente:** Il Tourismo, alla cortese attenzione di Natascia, per il Cral A.T. Pistoia (email e numero di partecipanti da completare)
+**Cliente:** Natascia (amica di Girolamo), Il Tourismo, per il Cral A.T. Pistoia (email e numero di partecipanti da completare)
 **Rif. preventivo:** GM-2026-1208-AT · **Preparato:** 30 ottobre 2026 · **Validità:** 6 novembre 2026
 
 File generati:
@@ -10,8 +10,8 @@ File generati:
 - `MAIL.md` — testo della mail, italiano e inglese
 
 ```bash
-python3 genera_preventivo_cral_at_pistoia.py --lingua it --cliente "Il Tourismo, alla cortese attenzione di Natascia"
-python3 genera_preventivo_cral_at_pistoia.py --lingua en --cliente "Il Tourismo, alla cortese attenzione di Natascia"
+python3 genera_preventivo_cral_at_pistoia.py --lingua it --cliente "Natascia, Il Tourismo"
+python3 genera_preventivo_cral_at_pistoia.py --lingua en --cliente "Natascia, Il Tourismo"
 ```
 
 ## Richiesta

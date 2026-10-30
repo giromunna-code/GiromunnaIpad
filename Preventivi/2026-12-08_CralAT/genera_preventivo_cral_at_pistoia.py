@@ -6,8 +6,8 @@ Pistoia - Castiglione del Lago - Arezzo - Pistoia, giornata intera.
 Riproduce l'impaginazione dei preventivi GiroMunna (logo, verde bottiglia e oro,
 intestazione e piè di pagina su ogni pagina).
 
-    python3 genera_preventivo_cral_at_pistoia.py --lingua it --cliente "Il Tourismo, alla cortese attenzione di Natascia"
-    python3 genera_preventivo_cral_at_pistoia.py --lingua en --cliente "Il Tourismo, alla cortese attenzione di Natascia"
+    python3 genera_preventivo_cral_at_pistoia.py --lingua it --cliente "Natascia, Il Tourismo"
+    python3 genera_preventivo_cral_at_pistoia.py --lingua en --cliente "Natascia, Il Tourismo"
 """
 
 import argparse
@@ -156,8 +156,8 @@ IT = dict(
          "cancellazione comporta la perdita dell'acconto; dal 9 al 28 novembre si addebita il 50% "
          "dell'importo, negli ultimi 10 giorni l'intero importo."),
     ],
-    closing=("Restiamo a disposizione per qualsiasi chiarimento e in attesa di un vostro riscontro.<br/><br/>"
-             "Cordiali saluti,<br/>"
+    closing=("Grazie Natascia, per qualsiasi cosa chiamami pure. A presto!<br/><br/>"
+             "Un abbraccio,<br/>"
              "Girolamo Munna — GiroMunna NCC, Toscana · +39 335 587 4744 · info@giromunna.com"),
 )
 
@@ -264,8 +264,8 @@ EN = dict(
          "deposit. Once confirmed, a cancellation up to 8 November forfeits the deposit; from 9 to "
          "28 November 50% of the amount is charged, and the full amount in the last 10 days."),
     ],
-    closing=("We remain at your disposal for any clarification and look forward to hearing from you.<br/><br/>"
-             "Kind regards,<br/>"
+    closing=("Thank you Natascia, call me any time if you need anything. Talk soon!<br/><br/>"
+             "A big hug,<br/>"
              "Girolamo Munna — GiroMunna NCC, Tuscany · +39 335 587 4744 · info@giromunna.com"),
 )
 
@@ -454,7 +454,7 @@ def build(lang, cliente, out):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--lingua", "--lang", dest="lang", default="it", choices=["it", "en"])
-    ap.add_argument("--cliente", "--client", dest="cliente", default="Il Tourismo, alla cortese attenzione di Natascia")
+    ap.add_argument("--cliente", "--client", dest="cliente", default="Natascia, Il Tourismo")
     ap.add_argument("--out", default=None)
     a = ap.parse_args()
     name = a.out or os.path.join(
